@@ -11,13 +11,13 @@ import {
 
 const members = [
   {
-    avatar: './avatar.jpg',
-    name: 'Admin',
-    title: '创造者',
-    // links: [
-    //   { icon: 'github', link: 'https://github.com/yyx990803' },
-    //   { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
-    // ]
+    avatar: 'https://avatars.githubusercontent.com/u/16713018?v=4',
+    name: 'mobytang',
+    title: '联系人',
+    links: [
+      { icon: 'github', link: 'https://github.com/baobaomi900901' },
+      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
+    ]
   },
 ]
 </script>
@@ -25,10 +25,10 @@ const members = [
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      我是王鹏程 (en)
+      关于我们(en)
     </template>
     <template #lead>
-      KSW Design 是一个专注于高质量图标组件开发的创新项目。我们的团队由经验丰富的设计师和技术专家组成，致力于为移动应用、网页、桌面应用和品牌提供精美的图标设计。
+      KingAutomate 是一个自动化工具集，旨在帮助开发者提升工作效率，提升软件质量，提升软件交付效率。
     </template>
   </VPTeamPageTitle>
   <VPTeamMembers
