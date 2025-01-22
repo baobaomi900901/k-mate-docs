@@ -52,8 +52,9 @@ function setSidebar(nav) {
       useFolderTitleFromIndexFile: true,
       useFolderLinkFromIndexFile: true,
       folderLinkNotIncludesFileName: true,
-      sortMenusByFrontmatterDate: true, // 启用日期排序
-      sortMenusOrderByDescending: true // 升序
+      // sortMenusByFrontmatterDate: true, // 启用日期排序
+      sortMenusByFrontmatterOrder: true, // 按名称排序菜单
+      sortMenusOrderByDescending: false, // 升序
     };
     const SidebarObj = {
       [link]: {
