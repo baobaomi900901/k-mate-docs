@@ -16,11 +16,11 @@ Used to terminate a running program
 
 **Command Input**
 
-- **Process ID`Integer`**: ID of the process to be terminated
+- **Process ID**`Integer`: ID of the process to be terminated
 
-- **Process Name`string`**: Name of the process to be terminated
+- **Process Name**`string`: Name of the process to be terminated
 
-- **Termination Method`Integer`**: Choose whether to terminate the process by process ID or process name
+- **Termination Method**`Integer`: Choose whether to terminate the process by process ID or process name
 
 
 **Command Output**

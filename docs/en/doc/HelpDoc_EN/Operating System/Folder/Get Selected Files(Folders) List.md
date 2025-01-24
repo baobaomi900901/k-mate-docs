@@ -16,12 +16,12 @@ Get the list of selected files or folders in the currently active file explorer 
 
 **Command Input**
 
-- **Get Type`Integer`**: Select the type of selected items to retrieve, supporting files, folders, or all selected items
+- **Get Type**`Integer`: Select the type of selected items to retrieve, supporting files, folders, or all selected items
 
 
 **Command Output**
 
-- **Save Files(Folders) List To`TList<String>`**: Enter a name to save the files(folders) list
+- **Save Files(Folders) List To**`TList<String>`: Enter a name to save the files(folders) list
 
 
 **Command Output**

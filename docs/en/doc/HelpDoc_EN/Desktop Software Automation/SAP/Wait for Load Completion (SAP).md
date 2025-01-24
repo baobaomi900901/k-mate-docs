@@ -16,12 +16,12 @@ Wait for the SAP to load completely
 
 **Command Input**
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout for waiting for the target element to exist
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
 
 **Command Output**
 
-- **Wait Result`Boolean`**: Specify a variable to save whether the SAP has loaded within the specified time
+- **Wait Result**`Boolean`: Specify a variable to save whether the SAP has loaded within the specified time
 
 
 **Command Output**

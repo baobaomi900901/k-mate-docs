@@ -16,14 +16,14 @@ Execute a sub-script with a specified name
 
 **Command Input**
 
-- **Input Parameters`string`**: Enter input parameters for the sub-script
+- **Input Parameters**`string`: Enter input parameters for the sub-script
 
-- **Sub-script Name`string`**: Select the name of the sub-script to execute
+- **Sub-script Name**`string`: Select the name of the sub-script to execute
 
 
 **Command Output**
 
-- **Save Output Result To`string`**: Specify a variable name to save the output result of the sub-script
+- **Save Output Result To**`string`: Specify a variable name to save the output result of the sub-script
 
 
 **Command Output**

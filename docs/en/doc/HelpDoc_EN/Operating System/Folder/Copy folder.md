@@ -16,16 +16,16 @@ Copy the source folder to the target folder
 
 **Command Input**
 
-- **Copy method`Integer`**: How to handle when files already exist
+- **Copy method**`Integer`: How to handle when files already exist
 
-- **Target folder`string`**: Enter the target folder path
+- **Target folder**`string`: Enter the target folder path
 
-- **Source folder`string`**: Enter or select the path of the folder to be copied
+- **Source folder**`string`: Enter or select the path of the folder to be copied
 
 
 **Command Output**
 
-- **Copied folder path`string`**: Enter a name to save the path of the copied folder
+- **Copied folder path**`string`: Enter a name to save the path of the copied folder
 
 
 **Command Output**

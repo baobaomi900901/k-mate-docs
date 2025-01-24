@@ -16,29 +16,29 @@ Clear content or format from the Excel file
 
 **Command Input**
 
-- **Sheet Name`string`**: If empty, it defaults to the currently active sheet
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
-- **End Column Name`string`**: Column name. Starts from A
+- **End Column Name**`string`: Column name. Starts from A
 
-- **End Row Number`Integer`**: Row number. Starts from 1
+- **End Row Number**`Integer`: Row number. Starts from 1
 
-- **Start Column Name`string`**: Column name. Starts from A
+- **Start Column Name**`string`: Column name. Starts from A
 
-- **Start Row Number`Integer`**: Row number. Starts from 1
+- **Start Row Number**`Integer`: Row number. Starts from 1
 
-- **Column Name`string`**: Column name. Starts from A
+- **Column Name**`string`: Column name. Starts from A
 
-- **Row Number`Integer`**: Row number. Starts from 1
+- **Row Number**`Integer`: Row number. Starts from 1
 
-- **Unit Column Name`string`**: Column name. Starts from A
+- **Unit Column Name**`string`: Column name. Starts from A
 
-- **Unit Row Number`Integer`**: Row number. Starts from 1
+- **Unit Row Number**`Integer`: Row number. Starts from 1
 
-- **Clear Method`Integer`**: Choose to clear by cell/row/column/range
+- **Clear Method**`Integer`: Choose to clear by cell/row/column/range
 
-- **Clear Content`Integer`**: Choose to clear content/format/all
+- **Clear Content**`Integer`: Choose to clear content/format/all
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
 
 
 **Command Output**

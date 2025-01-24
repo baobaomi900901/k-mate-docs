@@ -16,11 +16,11 @@ In the toolbar, click the target button
 
 **Command Input**
 
-- **Button Name`string`**: Fill in the button name
+- **Button Name**`string`: Fill in the button name
 
-- **Operation Target`TTarget`**: Select the toolbar element
+- **Operation Target**`TTarget`: Select the toolbar element
 
-- **Window Object`TWinObj`**: Enter a retrieved SAP session window
+- **Window Object**`TWinObj`: Enter a retrieved SAP session window
 
 
 **Command Output**
@@ -29,7 +29,7 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout for waiting for the target element to exist
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
 
 **Command Output**

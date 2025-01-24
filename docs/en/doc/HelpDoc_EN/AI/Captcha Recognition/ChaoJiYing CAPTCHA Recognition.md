@@ -16,26 +16,26 @@ Call the ChaoJiYing AI API for CAPTCHA recognition
 
 **Command Input**
 
-- **Error return score`Boolean`**: Report that the recognition result of a specific image ID is incorrect to the server, which will return the points or attempts to the user.
+- **Error return score**`Boolean`: Report that the recognition result of a specific image ID is incorrect to the server, which will return the points or attempts to the user.
 
-- **CAPTCHA Type`Integer`**: Select the captcha type to identify
+- **CAPTCHA Type**`Integer`: Select the captcha type to identify
 
-- **Image File`string`**: Enter or select the image path
+- **Image File**`string`: Enter or select the image path
 
 
 **Command Output**
 
-- **Result`string`**: Specify a variable to store the result
+- **Result**`string`: Specify a variable to store the result
 
 ### Advanced
 
-- **Software ID`string`**: Software ID, defaults to reading the configuration file
+- **Software ID**`string`: Software ID, defaults to reading the configuration file
 
-- **User password`string`**: User password, defaults to reading the configuration file
+- **User password**`string`: User password, defaults to reading the configuration file
 
-- **User account`string`**: User account, defaults to reading the configuration file
+- **User account**`string`: User account, defaults to reading the configuration file
 
-- **Proxy parameters`string`**: Proxy server, format: address:port
+- **Proxy parameters**`string`: Proxy server, format: address:port
 
 
 **Command Output**

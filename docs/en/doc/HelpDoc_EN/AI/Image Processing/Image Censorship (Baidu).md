@@ -16,16 +16,16 @@ Call Baidu AI API to check if the image complies with regulations
 
 **Command Input**
 
-- **Image File`string`**: Enter or select the image file path
+- **Image File**`string`: Enter or select the image file path
 
 
 **Command Output**
 
-- **Result`string`**: Specify a variable to store the censorship result
+- **Result**`string`: Specify a variable to store the censorship result
 
 ### Advanced
 
-- **Proxy Parameters`string`**: Proxy server, in the format of address:port
+- **Proxy Parameters**`string`: Proxy server, in the format of address:port
 
 
 **Command Output**

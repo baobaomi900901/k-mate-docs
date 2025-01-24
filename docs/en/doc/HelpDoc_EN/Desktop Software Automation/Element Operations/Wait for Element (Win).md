@@ -16,20 +16,20 @@ Wait for an element in the window to appear or disappear before proceeding with 
 
 **Command Input**
 
-- **Timeout (ms)`Integer`**: Set the maximum wait time
+- **Timeout (ms)**`Integer`: Set the maximum wait time
 
-- **Set Timeout`Boolean`**: The process will automatically continue after the timeout
+- **Set Timeout**`Boolean`: The process will automatically continue after the timeout
 
-- **Wait State`Integer`**: Select the wait state
+- **Wait State**`Integer`: Select the wait state
 
-- **Target Element`TTarget`**: Select the window element to operate on
+- **Target Element**`TTarget`: Select the window element to operate on
 
-- **Window Object`TWinObj`**: Enter a captured window object
+- **Window Object**`TWinObj`: Enter a captured window object
 
 
 **Command Output**
 
-- **Wait Result`Boolean`**: Return success if True, otherwise wait for timeout
+- **Wait Result**`Boolean`: Return success if True, otherwise wait for timeout
 
 
 **Command Output**

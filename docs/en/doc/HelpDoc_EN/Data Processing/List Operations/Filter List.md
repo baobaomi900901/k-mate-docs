@@ -16,14 +16,14 @@ This command is used to remove all items in list 2 from list 1 and save the resu
 
 **Command Input**
 
-- **List 2`TList<String>`**: The list containing items to be removed from List 1
+- **List 2**`TList<String>`: The list containing items to be removed from List 1
 
-- **List 1`TList<String>`**: The list that needs to be filtered
+- **List 1**`TList<String>`: The list that needs to be filtered
 
 
 **Command Output**
 
-- **Save List Object To`TList<String>`**: Specify a variable to save the filtered new list
+- **Save List Object To**`TList<String>`: Specify a variable to save the filtered new list
 
 
 **Command Output**

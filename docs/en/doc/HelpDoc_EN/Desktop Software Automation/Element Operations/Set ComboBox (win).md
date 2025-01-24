@@ -16,15 +16,15 @@ Set the selected item in the window's ComboBox
 
 **Command Input**
 
-- **Matching mode`Integer`**: Content matching mode
+- **Matching mode**`Integer`: Content matching mode
 
-- **Selection value`string`**: Option content or position
+- **Selection value**`string`: Option content or position
 
-- **Selection method`Integer`**: Choose whether to select by option content or position
+- **Selection method**`Integer`: Choose whether to select by option content or position
 
-- **Target for operation`TTarget`**: Select the window element to operate on
+- **Target for operation**`TTarget`: Select the window element to operate on
 
-- **Window object`TWinObj`**: Enter a captured window object
+- **Window object**`TWinObj`: Enter a captured window object
 
 
 **Command Output**
@@ -33,9 +33,9 @@ No output for the current command
 
 ### Advanced
 
-- **Timeout (milliseconds)`Integer`**: Set the maximum wait time
+- **Timeout (milliseconds)**`Integer`: Set the maximum wait time
 
-- **Delay after execution (milliseconds)`Integer`**: Time to continue waiting after command execution
+- **Delay after execution (milliseconds)**`Integer`: Time to continue waiting after command execution
 
 
 **Command Output**

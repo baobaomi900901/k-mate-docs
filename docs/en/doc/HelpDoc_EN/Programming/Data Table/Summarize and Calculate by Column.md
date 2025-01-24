@@ -16,20 +16,20 @@ Perform sum, mean, count, etc., on a specified column of the data table.
 
 **Command Input**
 
-- **Preview in Data Table`Boolean`**: Preview in Data Table
+- **Preview in Data Table**`Boolean`: Preview in Data Table
 
-- **Specified Data Type`Integer`**: Specify the data type of the calculation result.
+- **Specified Data Type**`Integer`: Specify the data type of the calculation result.
 
-- **Calculation Type`Integer`**: Select the type of calculation.
+- **Calculation Type**`Integer`: Select the type of calculation.
 
-- **Specified Column Name`string`**: Specify the column name for which to perform the summary calculation; only single-column calculations are supported.
+- **Specified Column Name**`string`: Specify the column name for which to perform the summary calculation; only single-column calculations are supported.
 
-- **Data Table Object`TDataTable`**: Can use the variable returned by the 'Create Data Table' component.
+- **Data Table Object**`TDataTable`: Can use the variable returned by the 'Create Data Table' component.
 
 
 **Command Output**
 
-- **Calculation Result`Double`**: Used to store the calculated result.
+- **Calculation Result**`Double`: Used to store the calculated result.
 
 
 **Command Output**

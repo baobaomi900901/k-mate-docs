@@ -16,13 +16,13 @@ Used to compress files/folders
 
 **Command Input**
 
-- **Save compressed file to`string`**: Enter the save path for the compressed file (including file extension), supporting common compression formats such as zip, rar, 7z, etc.
+- **Save compressed file to**`string`: Enter the save path for the compressed file (including file extension), supporting common compression formats such as zip, rar, 7z, etc.
 
-- **Compression method`Integer`**: Set the compression level
+- **Compression method**`Integer`: Set the compression level
 
-- **Password`string`**: Enter a password; leave blank if no password is set
+- **Password**`string`: Enter a password; leave blank if no password is set
 
-- **File(s)/folder to compress`string`**: Enter or select the path of the file(s)/folder to compress, separate multiple paths with '|'
+- **File(s)/folder to compress**`string`: Enter or select the path of the file(s)/folder to compress, separate multiple paths with '|'
 
 
 **Command Output**

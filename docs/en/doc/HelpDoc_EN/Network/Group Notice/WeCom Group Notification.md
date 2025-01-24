@@ -16,21 +16,21 @@ Send content to WeCom group
 
 **Command Input**
 
-- **@Everyone`Boolean`**: @Everyone
+- **@Everyone**`Boolean`: @Everyone
 
-- **@Someone`array of String`**: Enter the phone number bound to the member you want to @, for multiple members, switch to programming mode and input a list of numbers, like ['PhoneNumber1', 'PhoneNumber2']
+- **@Someone**`array of String`: Enter the phone number bound to the member you want to @, for multiple members, switch to programming mode and input a list of numbers, like ['PhoneNumber1', 'PhoneNumber2']
 
-- **Image Path`string`**: Should not exceed 2MB, supports JPG and PNG formats
+- **Image Path**`string`: Should not exceed 2MB, supports JPG and PNG formats
 
-- **File Path`string`**: The file size should be between 5B and 20MB
+- **File Path**`string`: The file size should be between 5B and 20MB
 
-- **MarkDown Content`string`**: MarkDown content, up to 4096 bytes
+- **MarkDown Content**`string`: MarkDown content, up to 4096 bytes
 
-- **Text Content`string`**: Text content, up to 2048 bytes
+- **Text Content**`string`: Text content, up to 2048 bytes
 
-- **Message Format Type`Integer`**: Message type and data format
+- **Message Format Type**`Integer`: Message type and data format
 
-- **Bot Address`string`**: The bot's web address, i.e., WebHook, needs to be applied for separately
+- **Bot Address**`string`: The bot's web address, i.e., WebHook, needs to be applied for separately
 
 
 **Command Output**

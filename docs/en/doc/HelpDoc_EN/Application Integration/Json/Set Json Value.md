@@ -16,15 +16,15 @@ Set the value of a Json object with the specified type
 
 **Command Input**
 
-- **Special Characters`Boolean`**: Check this box if the Key contains special characters.
+- **Special Characters**`Boolean`: Check this box if the Key contains special characters.
 
-- **Data Type`Integer`**: Data Type
+- **Data Type**`Integer`: Data Type
 
-- **Value`string`**: Value
+- **Value**`string`: Value
 
-- **Key`string`**: Key
+- **Key**`string`: Key
 
-- **Json Object`TJson`**: Json Object
+- **Json Object**`TJson`: Json Object
 
 
 **Command Output**

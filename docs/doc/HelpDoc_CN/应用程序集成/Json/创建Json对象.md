@@ -16,14 +16,14 @@ title: 创建Json对象
 
 **指令输入**
 
-- **处理方式`Integer`**: Json的处理类型，默认使用原逻辑，第二使用uLkJSON处理逻辑。
+- **处理方式**`Integer`: Json的处理类型，默认使用原逻辑，第二使用uLkJSON处理逻辑。
 
-- **数据类型`Integer`**: 选择数据类型
+- **数据类型**`Integer`: 选择数据类型
 
 
 **指令输出**
 
-- **Json对象`TJson`**: 返回的Json对象
+- **Json对象**`TJson`: 返回的Json对象
 
 ### 错误处理
 

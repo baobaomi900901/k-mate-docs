@@ -16,28 +16,28 @@ OCR Recognition
 
 **Command Input**
 
-- **Card Side`Integer`**: Front or back of the card
+- **Card Side**`Integer`: Front or back of the card
 
-- **Signature Method`Integer`**: Signature method used for API requests
+- **Signature Method**`Integer`: Signature method used for API requests
 
-- **Region`Integer`**: Region
+- **Region**`Integer`: Region
 
-- **Recognition Type`Integer`**: Recognition Type
+- **Recognition Type**`Integer`: Recognition Type
 
-- **Application Name`string`**: Application Name
+- **Application Name**`string`: Application Name
 
-- **Image Path`string`**: Enter the image address to be selected
+- **Image Path**`string`: Enter the image address to be selected
 
-- **Recognition Method`Integer`**: Select recognition method
+- **Recognition Method**`Integer`: Select recognition method
 
 
 **Command Output**
 
-- **Result`string`**: Specify a variable to store the recognition result
+- **Result**`string`: Specify a variable to store the recognition result
 
 ### Advanced
 
-- **Proxy Parameter`string`**: Proxy server, format: address:port
+- **Proxy Parameter**`string`: Proxy server, format: address:port
 
 
 **Command Output**

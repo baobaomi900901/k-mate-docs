@@ -16,9 +16,9 @@ Delete all rows
 
 **Command Input**
 
-- **Sheet Name`string`**: Worksheet name
+- **Sheet Name**`string`: Worksheet name
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**

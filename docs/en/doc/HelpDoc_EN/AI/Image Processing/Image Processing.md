@@ -16,30 +16,30 @@ Call the Kingsware AI interface for image distortion correction, enhancement, ba
 
 **Command Input**
 
-- **Enhancement Type`Integer`**: Get the image enhancement type
+- **Enhancement Type**`Integer`: Get the image enhancement type
 
-- **Model Name`Integer`**: Get the model name
+- **Model Name**`Integer`: Get the model name
 
-- **Image Path 2`string`**: Enter the image address to be selected.
+- **Image Path 2**`string`: Enter the image address to be selected.
 
-- **Image Path`string`**: Enter the image address to be selected.
+- **Image Path**`string`: Enter the image address to be selected.
 
-- **Processing Method`Integer`**: Select a processing method
+- **Processing Method**`Integer`: Select a processing method
 
 
 **Command Output**
 
-- **Error Information`String`**: Specify a variable to store the error information
+- **Error Information**`String`: Specify a variable to store the error information
 
-- **Response Body Information`String`**: Specify a variable to store the response body information
+- **Response Body Information**`String`: Specify a variable to store the response body information
 
-- **Response Header Information`String`**: Specify a variable to store the response header information
+- **Response Header Information**`String`: Specify a variable to store the response header information
 
 ### Advanced
 
-- **Conversion Path`string`**: The address of the converted image
+- **Conversion Path**`string`: The address of the converted image
 
-- **Response Header Type`array of string`**: When a long connection is created between the server and the client, it is necessary to set the 'connection' in the HTTP response header. The default is ['Connection'].
+- **Response Header Type**`array of string`: When a long connection is created between the server and the client, it is necessary to set the 'connection' in the HTTP response header. The default is ['Connection'].
 
 
 **Command Output**

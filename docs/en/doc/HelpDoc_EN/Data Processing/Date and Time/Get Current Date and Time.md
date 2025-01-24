@@ -21,7 +21,7 @@ No input for the current command
 
 **Command Output**
 
-- **Save Current Date To`TDateTime`**: Specify a variable to save the current date and time
+- **Save Current Date To**`TDateTime`: Specify a variable to save the current date and time
 
 
 **Command Output**

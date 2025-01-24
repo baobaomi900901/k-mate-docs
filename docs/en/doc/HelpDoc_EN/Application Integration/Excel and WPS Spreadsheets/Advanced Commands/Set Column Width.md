@@ -16,15 +16,15 @@ Set column width
 
 **Command Input**
 
-- **Sheet Name`string`**: Worksheet name
+- **Sheet Name**`string`: Worksheet name
 
-- **Column Width`Integer`**: Enter the column width
+- **Column Width**`Integer`: Enter the column width
 
-- **Mode`Integer`**: Choose the method to set the column width
+- **Mode**`Integer`: Choose the method to set the column width
 
-- **Column Name`string`**: Column name. Starting from A
+- **Column Name**`string`: Column name. Starting from A
 
-- **Excel Instance`TWorkbookApplication`**: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**

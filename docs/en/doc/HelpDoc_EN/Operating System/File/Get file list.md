@@ -16,24 +16,24 @@ Retrieve files from a folder
 
 **Command Input**
 
-- **Sorting method`Integer`**: Choose the sorting method for the file list
+- **Sorting method**`Integer`: Choose the sorting method for the file list
 
-- **Sorting factor`Integer`**: Choose the sorting factor for the file list
+- **Sorting factor**`Integer`: Choose the sorting factor for the file list
 
-- **Specify file list sorting rules`Boolean`**: Specify sorting rules for the file list
+- **Specify file list sorting rules**`Boolean`: Specify sorting rules for the file list
 
-- **Ignore hidden files`Boolean`**: Whether to ignore hidden files
+- **Ignore hidden files**`Boolean`: Whether to ignore hidden files
 
-- **Find subdirectories`Boolean`**: Whether to recursively search for files in subdirectories
+- **Find subdirectories**`Boolean`: Whether to recursively search for files in subdirectories
 
-- **File name matching rules`string`**: Enter file name matching rules, wildcards allowed. For example: 'Image*', 'Image?', multiple rules separated by commas, e.g., rule1, rule2
+- **File name matching rules**`string`: Enter file name matching rules, wildcards allowed. For example: 'Image*', 'Image?', multiple rules separated by commas, e.g., rule1, rule2
 
-- **Folder`string`**: The path of the folder to search
+- **Folder**`string`: The path of the folder to search
 
 
 **Command Output**
 
-- **Save file list to`TList<String>`**: Enter a name to save the file list
+- **Save file list to**`TList<String>`: Enter a name to save the file list
 
 
 **Command Output**

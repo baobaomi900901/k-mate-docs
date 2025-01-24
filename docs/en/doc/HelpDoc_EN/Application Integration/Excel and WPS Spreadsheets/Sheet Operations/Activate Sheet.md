@@ -16,11 +16,11 @@ Activate the specified sheet by name or position
 
 **Command Input**
 
-- **Sheet Name/Position`string`**: Enter the name or position of the sheet to be activated, cannot be empty
+- **Sheet Name/Position**`string`: Enter the name or position of the sheet to be activated, cannot be empty
 
-- **Activation Method`Integer`**: Choose the activation method
+- **Activation Method**`Integer`: Choose the activation method
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**

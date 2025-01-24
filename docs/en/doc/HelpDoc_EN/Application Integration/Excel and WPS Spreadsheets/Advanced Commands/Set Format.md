@@ -16,29 +16,29 @@ Set cell format: number, alignment, font, border, fill, protection
 
 **Command Input**
 
-- **Sheet Name`string`**: Worksheet name
+- **Sheet Name**`string`: Worksheet name
 
-- **Column Name`string`**: Column name starting from A
+- **Column Name**`string`: Column name starting from A
 
-- **Row Number`Integer`**: Row number starting from 1
+- **Row Number**`Integer`: Row number starting from 1
 
-- **End Column Name`string`**: Column name starting from A
+- **End Column Name**`string`: Column name starting from A
 
-- **End Row Number`Integer`**: Row number starting from 1
+- **End Row Number**`Integer`: Row number starting from 1
 
-- **Start Column Name`string`**: Column name starting from A
+- **Start Column Name**`string`: Column name starting from A
 
-- **Start Row Number`Integer`**: Row number starting from 1
+- **Start Row Number**`Integer`: Row number starting from 1
 
-- **Column Name of Cell`string`**: Column name starting from A
+- **Column Name of Cell**`string`: Column name starting from A
 
-- **Row Number of Cell`Integer`**: Row number starting from 1
+- **Row Number of Cell**`Integer`: Row number starting from 1
 
-- **Region Type`Integer`**: Specify the region to set the format for
+- **Region Type**`Integer`: Specify the region to set the format for
 
-- **FormatSet`string`**: 
+- **FormatSet**`string`: 
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**

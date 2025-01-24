@@ -16,34 +16,34 @@ Read content from SAP table, supporting rectangular area reading
 
 **Command Input**
 
-- **Column number`Integer`**: Column number
+- **Column number**`Integer`: Column number
 
-- **Row number`Integer`**: Row number
+- **Row number**`Integer`: Row number
 
-- **End column number`Integer`**: End column number
+- **End column number**`Integer`: End column number
 
-- **End row number`Integer`**: End row number
+- **End row number**`Integer`: End row number
 
-- **Start column number`Integer`**: Start column number
+- **Start column number**`Integer`: Start column number
 
-- **Start row number`Integer`**: Start row number
+- **Start row number**`Integer`: Start row number
 
-- **Reading method`Integer`**: Choose how to read
+- **Reading method**`Integer`: Choose how to read
 
-- **Operation target`TTarget`**: Select the SAP table element to operate on
+- **Operation target**`TTarget`: Select the SAP table element to operate on
 
-- **Window object`TWinObj`**: Enter a SAP session window that has been obtained
+- **Window object**`TWinObj`: Enter a SAP session window that has been obtained
 
 
 **Command Output**
 
-- **Save SAP table content to`Integer`**: Specify a variable to save the SAP table content
+- **Save SAP table content to**`Integer`: Specify a variable to save the SAP table content
 
 ### Advanced
 
-- **Whether to need table column names`Boolean`**: After checking, automatically fill in the column names in the output column
+- **Whether to need table column names**`Boolean`: After checking, automatically fill in the column names in the output column
 
-- **Wait for element to exist (milliseconds)`Integer`**: Timeout time for waiting for the target element to exist
+- **Wait for element to exist (milliseconds)**`Integer`: Timeout time for waiting for the target element to exist
 
 
 **Command Output**

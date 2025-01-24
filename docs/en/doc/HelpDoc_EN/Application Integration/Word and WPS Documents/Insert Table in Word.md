@@ -16,13 +16,13 @@ Insert a table in a Word document
 
 **Command Input**
 
-- **Line break before inserting table`Boolean`**: If checked, a line break will be inserted before the table
+- **Line break before inserting table**`Boolean`: If checked, a line break will be inserted before the table
 
-- **Does the table have borders?`Boolean`**: If checked, the table will have borders
+- **Does the table have borders?**`Boolean`: If checked, the table will have borders
 
-- **Table Data`TDataTable`**: The data format of the content needs to correspond to the range, with content for rows, columns, and areas provided as a list
+- **Table Data**`TDataTable`: The data format of the content needs to correspond to the range, with content for rows, columns, and areas provided as a list
 
-- **Word Object`TDocumentApplication`**: Enter a Word object created using the 'Open or Create Word' function
+- **Word Object**`TDocumentApplication`: Enter a Word object created using the 'Open or Create Word' function
 
 
 **Command Output**

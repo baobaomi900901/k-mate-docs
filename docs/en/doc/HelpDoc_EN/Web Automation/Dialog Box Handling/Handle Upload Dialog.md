@@ -16,11 +16,11 @@ Handle the upload dialog that appears
 
 **Command Input**
 
-- **File Path for Upload`string`**: The full path of the file to be uploaded
+- **File Path for Upload**`string`: The full path of the file to be uploaded
 
-- **Button Type`Integer`**: The button that appears in the upload dialog
+- **Button Type**`Integer`: The button that appears in the upload dialog
 
-- **Browser Type`Integer`**: The browser object being operated on
+- **Browser Type**`Integer`: The browser object being operated on
 
 
 **Command Output**
@@ -29,15 +29,15 @@ No output for the current command
 
 ### Advanced
 
-- **Focus Timeout (milliseconds)`Integer`**: The timeout for focusing on the dialog box
+- **Focus Timeout (milliseconds)**`Integer`: The timeout for focusing on the dialog box
 
-- **Wait for Dialog Appearance (milliseconds)`Integer`**: The maximum waiting time for the appearance of the dialog box
+- **Wait for Dialog Appearance (milliseconds)**`Integer`: The maximum waiting time for the appearance of the dialog box
 
-- **Key Press Interval (milliseconds)`Integer`**: The interval between key presses, in milliseconds
+- **Key Press Interval (milliseconds)**`Integer`: The interval between key presses, in milliseconds
 
-- **Force USA Keyboard Layout`Boolean`**: Switch to English input method
+- **Force USA Keyboard Layout**`Boolean`: Switch to English input method
 
-- **Input Method`Integer`**: The method of input
+- **Input Method**`Integer`: The method of input
 
 
 **Command Output**

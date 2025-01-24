@@ -16,9 +16,9 @@ Delete the specified sheet
 
 **Command Input**
 
-- **Sheet Name`string`**: Enter the name of the sheet to be deleted, cannot be empty
+- **Sheet Name**`string`: Enter the name of the sheet to be deleted, cannot be empty
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**

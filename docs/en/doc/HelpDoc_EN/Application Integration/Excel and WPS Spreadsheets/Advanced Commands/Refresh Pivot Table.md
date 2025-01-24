@@ -16,11 +16,11 @@ Refresh the pivot table
 
 **Command Input**
 
-- **Pivot Table Name or Index`string`**: If there is only one pivot table in a sheet, you can enter 1
+- **Pivot Table Name or Index**`string`: If there is only one pivot table in a sheet, you can enter 1
 
-- **Sheet Name`string`**: The name of the Sheet where the pivot table is located
+- **Sheet Name**`string`: The name of the Sheet where the pivot table is located
 
-- **Excel Instance`TWorkbookApplication`**: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**

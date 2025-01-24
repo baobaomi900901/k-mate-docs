@@ -16,16 +16,16 @@ Append new text content after the original text, completing the text concatenati
 
 **Command Input**
 
-- **Text to Append`string`**: Enter a text string or select a variable containing the string
+- **Text to Append**`string`: Enter a text string or select a variable containing the string
 
-- **Append with New Line`Boolean`**: Whether to append with a new line
+- **Append with New Line**`Boolean`: Whether to append with a new line
 
-- **Original Text`string`**: Enter a text string or select a variable containing the string
+- **Original Text**`string`: Enter a text string or select a variable containing the string
 
 
 **Command Output**
 
-- **Save Result To`string`**: Specify a variable to save the result. If the variable name is the same as the original text variable, it will be overwritten
+- **Save Result To**`string`: Specify a variable to save the result. If the variable name is the same as the original text variable, it will be overwritten
 
 
 **Command Output**

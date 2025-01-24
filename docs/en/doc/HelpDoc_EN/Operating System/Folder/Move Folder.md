@@ -16,14 +16,14 @@ Move the source folder to the target folder
 
 **Command Input**
 
-- **Target Folder`string`**: Enter the target folder path
+- **Target Folder**`string`: Enter the target folder path
 
-- **Source Folder Path`string`**: Enter or select the path of the folder to be moved
+- **Source Folder Path**`string`: Enter or select the path of the folder to be moved
 
 
 **Command Output**
 
-- **Moved Folder Path`string`**: Enter a name to save the path of the moved folder
+- **Moved Folder Path**`string`: Enter a name to save the path of the moved folder
 
 
 **Command Output**

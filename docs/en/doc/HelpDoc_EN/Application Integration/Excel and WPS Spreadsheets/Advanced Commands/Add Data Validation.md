@@ -16,51 +16,51 @@ Add Data Validation
 
 **Command Input**
 
-- **Sheet Name`string`**: Worksheet name
+- **Sheet Name**`string`: Worksheet name
 
-- **Column Name`string`**: Column name. Start from A
+- **Column Name**`string`: Column name. Start from A
 
-- **Row Number`Integer`**: Row number. Start from 1
+- **Row Number**`Integer`: Row number. Start from 1
 
-- **End Column Name`string`**: Column name. Start from A
+- **End Column Name**`string`: Column name. Start from A
 
-- **End Row Number`Integer`**: Row number. Start from 1
+- **End Row Number**`Integer`: Row number. Start from 1
 
-- **Start Column Name`string`**: Column name. Start from A
+- **Start Column Name**`string`: Column name. Start from A
 
-- **Start Row Number`Integer`**: Row number. Start from 1
+- **Start Row Number**`Integer`: Row number. Start from 1
 
-- **Unit Column Name`string`**: Column name. Start from A
+- **Unit Column Name**`string`: Column name. Start from A
 
-- **Unit Row Number`Integer`**: Row number. Start from 1
+- **Unit Row Number**`Integer`: Row number. Start from 1
 
-- **Region Type`Integer`**: Select the range for data validation
+- **Region Type**`Integer`: Select the range for data validation
 
-- **Formula`string`**: Formula
+- **Formula**`string`: Formula
 
-- **End Time`string`**: End Time
+- **End Time**`string`: End Time
 
-- **Start Time`string`**: Start Time
+- **Start Time**`string`: Start Time
 
-- **End Date`string`**: End Date
+- **End Date**`string`: End Date
 
-- **Start Date`string`**: Start Date
+- **Start Date**`string`: Start Date
 
-- **Source`string`**: Source
+- **Source**`string`: Source
 
-- **Maximum Value`Integer`**: Maximum Value
+- **Maximum Value**`Integer`: Maximum Value
 
-- **Minimum Value`Integer`**: Minimum Value
+- **Minimum Value**`Integer`: Minimum Value
 
-- **Data Type`Integer`**: Select data calculation method
+- **Data Type**`Integer`: Select data calculation method
 
-- **Provide Dropdown Arrow`Boolean`**: Provide Dropdown Arrow
+- **Provide Dropdown Arrow**`Boolean`: Provide Dropdown Arrow
 
-- **Ignore Null Values`Boolean`**: If checked, null values will be ignored
+- **Ignore Null Values**`Boolean`: If checked, null values will be ignored
 
-- **Allow Type`Integer`**: Allow Type
+- **Allow Type**`Integer`: Allow Type
 
-- **Excel Instance`TWorkbookApplication`**: Enter an Excel instance obtained by the functions 'Open or New Excel'/'Get Active Excel Instance'
+- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained by the functions 'Open or New Excel'/'Get Active Excel Instance'
 
 
 **Command Output**

@@ -16,21 +16,21 @@ Paste Excel content
 
 **Command Input**
 
-- **Sheet name`string`**: If empty, it defaults to the currently active sheet
+- **Sheet name**`string`: If empty, it defaults to the currently active sheet
 
-- **Transpose`Boolean`**: Whether to transpose
+- **Transpose**`Boolean`: Whether to transpose
 
-- **Skip empty cells`Boolean`**: Whether to skip empty cells
+- **Skip empty cells**`Boolean`: Whether to skip empty cells
 
-- **Selective paste operation`Integer`**: Selective paste operation
+- **Selective paste operation**`Integer`: Selective paste operation
 
-- **Selective paste`Integer`**: Selective paste
+- **Selective paste**`Integer`: Selective paste
 
-- **Unit column name`string`**: Column name. Starting from A
+- **Unit column name**`string`: Column name. Starting from A
 
-- **Unit row number`Integer`**: Row number. Starting from 1
+- **Unit row number**`Integer`: Row number. Starting from 1
 
-- **Excel object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+- **Excel object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
 
 
 **Command Output**

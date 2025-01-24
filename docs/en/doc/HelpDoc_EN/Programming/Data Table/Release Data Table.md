@@ -16,7 +16,7 @@ Release the data table
 
 **Command Input**
 
-- **Data Table Object`TDataTable`**: Data Table Object
+- **Data Table Object**`TDataTable`: Data Table Object
 
 
 **Command Output**

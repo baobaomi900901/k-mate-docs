@@ -16,13 +16,13 @@ title: 写入文本至Word中
 
 **指令输入**
 
-- **写入文本前换行`Boolean`**: 若勾选,则在写入前换行
+- **写入文本前换行**`Boolean`: 若勾选,则在写入前换行
 
-- **文本样式`string`**: 设置文本样式
+- **文本样式**`string`: 设置文本样式
 
-- **文本内容`string`**: 写入到当前选择区域的文本
+- **文本内容**`string`: 写入到当前选择区域的文本
 
-- **Word对象`TDocumentApplication`**: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
 
 
 **指令输出**

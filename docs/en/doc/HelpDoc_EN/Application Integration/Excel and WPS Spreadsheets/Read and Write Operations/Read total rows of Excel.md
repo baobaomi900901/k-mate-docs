@@ -16,14 +16,14 @@ Read total rows of Excel
 
 **Command Input**
 
-- **Sheet name`string`**: If empty, it defaults to the currently active sheet
+- **Sheet name**`string`: If empty, it defaults to the currently active sheet
 
-- **Excel object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+- **Excel object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
 
 
 **Command Output**
 
-- **Save total rows to`Integer`**: Save total rows
+- **Save total rows to**`Integer`: Save total rows
 
 
 **Command Output**

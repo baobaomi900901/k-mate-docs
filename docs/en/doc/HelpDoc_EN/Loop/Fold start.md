@@ -16,7 +16,7 @@ Fold a group of commands to make it easier to read, folding starts here
 
 **Command Input**
 
-- **Fold area name`string`**: Name of the fold area
+- **Fold area name**`string`: Name of the fold area
 
 
 **Command Output**

@@ -16,15 +16,15 @@ Set row height
 
 **Command Input**
 
-- **Sheet Name`string`**: Worksheet name
+- **Sheet Name**`string`: Worksheet name
 
-- **Row Height`Integer`**: Enter the row height
+- **Row Height**`Integer`: Enter the row height
 
-- **Mode`Integer`**: Choose the method to set the row height
+- **Mode**`Integer`: Choose the method to set the row height
 
-- **Row Number`string`**: Row number. Starting from 1
+- **Row Number**`string`: Row number. Starting from 1
 
-- **Excel Instance`TWorkbookApplication`**: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**

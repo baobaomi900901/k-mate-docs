@@ -16,20 +16,20 @@ Use natural language dialogue to let AI complete tasks like original writing, er
 
 **Command Input**
 
-- **Model Method`Integer`**: Choose the model method
+- **Model Method**`Integer`: Choose the model method
 
-- **Question Text`string`**: Enter the question text
+- **Question Text**`string`: Enter the question text
 
 
 **Command Output**
 
-- **Save the result to`string`**: Specify a variable to save the returned text
+- **Save the result to**`string`: Specify a variable to save the returned text
 
 ### Advanced
 
-- **Timeout (milliseconds)`Integer`**: Maximum waiting time (milliseconds)
+- **Timeout (milliseconds)**`Integer`: Maximum waiting time (milliseconds)
 
-- **Proxy Parameters`string`**: Proxy server, format as Address:Port
+- **Proxy Parameters**`string`: Proxy server, format as Address:Port
 
 
 **Command Output**

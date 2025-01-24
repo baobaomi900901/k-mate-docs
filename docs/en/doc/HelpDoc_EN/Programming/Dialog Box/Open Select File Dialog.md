@@ -16,22 +16,22 @@ Open Select File Dialog
 
 **Command Input**
 
-- **Check if File Exists`Boolean`**: Check if file exists
+- **Check if File Exists**`Boolean`: Check if file exists
 
-- **Allow Multiple Selections`Boolean`**: Allow multiple selections
+- **Allow Multiple Selections**`Boolean`: Allow multiple selections
 
-- **File Type`Integer`**: File Type
+- **File Type**`Integer`: File Type
 
-- **Dialog Title`string`**: Dialog Title
+- **Dialog Title**`string`: Dialog Title
 
 
 **Command Output**
 
-- **Save Selected File Result To`string`**: Specify a variable name to save the selected file result, return None if the user cancels the dialog, otherwise return a dict object
+- **Save Selected File Result To**`string`: Specify a variable name to save the selected file result, return None if the user cancels the dialog, otherwise return a dict object
 
 ### Advanced
 
-- **Default Folder`string`**: Default folder
+- **Default Folder**`string`: Default folder
 
 
 **Command Output**

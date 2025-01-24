@@ -16,28 +16,28 @@ Capture the screen or window and save it to the clipboard or a file
 
 **Command Input**
 
-- **Image Save Location`string`**: Location where the image is saved on the computer
+- **Image Save Location**`string`: Location where the image is saved on the computer
 
-- **Save Screenshot To`Integer`**: Choose where to save the screenshot
+- **Save Screenshot To**`Integer`: Choose where to save the screenshot
 
-- **Y2`Integer`**: Y2 coordinate of the screenshot area
+- **Y2**`Integer`: Y2 coordinate of the screenshot area
 
-- **X2`Integer`**: X2 coordinate of the screenshot area
+- **X2**`Integer`: X2 coordinate of the screenshot area
 
-- **Y1`Integer`**: Y1 coordinate of the screenshot area
+- **Y1**`Integer`: Y1 coordinate of the screenshot area
 
-- **X1`Integer`**: X1 coordinate of the screenshot area
+- **X1**`Integer`: X1 coordinate of the screenshot area
 
-- **Screenshot Region`Integer`**: The region to capture
+- **Screenshot Region**`Integer`: The region to capture
 
-- **Window Object`string`**: Specify a window object to capture
+- **Window Object**`string`: Specify a window object to capture
 
-- **Screenshot Source`Integer`**: Choose whether to capture the entire screen or a specific window
+- **Screenshot Source**`Integer`: Choose whether to capture the entire screen or a specific window
 
 
 **Command Output**
 
-- **Did the user cancel the screenshot`string`**: Input a variable to store whether the user canceled the screenshot
+- **Did the user cancel the screenshot**`string`: Input a variable to store whether the user canceled the screenshot
 
 
 **Command Output**

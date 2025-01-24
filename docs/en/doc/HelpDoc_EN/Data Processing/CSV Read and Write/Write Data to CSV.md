@@ -16,13 +16,13 @@ Write data to a CSV file
 
 **Command Input**
 
-- **Data Table`TDataTable`**: Enter the data table to be written to the CSV file
+- **Data Table**`TDataTable`: Enter the data table to be written to the CSV file
 
-- **Write Method`Integer`**: Select the write method
+- **Write Method**`Integer`: Select the write method
 
-- **File Encoding`Integer`**: Select the text encoding format
+- **File Encoding**`Integer`: Select the text encoding format
 
-- **CSV File Path`string`**: Enter the path to the CSV file
+- **CSV File Path**`string`: Enter the path to the CSV file
 
 
 **Command Output**

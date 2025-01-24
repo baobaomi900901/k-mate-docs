@@ -16,15 +16,15 @@ Achieve the function of deleting duplicate values in Excel
 
 **Command Input**
 
-- **Data Contains Header`Boolean`**: When checked, the first row is a header and does not participate in the duplicate calculation
+- **Data Contains Header**`Boolean`: When checked, the first row is a header and does not participate in the duplicate calculation
 
-- **Sheet Name`string`**: If empty, it defaults to the currently active sheet
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
-- **Starting Row Number`Integer`**: Row number. Starts from 1
+- **Starting Row Number**`Integer`: Row number. Starts from 1
 
-- **Column Name with Duplicate Values`string`**: Column name. Starts from A
+- **Column Name with Duplicate Values**`string`: Column name. Starts from A
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**

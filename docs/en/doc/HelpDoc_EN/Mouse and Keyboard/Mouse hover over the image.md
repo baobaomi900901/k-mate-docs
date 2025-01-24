@@ -16,21 +16,21 @@ Mouse hover over the image
 
 **Command Input**
 
-- **Vertical offset`Integer`**: Enter a positive value to move down, negative value to move up
+- **Vertical offset**`Integer`: Enter a positive value to move down, negative value to move up
 
-- **Horizontal offset`Integer`**: Enter a positive value to move right, negative value to move left
+- **Horizontal offset**`Integer`: Enter a positive value to move right, negative value to move left
 
-- **Custom`Integer`**: Custom position
+- **Custom**`Integer`: Custom position
 
-- **Position of the target image`Integer`**: Select the position on the target image to hover
+- **Position of the target image**`Integer`: Select the position on the target image to hover
 
-- **Target image`string`**: Multiple images can be selected, and they will be searched in sequence until any matching image is found and clicked within the timeout period
+- **Target image**`string`: Multiple images can be selected, and they will be searched in sequence until any matching image is found and clicked within the timeout period
 
-- **sAllImages`string`**: 
+- **sAllImages**`string`: 
 
-- **Window object`TWinObj`**: Please select the window object
+- **Window object**`TWinObj`: Please select the window object
 
-- **Search scope`Integer`**: Search scope
+- **Search scope**`Integer`: Search scope
 
 
 **Command Output**
@@ -39,9 +39,9 @@ No output for the current command
 
 ### Advanced
 
-- **Delay after execution (milliseconds)`Integer`**: The time to wait after the instruction is executed
+- **Delay after execution (milliseconds)**`Integer`: The time to wait after the instruction is executed
 
-- **Timeout (milliseconds)`Integer`**: Set the maximum waiting time
+- **Timeout (milliseconds)**`Integer`: Set the maximum waiting time
 
 
 **Command Output**

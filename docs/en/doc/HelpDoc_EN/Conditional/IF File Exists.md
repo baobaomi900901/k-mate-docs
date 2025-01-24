@@ -16,9 +16,9 @@ Check if the file exists
 
 **Command Input**
 
-- **Does the file exist`Integer`**: Select the expected file existence status
+- **Does the file exist**`Integer`: Select the expected file existence status
 
-- **File Path`string`**: Enter or select the file path
+- **File Path**`string`: Enter or select the file path
 
 
 **Command Output**

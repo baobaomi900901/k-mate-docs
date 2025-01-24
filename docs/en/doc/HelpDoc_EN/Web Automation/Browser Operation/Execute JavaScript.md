@@ -16,24 +16,24 @@ Execute a piece of JavaScript in the specified web page and get the result of th
 
 **Command Input**
 
-- **JavaScript Script`string`**: Write a piece of JavaScript for execution
+- **JavaScript Script**`string`: Write a piece of JavaScript for execution
 
-- **Parameter`string`**: Fill in the parameters to be passed into the JavaScript
+- **Parameter**`string`: Fill in the parameters to be passed into the JavaScript
 
-- **Operation Target`TTarget`**: Select the web element to operate on
+- **Operation Target**`TTarget`: Select the web element to operate on
 
-- **Web Page Object`TBrowser`**: Enter a web page object that has been obtained or created by the 'Open Web Page' function
+- **Web Page Object**`TBrowser`: Enter a web page object that has been obtained or created by the 'Open Web Page' function
 
 
 **Command Output**
 
-- **Store Script Execution Result To`string`**: Specify a variable to store the script execution result
+- **Store Script Execution Result To**`string`: Specify a variable to store the script execution result
 
 ### Advanced
 
-- **Execution Environment`Integer`**: The target execution environment for the JS script
+- **Execution Environment**`Integer`: The target execution environment for the JS script
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout time to wait for the element to exist
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout time to wait for the element to exist
 
 
 **Command Output**

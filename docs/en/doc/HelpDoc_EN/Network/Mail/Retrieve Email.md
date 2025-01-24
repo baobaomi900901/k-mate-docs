@@ -16,46 +16,46 @@ Retrieve email from the specified mailbox
 
 **Command Input**
 
-- **Save Folder`string`**: Path to save attachments
+- **Save Folder**`string`: Path to save attachments
 
-- **Save Email Attachments`Boolean`**: Whether to save email attachments
+- **Save Email Attachments**`Boolean`: Whether to save email attachments
 
-- **Only Unread Emails`Boolean`**: Retrieve only unread emails
+- **Only Unread Emails**`Boolean`: Retrieve only unread emails
 
-- **Number of Emails`Integer`**: Retrieve the top N emails from the mailbox
+- **Number of Emails**`Integer`: Retrieve the top N emails from the mailbox
 
-- **Authorization Code`string`**: The authorization code for IMAP server authentication, usually requires SMS verification to enable, some email services may use account password instead, depending on the email service provider
+- **Authorization Code**`string`: The authorization code for IMAP server authentication, usually requires SMS verification to enable, some email services may use account password instead, depending on the email service provider
 
-- **Email Account`string`**: The user for IMAP server authentication, usually the email account
+- **Email Account**`string`: The user for IMAP server authentication, usually the email account
 
-- **Enable SSL`Boolean`**: Specify whether SSL should be used to send messages
+- **Enable SSL**`Boolean`: Specify whether SSL should be used to send messages
 
-- **IMAP Port`Integer`**: Enter the specified IMAP port number
+- **IMAP Port**`Integer`: Enter the specified IMAP port number
 
-- **IMAP Server`string`**: Enter the specified IMAP server
+- **IMAP Server**`string`: Enter the specified IMAP server
 
-- **Email Type`Integer`**: Send email messages using different email types
+- **Email Type**`Integer`: Send email messages using different email types
 
 
 **Command Output**
 
-- **Save Email List To`TList<TMailMessage>`**: Specify a variable name to store the retrieved email list
+- **Save Email List To**`TList<TMailMessage>`: Specify a variable name to store the retrieved email list
 
 ### Advanced
 
-- **Content in Body`string`**: Content in the body of the email
+- **Content in Body**`string`: Content in the body of the email
 
-- **Content in Subject`string`**: Content in the subject line
+- **Content in Subject**`string`: Content in the subject line
 
-- **Content in Recipient`string`**: Content in the recipient field
+- **Content in Recipient**`string`: Content in the recipient field
 
-- **Content in Sender`string`**: Content in the sender field
+- **Content in Sender**`string`: Content in the sender field
 
-- **Mark as Read`Boolean`**: After retrieving emails, mark them as read
+- **Mark as Read**`Boolean`: After retrieving emails, mark them as read
 
-- **Folder Name`string`**: Folder name
+- **Folder Name**`string`: Folder name
 
-- **Folder Specification Mode`Integer`**: Folder specification method
+- **Folder Specification Mode**`Integer`: Folder specification method
 
 
 **Command Output**

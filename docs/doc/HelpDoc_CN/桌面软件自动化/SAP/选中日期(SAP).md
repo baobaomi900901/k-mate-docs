@@ -16,21 +16,21 @@ title: 选中日期(SAP)
 
 **指令输入**
 
-- **周`Integer`**: 第几个完整周
+- **周**`Integer`: 第几个完整周
 
-- **年`Integer`**: 第几年
+- **年**`Integer`: 第几年
 
-- **结束日期`string`**: 格式：yyyy-mm-dd
+- **结束日期**`string`: 格式：yyyy-mm-dd
 
-- **起始日期`string`**: 格式：yyyy-mm-dd
+- **起始日期**`string`: 格式：yyyy-mm-dd
 
-- **日期`string`**: 格式：yyyy-mm-dd
+- **日期**`string`: 格式：yyyy-mm-dd
 
-- **日期选择方式`Integer`**: 日期选择方式
+- **日期选择方式**`Integer`: 日期选择方式
 
-- **操作目标`TTarget`**: 选择需要操作的日历元素
+- **操作目标**`TTarget`: 选择需要操作的日历元素
 
-- **窗口对象`TWinObj`**: 输入一个获取到的SAP会话窗口
+- **窗口对象**`TWinObj`: 输入一个获取到的SAP会话窗口
 
 
 **指令输出**
@@ -39,7 +39,7 @@ title: 选中日期(SAP)
 
 ### 高级
 
-- **等待元素存在(毫秒)`Integer`**: 等待目标元素存在的超时时间
+- **等待元素存在(毫秒)**`Integer`: 等待目标元素存在的超时时间
 
 ### 错误处理
 

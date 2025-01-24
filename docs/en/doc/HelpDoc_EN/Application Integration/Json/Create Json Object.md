@@ -16,14 +16,14 @@ Create a Json object of a specified type
 
 **Command Input**
 
-- **Processing Type`Integer`**: The processing type for Json, default uses the original logic, second option uses uLkJSON processing logic
+- **Processing Type**`Integer`: The processing type for Json, default uses the original logic, second option uses uLkJSON processing logic
 
-- **Data Type`Integer`**: Select the data type
+- **Data Type**`Integer`: Select the data type
 
 
 **Command Output**
 
-- **Json Object`TJson`**: Returned Json object
+- **Json Object**`TJson`: Returned Json object
 
 
 **Command Output**

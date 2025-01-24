@@ -16,14 +16,14 @@ This command is used to change the case of text (to all uppercase, all lowercase
 
 **Command Input**
 
-- **Convert To`Integer`**: Select a conversion method
+- **Convert To**`Integer`: Select a conversion method
 
-- **Text Content`string`**: Enter a text string or select a variable containing the string
+- **Text Content**`string`: Enter a text string or select a variable containing the string
 
 
 **Command Output**
 
-- **Save Result To`string`**: Specify a variable to save the converted text content
+- **Save Result To**`string`: Specify a variable to save the converted text content
 
 
 **Command Output**

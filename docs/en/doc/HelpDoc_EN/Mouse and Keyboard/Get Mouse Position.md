@@ -16,14 +16,14 @@ Get the position of the mouse when this instruction is executed during the robot
 
 **Command Input**
 
-- **Relative to`Integer`**: The position of the mouse
+- **Relative to**`Integer`: The position of the mouse
 
 
 **Command Output**
 
-- **Relative vertical coordinate`Integer`**: Specify a variable to store the vertical coordinate of the current mouse position
+- **Relative vertical coordinate**`Integer`: Specify a variable to store the vertical coordinate of the current mouse position
 
-- **Relative horizontal coordinate`Integer`**: Specify a variable to store the horizontal coordinate of the current mouse position
+- **Relative horizontal coordinate**`Integer`: Specify a variable to store the horizontal coordinate of the current mouse position
 
 
 **Command Output**

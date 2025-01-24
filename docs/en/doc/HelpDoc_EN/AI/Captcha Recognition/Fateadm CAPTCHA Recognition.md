@@ -16,18 +16,18 @@ Call Fateadm AI interface for CAPTCHA recognition
 
 **Command Input**
 
-- **Recognition Type`Integer`**: Select the captcha type to be recognized
+- **Recognition Type**`Integer`: Select the captcha type to be recognized
 
-- **Image File`string`**: Enter or select the image path
+- **Image File**`string`: Enter or select the image path
 
 
 **Command Output**
 
-- **Result`string`**: Specify a variable to store the result
+- **Result**`string`: Specify a variable to store the result
 
 ### Advanced
 
-- **Proxy parameter`string`**: Proxy server, format: address:port
+- **Proxy parameter**`string`: Proxy server, format: address:port
 
 
 **Command Output**

@@ -16,14 +16,14 @@ Generate a random number
 
 **Command Input**
 
-- **Maximum Number`Integer`**: The random number is generated within this range, including the start and end numbers
+- **Maximum Number**`Integer`: The random number is generated within this range, including the start and end numbers
 
-- **Minimum Number`Integer`**: The random number is generated within this range, including the start and end numbers
+- **Minimum Number**`Integer`: The random number is generated within this range, including the start and end numbers
 
 
 **Command Output**
 
-- **Save Random Number As`Integer`**: Enter a name to save the generated random number
+- **Save Random Number As**`Integer`: Enter a name to save the generated random number
 
 
 **Command Output**

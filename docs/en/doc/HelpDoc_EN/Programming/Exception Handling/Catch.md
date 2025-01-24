@@ -21,7 +21,7 @@ No input for the current command
 
 **Command Output**
 
-- **Error Information`string`**: Enter a name to store the error information in a variable. The error message will be saved to this variable if the command fails
+- **Error Information**`string`: Enter a name to store the error information in a variable. The error message will be saved to this variable if the command fails
 
 
 **Command Output**

@@ -21,7 +21,7 @@ No input for the current command
 
 **Command Output**
 
-- **Store Current Loop Position in`Integer`**: Store Current Loop Position in
+- **Store Current Loop Position in**`Integer`: Store Current Loop Position in
 
 
 **Command Output**

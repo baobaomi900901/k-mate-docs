@@ -16,27 +16,27 @@ Copy content from the Excel file
 
 **Command Input**
 
-- **Sheet name`string`**: If empty, it defaults to the currently active sheet
+- **Sheet name**`string`: If empty, it defaults to the currently active sheet
 
-- **End column name`string`**: Column name. Starting from A
+- **End column name**`string`: Column name. Starting from A
 
-- **End row number`Integer`**: Row number. Starting from 1
+- **End row number**`Integer`: Row number. Starting from 1
 
-- **Start column name`string`**: Column name. Starting from A
+- **Start column name**`string`: Column name. Starting from A
 
-- **Start row number`Integer`**: Row number. Starting from 1
+- **Start row number**`Integer`: Row number. Starting from 1
 
-- **Column name`string`**: Column name. Starting from A
+- **Column name**`string`: Column name. Starting from A
 
-- **Row number`Integer`**: Row number. Starting from 1
+- **Row number**`Integer`: Row number. Starting from 1
 
-- **Unit column name`string`**: Column name. Starting from A
+- **Unit column name**`string`: Column name. Starting from A
 
-- **Unit row number`Integer`**: Row number. Starting from 1
+- **Unit row number**`Integer`: Row number. Starting from 1
 
-- **Read method`Integer`**: Select read method
+- **Read method**`Integer`: Select read method
 
-- **Excel object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+- **Excel object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
 
 
 **Command Output**

@@ -16,13 +16,13 @@ This command is used to remove a specified item from an object list
 
 **Command Input**
 
-- **Position to Remove`Integer`**: Enter the position to remove. Counting forwards: the first item is 0, the second item is 1, and so on; counting backwards: the last item is -1, the second to last item is -2, and so on.
+- **Position to Remove**`Integer`: Enter the position to remove. Counting forwards: the first item is 0, the second item is 1, and so on; counting backwards: the last item is -1, the second to last item is -2, and so on.
 
-- **Object to Remove`TObject`**: Enter the object to be removed
+- **Object to Remove**`TObject`: Enter the object to be removed
 
-- **Removal Method`Integer`**: Select whether to remove by index or by object
+- **Removal Method**`Integer`: Select whether to remove by index or by object
 
-- **List`TList<TObject>`**: Enter the object list variable
+- **List**`TList<TObject>`: Enter the object list variable
 
 
 **Command Output**

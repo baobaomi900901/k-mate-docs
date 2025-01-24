@@ -16,9 +16,9 @@ Check if folder exists
 
 **Command Input**
 
-- **Folder existence`Integer`**: Select whether the expected folder exists
+- **Folder existence**`Integer`: Select whether the expected folder exists
 
-- **Folder Path`string`**: Enter or select folder path
+- **Folder Path**`string`: Enter or select folder path
 
 
 **Command Output**

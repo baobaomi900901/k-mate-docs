@@ -16,12 +16,12 @@ Get the system folder path
 
 **Command Input**
 
-- **System Folder Name`Integer`**: Select the system folder name
+- **System Folder Name**`Integer`: Select the system folder name
 
 
 **Command Output**
 
-- **System Folder Path`string`**: Enter a name to save the system folder path
+- **System Folder Path**`string`: Enter a name to save the system folder path
 
 
 **Command Output**

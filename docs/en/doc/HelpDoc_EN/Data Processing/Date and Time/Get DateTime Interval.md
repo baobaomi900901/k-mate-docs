@@ -16,16 +16,16 @@ Get the interval between two dates and times
 
 **Command Input**
 
-- **Time Unit`Integer`**: Choose the time unit for the interval calculation
+- **Time Unit**`Integer`: Choose the time unit for the interval calculation
 
-- **End Time`TDateTime`**: Enter a date and time object for the end
+- **End Time**`TDateTime`: Enter a date and time object for the end
 
-- **Start Time`TDateTime`**: Enter a date and time object for the start
+- **Start Time**`TDateTime`: Enter a date and time object for the start
 
 
 **Command Output**
 
-- **Save Interval To`Integer`**: Specify a variable to save the calculated interval
+- **Save Interval To**`Integer`: Specify a variable to save the calculated interval
 
 
 **Command Output**

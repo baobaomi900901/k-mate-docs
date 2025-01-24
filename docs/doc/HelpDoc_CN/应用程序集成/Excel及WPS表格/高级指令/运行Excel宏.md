@@ -16,18 +16,18 @@ title: 运行Excel宏
 
 **指令输入**
 
-- **宏参数`TList<String>`**: 待传递至宏的一组参数（最多30个）
+- **宏参数**`TList<String>`: 待传递至宏的一组参数（最多30个）
 
-- **宏名称`string`**: 待执行的宏名称
+- **宏名称**`string`: 待执行的宏名称
 
-- **宏文件`string`**: 待执行的宏文件
+- **宏文件**`string`: 待执行的宏文件
 
-- **Excel对象`TWorkbookApplication`**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 
 **指令输出**
 
-- **宏输出`string`**: 指定一个变量，用于保存宏的输出(若有)
+- **宏输出**`string`: 指定一个变量，用于保存宏的输出(若有)
 
 ### 错误处理
 

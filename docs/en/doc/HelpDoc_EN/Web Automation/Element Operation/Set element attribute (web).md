@@ -16,13 +16,13 @@ Set the attributes of a web element.
 
 **Command Input**
 
-- **Attribute value`string`**: Enter the value for the attribute.
+- **Attribute value**`string`: Enter the value for the attribute.
 
-- **Attribute name`string`**: Enter the name of the attribute to set.
+- **Attribute name**`string`: Enter the name of the attribute to set.
 
-- **Operation target`TTarget`**: Select the web element to be operated on.
+- **Operation target**`TTarget`: Select the web element to be operated on.
 
-- **Webpage object`TBrowser`**: Enter a webpage object that has been obtained or created through the 'open webpage' function.
+- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
 
 
 **Command Output**
@@ -31,7 +31,7 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for element existence (ms)`Integer`**: Timeout for waiting for the target element to exist.
+- **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target element to exist.
 
 
 **Command Output**

@@ -16,40 +16,40 @@ You can locate a set of similar elements on the web page through three methods: 
 
 **Command Input**
 
-- **Output Similar Element Count`Boolean`**: Whether to output the count of similar elements.
+- **Output Similar Element Count**`Boolean`: Whether to output the count of similar elements.
 
-- **Attribute Name`string`**: The attribute name of the web element.
+- **Attribute Name**`string`: The attribute name of the web element.
 
-- **Intelligently Identify and Supplement Address Prefix (http:// or https://)`Boolean`**: Intelligently identify and supplement address prefix.
+- **Intelligently Identify and Supplement Address Prefix (http:// or https://)**`Boolean`: Intelligently identify and supplement address prefix.
 
-- **Element Operation`Integer`**: Information of the acquired element.
+- **Element Operation**`Integer`: Information of the acquired element.
 
-- **Parent Element`TTarget`**: Search for the target element within the parent element.
+- **Parent Element**`TTarget`: Search for the target element within the parent element.
 
-- **Related Parent Element`Boolean`**: Whether to associate with the parent element.
+- **Related Parent Element**`Boolean`: Whether to associate with the parent element.
 
-- **XPath Selector`string`**: XPath Selector
+- **XPath Selector**`string`: XPath Selector
 
-- **CSS Selector`string`**: CSS Selector
+- **CSS Selector**`string`: CSS Selector
 
-- **Operation Target`TTarget`**: Select the web element you want to operate on.
+- **Operation Target**`TTarget`: Select the web element you want to operate on.
 
-- **Positioning Method`Integer`**: Positioning Method
+- **Positioning Method**`Integer`: Positioning Method
 
-- **Web Page Object`TBrowser`**: Enter a web page object that has been obtained or created through the 'Open Web Page' function.
+- **Web Page Object**`TBrowser`: Enter a web page object that has been obtained or created through the 'Open Web Page' function.
 
 
 **Command Output**
 
-- **Save Similar Element Count To`Integer`**: Save the count of similar elements obtained.
+- **Save Similar Element Count To**`Integer`: Save the count of similar elements obtained.
 
-- **Save Similar Element List Information To`TList<String>`**: Save the information of the similar elements list obtained.
+- **Save Similar Element List Information To**`TList<String>`: Save the information of the similar elements list obtained.
 
-- **Save Similar Element List To`TList<TUiElement>`**: Save the list of similar elements obtained.
+- **Save Similar Element List To**`TList<TUiElement>`: Save the list of similar elements obtained.
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: The timeout period for waiting for the target associated element to exist.
+- **Wait for Element to Exist (Milliseconds)**`Integer`: The timeout period for waiting for the target associated element to exist.
 
 
 **Command Output**

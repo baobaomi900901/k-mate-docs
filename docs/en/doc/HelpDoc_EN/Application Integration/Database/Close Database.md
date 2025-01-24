@@ -16,7 +16,7 @@ Close the database
 
 **Command Input**
 
-- **Database Connection Object`TDatabase`**: Enter the database connection object
+- **Database Connection Object**`TDatabase`: Enter the database connection object
 
 
 **Command Output**

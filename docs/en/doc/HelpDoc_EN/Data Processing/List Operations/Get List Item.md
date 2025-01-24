@@ -16,14 +16,14 @@ This command is used to get an item from a specific position in the list
 
 **Command Input**
 
-- **Item Position`Integer`**: Enter the item position. Counting forwards: the first item is 0, the second item is 1, and so on; counting backwards: the last item is -1, the second to last item is -2, and so on.
+- **Item Position**`Integer`: Enter the item position. Counting forwards: the first item is 0, the second item is 1, and so on; counting backwards: the last item is -1, the second to last item is -2, and so on.
 
-- **List`TList<String>`**: Enter the list variable
+- **List**`TList<String>`: Enter the list variable
 
 
 **Command Output**
 
-- **Save List Item To`String`**: Specify a variable to save the found list item
+- **Save List Item To**`String`: Specify a variable to save the found list item
 
 
 **Command Output**

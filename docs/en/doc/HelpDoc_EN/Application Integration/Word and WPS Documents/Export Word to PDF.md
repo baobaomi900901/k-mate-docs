@@ -16,17 +16,17 @@ Export a Word document as a PDF
 
 **Command Input**
 
-- **Overwrite if File Exists`Boolean`**: Overwrite the file if it exists. If the PDF save path does not exist, it will be created automatically
+- **Overwrite if File Exists**`Boolean`: Overwrite the file if it exists. If the PDF save path does not exist, it will be created automatically
 
-- **Save PDF To`string`**: Enter the file name to save the exported PDF
+- **Save PDF To**`string`: Enter the file name to save the exported PDF
 
-- **End Page`Integer`**: Enter the end page number for exporting to PDF. Page numbering starts from 1
+- **End Page**`Integer`: Enter the end page number for exporting to PDF. Page numbering starts from 1
 
-- **Start Page`Integer`**: Enter the start page number for exporting to PDF. Page numbering starts from 1
+- **Start Page**`Integer`: Enter the start page number for exporting to PDF. Page numbering starts from 1
 
-- **Export Range`Integer`**: Provide various Word export range options
+- **Export Range**`Integer`: Provide various Word export range options
 
-- **Word Object`TDocumentApplication`**: Enter a Word object created by the 'Open or Create Word' function
+- **Word Object**`TDocumentApplication`: Enter a Word object created by the 'Open or Create Word' function
 
 
 **Command Output**

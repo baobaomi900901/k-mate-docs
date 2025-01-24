@@ -16,40 +16,40 @@ Read content from an Excel file, supports reading within a rectangular area rang
 
 **Command Input**
 
-- **Sheet Page Name`string`**: If empty, it defaults to the currently active Sheet page.
+- **Sheet Page Name**`string`: If empty, it defaults to the currently active Sheet page.
 
-- **Ending Column Name`string`**: Column name. Starts from A.
+- **Ending Column Name**`string`: Column name. Starts from A.
 
-- **Ending Row Number`Integer`**: Row number. Starts from 1.
+- **Ending Row Number**`Integer`: Row number. Starts from 1.
 
-- **Starting Column Name`string`**: Column name. Starts from A.
+- **Starting Column Name**`string`: Column name. Starts from A.
 
-- **Starting Row Number`Integer`**: Row number. Starts from 1.
+- **Starting Row Number**`Integer`: Row number. Starts from 1.
 
-- **Column Name`string`**: Column name. Starts from A.
+- **Column Name**`string`: Column name. Starts from A.
 
-- **Row Number`Integer`**: Row number. Starts from 1.
+- **Row Number**`Integer`: Row number. Starts from 1.
 
-- **Cell Column Name`string`**: Column name. Starts from A.
+- **Cell Column Name**`string`: Column name. Starts from A.
 
-- **Cell Row Number`Integer`**: Row number. Starts from 1.
+- **Cell Row Number**`Integer`: Row number. Starts from 1.
 
-- **Read Method`Integer`**: The method of reading an Excel file.
+- **Read Method**`Integer`: The method of reading an Excel file.
 
-- **Excel Object`TWorkbookApplication`**: Input an Excel object obtained through the function 'Open or New Excel'/'Get Currently Active Excel Object'.
+- **Excel Object**`TWorkbookApplication`: Input an Excel object obtained through the function 'Open or New Excel'/'Get Currently Active Excel Object'.
 
 
 **Command Output**
 
-- **Save Excel Data Object To`TDataTable`**: Save area data content.
+- **Save Excel Data Object To**`TDataTable`: Save area data content.
 
 ### Advanced
 
-- **Clear Space Before and After Cell`Boolean`**: If checked, automatically clears spaces before and after the read content.
+- **Clear Space Before and After Cell**`Boolean`: If checked, automatically clears spaces before and after the read content.
 
-- **Displayed Content Column`string`**: Display visible content, multiple columns separated by commas.
+- **Displayed Content Column**`string`: Display visible content, multiple columns separated by commas.
 
-- **Read Cell Displayed Content`Boolean`**: If unchecked, integers are read as decimals (1=1.0).
+- **Read Cell Displayed Content**`Boolean`: If unchecked, integers are read as decimals (1=1.0).
 
 
 **Command Output**

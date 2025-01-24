@@ -16,34 +16,34 @@ Call the Kingsware AI interface for captcha recognition
 
 **Command Input**
 
-- **Captcha Type`Integer`**: Enter the appropriate captcha type
+- **Captcha Type**`Integer`: Enter the appropriate captcha type
 
-- **Type`Integer`**: Obtain the type
+- **Type**`Integer`: Obtain the type
 
-- **Slider Image File`string`**: Enter the path of the slider image file to select
+- **Slider Image File**`string`: Enter the path of the slider image file to select
 
-- **Label`String`**: Objects in the 9-grid
+- **Label**`String`: Objects in the 9-grid
 
-- **Label Type`String`**: Enter the correct label type
+- **Label Type**`String`: Enter the correct label type
 
-- **Image Path`string`**: Enter the image path to select
+- **Image Path**`string`: Enter the image path to select
 
-- **Recognition Method`Integer`**: Choose the recognition method
+- **Recognition Method**`Integer`: Choose the recognition method
 
 
 **Command Output**
 
-- **Error Information`String`**: Specify a variable to store the error information.
+- **Error Information**`String`: Specify a variable to store the error information.
 
-- **Response Body Information`String`**: Specify a variable to store the response body information.
+- **Response Body Information**`String`: Specify a variable to store the response body information.
 
-- **Response Header Information`String`**: Specify a variable to store the response header information.
+- **Response Header Information**`String`: Specify a variable to store the response header information.
 
 ### Advanced
 
-- **sProxyParam`string`**: 
+- **sProxyParam**`string`: 
 
-- **Response Header Type`array of string`**: When the server and client establish a long connection, it is necessary to set the HTTP response header 'Connection'. The default is ['Connection'].
+- **Response Header Type**`array of string`: When the server and client establish a long connection, it is necessary to set the HTTP response header 'Connection'. The default is ['Connection'].
 
 
 **Command Output**

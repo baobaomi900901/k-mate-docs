@@ -16,19 +16,19 @@ title: 粘贴Excel内容
 
 **指令输入**
 
-- **Sheet页名称`string`**: 为空则默认为当前激活的Sheet页
+- **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
 
-- **转置`Boolean`**: 是否转置
+- **转置**`Boolean`: 是否转置
 
-- **跳过空单元`Boolean`**: 是否跳过空单元
+- **跳过空单元**`Boolean`: 是否跳过空单元
 
-- **选择性粘贴`Integer`**: 选择性粘贴
+- **选择性粘贴**`Integer`: 选择性粘贴
 
-- **单元列名`string`**: 列名。从A开始
+- **单元列名**`string`: 列名。从A开始
 
-- **单元行号`Integer`**: 行号。从1开始
+- **单元行号**`Integer`: 行号。从1开始
 
-- **Excel对象`TWorkbookApplication`**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 
 **指令输出**

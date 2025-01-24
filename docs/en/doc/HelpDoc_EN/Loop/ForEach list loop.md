@@ -16,22 +16,22 @@ Loop through each item in the list for automation operations
 
 **Command Input**
 
-- **Output loop item position`Boolean`**: Whether to output the position of the loop item
+- **Output loop item position**`Boolean`: Whether to output the position of the loop item
 
-- **List`TObject`**: Input a list
+- **List**`TObject`: Input a list
 
 
 **Command Output**
 
-- **Store loop item to`Variant`**: Specify a variable name to store the current loop item
+- **Store loop item to**`Variant`: Specify a variable name to store the current loop item
 
-- **Store current loop position to`Integer`**: Specify a variable name to store the current loop item's position
+- **Store current loop position to**`Integer`: Specify a variable name to store the current loop item's position
 
 ### Advanced
 
-- **Loop end position`Integer`**: The ending position of the loop, -1 indicates the last item, and the result includes the item at the end position
+- **Loop end position**`Integer`: The ending position of the loop, -1 indicates the last item, and the result includes the item at the end position
 
-- **Loop start position`Integer`**: The starting position of the loop, 0 indicates the first item
+- **Loop start position**`Integer`: The starting position of the loop, 0 indicates the first item
 
 
 **Command Output**

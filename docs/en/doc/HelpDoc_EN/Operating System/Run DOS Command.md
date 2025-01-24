@@ -16,22 +16,22 @@ This instruction is used to execute a DOS command and return the result
 
 **Command Input**
 
-- **Wait Time`Integer`**: Maximum wait time, 0 means unlimited wait
+- **Wait Time**`Integer`: Maximum wait time, 0 means unlimited wait
 
-- **Encoding Format`Integer`**: Set the text format for the command line
+- **Encoding Format**`Integer`: Set the text format for the command line
 
-- **Working Directory`string`**: The working directory for the command in the process
+- **Working Directory**`string`: The working directory for the command in the process
 
-- **DOS Command`string`**: Input the DOS command string
+- **DOS Command**`string`: Input the DOS command string
 
 
 **Command Output**
 
-- **Save exit code to`Integer`**: Input a name to save the exit code, which should be an integer
+- **Save exit code to**`Integer`: Input a name to save the exit code, which should be an integer
 
-- **Save error information to`string`**: Input a name to save the error information
+- **Save error information to**`string`: Input a name to save the error information
 
-- **Save execution result to`string`**: Output a name to save the result of the DOS command execution
+- **Save execution result to**`string`: Output a name to save the result of the DOS command execution
 
 
 **Command Output**

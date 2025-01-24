@@ -16,16 +16,16 @@ Get the first available column on the specified row
 
 **Command Input**
 
-- **Sheet Name`string`**: If empty, it defaults to the currently active sheet
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
-- **Row Number`string`**: Row number. Starts from 1
+- **Row Number**`string`: Row number. Starts from 1
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
 
 
 **Command Output**
 
-- **Save Column Name To`string`**: Specify a variable to save the first available column name on the row
+- **Save Column Name To**`string`: Specify a variable to save the first available column name on the row
 
 
 **Command Output**

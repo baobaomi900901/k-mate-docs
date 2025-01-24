@@ -16,7 +16,7 @@ This command is used to reverse a list
 
 **Command Input**
 
-- **List`TList<String>`**: Enter the list variable
+- **List**`TList<String>`: Enter the list variable
 
 
 **Command Output**

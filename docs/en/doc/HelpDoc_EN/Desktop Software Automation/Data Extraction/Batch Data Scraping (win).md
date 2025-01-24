@@ -16,40 +16,40 @@ Scrape batch data from the target window, commonly used for scraping list pages,
 
 **Command Input**
 
-- **Save to Data Table`Boolean`**: Whether to save the results to a data table
+- **Save to Data Table**`Boolean`: Whether to save the results to a data table
 
-- **Number of Pages`Integer`**: Maximum pages to scrape
+- **Number of Pages**`Integer`: Maximum pages to scrape
 
-- **Next Page Button`TTarget`**: Pagination element
+- **Next Page Button**`TTarget`: Pagination element
 
-- **Number of Pages to Extract`Integer`**: Choose how many pages of data to extract
+- **Number of Pages to Extract**`Integer`: Choose how many pages of data to extract
 
-- **Operation Target`TTarget`**: Table element to be scraped
+- **Operation Target**`TTarget`: Table element to be scraped
 
-- **Window Object`TWinObj`**: Enter the window object
+- **Window Object**`TWinObj`: Enter the window object
 
 
 **Command Output**
 
-- **Save Batch Data to`TDataTable`**: Save the retrieved batch data to a table
+- **Save Batch Data to**`TDataTable`: Save the retrieved batch data to a table
 
 ### Advanced
 
-- **Maximum Delay Duration (milliseconds)`Integer`**: Longest wait time after execution
+- **Maximum Delay Duration (milliseconds)**`Integer`: Longest wait time after execution
 
-- **Minimum Delay Duration (milliseconds)`Integer`**: Shortest wait time after execution
+- **Minimum Delay Duration (milliseconds)**`Integer`: Shortest wait time after execution
 
-- **Simulate Page Turn Delay`Boolean`**: Simulate the delay during a real person's page turn
+- **Simulate Page Turn Delay**`Boolean`: Simulate the delay during a real person's page turn
 
-- **Automatically Scroll to the Bottom of the Page`Boolean`**: Automatically scroll to load the page before scraping, can be disabled
+- **Automatically Scroll to the Bottom of the Page**`Boolean`: Automatically scroll to load the page before scraping, can be disabled
 
-- **Send Window Messages`Boolean`**: Send window messages to trigger the click
+- **Send Window Messages**`Boolean`: Send window messages to trigger the click
 
-- **Simulate Manual Click on Next Page Button`Boolean`**: Simulate a manual click event
+- **Simulate Manual Click on Next Page Button**`Boolean`: Simulate a manual click event
 
-- **Page Turn Interval (milliseconds)`Integer`**: Interval between page turns
+- **Page Turn Interval (milliseconds)**`Integer`: Interval between page turns
 
-- **Custom Column Name`string`**: Custom column names, separated by commas.
+- **Custom Column Name**`string`: Custom column names, separated by commas.
 
 
 **Command Output**

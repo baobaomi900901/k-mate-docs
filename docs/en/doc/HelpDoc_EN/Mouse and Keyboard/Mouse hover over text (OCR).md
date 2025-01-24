@@ -16,11 +16,11 @@ Search for and hover the mouse over the specified text in a UI element. Before u
 
 **Command Input**
 
-- **Target`TTarget`**: Target element
+- **Target**`TTarget`: Target element
 
-- **Recognition method`Integer`**: Select the recognition method. The text recognition method requires the text plugin to be installed, and the OCR recognition method requires the OCR plugin to be installed.
+- **Recognition method**`Integer`: Select the recognition method. The text recognition method requires the text plugin to be installed, and the OCR recognition method requires the OCR plugin to be installed.
 
-- **Text`string`**: The text to hover over
+- **Text**`string`: The text to hover over
 
 
 **Command Output**
@@ -29,23 +29,23 @@ No output for the current command
 
 ### Advanced
 
-- **Delay after execution (milliseconds)`Integer`**: Time to continue waiting after the instruction is executed.
+- **Delay after execution (milliseconds)**`Integer`: Time to continue waiting after the instruction is executed.
 
-- **Timeout (milliseconds)`Integer`**: Maximum waiting time
+- **Timeout (milliseconds)**`Integer`: Maximum waiting time
 
-- **Vertical offset`Integer`**: Enter a positive number to move down, a negative number to move up.
+- **Vertical offset**`Integer`: Enter a positive number to move down, a negative number to move up.
 
-- **Horizontal offset`Integer`**: Enter a positive number to move right, a negative number to move left.
+- **Horizontal offset**`Integer`: Enter a positive number to move right, a negative number to move left.
 
-- **Custom`Integer`**: Custom position
+- **Custom**`Integer`: Custom position
 
-- **Target text position`Integer`**: Supports clicking the center of the element (center of the element's rectangular area), a random position (randomly specified point within the element's rectangular area), or a custom position (manually specified target point).
+- **Target text position**`Integer`: Supports clicking the center of the element (center of the element's rectangular area), a random position (randomly specified point within the element's rectangular area), or a custom position (manually specified target point).
 
-- **Formatted text`Boolean`**: If this checkbox is selected, the selected text’s screen layout will be preserved.
+- **Formatted text**`Boolean`: If this checkbox is selected, the selected text’s screen layout will be preserved.
 
-- **Send window messages`Boolean`**: If this checkbox is selected, hovering is performed by sending a specific message to the target application. This input method is faster and works in the background. By default, this checkbox is unchecked. If unchecked, the default method performs the hover using hardware drivers, which is the slowest method and cannot work in the background but is compatible with all desktop applications.
+- **Send window messages**`Boolean`: If this checkbox is selected, hovering is performed by sending a specific message to the target application. This input method is faster and works in the background. By default, this checkbox is unchecked. If unchecked, the default method performs the hover using hardware drivers, which is the slowest method and cannot work in the background but is compatible with all desktop applications.
 
-- **Occurrence count`Integer`**: The number of times the text appears in the UI element
+- **Occurrence count**`Integer`: The number of times the text appears in the UI element
 
 
 **Command Output**

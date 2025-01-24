@@ -16,13 +16,13 @@ Filter web listening results based on the entered resource path and resource typ
 
 **Command Input**
 
-- **Filter Resource Type`Integer`**: Get the type of web listening.
+- **Filter Resource Type**`Integer`: Get the type of web listening.
 
-- **Match According to Wildcard`Boolean`**: Use wildcards to filter the URL.
+- **Match According to Wildcard**`Boolean`: Use wildcards to filter the URL.
 
-- **Resource Path URL`string`**: Enter the resource for filtering the listening results.
+- **Resource Path URL**`string`: Enter the resource for filtering the listening results.
 
-- **Web Page Object`TBrowser`**: Enter a web page object that has been obtained or created through the 'Open Web Page' function.
+- **Web Page Object**`TBrowser`: Enter a web page object that has been obtained or created through the 'Open Web Page' function.
 
 
 **Command Output**

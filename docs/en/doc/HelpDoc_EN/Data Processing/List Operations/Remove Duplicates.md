@@ -16,7 +16,7 @@ This command is used to remove duplicate items from a list
 
 **Command Input**
 
-- **List`TList<String>`**: Enter the list variable
+- **List**`TList<String>`: Enter the list variable
 
 
 **Command Output**

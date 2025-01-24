@@ -16,30 +16,30 @@ This command is used to extract images from a PDF file. Before using, please ins
 
 **Command Input**
 
-- **Save Images To`string`**: Please enter the folder path to save the images
+- **Save Images To**`string`: Please enter the folder path to save the images
 
-- **Image Name Prefix`string`**: Please set a prefix for the extracted image names
+- **Image Name Prefix**`string`: Please set a prefix for the extracted image names
 
-- **Ending Page Number`Integer`**: Please enter the ending page number to extract. Page numbers start from 1.
+- **Ending Page Number**`Integer`: Please enter the ending page number to extract. Page numbers start from 1.
 
-- **Starting Page Number`Integer`**: Please enter the starting page number to extract. Page numbers start from 1.
+- **Starting Page Number**`Integer`: Please enter the starting page number to extract. Page numbers start from 1.
 
-- **Page Number`Integer`**: Please enter the page number to extract. Page numbers start from 1.
+- **Page Number**`Integer`: Please enter the page number to extract. Page numbers start from 1.
 
-- **Extraction Range`Integer`**: Select the page range to extract
+- **Extraction Range**`Integer`: Select the page range to extract
 
-- **File Path`string`**: Please enter the PDF file path
+- **File Path**`string`: Please enter the PDF file path
 
 
 **Command Output**
 
-- **Save Image Path List To`TList<String>`**: Set a variable to save the list of image paths
+- **Save Image Path List To**`TList<String>`: Set a variable to save the list of image paths
 
 ### Advanced
 
-- **Password`string`**: Enter the password required to open the file
+- **Password**`string`: Enter the password required to open the file
 
-- **Use Password`Boolean`**: Does the file require a password to open?
+- **Use Password**`Boolean`: Does the file require a password to open?
 
 
 **Command Output**

@@ -16,25 +16,25 @@ Move window to specified position
 
 **Command Input**
 
-- **Y`Integer`**: Window vertical coordinate
+- **Y**`Integer`: Window vertical coordinate
 
-- **X`Integer`**: Window horizontal coordinate
+- **X**`Integer`: Window horizontal coordinate
 
-- **Window Handle`Integer`**: Input a window handle
+- **Window Handle**`Integer`: Input a window handle
 
-- **Match Using Wildcards`Boolean`**: Match using wildcards
+- **Match Using Wildcards**`Boolean`: Match using wildcards
 
-- **Window Type`string`**: Input the window type
+- **Window Type**`string`: Input the window type
 
-- **Add Window Type`Boolean`**: Add window type
+- **Add Window Type**`Boolean`: Add window type
 
-- **Window Title`string`**: Input the window title
+- **Window Title**`string`: Input the window title
 
-- **Operation Target`TTarget`**: Select a window element
+- **Operation Target**`TTarget`: Select a window element
 
-- **Window Object`TWinObj`**: Input a captured window object
+- **Window Object**`TWinObj`: Input a captured window object
 
-- **Get Window Method`Integer`**: Select the method to get the window
+- **Get Window Method**`Integer`: Select the method to get the window
 
 
 **Command Output**

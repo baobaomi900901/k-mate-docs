@@ -16,11 +16,11 @@ Set the value of an element in the window, typically for input and select elemen
 
 **Command Input**
 
-- **Element value`string`**: Fill in the value to set for the element
+- **Element value**`string`: Fill in the value to set for the element
 
-- **Operation target`TTarget`**: Select the window element to operate on
+- **Operation target**`TTarget`: Select the window element to operate on
 
-- **Window object`TWinObj`**: Enter a captured window object
+- **Window object**`TWinObj`: Enter a captured window object
 
 
 **Command Output**
@@ -29,7 +29,7 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for element to exist (milliseconds)`Integer`**: Timeout for waiting for the target element to exist
+- **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
 
 **Command Output**

@@ -16,12 +16,12 @@ This command is used to get the length of a text string
 
 **Command Input**
 
-- **Text Content`string`**: Enter a text string or select a variable containing the string
+- **Text Content**`string`: Enter a text string or select a variable containing the string
 
 
 **Command Output**
 
-- **Save Text Length To`Integer`**: Specify a variable to save the length of the text content
+- **Save Text Length To**`Integer`: Specify a variable to save the length of the text content
 
 
 **Command Output**

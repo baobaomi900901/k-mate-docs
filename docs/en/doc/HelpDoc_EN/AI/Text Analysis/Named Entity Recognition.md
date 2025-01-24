@@ -16,20 +16,20 @@ Call the Kingsware AI interface to extract entities such as organizations, names
 
 **Command Input**
 
-- **Text`string`**: Enter the text content, which should not exceed 512 characters. The text format must be ["Text1","Text2",...]
+- **Text**`string`: Enter the text content, which should not exceed 512 characters. The text format must be ["Text1","Text2",...]
 
 
 **Command Output**
 
-- **Error Information`String`**: Return the error information
+- **Error Information**`String`: Return the error information
 
-- **Response Body Information`String`**: Return the response body information
+- **Response Body Information**`String`: Return the response body information
 
-- **Response Header Information`String`**: Return the response header information
+- **Response Header Information**`String`: Return the response header information
 
 ### Advanced
 
-- **Response Header Type`array of string`**: When a long connection is created between the server and the client, necessary settings must be made for the HTTP response header's connection, default is ['Connection']
+- **Response Header Type**`array of string`: When a long connection is created between the server and the client, necessary settings must be made for the HTTP response header's connection, default is ['Connection']
 
 
 **Command Output**

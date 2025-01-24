@@ -16,9 +16,9 @@ This command is used to delete a key-value pair from a dictionary
 
 **Command Input**
 
-- **Key to Delete`string`**: Enter the key name to be deleted
+- **Key to Delete**`string`: Enter the key name to be deleted
 
-- **Dictionary`TRPADictionary`**: Enter the dictionary variable
+- **Dictionary**`TRPADictionary`: Enter the dictionary variable
 
 
 **Command Output**

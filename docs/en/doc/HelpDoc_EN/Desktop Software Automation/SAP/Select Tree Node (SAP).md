@@ -16,20 +16,20 @@ Expand the tree to display the target node, and then select the target node
 
 **Command Input**
 
-- **Node Path`string`**: Node location path
+- **Node Path**`string`: Node location path
 
-- **Tree Element`TTarget`**: Select the SAP tree element where the target node is located
+- **Tree Element**`TTarget`: Select the SAP tree element where the target node is located
 
-- **Window Object`TWinObj`**: Enter a retrieved SAP session window
+- **Window Object**`TWinObj`: Enter a retrieved SAP session window
 
 
 **Command Output**
 
-- **Target Node Element`TUiElement`**: Specify a variable to save the retrieved target node element object
+- **Target Node Element**`TUiElement`: Specify a variable to save the retrieved target node element object
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout for waiting for the target tree element to exist
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target tree element to exist
 
 
 **Command Output**

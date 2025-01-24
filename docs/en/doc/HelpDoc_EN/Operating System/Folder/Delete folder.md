@@ -16,7 +16,7 @@ Delete the folder, including all subfolders and files within it
 
 **Command Input**
 
-- **Folder path`string`**: Path of the folder to be deleted
+- **Folder path**`string`: Path of the folder to be deleted
 
 
 **Command Output**

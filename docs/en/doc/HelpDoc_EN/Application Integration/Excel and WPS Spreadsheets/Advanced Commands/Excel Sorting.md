@@ -16,35 +16,35 @@ Perform ascending, descending, or custom sort on specified columns in Excel
 
 **Command Input**
 
-- **Sheet Name`string`**: Worksheet name
+- **Sheet Name**`string`: Worksheet name
 
-- **Column Name`string`**: Column name. Starts with A
+- **Column Name**`string`: Column name. Starts with A
 
-- **Row Number`Integer`**: Row number. Starts from 1
+- **Row Number**`Integer`: Row number. Starts from 1
 
-- **End Column Name`string`**: Column name. Starts with A
+- **End Column Name**`string`: Column name. Starts with A
 
-- **End Row Number`Integer`**: Row number. Starts from 1
+- **End Row Number**`Integer`: Row number. Starts from 1
 
-- **Start Column Name`string`**: Column name. Starts with A
+- **Start Column Name**`string`: Column name. Starts with A
 
-- **Start Row Number`Integer`**: Row number. Starts from 1
+- **Start Row Number**`Integer`: Row number. Starts from 1
 
-- **Region Type`Integer`**: Select the sort region type
+- **Region Type**`Integer`: Select the sort region type
 
-- **Custom Sort Column`string`**: Custom Sort Column
+- **Custom Sort Column**`string`: Custom Sort Column
 
-- **Custom Sort Settings`string`**: After completing the custom sort settings in Excel, click here to extract the settings information
+- **Custom Sort Settings**`string`: After completing the custom sort settings in Excel, click here to extract the settings information
 
-- **Exclude First Row from Sort`Boolean`**: If checked, the first row will not be included in the sort
+- **Exclude First Row from Sort**`Boolean`: If checked, the first row will not be included in the sort
 
-- **Expand Selected Range`Boolean`**: Expand Selected Range
+- **Expand Selected Range**`Boolean`: Expand Selected Range
 
-- **Sort Column`string`**: Enter the column name
+- **Sort Column**`string`: Enter the column name
 
-- **Sort Method`Integer`**: Select the sort method
+- **Sort Method**`Integer`: Select the sort method
 
-- **Excel Instance`TWorkbookApplication`**: Input an Excel instance obtained through 'Open or Create Excel'/'Get currently active Excel instance' function
+- **Excel Instance**`TWorkbookApplication`: Input an Excel instance obtained through 'Open or Create Excel'/'Get currently active Excel instance' function
 
 
 **Command Output**

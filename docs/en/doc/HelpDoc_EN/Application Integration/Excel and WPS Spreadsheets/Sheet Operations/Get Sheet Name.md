@@ -16,16 +16,16 @@ Get the name of the sheet
 
 **Command Input**
 
-- **Sheet Scope`Integer`**: Select the sheet to get the name from
+- **Sheet Scope**`Integer`: Select the sheet to get the name from
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**
 
-- **Save Sheet Name List To`TList<String>`**: Specify a variable to save the list of sheet names
+- **Save Sheet Name List To**`TList<String>`: Specify a variable to save the list of sheet names
 
-- **Save Sheet Name To`string`**: Variable to save the sheet name
+- **Save Sheet Name To**`string`: Variable to save the sheet name
 
 
 **Command Output**

@@ -16,28 +16,28 @@ Locate an element on a webpage using capture, CSS, or XPath methods.
 
 **Command Input**
 
-- **Parent element`TTarget`**: Find the target element within the parent element.
+- **Parent element**`TTarget`: Find the target element within the parent element.
 
-- **Associated parent element`Boolean`**: Whether to associate with the parent element.
+- **Associated parent element**`Boolean`: Whether to associate with the parent element.
 
-- **XPath selector`string`**: Enter the XPath selector.
+- **XPath selector**`string`: Enter the XPath selector.
 
-- **CSS selector`string`**: Enter the CSS selector.
+- **CSS selector**`string`: Enter the CSS selector.
 
-- **Operation target`TTarget`**: Select the web element to be operated on.
+- **Operation target**`TTarget`: Select the web element to be operated on.
 
-- **Locating method`Integer`**: Specify a method to locate an element.
+- **Locating method**`Integer`: Specify a method to locate an element.
 
-- **Webpage object`TBrowser`**: Enter a webpage object that has been obtained or created through the 'open webpage' function.
+- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
 
 
 **Command Output**
 
-- **Save element object to`TUiElement`**: Specify a variable to save the acquired element object.
+- **Save element object to**`TUiElement`: Specify a variable to save the acquired element object.
 
 ### Advanced
 
-- **Wait for element existence (ms)`Integer`**: Timeout for waiting for the target element to exist.
+- **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target element to exist.
 
 
 **Command Output**

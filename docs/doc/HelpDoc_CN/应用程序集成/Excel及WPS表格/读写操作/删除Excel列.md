@@ -16,11 +16,11 @@ title: 删除Excel列
 
 **指令输入**
 
-- **Sheet页名称`string`**: 为空则默认为当前激活的Sheet页
+- **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
 
-- **列名`string`**: 列名。从A开始
+- **列名**`string`: 列名。从A开始
 
-- **Excel对象`TWorkbookApplication`**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 
 **指令输出**

@@ -16,21 +16,21 @@ Activate the specified window to run in the foreground
 
 **Command Input**
 
-- **Window Handle`Integer`**: Enter a window handle
+- **Window Handle**`Integer`: Enter a window handle
 
-- **Match Using Wildcards`Boolean`**: Match using wildcards
+- **Match Using Wildcards**`Boolean`: Match using wildcards
 
-- **Window Type`string`**: Enter the window type
+- **Window Type**`string`: Enter the window type
 
-- **Add Window Type`Boolean`**: Add window type
+- **Add Window Type**`Boolean`: Add window type
 
-- **Window Title`string`**: Enter the window title
+- **Window Title**`string`: Enter the window title
 
-- **Operation Target`TTarget`**: Select a window element
+- **Operation Target**`TTarget`: Select a window element
 
-- **Window Object`TWinObj`**: Enter a captured window object
+- **Window Object**`TWinObj`: Enter a captured window object
 
-- **Method to Get Window`Integer`**: Select the method to get the window
+- **Method to Get Window**`Integer`: Select the method to get the window
 
 
 **Command Output**

@@ -16,24 +16,24 @@ Replace specified content in the text
 
 **Command Input**
 
-- **Replace With`string`**: Enter the replacement value
+- **Replace With**`string`: Enter the replacement value
 
-- **Ignore Case`Boolean`**: Whether to ignore case when matching strings
+- **Ignore Case**`Boolean`: Whether to ignore case when matching strings
 
-- **Replace Only First Match`Boolean`**: For example, if two phone numbers are found in the text, you can replace only the first one
+- **Replace Only First Match**`Boolean`: For example, if two phone numbers are found in the text, you can replace only the first one
 
-- **Text to Replace`string`**: Enter the content to be replaced
+- **Text to Replace**`string`: Enter the content to be replaced
 
-- **Regular Expression`string`**: Select a method for extracting content
+- **Regular Expression**`string`: Select a method for extracting content
 
-- **Replacement Method`Integer`**: Select a method for extracting content
+- **Replacement Method**`Integer`: Select a method for extracting content
 
-- **Source Content`string`**: Enter a text string or select a variable containing the string
+- **Source Content**`string`: Enter a text string or select a variable containing the string
 
 
 **Command Output**
 
-- **Save Result To`string`**: Specify a variable to save the replaced content
+- **Save Result To**`string`: Specify a variable to save the replaced content
 
 
 **Command Output**

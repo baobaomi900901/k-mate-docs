@@ -16,7 +16,7 @@ Throw an exception
 
 **Command Input**
 
-- **Exception Reason`string`**: The reason for the exception
+- **Exception Reason**`string`: The reason for the exception
 
 
 **Command Output**

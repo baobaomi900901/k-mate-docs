@@ -16,30 +16,30 @@ This instruction is used to save a specific page as an image
 
 **Command Input**
 
-- **Save image to`string`**: Please enter the folder path to save the image
+- **Save image to**`string`: Please enter the folder path to save the image
 
-- **Image name prefix`string`**: Please enter the image name prefix
+- **Image name prefix**`string`: Please enter the image name prefix
 
-- **Ending page number`Integer`**: Please enter the ending page number to extract. Page index starts from 1
+- **Ending page number**`Integer`: Please enter the ending page number to extract. Page index starts from 1
 
-- **Starting page number`Integer`**: Please enter the starting page number to extract. Page index starts from 1
+- **Starting page number**`Integer`: Please enter the starting page number to extract. Page index starts from 1
 
-- **Page number`Integer`**: Please enter the page number to extract. Page index starts from 1
+- **Page number**`Integer`: Please enter the page number to extract. Page index starts from 1
 
-- **Extract range`Integer`**: Select the page range to extract
+- **Extract range**`Integer`: Select the page range to extract
 
-- **File path`string`**: Please enter the PDF file path
+- **File path**`string`: Please enter the PDF file path
 
 
 **Command Output**
 
-- **Save image to`TList<String>`**: Specify a variable to save the list of image paths
+- **Save image to**`TList<String>`: Specify a variable to save the list of image paths
 
 ### Advanced
 
-- **Password`string`**: Password required to open the file
+- **Password**`string`: Password required to open the file
 
-- **Use password`Boolean`**: Whether a password is required to open the file
+- **Use password**`Boolean`: Whether a password is required to open the file
 
 
 **Command Output**

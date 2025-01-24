@@ -16,7 +16,7 @@ Switch the system input method, requires administrator privileges
 
 **Command Input**
 
-- **Switch to`string`**: Input method name, usually one of the names returned by the 'Get Input Method List' function
+- **Switch to**`string`: Input method name, usually one of the names returned by the 'Get Input Method List' function
 
 
 **Command Output**

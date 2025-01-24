@@ -21,7 +21,7 @@ No input for the current command
 
 **Command Output**
 
-- **Save Dictionary Object To`TRPADictionary`**: Specify a variable to save the new dictionary
+- **Save Dictionary Object To**`TRPADictionary`: Specify a variable to save the new dictionary
 
 
 **Command Output**

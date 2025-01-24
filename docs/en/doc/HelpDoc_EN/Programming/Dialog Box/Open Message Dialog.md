@@ -16,22 +16,22 @@ Open a message dialog
 
 **Command Input**
 
-- **Timeout in milliseconds`Integer`**: Set the time in milliseconds for the dialog to automatically close if no user action is taken
+- **Timeout in milliseconds**`Integer`: Set the time in milliseconds for the dialog to automatically close if no user action is taken
 
-- **Automatically click default button after timeout`Boolean`**: Automatically click the default button when the dialog exceeds the specified time without user interaction
+- **Automatically click default button after timeout**`Boolean`: Automatically click the default button when the dialog exceeds the specified time without user interaction
 
-- **Default Selected Button`Integer`**: Select a default button
+- **Default Selected Button**`Integer`: Select a default button
 
-- **Dialog Buttons`Integer`**: Select dialog buttons
+- **Dialog Buttons**`Integer`: Select dialog buttons
 
-- **Dialog Content`string`**: Dialog content
+- **Dialog Content**`string`: Dialog content
 
-- **Dialog Title`string`**: Dialog title
+- **Dialog Title**`string`: Dialog title
 
 
 **Command Output**
 
-- **Button Name`string`**: Specify a variable name to save the name of the pressed button
+- **Button Name**`string`: Specify a variable name to save the name of the pressed button
 
 
 **Command Output**

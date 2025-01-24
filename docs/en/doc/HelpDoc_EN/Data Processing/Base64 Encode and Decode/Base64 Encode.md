@@ -16,14 +16,14 @@ Base64 Encode
 
 **Command Input**
 
-- **Output String`Boolean`**: Output string
+- **Output String**`Boolean`: Output string
 
-- **Content`string`**: Enter the content to be encoded
+- **Content**`string`: Enter the content to be encoded
 
 
 **Command Output**
 
-- **Save Encoded Result To`string`**: Enter a name to save the Base64 encoded result
+- **Save Encoded Result To**`string`: Enter a name to save the Base64 encoded result
 
 
 **Command Output**

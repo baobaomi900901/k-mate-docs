@@ -16,9 +16,9 @@ Scroll the mouse wheel
 
 **Command Input**
 
-- **Scroll Times`Integer`**: Enter the number of scrolls
+- **Scroll Times**`Integer`: Enter the number of scrolls
 
-- **Scroll Direction`Integer`**: Select scroll direction: up or down
+- **Scroll Direction**`Integer`: Select scroll direction: up or down
 
 
 **Command Output**
@@ -27,19 +27,19 @@ No output for the current command
 
 ### Advanced
 
-- **Movement Speed`Integer`**: Speed of the mouse movement
+- **Movement Speed**`Integer`: Speed of the mouse movement
 
-- **Move Mouse to Y`Integer`**: Relative vertical coordinate
+- **Move Mouse to Y**`Integer`: Relative vertical coordinate
 
-- **Move Mouse to X`Integer`**: Relative horizontal coordinate
+- **Move Mouse to X**`Integer`: Relative horizontal coordinate
 
-- **Relative To`Integer`**: Mouse position
+- **Relative To**`Integer`: Mouse position
 
-- **Move Mouse to Specified Position Before Scrolling`Boolean`**: Move mouse to specified position before scrolling
+- **Move Mouse to Specified Position Before Scrolling**`Boolean`: Move mouse to specified position before scrolling
 
-- **Delay After Execution (ms)`Integer`**: Time to wait after the command is executed
+- **Delay After Execution (ms)**`Integer`: Time to wait after the command is executed
 
-- **Keyboard Auxiliary Buttons`Integer`**: Keyboard function key to press
+- **Keyboard Auxiliary Buttons**`Integer`: Keyboard function key to press
 
 
 **Command Output**

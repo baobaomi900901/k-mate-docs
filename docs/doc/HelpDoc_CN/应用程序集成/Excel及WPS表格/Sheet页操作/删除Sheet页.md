@@ -16,9 +16,9 @@ title: 删除Sheet页
 
 **指令输入**
 
-- **Sheet页名称`string`**: 输入待删除的Sheet页名称,不能为空
+- **Sheet页名称**`string`: 输入待删除的Sheet页名称,不能为空
 
-- **Excel对象`TWorkbookApplication`**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 
 **指令输出**

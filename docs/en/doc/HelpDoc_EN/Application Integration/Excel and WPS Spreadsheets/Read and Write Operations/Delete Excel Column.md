@@ -16,11 +16,11 @@ Delete column
 
 **Command Input**
 
-- **Sheet Name`string`**: If empty, it defaults to the currently active sheet
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
-- **Column Name`string`**: Column name. Starts from A
+- **Column Name**`string`: Column name. Starts from A
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**

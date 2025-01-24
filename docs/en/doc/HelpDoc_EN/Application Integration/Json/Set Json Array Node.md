@@ -16,13 +16,13 @@ Set a node to the Json array
 
 **Command Input**
 
-- **Append`Boolean`**: If true, append to the array, ignoring the 'Node Index'
+- **Append**`Boolean`: If true, append to the array, ignoring the 'Node Index'
 
-- **Node Index`Integer`**: Node Index
+- **Node Index**`Integer`: Node Index
 
-- **Node Object`TJson`**: Node Object
+- **Node Object**`TJson`: Node Object
 
-- **Json Object`TJson`**: Json Object
+- **Json Object**`TJson`: Json Object
 
 
 **Command Output**

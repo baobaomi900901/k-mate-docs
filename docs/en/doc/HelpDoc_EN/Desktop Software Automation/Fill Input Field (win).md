@@ -16,13 +16,13 @@ Enter content into the input field in the window
 
 **Command Input**
 
-- **Append Input`Boolean`**: Continue entering after the existing content
+- **Append Input**`Boolean`: Continue entering after the existing content
 
-- **Input Content`string`**: The content to enter
+- **Input Content**`string`: The content to enter
 
-- **Target for Operation`TTarget`**: Select the window element to be operated on
+- **Target for Operation**`TTarget`: Select the window element to be operated on
 
-- **Window Object`TWinObj`**: The obtained window object
+- **Window Object**`TWinObj`: The obtained window object
 
 
 **Command Output**
@@ -31,29 +31,29 @@ No output for the current command
 
 ### Advanced
 
-- **TimeOut`Integer`**: 
+- **TimeOut**`Integer`: 
 
-- **Vertical Translation`Integer`**: Positive values move down, negative values move up
+- **Vertical Translation**`Integer`: Positive values move down, negative values move up
 
-- **OoffsetX`Integer`**: 
+- **OoffsetX**`Integer`: 
 
-- **Custom Position`Integer`**: Custom position
+- **Custom Position**`Integer`: Custom position
 
-- **Mouse Click Position`Integer`**: Supports clicking at the center of the element, a random position within the element's rectangle, or a custom position manually specified
+- **Mouse Click Position**`Integer`: Supports clicking at the center of the element, a random position within the element's rectangle, or a custom position manually specified
 
-- **Click Element Before Input`Boolean`**: Click the element before the input action
+- **Click Element Before Input**`Boolean`: Click the element before the input action
 
-- **Delay After Execution (ms)`Integer`**: Time to continue waiting after command execution
+- **Delay After Execution (ms)**`Integer`: Time to continue waiting after command execution
 
-- **Focus Timeout (ms)`Integer`**: Focus timeout duration
+- **Focus Timeout (ms)**`Integer`: Focus timeout duration
 
-- **Key Press Interval (ms)`Integer`**: Interval between key presses
+- **Key Press Interval (ms)**`Integer`: Interval between key presses
 
-- **Force Load American Keyboard (ENG)`Boolean`**: Switch to English input method
+- **Force Load American Keyboard (ENG)**`Boolean`: Switch to English input method
 
-- **Input Contains Shortcuts`Boolean`**: Incorporate shortcuts in the content
+- **Input Contains Shortcuts**`Boolean`: Incorporate shortcuts in the content
 
-- **Input Method`Integer`**: Method of input
+- **Input Method**`Integer`: Method of input
 
 
 **Command Output**

@@ -16,19 +16,19 @@ Actions like mouse press, release, single-click, double-click, and right-click a
 
 **Command Input**
 
-- **Move speed`Integer`**: Speed of mouse movement
+- **Move speed**`Integer`: Speed of mouse movement
 
-- **Move mouse to Y`Integer`**: Relative vertical coordinate
+- **Move mouse to Y**`Integer`: Relative vertical coordinate
 
-- **Move mouse to X`Integer`**: Relative horizontal coordinate
+- **Move mouse to X**`Integer`: Relative horizontal coordinate
 
-- **Relative to`Integer`**: Mouse position
+- **Relative to**`Integer`: Mouse position
 
-- **Move the mouse to a specified position before clicking`Boolean`**: Move the mouse to a specified position before clicking
+- **Move the mouse to a specified position before clicking**`Boolean`: Move the mouse to a specified position before clicking
 
-- **Click type`Integer`**: Single-click or double-click
+- **Click type**`Integer`: Single-click or double-click
 
-- **Mouse button`Integer`**: Select the mouse button to trigger the click
+- **Mouse button**`Integer`: Select the mouse button to trigger the click
 
 
 **Command Output**
@@ -37,11 +37,11 @@ No output for the current command
 
 ### Advanced
 
-- **Delay after execution (milliseconds)`Integer`**: Time to wait after the instruction is executed
+- **Delay after execution (milliseconds)**`Integer`: Time to wait after the instruction is executed
 
-- **Keyboard auxiliary buttons`Integer`**: Required keyboard function keys
+- **Keyboard auxiliary buttons**`Integer`: Required keyboard function keys
 
-- **Hardware-driven click`Boolean`**: Click using hardware drivers
+- **Hardware-driven click**`Boolean`: Click using hardware drivers
 
 
 **Command Output**

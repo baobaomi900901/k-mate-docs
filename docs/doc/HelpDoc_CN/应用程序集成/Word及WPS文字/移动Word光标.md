@@ -16,13 +16,13 @@ title: 移动Word光标
 
 **指令输入**
 
-- **是否按下Shift键`Boolean`**: 若勾选,则在移动时按下Shift,移动区域的文本被选中
+- **是否按下Shift键**`Boolean`: 若勾选,则在移动时按下Shift,移动区域的文本被选中
 
-- **移动长度`Integer`**: 输入需要移动的单位长度
+- **移动长度**`Integer`: 输入需要移动的单位长度
 
-- **移动方向`Integer`**: 选择光标移动方向
+- **移动方向**`Integer`: 选择光标移动方向
 
-- **Word对象`TDocumentApplication`**: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
 
 
 **指令输出**

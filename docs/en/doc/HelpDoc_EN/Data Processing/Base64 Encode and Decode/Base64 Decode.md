@@ -16,14 +16,14 @@ Base64 Decode
 
 **Command Input**
 
-- **Output String`Boolean`**: Output string
+- **Output String**`Boolean`: Output string
 
-- **Content to Decode`string`**: Enter the content to be decoded
+- **Content to Decode**`string`: Enter the content to be decoded
 
 
 **Command Output**
 
-- **Save Decoded Result To`string`**: Enter a name to save the Base64 decoded result
+- **Save Decoded Result To**`string`: Enter a name to save the Base64 decoded result
 
 
 **Command Output**

@@ -16,11 +16,11 @@ Wait for the specified text to appear/disappear on the screen
 
 **Command Input**
 
-- **iOCRType`Integer`**: 
+- **iOCRType**`Integer`: 
 
-- **Target`TTarget`**: Target element
+- **Target**`TTarget`: Target element
 
-- **Text`string`**: The string to wait for
+- **Text**`string`: The string to wait for
 
 
 **Command Output**
@@ -29,7 +29,7 @@ No output for the current command
 
 ### Advanced
 
-- **Timeout (Milliseconds)`Integer`**: Maximum wait time
+- **Timeout (Milliseconds)**`Integer`: Maximum wait time
 
 
 **Command Output**

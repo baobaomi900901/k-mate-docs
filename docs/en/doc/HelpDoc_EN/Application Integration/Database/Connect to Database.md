@@ -16,28 +16,28 @@ Select a database type to connect to the database
 
 **Command Input**
 
-- **Login Method`Integer`**: Select a login method
+- **Login Method**`Integer`: Select a login method
 
-- **Database Charset`string`**: Please enter the database charset
+- **Database Charset**`string`: Please enter the database charset
 
-- **Password`string`**: Please enter the database password
+- **Password**`string`: Please enter the database password
 
-- **Username`string`**: Please enter the database username
+- **Username**`string`: Please enter the database username
 
-- **Database`string`**: Please enter the database name
+- **Database**`string`: Please enter the database name
 
-- **Port`Integer`**: Please enter the database connection port
+- **Port**`Integer`: Please enter the database connection port
 
-- **Address`string`**: Please enter the database connection address
+- **Address**`string`: Please enter the database connection address
 
-- **Connection String`string`**: Please enter the database connection string
+- **Connection String**`string`: Please enter the database connection string
 
-- **Database Type`Integer`**: Select a database connection type
+- **Database Type**`Integer`: Select a database connection type
 
 
 **Command Output**
 
-- **Save Database Connection Object to`TDatabase`**: Specify a variable name that will store the database connection object
+- **Save Database Connection Object to**`TDatabase`: Specify a variable name that will store the database connection object
 
 
 **Command Output**

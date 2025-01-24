@@ -16,21 +16,21 @@ Wait for the target image to appear or disappear before continuing the process
 
 **Command Input**
 
-- **Timeout (milliseconds)`Integer`**: Set the maximum wait time
+- **Timeout (milliseconds)**`Integer`: Set the maximum wait time
 
-- **Set timeout (milliseconds)`Boolean`**: Set the timeout duration for waiting, after which the process will continue automatically
+- **Set timeout (milliseconds)**`Boolean`: Set the timeout duration for waiting, after which the process will continue automatically
 
-- **Wait for all images to appear (or disappear) before continuing`Boolean`**: Wait for all images or wait for just one
+- **Wait for all images to appear (or disappear) before continuing**`Boolean`: Wait for all images or wait for just one
 
-- **Target Image`string`**: You can select multiple images from the image library, and the process will continue when one appears (or disappears)
+- **Target Image**`string`: You can select multiple images from the image library, and the process will continue when one appears (or disappears)
 
-- **sAllImages`string`**: 
+- **sAllImages**`string`: 
 
-- **Wait Method`Integer`**: Wait for the target image to appear or disappear
+- **Wait Method**`Integer`: Wait for the target image to appear or disappear
 
-- **Window Object`TWinObj`**: Please select a window object
+- **Window Object**`TWinObj`: Please select a window object
 
-- **Search Range`Integer`**: Search range
+- **Search Range**`Integer`: Search range
 
 
 **Command Output**

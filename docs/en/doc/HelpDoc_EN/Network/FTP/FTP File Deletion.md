@@ -16,9 +16,9 @@ Delete one or more files from the remote path
 
 **Command Input**
 
-- **File to be deleted`string`**: The name(s) of the remote file(s) to be deleted, separated by '|' if multiple
+- **File to be deleted**`string`: The name(s) of the remote file(s) to be deleted, separated by '|' if multiple
 
-- **FTP Connection Object`TFTP`**: The FTP object from which the files will be deleted
+- **FTP Connection Object**`TFTP`: The FTP object from which the files will be deleted
 
 
 **Command Output**

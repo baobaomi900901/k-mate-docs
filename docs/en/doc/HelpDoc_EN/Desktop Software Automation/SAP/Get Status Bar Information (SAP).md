@@ -16,20 +16,20 @@ This command is used to read the type and text of information from the status ba
 
 **Command Input**
 
-- **Operation Target`TTarget`**: Select the SAP status bar element to be operated on
+- **Operation Target**`TTarget`: Select the SAP status bar element to be operated on
 
-- **Window Object`TWinObj`**: Enter a retrieved SAP session window
+- **Window Object**`TWinObj`: Enter a retrieved SAP session window
 
 
 **Command Output**
 
-- **Save Information Content To`TObject`**: Specify a variable to save the content of the information read
+- **Save Information Content To**`TObject`: Specify a variable to save the content of the information read
 
-- **Save Information Type To`TObject`**: Specify a variable to save the type of information read
+- **Save Information Type To**`TObject`: Specify a variable to save the type of information read
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout for waiting for the target element to exist
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
 
 **Command Output**

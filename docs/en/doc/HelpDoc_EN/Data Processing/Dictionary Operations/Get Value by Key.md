@@ -16,18 +16,18 @@ This command is used to get the value corresponding to a specified key name in a
 
 **Command Input**
 
-- **Default Value`string`**: Enter default key value
+- **Default Value**`string`: Enter default key value
 
-- **When Key Does Not Exist`Integer`**: Choose how to handle when the input key does not exist
+- **When Key Does Not Exist**`Integer`: Choose how to handle when the input key does not exist
 
-- **Key Name`string`**: Enter the key name
+- **Key Name**`string`: Enter the key name
 
-- **Dictionary`TRPADictionary`**: Enter the dictionary variable
+- **Dictionary**`TRPADictionary`: Enter the dictionary variable
 
 
 **Command Output**
 
-- **Save Value To`string`**: Specify a variable to save the found key value
+- **Save Value To**`string`: Specify a variable to save the found key value
 
 
 **Command Output**

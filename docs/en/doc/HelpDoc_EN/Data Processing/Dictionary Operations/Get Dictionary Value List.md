@@ -16,12 +16,12 @@ This command is used to get a list of values from a dictionary
 
 **Command Input**
 
-- **Dictionary`TRPADictionary`**: Enter the dictionary variable
+- **Dictionary**`TRPADictionary`: Enter the dictionary variable
 
 
 **Command Output**
 
-- **Save Value List To`TList<String>`**: Enter a name to save the found value list
+- **Save Value List To**`TList<String>`: Enter a name to save the found value list
 
 
 **Command Output**

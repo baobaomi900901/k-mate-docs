@@ -21,7 +21,7 @@ No input for the current command
 
 **Command Output**
 
-- **Save the input method name to`string`**: Enter a variable to save the input method name
+- **Save the input method name to**`string`: Enter a variable to save the input method name
 
 
 **Command Output**

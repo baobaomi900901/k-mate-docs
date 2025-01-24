@@ -16,12 +16,12 @@ Open Custom Dialog
 
 **Command Input**
 
-- **Design Dialog Interface`string`**: Design custom dialog interface
+- **Design Dialog Interface**`string`: Design custom dialog interface
 
 
 **Command Output**
 
-- **Save User Input Result To`string`**: Specify a variable name to save the user input result, return None if the user cancels the dialog, otherwise return a dict object
+- **Save User Input Result To**`string`: Specify a variable name to save the user input result, return None if the user cancels the dialog, otherwise return a dict object
 
 
 **Command Output**

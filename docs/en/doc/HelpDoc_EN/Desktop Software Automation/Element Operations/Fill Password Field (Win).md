@@ -16,11 +16,11 @@ Enter password in the password field in the window
 
 **Command Input**
 
-- **Entered Password`string`**: Enter the password to be filled in
+- **Entered Password**`string`: Enter the password to be filled in
 
-- **Target Element`TTarget`**: Select the window element to operate on
+- **Target Element**`TTarget`: Select the window element to operate on
 
-- **Window Object`TWinObj`**: Enter a captured window object
+- **Window Object**`TWinObj`: Enter a captured window object
 
 
 **Command Output**
@@ -29,25 +29,25 @@ No output for the current command
 
 ### Advanced
 
-- **Timeout (ms)`Integer`**: Set the maximum wait time
+- **Timeout (ms)**`Integer`: Set the maximum wait time
 
-- **Vertical Translation`Integer`**: Enter a positive number to move down, a negative number to move up
+- **Vertical Translation**`Integer`: Enter a positive number to move down, a negative number to move up
 
-- **OoffsetX`Integer`**: 
+- **OoffsetX**`Integer`: 
 
-- **Custom Position`Integer`**: Specify the custom position
+- **Custom Position**`Integer`: Specify the custom position
 
-- **Mouse Click Position`Integer`**: Supports clicking at the center of the element, a random position within the element's rectangular area, or a custom specified point
+- **Mouse Click Position**`Integer`: Supports clicking at the center of the element, a random position within the element's rectangular area, or a custom specified point
 
-- **Click Element Before Input`Boolean`**: Click the element before performing the input action
+- **Click Element Before Input**`Boolean`: Click the element before performing the input action
 
-- **Post-Execution Delay (ms)`Integer`**: Wait time after the command execution completes
+- **Post-Execution Delay (ms)**`Integer`: Wait time after the command execution completes
 
-- **Focus Timeout (ms)`Integer`**: Focus timeout period
+- **Focus Timeout (ms)**`Integer`: Focus timeout period
 
-- **Key Press Interval (ms)`Integer`**: Interval time between two key presses
+- **Key Press Interval (ms)**`Integer`: Interval time between two key presses
 
-- **Input Method`Integer`**: Select the input method
+- **Input Method**`Integer`: Select the input method
 
 
 **Command Output**

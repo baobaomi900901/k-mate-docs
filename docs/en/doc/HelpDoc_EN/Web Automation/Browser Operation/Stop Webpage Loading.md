@@ -16,7 +16,7 @@ Force stop the webpage loading if it has not completed
 
 **Command Input**
 
-- **Webpage Object`TBrowser`**: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
+- **Webpage Object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
 
 
 **Command Output**

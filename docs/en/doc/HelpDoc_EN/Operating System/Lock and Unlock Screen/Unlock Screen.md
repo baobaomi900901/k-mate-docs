@@ -16,11 +16,11 @@ Unlock the system screen and enter the system screen
 
 **Command Input**
 
-- **Domain`string`**: Please enter the login domain, or leave it blank
+- **Domain**`string`: Please enter the login domain, or leave it blank
 
-- **Login Password`string`**: Please enter your login password
+- **Login Password**`string`: Please enter your login password
 
-- **Username`string`**: Please enter your username
+- **Username**`string`: Please enter your username
 
 
 **Command Output**

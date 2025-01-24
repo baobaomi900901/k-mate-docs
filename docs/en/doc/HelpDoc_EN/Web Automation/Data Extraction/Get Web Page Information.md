@@ -16,14 +16,14 @@ Get web page text content, URL, source code, title, etc.
 
 **Command Input**
 
-- **Operation`Integer`**: The web information to be obtained
+- **Operation**`Integer`: The web information to be obtained
 
-- **Web Page Object`TBrowser`**: Input a web page object that has been obtained or created through the 'Open Web Page' function
+- **Web Page Object**`TBrowser`: Input a web page object that has been obtained or created through the 'Open Web Page' function
 
 
 **Command Output**
 
-- **WebRst`string`**: 
+- **WebRst**`string`: 
 
 
 **Command Output**

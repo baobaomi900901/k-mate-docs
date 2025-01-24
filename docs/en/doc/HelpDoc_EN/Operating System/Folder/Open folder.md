@@ -16,7 +16,7 @@ Open the folder. If it's a file path, the file will be selected after the folder
 
 **Command Input**
 
-- **File (folder) path`string`**: Path of the folder to open
+- **File (folder) path**`string`: Path of the folder to open
 
 
 **Command Output**

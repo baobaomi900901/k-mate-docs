@@ -16,24 +16,24 @@ This command is used to extract a segment of text
 
 **Command Input**
 
-- **Extraction Length`Integer`**: Enter the number of characters you want to extract
+- **Extraction Length**`Integer`: Enter the number of characters you want to extract
 
-- **Extraction Method`Integer`**: If you want to extract '中国' from the text 'Hello中国欢迎你', the starting position is 5, the extraction length is 2, indicating that two characters should be extracted starting from the sixth character
+- **Extraction Method**`Integer`: If you want to extract '中国' from the text 'Hello中国欢迎你', the starting position is 5, the extraction length is 2, indicating that two characters should be extracted starting from the sixth character
 
-- **Include Starting Text in Result`Boolean`**: When checked, the result includes the starting text. For example, with 'Purchase Order Number:1234567890', if the starting text is set to ':', and it is checked, the result will be ':1234567890'. If not checked, the result will be '1234567890'
+- **Include Starting Text in Result**`Boolean`: When checked, the result includes the starting text. For example, with 'Purchase Order Number:1234567890', if the starting text is set to ':', and it is checked, the result will be ':1234567890'. If not checked, the result will be '1234567890'
 
-- **Starting Text`string`**: If you want to extract the order number from the text 'Purchase Order Number:1234567890', the starting position would be ':'
+- **Starting Text**`string`: If you want to extract the order number from the text 'Purchase Order Number:1234567890', the starting position would be ':'
 
-- **Starting Character Position`Integer`**: If you want to extract '中国' from the text 'Hello中国欢迎你', the starting position would be 5
+- **Starting Character Position**`Integer`: If you want to extract '中国' from the text 'Hello中国欢迎你', the starting position would be 5
 
-- **Starting Position`Integer`**: Specify the starting character position
+- **Starting Position**`Integer`: Specify the starting character position
 
-- **Text Content`string`**: Enter a text string or select a variable containing the string
+- **Text Content**`string`: Enter a text string or select a variable containing the string
 
 
 **Command Output**
 
-- **Save Result To`string`**: Specify a variable to save the extracted text content
+- **Save Result To**`string`: Specify a variable to save the extracted text content
 
 
 **Command Output**

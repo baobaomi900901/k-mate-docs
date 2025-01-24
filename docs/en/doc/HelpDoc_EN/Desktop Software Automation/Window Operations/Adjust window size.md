@@ -16,25 +16,25 @@ Adjust the window size
 
 **Command Input**
 
-- **Height`Integer`**: Window height
+- **Height**`Integer`: Window height
 
-- **Width`Integer`**: Window width
+- **Width**`Integer`: Window width
 
-- **Window handle`Integer`**: Enter a window handle
+- **Window handle**`Integer`: Enter a window handle
 
-- **Match using wildcard`Boolean`**: Match using wildcard
+- **Match using wildcard**`Boolean`: Match using wildcard
 
-- **Window class name`string`**: Enter the window class name
+- **Window class name**`string`: Enter the window class name
 
-- **Add window type`Boolean`**: Add window type
+- **Add window type**`Boolean`: Add window type
 
-- **Window title`string`**: Enter the window title
+- **Window title**`string`: Enter the window title
 
-- **Operation target`TTarget`**: Select the window element
+- **Operation target**`TTarget`: Select the window element
 
-- **Window object`TWinObj`**: Enter a captured window object
+- **Window object**`TWinObj`: Enter a captured window object
 
-- **Method to get window`Integer`**: Select the method to get the window
+- **Method to get window**`Integer`: Select the method to get the window
 
 
 **Command Output**

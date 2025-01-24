@@ -16,9 +16,9 @@ title: 删除Json对象
 
 **指令输入**
 
-- **节点路径`string`**: 被删除的节点路径
+- **节点路径**`string`: 被删除的节点路径
 
-- **Json对象`TJson`**: Json对象
+- **Json对象**`TJson`: Json对象
 
 
 **指令输出**

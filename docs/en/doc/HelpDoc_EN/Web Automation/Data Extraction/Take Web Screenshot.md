@@ -16,30 +16,30 @@ Take a screenshot of the specified area and save it to a file or add it to the c
 
 **Command Input**
 
-- **Overwrite If File Exists`Boolean`**: Overwrite If File Exists
+- **Overwrite If File Exists**`Boolean`: Overwrite If File Exists
 
-- **Custom File Name`string`**: Custom file name.
+- **Custom File Name**`string`: Custom file name.
 
-- **Use Unique File Names`Boolean`**: Automatically generate non-repeating file names.
+- **Use Unique File Names**`Boolean`: Automatically generate non-repeating file names.
 
-- **Save Folder`string`**: The folder where the screenshot is saved.
+- **Save Folder**`string`: The folder where the screenshot is saved.
 
-- **Save Image to Clipboard`Boolean`**: Save the image to the clipboard.
+- **Save Image to Clipboard**`Boolean`: Save the image to the clipboard.
 
-- **Operation Target`TTarget`**: Select the web page element to be operated on.
+- **Operation Target**`TTarget`: Select the web page element to be operated on.
 
-- **Screenshot Area`Integer`**: Three types of areas:
+- **Screenshot Area**`Integer`: Three types of areas:
 
-- **Web Page Object`TBrowser`**: Input an obtained or created web page object using the 'Open Web Page' function.
+- **Web Page Object**`TBrowser`: Input an obtained or created web page object using the 'Open Web Page' function.
 
 
 **Command Output**
 
-- **Screenshot Save Location`string`**: The location of the screenshot file.
+- **Screenshot Save Location**`string`: The location of the screenshot file.
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout for waiting for the target element to exist.
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist.
 
 
 **Command Output**

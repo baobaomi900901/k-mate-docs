@@ -16,20 +16,20 @@ Replace text content in a Word document
 
 **Command Input**
 
-- **Case Sensitive`Boolean`**: If checked, the replacement will be case sensitive
+- **Case Sensitive**`Boolean`: If checked, the replacement will be case sensitive
 
-- **Replace All`Boolean`**: If checked, replace all found text
+- **Replace All**`Boolean`: If checked, replace all found text
 
-- **Replace with`string`**: Text to replace
+- **Replace with**`string`: Text to replace
 
-- **Find Text`string`**: Text to find
+- **Find Text**`string`: Text to find
 
-- **Word Object`TDocumentApplication`**: Enter a Word object created by the 'Open or Create Word' function
+- **Word Object**`TDocumentApplication`: Enter a Word object created by the 'Open or Create Word' function
 
 
 **Command Output**
 
-- **Save number of replacements to`Integer`**: Specify a variable name to store the number of replacements
+- **Save number of replacements to**`Integer`: Specify a variable name to store the number of replacements
 
 
 **Command Output**

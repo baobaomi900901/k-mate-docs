@@ -16,22 +16,22 @@ Get the specific data item of an element in the window, which can be used for co
 
 **Command Input**
 
-- **Parent element`TTarget`**: Search for the target element within the specified parent element
+- **Parent element**`TTarget`: Search for the target element within the specified parent element
 
-- **Associated parent element`Boolean`**: Whether to associate with the parent element
+- **Associated parent element**`Boolean`: Whether to associate with the parent element
 
-- **Operation target`TTarget`**: Select the window element to operate on
+- **Operation target**`TTarget`: Select the window element to operate on
 
-- **Window object`TWinObj`**: Enter a captured window object
+- **Window object**`TWinObj`: Enter a captured window object
 
 
 **Command Output**
 
-- **Save element object to`TUiElement`**: This variable is used to save the obtained element object
+- **Save element object to**`TUiElement`: This variable is used to save the obtained element object
 
 ### Advanced
 
-- **Wait for element to exist (milliseconds)`Integer`**: Timeout for waiting for the target element to exist
+- **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
 
 **Command Output**

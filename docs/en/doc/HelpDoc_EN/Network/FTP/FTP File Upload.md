@@ -16,13 +16,13 @@ Upload one or more local files to the FTP remote service path
 
 **Command Input**
 
-- **Upload Mode`Integer`**: How to handle existing files on the remote server when uploading the files
+- **Upload Mode**`Integer`: How to handle existing files on the remote server when uploading the files
 
-- **Local File`string`**: The local file or list of files to be uploaded, separated by '|' for multiple files
+- **Local File**`string`: The local file or list of files to be uploaded, separated by '|' for multiple files
 
-- **Remote Path`string`**: The remote path where the local files will be uploaded
+- **Remote Path**`string`: The remote path where the local files will be uploaded
 
-- **FTP Connection Object`TFTP`**: The FTP object to which the files will be uploaded
+- **FTP Connection Object**`TFTP`: The FTP object to which the files will be uploaded
 
 
 **Command Output**

@@ -16,17 +16,17 @@ Create a pivot table from the specified range
 
 **Command Input**
 
-- **Source Range`string`**: The source data range from which you want to create the pivot table
+- **Source Range**`string`: The source data range from which you want to create the pivot table
 
-- **Source Table Name`string`**: The name of the source table from which to create the pivot table
+- **Source Table Name**`string`: The name of the source table from which to create the pivot table
 
-- **Sheet Name`string`**: The name of the worksheet in the workbook
+- **Sheet Name**`string`: The name of the worksheet in the workbook
 
-- **Table Name`string`**: The name of the data pivot table to be created
+- **Table Name**`string`: The name of the data pivot table to be created
 
-- **Range`string`**: Specify the location range for creating the pivot table
+- **Range**`string`: Specify the location range for creating the pivot table
 
-- **Excel Instance`TWorkbookApplication`**: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**

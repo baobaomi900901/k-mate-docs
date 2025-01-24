@@ -16,20 +16,20 @@ Read the table content from a Word document
 
 **Command Input**
 
-- **Use first row as header`Boolean`**: Whether to use the first row as the header
+- **Use first row as header**`Boolean`: Whether to use the first row as the header
 
-- **Table search content`string`**: Enter the content needed to search for the table
+- **Table search content**`string`: Enter the content needed to search for the table
 
-- **Table location`Integer`**: Enter the location of the table
+- **Table location**`Integer`: Enter the location of the table
 
-- **Table Search Method`Integer`**: Choose a method to search for the table
+- **Table Search Method**`Integer`: Choose a method to search for the table
 
-- **Word Object`TDocumentApplication`**: Enter a Word object created by the 'Open or Create Word' function
+- **Word Object**`TDocumentApplication`: Enter a Word object created by the 'Open or Create Word' function
 
 
 **Command Output**
 
-- **Save table content to`TDataTable`**: Specify a variable name to store the data content
+- **Save table content to**`TDataTable`: Specify a variable name to store the data content
 
 
 **Command Output**

@@ -16,11 +16,11 @@ Merge the specified data table with the current data table, specifying whether t
 
 **Command Input**
 
-- **Missing Schema Action`Integer`**: Missing Schema Action
+- **Missing Schema Action**`Integer`: Missing Schema Action
 
-- **Source`TDataTable`**: The data table object to be added to the destination data table.
+- **Source**`TDataTable`: The data table object to be added to the destination data table.
 
-- **Destination`TDataTable`**: The data table object to which the source data table will be merged.
+- **Destination**`TDataTable`: The data table object to which the source data table will be merged.
 
 
 **Command Output**

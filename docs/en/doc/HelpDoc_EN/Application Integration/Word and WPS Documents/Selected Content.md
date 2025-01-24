@@ -16,18 +16,18 @@ Selected Content
 
 **Command Input**
 
-- **End Position`Integer`**: Fill in the end position based on the selection type
+- **End Position**`Integer`: Fill in the end position based on the selection type
 
-- **Start Position`Integer`**: Fill in the start position based on the selection type
+- **Start Position**`Integer`: Fill in the start position based on the selection type
 
-- **Selection Type`Integer`**: Selected type
+- **Selection Type**`Integer`: Selected type
 
-- **Word Object`TDocumentApplication`**: Enter a Word object created by the function 'Open or Create Word'
+- **Word Object**`TDocumentApplication`: Enter a Word object created by the function 'Open or Create Word'
 
 
 **Command Output**
 
-- **Selected Text`string`**: Selected Text
+- **Selected Text**`string`: Selected Text
 
 
 **Command Output**

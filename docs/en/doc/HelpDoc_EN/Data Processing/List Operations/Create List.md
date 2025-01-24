@@ -21,7 +21,7 @@ No input for the current command
 
 **Command Output**
 
-- **Keep the list object to`TList<String>`**: Specify a variable to save the newly created list
+- **Keep the list object to**`TList<String>`: Specify a variable to save the newly created list
 
 
 **Command Output**

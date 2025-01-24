@@ -16,7 +16,7 @@ Delete all files and subfolders within the folder, but keep the folder itself
 
 **Command Input**
 
-- **Folder path`string`**: Path of the folder to be cleared
+- **Folder path**`string`: Path of the folder to be cleared
 
 
 **Command Output**

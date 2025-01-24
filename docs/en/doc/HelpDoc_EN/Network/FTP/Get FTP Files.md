@@ -16,12 +16,12 @@ Retrieve all files and subdirectories from the current path of the FTP server
 
 **Command Input**
 
-- **FTP Connection Object`TFTP`**: The FTP connection object from which the folder information needs to be retrieved
+- **FTP Connection Object**`TFTP`: The FTP connection object from which the folder information needs to be retrieved
 
 
 **Command Output**
 
-- **Save returned files to`TList<String>`**: Specify a variable name that will store the returned files and subfolder data
+- **Save returned files to**`TList<String>`: Specify a variable name that will store the returned files and subfolder data
 
 
 **Command Output**

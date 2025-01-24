@@ -16,26 +16,26 @@ Open DateTime Dialog
 
 **Command Input**
 
-- **End Time`string`**: End Time
+- **End Time**`string`: End Time
 
-- **Start Time`string`**: Start Time
+- **Start Time**`string`: Start Time
 
-- **Default Time`string`**: Default Time
+- **Default Time**`string`: Default Time
 
-- **Time Format`Integer`**: Time Format
+- **Time Format**`Integer`: Time Format
 
-- **Time Type`Integer`**: Time Type
+- **Time Type**`Integer`: Time Type
 
-- **Dialog Title`string`**: Dialog Title
+- **Dialog Title**`string`: Dialog Title
 
 
 **Command Output**
 
-- **Save DateTime Result To`TRPADictionary`**: Specify a variable name to save the datetime result, return None if the user cancels the dialog, otherwise return a dict object
+- **Save DateTime Result To**`TRPADictionary`: Specify a variable name to save the datetime result, return None if the user cancels the dialog, otherwise return a dict object
 
 ### Advanced
 
-- **Dialog Explanation`string`**: Dialog Explanation
+- **Dialog Explanation**`string`: Dialog Explanation
 
 
 **Command Output**

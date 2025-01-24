@@ -16,28 +16,28 @@ You can locate a set of similar elements on the window through capturing element
 
 **Command Input**
 
-- **Output Similar Element Count`Boolean`**: Whether to output the count of similar elements.
+- **Output Similar Element Count**`Boolean`: Whether to output the count of similar elements.
 
-- **Attribute Name`string`**: Element attribute name.
+- **Attribute Name**`string`: Element attribute name.
 
-- **Element Operation`Integer`**: Operate on element information.
+- **Element Operation**`Integer`: Operate on element information.
 
-- **Operation Target`TTarget`**: Select the window element that needs to be operated on.
+- **Operation Target**`TTarget`: Select the window element that needs to be operated on.
 
-- **Window Object`TWinObj`**: Enter a captured window object.
+- **Window Object**`TWinObj`: Enter a captured window object.
 
 
 **Command Output**
 
-- **Save Similar Element Count To`Integer`**: Save the count of obtained elements.
+- **Save Similar Element Count To**`Integer`: Save the count of obtained elements.
 
-- **Save Similar Element Information List To`TList<String>`**: Save the list of obtained element information.
+- **Save Similar Element Information List To**`TList<String>`: Save the list of obtained element information.
 
-- **Save Similar Element Object List To`TList<TUiElement>`**: Save the list of obtained element objects.
+- **Save Similar Element Object List To**`TList<TUiElement>`: Save the list of obtained element objects.
 
 ### Advanced
 
-- **Wait for Element to Exist (ms)`Integer`**: Timeout time for waiting for the target associated element to exist.
+- **Wait for Element to Exist (ms)**`Integer`: Timeout time for waiting for the target associated element to exist.
 
 
 **Command Output**

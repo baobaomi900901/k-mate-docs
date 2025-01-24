@@ -16,30 +16,30 @@ Call the AI interface to recognize card certificates such as bank cards, busines
 
 **Command Input**
 
-- **Card Certificate Type`Integer`**: Select the type of card certificate to recognize
+- **Card Certificate Type**`Integer`: Select the type of card certificate to recognize
 
-- **Image Coordinates Position`Integer`**: Output default value (corresponding to top-left coordinates and width/height), or output quadrangle format (i.e., output the coordinates of the four corner points of the detection box)
+- **Image Coordinates Position**`Integer`: Output default value (corresponding to top-left coordinates and width/height), or output quadrangle format (i.e., output the coordinates of the four corner points of the detection box)
 
-- **Image Path`string`**: Input the address of the image to be selected
+- **Image Path**`string`: Input the address of the image to be selected
 
-- **Recognition Method`Integer`**: Select the recognition method
+- **Recognition Method**`Integer`: Select the recognition method
 
 
 **Command Output**
 
-- **Error Information`String`**: Specify a variable to store the error information
+- **Error Information**`String`: Specify a variable to store the error information
 
-- **Response Body Information`String`**: Specify a variable to store the response body information
+- **Response Body Information**`String`: Specify a variable to store the response body information
 
-- **Response Header Information`String`**: Specify a variable to store the response header information
+- **Response Header Information**`String`: Specify a variable to store the response header information
 
-- **Result`string`**: Specify a variable to store the recognition result
+- **Result**`string`: Specify a variable to store the recognition result
 
 ### Advanced
 
-- **Response Header Type`array of string`**: When a long connection is established between the server and client, necessary settings need to be made to the HTTP response header's connection. Default is ['Connection'].
+- **Response Header Type**`array of string`: When a long connection is established between the server and client, necessary settings need to be made to the HTTP response header's connection. Default is ['Connection'].
 
-- **Proxy Parameters`string`**: Proxy server, format: address:port
+- **Proxy Parameters**`string`: Proxy server, format: address:port
 
 
 **Command Output**

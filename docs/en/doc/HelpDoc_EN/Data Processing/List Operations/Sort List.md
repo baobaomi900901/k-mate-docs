@@ -16,9 +16,9 @@ This command is used to sort a list
 
 **Command Input**
 
-- **Sort Order`string`**: Select ascending or descending order to sort the list
+- **Sort Order**`string`: Select ascending or descending order to sort the list
 
-- **List`TList<String>`**: Enter the list variable
+- **List**`TList<String>`: Enter the list variable
 
 
 **Command Output**

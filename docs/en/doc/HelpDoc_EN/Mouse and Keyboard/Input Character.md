@@ -16,9 +16,9 @@ Input text to the currently active window
 
 **Command Input**
 
-- **Clear Field`Boolean`**: If checked, clear the content before inputting
+- **Clear Field**`Boolean`: If checked, clear the content before inputting
 
-- **Text Content`string`**: Input text content
+- **Text Content**`string`: Input text content
 
 
 **Command Output**
@@ -27,7 +27,7 @@ No output for the current command
 
 ### Advanced
 
-- **Key Input Interval (Milliseconds)`Integer`**: Time interval between two key presses
+- **Key Input Interval (Milliseconds)**`Integer`: Time interval between two key presses
 
 
 **Command Output**

@@ -16,14 +16,14 @@ Convert the DateTime to a timestamp
 
 **Command Input**
 
-- **Timestamp Level`Integer`**: Select the timestamp level, which can be second, millisecond, or microsecond. The level determines the length of the timestamp: 10 digits for seconds, 13 for milliseconds, and 16 for microseconds.
+- **Timestamp Level**`Integer`: Select the timestamp level, which can be second, millisecond, or microsecond. The level determines the length of the timestamp: 10 digits for seconds, 13 for milliseconds, and 16 for microseconds.
 
-- **DateTime`TDateTime`**: Enter a DateTime object
+- **DateTime**`TDateTime`: Enter a DateTime object
 
 
 **Command Output**
 
-- **Save Timestamp To`string`**: Specify a variable to save the converted timestamp
+- **Save Timestamp To**`string`: Specify a variable to save the converted timestamp
 
 
 **Command Output**

@@ -16,7 +16,7 @@ This command is used to clear the list
 
 **Command Input**
 
-- **List`TList<TObject>`**: Enter the list variable
+- **List**`TList<TObject>`: Enter the list variable
 
 
 **Command Output**

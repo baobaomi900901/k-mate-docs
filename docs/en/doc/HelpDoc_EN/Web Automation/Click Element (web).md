@@ -16,9 +16,9 @@ Click on a button, link or any other element in the web page
 
 **Command Input**
 
-- **Operation Target`TTarget`**: The web element to be operated on
+- **Operation Target**`TTarget`: The web element to be operated on
 
-- **Webpage Object`TBrowser`**: Enter a webpage object that has been obtained or created by the 'Open Webpage' function
+- **Webpage Object**`TBrowser`: Enter a webpage object that has been obtained or created by the 'Open Webpage' function
 
 
 **Command Output**
@@ -27,29 +27,29 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for Element to Exist (ms)`Integer`**: Timeout for waiting for the target element to exist
+- **Wait for Element to Exist (ms)**`Integer`: Timeout for waiting for the target element to exist
 
-- **Vertical Translation`Integer`**: Enter a positive number to move down, a negative number to move up
+- **Vertical Translation**`Integer`: Enter a positive number to move down, a negative number to move up
 
-- **Horizontal Translation`Integer`**: Enter a positive number to move right, a negative number to move left
+- **Horizontal Translation**`Integer`: Enter a positive number to move right, a negative number to move left
 
-- **Custom`Integer`**: Custom position
+- **Custom**`Integer`: Custom position
 
-- **Target Text Position`Integer`**: Supports clicking at the center position of the element (center point of the element's rectangular area), random position (automatically specify a point within the rectangular range of the element), and custom position (manually specify the target point).
+- **Target Text Position**`Integer`: Supports clicking at the center position of the element (center point of the element's rectangular area), random position (automatically specify a point within the rectangular range of the element), and custom position (manually specify the target point).
 
-- **Delay After Execution (ms)`Integer`**: Time to continue waiting after the command execution is completed
+- **Delay After Execution (ms)**`Integer`: Time to continue waiting after the command execution is completed
 
-- **Keyboard Modifier Keys`Integer`**: Keyboard function keys that need to be pressed
+- **Keyboard Modifier Keys**`Integer`: Keyboard function keys that need to be pressed
 
-- **Mouse Button`Integer`**: Trigger the clicked mouse button
+- **Mouse Button**`Integer`: Trigger the clicked mouse button
 
-- **Click Method`Integer`**: Single-click or double-click
+- **Click Method**`Integer`: Single-click or double-click
 
-- **Show Mouse Movement Trail`Boolean`**: Whether to show the mouse movement trail or not
+- **Show Mouse Movement Trail**`Boolean`: Whether to show the mouse movement trail or not
 
-- **Send Window Messages`Boolean`**: Directly simulate clicks through the operating system's messaging mechanism, bypassing the browser's event system, which is faster but may not trigger all interactive logic within the webpage.
+- **Send Window Messages**`Boolean`: Directly simulate clicks through the operating system's messaging mechanism, bypassing the browser's event system, which is faster but may not trigger all interactive logic within the webpage.
 
-- **Simulate Human Click`Boolean`**: Simulate user click behavior, trigger the browser's event mechanism, and ensure consistency with real operations. Suitable for scenarios requiring simulation of user interaction.
+- **Simulate Human Click**`Boolean`: Simulate user click behavior, trigger the browser's event mechanism, and ensure consistency with real operations. Suitable for scenarios requiring simulation of user interaction.
 
 
 **Command Output**

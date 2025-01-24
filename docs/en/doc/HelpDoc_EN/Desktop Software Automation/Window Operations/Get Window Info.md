@@ -16,28 +16,28 @@ Get window text content, process, title, and other information
 
 **Command Input**
 
-- **Operation`Integer`**: Window operation mode
+- **Operation**`Integer`: Window operation mode
 
-- **Window Handle`Integer`**: Enter a window handle
+- **Window Handle**`Integer`: Enter a window handle
 
-- **Match by Wildcard`Boolean`**: Match by wildcard
+- **Match by Wildcard**`Boolean`: Match by wildcard
 
-- **Window Type`string`**: Enter the window type
+- **Window Type**`string`: Enter the window type
 
-- **Add Window Type`Boolean`**: Add window type
+- **Add Window Type**`Boolean`: Add window type
 
-- **Window Title`string`**: Enter the window title
+- **Window Title**`string`: Enter the window title
 
-- **Operation Target`TTarget`**: Select a window element
+- **Operation Target**`TTarget`: Select a window element
 
-- **Window Object`TWinObj`**: Enter a window object
+- **Window Object**`TWinObj`: Enter a window object
 
-- **Window Retrieval Method`Integer`**: Select the window retrieval method
+- **Window Retrieval Method**`Integer`: Select the window retrieval method
 
 
 **Command Output**
 
-- **Save Window Info To`string`**: The saved window property object
+- **Save Window Info To**`string`: The saved window property object
 
 
 **Command Output**

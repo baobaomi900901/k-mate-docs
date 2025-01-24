@@ -16,13 +16,13 @@ Begin full-process automatic detection and handling of dialogs (recommended to p
 
 **Command Input**
 
-- **Select Sub-Process to Execute After Triggering`string`**: Select the sub-process to be executed
+- **Select Sub-Process to Execute After Triggering**`string`: Select the sub-process to be executed
 
-- **Select Trigger Element`string`**: When this element appears, execute the specified sub-process
+- **Select Trigger Element**`string`: When this element appears, execute the specified sub-process
 
-- **Dialog Close Button`string`**: Automatically click when this element appears, recommended to set as the close button of the dialog
+- **Dialog Close Button**`string`: Automatically click when this element appears, recommended to set as the close button of the dialog
 
-- **Handling Method`Integer`**: How to handle when the target element appears and is visible
+- **Handling Method**`Integer`: How to handle when the target element appears and is visible
 
 
 **Command Output**

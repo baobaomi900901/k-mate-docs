@@ -16,19 +16,19 @@ Send content to DingTalk group
 
 **Command Input**
 
-- **@Everyone`Boolean`**: @Everyone
+- **@Everyone**`Boolean`: @Everyone
 
-- **@Someone`String`**: Enter the phone number bound to the member you want to @, for multiple members, switch to programming mode and input a list of numbers, like ['PhoneNumber1', 'PhoneNumber2']
+- **@Someone**`String`: Enter the phone number bound to the member you want to @, for multiple members, switch to programming mode and input a list of numbers, like ['PhoneNumber1', 'PhoneNumber2']
 
-- **MarkDown Content`string`**: MarkDown content
+- **MarkDown Content**`string`: MarkDown content
 
-- **Text Content`string`**: Text content
+- **Text Content**`string`: Text content
 
-- **Message Format Type`Integer`**: Message type and data format
+- **Message Format Type**`Integer`: Message type and data format
 
-- **Secret Key`string`**: The string starting with SEC shown under the signature section on the bot security settings page
+- **Secret Key**`string`: The string starting with SEC shown under the signature section on the bot security settings page
 
-- **Bot Address`string`**: The bot's web address, i.e., WebHook, needs to be applied for separately
+- **Bot Address**`string`: The bot's web address, i.e., WebHook, needs to be applied for separately
 
 
 **Command Output**

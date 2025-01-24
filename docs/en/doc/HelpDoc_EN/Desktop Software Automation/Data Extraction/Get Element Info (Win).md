@@ -16,26 +16,26 @@ Get the text content, attributes, value, and position of a specified element in 
 
 **Command Input**
 
-- **Relative To`Integer`**: Position in the screen
+- **Relative To**`Integer`: Position in the screen
 
-- **Attribute Name`string`**: Element Attribute Name
+- **Attribute Name**`string`: Element Attribute Name
 
-- **Operation`Integer`**: Window Element Information
+- **Operation**`Integer`: Window Element Information
 
-- **Operation Target`TTarget`**: Select the desktop software element to operate on
+- **Operation Target**`TTarget`: Select the desktop software element to operate on
 
-- **Window Object`TWinObj`**: Enter a captured window object
+- **Window Object**`TWinObj`: Enter a captured window object
 
 
 **Command Output**
 
-- **Save Element Info To`string`**: Save the captured window element information
+- **Save Element Info To**`string`: Save the captured window element information
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout period for waiting for the target element to exist
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target element to exist
 
-- **Convert to 96 DPI Corresponding Value`Boolean`**: Whether to convert border attributes to device-independent units (each unit is 1/96 inch)
+- **Convert to 96 DPI Corresponding Value**`Boolean`: Whether to convert border attributes to device-independent units (each unit is 1/96 inch)
 
 
 **Command Output**

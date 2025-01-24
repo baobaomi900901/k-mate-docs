@@ -16,17 +16,17 @@ Remove the cookie specified by the cookie URL and cookie name
 
 **Command Input**
 
-- **Cookie Name`string`**: The name of the cookie to be removed
+- **Cookie Name**`string`: The name of the cookie to be removed
 
-- **Removal Method`Integer`**: 
+- **Removal Method**`Integer`: 
 
-- **Cookie URL`string`**: The cookie URL to be removed
+- **Cookie URL**`string`: The cookie URL to be removed
 
-- **Browser Type`Integer`**: Set the type of browser for the cookie
+- **Browser Type**`Integer`: Set the type of browser for the cookie
 
-- **Web Object`TBrowser`**: Enter a web object that has been obtained or created through the 'Open Web Page' function
+- **Web Object**`TBrowser`: Enter a web object that has been obtained or created through the 'Open Web Page' function
 
-- **URL Setting Method`Integer`**: The source of the cookie URL setting value; you can choose to manually enter it, or if you select a web object, the web page URL will be automatically used
+- **URL Setting Method**`Integer`: The source of the cookie URL setting value; you can choose to manually enter it, or if you select a web object, the web page URL will be automatically used
 
 
 **Command Output**

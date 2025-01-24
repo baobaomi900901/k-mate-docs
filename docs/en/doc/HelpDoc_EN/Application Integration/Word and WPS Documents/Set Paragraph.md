@@ -16,21 +16,21 @@ Set the style of the currently selected content (alignment, indentation, line sp
 
 **Command Input**
 
-- **Outline Level`Integer`**: Outline Level
+- **Outline Level**`Integer`: Outline Level
 
-- **Line Spacing`Integer`**: Line Spacing
+- **Line Spacing**`Integer`: Line Spacing
 
-- **Line Spacing Rule`Integer`**: Line Spacing Rule
+- **Line Spacing Rule**`Integer`: Line Spacing Rule
 
-- **Right Indent`Integer`**: Right Indentation
+- **Right Indent**`Integer`: Right Indentation
 
-- **Left Indent`Integer`**: Left Indentation
+- **Left Indent**`Integer`: Left Indentation
 
-- **First Line Indent`Integer`**: First Line Indentation
+- **First Line Indent**`Integer`: First Line Indentation
 
-- **Alignment`Integer`**: Selected alignment option
+- **Alignment**`Integer`: Selected alignment option
 
-- **Word Object`TDocumentApplication`**: Enter a Word object created by the function 'Open or Create Word'
+- **Word Object**`TDocumentApplication`: Enter a Word object created by the function 'Open or Create Word'
 
 
 **Command Output**

@@ -16,23 +16,23 @@ Perform operations to restore, maximize, or minimize a window
 
 **Command Input**
 
-- **Window State to Set`Integer`**: Set the window state
+- **Window State to Set**`Integer`: Set the window state
 
-- **Window Handle`Integer`**: Enter a window handle
+- **Window Handle**`Integer`: Enter a window handle
 
-- **Match by Wildcard`Boolean`**: Match by wildcard
+- **Match by Wildcard**`Boolean`: Match by wildcard
 
-- **Window Class Name`string`**: Enter window class name
+- **Window Class Name**`string`: Enter window class name
 
-- **Add Window Type`Boolean`**: Add window type
+- **Add Window Type**`Boolean`: Add window type
 
-- **Window Title`string`**: Enter window title
+- **Window Title**`string`: Enter window title
 
-- **Operation Target`TTarget`**: Select window element
+- **Operation Target**`TTarget`: Select window element
 
-- **Window Object`TWinObj`**: The window object obtained
+- **Window Object**`TWinObj`: The window object obtained
 
-- **Method of Getting Window`Integer`**: Select the method to get the window
+- **Method of Getting Window**`Integer`: Select the method to get the window
 
 
 **Command Output**

@@ -16,32 +16,32 @@ Call AI interface for text recognition
 
 **Command Input**
 
-- **Recognition Type`Integer`**: Select recognition type
+- **Recognition Type**`Integer`: Select recognition type
 
-- **Version`Integer`**: Old Version V1.0: Uses the old API from INTSIG official website; New Version V1.0: Uses the new API from INTSIG's official website and returns recognized content in coordinates; New Version V2.0: Uses the new API from INTSIG's official website and returns recognized content in JSON format
+- **Version**`Integer`: Old Version V1.0: Uses the old API from INTSIG official website; New Version V1.0: Uses the new API from INTSIG's official website and returns recognized content in coordinates; New Version V2.0: Uses the new API from INTSIG's official website and returns recognized content in JSON format
 
-- **Version Format`string`**: Language type for detection, default is CHN_ENG
+- **Version Format**`string`: Language type for detection, default is CHN_ENG
 
-- **Image Path`string`**: 
+- **Image Path**`string`: 
 
-- **Recognition Method`Integer`**: Select recognition method
+- **Recognition Method**`Integer`: Select recognition method
 
 
 **Command Output**
 
-- **Error Information`String`**: Specify a variable to store error information
+- **Error Information**`String`: Specify a variable to store error information
 
-- **Response Body Information`String`**: Specify a variable to store response body information
+- **Response Body Information**`String`: Specify a variable to store response body information
 
-- **Response Header Information`String`**: Specify a variable to store response header information
+- **Response Header Information**`String`: Specify a variable to store response header information
 
-- **Result`string`**: Specify a variable to store the recognition result
+- **Result**`string`: Specify a variable to store the recognition result
 
 ### Advanced
 
-- **Response Header Type`array of string`**: When the server and client establish a long connection, necessary settings for the HTTP response header's connection must be made, default is ['Connection']
+- **Response Header Type**`array of string`: When the server and client establish a long connection, necessary settings for the HTTP response header's connection must be made, default is ['Connection']
 
-- **Proxy Parameters`string`**: Proxy server, format: address:port
+- **Proxy Parameters**`string`: Proxy server, format: address:port
 
 
 **Command Output**

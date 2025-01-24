@@ -16,14 +16,14 @@ Read text from a Word file
 
 **Command Input**
 
-- **Read Range`Integer`**: Specify the range of Word content to be read
+- **Read Range**`Integer`: Specify the range of Word content to be read
 
-- **Word Object`TDocumentApplication`**: Enter a Word object created through the 'Open or Create Word' function
+- **Word Object**`TDocumentApplication`: Enter a Word object created through the 'Open or Create Word' function
 
 
 **Command Output**
 
-- **Save Word Content As`string`**: Specify a variable name to save the field data content
+- **Save Word Content As**`string`: Specify a variable name to save the field data content
 
 
 **Command Output**

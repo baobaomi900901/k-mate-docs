@@ -16,16 +16,16 @@ Read the content of the file at the specified path
 
 **Command Input**
 
-- **File Encoding`Integer`**: Select text encoding
+- **File Encoding**`Integer`: Select text encoding
 
-- **Read Method`Integer`**: The format of the file content
+- **Read Method**`Integer`: The format of the file content
 
-- **File Path`string`**: The path of the file to read
+- **File Path**`string`: The path of the file to read
 
 
 **Command Output**
 
-- **Save File Content to`string`**: Enter a name to save the file content
+- **Save File Content to**`string`: Enter a name to save the file content
 
 
 **Command Output**

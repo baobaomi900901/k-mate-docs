@@ -16,14 +16,14 @@ Write the data table to a string in CSV format.
 
 **Command Input**
 
-- **Delimiter`string`**: Use this delimiter for splitting and content output.
+- **Delimiter**`string`: Use this delimiter for splitting and content output.
 
-- **Data Table`TDataTable`**: The data table object to be written to the string.
+- **Data Table**`TDataTable`: The data table object to be written to the string.
 
 
 **Command Output**
 
-- **Text`string`**: The data table output as a string.
+- **Text**`string`: The data table output as a string.
 
 
 **Command Output**

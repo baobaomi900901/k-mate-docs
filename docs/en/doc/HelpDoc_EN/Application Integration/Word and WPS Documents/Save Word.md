@@ -16,15 +16,15 @@ Save Word
 
 **Command Input**
 
-- **Close After Saving`Boolean`**: Close after saving
+- **Close After Saving**`Boolean`: Close after saving
 
-- **Overwrite if file exists`Boolean`**: If the file exists and overwrite is not selected, an error will be shown indicating the file already exists
+- **Overwrite if file exists**`Boolean`: If the file exists and overwrite is not selected, an error will be shown indicating the file already exists
 
-- **Word File Path`string`**: Enter or select the path to the Word file to be saved
+- **Word File Path**`string`: Enter or select the path to the Word file to be saved
 
-- **Save Type`Integer`**: Choose how to save the Word object created with 'Create Word' or 'Open Word'
+- **Save Type**`Integer`: Choose how to save the Word object created with 'Create Word' or 'Open Word'
 
-- **Word Object`TDocumentApplication`**: Enter a Word object created using the 'Open or Create Word' function
+- **Word Object**`TDocumentApplication`: Enter a Word object created using the 'Open or Create Word' function
 
 
 **Command Output**

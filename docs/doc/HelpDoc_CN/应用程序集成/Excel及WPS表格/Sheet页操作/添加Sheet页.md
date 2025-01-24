@@ -16,11 +16,11 @@ title: 添加Sheet页
 
 **指令输入**
 
-- **添加方式`Integer`**: 添加位置
+- **添加方式**`Integer`: 添加位置
 
-- **Sheet页名称`string`**: 输入待添加的Sheet页名称,不能为空
+- **Sheet页名称**`string`: 输入待添加的Sheet页名称,不能为空
 
-- **Excel对象`TWorkbookApplication`**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 
 **指令输出**

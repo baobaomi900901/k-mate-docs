@@ -16,28 +16,28 @@ Take a screenshot of an element in the desktop software and save it to a specifi
 
 **Command Input**
 
-- **Overwrite file if it exists`Boolean`**: Overwrite file if it exists
+- **Overwrite file if it exists**`Boolean`: Overwrite file if it exists
 
-- **Custom file name`string`**: Custom file name
+- **Custom file name**`string`: Custom file name
 
-- **Use automatic random file name`Boolean`**: Automatically generate a unique file name
+- **Use automatic random file name**`Boolean`: Automatically generate a unique file name
 
-- **Save folder`string`**: The folder where the screenshot will be saved
+- **Save folder**`string`: The folder where the screenshot will be saved
 
-- **Save image to clipboard`Boolean`**: Save image to clipboard
+- **Save image to clipboard**`Boolean`: Save image to clipboard
 
-- **Operation target`TTarget`**: Select the window element
+- **Operation target**`TTarget`: Select the window element
 
-- **Window object`TWinObj`**: Enter a captured window object
+- **Window object**`TWinObj`: Enter a captured window object
 
 
 **Command Output**
 
-- **Screenshot save location`string`**: Specify a variable to save the screenshot location
+- **Screenshot save location**`string`: Specify a variable to save the screenshot location
 
 ### Advanced
 
-- **Wait for element to exist (milliseconds)`Integer`**: Timeout for waiting for the target element to exist
+- **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
 
 **Command Output**

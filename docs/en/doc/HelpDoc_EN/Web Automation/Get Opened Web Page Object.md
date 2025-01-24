@@ -16,34 +16,34 @@ Get a web page that is already open and matches the URL or title, or get the cur
 
 **Command Input**
 
-- **Match using wildcards`Boolean`**: Match using wildcards
+- **Match using wildcards**`Boolean`: Match using wildcards
 
-- **URL`string`**: Enter the web page address you want to open
+- **URL**`string`: Enter the web page address you want to open
 
-- **Title`string`**: Enter the web page title you want to match, supports fuzzy matching
+- **Title**`string`: Enter the web page title you want to match, supports fuzzy matching
 
-- **Matching Mode`Integer`**: Enter the web address you want to open
+- **Matching Mode**`Integer`: Enter the web address you want to open
 
-- **Browser Type`Integer`**: Select the browser type, you need to install the corresponding browser plugin in [Settings]-[Plugin Center] to achieve automation
+- **Browser Type**`Integer`: Select the browser type, you need to install the corresponding browser plugin in [Settings]-[Plugin Center] to achieve automation
 
 
 **Command Output**
 
-- **Save web page object to`TBrowser`**: This variable saves the web page object, which can be used to automate operations on the web page
+- **Save web page object to**`TBrowser`: This variable saves the web page object, which can be used to automate operations on the web page
 
 ### Advanced
 
-- **New URL`string`**: The URL of the new web page to open
+- **New URL**`string`: The URL of the new web page to open
 
-- **Open a new web page if matching fails`Boolean`**: When matching the web page title or URL fails, open a new web page
+- **Open a new web page if matching fails**`Boolean`: When matching the web page title or URL fails, open a new web page
 
-- **Action after load timeout`Integer`**: The action you want to perform after waiting for the page to load times out
+- **Action after load timeout**`Integer`: The action you want to perform after waiting for the page to load times out
 
-- **Load timeout (milliseconds)`Integer`**: The time to wait for the page to load before timing out (milliseconds)
+- **Load timeout (milliseconds)**`Integer`: The time to wait for the page to load before timing out (milliseconds)
 
-- **Wait for the web page to load completely`Boolean`**: Whether to wait for the web page to load completely
+- **Wait for the web page to load completely**`Boolean`: Whether to wait for the web page to load completely
 
-- **Do not grab mouse and keyboard during runtime`Boolean`**: Perform subsequent operations on the web page using API methods, which will improve stability and avoid occupying the mouse and keyboard
+- **Do not grab mouse and keyboard during runtime**`Boolean`: Perform subsequent operations on the web page using API methods, which will improve stability and avoid occupying the mouse and keyboard
 
 
 **Command Output**

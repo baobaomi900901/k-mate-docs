@@ -16,14 +16,14 @@ Rename a file
 
 **Command Input**
 
-- **New File Name`string`**: The new file name
+- **New File Name**`string`: The new file name
 
-- **Source File`string`**: The file to be renamed
+- **Source File**`string`: The file to be renamed
 
 
 **Command Output**
 
-- **New File Path`string`**: Enter a name to save the new file path
+- **New File Path**`string`: Enter a name to save the new file path
 
 
 **Command Output**

@@ -16,9 +16,9 @@ Create a new folder on the remote server
 
 **Command Input**
 
-- **New Folder`string`**: The name of the new folder to be created
+- **New Folder**`string`: The name of the new folder to be created
 
-- **FTP`TFTP`**: 
+- **FTP**`TFTP`: 
 
 
 **Command Output**

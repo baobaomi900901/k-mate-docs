@@ -16,16 +16,16 @@ Convert text to a DateTime, using the default format of %Y-%m-%d if not specifie
 
 **Command Input**
 
-- **Date Time Format`Integer`**: Set the date time format for the conversion
+- **Date Time Format**`Integer`: Set the date time format for the conversion
 
-- **Use Custom Format`Boolean`**: Whether to use a custom date time format
+- **Use Custom Format**`Boolean`: Whether to use a custom date time format
 
-- **Text`string`**: Enter the text to be converted to DateTime
+- **Text**`string`: Enter the text to be converted to DateTime
 
 
 **Command Output**
 
-- **Save DateTime To`TDateTime`**: Specify a variable to save the converted DateTime
+- **Save DateTime To**`TDateTime`: Specify a variable to save the converted DateTime
 
 
 **Command Output**

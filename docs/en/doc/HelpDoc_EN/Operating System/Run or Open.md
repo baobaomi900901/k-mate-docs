@@ -16,28 +16,28 @@ Run software, open software, open folder, open website, execute system commands,
 
 **Command Input**
 
-- **Wait time`Integer`**: Maximum wait time
+- **Wait time**`Integer`: Maximum wait time
 
-- **Wait timeout`Boolean`**: If unchecked, it means wait indefinitely
+- **Wait timeout**`Boolean`: If unchecked, it means wait indefinitely
 
-- **After command execution`Integer`**: Choose whether to continue executing commands or wait for program to finish, file to close
+- **After command execution**`Integer`: Choose whether to continue executing commands or wait for program to finish, file to close
 
-- **Path or Command`string`**: Open a program or file
+- **Path or Command**`string`: Open a program or file
 
 
 **Command Output**
 
-- **Save execution result to`string`**: Enter a name to save the execution result
+- **Save execution result to**`string`: Enter a name to save the execution result
 
 ### Advanced
 
-- **Window Style`Integer`**: Specify how the new window should be displayed
+- **Window Style**`Integer`: Specify how the new window should be displayed
 
-- **Run as Administrator`Boolean`**: Whether to run as administrator
+- **Run as Administrator**`Boolean`: Whether to run as administrator
 
-- **Working Directory (optional)`string`**: The working directory for the command in the process
+- **Working Directory (optional)**`string`: The working directory for the command in the process
 
-- **Arguments (optional)`string`**: Additional arguments for program execution
+- **Arguments (optional)**`string`: Additional arguments for program execution
 
 
 **Command Output**

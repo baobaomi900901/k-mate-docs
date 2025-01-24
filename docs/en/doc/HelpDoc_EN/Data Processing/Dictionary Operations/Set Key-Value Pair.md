@@ -16,11 +16,11 @@ This command is used to set a key-value pair in a dictionary, modifying the valu
 
 **Command Input**
 
-- **Value`string`**: Enter the key value
+- **Value**`string`: Enter the key value
 
-- **Key Name`string`**: Enter the key name
+- **Key Name**`string`: Enter the key name
 
-- **Dictionary`TRPADictionary`**: Enter the dictionary variable
+- **Dictionary**`TRPADictionary`: Enter the dictionary variable
 
 
 **Command Output**

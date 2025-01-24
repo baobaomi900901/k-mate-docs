@@ -16,22 +16,22 @@ Used to retrieve the content of templates from the Prompt project
 
 **Command Input**
 
-- **Variable Value`string`**: The value corresponding to the variable inserted into the Prompt template
+- **Variable Value**`string`: The value corresponding to the variable inserted into the Prompt template
 
-- **Variable Name`string`**: The name of the variable inserted into the Prompt template
+- **Variable Name**`string`: The name of the variable inserted into the Prompt template
 
-- **Template ID`integer`**: Enter the Prompt template ID, which can be obtained by creating a template on the Baidu Smart Cloud Qianfan Large Model Platform
+- **Template ID**`integer`: Enter the Prompt template ID, which can be obtained by creating a template on the Baidu Smart Cloud Qianfan Large Model Platform
 
 
 **Command Output**
 
-- **Save the returned result to`string`**: Specify a variable to store the returned text
+- **Save the returned result to**`string`: Specify a variable to store the returned text
 
 ### Advanced
 
-- **Proxy Parameters`string`**: Proxy server in the format Address:Port
+- **Proxy Parameters**`string`: Proxy server in the format Address:Port
 
-- **Timeout (milliseconds)`Integer`**: Maximum wait time (milliseconds)
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
 
 
 **Command Output**

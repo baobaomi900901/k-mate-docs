@@ -16,15 +16,15 @@ Check if the specified text appears on the screen. Before using, you need to ins
 
 **Command Input**
 
-- **Search Method`Integer`**: Specify whether the text is present or absent within the defined search range
+- **Search Method**`Integer`: Specify whether the text is present or absent within the defined search range
 
-- **Target Action`TTarget`**: Select a pre-recorded window element from the element list
+- **Target Action**`TTarget`: Select a pre-recorded window element from the element list
 
-- **Recognition Method`Integer`**: Recognition method
+- **Recognition Method**`Integer`: Recognition method
 
-- **Search Range`Integer`**: You can choose the entire screen or a specific window
+- **Search Range**`Integer`: You can choose the entire screen or a specific window
 
-- **Text to Search`string`**: Enter the text you need to search for
+- **Text to Search**`string`: Enter the text you need to search for
 
 
 **Command Output**

@@ -16,13 +16,13 @@ Insert a blank row in the Excel table
 
 **Command Input**
 
-- **Sheet Name`string`**: If empty, it defaults to the currently active sheet
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
-- **How many rows to insert`Integer`**: How many blank rows to insert
+- **How many rows to insert**`Integer`: How many blank rows to insert
 
-- **Before which row`Integer`**: Row number. Starts from 1
+- **Before which row**`Integer`: Row number. Starts from 1
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**

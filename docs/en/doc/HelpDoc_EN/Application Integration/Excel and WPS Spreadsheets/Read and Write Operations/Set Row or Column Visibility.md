@@ -1,13 +1,13 @@
 ---
-title: Read Custom Data
+title: Set Row或Column Visibility
 ---
 
-# Read Custom Data
+# Set Row或Column Visibility
 
 ## Function Description
 
 :::tip 
-Read custom data that has been saved in the process
+Hide or unhide rows and columns in Excel
 :::
 
 ## Configuration Item Description
@@ -16,12 +16,22 @@ Read custom data that has been saved in the process
 
 **Command Input**
 
-- **Key**`string`: The Key specified in the 【Save Custom Data】 instruction
+- **Sheet Name**`string`: If empty, defaults to the currently active sheet
+
+- **Column Name**`string`: Column name. Starts from A
+
+- **Row Number**`Integer`: Row number. Starts from 1
+
+- **Range**`Integer`: Specify the row or column to hide or unhide
+
+- **State**`Integer`: Set the hidden attribute of Excel rows and columns
+
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**
 
-- **Data Content**`string`: Save the retrieved custom data content to a variable, return null if not found based on the Key
+No output for the current command
 
 
 **Command Output**

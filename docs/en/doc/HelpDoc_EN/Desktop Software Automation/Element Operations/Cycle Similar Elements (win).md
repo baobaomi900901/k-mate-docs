@@ -16,30 +16,30 @@ Sequentially cycle through each item in the similar elements list of the desktop
 
 **Command Input**
 
-- **Output Loop Item Position`Boolean`**: Whether to output the position of the loop item.
+- **Output Loop Item Position**`Boolean`: Whether to output the position of the loop item.
 
-- **Attribute Name`string`**: Element attribute name.
+- **Attribute Name**`string`: Element attribute name.
 
-- **Element Operation`Integer`**: Operate on element information.
+- **Element Operation**`Integer`: Operate on element information.
 
-- **Operation Target`TTarget`**: Select the window element that needs to be operated on.
+- **Operation Target**`TTarget`: Select the window element that needs to be operated on.
 
-- **Window Object`TWinObj`**: Enter a captured window object.
+- **Window Object**`TWinObj`: Enter a captured window object.
 
 
 **Command Output**
 
-- **Save Current Loop Position To`Integer`**: Save the count of obtained similar elements.
+- **Save Current Loop Position To**`Integer`: Save the count of obtained similar elements.
 
-- **Save Current Loop Item To`TUiElement`**: Specify a variable name to store current loop item information.
+- **Save Current Loop Item To**`TUiElement`: Specify a variable name to store current loop item information.
 
 ### Advanced
 
-- **Wait for Element to Exist (ms)`Integer`**: Timeout time for waiting for the target associated element to exist.
+- **Wait for Element to Exist (ms)**`Integer`: Timeout time for waiting for the target associated element to exist.
 
-- **Loop End Position`Integer`**: Loop end position, -1 is the last item.
+- **Loop End Position**`Integer`: Loop end position, -1 is the last item.
 
-- **Loop Start Position`Integer`**: Loop start position, 0 is the first item.
+- **Loop Start Position**`Integer`: Loop start position, 0 is the first item.
 
 
 **Command Output**

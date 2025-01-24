@@ -16,28 +16,28 @@ HTTP Download
 
 **Command Input**
 
-- **Timeout (Milliseconds)`Integer`**: Enter the timeout in milliseconds
+- **Timeout (Milliseconds)**`Integer`: Enter the timeout in milliseconds
 
-- **File Name`string`**: Enter the name to be saved in the folder
+- **File Name**`string`: Enter the name to be saved in the folder
 
-- **Specify File Name`Boolean`**: Whether to save the response result to a file
+- **Specify File Name**`Boolean`: Whether to save the response result to a file
 
-- **File Save Directory`string`**: Enter the path where the file will be saved
+- **File Save Directory**`string`: Enter the path where the file will be saved
 
-- **Download URL`string`**: Please enter the request URL
+- **Download URL**`string`: Please enter the request URL
 
 
 **Command Output**
 
-- **Save Download File Name to`string`**: Specify a variable name that will store the saved download file name (including path)
+- **Save Download File Name to**`string`: Specify a variable name that will store the saved download file name (including path)
 
 ### Advanced
 
-- **Webpage Object`TObject`**: Enter a webpage object created by 'Get Open Webpage Object'
+- **Webpage Object**`TObject`: Enter a webpage object created by 'Get Open Webpage Object'
 
-- **Send HTTP Request via Webpage`Boolean`**: Use case: Need authentication information to send successfully, choose the relative webpage object for authentication
+- **Send HTTP Request via Webpage**`Boolean`: Use case: Need authentication information to send successfully, choose the relative webpage object for authentication
 
-- **Connection Timeout (Milliseconds)`Integer`**: Enter the connection timeout in milliseconds
+- **Connection Timeout (Milliseconds)**`Integer`: Enter the connection timeout in milliseconds
 
 
 **Command Output**

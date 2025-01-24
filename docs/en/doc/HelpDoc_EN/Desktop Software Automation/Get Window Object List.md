@@ -16,14 +16,14 @@ Get all window objects that meet the conditions
 
 **Command Input**
 
-- **Match Using Wildcards`Boolean`**: Match using wildcards
+- **Match Using Wildcards**`Boolean`: Match using wildcards
 
-- **Window Title Contains`string`**: Enter characters contained in the window title
+- **Window Title Contains**`string`: Enter characters contained in the window title
 
 
 **Command Output**
 
-- **Save Window List Object To`TList<TUiElement>`**: The saved window object list
+- **Save Window List Object To**`TList<TUiElement>`: The saved window object list
 
 
 **Command Output**

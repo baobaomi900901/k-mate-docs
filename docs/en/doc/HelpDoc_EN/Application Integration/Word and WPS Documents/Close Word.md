@@ -16,19 +16,19 @@ Close Word
 
 **Command Input**
 
-- **Cover if file exists`Boolean`**: If the file already exists and you choose not to cover it, an error will be prompted that the file already exists
+- **Cover if file exists**`Boolean`: If the file already exists and you choose not to cover it, an error will be prompted that the file already exists
 
-- **Word file path`string`**: Enter or select the Word file path to open
+- **Word file path**`string`: Enter or select the Word file path to open
 
-- **Close type`Integer`**: Close type
+- **Close type**`Integer`: Close type
 
-- **Terminate Word process`Boolean`**: If checked, it will forcefully end the specified Word process for the current user and all its child processes
+- **Terminate Word process**`Boolean`: If checked, it will forcefully end the specified Word process for the current user and all its child processes
 
-- **Close process`Integer`**: Close process
+- **Close process**`Integer`: Close process
 
-- **Word object`TDocumentApplication`**: Enter a Word object created by the 'Open or Create Word' function
+- **Word object**`TDocumentApplication`: Enter a Word object created by the 'Open or Create Word' function
 
-- **Operation`Integer`**: Choose whether to close a specified Word file or close all Word files
+- **Operation**`Integer`: Choose whether to close a specified Word file or close all Word files
 
 
 **Command Output**

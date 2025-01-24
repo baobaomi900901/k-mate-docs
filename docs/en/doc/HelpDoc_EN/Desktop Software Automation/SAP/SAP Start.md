@@ -16,18 +16,18 @@ Start SAP
 
 **Command Input**
 
-- **Retry Interval`Integer`**: Retry interval
+- **Retry Interval**`Integer`: Retry interval
 
-- **Retry Number`Integer`**: Number of retries
+- **Retry Number**`Integer`: Number of retries
 
-- **Connection Name`string`**: The connection name used for SAP login
+- **Connection Name**`string`: The connection name used for SAP login
 
-- **SAP Launch Path`string`**: The path where the SAP launch program is located
+- **SAP Launch Path**`string`: The path where the SAP launch program is located
 
 
 **Command Output**
 
-- **SAP Login Window`TUiElement`**: Specify a variable to save the SAP login window
+- **SAP Login Window**`TUiElement`: Specify a variable to save the SAP login window
 
 
 **Command Output**

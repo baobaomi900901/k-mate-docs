@@ -16,24 +16,24 @@ Open an existing Word file or create a new one to automate Word operations
 
 **Command Input**
 
-- **Visible`Boolean`**: This option does not limit Word automation capabilities, it is used to control whether the operation is visible to the user. If running Word in non-visible mode, the Word file must be closed after saving
+- **Visible**`Boolean`: This option does not limit Word automation capabilities, it is used to control whether the operation is visible to the user. If running Word in non-visible mode, the Word file must be closed after saving
 
-- **Word File Path`string`**: Enter or select the path of the Word file to open
+- **Word File Path**`string`: Enter or select the path of the Word file to open
 
-- **Driver Method`Integer`**: Select the driver method
+- **Driver Method**`Integer`: Select the driver method
 
-- **Launch Method`Integer`**: Select whether to create a new Word file or open an existing one
+- **Launch Method**`Integer`: Select whether to create a new Word file or open an existing one
 
 
 **Command Output**
 
-- **Save Word Object To`TDocumentApplication`**: Specify a variable to save the Word object. This Word object can be used for Word automation operations
+- **Save Word Object To**`TDocumentApplication`: Specify a variable to save the Word object. This Word object can be used for Word automation operations
 
 ### Advanced
 
-- **Edit Password`string`**: Password used to edit an encrypted Word file
+- **Edit Password**`string`: Password used to edit an encrypted Word file
 
-- **Open Password`string`**: Password used to open the encrypted Word file
+- **Open Password**`string`: Password used to open the encrypted Word file
 
 
 **Command Output**

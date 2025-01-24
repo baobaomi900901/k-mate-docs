@@ -21,7 +21,7 @@ No input for the current command
 
 **Command Output**
 
-- **Save clipboard text to`string`**: Enter a name to save the clipboard text content
+- **Save clipboard text to**`string`: Enter a name to save the clipboard text content
 
 
 **Command Output**

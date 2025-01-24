@@ -16,15 +16,15 @@ title: 设置Json值
 
 **指令输入**
 
-- **特殊字符`Boolean`**: 当键Key含有部分特殊字符时，勾选此按钮。
+- **特殊字符**`Boolean`: 当键Key含有部分特殊字符时，勾选此按钮。
 
-- **数据类型`Integer`**: 数据类型
+- **数据类型**`Integer`: 数据类型
 
-- **值`string`**: 值
+- **值**`string`: 值
 
-- **键`string`**: 键
+- **键**`string`: 键
 
-- **Json对象`TJson`**: Json对象
+- **Json对象**`TJson`: Json对象
 
 
 **指令输出**

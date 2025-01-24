@@ -16,20 +16,20 @@ Use prompt text to instruct AI to create an image.
 
 **Command Input**
 
-- **Image Size`Integer`**: Choose the image size to generate
+- **Image Size**`Integer`: Choose the image size to generate
 
-- **Prompt Text`string`**: Enter the prompt text
+- **Prompt Text**`string`: Enter the prompt text
 
 
 **Command Output**
 
-- **Save the result to`string`**: Specify a variable to store the Base64 encoded text of the generated image
+- **Save the result to**`string`: Specify a variable to store the Base64 encoded text of the generated image
 
 ### Advanced
 
-- **Timeout (milliseconds)`Integer`**: Maximum waiting time (milliseconds)
+- **Timeout (milliseconds)**`Integer`: Maximum waiting time (milliseconds)
 
-- **Proxy Parameters`string`**: Proxy server, format as Address:Port
+- **Proxy Parameters**`string`: Proxy server, format as Address:Port
 
 
 **Command Output**

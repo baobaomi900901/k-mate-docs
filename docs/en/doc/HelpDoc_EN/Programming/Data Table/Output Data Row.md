@@ -16,16 +16,16 @@ Output a data row
 
 **Command Input**
 
-- **Data Row`TDataRow`**: The data row object to be output. If this property is set, the 'Row Index' property is ignored.
+- **Data Row**`TDataRow`: The data row object to be output. If this property is set, the 'Row Index' property is ignored.
 
-- **Row Index`Integer`**: Row Index
+- **Row Index**`Integer`: Row Index
 
-- **Data Table`TDataTable`**: The data table object from which the row will be output.
+- **Data Table**`TDataTable`: The data table object from which the row will be output.
 
 
 **Command Output**
 
-- **Row Data`string`**: Row data
+- **Row Data**`string`: Row data
 
 
 **Command Output**

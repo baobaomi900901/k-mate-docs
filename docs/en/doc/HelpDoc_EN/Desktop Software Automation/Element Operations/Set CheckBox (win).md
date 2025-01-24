@@ -16,11 +16,11 @@ Set the state of the check box in the window to checked or unchecked
 
 **Command Input**
 
-- **Operation`Integer`**: Operation for the check box
+- **Operation**`Integer`: Operation for the check box
 
-- **Operation target`TTarget`**: Select the window element to operate on
+- **Operation target**`TTarget`: Select the window element to operate on
 
-- **Window object`TWinObj`**: Enter a captured window object
+- **Window object**`TWinObj`: Enter a captured window object
 
 
 **Command Output**
@@ -29,9 +29,9 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for element to exist (milliseconds)`Integer`**: Timeout for waiting for the target check box to exist
+- **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target check box to exist
 
-- **Delay after execution (milliseconds)`Integer`**: Time to continue waiting after command execution
+- **Delay after execution (milliseconds)**`Integer`: Time to continue waiting after command execution
 
 
 **Command Output**

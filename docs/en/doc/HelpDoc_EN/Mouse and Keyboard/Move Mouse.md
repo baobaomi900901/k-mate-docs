@@ -16,13 +16,13 @@ Move the mouse to a specified position
 
 **Command Input**
 
-- **Move speed`Integer`**: Speed of mouse movement
+- **Move speed**`Integer`: Speed of mouse movement
 
-- **Move the mouse to Y`Integer`**: Relative vertical coordinate
+- **Move the mouse to Y**`Integer`: Relative vertical coordinate
 
-- **Move the mouse to X`Integer`**: Relative horizontal coordinate
+- **Move the mouse to X**`Integer`: Relative horizontal coordinate
 
-- **Relative to`Integer`**: The position of the mouse
+- **Relative to**`Integer`: The position of the mouse
 
 
 **Command Output**
@@ -31,7 +31,7 @@ No output for the current command
 
 ### Advanced
 
-- **Delay after execution (milliseconds)`Integer`**: Time to wait after the instruction is executed
+- **Delay after execution (milliseconds)**`Integer`: Time to wait after the instruction is executed
 
 
 **Command Output**

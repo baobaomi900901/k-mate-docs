@@ -16,11 +16,11 @@ This command is used to modify the value of an item at a specific position in th
 
 **Command Input**
 
-- **New Item Value`String`**: The new value to be modified
+- **New Item Value**`String`: The new value to be modified
 
-- **Item Position`Integer`**: Enter the index of the item position. Counting forwards: the first item is 0, the second item is 1, and so on; counting backwards: the last item is -1, the second to last item is -2, and so on.
+- **Item Position**`Integer`: Enter the index of the item position. Counting forwards: the first item is 0, the second item is 1, and so on; counting backwards: the last item is -1, the second to last item is -2, and so on.
 
-- **List`TList<String>`**: Enter the list variable
+- **List**`TList<String>`: Enter the list variable
 
 
 **Command Output**

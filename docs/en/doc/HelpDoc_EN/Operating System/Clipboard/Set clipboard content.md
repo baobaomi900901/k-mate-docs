@@ -16,7 +16,7 @@ Set the content for the clipboard, allowing subsequent Ctrl+V pasting
 
 **Command Input**
 
-- **Content source`string`**: Enter or select the content to be set to the clipboard, supporting subsequent Ctrl+V pasting
+- **Content source**`string`: Enter or select the content to be set to the clipboard, supporting subsequent Ctrl+V pasting
 
 
 **Command Output**

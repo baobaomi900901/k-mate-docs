@@ -16,19 +16,19 @@ title: 关闭Excel
 
 **指令输入**
 
-- **终止Excel进程`Boolean`**: 强制结束当前用户指定的Excel
+- **终止Excel进程**`Boolean`: 强制结束当前用户指定的Excel
 
-- **关闭进程`Integer`**: 选择要关闭的进程
+- **关闭进程**`Integer`: 选择要关闭的进程
 
-- **如果文件存在则覆盖`Boolean`**: 如果文件存在则覆盖
+- **如果文件存在则覆盖**`Boolean`: 如果文件存在则覆盖
 
-- **Excel文件路径`string`**: 打开的Excel文件路径
+- **Excel文件路径**`string`: 打开的Excel文件路径
 
-- **关闭方式`Integer`**: 选择关闭方式
+- **关闭方式**`Integer`: 选择关闭方式
 
-- **Excel对象`TWorkbookApplication`**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
-- **操作`Integer`**: 对Excel的操作
+- **操作**`Integer`: 对Excel的操作
 
 
 **指令输出**

@@ -16,14 +16,14 @@ Loop through each row in the data table.
 
 **Command Input**
 
-- **Data Table`TDataTable`**: The data table object to be looped through.
+- **Data Table**`TDataTable`: The data table object to be looped through.
 
 
 **Command Output**
 
-- **Index`Integer`**: The output row index.
+- **Index**`Integer`: The output row index.
 
-- **Row Object`TDataRow`**: The output row object.
+- **Row Object**`TDataRow`: The output row object.
 
 
 **Command Output**

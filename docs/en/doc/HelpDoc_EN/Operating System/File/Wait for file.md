@@ -16,18 +16,18 @@ Wait for the file to be created or deleted
 
 **Command Input**
 
-- **Timeout duration (milliseconds)`Integer`**: Enter the timeout duration (milliseconds)
+- **Timeout duration (milliseconds)**`Integer`: Enter the timeout duration (milliseconds)
 
-- **Set timeout`Boolean`**: Set the timeout duration
+- **Set timeout**`Boolean`: Set the timeout duration
 
-- **Wait for the file to be`Integer`**: Select the desired file state
+- **Wait for the file to be**`Integer`: Select the desired file state
 
-- **File path`string`**: Enter the file path
+- **File path**`string`: Enter the file path
 
 
 **Command Output**
 
-- **Wait result`Boolean`**: If True, wait was successful; otherwise, the wait timed out
+- **Wait result**`Boolean`: If True, wait was successful; otherwise, the wait timed out
 
 
 **Command Output**

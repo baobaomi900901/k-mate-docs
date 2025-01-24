@@ -16,18 +16,18 @@ Convert the timestamp to a DateTime, defaulting to second-level timestamps
 
 **Command Input**
 
-- **Output DateTime as Text`Boolean`**: If checked, the output of this command will be the text format of the new date, otherwise it will be a DateTime object
+- **Output DateTime as Text**`Boolean`: If checked, the output of this command will be the text format of the new date, otherwise it will be a DateTime object
 
-- **Timestamp Level`Integer`**: Select the timestamp level, which can be second, millisecond, or microsecond. The level determines the length of the timestamp: 10 digits for seconds, 13 for milliseconds, and 16 for microseconds.
+- **Timestamp Level**`Integer`: Select the timestamp level, which can be second, millisecond, or microsecond. The level determines the length of the timestamp: 10 digits for seconds, 13 for milliseconds, and 16 for microseconds.
 
-- **Timestamp`string`**: Enter the timestamp to be converted to DateTime
+- **Timestamp**`string`: Enter the timestamp to be converted to DateTime
 
 
 **Command Output**
 
-- **Save DateTime Text To`string`**: Specify a variable to save the text of the converted DateTime
+- **Save DateTime Text To**`string`: Specify a variable to save the text of the converted DateTime
 
-- **Save DateTime To`TDateTime`**: Specify a variable to save the converted DateTime
+- **Save DateTime To**`TDateTime`: Specify a variable to save the converted DateTime
 
 
 **Command Output**

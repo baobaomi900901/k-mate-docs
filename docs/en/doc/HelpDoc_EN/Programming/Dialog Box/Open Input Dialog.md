@@ -16,20 +16,20 @@ Open Input Dialog
 
 **Command Input**
 
-- **Input Field Type`Integer`**: Input Field Type
+- **Input Field Type**`Integer`: Input Field Type
 
-- **Dialog Title`string`**: Dialog Title
+- **Dialog Title**`string`: Dialog Title
 
 
 **Command Output**
 
-- **Save User Input Result To`TRPADictionary`**: Specify a variable name to save the user input result, return None if the user cancels the dialog, otherwise return a dict object
+- **Save User Input Result To**`TRPADictionary`: Specify a variable name to save the user input result, return None if the user cancels the dialog, otherwise return a dict object
 
 ### Advanced
 
-- **Default Value`string`**: Default Value
+- **Default Value**`string`: Default Value
 
-- **Dialog Explanation`string`**: Dialog Explanation
+- **Dialog Explanation**`string`: Dialog Explanation
 
 
 **Command Output**

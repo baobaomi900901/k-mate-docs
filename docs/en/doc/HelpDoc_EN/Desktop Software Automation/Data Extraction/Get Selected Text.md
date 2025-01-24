@@ -16,12 +16,12 @@ Get the currently selected text in the active window
 
 **Command Input**
 
-- **Wait time (ms)`Integer`**: If the text selection process or network response is slow, consider extending the wait time to avoid missing content
+- **Wait time (ms)**`Integer`: If the text selection process or network response is slow, consider extending the wait time to avoid missing content
 
 
 **Command Output**
 
-- **Save the selected text to`string`**: Specify a variable to save the selected text content
+- **Save the selected text to**`string`: Specify a variable to save the selected text content
 
 
 **Command Output**

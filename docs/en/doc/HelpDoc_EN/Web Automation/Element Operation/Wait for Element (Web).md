@@ -16,20 +16,20 @@ Wait for the specified element on the web page to appear or disappear before pro
 
 **Command Input**
 
-- **Timeout (Milliseconds)`Integer`**: Set the maximum wait time
+- **Timeout (Milliseconds)**`Integer`: Set the maximum wait time
 
-- **Set Timeout`Boolean`**: Set the wait timeout period; the process will continue automatically if it times out
+- **Set Timeout**`Boolean`: Set the wait timeout period; the process will continue automatically if it times out
 
-- **Wait State`Integer`**: Select the wait state
+- **Wait State**`Integer`: Select the wait state
 
-- **Target Element`TTarget`**: Select the web element you want to operate on
+- **Target Element**`TTarget`: Select the web element you want to operate on
 
-- **Web Page Object`TBrowser`**: Enter a web page object obtained or created by the 'Open Web Page' function
+- **Web Page Object**`TBrowser`: Enter a web page object obtained or created by the 'Open Web Page' function
 
 
 **Command Output**
 
-- **Wait Result`Boolean`**: If true, the wait was successful; otherwise, it timed out
+- **Wait Result**`Boolean`: If true, the wait was successful; otherwise, it timed out
 
 
 **Command Output**

@@ -16,11 +16,11 @@ Wait for the web page to load completely
 
 **Command Input**
 
-- **Action if Timeout`Integer`**: The action to perform if the page load times out
+- **Action if Timeout**`Integer`: The action to perform if the page load times out
 
-- **Load Timeout (milliseconds)`Integer`**: The timeout for the page to load completely
+- **Load Timeout (milliseconds)**`Integer`: The timeout for the page to load completely
 
-- **Webpage Object`TBrowser`**: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
+- **Webpage Object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
 
 
 **Command Output**

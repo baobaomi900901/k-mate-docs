@@ -16,24 +16,24 @@ This instruction is used to merge multiple PDF documents and save them as a new 
 
 **Command Input**
 
-- **If the file already exists`Integer`**: Please choose how to handle the case when the target file already exists.
+- **If the file already exists**`Integer`: Please choose how to handle the case when the target file already exists.
 
-- **Save the merged file to`string`**: Please enter the path to save the merged file.
+- **Save the merged file to**`string`: Please enter the path to save the merged file.
 
-- **List of files to be merged`string`**: You can select multiple files at once. Separate file paths with the '|' symbol.
+- **List of files to be merged**`string`: You can select multiple files at once. Separate file paths with the '|' symbol.
 
 
 **Command Output**
 
-- **Save the merged file path to`string`**: Specify a variable to save the path of the merged file.
+- **Save the merged file path to**`string`: Specify a variable to save the path of the merged file.
 
 ### Advanced
 
-- **Delimiter`string`**: Set the delimiter between passwords.
+- **Delimiter**`string`: Set the delimiter between passwords.
 
-- **Password`string`**: Enter the password for each file to be merged. Enter the passwords in the order the files are added, and separate them with the specified delimiter. For example, if the files to be merged are file1.pdf (no password) and file2.pdf (requires password), and the delimiter is ';', enter ';password for file2.pdf' in the password box.
+- **Password**`string`: Enter the password for each file to be merged. Enter the passwords in the order the files are added, and separate them with the specified delimiter. For example, if the files to be merged are file1.pdf (no password) and file2.pdf (requires password), and the delimiter is ';', enter ';password for file2.pdf' in the password box.
 
-- **Use password protection`Boolean`**: Choose whether the files to be merged include any that require password protection.
+- **Use password protection**`Boolean`: Choose whether the files to be merged include any that require password protection.
 
 
 **Command Output**

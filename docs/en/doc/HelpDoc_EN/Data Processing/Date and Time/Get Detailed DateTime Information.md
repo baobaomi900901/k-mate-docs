@@ -16,12 +16,12 @@ Get the year, month, day, hour, minute, second, weekday, last day of the month, 
 
 **Command Input**
 
-- **DateTime`TDateTime`**: Enter a DateTime object
+- **DateTime**`TDateTime`: Enter a DateTime object
 
 
 **Command Output**
 
-- **Save DateTime data to`TDateTime`**: Specify a variable to save the year, month, day, hour, minute, and second information obtained
+- **Save DateTime data to**`TDateTime`: Specify a variable to save the year, month, day, hour, minute, and second information obtained
 
 
 **Command Output**

@@ -16,18 +16,18 @@ Read the total number of rows in the data table
 
 **Command Input**
 
-- **Operation Target`TTarget`**: Select the SAP table element to be operated on
+- **Operation Target**`TTarget`: Select the SAP table element to be operated on
 
-- **Window Object`TWinObj`**: Enter a retrieved SAP session window
+- **Window Object**`TWinObj`: Enter a retrieved SAP session window
 
 
 **Command Output**
 
-- **Save Total Row Count To`Integer`**: Specify a variable to save the total row count
+- **Save Total Row Count To**`Integer`: Specify a variable to save the total row count
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout for waiting for the target element to exist
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
 
 **Command Output**

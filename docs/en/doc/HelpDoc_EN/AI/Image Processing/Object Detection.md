@@ -16,22 +16,22 @@ Call the Kingsware AI interface for object detection.
 
 **Command Input**
 
-- **Image Path`string`**: Enter the image address to be selected.
+- **Image Path**`string`: Enter the image address to be selected.
 
-- **Recognition Method`Integer`**: Select a recognition method.
+- **Recognition Method**`Integer`: Select a recognition method.
 
 
 **Command Output**
 
-- **Error Information`String`**: Specify a variable to store the error information.
+- **Error Information**`String`: Specify a variable to store the error information.
 
-- **Response Body Information`String`**: Specify a variable to store the response body information.
+- **Response Body Information**`String`: Specify a variable to store the response body information.
 
-- **Response Header Information`String`**: Specify a variable to store the response header information.
+- **Response Header Information**`String`: Specify a variable to store the response header information.
 
 ### Advanced
 
-- **Response Header Type`array of string`**: When the server and client establish a long connection, it is necessary to set the HTTP response header 'Connection'. The default is ['Connection'].
+- **Response Header Type**`array of string`: When the server and client establish a long connection, it is necessary to set the HTTP response header 'Connection'. The default is ['Connection'].
 
 
 **Command Output**

@@ -16,14 +16,14 @@ Open Data Table Dialog
 
 **Command Input**
 
-- **Description`string`**: Provide a description of how to use the data table, making it easier for users to understand
+- **Description**`string`: Provide a description of how to use the data table, making it easier for users to understand
 
-- **Dialog Title`string`**: Dialog Title
+- **Dialog Title**`string`: Dialog Title
 
 
 **Command Output**
 
-- **Button Name`string`**: Specify a variable name to save the name of the clicked button
+- **Button Name**`string`: Specify a variable name to save the name of the clicked button
 
 
 **Command Output**

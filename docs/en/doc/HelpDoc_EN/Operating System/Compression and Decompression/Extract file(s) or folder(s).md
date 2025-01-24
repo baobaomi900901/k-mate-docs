@@ -16,18 +16,18 @@ Used to extract files/folders
 
 **Command Input**
 
-- **Create folder with the same name`Boolean`**: Extract to a folder with the same name as the compressed file
+- **Create folder with the same name**`Boolean`: Extract to a folder with the same name as the compressed file
 
-- **Decompressed folder path`string`**: Please enter the path for the extracted folder
+- **Decompressed folder path**`string`: Please enter the path for the extracted folder
 
-- **Password`string`**: Enter the password; leave blank if there is no password
+- **Password**`string`: Enter the password; leave blank if there is no password
 
-- **Compressed file path`string`**: Enter or select the path of the file to extract
+- **Compressed file path**`string`: Enter or select the path of the file to extract
 
 
 **Command Output**
 
-- **Save folder path to`string`**: Specify a variable name to store the folder path
+- **Save folder path to**`string`: Specify a variable name to store the folder path
 
 
 **Command Output**

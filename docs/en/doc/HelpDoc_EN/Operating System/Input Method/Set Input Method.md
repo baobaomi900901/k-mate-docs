@@ -16,7 +16,7 @@ Set the input method for the currently active window
 
 **Command Input**
 
-- **Switch to`Integer`**: Select an input method
+- **Switch to**`Integer`: Select an input method
 
 
 **Command Output**

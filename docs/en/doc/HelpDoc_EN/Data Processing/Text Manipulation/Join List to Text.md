@@ -16,20 +16,20 @@ This command is used to concatenate each element in the list with a specified de
 
 **Command Input**
 
-- **Custom Delimiter`string`**: Enter a custom delimiter
+- **Custom Delimiter**`string`: Enter a custom delimiter
 
-- **Number of Delimiters`Integer`**: The number of times the delimiter should be repeated
+- **Number of Delimiters**`Integer`: The number of times the delimiter should be repeated
 
-- **Standard Delimiter`Integer`**: Select a delimiter
+- **Standard Delimiter**`Integer`: Select a delimiter
 
-- **Delimiter Type`Integer`**: Select a delimiter type
+- **Delimiter Type**`Integer`: Select a delimiter type
 
-- **List to Convert`TList<String>`**: Enter a list
+- **List to Convert**`TList<String>`: Enter a list
 
 
 **Command Output**
 
-- **Save Result To`string`**: Specify a variable to save the concatenated text
+- **Save Result To**`string`: Specify a variable to save the concatenated text
 
 
 **Command Output**

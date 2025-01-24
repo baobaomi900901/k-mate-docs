@@ -16,12 +16,12 @@ Retrieve the root directory, parent directory, file name, base file name, and fi
 
 **Command Input**
 
-- **File path`string`**: The file path to retrieve
+- **File path**`string`: The file path to retrieve
 
 
 **Command Output**
 
-- **File path information`TList<String>`**: Enter a name to save the file path information
+- **File path information**`TList<String>`: Enter a name to save the file path information
 
 
 **Command Output**

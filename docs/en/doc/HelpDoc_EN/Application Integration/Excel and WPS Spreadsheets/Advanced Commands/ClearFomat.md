@@ -16,27 +16,27 @@ title: ClearFomat
 
 **Command Input**
 
-- **SheetName`string`**: 
+- **SheetName**`string`: 
 
-- **ColumnName`string`**: 
+- **ColumnName**`string`: 
 
-- **Row`Integer`**: 
+- **Row**`Integer`: 
 
-- **EndColumnName`string`**: 
+- **EndColumnName**`string`: 
 
-- **EndRow`Integer`**: 
+- **EndRow**`Integer`: 
 
-- **BeginColumnName`string`**: 
+- **BeginColumnName**`string`: 
 
-- **BeignRow`Integer`**: 
+- **BeignRow**`Integer`: 
 
-- **UnitColumnName`string`**: 
+- **UnitColumnName**`string`: 
 
-- **UnitRow`Integer`**: 
+- **UnitRow**`Integer`: 
 
-- **RegionType`Integer`**: 
+- **RegionType**`Integer`: 
 
-- **ExcelInstance`TWorkbookApplication`**: 
+- **ExcelInstance**`TWorkbookApplication`: 
 
 
 **Command Output**

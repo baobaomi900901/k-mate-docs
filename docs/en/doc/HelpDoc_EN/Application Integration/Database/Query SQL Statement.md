@@ -16,16 +16,16 @@ Execute Select query SQL statement in the specified database
 
 **Command Input**
 
-- **Timeout in milliseconds`Integer`**: Please enter the query timeout in milliseconds for the database
+- **Timeout in milliseconds**`Integer`: Please enter the query timeout in milliseconds for the database
 
-- **Database Query Statement`string`**: Enter the database query statement
+- **Database Query Statement**`string`: Enter the database query statement
 
-- **Database Connection Object`TDatabase`**: Enter the database connection object
+- **Database Connection Object**`TDatabase`: Enter the database connection object
 
 
 **Command Output**
 
-- **Data Table`TDataTable`**: Specify a variable name that will store the query result from the database
+- **Data Table**`TDataTable`: Specify a variable name that will store the query result from the database
 
 
 **Command Output**

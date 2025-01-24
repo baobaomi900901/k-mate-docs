@@ -16,13 +16,13 @@ Write or overwrite text in the current selection area of the Word document
 
 **Command Input**
 
-- **Line Break Before Writing`Boolean`**: If checked, a line break will occur before writing the text
+- **Line Break Before Writing**`Boolean`: If checked, a line break will occur before writing the text
 
-- **Text Style`string`**: Set the text style
+- **Text Style**`string`: Set the text style
 
-- **Text Content`string`**: Text to be written into the current selection area
+- **Text Content**`string`: Text to be written into the current selection area
 
-- **Word Object`TDocumentApplication`**: Enter a Word object created by the 'Open or Create Word' function
+- **Word Object**`TDocumentApplication`: Enter a Word object created by the 'Open or Create Word' function
 
 
 **Command Output**

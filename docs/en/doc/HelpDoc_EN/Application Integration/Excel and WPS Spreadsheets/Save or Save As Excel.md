@@ -16,15 +16,15 @@ Save or Save As Excel
 
 **Command Input**
 
-- **Save and Close`Boolean`**: Save and then close
+- **Save and Close**`Boolean`: Save and then close
 
-- **Overwrite if the file exists`Boolean`**: Overwrite the file if it exists
+- **Overwrite if the file exists**`Boolean`: Overwrite the file if it exists
 
-- **Excel File Path`string`**: Path of the opened Excel file
+- **Excel File Path**`string`: Path of the opened Excel file
 
-- **Save Type`Integer`**: Select a save type
+- **Save Type**`Integer`: Select a save type
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained from the function 'Open or Create Excel'/'Get the currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained from the function 'Open or Create Excel'/'Get the currently active Excel object'
 
 
 **Command Output**

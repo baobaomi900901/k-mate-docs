@@ -21,7 +21,7 @@ No input for the current command
 
 **Command Output**
 
-- **Save Excel object to`TWorkbookApplication`**: This variable stores the Excel object, which can be used for automation operations on Excel
+- **Save Excel object to**`TWorkbookApplication`: This variable stores the Excel object, which can be used for automation operations on Excel
 
 
 **Command Output**

@@ -16,13 +16,13 @@ Insert a blank column in the Excel table
 
 **Command Input**
 
-- **Sheet Name`string`**: If empty, it defaults to the currently active sheet
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
-- **How many columns to insert`Integer`**: How many blank columns to insert
+- **How many columns to insert**`Integer`: How many blank columns to insert
 
-- **Before which column`string`**: Column name. Starts from A
+- **Before which column**`string`: Column name. Starts from A
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**

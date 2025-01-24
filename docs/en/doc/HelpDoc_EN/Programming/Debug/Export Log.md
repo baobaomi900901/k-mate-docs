@@ -16,14 +16,14 @@ Export log content to a file
 
 **Command Input**
 
-- **File Name`string`**: Specify the file name
+- **File Name**`string`: Specify the file name
 
-- **Folder Path`string`**: Specify the folder path
+- **Folder Path**`string`: Specify the folder path
 
 
 **Command Output**
 
-- **File Path`string`**: Specify a variable name, this variable will be used to store the location of the exported file
+- **File Path**`string`: Specify a variable name, this variable will be used to store the location of the exported file
 
 
 **Command Output**

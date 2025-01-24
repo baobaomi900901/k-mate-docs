@@ -16,15 +16,15 @@ Simulate human-like behavior for multiple mouse operation commands (within the r
 
 **Command Input**
 
-- **Maximum Pause Time (Milliseconds)`Integer`**: Longest wait time before executing
+- **Maximum Pause Time (Milliseconds)**`Integer`: Longest wait time before executing
 
-- **Minimum Pause Time (Milliseconds)`Integer`**: Shortest wait time before executing
+- **Minimum Pause Time (Milliseconds)**`Integer`: Shortest wait time before executing
 
-- **Simulate Operation Pause`Boolean`**: Simulate human-like pause before the operation
+- **Simulate Operation Pause**`Boolean`: Simulate human-like pause before the operation
 
-- **Simulate Click on Element`Boolean`**: Simulate human-like click on an element at a random position
+- **Simulate Click on Element**`Boolean`: Simulate human-like click on an element at a random position
 
-- **Simulate Mouse Movement`Boolean`**: Simulate human-like random route and speed for mouse movement
+- **Simulate Mouse Movement**`Boolean`: Simulate human-like random route and speed for mouse movement
 
 
 **Command Output**

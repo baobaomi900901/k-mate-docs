@@ -16,11 +16,11 @@ Select a menu item from the menu bar
 
 **Command Input**
 
-- **Menu Item`string`**: Path of the menu item
+- **Menu Item**`string`: Path of the menu item
 
-- **Operation Target`TTarget`**: Select the SAP menu bar element to be operated on
+- **Operation Target**`TTarget`: Select the SAP menu bar element to be operated on
 
-- **Window Object`TWinObj`**: Enter a retrieved SAP session window
+- **Window Object**`TWinObj`: Enter a retrieved SAP session window
 
 
 **Command Output**
@@ -29,7 +29,7 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout for waiting for the target element to exist
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
 
 **Command Output**

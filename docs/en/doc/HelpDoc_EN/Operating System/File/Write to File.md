@@ -16,15 +16,15 @@ Write text content to an existing file, if the file does not exist, it will be a
 
 **Command Input**
 
-- **File Encoding`Integer`**: Select text encoding
+- **File Encoding**`Integer`: Select text encoding
 
-- **New Line Append`Boolean`**: Whether to add a new line before appending, if no, append directly after the existing content
+- **New Line Append**`Boolean`: Whether to add a new line before appending, if no, append directly after the existing content
 
-- **Write Method`Integer`**: How to handle the file if it already exists
+- **Write Method**`Integer`: How to handle the file if it already exists
 
-- **File Content`string`**: The content to be written
+- **File Content**`string`: The content to be written
 
-- **File Path`string`**: The path of the file to write to
+- **File Path**`string`: The path of the file to write to
 
 
 **Command Output**

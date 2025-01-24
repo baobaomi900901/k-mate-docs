@@ -16,14 +16,14 @@ Get a node from the Json array
 
 **Command Input**
 
-- **Node Index`Integer`**: Node Index
+- **Node Index**`Integer`: Node Index
 
-- **Json Object`TJson`**: Json Object
+- **Json Object**`TJson`: Json Object
 
 
 **Command Output**
 
-- **Node Object`TJson`**: Node Object
+- **Node Object**`TJson`: Node Object
 
 
 **Command Output**

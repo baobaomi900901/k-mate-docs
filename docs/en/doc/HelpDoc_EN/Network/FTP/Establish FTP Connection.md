@@ -16,30 +16,30 @@ Create a file server connection and return the connection object
 
 **Command Input**
 
-- **Key File`string`**: The key file for connecting to the server
+- **Key File**`string`: The key file for connecting to the server
 
-- **Password`string`**: The password for connecting to the FTP server
+- **Password**`string`: The password for connecting to the FTP server
 
-- **Username`string`**: The username for connecting to the FTP server
+- **Username**`string`: The username for connecting to the FTP server
 
-- **Connection Type`Integer`**: The method for connecting to the remote server. The default is password-based connection.
+- **Connection Type**`Integer`: The method for connecting to the remote server. The default is password-based connection.
 
-- **Enable Active Mode`Boolean`**: Passive mode is usually recommended for FTP. If the FTP server is configured to support only active mode or if the server's network configuration does not allow passive mode data connections, then the client should use active mode.
+- **Enable Active Mode**`Boolean`: Passive mode is usually recommended for FTP. If the FTP server is configured to support only active mode or if the server's network configuration does not allow passive mode data connections, then the client should use active mode.
 
-- **FTP Port`Integer`**: The FTP server port
+- **FTP Port**`Integer`: The FTP server port
 
-- **FTP Address`string`**: The FTP server address
+- **FTP Address**`string`: The FTP server address
 
-- **Server Type`Integer`**: The server type of the connection object to be created
+- **Server Type**`Integer`: The server type of the connection object to be created
 
 
 **Command Output**
 
-- **Save FTP Connection Object to`TFTP`**: Specify a variable name to store the FTP connection object
+- **Save FTP Connection Object to**`TFTP`: Specify a variable name to store the FTP connection object
 
 ### Advanced
 
-- **Connection Timeout (ms)`Integer`**: Enter the connection timeout in milliseconds
+- **Connection Timeout (ms)**`Integer`: Enter the connection timeout in milliseconds
 
 
 **Command Output**

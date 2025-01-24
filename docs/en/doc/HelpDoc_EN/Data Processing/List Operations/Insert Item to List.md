@@ -16,13 +16,13 @@ Insert an item at a specific position in the list
 
 **Command Input**
 
-- **Item Content`String`**: Enter the content of the item to be inserted
+- **Item Content**`String`: Enter the content of the item to be inserted
 
-- **Insert At:`Integer`**: Enter the position where the item will be inserted. Positive counting: The first item is 0, the second item is 1, and so on; Negative counting: The last item is -1, the second to last item is -2, and so on. After insertion, the original items will be moved backwards
+- **Insert At:**`Integer`: Enter the position where the item will be inserted. Positive counting: The first item is 0, the second item is 1, and so on; Negative counting: The last item is -1, the second to last item is -2, and so on. After insertion, the original items will be moved backwards
 
-- **Insert Method`Integer`**: Append a new item at the end or insert it at a specific position in the list
+- **Insert Method**`Integer`: Append a new item at the end or insert it at a specific position in the list
 
-- **List`TList<String>`**: Enter the list variable
+- **List**`TList<String>`: Enter the list variable
 
 
 **Command Output**

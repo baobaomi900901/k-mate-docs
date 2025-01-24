@@ -16,13 +16,13 @@ Navigate the Web browser to a new page, back, forward, or reload the current pag
 
 **Command Input**
 
-- **New URL`string`**: The target URL for navigation
+- **New URL**`string`: The target URL for navigation
 
-- **Ignore Cache`Boolean`**: Whether to ignore the browser cache when reloading
+- **Ignore Cache**`Boolean`: Whether to ignore the browser cache when reloading
 
-- **Navigation Type`Integer`**: The type of web navigation
+- **Navigation Type**`Integer`: The type of web navigation
 
-- **Webpage Object`TBrowser`**: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
+- **Webpage Object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
 
 
 **Command Output**
@@ -31,7 +31,7 @@ No output for the current command
 
 ### Advanced
 
-- **Page Load Timeout (milliseconds)`Integer`**: The timeout for the page to load completely
+- **Page Load Timeout (milliseconds)**`Integer`: The timeout for the page to load completely
 
 
 **Command Output**

@@ -16,28 +16,28 @@ Get the associated element of an element in the specified window (parent, child,
 
 **Command Input**
 
-- **Adjacent direction`integer`**: Select the adjacent direction
+- **Adjacent direction**`integer`: Select the adjacent direction
 
-- **Child element position`Integer`**: Index position within the parent element, starting from 0
+- **Child element position**`Integer`: Index position within the parent element, starting from 0
 
-- **Child element acquisition method`integer`**: Child element acquisition method
+- **Child element acquisition method**`integer`: Child element acquisition method
 
-- **Association method`Integer`**: Select the association method for the element
+- **Association method**`Integer`: Select the association method for the element
 
-- **Operation target`TTarget`**: Select the window element to operate on
+- **Operation target**`TTarget`: Select the window element to operate on
 
-- **Window object`TWinObj`**: Enter a captured window object
+- **Window object**`TWinObj`: Enter a captured window object
 
 
 **Command Output**
 
-- **Save window element list to`TList<TUiElement>`**: This variable is used to save the obtained element object list
+- **Save window element list to**`TList<TUiElement>`: This variable is used to save the obtained element object list
 
-- **Save window element to`TUiElement`**: This variable is used to save the obtained element object
+- **Save window element to**`TUiElement`: This variable is used to save the obtained element object
 
 ### Advanced
 
-- **Wait for element to exist (milliseconds)`Integer`**: Timeout for waiting for the target associated element to exist
+- **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target associated element to exist
 
 
 **Command Output**

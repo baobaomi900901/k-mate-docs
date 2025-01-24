@@ -16,20 +16,20 @@ Search a Json node by path
 
 **Command Input**
 
-- **Special Characters`Boolean`**: Check this box if the Key contains certain special characters.
+- **Special Characters**`Boolean`: Check this box if the Key contains certain special characters.
 
-- **New Search`Boolean`**: Use the new search to search arrays
+- **New Search**`Boolean`: Use the new search to search arrays
 
-- **Search Path`string`**: Use \ to separate multiple levels of nodes
+- **Search Path**`string`: Use \ to separate multiple levels of nodes
 
-- **Json Object`TJson`**: Json Object
+- **Json Object**`TJson`: Json Object
 
 
 **Command Output**
 
-- **Node Value`string`**: Specify a variable to store the node value
+- **Node Value**`string`: Specify a variable to store the node value
 
-- **Node Object`TJson`**: Node Object
+- **Node Object**`TJson`: Node Object
 
 
 **Command Output**

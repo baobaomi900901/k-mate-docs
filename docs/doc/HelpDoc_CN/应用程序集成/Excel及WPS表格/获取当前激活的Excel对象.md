@@ -21,7 +21,7 @@ title: 获取当前激活的Excel对象
 
 **指令输出**
 
-- **保存Excel对象至`TWorkbookApplication`**: 该变量保存的是Excel对象，使用此Excel对象可以对Excel进行自动化操作
+- **保存Excel对象至**`TWorkbookApplication`: 该变量保存的是Excel对象，使用此Excel对象可以对Excel进行自动化操作
 
 ### 错误处理
 

@@ -16,18 +16,18 @@ Recognize audio files and convert the audio into text
 
 **Command Input**
 
-- **Audio File`string`**: Enter the path of the audio file. Supported file types include m4a, mp3, webm, mp4, mpga, wav, mpeg, ogg, oga, and flac formats
+- **Audio File**`string`: Enter the path of the audio file. Supported file types include m4a, mp3, webm, mp4, mpga, wav, mpeg, ogg, oga, and flac formats
 
 
 **Command Output**
 
-- **Save the result to`string`**: Specify a variable to store the returned text
+- **Save the result to**`string`: Specify a variable to store the returned text
 
 ### Advanced
 
-- **Timeout (milliseconds)`Integer`**: Maximum wait time (milliseconds)
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
 
-- **Proxy Parameters`string`**: Proxy server in the format Address:Port
+- **Proxy Parameters**`string`: Proxy server in the format Address:Port
 
 
 **Command Output**

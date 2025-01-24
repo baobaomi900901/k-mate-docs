@@ -16,17 +16,17 @@ Determine if the target image exists
 
 **Command Input**
 
-- **Execute after all images exist (or do not exist)`Boolean`**: Detect all images or detect one of the images
+- **Execute after all images exist (or do not exist)**`Boolean`: Detect all images or detect one of the images
 
-- **Target image`string`**: You can choose multiple images from the image library
+- **Target image**`string`: You can choose multiple images from the image library
 
-- **sAllImages`string`**: 
+- **sAllImages**`string`: 
 
-- **Condition for judgment`Integer`**: Specify if the target image exists or does not exist within the selected search range
+- **Condition for judgment**`Integer`: Specify if the target image exists or does not exist within the selected search range
 
-- **Window object`TWinObj`**: Select a window object
+- **Window object**`TWinObj`: Select a window object
 
-- **Search range`Integer`**: You can choose the entire screen or a specified window
+- **Search range**`Integer`: You can choose the entire screen or a specified window
 
 
 **Command Output**

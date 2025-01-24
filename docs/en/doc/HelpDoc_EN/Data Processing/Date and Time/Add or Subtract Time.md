@@ -16,22 +16,22 @@ Add or subtract time from a specified date and time, supporting text-formatted d
 
 **Command Input**
 
-- **Output Text Format`Boolean`**: If checked, specify that the output of this command is in text format of the new date, otherwise it is a date and time object
+- **Output Text Format**`Boolean`: If checked, specify that the output of this command is in text format of the new date, otherwise it is a date and time object
 
-- **Time Unit`Integer`**: Select the time unit
+- **Time Unit**`Integer`: Select the time unit
 
-- **Duration`Integer`**: Enter the duration
+- **Duration**`Integer`: Enter the duration
 
-- **Adjustment Method:`Integer`**: Choose to add or subtract time
+- **Adjustment Method:**`Integer`: Choose to add or subtract time
 
-- **Original Date and Time`TDateTime`**: Enter a date and time object
+- **Original Date and Time**`TDateTime`: Enter a date and time object
 
 
 **Command Output**
 
-- **Save New Date Text To`string`**: Specify a variable to save the text of the changed date and time
+- **Save New Date Text To**`string`: Specify a variable to save the text of the changed date and time
 
-- **Save New Date and Time To`TDateTime`**: Specify a variable to save the changed date and time
+- **Save New Date and Time To**`TDateTime`: Specify a variable to save the changed date and time
 
 
 **Command Output**

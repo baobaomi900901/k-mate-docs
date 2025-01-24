@@ -16,18 +16,18 @@ Parse a string or file to generate a Json object
 
 **Command Input**
 
-- **Handle Type`Integer`**: Json handling type, default uses original logic, second option uses uLkJSON handling logic.
+- **Handle Type**`Integer`: Json handling type, default uses original logic, second option uses uLkJSON handling logic.
 
-- **Encoding`Integer`**: File encoding
+- **Encoding**`Integer`: File encoding
 
-- **Parse Type`Integer`**: Select parse method: file/string
+- **Parse Type**`Integer`: Select parse method: file/string
 
-- **Input`string`**: Input Json string or Json file
+- **Input**`string`: Input Json string or Json file
 
 
 **Command Output**
 
-- **Json Object`TJson`**: Returned Json object
+- **Json Object**`TJson`: Returned Json object
 
 
 **Command Output**

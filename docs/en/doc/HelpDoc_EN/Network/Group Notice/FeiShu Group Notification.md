@@ -16,23 +16,23 @@ Send content to FeiShu group
 
 **Command Input**
 
-- **Image Path`string`**: Must not exceed 10MB, supports JPG and PNG formats
+- **Image Path**`string`: Must not exceed 10MB, supports JPG and PNG formats
 
-- **Message Card Content`string`**: Message cards are FeiShu's unique message format. You can use FeiShu's official message card builder tool to edit message cards
+- **Message Card Content**`string`: Message cards are FeiShu's unique message format. You can use FeiShu's official message card builder tool to edit message cards
 
-- **Rich Text Content`string`**: Supports using FeiShu's original format content. Refer to FeiShu's message documentation. If you need to @ someone using a phone number or email, you must be able to obtain the corresponding user_id based on the phone number or email
+- **Rich Text Content**`string`: Supports using FeiShu's original format content. Refer to FeiShu's message documentation. If you need to @ someone using a phone number or email, you must be able to obtain the corresponding user_id based on the phone number or email
 
-- **Text Content`string`**: Text content
+- **Text Content**`string`: Text content
 
-- **app_secret`string`**: Obtain tenant_access_token, used in rich text messages and message cards
+- **app_secret**`string`: Obtain tenant_access_token, used in rich text messages and message cards
 
-- **app_id`string`**: Obtain tenant_access_token, used in rich text messages and message cards
+- **app_id**`string`: Obtain tenant_access_token, used in rich text messages and message cards
 
-- **Message Format Type`Integer`**: Message type and data format
+- **Message Format Type**`Integer`: Message type and data format
 
-- **Signature Verification`string`**: Signature verification in bot security settings; no input is needed if signature verification is not set
+- **Signature Verification**`string`: Signature verification in bot security settings; no input is needed if signature verification is not set
 
-- **Bot Address`string`**: The bot's web address, i.e., WebHook, needs to be applied for separately
+- **Bot Address**`string`: The bot's web address, i.e., WebHook, needs to be applied for separately
 
 
 **Command Output**

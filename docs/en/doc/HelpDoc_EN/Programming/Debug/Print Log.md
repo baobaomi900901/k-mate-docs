@@ -16,13 +16,13 @@ Print variable or text output, and the output content can be viewed in the [Run 
 
 **Command Input**
 
-- **Line`Integer`**: 
+- **Line**`Integer`: 
 
-- **ScriptName`string`**: 
+- **ScriptName**`string`: 
 
-- **Log Content`Variant`**: Content of the log
+- **Log Content**`Variant`: Content of the log
 
-- **Log Type`Integer`**: Type of the log
+- **Log Type**`Integer`: Type of the log
 
 
 **Command Output**

@@ -16,14 +16,14 @@ Get the last column
 
 **Command Input**
 
-- **Sheet Name`string`**: If empty, it defaults to the currently active sheet
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
 
 
 **Command Output**
 
-- **Save Column Name To`string`**: Specify a variable to save the last column name of the sheet
+- **Save Column Name To**`string`: Specify a variable to save the last column name of the sheet
 
 
 **Command Output**

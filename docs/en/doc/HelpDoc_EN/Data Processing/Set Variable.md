@@ -16,14 +16,14 @@ Create a new variable and assign it a value, or reassign a value to an existing 
 
 **Command Input**
 
-- **Value`Variant`**: Specify the value to be saved in the variable
+- **Value**`Variant`: Specify the value to be saved in the variable
 
-- **Variable Type`Integer`**: Select the appropriate type based on the variable's value
+- **Variable Type**`Integer`: Select the appropriate type based on the variable's value
 
 
 **Command Output**
 
-- **Variable Name`Variant`**: Enter a name for the variable to save the value into
+- **Variable Name**`Variant`: Enter a name for the variable to save the value into
 
 
 **Command Output**

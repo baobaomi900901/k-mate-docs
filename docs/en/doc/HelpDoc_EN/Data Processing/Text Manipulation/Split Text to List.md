@@ -16,22 +16,22 @@ This command uses a specified delimiter to split the target text into a list
 
 **Command Input**
 
-- **Filter Empty Items`Boolean`**: Filter out empty items
+- **Filter Empty Items**`Boolean`: Filter out empty items
 
-- **Regular Expression`Boolean`**: Use regular expressions
+- **Regular Expression**`Boolean`: Use regular expressions
 
-- **Custom Delimiter`string`**: Enter a custom delimiter
+- **Custom Delimiter**`string`: Enter a custom delimiter
 
-- **Standard Delimiter`Integer`**: Select a standard delimiter
+- **Standard Delimiter**`Integer`: Select a standard delimiter
 
-- **Delimiter Type`Integer`**: Select a method for splitting the list
+- **Delimiter Type**`Integer`: Select a method for splitting the list
 
-- **Text to Convert`string`**: Enter a text string or select a variable containing the string
+- **Text to Convert**`string`: Enter a text string or select a variable containing the string
 
 
 **Command Output**
 
-- **Save Result To`TList<String>`**: Specify a variable to save the converted list
+- **Save Result To**`TList<String>`: Specify a variable to save the converted list
 
 
 **Command Output**

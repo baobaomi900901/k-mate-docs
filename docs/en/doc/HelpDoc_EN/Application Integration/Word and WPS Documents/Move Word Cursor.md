@@ -16,13 +16,13 @@ Move the cursor in a Word document
 
 **Command Input**
 
-- **Is Shift Key Pressed`Boolean`**: If checked, the Shift key is held down during movement, and the text in the moved area is selected
+- **Is Shift Key Pressed**`Boolean`: If checked, the Shift key is held down during movement, and the text in the moved area is selected
 
-- **Move Length`Integer`**: Enter the unit length to move
+- **Move Length**`Integer`: Enter the unit length to move
 
-- **Move Direction`Integer`**: Choose the direction to move the cursor
+- **Move Direction**`Integer`: Choose the direction to move the cursor
 
-- **Word Object`TDocumentApplication`**: Enter a Word object created through the 'Open or Create Word' function
+- **Word Object**`TDocumentApplication`: Enter a Word object created through the 'Open or Create Word' function
 
 
 **Command Output**

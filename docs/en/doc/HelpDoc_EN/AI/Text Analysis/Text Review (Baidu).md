@@ -16,16 +16,16 @@ Call Baidu AI for text review
 
 **Command Input**
 
-- **Text Content`string`**: Enter the text content for review
+- **Text Content**`string`: Enter the text content for review
 
 
 **Command Output**
 
-- **Result`string`**: Review result
+- **Result**`string`: Review result
 
 ### Advanced
 
-- **Proxy Parameters`string`**: Proxy server, format as Address:Port
+- **Proxy Parameters**`string`: Proxy server, format as Address:Port
 
 
 **Command Output**

@@ -16,16 +16,16 @@ Execute SQL statements such as Insert, Update, Delete in the specified database
 
 **Command Input**
 
-- **Timeout in milliseconds`Integer`**: Please enter the timeout in milliseconds for the database
+- **Timeout in milliseconds**`Integer`: Please enter the timeout in milliseconds for the database
 
-- **SQL Execution Statement`string`**: Enter the SQL execution statement
+- **SQL Execution Statement**`string`: Enter the SQL execution statement
 
-- **Database Connection Object`TDatabase`**: Enter the database connection object
+- **Database Connection Object**`TDatabase`: Enter the database connection object
 
 
 **Command Output**
 
-- **Rows Affected`Integer`**: Specify a variable name that will store the number of rows affected by the database execution
+- **Rows Affected**`Integer`: Specify a variable name that will store the number of rows affected by the database execution
 
 
 **Command Output**

@@ -16,7 +16,7 @@ Disconnect the current FTP connection
 
 **Command Input**
 
-- **FTP Connection Object`TFTP`**: The FTP object that needs to be disconnected
+- **FTP Connection Object**`TFTP`: The FTP object that needs to be disconnected
 
 
 **Command Output**

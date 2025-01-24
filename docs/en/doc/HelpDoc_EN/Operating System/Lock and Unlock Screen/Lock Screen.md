@@ -16,9 +16,9 @@ Lock the system screen to ensure subsequent commands can run normally in the loc
 
 **Command Input**
 
-- **Login Password`string`**: Please enter your login password
+- **Login Password**`string`: Please enter your login password
 
-- **Username`string`**: Please enter your username
+- **Username**`string`: Please enter your username
 
 
 **Command Output**

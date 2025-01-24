@@ -16,16 +16,16 @@ Convert DateTime object to text
 
 **Command Input**
 
-- **Custom Format`string`**: Custom Format
+- **Custom Format**`string`: Custom Format
 
-- **Date Time Format:`Integer`**: Set the date time format for the conversion
+- **Date Time Format:**`Integer`: Set the date time format for the conversion
 
-- **DateTime:`TDateTime`**: Enter the DateTime object to be converted to text
+- **DateTime:**`TDateTime`: Enter the DateTime object to be converted to text
 
 
 **Command Output**
 
-- **Save Text To`string`**: Specify a variable to save the converted text
+- **Save Text To**`string`: Specify a variable to save the converted text
 
 
 **Command Output**

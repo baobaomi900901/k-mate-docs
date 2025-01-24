@@ -16,13 +16,13 @@ Close one or all open webpages
 
 **Command Input**
 
-- **Webpage Object`TBrowser`**: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
+- **Webpage Object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
 
-- **Terminate Browser Process`Boolean`**: If checked, it will forcibly end the specified browser process belonging to the current user and all its spawned child processes
+- **Terminate Browser Process**`Boolean`: If checked, it will forcibly end the specified browser process belonging to the current user and all its spawned child processes
 
-- **Browser Type`Integer`**: Select the browser object to operate on
+- **Browser Type**`Integer`: Select the browser object to operate on
 
-- **Operation`Integer`**: Choose to close a specified webpage or all webpages
+- **Operation**`Integer`: Choose to close a specified webpage or all webpages
 
 
 **Command Output**

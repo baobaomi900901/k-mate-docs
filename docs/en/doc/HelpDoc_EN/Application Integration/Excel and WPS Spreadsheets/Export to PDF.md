@@ -16,15 +16,15 @@ Export the Excel file to PDF
 
 **Command Input**
 
-- **Overwrite if file exists`Boolean`**: Overwrite if file exists
+- **Overwrite if file exists**`Boolean`: Overwrite if file exists
 
-- **Save PDF to`string`**: The filename where the exported PDF will be saved
+- **Save PDF to**`string`: The filename where the exported PDF will be saved
 
-- **All Sheets`Boolean`**: If checked, export all worksheets
+- **All Sheets**`Boolean`: If checked, export all worksheets
 
-- **Sheet Name`string`**: Enter sheet name, leave blank for the currently active sheet
+- **Sheet Name**`string`: Enter sheet name, leave blank for the currently active sheet
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained by the function 'Open or Create Excel'/'Get current active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained by the function 'Open or Create Excel'/'Get current active Excel object'
 
 
 **Command Output**

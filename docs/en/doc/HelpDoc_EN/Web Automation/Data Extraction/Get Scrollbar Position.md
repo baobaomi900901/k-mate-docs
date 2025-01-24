@@ -16,26 +16,26 @@ Get the current position or bottom position (i.e., scroll length) of the scrollb
 
 **Command Input**
 
-- **Position`Integer`**: Current scrollbar position relative to the top, bottom position is the maximum scroll length of the scrollbar
+- **Position**`Integer`: Current scrollbar position relative to the top, bottom position is the maximum scroll length of the scrollbar
 
-- **Scrollbar`Integer`**: Actual operation scrollbar direction
+- **Scrollbar**`Integer`: Actual operation scrollbar direction
 
-- **No Element Scrollbar, Auto Upward Search`Boolean`**: No Element Scrollbar, Auto Upward Search
+- **No Element Scrollbar, Auto Upward Search**`Boolean`: No Element Scrollbar, Auto Upward Search
 
-- **Operation Target`TTarget`**: Select the web element to be operated on
+- **Operation Target**`TTarget`: Select the web element to be operated on
 
-- **Element Scrollbar`Boolean`**: Get the scrollbar position of the specified element, otherwise the scrollbar of the entire web page
+- **Element Scrollbar**`Boolean`: Get the scrollbar position of the specified element, otherwise the scrollbar of the entire web page
 
-- **Web Page Object`TBrowser`**: Input a web page object that has been obtained or created through the 'Open Web Page' function
+- **Web Page Object**`TBrowser`: Input a web page object that has been obtained or created through the 'Open Web Page' function
 
 
 **Command Output**
 
-- **Save Scrollbar Position To`Integer`**: Save the obtained scrollbar position
+- **Save Scrollbar Position To**`Integer`: Save the obtained scrollbar position
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout period for waiting for the target scrollbar to exist
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target scrollbar to exist
 
 
 **Command Output**

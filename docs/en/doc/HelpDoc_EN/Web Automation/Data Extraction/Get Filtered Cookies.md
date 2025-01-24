@@ -16,32 +16,32 @@ Retrieve all cookies from a single Cookie store that match the given criteria
 
 **Command Input**
 
-- **Cookie Key`string`**: Leave blank for any key
+- **Cookie Key**`string`: Leave blank for any key
 
-- **Cookie Path`string`**: Defaults to the path part of the URL, leave blank if not applicable
+- **Cookie Path**`string`: Defaults to the path part of the URL, leave blank if not applicable
 
-- **Cookie Domain`string`**: Defaults to the domain part of the URL, ignore for host-only cookies
+- **Cookie Domain**`string`: Defaults to the domain part of the URL, ignore for host-only cookies
 
-- **Cookie Name`string`**: Leave blank for any name
+- **Cookie Name**`string`: Leave blank for any name
 
-- **Cookie URL`string`**: URL filter condition
+- **Cookie URL**`string`: URL filter condition
 
-- **Browser Type`Integer`**: Set the type of browser cookies to filter
+- **Browser Type**`Integer`: Set the type of browser cookies to filter
 
 
 **Command Output**
 
-- **CookieJsonStr`string`**: 
+- **CookieJsonStr**`string`: 
 
 ### Advanced
 
-- **Only Session Cookies`Boolean`**: Filter session cookie collection
+- **Only Session Cookies**`Boolean`: Filter session cookie collection
 
-- **Filter by Cookie's lifecycle`Boolean`**: Default setting is session cookies, uncheck for persistent cookies
+- **Filter by Cookie's lifecycle**`Boolean`: Default setting is session cookies, uncheck for persistent cookies
 
-- **Only Secure Cookies`Boolean`**: Set whether the cookie is marked as HttpOnly, default is False
+- **Only Secure Cookies**`Boolean`: Set whether the cookie is marked as HttpOnly, default is False
 
-- **Filter by Cookie's Secure attribute`Boolean`**: Filter by Cookie's Secure attribute
+- **Filter by Cookie's Secure attribute**`Boolean`: Filter by Cookie's Secure attribute
 
 
 **Command Output**

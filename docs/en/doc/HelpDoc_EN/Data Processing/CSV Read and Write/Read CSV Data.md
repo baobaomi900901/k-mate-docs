@@ -16,18 +16,18 @@ Read the content of a CSV file
 
 **Command Input**
 
-- **First Row is Column Header`Boolean`**: Is the first row of the CSV file a column header?
+- **First Row is Column Header**`Boolean`: Is the first row of the CSV file a column header?
 
-- **Content Delimiter`Integer`**: Select the content delimiter, default is comma
+- **Content Delimiter**`Integer`: Select the content delimiter, default is comma
 
-- **File Encoding`Integer`**: Select the text encoding format, UTF-8-SIG is UTF-8 with BOM
+- **File Encoding**`Integer`: Select the text encoding format, UTF-8-SIG is UTF-8 with BOM
 
-- **CSV File Path`string`**: Enter the path to the CSV file
+- **CSV File Path**`string`: Enter the path to the CSV file
 
 
 **Command Output**
 
-- **Save Data Table To`TDataTable`**: Specify a variable to save the read data table
+- **Save Data Table To**`TDataTable`: Specify a variable to save the read data table
 
 
 **Command Output**

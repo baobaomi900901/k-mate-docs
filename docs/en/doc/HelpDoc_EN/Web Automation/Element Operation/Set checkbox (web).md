@@ -16,11 +16,11 @@ Set the state of a checkbox on the webpage to checked or unchecked.
 
 **Command Input**
 
-- **Operation`Integer`**: The operation to be performed on the checkbox.
+- **Operation**`Integer`: The operation to be performed on the checkbox.
 
-- **Operation target`TTarget`**: Select the web element to be operated on.
+- **Operation target**`TTarget`: Select the web element to be operated on.
 
-- **Webpage object`TBrowser`**: Enter a webpage object that has been obtained or created through the 'open webpage' function.
+- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
 
 
 **Command Output**
@@ -29,9 +29,9 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for element existence (ms)`Integer`**: Timeout for waiting for the target checkbox to exist.
+- **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target checkbox to exist.
 
-- **Delay time (ms)`Integer`**: Time to continue waiting after the command is executed.
+- **Delay time (ms)**`Integer`: Time to continue waiting after the command is executed.
 
 
 **Command Output**

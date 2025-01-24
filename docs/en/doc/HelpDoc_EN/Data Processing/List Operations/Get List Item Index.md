@@ -16,14 +16,14 @@ Retrieve the position of a specified item in the list, with list positions start
 
 **Command Input**
 
-- **Specified Item Value`String`**: Enter the value of the specified item in the list
+- **Specified Item Value**`String`: Enter the value of the specified item in the list
 
-- **List`TList<String>`**: Enter the list variable
+- **List**`TList<String>`: Enter the list variable
 
 
 **Command Output**
 
-- **Save Position To`Integer`**: Specify a variable to save the position of the found specified item in the list
+- **Save Position To**`Integer`: Specify a variable to save the position of the found specified item in the list
 
 
 **Command Output**

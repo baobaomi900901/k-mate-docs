@@ -16,28 +16,28 @@ Get the associated element (parent, child, adjacent) of an element in a specifie
 
 **Command Input**
 
-- **Adjacency Direction`integer`**: Choose the direction of adjacency.
+- **Adjacency Direction**`integer`: Choose the direction of adjacency.
 
-- **Child Element Position`Integer`**: The index position in the parent element, starting from 0.
+- **Child Element Position**`Integer`: The index position in the parent element, starting from 0.
 
-- **Child Element Retrieval Method`integer`**: Choose the method for retrieving child elements.
+- **Child Element Retrieval Method**`integer`: Choose the method for retrieving child elements.
 
-- **Association Type`Integer`**: Choose the type of association.
+- **Association Type**`Integer`: Choose the type of association.
 
-- **Operation Target`TTarget`**: Select the web element you want to operate on.
+- **Operation Target**`TTarget`: Select the web element you want to operate on.
 
-- **Web Page Object`TBrowser`**: Enter a web page object that is either obtained or created by the 'Open Web Page' function.
+- **Web Page Object**`TBrowser`: Enter a web page object that is either obtained or created by the 'Open Web Page' function.
 
 
 **Command Output**
 
-- **Save Element List To`TList<TUiElement>`**: Specify a variable to save the list of obtained element objects to.
+- **Save Element List To**`TList<TUiElement>`: Specify a variable to save the list of obtained element objects to.
 
-- **Save Web Element To`TUiElement`**: Specify a variable to save the obtained element object to.
+- **Save Web Element To**`TUiElement`: Specify a variable to save the obtained element object to.
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: The timeout period for waiting for the target associated element to exist.
+- **Wait for Element to Exist (Milliseconds)**`Integer`: The timeout period for waiting for the target associated element to exist.
 
 
 **Command Output**

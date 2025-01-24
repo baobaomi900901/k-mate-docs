@@ -16,9 +16,9 @@ Delete a folder on the remote server
 
 **Command Input**
 
-- **Remote Folder`string`**: The name of the folder to be deleted
+- **Remote Folder**`string`: The name of the folder to be deleted
 
-- **FTP Connection Object`TFTP`**: The FTP object from which the folder will be deleted
+- **FTP Connection Object**`TFTP`: The FTP object from which the folder will be deleted
 
 
 **Command Output**

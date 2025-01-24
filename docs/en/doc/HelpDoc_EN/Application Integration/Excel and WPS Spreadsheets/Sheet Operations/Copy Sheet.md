@@ -16,17 +16,17 @@ Copy the specified sheet
 
 **Command Input**
 
-- **Overwrite if Exists`Boolean`**: If the new sheet exists, it will overwrite the existing sheet
+- **Overwrite if Exists**`Boolean`: If the new sheet exists, it will overwrite the existing sheet
 
-- **New Sheet Name`string`**: Enter the name of the new sheet, cannot be empty
+- **New Sheet Name**`string`: Enter the name of the new sheet, cannot be empty
 
-- **Destination Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Destination Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
-- **Copy Method`Integer`**: Choose the copy method
+- **Copy Method**`Integer`: Choose the copy method
 
-- **Source Sheet Name`string`**: Enter the name of the sheet to be copied, cannot be empty
+- **Source Sheet Name**`string`: Enter the name of the sheet to be copied, cannot be empty
 
-- **Source Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Source Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**

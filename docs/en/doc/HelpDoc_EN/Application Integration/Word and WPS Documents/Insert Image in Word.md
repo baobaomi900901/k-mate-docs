@@ -16,15 +16,15 @@ Insert an image into a Word document
 
 **Command Input**
 
-- **Line break before inserting image`Boolean`**: If checked, a line break will be inserted before the image
+- **Line break before inserting image**`Boolean`: If checked, a line break will be inserted before the image
 
-- **Image Scale Percentage`Integer`**: The scaling percentage of the inserted image
+- **Image Scale Percentage**`Integer`: The scaling percentage of the inserted image
 
-- **Image Path`string`**: Select the image path on your hard drive
+- **Image Path**`string`: Select the image path on your hard drive
 
-- **Image Source`Integer`**: Select an image source
+- **Image Source**`Integer`: Select an image source
 
-- **Word Object`TDocumentApplication`**: Enter a Word object created using the 'Open or Create Word' function
+- **Word Object**`TDocumentApplication`: Enter a Word object created using the 'Open or Create Word' function
 
 
 **Command Output**

@@ -16,30 +16,30 @@ This command is used to extract part of the content from the current PDF file an
 
 **Command Input**
 
-- **If File Exists`Integer`**: Please select the file saving method when the file already exists
+- **If File Exists**`Integer`: Please select the file saving method when the file already exists
 
-- **Save New File To`string`**: Please enter the save path for the new file
+- **Save New File To**`string`: Please enter the save path for the new file
 
-- **End Page Number`Integer`**: Please enter the end page number to extract. The page index starts from 1
+- **End Page Number**`Integer`: Please enter the end page number to extract. The page index starts from 1
 
-- **Start Page Number`Integer`**: Please enter the start page number to extract. The page index starts from 1
+- **Start Page Number**`Integer`: Please enter the start page number to extract. The page index starts from 1
 
-- **Page Number`Integer`**: Please enter the page number to be exported. The page index starts from 1
+- **Page Number**`Integer`: Please enter the page number to be exported. The page index starts from 1
 
-- **Extract Range`Integer`**: Select the page range to extract
+- **Extract Range**`Integer`: Select the page range to extract
 
-- **Original File Path`string`**: Please enter the original file path
+- **Original File Path**`string`: Please enter the original file path
 
 
 **Command Output**
 
-- **Save New File Path To`string`**: Specify a variable to save the new file path
+- **Save New File Path To**`string`: Specify a variable to save the new file path
 
 ### Advanced
 
-- **Password`string`**: Password required to open the file
+- **Password**`string`: Password required to open the file
 
-- **Use Password`Boolean`**: Whether a password is required to open the file
+- **Use Password**`Boolean`: Whether a password is required to open the file
 
 
 **Command Output**

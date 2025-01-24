@@ -16,12 +16,12 @@ title: Json转字符串
 
 **指令输入**
 
-- **Json对象`TJson`**: Json对象
+- **Json对象**`TJson`: Json对象
 
 
 **指令输出**
 
-- **结果`string`**: 保存字符串对象
+- **结果**`string`: 保存字符串对象
 
 ### 错误处理
 

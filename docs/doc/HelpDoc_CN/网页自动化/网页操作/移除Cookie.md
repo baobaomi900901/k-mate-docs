@@ -16,17 +16,17 @@ title: 移除Cookie
 
 **指令输入**
 
-- **Cookie Name`string`**: 将被移除的Cookie名称
+- **Cookie Name**`string`: 将被移除的Cookie名称
 
-- **移除方式`Integer`**: 
+- **移除方式**`Integer`: 
 
-- **Cookie Url`string`**: Cookie Url，将被移除的Cookie Url
+- **Cookie Url**`string`: Cookie Url，将被移除的Cookie Url
 
-- **浏览器类型`Integer`**: 设置指定类型浏览器Cookie
+- **浏览器类型**`Integer`: 设置指定类型浏览器Cookie
 
-- **网页对象`TBrowser`**: 输入一个获取到的或者通过'打开网页'函数创建的网页对象
+- **网页对象**`TBrowser`: 输入一个获取到的或者通过'打开网页'函数创建的网页对象
 
-- **Url设置方式`Integer`**: Cookie Url设置值来源，可选择手动输入，如果选择网页对象，则自动使用网页Url指定
+- **Url设置方式**`Integer`: Cookie Url设置值来源，可选择手动输入，如果选择网页对象，则自动使用网页Url指定
 
 
 **指令输出**

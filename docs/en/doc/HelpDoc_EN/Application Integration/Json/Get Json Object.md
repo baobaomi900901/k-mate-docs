@@ -16,16 +16,16 @@ Get a node from the Json object
 
 **Command Input**
 
-- **Special Characters`Boolean`**: Check this box if the Key contains certain special characters.
+- **Special Characters**`Boolean`: Check this box if the Key contains certain special characters.
 
-- **Key`string`**: Key
+- **Key**`string`: Key
 
-- **Json Object`TJson`**: Json Object
+- **Json Object**`TJson`: Json Object
 
 
 **Command Output**
 
-- **Node Object`TJson`**: Node Object
+- **Node Object**`TJson`: Node Object
 
 
 **Command Output**

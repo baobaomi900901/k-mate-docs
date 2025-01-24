@@ -16,9 +16,9 @@ Set the tip text displayed on the screensaver
 
 **Command Input**
 
-- **Screensaver Tip`string`**: Set the text displayed on the screensaver
+- **Screensaver Tip**`string`: Set the text displayed on the screensaver
 
-- **Edit Text Format`string`**: Tip Settings
+- **Edit Text Format**`string`: Tip Settings
 
 
 **Command Output**

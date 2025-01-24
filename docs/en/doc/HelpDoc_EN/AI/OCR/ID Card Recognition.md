@@ -16,30 +16,30 @@ Call the AI interface for ID card recognition
 
 **Command Input**
 
-- **Front and Back`Integer`**: Front: The side of the ID card with the photo; Back: The side of the ID card with the national emblem
+- **Front and Back**`Integer`: Front: The side of the ID card with the photo; Back: The side of the ID card with the national emblem
 
-- **Recognition Object Type`Integer`**: Front of the ID card, Back of the ID card, Front and Back of the ID card
+- **Recognition Object Type**`Integer`: Front of the ID card, Back of the ID card, Front and Back of the ID card
 
-- **Image Path`string`**: Enter the image address to select
+- **Image Path**`string`: Enter the image address to select
 
-- **Recognition Method`Integer`**: Select recognition method
+- **Recognition Method**`Integer`: Select recognition method
 
 
 **Command Output**
 
-- **Error Information`String`**: Specify a variable to store the error information
+- **Error Information**`String`: Specify a variable to store the error information
 
-- **Response Body Information`String`**: Specify a variable to store the response body information
+- **Response Body Information**`String`: Specify a variable to store the response body information
 
-- **Response Header Information`String`**: Specify a variable to store the response header information
+- **Response Header Information**`String`: Specify a variable to store the response header information
 
-- **Result`string`**: Specify a variable to store the recognition result
+- **Result**`string`: Specify a variable to store the recognition result
 
 ### Advanced
 
-- **Response Header Type`array of string`**: When the server and client create a long connection, necessary settings need to be made to the HTTP response header's connection. Default is ['Connection']
+- **Response Header Type**`array of string`: When the server and client create a long connection, necessary settings need to be made to the HTTP response header's connection. Default is ['Connection']
 
-- **Proxy Parameter`string`**: Proxy server, format is Address:Port
+- **Proxy Parameter**`string`: Proxy server, format is Address:Port
 
 
 **Command Output**

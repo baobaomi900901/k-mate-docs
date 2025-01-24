@@ -16,25 +16,25 @@ Click Image
 
 **Command Input**
 
-- **Click Method`Integer`**: Single click or double click
+- **Click Method**`Integer`: Single click or double click
 
-- **Mouse`Integer`**: Choose the mouse button used to trigger the click
+- **Mouse**`Integer`: Choose the mouse button used to trigger the click
 
-- **Vertical Translation`Integer`**: Enter a positive number to move down, negative to move up
+- **Vertical Translation**`Integer`: Enter a positive number to move down, negative to move up
 
-- **Horizontal Translation`Integer`**: Enter a positive number to move right, negative to move left
+- **Horizontal Translation**`Integer`: Enter a positive number to move right, negative to move left
 
-- **Custom`Integer`**: Custom Position
+- **Custom**`Integer`: Custom Position
 
-- **Target Image Part`Integer`**: Choose the part of the target image to click
+- **Target Image Part**`Integer`: Choose the part of the target image to click
 
-- **Target Image`string`**: You can select multiple images to search in sequence until any matching image is found within the timeout period and clicked
+- **Target Image**`string`: You can select multiple images to search in sequence until any matching image is found within the timeout period and clicked
 
-- **sAllImages`string`**: 
+- **sAllImages**`string`: 
 
-- **Window Object`TWinObj`**: Please select the window object
+- **Window Object**`TWinObj`: Please select the window object
 
-- **Search Range`Integer`**: Search Range
+- **Search Range**`Integer`: Search Range
 
 
 **Command Output**
@@ -43,13 +43,13 @@ No output for the current command
 
 ### Advanced
 
-- **Delay After Execution (milliseconds)`Integer`**: Time to wait after the command is executed
+- **Delay After Execution (milliseconds)**`Integer`: Time to wait after the command is executed
 
-- **Timeout (milliseconds)`Integer`**: Set the maximum wait time
+- **Timeout (milliseconds)**`Integer`: Set the maximum wait time
 
-- **Show Mouse Movement Path`Boolean`**: Whether to show the mouse movement path
+- **Show Mouse Movement Path**`Boolean`: Whether to show the mouse movement path
 
-- **Keyboard Modifier Keys`Integer`**: The keyboard function keys that need to be pressed
+- **Keyboard Modifier Keys**`Integer`: The keyboard function keys that need to be pressed
 
 
 **Command Output**

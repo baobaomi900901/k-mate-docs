@@ -16,16 +16,16 @@ Extract the content of a web dialog box
 
 **Command Input**
 
-- **Web Page Object`TBrowser`**: Input a web page object that has been obtained or created through the 'Open Web Page' function
+- **Web Page Object**`TBrowser`: Input a web page object that has been obtained or created through the 'Open Web Page' function
 
 
 **Command Output**
 
-- **Save Dialog Content To`string`**: Save the extracted dialog text content
+- **Save Dialog Content To**`string`: Save the extracted dialog text content
 
 ### Advanced
 
-- **Wait for Dialog to Appear (Milliseconds)`Integer`**: Timeout period for waiting for the dialog to appear
+- **Wait for Dialog to Appear (Milliseconds)**`Integer`: Timeout period for waiting for the dialog to appear
 
 
 **Command Output**

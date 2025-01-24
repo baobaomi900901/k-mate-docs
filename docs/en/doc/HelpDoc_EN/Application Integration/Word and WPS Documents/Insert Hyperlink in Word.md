@@ -16,13 +16,13 @@ Insert a hyperlink in a Word document
 
 **Command Input**
 
-- **Line Break Before Inserting Hyperlink`Boolean`**: Check this box to insert a line break before the hyperlink
+- **Line Break Before Inserting Hyperlink**`Boolean`: Check this box to insert a line break before the hyperlink
 
-- **Hyperlink Address`string`**: The hyperlink address for access
+- **Hyperlink Address**`string`: The hyperlink address for access
 
-- **Display Text`string`**: Text to be displayed before the hyperlink
+- **Display Text**`string`: Text to be displayed before the hyperlink
 
-- **Word Object`TDocumentApplication`**: Enter a Word object created using the 'Open or Create Word' function
+- **Word Object**`TDocumentApplication`: Enter a Word object created using the 'Open or Create Word' function
 
 
 **Command Output**

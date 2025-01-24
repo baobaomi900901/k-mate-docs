@@ -16,19 +16,19 @@ Close Excel
 
 **Command Input**
 
-- **Terminate Excel Process`Boolean`**: Force close the specified Excel process
+- **Terminate Excel Process**`Boolean`: Force close the specified Excel process
 
-- **Close Process`Integer`**: Select process to close
+- **Close Process**`Integer`: Select process to close
 
-- **Overwrite if file exists`Boolean`**: Overwrite if file exists
+- **Overwrite if file exists**`Boolean`: Overwrite if file exists
 
-- **Excel File Path`string`**: Path of the opened Excel file
+- **Excel File Path**`string`: Path of the opened Excel file
 
-- **Close Type`Integer`**: Select close type
+- **Close Type**`Integer`: Select close type
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained by the function 'Open or Create Excel'/'Get current active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained by the function 'Open or Create Excel'/'Get current active Excel object'
 
-- **Operation`Integer`**: Operation on Excel
+- **Operation**`Integer`: Operation on Excel
 
 
 **Command Output**

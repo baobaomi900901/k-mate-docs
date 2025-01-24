@@ -16,24 +16,24 @@ Open Select Dialog
 
 **Command Input**
 
-- **Select First Option by Default`Boolean`**: Select the first option by default
+- **Select First Option by Default**`Boolean`: Select the first option by default
 
-- **Option List`string`**: Option list, each line represents an option
+- **Option List**`string`: Option list, each line represents an option
 
-- **Selection Mode`Integer`**: Selection Mode
+- **Selection Mode**`Integer`: Selection Mode
 
-- **Selection Box Type`Integer`**: Selection Box Type
+- **Selection Box Type**`Integer`: Selection Box Type
 
-- **Dialog Title`string`**: Dialog Title
+- **Dialog Title**`string`: Dialog Title
 
 
 **Command Output**
 
-- **Save User Selection Result To`TRPADictionary`**: Specify a variable name to save the user selection result, return None if the user cancels the dialog, otherwise return a dict object
+- **Save User Selection Result To**`TRPADictionary`: Specify a variable name to save the user selection result, return None if the user cancels the dialog, otherwise return a dict object
 
 ### Advanced
 
-- **Dialog Explanation`string`**: Dialog Explanation
+- **Dialog Explanation**`string`: Dialog Explanation
 
 
 **Command Output**

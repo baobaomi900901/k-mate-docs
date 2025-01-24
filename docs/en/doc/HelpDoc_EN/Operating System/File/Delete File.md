@@ -16,7 +16,7 @@ Delete the specified file
 
 **Command Input**
 
-- **File Paths`string`**: The file paths to delete
+- **File Paths**`string`: The file paths to delete
 
 
 **Command Output**

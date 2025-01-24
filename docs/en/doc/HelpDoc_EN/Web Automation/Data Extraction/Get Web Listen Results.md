@@ -16,14 +16,14 @@ Get the results of web listening.
 
 **Command Input**
 
-- **ResType`Integer`**: 
+- **ResType**`Integer`: 
 
-- **Web Page Object`TBrowser`**: Enter a web page object that has been obtained or created using the 'Open Web Page' function.
+- **Web Page Object**`TBrowser`: Enter a web page object that has been obtained or created using the 'Open Web Page' function.
 
 
 **Command Output**
 
-- **Save Web Listen Results List`string`**: Save the list of web listen results obtained.
+- **Save Web Listen Results List**`string`: Save the list of web listen results obtained.
 
 
 **Command Output**

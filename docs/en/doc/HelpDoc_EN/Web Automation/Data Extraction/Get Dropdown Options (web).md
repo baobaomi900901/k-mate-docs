@@ -16,20 +16,20 @@ Get the options of a dropdown in the web page
 
 **Command Input**
 
-- **Get Content`Integer`**: Get Content
+- **Get Content**`Integer`: Get Content
 
-- **Operation Target`TTarget`**: Select the web element to be operated on
+- **Operation Target**`TTarget`: Select the web element to be operated on
 
-- **Web Page Object`TBrowser`**: Input a web page object that has been obtained or created through the 'Open Web Page' function
+- **Web Page Object**`TBrowser`: Input a web page object that has been obtained or created through the 'Open Web Page' function
 
 
 **Command Output**
 
-- **Save Obtained Content To`TList<String>`**: Save the obtained dropdown options content
+- **Save Obtained Content To**`TList<String>`: Save the obtained dropdown options content
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout period for waiting for the target dropdown to exist
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target dropdown to exist
 
 
 **Command Output**

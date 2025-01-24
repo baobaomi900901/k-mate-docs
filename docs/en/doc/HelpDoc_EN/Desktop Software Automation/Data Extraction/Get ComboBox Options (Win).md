@@ -16,20 +16,20 @@ Get the options of a combo box in the window
 
 **Command Input**
 
-- **Get Content`Integer`**: Choose to get the currently selected item or all drop-down options
+- **Get Content**`Integer`: Choose to get the currently selected item or all drop-down options
 
-- **Operation Target`TTarget`**: Select the desktop software element to operate on
+- **Operation Target**`TTarget`: Select the desktop software element to operate on
 
-- **Window Object`TWinObj`**: Enter the window object
+- **Window Object**`TWinObj`: Enter the window object
 
 
 **Command Output**
 
-- **Save Content To`TList<String>`**: Specify a variable to save the content of the retrieved options
+- **Save Content To**`TList<String>`: Specify a variable to save the content of the retrieved options
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout period for waiting for the target element to exist
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target element to exist
 
 
 **Command Output**

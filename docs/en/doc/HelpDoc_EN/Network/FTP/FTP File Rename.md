@@ -16,11 +16,11 @@ Rename a file on the remote server
 
 **Command Input**
 
-- **New Name`string`**: The new name for the remote file
+- **New Name**`string`: The new name for the remote file
 
-- **Remote File`string`**: The name of the remote file to be renamed
+- **Remote File**`string`: The name of the remote file to be renamed
 
-- **FTP Connection Object`TFTP`**: The FTP object from which the file will be renamed
+- **FTP Connection Object**`TFTP`: The FTP object from which the file will be renamed
 
 
 **Command Output**

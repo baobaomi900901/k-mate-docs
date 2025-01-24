@@ -16,15 +16,15 @@ Drag an element to a specified position in the web page
 
 **Command Input**
 
-- **Target Element`TTarget`**: The web element to be dragged
+- **Target Element**`TTarget`: The web element to be dragged
 
-- **Y Coordinate`Integer`**: The y-coordinate where the mouse moves to the target position
+- **Y Coordinate**`Integer`: The y-coordinate where the mouse moves to the target position
 
-- **X Coordinate`Integer`**: The x-coordinate where the mouse moves to the target position
+- **X Coordinate**`Integer`: The x-coordinate where the mouse moves to the target position
 
-- **Drag Method`Integer`**: Drag Method
+- **Drag Method**`Integer`: Drag Method
 
-- **Web Page Object`TBrowser`**: Input a web page object obtained or created by the 'Open Web Page' function
+- **Web Page Object**`TBrowser`: Input a web page object obtained or created by the 'Open Web Page' function
 
 
 **Command Output**
@@ -33,23 +33,23 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for Element (Milliseconds)`Integer`**: Timeout for waiting for the element to exist
+- **Wait for Element (Milliseconds)**`Integer`: Timeout for waiting for the element to exist
 
-- **Vertical Translation`Integer`**: Enter a positive number to move down, a negative number to move up
+- **Vertical Translation**`Integer`: Enter a positive number to move down, a negative number to move up
 
-- **RcOoffsetX`Integer`**: 
+- **RcOoffsetX**`Integer`: 
 
-- **Custom`Integer`**: Custom position
+- **Custom**`Integer`: Custom position
 
-- **Mouse Button Release Location`Integer`**: Supports releasing the mouse at the center of the target element, a random position (within the rectangle of the element), or a custom position
+- **Mouse Button Release Location**`Integer`: Supports releasing the mouse at the center of the target element, a random position (within the rectangle of the element), or a custom position
 
-- **Movement Speed`Integer`**: Speed of moving the mouse
+- **Movement Speed**`Integer`: Speed of moving the mouse
 
-- **OoffsetX`Integer`**: 
+- **OoffsetX**`Integer`: 
 
-- **Mouse Button Down Location`Integer`**: Supports pressing the mouse at the center of the drag element, a random position (within the rectangle of the element), or a custom position
+- **Mouse Button Down Location**`Integer`: Supports pressing the mouse at the center of the drag element, a random position (within the rectangle of the element), or a custom position
 
-- **Delay Time (Milliseconds)`Integer`**: Time to continue waiting after the instruction is executed
+- **Delay Time (Milliseconds)**`Integer`: Time to continue waiting after the instruction is executed
 
 
 **Command Output**

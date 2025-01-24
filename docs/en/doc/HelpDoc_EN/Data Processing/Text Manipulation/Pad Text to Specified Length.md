@@ -16,18 +16,18 @@ This command is used to pad text to a specified length
 
 **Command Input**
 
-- **Total Length`Integer`**: The total length of the padded text
+- **Total Length**`Integer`: The total length of the padded text
 
-- **Padding Text`string`**: Enter a text string or select a variable containing the string
+- **Padding Text**`string`: Enter a text string or select a variable containing the string
 
-- **Padding Method`Integer`**: Add padding text to the left or right end of the original text
+- **Padding Method**`Integer`: Add padding text to the left or right end of the original text
 
-- **Original Text`string`**: Enter a text string or select a variable containing the string
+- **Original Text**`string`: Enter a text string or select a variable containing the string
 
 
 **Command Output**
 
-- **Save Result To`string`**: Specify a variable to save the padded text content
+- **Save Result To**`string`: Specify a variable to save the padded text content
 
 
 **Command Output**

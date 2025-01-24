@@ -16,14 +16,14 @@ This command is used to get the common items from two lists and save the result 
 
 **Command Input**
 
-- **List 2`TList<String>`**: Enter the second list variable
+- **List 2**`TList<String>`: Enter the second list variable
 
-- **List 1`TList<String>`**: Enter the first list variable
+- **List 1**`TList<String>`: Enter the first list variable
 
 
 **Command Output**
 
-- **Save List Object To`TList<String>`**: Specify a variable to save the new list
+- **Save List Object To**`TList<String>`: Specify a variable to save the new list
 
 
 **Command Output**

@@ -16,21 +16,21 @@ Select a date or date range
 
 **Command Input**
 
-- **Week`Integer`**: Which complete week
+- **Week**`Integer`: Which complete week
 
-- **Year`Integer`**: Which year
+- **Year**`Integer`: Which year
 
-- **End Date`string`**: Format: yyyy-mm-dd
+- **End Date**`string`: Format: yyyy-mm-dd
 
-- **Start Date`string`**: Format: yyyy-mm-dd
+- **Start Date**`string`: Format: yyyy-mm-dd
 
-- **Date`string`**: Format: yyyy-mm-dd
+- **Date**`string`: Format: yyyy-mm-dd
 
-- **Date Selection Method`Integer`**: Method of date selection
+- **Date Selection Method**`Integer`: Method of date selection
 
-- **Operation Target`TTarget`**: Select the calendar element to be operated on
+- **Operation Target**`TTarget`: Select the calendar element to be operated on
 
-- **Window Object`TWinObj`**: Enter a retrieved SAP session window
+- **Window Object**`TWinObj`: Enter a retrieved SAP session window
 
 
 **Command Output**
@@ -39,7 +39,7 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout for waiting for the target element to exist
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
 
 **Command Output**

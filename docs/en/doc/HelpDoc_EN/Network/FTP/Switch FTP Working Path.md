@@ -16,9 +16,9 @@ Switch the working path of the FTP connection
 
 **Command Input**
 
-- **Working Path`string`**: The new working path to which it needs to be switched
+- **Working Path**`string`: The new working path to which it needs to be switched
 
-- **FTP Connection Object`TFTP`**: The FTP object for which the working path needs to be switched
+- **FTP Connection Object**`TFTP`: The FTP object for which the working path needs to be switched
 
 
 **Command Output**

@@ -16,26 +16,26 @@ This command is used to extract text from a PDF file. Please install the PDF plu
 
 **Command Input**
 
-- **Ending Page Number`Integer`**: Please enter the ending page number to extract. Page numbers start from 1.
+- **Ending Page Number**`Integer`: Please enter the ending page number to extract. Page numbers start from 1.
 
-- **Starting Page Number`Integer`**: Please enter the starting page number to extract. Page numbers start from 1.
+- **Starting Page Number**`Integer`: Please enter the starting page number to extract. Page numbers start from 1.
 
-- **Page Number`Integer`**: Please enter the page number to extract. Page numbers start from 1.
+- **Page Number**`Integer`: Please enter the page number to extract. Page numbers start from 1.
 
-- **Extraction Range`Integer`**: Select the page range to extract
+- **Extraction Range**`Integer`: Select the page range to extract
 
-- **File Path`string`**: Please enter the PDF file path
+- **File Path**`string`: Please enter the PDF file path
 
 
 **Command Output**
 
-- **Save Text To`string`**: Specify a variable to save the extracted text
+- **Save Text To**`string`: Specify a variable to save the extracted text
 
 ### Advanced
 
-- **Password`string`**: Enter the password required to open the file
+- **Password**`string`: Enter the password required to open the file
 
-- **Use Password`Boolean`**: Does the file require a password to open?
+- **Use Password**`Boolean`: Does the file require a password to open?
 
 
 **Command Output**

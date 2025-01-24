@@ -16,7 +16,7 @@ Add a file to the clipboard for quick sending
 
 **Command Input**
 
-- **File path`string`**: Please enter the resource file name or a list of file names
+- **File path**`string`: Please enter the resource file name or a list of file names
 
 
 **Command Output**

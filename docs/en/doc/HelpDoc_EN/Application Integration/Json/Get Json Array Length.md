@@ -16,12 +16,12 @@ Get the length of the Json array
 
 **Command Input**
 
-- **Json Object`TJson`**: Json Object
+- **Json Object**`TJson`: Json Object
 
 
 **Command Output**
 
-- **Array Length`Integer`**: Specify a variable to store the array length
+- **Array Length**`Integer`: Specify a variable to store the array length
 
 
 **Command Output**

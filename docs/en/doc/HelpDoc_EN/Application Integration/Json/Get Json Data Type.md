@@ -16,12 +16,12 @@ Get the data type of the Json object
 
 **Command Input**
 
-- **Json Object`TJson`**: Json Object
+- **Json Object**`TJson`: Json Object
 
 
 **Command Output**
 
-- **Data Type`string`**: Data Type
+- **Data Type**`string`: Data Type
 
 
 **Command Output**

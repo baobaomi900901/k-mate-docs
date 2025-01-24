@@ -21,7 +21,7 @@ No input for the current command
 
 **Command Output**
 
-- **Save input method names to`TList<String>`**: Enter a variable to save the list of input method names
+- **Save input method names to**`TList<String>`: Enter a variable to save the list of input method names
 
 
 **Command Output**

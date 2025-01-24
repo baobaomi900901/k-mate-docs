@@ -16,7 +16,7 @@ Execute a transaction
 
 **Command Input**
 
-- **Transaction Code`string`**: Enter the transaction code
+- **Transaction Code**`string`: Enter the transaction code
 
 
 **Command Output**

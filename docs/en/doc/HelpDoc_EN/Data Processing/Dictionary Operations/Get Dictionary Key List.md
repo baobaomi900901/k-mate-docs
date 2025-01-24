@@ -16,12 +16,12 @@ This command is used to get a list of key names from a dictionary
 
 **Command Input**
 
-- **Dictionary`TRPADictionary`**: Enter the dictionary variable
+- **Dictionary**`TRPADictionary`: Enter the dictionary variable
 
 
 **Command Output**
 
-- **Save Key List To`TList<String>`**: Enter a name to save the found key list
+- **Save Key List To**`TList<String>`: Enter a name to save the found key list
 
 
 **Command Output**

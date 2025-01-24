@@ -16,13 +16,13 @@ Open or close the notification dialog box
 
 **Command Input**
 
-- **Content`string`**: 
+- **Content**`string`: 
 
-- **Placement`Integer`**: 
+- **Placement**`Integer`: 
 
-- **Message Type`Integer`**: The type of message displayed in the notification, including: Information, Warning, Error
+- **Message Type**`Integer`: The type of message displayed in the notification, including: Information, Warning, Error
 
-- **Operation Type`Integer`**: Choose to open or close the notification
+- **Operation Type**`Integer`: Choose to open or close the notification
 
 
 **Command Output**
@@ -31,7 +31,7 @@ No output for the current command
 
 ### Advanced
 
-- **Timeout`Integer`**: 
+- **Timeout**`Integer`: 
 
 
 **Command Output**

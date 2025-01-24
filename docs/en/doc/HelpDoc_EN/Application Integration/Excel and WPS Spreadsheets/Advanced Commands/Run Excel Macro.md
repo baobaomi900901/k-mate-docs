@@ -16,18 +16,18 @@ Execute a macro in the workbook. The workbook file must be a macro-enabled workb
 
 **Command Input**
 
-- **Macro Parameters`TList<String>`**: A set of parameters to pass to the macro (up to 30)
+- **Macro Parameters**`TList<String>`: A set of parameters to pass to the macro (up to 30)
 
-- **Macro Name`string`**: The name of the macro to be executed
+- **Macro Name**`string`: The name of the macro to be executed
 
-- **Macro File`string`**: The macro file to be executed
+- **Macro File**`string`: The macro file to be executed
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**
 
-- **Macro Output`string`**: Specify a variable to save the output of the macro (if any)
+- **Macro Output**`string`: Specify a variable to save the output of the macro (if any)
 
 
 **Command Output**

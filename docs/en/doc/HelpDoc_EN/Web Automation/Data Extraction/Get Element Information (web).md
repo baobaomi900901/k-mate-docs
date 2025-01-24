@@ -16,28 +16,28 @@ Get the text content, source code, attribute value, and position of elements in 
 
 **Command Input**
 
-- **Relative To`Integer`**: Relative position
+- **Relative To**`Integer`: Relative position
 
-- **Attribute Name`string`**: The attribute name of the web element
+- **Attribute Name**`string`: The attribute name of the web element
 
-- **Intelligently Identify and Supplement Address Prefixes (http:// or https://)`Boolean`**: Intelligently Identify and Supplement Address Prefixes
+- **Intelligently Identify and Supplement Address Prefixes (http:// or https://)**`Boolean`: Intelligently Identify and Supplement Address Prefixes
 
-- **Operation`Integer`**: Web Element Information
+- **Operation**`Integer`: Web Element Information
 
-- **Operation Target`TTarget`**: Select the web element to be operated on
+- **Operation Target**`TTarget`: Select the web element to be operated on
 
-- **Web Page Object`TBrowser`**: Input a web page object that has been obtained or created through the 'Open Web Page' function
+- **Web Page Object**`TBrowser`: Input a web page object that has been obtained or created through the 'Open Web Page' function
 
 
 **Command Output**
 
-- **Save Element Information To`string`**: Save the obtained web element information
+- **Save Element Information To**`string`: Save the obtained web element information
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)`Integer`**: Timeout period for waiting for the target element to exist
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target element to exist
 
-- **Convert to DPI Corresponding to 96`Boolean`**: Whether to convert the border attributes to device-independent units
+- **Convert to DPI Corresponding to 96**`Boolean`: Whether to convert the border attributes to device-independent units
 
 
 **Command Output**

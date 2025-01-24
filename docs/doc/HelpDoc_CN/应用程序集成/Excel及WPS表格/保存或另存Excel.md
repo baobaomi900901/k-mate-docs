@@ -16,15 +16,15 @@ title: 保存或另存Excel
 
 **指令输入**
 
-- **保存后关闭`Boolean`**: 保存后关闭
+- **保存后关闭**`Boolean`: 保存后关闭
 
-- **如果文件存在则覆盖`Boolean`**: 如果文件存在则覆盖
+- **如果文件存在则覆盖**`Boolean`: 如果文件存在则覆盖
 
-- **Excel文件路径`string`**: 打开的Excel文件路径
+- **Excel文件路径**`string`: 打开的Excel文件路径
 
-- **保存方式`Integer`**: 选择保存方式
+- **保存方式**`Integer`: 选择保存方式
 
-- **Excel对象`TWorkbookApplication`**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 
 **指令输出**

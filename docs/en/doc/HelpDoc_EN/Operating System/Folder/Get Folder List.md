@@ -16,16 +16,16 @@ Get subfolders under the specified folder path
 
 **Command Input**
 
-- **Recursively Find Subfolders`Boolean`**: Whether to recursively find subfolders
+- **Recursively Find Subfolders**`Boolean`: Whether to recursively find subfolders
 
-- **Subfolder Name Match Rule`string`**: Enter the folder name match rule, wildcards are allowed. For example: 'Images*', 'Images?', multiple rules can be separated by commas, e.g., rule1, rule2
+- **Subfolder Name Match Rule**`string`: Enter the folder name match rule, wildcards are allowed. For example: 'Images*', 'Images?', multiple rules can be separated by commas, e.g., rule1, rule2
 
-- **Folder Path`string`**: The path of the folder to search
+- **Folder Path**`string`: The path of the folder to search
 
 
 **Command Output**
 
-- **Save Folder List To`TList<String>`**: Enter a name to save the folder list
+- **Save Folder List To**`TList<String>`: Enter a name to save the folder list
 
 
 **Command Output**

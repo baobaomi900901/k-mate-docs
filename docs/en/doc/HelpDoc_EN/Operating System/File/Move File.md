@@ -16,16 +16,16 @@ Move files to a specified directory
 
 **Command Input**
 
-- **Move Method`Integer`**: How to handle when the file already exists
+- **Move Method**`Integer`: How to handle when the file already exists
 
-- **Target Folder`string`**: Enter the target folder path
+- **Target Folder**`string`: Enter the target folder path
 
-- **Source Files to Move`string`**: Enter or select the file paths to move. Separate multiple file paths with '|'.
+- **Source Files to Move**`string`: Enter or select the file paths to move. Separate multiple file paths with '|'.
 
 
 **Command Output**
 
-- **List of Moved File Paths`TList<String>`**: Enter a name to save the list of moved file paths
+- **List of Moved File Paths**`TList<String>`: Enter a name to save the list of moved file paths
 
 
 **Command Output**

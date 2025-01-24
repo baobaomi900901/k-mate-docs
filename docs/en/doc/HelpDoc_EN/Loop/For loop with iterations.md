@@ -16,16 +16,16 @@ Perform a specified number of iterations on a set of instructions
 
 **Command Input**
 
-- **Step size`Integer`**: Set the increment value after each iteration
+- **Step size**`Integer`: Set the increment value after each iteration
 
-- **End number`Integer`**: Set the end value for the loop counter
+- **End number**`Integer`: Set the end value for the loop counter
 
-- **Start number`Integer`**: Set the starting value for the loop counter
+- **Start number**`Integer`: Set the starting value for the loop counter
 
 
 **Command Output**
 
-- **Save current loop item to`Integer`**: Enter a name for the variable that will store the current loop value. Starting from the initial value, this variable's value will change with each iteration
+- **Save current loop item to**`Integer`: Enter a name for the variable that will store the current loop value. Starting from the initial value, this variable's value will change with each iteration
 
 
 **Command Output**

@@ -16,26 +16,26 @@ SAP Login
 
 **Command Input**
 
-- **Timeout`Integer`**: Timeout
+- **Timeout**`Integer`: Timeout
 
-- **Multiple Login Options`Integer`**: Multiple Login Options
+- **Multiple Login Options**`Integer`: Multiple Login Options
 
-- **Language`string`**: Language
+- **Language**`string`: Language
 
-- **Secure Password`string`**: Secure Password
+- **Secure Password**`string`: Secure Password
 
-- **Password`string`**: Password
+- **Password**`string`: Password
 
-- **Username`string`**: Username
+- **Username**`string`: Username
 
-- **Client`string`**: Client
+- **Client**`string`: Client
 
-- **Target`TTarget`**: Target
+- **Target**`TTarget`: Target
 
 
 **Command Output**
 
-- **SAP Session Window`TUiElement`**: Specify a variable to save the SAP session window
+- **SAP Session Window**`TUiElement`: Specify a variable to save the SAP session window
 
 
 **Command Output**

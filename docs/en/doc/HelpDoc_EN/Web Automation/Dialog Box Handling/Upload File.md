@@ -16,11 +16,11 @@ Automatically complete the series of operations such as clicking the upload butt
 
 **Command Input**
 
-- **Name`string`**: 
+- **Name**`string`: 
 
-- **Operation Target`TTarget`**: Select the web element to operate on.
+- **Operation Target**`TTarget`: Select the web element to operate on.
 
-- **Web Page Object`TBrowser`**: Enter a web page object that has been obtained or created using the 'Open Web Page' function.
+- **Web Page Object**`TBrowser`: Enter a web page object that has been obtained or created using the 'Open Web Page' function.
 
 
 **Command Output**
@@ -29,15 +29,15 @@ No output for the current command
 
 ### Advanced
 
-- **Focus Timeout (milliseconds)`Integer`**: Focus timeout
+- **Focus Timeout (milliseconds)**`Integer`: Focus timeout
 
-- **Wait for Dialog to Appear (milliseconds)`Integer`**: Set the maximum waiting time
+- **Wait for Dialog to Appear (milliseconds)**`Integer`: Set the maximum waiting time
 
-- **Key Press Interval (milliseconds)`Integer`**: Interval between key presses
+- **Key Press Interval (milliseconds)**`Integer`: Interval between key presses
 
-- **Force American Keyboard Layout`Boolean`**: Switch to English input method
+- **Force American Keyboard Layout**`Boolean`: Switch to English input method
 
-- **Input Method`Integer`**: Input method
+- **Input Method**`Integer`: Input method
 
 
 **Command Output**

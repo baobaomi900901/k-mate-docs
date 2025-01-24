@@ -16,12 +16,12 @@ This command is used to get the length of a list
 
 **Command Input**
 
-- **List`TList<TObject>`**: Enter the list variable
+- **List**`TList<TObject>`: Enter the list variable
 
 
 **Command Output**
 
-- **Save List Length To`Integer`**: Specify a variable to save the length of the list
+- **Save List Length To**`Integer`: Specify a variable to save the length of the list
 
 
 **Command Output**

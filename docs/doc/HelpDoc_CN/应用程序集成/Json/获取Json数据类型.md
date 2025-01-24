@@ -16,12 +16,12 @@ title: 获取Json数据类型
 
 **指令输入**
 
-- **Json对象`TJson`**: Json对象
+- **Json对象**`TJson`: Json对象
 
 
 **指令输出**
 
-- **数据类型`string`**: 数据类型
+- **数据类型**`string`: 数据类型
 
 ### 错误处理
 

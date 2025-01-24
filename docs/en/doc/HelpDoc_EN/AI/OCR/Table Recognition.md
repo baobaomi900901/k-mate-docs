@@ -16,30 +16,30 @@ Call the AI interface to recognize the content of the table
 
 **Command Input**
 
-- **Version`Integer`**: Old Version V1.0: Calls the interface from the old official website of INTSIG; New Version V1.0: Calls the interface from the new official website of INTSIG, returning the recognized content in coordinates format; New Version V2.0: Calls the interface from the new official website of INTSIG, returning the recognized content in JSON format
+- **Version**`Integer`: Old Version V1.0: Calls the interface from the old official website of INTSIG; New Version V1.0: Calls the interface from the new official website of INTSIG, returning the recognized content in coordinates format; New Version V2.0: Calls the interface from the new official website of INTSIG, returning the recognized content in JSON format
 
-- **Structure Recognition Type`Integer`**: Return table structure analysis, or only return text detection results
+- **Structure Recognition Type**`Integer`: Return table structure analysis, or only return text detection results
 
-- **Image Path`string`**: Enter the image address to be selected
+- **Image Path**`string`: Enter the image address to be selected
 
-- **Recognition Method`Integer`**: Select the recognition method
+- **Recognition Method**`Integer`: Select the recognition method
 
 
 **Command Output**
 
-- **Error Information`String`**: Specify a variable to store the error information
+- **Error Information**`String`: Specify a variable to store the error information
 
-- **Response Body Information`String`**: Specify a variable to store the response body information
+- **Response Body Information**`String`: Specify a variable to store the response body information
 
-- **Response Header Information`String`**: Specify a variable to store the response header information
+- **Response Header Information**`String`: Specify a variable to store the response header information
 
-- **Result`string`**: Specify a variable to store the recognition result
+- **Result**`string`: Specify a variable to store the recognition result
 
 ### Advanced
 
-- **Response Header Type`array of string`**: When the server and client create a long connection, necessary settings for the HTTP response header's connection are required. The default is ['Connection']
+- **Response Header Type**`array of string`: When the server and client create a long connection, necessary settings for the HTTP response header's connection are required. The default is ['Connection']
 
-- **Proxy Parameter`string`**: Proxy server, format is Address:Port
+- **Proxy Parameter**`string`: Proxy server, format is Address:Port
 
 
 **Command Output**

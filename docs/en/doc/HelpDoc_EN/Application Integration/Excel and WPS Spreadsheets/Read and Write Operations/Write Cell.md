@@ -16,13 +16,13 @@ Write a value/formula into a cell or range in the spreadsheet. If a value exists
 
 **Command Input**
 
-- **Value`string`**: Enter value/formula
+- **Value**`string`: Enter value/formula
 
-- **Sheet Name`string`**: Sheet name in the workbook
+- **Sheet Name**`string`: Sheet name in the workbook
 
-- **Range`string`**: Cell or range
+- **Range**`string`: Cell or range
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
 
 
 **Command Output**

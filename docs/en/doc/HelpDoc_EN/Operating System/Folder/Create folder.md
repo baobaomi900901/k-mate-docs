@@ -16,14 +16,14 @@ Create a folder
 
 **Command Input**
 
-- **New folder name`string`**: Enter the name of the newly created folder
+- **New folder name**`string`: Enter the name of the newly created folder
 
-- **Parent folder path`string`**: Enter or select the directory where the new folder will be created
+- **Parent folder path**`string`: Enter or select the directory where the new folder will be created
 
 
 **Command Output**
 
-- **Save new folder path to`string`**: Enter a name to save the new folder path
+- **Save new folder path to**`string`: Enter a name to save the new folder path
 
 
 **Command Output**

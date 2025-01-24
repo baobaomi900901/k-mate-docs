@@ -16,9 +16,9 @@ Execute instructions while the screensaver is active and display custom text pro
 
 **Command Input**
 
-- **Tip Text`string`**: Set the text displayed on the screensaver
+- **Tip Text**`string`: Set the text displayed on the screensaver
 
-- **Edit Screensaver Style`string`**: Screensaver settings
+- **Edit Screensaver Style**`string`: Screensaver settings
 
 
 **Command Output**

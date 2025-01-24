@@ -16,9 +16,9 @@ Send English characters or key commands to the currently active window. To send 
 
 **Command Input**
 
-- **Insert Keyboard Symbols`Boolean`**: Insert keyboard symbols
+- **Insert Keyboard Symbols**`Boolean`: Insert keyboard symbols
 
-- **Text Content`string`**: Input text content, Chinese characters are not supported
+- **Text Content**`string`: Input text content, Chinese characters are not supported
 
 
 **Command Output**
@@ -27,15 +27,15 @@ No output for the current command
 
 ### Advanced
 
-- **Delay After Execution (Milliseconds)`Integer`**: Time to wait after the command execution is complete
+- **Delay After Execution (Milliseconds)**`Integer`: Time to wait after the command execution is complete
 
-- **Key Input Interval (Milliseconds)`Integer`**: Time interval between two key presses
+- **Key Input Interval (Milliseconds)**`Integer`: Time interval between two key presses
 
-- **Input content contains special keys (hotkeys and key special operations)`Boolean`**: Input content contains special keys
+- **Input content contains special keys (hotkeys and key special operations)**`Boolean`: Input content contains special keys
 
-- **Force Load US Keyboard`Boolean`**: Switch to English input method
+- **Force Load US Keyboard**`Boolean`: Switch to English input method
 
-- **Drive Input`Boolean`**: Drive input
+- **Drive Input**`Boolean`: Drive input
 
 
 **Command Output**

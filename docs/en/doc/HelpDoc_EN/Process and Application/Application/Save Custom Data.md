@@ -16,9 +16,9 @@ Persistently save user data within the process
 
 **Command Input**
 
-- **Data Content`string`**: The content of the data to be saved, with a maximum length of 20,000 characters
+- **Data Content**`string`: The content of the data to be saved, with a maximum length of 20,000 characters
 
-- **Key`string`**: Required for data retrieval, limited to the same user and application. Multiple saves with the same key will overwrite the content.
+- **Key**`string`: Required for data retrieval, limited to the same user and application. Multiple saves with the same key will overwrite the content.
 
 
 **Command Output**

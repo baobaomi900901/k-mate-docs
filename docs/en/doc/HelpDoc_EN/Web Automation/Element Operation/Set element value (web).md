@@ -16,11 +16,11 @@ Set the value of an element on the webpage, typically for input and select eleme
 
 **Command Input**
 
-- **Element value`string`**: Enter the value to be set for the element.
+- **Element value**`string`: Enter the value to be set for the element.
 
-- **Operation target`TTarget`**: Select the web element to be operated on.
+- **Operation target**`TTarget`: Select the web element to be operated on.
 
-- **Webpage object`TBrowser`**: Enter a webpage object that has been obtained or created through the 'open webpage' function.
+- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
 
 
 **Command Output**
@@ -29,7 +29,7 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for element existence (ms)`Integer`**: Timeout for waiting for the target element to exist.
+- **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target element to exist.
 
 
 **Command Output**

@@ -16,16 +16,16 @@ Open Select Folder Dialog
 
 **Command Input**
 
-- **Dialog Title`string`**: Dialog Title
+- **Dialog Title**`string`: Dialog Title
 
 
 **Command Output**
 
-- **Save Selected Folder Result To`string`**: Specify a variable name to save the selected folder result, return None if the user cancels the dialog, otherwise return a dict object
+- **Save Selected Folder Result To**`string`: Specify a variable name to save the selected folder result, return None if the user cancels the dialog, otherwise return a dict object
 
 ### Advanced
 
-- **Default Path`string`**: Default path
+- **Default Path**`string`: Default path
 
 
 **Command Output**

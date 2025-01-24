@@ -16,14 +16,14 @@ title: 读取Word文本
 
 **指令输入**
 
-- **读取范围`Integer`**: 提供Word内容读取范围
+- **读取范围**`Integer`: 提供Word内容读取范围
 
-- **Word对象`TDocumentApplication`**: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
 
 
 **指令输出**
 
-- **保存Word内容为`string`**: 指定一个变量名称，该变量用于保存域数据内容
+- **保存Word内容为**`string`: 指定一个变量名称，该变量用于保存域数据内容
 
 ### 错误处理
 

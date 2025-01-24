@@ -16,11 +16,11 @@ Handle the confirm, prompt, and alert dialogs in a web page
 
 **Command Input**
 
-- **Input Content`string`**: The content to input when the dialog box appears
+- **Input Content**`string`: The content to input when the dialog box appears
 
-- **Dialog Button`Integer`**: The button that appears in the dialog box
+- **Dialog Button**`Integer`: The button that appears in the dialog box
 
-- **Web Page Object`TBrowser`**: Input a web page object that is obtained or created by the 'Open Web Page' function
+- **Web Page Object**`TBrowser`: Input a web page object that is obtained or created by the 'Open Web Page' function
 
 
 **Command Output**
@@ -29,7 +29,7 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for Dialog Appearance (milliseconds)`Integer`**: The maximum waiting time for the appearance of the dialog box
+- **Wait for Dialog Appearance (milliseconds)**`Integer`: The maximum waiting time for the appearance of the dialog box
 
 
 **Command Output**

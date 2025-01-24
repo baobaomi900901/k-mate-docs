@@ -16,14 +16,14 @@ Rename the folder
 
 **Command Input**
 
-- **New Folder Name`string`**: Enter the new folder name
+- **New Folder Name**`string`: Enter the new folder name
 
-- **Source Folder`string`**: The folder to be renamed
+- **Source Folder**`string`: The folder to be renamed
 
 
 **Command Output**
 
-- **New Folder Path`string`**: Enter a name to save the new folder path
+- **New Folder Path**`string`: Enter a name to save the new folder path
 
 
 **Command Output**

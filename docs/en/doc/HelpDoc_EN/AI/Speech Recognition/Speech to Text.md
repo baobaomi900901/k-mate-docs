@@ -16,20 +16,20 @@ Call the Kingsware AI interface to recognize and output the content of the speec
 
 **Command Input**
 
-- **File`string`**: Input or select the address of the speech file
+- **File**`string`: Input or select the address of the speech file
 
 
 **Command Output**
 
-- **Error Information`String`**: Specify a variable to store the error information
+- **Error Information**`String`: Specify a variable to store the error information
 
-- **Response Body Information`String`**: Specify a variable to store the response body information
+- **Response Body Information**`String`: Specify a variable to store the response body information
 
-- **Response Header Information`String`**: Specify a variable to store the response header information
+- **Response Header Information**`String`: Specify a variable to store the response header information
 
 ### Advanced
 
-- **Response Header Type`array of string`**: When a long connection is established between the server and client, necessary settings for the HTTP response header 'connection' are required. Default is ['Connection']
+- **Response Header Type**`array of string`: When a long connection is established between the server and client, necessary settings for the HTTP response header 'connection' are required. Default is ['Connection']
 
 
 **Command Output**

@@ -16,18 +16,18 @@ Get the start and end row numbers and column names of the currently selected ran
 
 **Command Input**
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 
 **Command Output**
 
-- **End Column Name Save To`string`**: Specify a variable to save the ending column name of the selected range
+- **End Column Name Save To**`string`: Specify a variable to save the ending column name of the selected range
 
-- **End Row Number Save To`Integer`**: Specify a variable to save the ending row number of the selected range
+- **End Row Number Save To**`Integer`: Specify a variable to save the ending row number of the selected range
 
-- **Start Column Name Save To`string`**: Specify a variable to save the starting column name of the selected range
+- **Start Column Name Save To**`string`: Specify a variable to save the starting column name of the selected range
 
-- **Start Row Number Save To`Integer`**: Specify a variable to save the starting row number of the selected range
+- **Start Row Number Save To**`Integer`: Specify a variable to save the starting row number of the selected range
 
 
 **Command Output**

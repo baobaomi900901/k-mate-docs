@@ -16,13 +16,13 @@ Wait for a period of time
 
 **Command Input**
 
-- **Maximum Duration (Milliseconds)`Integer`**: The random number is generated from the range between the start and end numbers, inclusive of both
+- **Maximum Duration (Milliseconds)**`Integer`: The random number is generated from the range between the start and end numbers, inclusive of both
 
-- **Minimum Duration (Milliseconds)`Integer`**: The random number is generated from the range between the start and end numbers, inclusive of both
+- **Minimum Duration (Milliseconds)**`Integer`: The random number is generated from the range between the start and end numbers, inclusive of both
 
-- **Duration (Milliseconds)`Integer`**: Wait duration
+- **Duration (Milliseconds)**`Integer`: Wait duration
 
-- **Random Wait Duration`Boolean`**: The wait duration is a random number
+- **Random Wait Duration**`Boolean`: The wait duration is a random number
 
 
 **Command Output**

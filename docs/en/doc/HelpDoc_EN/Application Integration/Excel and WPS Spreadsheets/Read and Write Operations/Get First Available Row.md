@@ -16,14 +16,14 @@ Get the first available row
 
 **Command Input**
 
-- **Sheet Name`string`**: If empty, it defaults to the currently active sheet
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
-- **Excel Object`TWorkbookApplication`**: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
 
 
 **Command Output**
 
-- **Save Row Number To`Integer`**: Specify a variable to save the first available row number of the sheet
+- **Save Row Number To**`Integer`: Specify a variable to save the first available row number of the sheet
 
 
 **Command Output**

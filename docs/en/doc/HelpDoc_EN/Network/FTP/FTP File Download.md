@@ -16,13 +16,13 @@ Download one or more files from the specified path of the FTP remote server to a
 
 **Command Input**
 
-- **Download Mode`Integer`**: How to handle existing files in the local folder when downloading the remote files
+- **Download Mode**`Integer`: How to handle existing files in the local folder when downloading the remote files
 
-- **Local Path`string`**: The local path where the remote files will be downloaded
+- **Local Path**`string`: The local path where the remote files will be downloaded
 
-- **Remote File`string`**: The file or list of files to be downloaded, separated by '|' for multiple files
+- **Remote File**`string`: The file or list of files to be downloaded, separated by '|' for multiple files
 
-- **FTP Connection Object`TFTP`**: The FTP object from which files need to be downloaded
+- **FTP Connection Object**`TFTP`: The FTP object from which files need to be downloaded
 
 
 **Command Output**

@@ -16,26 +16,26 @@ Wait for the window state to change
 
 **Command Input**
 
-- **Timeout (ms)`Integer`**: Please enter the maximum waiting time
+- **Timeout (ms)**`Integer`: Please enter the maximum waiting time
 
-- **Set timeout`Boolean`**: Whether to set a timeout
+- **Set timeout**`Boolean`: Whether to set a timeout
 
-- **Wait state`Integer`**: Choose the window state to wait for
+- **Wait state**`Integer`: Choose the window state to wait for
 
-- **Window type`string`**: Enter the window type
+- **Window type**`string`: Enter the window type
 
-- **Add window type`Boolean`**: Add window type
+- **Add window type**`Boolean`: Add window type
 
-- **Window title`string`**: Enter the window title
+- **Window title**`string`: Enter the window title
 
-- **Operation target`TTarget`**: Select a window element
+- **Operation target**`TTarget`: Select a window element
 
-- **Method to get the window`Integer`**: Choose the method to get the window
+- **Method to get the window**`Integer`: Choose the method to get the window
 
 
 **Command Output**
 
-- **waitResult`Boolean`**: 
+- **waitResult**`Boolean`: 
 
 
 **Command Output**

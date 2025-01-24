@@ -16,7 +16,7 @@ Stop listening to web requests.
 
 **Command Input**
 
-- **Web Page Object`TBrowser`**: Enter a web page object that has been obtained or created using the 'Open Web Page' function.
+- **Web Page Object**`TBrowser`: Enter a web page object that has been obtained or created using the 'Open Web Page' function.
 
 
 **Command Output**

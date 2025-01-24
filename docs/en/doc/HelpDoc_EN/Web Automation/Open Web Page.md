@@ -16,28 +16,28 @@ Open a web page using a specified browser to achieve web automation
 
 **Command Input**
 
-- **URL`string`**: Enter the web address to open
+- **URL**`string`: Enter the web address to open
 
-- **Browser Type`Integer`**: Select the browser type. You need to install the corresponding browser plugin in [Settings]-[Plugin Center] to achieve automation. Additionally, if the browser installation path is not the default system drive, you need to set the installation path in advanced options.
+- **Browser Type**`Integer`: Select the browser type. You need to install the corresponding browser plugin in [Settings]-[Plugin Center] to achieve automation. Additionally, if the browser installation path is not the default system drive, you need to set the installation path in advanced options.
 
 
 **Command Output**
 
-- **Save web page object to`TBrowser`**: This variable saves the web page object, which can be used for automating the web page
+- **Save web page object to**`TBrowser`: This variable saves the web page object, which can be used for automating the web page
 
 ### Advanced
 
-- **Command line arguments`string`**: Command line arguments, must be supported by the browser, can be empty
+- **Command line arguments**`string`: Command line arguments, must be supported by the browser, can be empty
 
-- **Browser installation path`string`**: The default is the system drive installation path. If the installation path is not default, please select the program path of the corresponding browser
+- **Browser installation path**`string`: The default is the system drive installation path. If the installation path is not default, please select the program path of the corresponding browser
 
-- **Action after timeout`Integer`**: The action to perform after the page load times out
+- **Action after timeout**`Integer`: The action to perform after the page load times out
 
-- **Load timeout (milliseconds)`Integer`**: The time to wait for the page to load before timing out (milliseconds)
+- **Load timeout (milliseconds)**`Integer`: The time to wait for the page to load before timing out (milliseconds)
 
-- **Wait for the web page to load completely`Boolean`**: Whether to wait for the web page to load completely
+- **Wait for the web page to load completely**`Boolean`: Whether to wait for the web page to load completely
 
-- **Run without grabbing mouse and keyboard`Boolean`**: Perform subsequent operations on the web page using API methods, which will improve stability and avoid occupying the mouse and keyboard
+- **Run without grabbing mouse and keyboard**`Boolean`: Perform subsequent operations on the web page using API methods, which will improve stability and avoid occupying the mouse and keyboard
 
 
 **Command Output**

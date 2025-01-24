@@ -16,9 +16,9 @@ Delete a node from the Json object
 
 **Command Input**
 
-- **Node Path`string`**: Path of the node to be deleted
+- **Node Path**`string`: Path of the node to be deleted
 
-- **Json Object`TJson`**: Json Object
+- **Json Object**`TJson`: Json Object
 
 
 **Command Output**

@@ -16,9 +16,9 @@ Save Json
 
 **Command Input**
 
-- **Save Path`string`**: Path where to save
+- **Save Path**`string`: Path where to save
 
-- **Json Object`TJson`**: Json Object
+- **Json Object**`TJson`: Json Object
 
 
 **Command Output**

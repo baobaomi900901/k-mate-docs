@@ -16,22 +16,22 @@ Call the Kingsware AI interface to compare two face images and return the detect
 
 **Command Input**
 
-- **Second face image path`string`**: Enter or select the face image path
+- **Second face image path**`string`: Enter or select the face image path
 
-- **First face image path`string`**: Enter or select the face image path
+- **First face image path**`string`: Enter or select the face image path
 
 
 **Command Output**
 
-- **Error information`String`**: Return error information
+- **Error information**`String`: Return error information
 
-- **Response body information`String`**: Return response body information
+- **Response body information**`String`: Return response body information
 
-- **Response header information`String`**: Return response header information
+- **Response header information**`String`: Return response header information
 
 ### Advanced
 
-- **Response header type`array of string`**: When the server and client create a long connection, necessary settings should be made for the HTTP response header's connection, default is ['Connection']
+- **Response header type**`array of string`: When the server and client create a long connection, necessary settings should be made for the HTTP response header's connection, default is ['Connection']
 
 
 **Command Output**
