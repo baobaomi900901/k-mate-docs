@@ -1,0 +1,70 @@
+---
+title: ID Card Recognition
+---
+
+# ID Card Recognition
+
+## Function Description
+
+:::tip 
+Call the AI interface for ID card recognition
+:::
+
+## Configuration Item Description
+
+### General
+
+**Command Input**
+
+- **Front and Back`Integer`**: Front: The side of the ID card with the photo; Back: The side of the ID card with the national emblem
+
+- **Recognition Object Type`Integer`**: Front of the ID card, Back of the ID card, Front and Back of the ID card
+
+- **Image Path`string`**: Enter the image address to select
+
+- **Recognition Method`Integer`**: Select recognition method
+
+
+**Command Output**
+
+- **Error Information`String`**: Specify a variable to store the error information
+
+- **Response Body Information`String`**: Specify a variable to store the response body information
+
+- **Response Header Information`String`**: Specify a variable to store the response header information
+
+- **Result`string`**: Specify a variable to store the recognition result
+
+### Advanced
+
+- **Response Header Type`array of string`**: When the server and client create a long connection, necessary settings need to be made to the HTTP response header's connection. Default is ['Connection']
+
+- **Proxy Parameter`string`**: Proxy server, format is Address:Port
+
+
+**Command Output**
+
+### Error Handling
+
+- **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 
+
+- **Handling Method**`Integer`:
+
+    - **Terminate Process**: If the command fails, terminate the process.
+
+    - **Ignore Exception and Continue Execution**: If the command fails, ignore the exception and continue the process.
+
+    - **Retry This Command**: If the command fails, retry the command a specified number of times with a specified interval between retries.
+
+## Usage Example
+
+Process logic description:
+
+## Common Errors and Handling
+
+None
+
+## Frequently Asked Questions
+
+None
+

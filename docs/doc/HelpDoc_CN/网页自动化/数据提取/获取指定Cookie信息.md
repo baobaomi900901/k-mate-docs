@@ -16,26 +16,26 @@ title: 获取指定Cookie信息
 
 **指令输入**
 
-- **Cookie Name[string]**: 根据给定的Name筛选Cookie，为空则忽略Name筛选条件
+- **Cookie Name`string`**: 根据给定的Name筛选Cookie，为空则忽略Name筛选条件
 
-- **Cookie Url[string]**: 根据给定的Url筛选Cookie，为空则忽略Url筛选条件
+- **Cookie Url`string`**: 根据给定的Url筛选Cookie，为空则忽略Url筛选条件
 
-- **浏览器类型[Integer]**: 获取指定类型浏览器Cookie
+- **浏览器类型`Integer`**: 获取指定类型浏览器Cookie
 
-- **网页对象[TBrowser]**: 输入一个获取到的或者通过'打开网页'函数创建的网页对象
+- **网页对象`TBrowser`**: 输入一个获取到的或者通过'打开网页'函数创建的网页对象
 
-- **Url设置方式[Integer]**: Cookie Url设置值来源，可选择手动输入，如果选择网页对象，则自动使用网页Url指定
+- **Url设置方式`Integer`**: Cookie Url设置值来源，可选择手动输入，如果选择网页对象，则自动使用网页Url指定
 
 
 **指令输出**
 
-- **保存Cookie至[string]**: 保存获取到的Cookie
+- **保存Cookie至`string`**: 保存获取到的Cookie
 
 ### 错误处理
 
-- **打印错误日志**[Boolean]：当指令运行出错时，打印错误日志到【日志】面板。默认勾选。
+- **打印错误日志**`Boolean`：当指令运行出错时，打印错误日志到【日志】面板。默认勾选。
 
-- **处理方式**[Integer]：
+- **处理方式**`Integer`：
 
  - **终止流程**：指令运行出错时，终止流程。
 

@@ -16,20 +16,20 @@ title: 读取Excel总行数
 
 **指令输入**
 
-- **Sheet页名称[string]**: 为空则默认为当前激活的Sheet页
+- **Sheet页名称`string`**: 为空则默认为当前激活的Sheet页
 
-- **Excel对象[TWorkbookApplication]**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象`TWorkbookApplication`**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 
 **指令输出**
 
-- **保存总行数至[Integer]**: 保存总行数
+- **保存总行数至`Integer`**: 保存总行数
 
 ### 错误处理
 
-- **打印错误日志**[Boolean]：当指令运行出错时，打印错误日志到【日志】面板。默认勾选。
+- **打印错误日志**`Boolean`：当指令运行出错时，打印错误日志到【日志】面板。默认勾选。
 
-- **处理方式**[Integer]：
+- **处理方式**`Integer`：
 
  - **终止流程**：指令运行出错时，终止流程。
 

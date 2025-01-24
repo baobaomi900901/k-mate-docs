@@ -16,11 +16,11 @@ title: 激活Sheet页
 
 **指令输入**
 
-- **Sheet页名称/位置[string]**: 输入待激活的Sheet页名称,不能为空
+- **Sheet页名称/位置`string`**: 输入待激活的Sheet页名称,不能为空
 
-- **激活方式[Integer]**: 选择激活方式
+- **激活方式`Integer`**: 选择激活方式
 
-- **Excel对象[TWorkbookApplication]**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象`TWorkbookApplication`**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 
 **指令输出**
@@ -29,9 +29,9 @@ title: 激活Sheet页
 
 ### 错误处理
 
-- **打印错误日志**[Boolean]：当指令运行出错时，打印错误日志到【日志】面板。默认勾选。
+- **打印错误日志**`Boolean`：当指令运行出错时，打印错误日志到【日志】面板。默认勾选。
 
-- **处理方式**[Integer]：
+- **处理方式**`Integer`：
 
  - **终止流程**：指令运行出错时，终止流程。
 

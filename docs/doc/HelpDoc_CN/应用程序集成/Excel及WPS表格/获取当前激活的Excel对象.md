@@ -21,13 +21,13 @@ title: 获取当前激活的Excel对象
 
 **指令输出**
 
-- **保存Excel对象至[TWorkbookApplication]**: 该变量保存的是Excel对象，使用此Excel对象可以对Excel进行自动化操作
+- **保存Excel对象至`TWorkbookApplication`**: 该变量保存的是Excel对象，使用此Excel对象可以对Excel进行自动化操作
 
 ### 错误处理
 
-- **打印错误日志**[Boolean]：当指令运行出错时，打印错误日志到【日志】面板。默认勾选。
+- **打印错误日志**`Boolean`：当指令运行出错时，打印错误日志到【日志】面板。默认勾选。
 
-- **处理方式**[Integer]：
+- **处理方式**`Integer`：
 
  - **终止流程**：指令运行出错时，终止流程。
 

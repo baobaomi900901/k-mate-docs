@@ -16,15 +16,15 @@ title: 导出为PDF
 
 **指令输入**
 
-- **如果文件存在则覆盖[Boolean]**: 如果文件存在则覆盖
+- **如果文件存在则覆盖`Boolean`**: 如果文件存在则覆盖
 
-- **PDF保存到[string]**: 导出PDF保存的文件名
+- **PDF保存到`string`**: 导出PDF保存的文件名
 
-- **全部Sheet页[Boolean]**: 若勾选，导出所有工作表
+- **全部Sheet页`Boolean`**: 若勾选，导出所有工作表
 
-- **Sheet页名称[string]**: 填写Sheet页名称，为空则默认为当前激活的Sheet页
+- **Sheet页名称`string`**: 填写Sheet页名称，为空则默认为当前激活的Sheet页
 
-- **Excel对象[TWorkbookApplication]**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象`TWorkbookApplication`**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 
 **指令输出**
@@ -33,9 +33,9 @@ title: 导出为PDF
 
 ### 错误处理
 
-- **打印错误日志**[Boolean]：当指令运行出错时，打印错误日志到【日志】面板。默认勾选。
+- **打印错误日志**`Boolean`：当指令运行出错时，打印错误日志到【日志】面板。默认勾选。
 
-- **处理方式**[Integer]：
+- **处理方式**`Integer`：
 
  - **终止流程**：指令运行出错时，终止流程。
 

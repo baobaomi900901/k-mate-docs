@@ -16,22 +16,22 @@ title: 获取Sheet页名称
 
 **指令输入**
 
-- **Sheet页范围[Integer]**: 选择待获取的Sheet页
+- **Sheet页范围`Integer`**: 选择待获取的Sheet页
 
-- **Excel对象[TWorkbookApplication]**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象`TWorkbookApplication`**: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 
 **指令输出**
 
-- **Sheet页名称列表保存至[TList<String>]**: 指定一个变量，用于保存Sheet页名列表
+- **Sheet页名称列表保存至`TList<String>`**: 指定一个变量，用于保存Sheet页名列表
 
-- **Sheet页名称保存至[string]**: 保存的sheet页名
+- **Sheet页名称保存至`string`**: 保存的sheet页名
 
 ### 错误处理
 
-- **打印错误日志**[Boolean]：当指令运行出错时，打印错误日志到【日志】面板。默认勾选。
+- **打印错误日志**`Boolean`：当指令运行出错时，打印错误日志到【日志】面板。默认勾选。
 
-- **处理方式**[Integer]：
+- **处理方式**`Integer`：
 
  - **终止流程**：指令运行出错时，终止流程。
 
