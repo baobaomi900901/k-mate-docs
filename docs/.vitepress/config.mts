@@ -1,13 +1,9 @@
 import { defineConfig, defineConfigWithTheme } from 'vitepress';
 import { fileURLToPath, URL } from 'node:url';
 import path from 'node:path';
-const paragraphIds = require('./markdown-it-paragraph-ids.cjs');
-import { generateSidebar } from 'vitepress-sidebar';
-
+import paragraphIds from './markdown-it-paragraph-ids.cjs';
 import MiniSearch from 'minisearch';
 import escookConfig from '@escook/vitepress-theme/config';
-import { containerPreview, componentPreview } from './plugin/demo-preview';
-import { genApiDoc } from './plugin/api-doc.config';
 import { navs, sidebars } from './navs/setMenu.js';
 
 // console.log(navs);
@@ -30,7 +26,7 @@ export default defineConfigWithTheme({
   title: 'KingAutoMate',
   description: '个人知识站',
   vite: {
-    plugins: [genApiDoc()],
+    plugins: [],
     resolve: {
       // 自定义替换默认组件
       alias: [
@@ -53,7 +49,7 @@ export default defineConfigWithTheme({
       ]
     },
     ssr: {
-      noExternal: ['ksw-vue-icon', '@ksware/ksw-ux', 'vue-i18n']
+      noExternal: []
     },
     // Network
     server: {
@@ -135,7 +131,7 @@ export default defineConfigWithTheme({
           }
         }
       }
-    }
+    },
 
     // confetti: false,
 
@@ -146,9 +142,11 @@ export default defineConfigWithTheme({
     // },
   },
 
+  // metaChunk: true,
+
   locales: {
     root: {
-      label: '简体中文`',
+      label: '简体中文',
       lang: 'zh',
       themeConfig: {
         nav: navs['zh'],
@@ -169,8 +167,6 @@ export default defineConfigWithTheme({
   markdown: {
     config: (md) => {
       md.use(paragraphIds);
-      md.use(containerPreview);
-      md.use(componentPreview);
     }
   }
 });

@@ -44,13 +44,13 @@ function setSidebar(nav) {
     const resolvePath = link;
     const menuName = link.split('/')[link.split('/').length - 1];
     const SidebarItemObj = {
-      documentRootPath: '/docs',
+      documentRootPath: 'docs',
       scanStartPath,
       resolvePath,
       useTitleFromFileHeading: true,
       useTitleFromFrontmatter: true,
       useFolderTitleFromIndexFile: true,
-      useFolderLinkFromIndexFile: true,
+      useFolderLinkFromIndexFile: false,
       folderLinkNotIncludesFileName: true,
       // sortMenusByFrontmatterDate: true, // 启用日期排序
       sortMenusByFrontmatterOrder: true, // 按名称排序菜单
@@ -61,12 +61,7 @@ function setSidebar(nav) {
         base: link,
         items: isChildrenMenu
           ? []
-          : [
-              {
-                text: 'README',
-                items: generateSidebar(SidebarItemObj)
-              }
-            ]
+          : generateSidebar(SidebarItemObj)
       }
     };
 
@@ -75,7 +70,6 @@ function setSidebar(nav) {
       ...SidebarObj
     };
   });
-
   return sidebars;
 }
 
