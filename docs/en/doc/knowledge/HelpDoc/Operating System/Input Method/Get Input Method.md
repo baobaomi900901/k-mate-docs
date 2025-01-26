@@ -24,8 +24,6 @@ No input for the current command
 - **Save the input method name to**`string`: Enter a variable to save the input method name
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

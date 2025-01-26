@@ -28,8 +28,6 @@ Get the first available row on the specified column
 - **Save Row Number To**`Integer`: Specify a variable to save the first available row number on the column
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

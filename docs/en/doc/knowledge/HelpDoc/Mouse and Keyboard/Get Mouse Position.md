@@ -26,8 +26,6 @@ Get the position of the mouse when this instruction is executed during the robot
 - **Relative horizontal coordinate**`Integer`: Specify a variable to store the horizontal coordinate of the current mouse position
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -24,8 +24,6 @@ Convert Json object to string
 - **Result**`string`: Save the string object
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -40,8 +40,6 @@ Select a database type to connect to the database
 - **Save Database Connection Object to**`TDatabase`: Specify a variable name that will store the database connection object
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

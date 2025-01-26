@@ -30,8 +30,6 @@ Used to extract files/folders
 - **Save folder path to**`string`: Specify a variable name to store the folder path
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

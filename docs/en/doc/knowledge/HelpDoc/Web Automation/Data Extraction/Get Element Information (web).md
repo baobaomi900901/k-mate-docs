@@ -40,8 +40,6 @@ Get the text content, source code, attribute value, and position of elements in 
 - **Convert to DPI Corresponding to 96**`Boolean`: Whether to convert the border attributes to device-independent units
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

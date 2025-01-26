@@ -24,8 +24,6 @@ No input for the current command
 - **Save Current Date To**`TDateTime`: Specify a variable to save the current date and time
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

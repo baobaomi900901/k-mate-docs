@@ -30,8 +30,6 @@ Convert the timestamp to a DateTime, defaulting to second-level timestamps
 - **Save DateTime To**`TDateTime`: Specify a variable to save the converted DateTime
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

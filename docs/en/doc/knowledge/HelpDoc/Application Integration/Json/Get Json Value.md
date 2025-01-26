@@ -30,8 +30,6 @@ Get the value of a Json object with the specified type
 - **Value**`string`: Value
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

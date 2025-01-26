@@ -36,8 +36,6 @@ To perform automated operations on a specific window, you first need to obtain t
 - **Save Window Instance To**`TWinObj`: This variable stores the window object, which can be used to perform automated operations on the window
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

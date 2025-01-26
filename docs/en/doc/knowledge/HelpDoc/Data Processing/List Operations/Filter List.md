@@ -26,8 +26,6 @@ This command is used to remove all items in list 2 from list 1 and save the resu
 - **Save List Object To**`TList<String>`: Specify a variable to save the filtered new list
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

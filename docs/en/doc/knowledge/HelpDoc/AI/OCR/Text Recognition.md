@@ -44,8 +44,6 @@ Call AI interface for text recognition
 - **Proxy Parameters**`string`: Proxy server, format: address:port
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

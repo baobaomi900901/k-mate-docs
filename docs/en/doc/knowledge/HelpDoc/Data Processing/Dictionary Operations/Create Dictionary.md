@@ -24,8 +24,6 @@ No input for the current command
 - **Save Dictionary Object To**`TRPADictionary`: Specify a variable to save the new dictionary
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

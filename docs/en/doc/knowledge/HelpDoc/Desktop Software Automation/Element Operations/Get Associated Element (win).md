@@ -40,8 +40,6 @@ Get the associated element of an element in the specified window (parent, child,
 - **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target associated element to exist
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

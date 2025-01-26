@@ -30,8 +30,6 @@ Get the start and end row numbers and column names of the currently selected ran
 - **Start Row Number Save To**`Integer`: Specify a variable to save the starting row number of the selected range
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

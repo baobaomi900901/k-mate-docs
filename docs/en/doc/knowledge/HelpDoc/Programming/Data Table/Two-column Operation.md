@@ -38,8 +38,6 @@ Perform addition, subtraction, multiplication, and division on the specified two
 - **Post-operation Data**`TDataTable`: Used to store the data table after the operation.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

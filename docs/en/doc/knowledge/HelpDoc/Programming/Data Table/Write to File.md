@@ -38,8 +38,6 @@ Write the data table to an Excel or CSV file
 - **Write Row Labels**`Boolean`: Write the row labels (row headers) from the data into the file.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

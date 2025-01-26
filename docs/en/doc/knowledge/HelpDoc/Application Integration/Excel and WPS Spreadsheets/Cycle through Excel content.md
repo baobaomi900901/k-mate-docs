@@ -48,8 +48,6 @@ Cycle through the content of an Excel object and save the loop items
 - **Read the displayed content of cells**`Boolean`: If not checked, integers will be read as decimals (1 = 1.0)
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

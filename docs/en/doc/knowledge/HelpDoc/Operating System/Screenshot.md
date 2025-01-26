@@ -40,8 +40,6 @@ Capture the screen or window and save it to the clipboard or a file
 - **Did the user cancel the screenshot**`string`: Input a variable to store whether the user canceled the screenshot
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

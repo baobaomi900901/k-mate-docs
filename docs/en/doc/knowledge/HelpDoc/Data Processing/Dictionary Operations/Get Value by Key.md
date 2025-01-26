@@ -30,8 +30,6 @@ This command is used to get the value corresponding to a specified key name in a
 - **Save Value To**`string`: Specify a variable to save the found key value
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -40,8 +40,6 @@ Run software, open software, open folder, open website, execute system commands,
 - **Arguments (optional)**`string`: Additional arguments for program execution
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

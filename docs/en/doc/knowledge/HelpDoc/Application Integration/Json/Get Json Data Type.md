@@ -24,8 +24,6 @@ Get the data type of the Json object
 - **Data Type**`string`: Data Type
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

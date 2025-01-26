@@ -30,8 +30,6 @@ No output for the current command
 - **Key Input Interval (Milliseconds)**`Integer`: Time interval between two key presses
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

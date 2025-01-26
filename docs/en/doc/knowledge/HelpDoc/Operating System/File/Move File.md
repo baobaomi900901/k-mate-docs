@@ -28,8 +28,6 @@ Move files to a specified directory
 - **List of Moved File Paths**`TList<String>`: Enter a name to save the list of moved file paths
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -52,8 +52,6 @@ Read content from an Excel file, supports reading within a rectangular area rang
 - **Read Cell Displayed Content**`Boolean`: If unchecked, integers are read as decimals (1=1.0).
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

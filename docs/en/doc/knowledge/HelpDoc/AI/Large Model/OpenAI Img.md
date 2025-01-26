@@ -32,8 +32,6 @@ Use prompt text to instruct AI to create an image.
 - **Proxy Parameters**`string`: Proxy server, format as Address:Port
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

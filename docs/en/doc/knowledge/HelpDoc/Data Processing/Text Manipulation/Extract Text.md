@@ -36,8 +36,6 @@ This command is used to extract a segment of text
 - **Save Result To**`string`: Specify a variable to save the extracted text content
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

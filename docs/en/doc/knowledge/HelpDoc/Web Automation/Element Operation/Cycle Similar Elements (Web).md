@@ -44,8 +44,6 @@ Iterate through each item in the similar element list on the web page for automa
 - **Loop Start Position**`Integer`: Loop start position, 0 is the first item.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

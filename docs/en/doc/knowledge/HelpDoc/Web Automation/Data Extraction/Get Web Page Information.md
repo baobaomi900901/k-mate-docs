@@ -26,8 +26,6 @@ Get web page text content, URL, source code, title, etc.
 - **WebRst**`string`: 
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

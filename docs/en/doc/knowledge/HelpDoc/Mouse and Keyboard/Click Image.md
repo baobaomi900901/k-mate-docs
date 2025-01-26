@@ -52,8 +52,6 @@ No output for the current command
 - **Keyboard Modifier Keys**`Integer`: The keyboard function keys that need to be pressed
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

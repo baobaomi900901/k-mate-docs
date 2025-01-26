@@ -26,8 +26,6 @@ Get the results of web listening.
 - **Save Web Listen Results List**`string`: Save the list of web listen results obtained.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

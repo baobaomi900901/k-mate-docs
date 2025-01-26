@@ -28,8 +28,6 @@ Read the content of the file at the specified path
 - **Save File Content to**`string`: Enter a name to save the file content
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

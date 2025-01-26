@@ -34,8 +34,6 @@ This instruction is used to execute a DOS command and return the result
 - **Save execution result to**`string`: Output a name to save the result of the DOS command execution
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

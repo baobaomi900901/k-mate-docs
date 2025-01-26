@@ -52,8 +52,6 @@ Scrape batch data from the target window, commonly used for scraping list pages,
 - **Custom Column Name**`string`: Custom column names, separated by commas.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -36,8 +36,6 @@ Get the list of currently opened web objects to perform batch automation on each
 - **Run without taking over mouse and keyboard**`Boolean`: Use API method for subsequent operations on the webpage, which will improve stability and avoid occupying mouse and keyboard
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

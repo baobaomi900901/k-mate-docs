@@ -42,8 +42,6 @@ This command is used to extract part of the content from the current PDF file an
 - **Use Password**`Boolean`: Whether a password is required to open the file
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

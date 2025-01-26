@@ -56,8 +56,6 @@ No output for the current command
 - **SMTP Server**`Integer`: Send email messages using different SMTP protocols
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

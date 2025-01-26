@@ -32,8 +32,6 @@ Extract specified content from text based on regular expressions
 - **Save Result To**`string`: Specify a variable to save the extracted content
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -38,8 +38,6 @@ SAP Login
 - **SAP Session Window**`TUiElement`: Specify a variable to save the SAP session window
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

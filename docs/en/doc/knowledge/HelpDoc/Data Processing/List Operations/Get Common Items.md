@@ -26,8 +26,6 @@ This command is used to get the common items from two lists and save the result 
 - **Save List Object To**`TList<String>`: Specify a variable to save the new list
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -38,8 +38,6 @@ This command is used to extract text from a PDF file. Please install the PDF plu
 - **Use Password**`Boolean`: Does the file require a password to open?
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

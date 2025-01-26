@@ -32,8 +32,6 @@ This command is used to concatenate each element in the list with a specified de
 - **Save Result To**`string`: Specify a variable to save the concatenated text
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

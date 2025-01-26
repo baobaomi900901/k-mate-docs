@@ -40,8 +40,6 @@ Get window text content, process, title, and other information
 - **Save Window Info To**`string`: The saved window property object
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -24,8 +24,6 @@ Get the system folder path
 - **System Folder Path**`string`: Enter a name to save the system folder path
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

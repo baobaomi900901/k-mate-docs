@@ -32,8 +32,6 @@ Use natural language dialogue to let AI complete tasks like original writing, er
 - **Proxy Parameters**`string`: Proxy server, format as Address:Port
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

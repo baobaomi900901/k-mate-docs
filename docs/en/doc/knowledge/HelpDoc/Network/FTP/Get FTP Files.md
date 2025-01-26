@@ -24,8 +24,6 @@ Retrieve all files and subdirectories from the current path of the FTP server
 - **Save returned files to**`TList<String>`: Specify a variable name that will store the returned files and subfolder data
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

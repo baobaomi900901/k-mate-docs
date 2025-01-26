@@ -24,8 +24,6 @@ Read custom data that has been saved in the process
 - **Data Content**`string`: Save the retrieved custom data content to a variable, return null if not found based on the Key
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

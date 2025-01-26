@@ -28,8 +28,6 @@ Execute SQL statements such as Insert, Update, Delete in the specified database
 - **Rows Affected**`Integer`: Specify a variable name that will store the number of rows affected by the database execution
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -36,8 +36,6 @@ Generate a pivot table from the data table based on specified row fields, column
 - **Pivot Table**`TDataTable`: Used to store the generated pivot table.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

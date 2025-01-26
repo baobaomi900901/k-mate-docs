@@ -28,8 +28,6 @@ Call Baidu AI API to check if the image complies with regulations
 - **Proxy Parameters**`string`: Proxy server, in the format of address:port
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

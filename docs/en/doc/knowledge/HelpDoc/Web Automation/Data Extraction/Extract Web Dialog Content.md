@@ -28,8 +28,6 @@ Extract the content of a web dialog box
 - **Wait for Dialog to Appear (Milliseconds)**`Integer`: Timeout period for waiting for the dialog to appear
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

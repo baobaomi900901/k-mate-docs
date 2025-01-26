@@ -45,9 +45,6 @@ Get a web page that is already open and matches the URL or title, or get the cur
 
 - **Do not grab mouse and keyboard during runtime**`Boolean`: Perform subsequent operations on the web page using API methods, which will improve stability and avoid occupying the mouse and keyboard
 
-
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

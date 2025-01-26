@@ -28,8 +28,6 @@ Copy the source folder to the target folder
 - **Copied folder path**`string`: Enter a name to save the path of the copied folder
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

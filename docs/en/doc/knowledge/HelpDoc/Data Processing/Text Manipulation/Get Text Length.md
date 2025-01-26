@@ -24,8 +24,6 @@ This command is used to get the length of a text string
 - **Save Text Length To**`Integer`: Specify a variable to save the length of the text content
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

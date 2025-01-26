@@ -44,8 +44,6 @@ Retrieve all cookies from a single Cookie store that match the given criteria
 - **Filter by Cookie's Secure attribute**`Boolean`: Filter by Cookie's Secure attribute
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

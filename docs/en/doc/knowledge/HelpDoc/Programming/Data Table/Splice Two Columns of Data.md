@@ -42,8 +42,6 @@ Concatenate two columns of data using a specified delimiter to form a new column
 - **Concatenated Data**`TDataTable`: Concatenate two columns of data using the specified delimiter to form a new column.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -28,8 +28,6 @@ This command is used to set a key-value pair in a dictionary, modifying the valu
 No output for the current command
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

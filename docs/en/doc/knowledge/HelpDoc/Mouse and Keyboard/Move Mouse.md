@@ -34,8 +34,6 @@ No output for the current command
 - **Delay after execution (milliseconds)**`Integer`: Time to wait after the instruction is executed
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

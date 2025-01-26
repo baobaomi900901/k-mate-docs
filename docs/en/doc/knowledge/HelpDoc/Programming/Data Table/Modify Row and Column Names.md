@@ -38,8 +38,6 @@ Modify the row and column names of a data table
 - **Modification Result**`TDataTable`: The data table after modifying row and column names
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

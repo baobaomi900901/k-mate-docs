@@ -26,8 +26,6 @@ Export log content to a file
 - **File Path**`string`: Specify a variable name, this variable will be used to store the location of the exported file
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

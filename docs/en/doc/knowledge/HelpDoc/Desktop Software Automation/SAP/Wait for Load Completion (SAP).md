@@ -24,8 +24,6 @@ Wait for the SAP to load completely
 - **Wait Result**`Boolean`: Specify a variable to save whether the SAP has loaded within the specified time
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

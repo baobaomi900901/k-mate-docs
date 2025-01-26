@@ -52,8 +52,6 @@ Scrape batch data from web pages, commonly used for scraping list and detail pag
 - **Custom Column Names**`string`: You can customize the column names, separated by commas.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

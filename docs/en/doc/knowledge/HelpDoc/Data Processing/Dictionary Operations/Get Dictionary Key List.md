@@ -24,8 +24,6 @@ This command is used to get a list of key names from a dictionary
 - **Save Key List To**`TList<String>`: Enter a name to save the found key list
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

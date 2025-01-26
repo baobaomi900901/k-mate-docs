@@ -43,9 +43,6 @@ No output for the current command
 
 - **Simulate manual hover**`Boolean`: Simulate user hover behavior, trigger the browser's event mechanism to ensure consistency with real operations. Suitable for scenarios requiring simulation of user interaction.
 
-
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

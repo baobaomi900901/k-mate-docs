@@ -24,8 +24,6 @@ No input for the current command
 - **Save input method names to**`TList<String>`: Enter a variable to save the list of input method names
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

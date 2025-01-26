@@ -32,8 +32,6 @@ Wait for the specified element on the web page to appear or disappear before pro
 - **Wait Result**`Boolean`: If true, the wait was successful; otherwise, it timed out
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

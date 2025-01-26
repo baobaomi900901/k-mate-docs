@@ -28,8 +28,6 @@ Read the row and column names of the data table
 - **Row Names**`string`: The default row name is the first position of each row in the data table
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

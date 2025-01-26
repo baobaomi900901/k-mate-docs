@@ -28,8 +28,6 @@ Append new text content after the original text, completing the text concatenati
 - **Save Result To**`string`: Specify a variable to save the result. If the variable name is the same as the original text variable, it will be overwritten
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

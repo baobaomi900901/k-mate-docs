@@ -44,8 +44,6 @@ Call the AI interface to recognize various bills such as VAT invoices, train tic
 - **Proxy Parameters**`string`: Proxy server, in the format of address:port
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

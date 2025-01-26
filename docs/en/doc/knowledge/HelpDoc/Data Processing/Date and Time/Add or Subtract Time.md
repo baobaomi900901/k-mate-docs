@@ -34,8 +34,6 @@ Add or subtract time from a specified date and time, supporting text-formatted d
 - **Save New Date and Time To**`TDateTime`: Specify a variable to save the changed date and time
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -39,9 +39,6 @@ Open a web page using a specified browser to achieve web automation
 
 - **Run without grabbing mouse and keyboard**`Boolean`: Perform subsequent operations on the web page using API methods, which will improve stability and avoid occupying the mouse and keyboard
 
-
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -40,8 +40,6 @@ Take a screenshot of an element in the desktop software and save it to a specifi
 - **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

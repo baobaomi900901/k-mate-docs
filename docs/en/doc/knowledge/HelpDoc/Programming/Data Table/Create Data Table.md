@@ -46,8 +46,6 @@ Create a data table (2D table)
 - **Specify Column Names**`string`: Generally used when Excel lacks column names or needs to redefine column names. The length of names must be equal to the number of columns in the Excel table, otherwise an error will occur.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

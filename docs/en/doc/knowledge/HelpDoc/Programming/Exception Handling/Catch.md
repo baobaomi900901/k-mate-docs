@@ -24,8 +24,6 @@ No input for the current command
 - **Error Information**`string`: Enter a name to store the error information in a variable. The error message will be saved to this variable if the command fails
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

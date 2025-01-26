@@ -42,8 +42,6 @@ Take a screenshot of the specified area and save it to a file or add it to the c
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

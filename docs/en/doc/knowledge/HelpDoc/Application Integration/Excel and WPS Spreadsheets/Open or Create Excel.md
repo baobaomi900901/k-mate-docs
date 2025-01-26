@@ -40,8 +40,6 @@ Open an existing Excel file or create a new one to automate Excel operations
 - **Open Password**`string`: Password used to open the encrypted Excel file
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

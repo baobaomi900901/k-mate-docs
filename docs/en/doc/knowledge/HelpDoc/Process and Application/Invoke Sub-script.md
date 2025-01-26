@@ -26,8 +26,6 @@ Execute a sub-script with a specified name
 - **Save Output Result To**`string`: Specify a variable name to save the output result of the sub-script
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -34,8 +34,6 @@ Used to retrieve the content of templates from the Prompt project
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

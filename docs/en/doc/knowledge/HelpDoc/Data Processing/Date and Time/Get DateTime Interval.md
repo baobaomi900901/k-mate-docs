@@ -28,8 +28,6 @@ Get the interval between two dates and times
 - **Save Interval To**`Integer`: Specify a variable to save the calculated interval
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

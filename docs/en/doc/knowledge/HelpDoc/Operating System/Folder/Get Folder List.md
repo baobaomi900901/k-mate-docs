@@ -28,8 +28,6 @@ Get subfolders under the specified folder path
 - **Save Folder List To**`TList<String>`: Enter a name to save the folder list
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

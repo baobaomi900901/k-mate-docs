@@ -36,8 +36,6 @@ Delete duplicate row data from the specified column or the entire table of the d
 - **Data After Deletion**`TDataTable`: Used to store the data table after deleting duplicates.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

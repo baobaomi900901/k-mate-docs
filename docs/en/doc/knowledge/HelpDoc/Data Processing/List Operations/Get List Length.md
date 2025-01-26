@@ -24,8 +24,6 @@ This command is used to get the length of a list
 - **Save List Length To**`Integer`: Specify a variable to save the length of the list
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

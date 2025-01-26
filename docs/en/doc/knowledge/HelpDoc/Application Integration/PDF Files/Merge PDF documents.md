@@ -36,8 +36,6 @@ This instruction is used to merge multiple PDF documents and save them as a new 
 - **Use password protection**`Boolean`: Choose whether the files to be merged include any that require password protection.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

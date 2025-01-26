@@ -24,8 +24,6 @@ Get the list of selected files or folders in the currently active file explorer 
 - **Save Files(Folders) List To**`TList<String>`: Enter a name to save the files(folders) list
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -40,8 +40,6 @@ You can locate a set of similar elements on the window through capturing element
 - **Wait for Element to Exist (ms)**`Integer`: Timeout time for waiting for the target associated element to exist.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -48,8 +48,6 @@ Handle the download dialog that appears
 - **Input Method**`Integer`: Input Method
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

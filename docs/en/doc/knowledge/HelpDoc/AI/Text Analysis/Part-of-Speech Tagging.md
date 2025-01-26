@@ -32,8 +32,6 @@ Call the Kingsware AI interface for part-of-speech tagging (such as nouns, verbs
 - **Response Header Type**`array of string`: When a long connection is created between the server and the client, necessary settings must be made for the HTTP response header's connection, default is ['Connection']
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

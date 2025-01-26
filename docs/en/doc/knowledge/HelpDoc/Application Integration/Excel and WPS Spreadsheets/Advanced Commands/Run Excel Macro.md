@@ -30,8 +30,6 @@ Execute a macro in the workbook. The workbook file must be a macro-enabled workb
 - **Macro Output**`string`: Specify a variable to save the output of the macro (if any)
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

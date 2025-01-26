@@ -26,8 +26,6 @@ Move the source folder to the target folder
 - **Moved Folder Path**`string`: Enter a name to save the path of the moved folder
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

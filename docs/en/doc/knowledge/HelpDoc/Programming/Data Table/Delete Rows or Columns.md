@@ -40,8 +40,6 @@ Delete specified rows or columns from the data table
 - **Result after Deletion**`TDataTable`: The data table after deleting rows/columns.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

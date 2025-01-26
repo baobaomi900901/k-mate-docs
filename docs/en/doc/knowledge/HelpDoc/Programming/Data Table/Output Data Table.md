@@ -26,8 +26,6 @@ Write the data table to a string in CSV format.
 - **Text**`string`: The data table output as a string.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

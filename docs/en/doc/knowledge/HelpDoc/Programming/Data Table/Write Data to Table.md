@@ -42,8 +42,6 @@ Write data to the specified row and column of the data table
 - **Result after Writing**`TDataTable`: Output the data table after successful data writing.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

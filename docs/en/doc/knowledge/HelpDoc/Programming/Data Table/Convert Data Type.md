@@ -36,8 +36,6 @@ Convert the specified column or the entire table of a data table object into str
 - **Conversion Result**`TDataTable`: Conversion Result
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

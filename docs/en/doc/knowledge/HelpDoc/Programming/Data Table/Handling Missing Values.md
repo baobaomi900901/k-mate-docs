@@ -48,8 +48,6 @@ Fill missing values (NaN) in the data table with a fixed value, fill with the pr
 - **Result After Handling**`TDataTable`: The data table after handling the missing values.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

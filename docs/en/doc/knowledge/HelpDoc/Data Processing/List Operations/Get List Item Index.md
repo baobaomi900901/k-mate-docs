@@ -26,8 +26,6 @@ Retrieve the position of a specified item in the list, with list positions start
 - **Save Position To**`Integer`: Specify a variable to save the position of the found specified item in the list
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

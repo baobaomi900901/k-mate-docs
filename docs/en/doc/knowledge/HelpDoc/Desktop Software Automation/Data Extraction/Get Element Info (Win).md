@@ -38,8 +38,6 @@ Get the text content, attributes, value, and position of a specified element in 
 - **Convert to 96 DPI Corresponding Value**`Boolean`: Whether to convert border attributes to device-independent units (each unit is 1/96 inch)
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

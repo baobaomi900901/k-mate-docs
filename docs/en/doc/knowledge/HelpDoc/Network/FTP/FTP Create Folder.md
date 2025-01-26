@@ -26,8 +26,6 @@ Create a new folder on the remote server
 No output for the current command
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

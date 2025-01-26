@@ -32,8 +32,6 @@ Call the Kingsware AI interface to recognize and output the content of the speec
 - **Response Header Type**`array of string`: When a long connection is established between the server and client, necessary settings for the HTTP response header 'connection' are required. Default is ['Connection']
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

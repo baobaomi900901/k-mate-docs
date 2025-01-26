@@ -30,8 +30,6 @@ Wait for the file to be created or deleted
 - **Wait result**`Boolean`: If True, wait was successful; otherwise, the wait timed out
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

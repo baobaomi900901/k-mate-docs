@@ -32,8 +32,6 @@ Expand the tree to display the target node, and then select the target node
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target tree element to exist
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

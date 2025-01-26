@@ -24,8 +24,6 @@ No input for the current command
 - **Save Excel object to**`TWorkbookApplication`: This variable stores the Excel object, which can be used for automation operations on Excel
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -24,8 +24,6 @@ Get the currently selected text in the active window
 - **Save the selected text to**`string`: Specify a variable to save the selected text content
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

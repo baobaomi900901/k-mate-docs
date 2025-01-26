@@ -42,8 +42,6 @@ Sequentially cycle through each item in the similar elements list of the desktop
 - **Loop Start Position**`Integer`: Loop start position, 0 is the first item.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

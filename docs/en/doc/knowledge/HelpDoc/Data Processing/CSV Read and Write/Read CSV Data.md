@@ -30,8 +30,6 @@ Read the content of a CSV file
 - **Save Data Table To**`TDataTable`: Specify a variable to save the read data table
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

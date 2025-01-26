@@ -24,8 +24,6 @@ Retrieve the root directory, parent directory, file name, base file name, and fi
 - **File path information**`TList<String>`: Enter a name to save the file path information
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

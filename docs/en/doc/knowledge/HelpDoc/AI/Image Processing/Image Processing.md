@@ -42,8 +42,6 @@ Call the Kingsware AI interface for image distortion correction, enhancement, ba
 - **Response Header Type**`array of string`: When a long connection is created between the server and the client, it is necessary to set the 'connection' in the HTTP response header. The default is ['Connection'].
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

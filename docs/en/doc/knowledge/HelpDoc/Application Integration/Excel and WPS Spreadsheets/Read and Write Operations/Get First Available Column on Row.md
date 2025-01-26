@@ -28,8 +28,6 @@ Get the first available column on the specified row
 - **Save Column Name To**`string`: Specify a variable to save the first available column name on the row
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

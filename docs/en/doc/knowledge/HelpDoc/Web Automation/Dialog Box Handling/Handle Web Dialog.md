@@ -32,8 +32,6 @@ No output for the current command
 - **Wait for Dialog Appearance (milliseconds)**`Integer`: The maximum waiting time for the appearance of the dialog box
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -26,8 +26,6 @@ Create a new variable and assign it a value, or reassign a value to an existing 
 - **Variable Name**`Variant`: Enter a name for the variable to save the value into
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

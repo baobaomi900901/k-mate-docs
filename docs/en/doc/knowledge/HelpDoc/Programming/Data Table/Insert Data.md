@@ -44,8 +44,6 @@ Insert a row or column of data at a specified position in the data table. If the
 - **Result after Inserting**`TDataTable`: The data table after inserting data.
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

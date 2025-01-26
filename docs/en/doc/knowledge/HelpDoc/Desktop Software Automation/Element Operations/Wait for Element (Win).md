@@ -32,8 +32,6 @@ Wait for an element in the window to appear or disappear before proceeding with 
 - **Wait Result**`Boolean`: Return success if True, otherwise wait for timeout
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

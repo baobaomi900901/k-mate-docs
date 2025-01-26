@@ -36,8 +36,6 @@ Execute a piece of JavaScript in the specified web page and get the result of th
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout time to wait for the element to exist
 
 
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 
