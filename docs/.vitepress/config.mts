@@ -1,12 +1,12 @@
-import { defineConfig, defineConfigWithTheme } from 'vitepress';
+import { defineConfig } from 'vitepress';
 import { fileURLToPath, URL } from 'node:url';
 import path from 'node:path';
 import paragraphIds from './markdown-it-paragraph-ids.cjs';
 import MiniSearch from 'minisearch';
 import escookConfig from '@escook/vitepress-theme/config';
-import { navs, sidebars } from './navs/setMenu.js';
-
-// console.log(navs);
+import { withSidebar } from 'vitepress-sidebar';
+import { withI18n } from 'vitepress-i18n';
+import { vitePressSidebarConfig, vitePressI18nConfig } from './navs/i18nNavs';
 
 const suffixes = (term, minLength) => {
   if (term == null) {
@@ -19,7 +19,7 @@ const suffixes = (term, minLength) => {
   return tokens;
 };
 
-export default defineConfigWithTheme({
+const vitePressConfig = {
   // 3. specify the configuration to inherit via extended
   extends: escookConfig,
   lang: 'zh-CN',
@@ -71,55 +71,17 @@ export default defineConfigWithTheme({
       }
     ],
     ['meta', { property: 'og:site_name', content: 'KSW Design' }]
-    // ['meta', { property: 'og:image', content: 'https://vitepress.dev/vitepress-og.jpg' }],
-    // ['meta', { property: 'og:url', content: 'https://vitepress.dev/' }],
-    // ['script', { src: 'https://cdn.usefathom.com/script.js', 'data-site': 'AZBRSFGG', 'data-spa': 'auto', defer: '' }]
   ],
 
   themeConfig: {
     logo: { src: 'logo.png', width: 32, height: 32 },
-    // omit other configuration items...
-    // nav,
-    // sidebar,
 
     // 社交链接
-    socialLinks: [{ icon: 'github', link: 'https://github.com/baobaomi900901' }],
-
-    docFooter: {
-      prev: '上一页',
-      next: '下一页'
-    },
-
-    outline: {
-      level: 'deep',
-      label: '页面导航'
-    },
-
-    langMenuLabel: '多语言',
-    returnToTopLabel: '回到顶部',
-    sidebarMenuLabel: '菜单',
-    darkModeSwitchLabel: '主题',
-    lightModeSwitchTitle: '切换到浅色模式',
-    darkModeSwitchTitle: '切换到深色模式',
+    socialLinks: [{ icon: 'github', link: 'https://github.com' }],
 
     search: {
       provider: 'local',
       options: {
-        translations: {
-          button: {
-            buttonText: '搜索文档',
-            buttonAriaLabel: '搜索文档'
-          },
-          modal: {
-            noResultsText: '无法找到相关结果',
-            resetButtonTitle: '清除查询条件',
-            footer: {
-              selectText: '选择',
-              navigateText: '切换',
-              closeText: '关闭'
-            }
-          }
-        },
         // disableDetailedView: true,
         detailedView: true,
         miniSearch: {
@@ -132,41 +94,20 @@ export default defineConfigWithTheme({
         }
       }
     },
-
-    // confetti: false,
-
-    // musicBall: {
-    //   src: "https://img3.tukuppt.com/newpreview_music/09/01/62/5c89fd22dea6948307.mp3",
-    //   // visible: true, // 是否显示音乐图标
-    //   // autoplay: true, // 是否自动播放
-    // },
   },
-
-  // metaChunk: true,
-
-  locales: {
-    root: {
-      label: '简体中文',
-      lang: 'zh',
-      themeConfig: {
-        nav: navs['zh'],
-        sidebar: sidebars['zh']
-      }
-    },
-    en: {
-      label: 'English',
-      lang: 'en',
-      themeConfig: {
-        nav: navs['en'],
-        sidebar: sidebars['en']
-      }
-    }
+  rewrites: {
+    'doc/zhHans/:rest*': ':rest*',
+    'doc/:rest*': ':rest*',
   },
-
   cleanUrls: true,
   markdown: {
     config: (md) => {
       md.use(paragraphIds);
     }
   }
-});
+};
+
+export default defineConfig(
+  withSidebar(withI18n(vitePressConfig, vitePressI18nConfig), vitePressSidebarConfig)
+);
+

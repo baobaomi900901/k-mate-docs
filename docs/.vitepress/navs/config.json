@@ -1,0 +1,15 @@
+{
+  "HelpDoc": {
+    "zhHans": "帮助文档",
+    "en": "Help document"
+  },
+  "About": {
+    "zhHans": "关于",
+    "en": "About",
+    "Sidebar": false
+  },
+  "https://www.kingsware.cn/": {
+    "zhHans": "金智维",
+    "en": "Kingsware"
+  }
+}

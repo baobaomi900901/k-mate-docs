@@ -25,10 +25,10 @@ const members = [
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      关于我们(en)
+      About Us
     </template>
     <template #lead>
-      KingAutomate 是一个自动化工具集，旨在帮助开发者提升工作效率，提升软件质量，提升软件交付效率。
+      KingAutomate is an automation toolkit designed to help developers improve work efficiency, enhance software quality, and boost software delivery efficiency.
     </template>
   </VPTeamPageTitle>
   <VPTeamMembers
