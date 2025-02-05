@@ -22,23 +22,36 @@ const baseSidebarOptions = {
 
 const navConfig = {};
 const vitePressSidebarConfig = [] as any;
-const supportedLocales = new Set();
+const locales = new Set();
 
 Object.entries(config).forEach(([path, translations]) => {
   const isExternalLink = path.startsWith('http'); // 判断是否是外部链接
 
   Object.entries(translations).forEach(([lang, text]) => {
-    if (lang === "Sidebar") return; // 跳过 Sidebar 字段
+    if (lang === "Sidebar"|| lang === "items") return; // 跳过 Sidebar 字段
 
     // 收集所有语言
-    supportedLocales.add(lang);
+    locales.add(lang);
 
     // 生成 navConfig
     if (!navConfig[lang]) {
       navConfig[lang] = { nav: [] };
     }
-    const link = isExternalLink ? path : (lang === rootLocale ? `/${path}` : `/${lang}/${path}`); // 动态生成 link
-    navConfig[lang].nav.push({ text, link });
+    // 检查是否有子菜单
+    if (translations.items) {
+      const subItems = Object.entries(translations.items).map(([subLink, subTranslations]) => ({
+        text: subTranslations[lang],
+        link: subLink,
+      }));
+
+      navConfig[lang].nav.push({
+        text,
+        items: subItems,
+      });
+    } else {
+      const link = isExternalLink ? path : (lang === rootLocale ? `/${path}` : `/${lang}/${path}`); // 动态生成 link
+      navConfig[lang].nav.push({ text, link });
+    }
 
     // 生成 vitePressSidebarConfig（仅对内部路径且 Sidebar 不为 false）
     if (!isExternalLink && (translations as { Sidebar?: boolean }).Sidebar !== false) {
@@ -57,7 +70,7 @@ export {navConfig, vitePressSidebarConfig}
 
 export const vitePressI18nConfig = {
   // VitePress I18n config
-  locales: Array.from(supportedLocales),
+  locales: Array.from(locales),
   searchProvider: 'local',
   themeConfig: navConfig,
 };
