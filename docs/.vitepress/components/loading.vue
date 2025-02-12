@@ -13,13 +13,13 @@
         <div class="box-wrapper">
           <div ref="boxFaces" class="box-faces">
             <div class="box-face box-face1">
-              <p class="text-xl">King</p>
+              <p class="text-xl">K</p>
             </div>
             <div class="box-face box-face2">
-              <p class="text-xl">Auto</p>
+              <p class="text-xl">RPA</p>
             </div>
             <div class="box-face box-face4">
-              <p class="text-xl">Mate</p>
+              <p class="text-xl">Lite</p>
             </div>
             <div class="box-face box-face3">
               <p class="text-xl">Doc</p>

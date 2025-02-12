@@ -129,7 +129,7 @@ function initializeScene(texture) {
 }
 
 function reloadTexture() {
-  const newTexture = createTextTexture('  KingAutomate  ', 'Blanquotey', null, '#ffffff', '100');
+  const newTexture = createTextTexture('  K-RPA Lite  ', 'Blanquotey', null, '#ffffff', '100');
   planeMesh.material.uniforms.u_texture.value = newTexture;
 }
 
@@ -204,7 +204,7 @@ onMounted(() => {
   Promise.all([font.load(), font2.load()]).then(
     function () {
       console.log('Both fonts have loaded');
-      initializeScene(createTextTexture('  KingAutomate  ', 'Blanquotey', null, '#1b1b1f', '100'));
+      initializeScene(createTextTexture('  K-RPA Lite  ', 'Blanquotey', null, '#1b1b1f', '100'));
       animateScene();
     },
     function () {
@@ -223,7 +223,7 @@ onMounted(() => {
   <loading></loading>
   <div class="VPHome">
     <div ref="textContainer" class="textContainer"></div>
-    <slot name="home-hero-before" />
+    <!-- <slot name="home-hero-before" />
     <div>{{ name }}</div>
     <div>{{ text }}</div>
     <div>{{ tagline }}</div>
@@ -241,7 +241,7 @@ onMounted(() => {
         <div>{{ item?.title }}</div>
         <div>{{ item?.details }}</div>
       </a>
-    </div>
+    </div> -->
 
     <!-- <VPHomeContent v-if="frontmatter.markdownStyles !== false">
       <Content />

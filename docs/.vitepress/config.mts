@@ -23,7 +23,7 @@ const vitePressConfig = {
   // 3. specify the configuration to inherit via extended
   extends: escookConfig,
   lang: 'zh-CN',
-  title: 'KingAutoMate',
+  title: 'K-RPA Lite',
   description: '个人知识站',
   vite: {
     plugins: [],
