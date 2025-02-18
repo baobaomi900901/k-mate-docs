@@ -24,7 +24,7 @@ const vitePressConfig = {
   extends: escookConfig,
   lang: 'zh-CN',
   title: 'K-RPA Lite',
-  description: '个人知识站',
+  description: '',
   vite: {
     plugins: [],
     resolve: {
@@ -60,24 +60,21 @@ const vitePressConfig = {
 
   // 优化搜索引擎结果
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/klogo.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.ico' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'zh' }],
     [
       'meta',
       {
         property: 'og:title',
-        content: 'KSW Design | 基于 KSW Design 设计体系的 Vue3 组件库，用于研发企业级中后台产品。'
+        content: 'KRPA'
       }
     ],
-    ['meta', { property: 'og:site_name', content: 'KSW Design' }]
+    ['meta', { property: 'og:site_name', content: 'KRPA Lite' }]
   ],
 
   themeConfig: {
-    logo: { src: 'logo.png', width: 32, height: 32 },
-
-    // 社交链接
-    socialLinks: [{ icon: 'github', link: 'https://github.com' }],
+    logo: { src: 'logo.ico', width: 32, height: 32 },
 
     search: {
       provider: 'local',
