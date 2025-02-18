@@ -101,7 +101,8 @@ const vitePressConfig = {
     config: (md) => {
       md.use(paragraphIds);
     }
-  }
+  },
+  metaChunk: true,
 };
 
 export default defineConfig(
