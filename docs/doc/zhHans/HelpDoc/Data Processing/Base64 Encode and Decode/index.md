@@ -1,3 +1,3 @@
 ---
-title: Base64 编码和解码
+title: Base64 编解码
 ---

@@ -1,3 +1,3 @@
 ---
-title: AI 人工智能
+title: 人工智能AI
 ---

@@ -1,3 +1,3 @@
 ---
-title: OCR 光学字符识别
+title: 文字识别(OCR)
 ---
