@@ -103,6 +103,9 @@ const vitePressConfig = {
     }
   },
   metaChunk: true,
+  sitemap: {
+    hostname: 'https://king.docs.donxj.com'
+  },
 };
 
 export default defineConfig(
