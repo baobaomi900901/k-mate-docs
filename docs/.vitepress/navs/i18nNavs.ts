@@ -12,9 +12,10 @@ const baseSidebarOptions = {
   folderLinkNotIncludesFileName: false, //在建立文件夹链接时，忽略子项的存在，并仅将链接指定为文件夹路径
   underscoreToSpace: true, // _转为空格
   capitalizeFirst: true, //首字母强制大写
-  // sortMenusByFrontmatterDate: true, // 启用日期排序
-  sortMenusByFrontmatterOrder: true, // 按名称排序菜单
-  sortMenusOrderByDescending: true, // 升序
+  sortMenusByFrontmatterOrder: true, //按 frontmatter 的 order 属性对菜单项排序
+  // sortMenusByFrontmatterDate: true, //根据前端的date属性对菜单项进行排序
+  // sortMenusOrderByDescending: true, //如果此值为 true，则按降序排列菜单项中的项目
+  frontmatterOrderDefaultValue: 9999,  //设置 frontmatter 的 order 属性未设置时的默认值
   collapsed: false, // 文件夹折叠
   collapseDepth: 4,
   // debugPrint: true,
