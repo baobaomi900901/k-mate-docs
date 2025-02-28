@@ -1,7 +1,6 @@
 ---
 title: 验证码识别
-order: 3
-exclude: true
+order: 1
 ---
 
 # 验证码识别

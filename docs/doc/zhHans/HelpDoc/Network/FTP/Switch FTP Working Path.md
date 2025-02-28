@@ -1,5 +1,6 @@
 ---
 title: 切换FTP工作路径
+order: 4
 ---
 
 # 切换FTP工作路径

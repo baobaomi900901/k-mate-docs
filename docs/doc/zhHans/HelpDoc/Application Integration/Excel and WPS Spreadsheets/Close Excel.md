@@ -17,20 +17,19 @@ order: 4
 
 **指令输入**
 
+- **操作**`Integer`: 对Excel的操作。包括关闭指定Excel文件、关闭所有Excel文件
+
+- **Excel对象**`TWorkbookApplication`: 输入一个通过指令【打开或新建Excel】或【获取当前激活的Excel对象】获得的Excel对象
+
+- **关闭方式**`Integer`: 选择关闭方式。包括不保存、保存、另存为
+
 - **终止Excel进程**`Boolean`: 强制结束当前用户指定的Excel
 
 - **关闭进程**`Integer`: 选择要关闭的进程
 
 - **如果文件存在则覆盖**`Boolean`: 如果文件存在则覆盖
 
-- **Excel文件路径**`string`: 打开的Excel文件路径
-
-- **关闭方式**`Integer`: 选择关闭方式
-
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
-
-- **操作**`Integer`: 对Excel的操作
-
+- **Excel文件路径**`string`: Excel文件另存至
 
 **指令输出**
 

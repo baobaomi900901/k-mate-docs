@@ -1,5 +1,6 @@
 ---
 title: FTP文件删除
+order: 9
 ---
 
 # FTP文件删除

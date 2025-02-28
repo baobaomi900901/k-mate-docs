@@ -1,5 +1,6 @@
 ---
 title: 文心一言Chat
+order: 4
 ---
 
 # 文心一言Chat

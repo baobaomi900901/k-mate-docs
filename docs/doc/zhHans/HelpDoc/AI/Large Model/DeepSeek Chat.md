@@ -1,5 +1,6 @@
 ---
 title: DeepSeek Chat
+order: 6
 ---
 
 # DeepSeek Chat

@@ -1,4 +1,4 @@
 ---
 title: 验证码识别
-order: 2
+order: 6
 ---

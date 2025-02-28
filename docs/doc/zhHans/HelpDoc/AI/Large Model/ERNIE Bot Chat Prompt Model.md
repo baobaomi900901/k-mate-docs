@@ -1,5 +1,6 @@
 ---
 title: 文心一言Chat Prompt模型
+order: 5
 ---
 
 # 文心一言Chat Prompt模型

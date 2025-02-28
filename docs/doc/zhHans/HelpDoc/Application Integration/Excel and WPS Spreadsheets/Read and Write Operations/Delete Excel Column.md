@@ -19,7 +19,7 @@ order: 13
 
 - **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
 
-- **列名**`string`: 列名。从A开始
+- **列名**`string`: 输入列名,从A或1开始，-n表示倒数第n列
 
 - **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 

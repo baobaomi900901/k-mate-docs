@@ -25,9 +25,9 @@ order: 3
 
 - **选择性粘贴**`Integer`: 选择性粘贴
 
-- **单元列名**`string`: 列名。从A开始
+- **单元列名**`string`: 输入列名(支持A或1)，-n表示倒数第n列
 
-- **单元行号**`Integer`: 行号。从1开始
+- **单元行号**`Integer`: 输入行号,从1开始，-n表示倒数第n行
 
 - **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 

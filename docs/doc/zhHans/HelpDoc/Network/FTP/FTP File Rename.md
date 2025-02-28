@@ -1,5 +1,6 @@
 ---
 title: FTP文件重命名
+order: 10
 ---
 
 # FTP文件重命名

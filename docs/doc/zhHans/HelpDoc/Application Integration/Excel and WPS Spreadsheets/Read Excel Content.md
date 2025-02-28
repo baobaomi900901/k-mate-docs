@@ -17,28 +17,27 @@ order: 7
 
 **指令输入**
 
-- **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
-
-- **结束列名**`string`: 列名。从A开始
-
-- **结束行号**`Integer`: 行号。从1开始
-
-- **起始列名**`string`: 列名。从A开始
-
-- **起始行号**`Integer`: 行号。从1开始
-
-- **列名**`string`: 列名。从A开始
-
-- **行号**`Integer`: 行号。从1开始
-
-- **单元格列名**`string`: 列名。从A开始
-
-- **单元格行号**`Integer`: 行号。从1开始
+- **Excel对象**`TWorkbookApplication`: 输入一个通过指令【打开或新建Excel】或【获取当前激活的Excel对象】获得的Excel对象
 
 - **读取方式**`Integer`: 读取Excel的方式
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
 
+- **结束列名**`string`: 输入列名(支持A或1)，-n表示倒数第n列
+
+- **结束行号**`Integer`: 输入行号,从1开始，-n表示倒数第n行
+
+- **起始列名**`string`: 输入列名(支持A或1)，-n表示倒数第n列
+
+- **起始行号**`Integer`: 输入行号,从1开始，-n表示倒数第n行
+
+- **列名**`string`: 输入列名(支持A或1)，-n表示倒数第n列
+
+- **行号**`Integer`: 输入行号,从1开始，-n表示倒数第n行
+
+- **单元格列名**`string`: 输入列名(支持A或1)，-n表示倒数第n列
+
+- **单元格行号**`Integer`: 输入行号,从1开始，-n表示倒数第n行
 
 **指令输出**
 

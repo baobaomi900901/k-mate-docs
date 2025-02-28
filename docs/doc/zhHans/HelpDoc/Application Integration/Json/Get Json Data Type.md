@@ -1,5 +1,6 @@
 ---
 title: 获取Json数据类型
+order: 4
 ---
 
 # 获取Json数据类型

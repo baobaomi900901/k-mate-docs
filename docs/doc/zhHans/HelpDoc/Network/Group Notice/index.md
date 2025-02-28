@@ -1,3 +1,4 @@
 ---
-title: 群组通知
+title: 群通知
+order: 4
 ---

@@ -21,7 +21,7 @@ order: 14
 
 - **插入几行**`Integer`: 插入几个空行
 
-- **在第几行之前**`Integer`: 行号。从1开始
+- **在第几行之前**`Integer`: 输入行号,从1开始，-n表示倒数第n行
 
 - **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 

@@ -1,5 +1,6 @@
 ---
 title: OCR识别
+order: 7
 ---
 
 # OCR识别

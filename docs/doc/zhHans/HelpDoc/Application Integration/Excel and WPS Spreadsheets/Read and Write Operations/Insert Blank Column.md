@@ -21,7 +21,7 @@ order: 15
 
 - **插入几列**`Integer`: 插入几个空列
 
-- **在第几列之前**`string`: 列名。从A开始
+- **在第几列之前**`string`: 输入列名,从A或1开始，-n表示倒数第n列
 
 - **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 

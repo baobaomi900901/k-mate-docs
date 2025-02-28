@@ -1,5 +1,6 @@
 ---
 title: OpenAI Chat
+order: 1
 ---
 
 # OpenAI Chat
