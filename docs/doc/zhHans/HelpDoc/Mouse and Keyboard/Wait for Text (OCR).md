@@ -1,5 +1,6 @@
 ---
 title: 等待文本(OCR)
+order: 11
 ---
 
 # 等待文本(OCR)

@@ -1,5 +1,6 @@
 ---
 title: 等待窗口(win)
+order: 5
 ---
 
 # 等待窗口(win)

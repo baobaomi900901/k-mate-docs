@@ -1,5 +1,6 @@
 ---
 title: 点击文本(OCR)
+order: 10
 ---
 
 # 点击文本(OCR)
