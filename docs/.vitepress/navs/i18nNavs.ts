@@ -16,6 +16,7 @@ const baseSidebarOptions = {
   // sortMenusByFrontmatterDate: true, //根据前端的date属性对菜单项进行排序
   // sortMenusOrderByDescending: true, //如果此值为 true，则按降序排列菜单项中的项目
   frontmatterOrderDefaultValue: 9999,  //设置 frontmatter 的 order 属性未设置时的默认值
+  excludeFilesByFrontmatterFieldName: 'exclude',  //如果选项值为exclude,则菜单中不会显示内容包含exclude: true的文档
   collapsed: false, // 文件夹折叠
   collapseDepth: 4,
   // debugPrint: true,
