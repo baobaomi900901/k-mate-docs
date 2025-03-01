@@ -1,5 +1,4 @@
 <script setup>
-// import { docsearch } from "meilisearch-docsearch";
 import "./style.css";
 import { useData, useRoute, useRouter } from "vitepress";
 import { onMounted, watch, ref, onUnmounted } from "vue";
@@ -47,7 +46,7 @@ const loadSearch = async () => {
   if (import.meta.env.SSR) return;
   
   try {
-    const { docsearch } = await import("meilisearch-docsearch");
+    const { docsearch } = await import("./meilisearch-docsearch/index.js");
     return docsearch
   } catch (e) {
     console.warn('Search disabled:', e)
@@ -66,17 +65,6 @@ const initSearch = async () => {
   searchInstance.value = docsearch({
     container: "#meilisearch-container",
     ...currentConfig,
-    navigator: {
-      navigate({ itemUrl }) {
-        const { pathname: hitPathname } = new URL(
-          itemUrl,
-          window.location.origin
-        );
-        route.path === hitPathname
-          ? window.location.assign(itemUrl)
-          : router.go(itemUrl);
-      },
-    },
   });
 };
 
