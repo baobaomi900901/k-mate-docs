@@ -20,7 +20,6 @@ const suffixes = (term, minLength) => {
 };
 
 const vitePressConfig = {
-  // 3. specify the configuration to inherit via extended
   extends: escookConfig,
   lang: "zh-CN",
   title: "K-RPA Lite",
@@ -30,36 +29,42 @@ const vitePressConfig = {
     resolve: {
       // 自定义替换默认组件
       alias: [
-        {
-          find: /^.*\/VPLocalSearchBox\.vue$/,
-          replacement: fileURLToPath(
-            new URL("./components/MyCustomSearchBox.vue", import.meta.url)
-          ),
-        },
+        // {
+        //   find: /^.*\/VPLocalSearchBox\.vue$/,
+        //   replacement: fileURLToPath(
+        //     new URL("./components/MyCustomSearchBox.vue", import.meta.url)
+        //   ),
+        // },
         {
           find: "~",
           replacement: path.resolve(__dirname, "../../"),
         },
-        {
-          find: /^.*\/VPNavBarTitle\.vue$/,
-          replacement: fileURLToPath(
-            new URL("./components/CVPNavBarTitle.vue", import.meta.url)
-          ),
-        },
-        {
-          find: /^.*\/VPHome\.vue$/,
-          replacement: fileURLToPath(new URL('./components/CVPHome.vue', import.meta.url))
-        },
+        // {
+        //   find: /^.*\/VPNavBarTitle\.vue$/,
+        //   replacement: fileURLToPath(
+        //     new URL("./components/CVPNavBarTitle.vue", import.meta.url)
+        //   ),
+        // },
+        // {
+        //   find: /^.*\/VPHome\.vue$/,
+        //   replacement: fileURLToPath(new URL('./components/CVPHome.vue', import.meta.url))
+        // },
         {
           find: /^.*\/VPNavBarSearch\.vue$/,
           replacement: fileURLToPath(
             new URL("./theme/components/MeiliSearchBox/MeiliSearchBox.vue", import.meta.url)
           ),
         },
+        // {
+        //   find: /^.*\/VPHome\.vue$/,
+        //   replacement: fileURLToPath(
+        //     new URL("./theme/components/landing/Landing.vue", import.meta.url)
+        //   ),
+        // },
       ],
     },
     ssr: {
-      noExternal: [],
+      noExternal: ['@ksware/ksw-ux']
     },
     // Network
     server: {
@@ -70,7 +75,7 @@ const vitePressConfig = {
 
   // 优化搜索引擎结果
   head: [
-    ["link", { rel: "icon", type: "image/svg+xml", href: "/logo.ico" }],
+    ["link", { rel: "icon", type: "image/svg+xml", href: "/logo.svg" }],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:locale", content: "zh" }],
     [
@@ -84,7 +89,7 @@ const vitePressConfig = {
   ],
 
   themeConfig: {
-    logo: { src: "logo.ico", width: 32, height: 32 },
+    logo: { src: "logo.svg", width: 32, height: 32 },
 
     meilisearch: {
       host: "https://meilisearch.donxj.com",

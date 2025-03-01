@@ -3,6 +3,11 @@
     "zhHans": "帮助文档",
     "en": "Help document"
   },
+  "Download": {
+    "zhHans": "下载 K-RPA Lite",
+    "en": "Download K-RPA Lite",
+    "Sidebar": false
+  },
   "https://www.kingsware.cn/": {
     "zhHans": "金智维",
     "en": "Kingsware"
