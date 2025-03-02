@@ -11,9 +11,17 @@ markdownStyles: false
 <script setup>
 import Hero from '../../.vitepress/theme/components/landing/HeroSection.vue'
 import FeatureSection from '../../.vitepress/theme/components/landing/FeatureSection.vue'
+import FeatureRichFeatures from '../../.vitepress/theme/components/landing/FeatureRichFeatures.vue'
+import FeatureAutomatedManagement from '../../.vitepress/theme/components/landing/FeatureAutomatedManagement.vue'
+import GetStartedSection from '../../.vitepress/theme/components/landing/GetStartedSection.vue'
+import Footer from '../../.vitepress/theme/components/landing/Footer.vue'
 </script>
 
-<div class="VPHome">
+<div class="vp-raw bg-gray-50">
   <Hero/>
   <FeatureSection/>
+  <FeatureRichFeatures/>
+  <FeatureAutomatedManagement/>
+  <GetStartedSection/>
+  <Footer/>
 </div>

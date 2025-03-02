@@ -1,92 +1,100 @@
 <script setup lang="ts">
-import DOMPurify from 'dompurify'
-// import { marked } from 'marked'
-import markdownit from 'markdown-it'
-import { computed, nextTick, onMounted, ref, watch } from 'vue'
-import { downServerFile, findLatestVersion, getUpdateLogAPI, getVersionListAPI, IOptions, IVersion } from './tools'
-import { KSelect, KOption, KScrollbar, KButton } from '@ksware/ksw-ux'
-import '@ksware/ksw-ux/kingsware-ui/style.css';
+import DOMPurify from "dompurify";
+import markdownit from "markdown-it";
+import { computed, nextTick, onMounted, ref, watch } from "vue";
+import {
+  downServerFile,
+  findLatestVersion,
+  getUpdateLogAPI,
+  getVersionListAPI,
+  IOptions,
+  IVersion,
+} from "./tools";
+import { KSelect, KOption, KScrollbar, KButton } from "@ksware/ksw-ux";
 
-const system = ref('')
-const version = ref('')
-const pluginValue = ref<string>()
+const system = ref("");
+const version = ref("");
+const pluginValue = ref<string>();
 /** 系统选项 */
-const systemOptions = ref<IOptions[]>([])
+const systemOptions = ref<IOptions[]>([]);
 /** 版本选项 */
-const versionOptions = ref<IOptions[]>([])
+const versionOptions = ref<IOptions[]>([]);
 /** 系统版本对象 */
-const versionObject = ref<IVersion>({})
-const markdownContent = ref<string>('')
+const versionObject = ref<IVersion>({});
+const markdownContent = ref<string>("");
 
 // 初始化时设置默认版本
 const initData = async () => {
-  versionObject.value = (await getVersionListAPI()) as any
-  const systemKeys = Object.keys(versionObject.value)
-  if (systemKeys.length === 0) return
+  versionObject.value = (await getVersionListAPI()) as any;
+  const systemKeys = Object.keys(versionObject.value);
+  if (systemKeys.length === 0) return;
   systemOptions.value = systemKeys.map((item) => {
-    return { value: item, label: item }
-  })
-  system.value = systemKeys[0]
-}
+    return { value: item, label: item };
+  });
+  system.value = systemKeys[0];
+};
 
+const md = markdownit();
 /** 获取日志 */
 const getLog = async () => {
-  await nextTick()
-  const logData = await getUpdateLogAPI(`/${system.value}/${version.value}/changeLog.md`)
-  const md = markdownit()
-  const htmlContent = await md.render(logData)
-  const cleanHtml = DOMPurify.sanitize(htmlContent)
-  markdownContent.value = cleanHtml
-}
+  await nextTick();
+  const logData = await getUpdateLogAPI(
+    `/${system.value}/${version.value}/changeLog.md`
+  );
+  const htmlContent = await md.render(logData);
+  const cleanHtml = DOMPurify.sanitize(htmlContent);
+  markdownContent.value = cleanHtml;
+};
 
 onMounted(async () => {
-  initData()
-})
+  initData();
+});
 
 const isAllowDown = computed(() => {
-  return !!(system.value && version.value)
-})
+  return !!(system.value && version.value);
+});
 
 const downloadRPA = () => {
-  if (!isAllowDown) return
-  const fullPath = '/' + system.value + '/' + version.value + '/K-RPA%20Lite.exe'
-  downServerFile(fullPath, version.value + '.exe')
-}
+  if (!isAllowDown) return;
+  const fullPath =
+    "/" + system.value + "/" + version.value + "/K-RPA%20Lite.exe";
+  downServerFile(fullPath, version.value + ".exe");
+};
 
 const changeSystem = (key: string) => {
-  const systemKeys = Object.keys(versionObject.value)
-  if (systemKeys.length === 0) return
-  const arr: { version: string; plugin: string }[] = []
+  const systemKeys = Object.keys(versionObject.value);
+  if (systemKeys.length === 0) return;
+  const arr: { version: string; plugin: string }[] = [];
   for (let item in versionObject.value) {
     if (item === key) {
-      arr.push(...(versionObject.value[item] as any[]))
-      break
+      arr.push(...(versionObject.value[item] as any[]));
+      break;
     }
   }
   versionOptions.value = arr.map((item) => {
-    return { value: item.version, label: item.version, plugin: item.plugin }
-  })
-  const maxVersion = findLatestVersion(versionOptions.value, 'value')
-  const { plugin, value } = maxVersion
-  version.value = value
-  pluginValue.value = plugin
-  getLog()
-}
+    return { value: item.version, label: item.version, plugin: item.plugin };
+  });
+  const maxVersion = findLatestVersion(versionOptions.value, "value");
+  const { plugin, value } = maxVersion;
+  version.value = value;
+  pluginValue.value = plugin;
+  getLog();
+};
 
 const changeVersion = async () => {
-  getLog()
-}
+  getLog();
+};
 
 watch(
   system,
   (key) => {
-    if (!key) return
-    changeSystem(key)
+    if (!key) return;
+    changeSystem(key);
   },
   {
-    once: true
+    once: true,
   }
-)
+);
 </script>
 
 <template>
@@ -97,31 +105,55 @@ watch(
         <div class="version">
           <div class="text">获取 K-RPA Lite®</div>
           <div class="select">
-            <k-select v-model="system" placeholder="系统" style="width: 100%" @change="changeSystem">
-              <k-option v-for="item in systemOptions" :key="item.value" :label="item.label" :value="item.value" />
+            <k-select
+              v-model="system"
+              placeholder="系统"
+              style="width: 100%"
+              @change="changeSystem"
+            >
+              <k-option
+                v-for="item in systemOptions"
+                :key="item.value"
+                :label="item.label"
+                :value="item.value"
+              />
               <template #empty>暂无系统</template>
             </k-select>
           </div>
           <div class="text">环境中的</div>
           <div class="select">
-            <k-select v-model="version" placeholder="版本" style="width: 100%" @change="changeVersion">
-              <k-option v-for="item in versionOptions" :key="item.value" :label="item.label" :value="item.value" />
+            <k-select
+              v-model="version"
+              placeholder="版本"
+              style="width: 100%"
+              @change="changeVersion"
+            >
+              <k-option
+                v-for="item in versionOptions"
+                :key="item.value"
+                :label="item.label"
+                :value="item.value"
+              />
               <template #empty>先选系统系统</template>
             </k-select>
           </div>
           <div class="text">版本。</div>
         </div>
+        <span>
+          <k-button
+            :disabled="!isAllowDown"
+            main
+            class="btn"
+            @click="downloadRPA"
+          >
+            下载
+          </k-button>
+        </span>
         <div class="remark">
           <k-scrollbar height="100%">
             <div class="content vp-doc" v-html="markdownContent"></div>
           </k-scrollbar>
         </div>
-        <k-button :disabled="!isAllowDown" main class="btn" @click="downloadRPA">
-          下载
-        </k-button>
-        <k-button :disabled="!isAllowDown" main class="btn">
-          下载插件包
-        </k-button>
       </div>
     </div>
     <div class="footer">
@@ -149,7 +181,7 @@ watch(
   --background-color: #343a40;
   --text-color: #e9ecef;
 }
-[data-theme='la'] {
+[data-theme="la"] {
   --primary-color: #4a90e2;
   --secondary-color: #adb5bd;
   --background-color: #343a40;
@@ -157,7 +189,7 @@ watch(
 }
 .update-about {
   width: 100%;
-  height: calc( 100vh - 64px);
+  height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -170,8 +202,12 @@ watch(
     height: 100%;
     margin-bottom: auto;
     .box {
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
       width: 960px;
-      margin: 8rem auto;
+      margin: 2.5rem auto;
+      padding-bottom: 4rem;
       .title {
         font-size: 32px;
         font-weight: bold;
@@ -188,21 +224,24 @@ watch(
         margin-bottom: 1rem;
         color: #ffffff;
         .text {
-          font-size: 14px;
-          font-weight: normal;
-          line-height: normal;
+          font-size: 1rem;
+          font-weight: 400;
           letter-spacing: 0em;
           color: var(--vp-c-text-1);
         }
         .select {
-          @apply border border-gray-300 dark:border-gray-400 bg-white dark:bg-black rounded-lg px-2;
           width: 168px;
           height: 32px;
-          /* background: #38363c; */
-          /* box-sizing: border-box; */
-          /* border: 1px solid #736f78; */
-          .k-select{
-            :deep .el-select__wrapper{
+          border: 1px solid #d1d5db;
+          background-color: #fff;
+          border-radius: 0.5rem;
+          padding: 0 0.5rem;
+          .dark & {
+            border-color: #9ca3af;
+            background-color: #000;
+          }
+          .k-select {
+            :deep .el-select__wrapper {
               background: transparent;
               &.is-focused {
                 box-shadow: none;
@@ -213,7 +252,6 @@ watch(
             }
           }
         }
-
       }
       .remark {
         display: flex;
@@ -223,7 +261,9 @@ watch(
         background: var(--vp-custom-block-details-bg);
         box-sizing: border-box;
         width: 960px;
-        height: 600px;
+        height: calc(100vh - 400px);
+        max-height: 600px;
+        min-height: 300px;
         border-radius: 1rem;
         overflow: hidden;
         .content {
@@ -234,7 +274,7 @@ watch(
           font-weight: bold;
           line-height: normal;
           letter-spacing: 0em;
-          font-feature-settings: 'kern' on;
+          font-feature-settings: "kern" on;
           color: #ffffff;
         }
         .li-box {
@@ -252,12 +292,18 @@ watch(
         }
       }
       .btn {
-        @apply text-white bg-blue-500 hover:bg-blue-400 text-base font-medium my-5 px-5 py-2 rounded-lg border-none;
-        /* margin-top: 12px;
-        font-size: 14px;
-        font-weight: normal;
-        line-height: 20px;
-        letter-spacing: 0em; */
+        color: #ffffff;
+        background-color: rgb(59, 130, 246);
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        padding: 0.5rem 1.25rem;
+        border-radius: 0.5rem;
+        border: none;
+        transition: background-color 0.2s;
+        &:hover {
+          background-color: rgb(96, 165, 250);
+        }
       }
     }
   }
@@ -270,6 +316,9 @@ watch(
     border: 1px solid var(--vp-c-divider);
     width: 100%;
     height: 48px;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--vp-c-bg);
     .left {
       display: flex;
       justify-content: start;
@@ -303,7 +352,7 @@ watch(
       .bgcImg {
         width: 64px;
         height: 16px;
-        background-image: url('./imgs//ksware.png'); /* 设置背景图片的路径 */
+        background-image: url("./imgs//ksware.png"); /* 设置背景图片的路径 */
         background-size: cover; /* 背景图片根据容器大小自动调整 */
         background-position: center; /* 图片居中显示 */
       }

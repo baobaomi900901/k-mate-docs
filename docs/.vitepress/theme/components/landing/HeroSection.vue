@@ -1,22 +1,24 @@
 <template>
-  <div class="hero flex flex-col items-center">
-    <div class="flex gap-10 flex-col items-center mt-28 mx-auto w-fit">
+  <div class="hero flex flex-col items-center px-8">
+    <div
+      class="flex gap-10 flex-col items-center mt-28 mx-auto w-fit text-center"
+    >
       <div class="text-7xl font-extrabold text-gray-900">
         <span>自动化您的工作，释放</span>
-        <span
-          class="highlight"
-          >无限可能</span
-        >
+        <span class="highlight">无限可能</span>
       </div>
-      <div class="text-3xl font-medium">
+      <div class="text-3xl font-medium text-gray-700">
         简化操作，提升产出，让每个团队成员专注于更重要的任务
       </div>
       <div class="flex gap-6 text-xl font-medium">
         <a
           class="bg-blue-500 hover:bg-blue-400 px-14 py-4 text-white rounded-full"
+          href="/Download"
           >免费下载</a
         >
-        <a class="px-14 py-4 text-gray-700 rounded-full border border-gray-200"
+        <a
+          class="px-14 py-4 text-gray-700 rounded-full border border-gray-200"
+          href="/"
           >查看介绍</a
         >
       </div>
