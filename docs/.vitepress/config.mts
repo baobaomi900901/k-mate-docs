@@ -46,7 +46,7 @@ const vitePressConfig = {
       ],
     },
     ssr: {
-      noExternal: ['ksw-vue-icon', '@ksware/ksw-ux']
+      noExternal: ['gsap', 'gsap/*', 'ksw-vue-icon', '@ksware/ksw-ux']
     },
     // Network
     server: {
