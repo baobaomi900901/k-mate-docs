@@ -61,6 +61,12 @@ const downloadRPA = () => {
   downServerFile(fullPath, version.value + ".exe");
 };
 
+const downloadPlugin = () => {
+  if (!isAllowDown) return;
+  const fullPath = "/plugin/" + pluginValue.value + ".zip";
+  downServerFile(fullPath, pluginValue.value + ".zip");
+};
+
 const changeSystem = (key: string) => {
   const systemKeys = Object.keys(versionObject.value);
   if (systemKeys.length === 0) return;
@@ -81,7 +87,12 @@ const changeSystem = (key: string) => {
   getLog();
 };
 
-const changeVersion = async () => {
+const changeVersion = (v: string) => {
+  const systemList = versionObject.value[system.value];
+  const findItem = systemList?.find((item) => item.version === v);
+  if (!findItem) return;
+  version.value = findItem.version;
+  pluginValue.value = findItem.plugin;
   getLog();
 };
 
@@ -147,6 +158,14 @@ watch(
             @click="downloadRPA"
           >
             下载
+          </k-button>
+          <k-button
+            :disabled="!isAllowDown"
+            main
+            class="btn"
+            @click="downloadPlugin"
+          >
+            下载插件包
           </k-button>
         </span>
         <div class="remark">
