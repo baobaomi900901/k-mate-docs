@@ -17,29 +17,29 @@ order: 5
 
 **指令输入**
 
-- **Cookie 有效期(秒)**`Integer`: 持久化Cookie需要设置有效期(Cookie生效到失效的时间间隔，单位为秒)，默认100秒
-
-- **设置为会话 Cookie**`Boolean`: 默认设置会话Cookie，取消勾选则设置持久化Cookie
-
-- **标记为 Secure**`Boolean`: 设置Cookie是否被标记为Secure，默认False
-
-- **标记为 HttpOnly**`Boolean`: 设置Cookie是否被标记为HttpOnly，默认False
-
-- **Cookie Path**`string`: CookiePath默认为Url的path部分，忽略则空
-
-- **Cookie Domain**`string`: CookieDomain，默认为Url的Domain部分，忽略则该Cookie为host-only Cookie
-
-- **Cookie Value**`string`: CookieValue忽略则空
-
-- **Cookie Name**`string`: CookieName忽略则空
-
-- **Cookie Url**`string`: Cookie Url，与 Cookie设置相关联的Url，该值影响创建Cookie的默认Domain和Path
-
-- **浏览器类型**`Integer`: 设置指定类型浏览器Cookie
+- **Url设置方式**`Integer`: Cookie Url设置值来源，可选择手动输入，如果选择网页对象，则自动使用网页Url指定
 
 - **网页对象**`TBrowser`: 输入一个获取到的或者通过'打开网页'函数创建的网页对象
 
-- **Url设置方式**`Integer`: Cookie Url设置值来源，可选择手动输入，如果选择网页对象，则自动使用网页Url指定
+- **浏览器类型**`Integer`: 设置指定类型浏览器Cookie
+
+- **Cookie Url**`string`: Cookie Url，与 Cookie设置相关联的Url，该值影响创建Cookie的默认Domain和Path
+
+- **Cookie Name**`string`: CookieName忽略则空
+
+- **Cookie Value**`string`: CookieValue忽略则空
+
+- **Cookie Domain**`string`: CookieDomain，默认为Url的Domain部分，忽略则该Cookie为host-only Cookie
+
+- **Cookie Path**`string`: CookiePath默认为Url的path部分，忽略则空
+
+- **标记为 HttpOnly**`Boolean`: 设置Cookie是否被标记为HttpOnly，默认False
+
+- **标记为 Secure**`Boolean`: 设置Cookie是否被标记为Secure，默认False
+
+- **设置为会话 Cookie**`Boolean`: 默认设置会话Cookie，取消勾选则设置持久化Cookie
+
+- **Cookie 有效期(秒)**`Integer`: 持久化Cookie需要设置有效期(Cookie生效到失效的时间间隔，单位为秒)，默认100秒
 
 
 **指令输出**

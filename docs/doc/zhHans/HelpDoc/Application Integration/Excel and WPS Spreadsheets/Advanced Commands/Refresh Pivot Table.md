@@ -17,11 +17,11 @@ order: 8
 
 **指令输入**
 
-- **透视表名称或位置**`string`: 若一个sheet页只有一个数据透视表，填1即可
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 - **所在Sheet页名称**`string`: 视图所在Sheet页名称
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **透视表名称或位置**`string`: 若一个sheet页只有一个数据透视表，填1即可
 
 
 **指令输出**

@@ -17,15 +17,15 @@ order: 7
 
 **指令输入**
 
-- **区分大小写**`Boolean`: 若勾选,则区分大小写
-
-- **全部替换**`Boolean`: 若勾选,则替换全部查找到的文本
-
-- **替换为**`string`: 要替换的文本
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
 
 - **查找文本**`string`: 要查找文本
 
-- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **替换为**`string`: 要替换的文本
+
+- **全部替换**`Boolean`: 若勾选,则替换全部查找到的文本
+
+- **区分大小写**`Boolean`: 若勾选,则区分大小写
 
 
 **指令输出**

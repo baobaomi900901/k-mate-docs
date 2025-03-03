@@ -18,32 +18,39 @@ order: 1
 **指令输入**
 
 - **发件人**`string`: 发件人的电子邮件地址
+
 - **发件人名称**`string`: 发件人的显示名称
-- **模板文件路径**`string`: 输入完善内容后的模板文件路径。
+
+- **模板文件路径**`string`: 请输入模板文件路径
+
+- **下载模板文件**`Boolean`: 下载模板文件到指定目录
 
 - **附件**`string`: 要添加到电子邮件的附件
+
 - **正文是Html**`Boolean`: 指定是否以HTML格式写入邮件消息正文
 
 
 **指令输出**
 
-当前指令无输出
+- **返回成功消息**`TList<String>`: 
 
 ### 高级
 
-- **授权码**`string`: SMTP服务器身份验证的授权码
-
-- **用户名**`string`: SMTP服务器身份验证的用户名
-
-- **SMTP身份校验**`Boolean`: 对SMTP服务器进行用户身份验证
-
-- **启用SSL**`Boolean`: 指定是否应使用SSL发送消息
-
-- **指定SMTP服务器**`string`: 输入指定的SMTP服务器
+- **SMTP服务器**`Integer`: 通过使用不同SMTP协议发送电子邮件消息
 
 - **指定SMTP端口**`Integer`: 输入指定的SMTP端口号
 
-- **SMTP服务器**`Integer`: 通过使用不同SMTP协议发送电子邮件消息
+- **指定SMTP服务器**`string`: 输入指定的SMTP服务器
+
+- **启用SSL**`Boolean`: 指定是否应使用SSL发送消息
+
+- **SSL版本**`Integer`: 指定SSL的版本
+
+- **SMTP身份校验**`Boolean`: 对SMTP服务器进行用户身份验证
+
+- **用户名**`string`: SMTP服务器身份验证的用户名
+
+- **授权码**`string`: SMTP服务器身份验证的授权码
 
 ### 错误处理
 

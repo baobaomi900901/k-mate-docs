@@ -17,9 +17,9 @@ order: 3
 
 **指令输入**
 
-- **读取范围**`Integer`: 提供Word内容读取范围
-
 - **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+
+- **读取范围**`Integer`: 提供Word内容读取范围
 
 
 **指令输出**

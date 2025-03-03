@@ -17,13 +17,13 @@ order: 11
 
 **指令输入**
 
-- **插入超链接前换行**`Boolean`: 若勾选,则在插入超链接前换行
-
-- **超链接地址**`string`: 用于访问的超链接地址
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
 
 - **要显示的文字**`string`: 写在超链接前的文字
 
-- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **超链接地址**`string`: 用于访问的超链接地址
+
+- **插入超链接前换行**`Boolean`: 若勾选,则在插入超链接前换行
 
 
 **指令输出**

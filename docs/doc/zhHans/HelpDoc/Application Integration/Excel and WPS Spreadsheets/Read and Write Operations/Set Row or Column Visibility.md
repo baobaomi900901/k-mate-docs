@@ -17,17 +17,17 @@ order: 18
 
 **指令输入**
 
-- **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
-
-- **列名**`string`: 输入列名(支持A或1)，-n表示倒数第n列
-
-- **行号**`Integer`: 输入行号,从1开始，-n表示倒数第n行
-
-- **区域**`Integer`: 指定要隐藏/取消隐藏的行或者列
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 - **状态**`Integer`: 设置Excel行列的隐藏属性
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **区域**`Integer`: 指定要隐藏/取消隐藏的行或者列
+
+- **行号**`string`: 输入行号，多行用1,2,3或1:3，-n表示倒数第n行
+
+- **列名**`string`: 输入列名(支持A或1)，多列用A,B,C或A:C，-n表示倒数第n列
+
+- **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
 
 
 **指令输出**

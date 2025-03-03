@@ -17,11 +17,11 @@ order: 2
 
 **指令输入**
 
-- **Sheet页名称/位置**`string`: 输入待激活的Sheet页名称,不能为空
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 - **激活方式**`Integer`: 选择激活方式
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Sheet页名称/位置**`string`: 输入待激活的Sheet页名称,不能为空
 
 
 **指令输出**

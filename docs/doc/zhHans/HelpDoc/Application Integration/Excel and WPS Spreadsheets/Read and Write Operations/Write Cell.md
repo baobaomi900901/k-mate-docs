@@ -17,13 +17,13 @@ order: 19
 
 **指令输入**
 
-- **值**`string`: 输入值/公式
-
-- **工作表名称**`string`: 工作簿中的工作表名称
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 - **范围**`string`: 单元格或范围
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **工作表名称**`string`: 工作簿中的工作表名称
+
+- **值**`string`: 输入值/公式
 
 
 **指令输出**

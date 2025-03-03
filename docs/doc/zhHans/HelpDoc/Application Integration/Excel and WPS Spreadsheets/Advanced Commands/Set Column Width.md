@@ -18,13 +18,16 @@ order: 6
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过指令【打开或新建Excel】或【获取当前激活的Excel对象】获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
-- **列名称**`string`: 列名称（可填写A或1）。支持填写多列，多列填写格式为`A,B,C`
+- **列名称**`string`: 输入列名(支持A或1)，多列用A,B,C
 
-- **方式**`Integer`: 选择设置列宽的方式。包括根据内容自适应高度、指定列宽
+- **方式**`Integer`: 选择设置列宽的方式
+
+- **列宽**`Integer`: 输入列宽
 
 - **Sheet页名称**`string`: 工作表名称
+
 
 **指令输出**
 

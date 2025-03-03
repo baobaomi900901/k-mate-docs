@@ -17,21 +17,21 @@ order: 11
 
 **指令输入**
 
-- **周**`Integer`: 第几个完整周
-
-- **年**`Integer`: 第几年
-
-- **结束日期**`string`: 格式：yyyy-mm-dd
-
-- **起始日期**`string`: 格式：yyyy-mm-dd
-
-- **日期**`string`: 格式：yyyy-mm-dd
-
-- **日期选择方式**`Integer`: 日期选择方式
+- **窗口对象**`TWinObj`: 输入一个获取到的SAP会话窗口
 
 - **操作目标**`TTarget`: 选择需要操作的日历元素
 
-- **窗口对象**`TWinObj`: 输入一个获取到的SAP会话窗口
+- **日期选择方式**`Integer`: 日期选择方式
+
+- **日期**`string`: 格式：yyyy-mm-dd
+
+- **起始日期**`string`: 格式：yyyy-mm-dd
+
+- **结束日期**`string`: 格式：yyyy-mm-dd
+
+- **年**`Integer`: 第几年
+
+- **周**`Integer`: 第几个完整周
 
 
 **指令输出**

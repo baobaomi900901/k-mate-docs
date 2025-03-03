@@ -17,15 +17,16 @@ order: 5
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过指令【打开或新建Excel】或【获取当前激活的Excel对象】获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 - **Sheet页名称**`string`: 填写Sheet页名称，为空则默认为当前激活的Sheet页
 
 - **全部Sheet页**`Boolean`: 若勾选，导出所有工作表
 
-- **PDF保存到**`string`: 导出的PDF文件保存路径
+- **PDF保存到**`string`: 导出PDF保存的文件名
 
 - **如果文件存在则覆盖**`Boolean`: 如果文件存在则覆盖
+
 
 **指令输出**
 

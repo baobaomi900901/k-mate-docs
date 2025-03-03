@@ -17,13 +17,13 @@ order: 9
 
 **指令输入**
 
-- **插入表格前换行**`Boolean`: 若勾选,则在插入表格前换行
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+
+- **表格数据**`TDataTable`: 输入一个数据表格变量
 
 - **表格是否有边框**`Boolean`: 若勾选,则表格含有边框
 
-- **表格数据**`TDataTable`: 内容的数据格式需要更写入范围对应,写入行、列、区域的内容需要是列表类型
-
-- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **插入表格前换行**`Boolean`: 若勾选,则在插入表格前换行
 
 
 **指令输出**

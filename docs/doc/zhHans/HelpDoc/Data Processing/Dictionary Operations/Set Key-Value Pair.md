@@ -17,11 +17,11 @@ order: 2
 
 **指令输入**
 
-- **值**`string`: 输入键值
+- **字典**`TRPADictionary`: 输入字典变量
 
 - **键名**`string`: 输入键名
 
-- **字典**`TRPADictionary`: 输入字典变量
+- **值**`string`: 输入键值
 
 
 **指令输出**

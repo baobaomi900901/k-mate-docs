@@ -17,11 +17,11 @@ order: 10
 
 **指令输入**
 
-- **Sheet页名称**`string`: 工作表名称
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 - **行号**`string`: 输入行号,多行用1,2,3或1:3, -n表示倒数第n行
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Sheet页名称**`string`: 工作表名称
 
 
 **指令输出**

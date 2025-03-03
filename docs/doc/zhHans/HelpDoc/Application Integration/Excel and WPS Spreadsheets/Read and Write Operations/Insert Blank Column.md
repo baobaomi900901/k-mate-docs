@@ -17,13 +17,13 @@ order: 15
 
 **指令输入**
 
-- **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
-
-- **插入几列**`Integer`: 插入几个空列
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 - **在第几列之前**`string`: 输入列名,从A或1开始，-n表示倒数第n列
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **插入几列**`Integer`: 插入几个空列
+
+- **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
 
 
 **指令输出**

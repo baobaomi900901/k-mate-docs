@@ -17,21 +17,21 @@ order: 15
 
 **指令输入**
 
-- **大纲级别**`Integer`: 大纲级别
-
-- **行间距**`Integer`: 行间距
-
-- **行间距规则**`Integer`: 行间距规则
-
-- **右缩进**`Integer`: 右缩进
-
-- **左缩进**`Integer`: 左缩进
-
-- **首行缩进**`Integer`: 首行缩进
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
 
 - **对齐方式**`Integer`: 选中的方式
 
-- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **首行缩进**`Integer`: 首行缩进
+
+- **左缩进**`Integer`: 左缩进
+
+- **右缩进**`Integer`: 右缩进
+
+- **行间距规则**`Integer`: 行间距规则
+
+- **行间距**`Integer`: 行间距
+
+- **大纲级别**`Integer`: 大纲级别
 
 
 **指令输出**

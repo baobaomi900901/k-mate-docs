@@ -17,15 +17,15 @@ order: 11
 
 **指令输入**
 
-- **数据包含标题**`Boolean`: 勾选时，第一行是标题不参与重复计算
-
-- **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
-
-- **起始行号**`Integer`: 选填, 默认为第一行, -n表示倒数第n行
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
 
 - **重复值的列名**`string`: 输入列名(支持A或1), 多列用A,B,C或A:C, 若不填, 表示所有列
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **起始行号**`Integer`: 选填, 默认为第一行, -n表示倒数第n行
+
+- **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
+
+- **数据包含标题**`Boolean`: 勾选时，第一行是标题不参与重复计算
 
 
 **指令输出**

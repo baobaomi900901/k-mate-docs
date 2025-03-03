@@ -17,15 +17,15 @@ order: 12
 
 **指令输入**
 
-- **保存后关闭**`Boolean`: 保存后关闭
-
-- **如果文件存在则覆盖**`Boolean`: 若文件已存在,又选择不覆盖,会报错提示文件已存在
-
-- **Word文件路径**`string`: 填写或选择要打开的Word文件路径
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
 
 - **保存方式**`Integer`: 输入一个通过'新建Word'或'打开Word'创建的Word对象
 
-- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **Word文件路径**`string`: 填写或选择要打开的Word文件路径
+
+- **如果文件存在则覆盖**`Boolean`: 若文件已存在,又选择不覆盖,会报错提示文件已存在
+
+- **保存后关闭**`Boolean`: 保存后关闭
 
 
 **指令输出**

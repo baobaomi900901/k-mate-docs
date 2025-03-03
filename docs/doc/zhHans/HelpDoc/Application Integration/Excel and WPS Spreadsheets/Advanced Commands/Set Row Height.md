@@ -17,9 +17,13 @@ order: 5
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过指令【打开或新建Excel】或【获取当前激活的Excel对象】获得的Excel对象
-- **行号**`string`: 行号，从1开始。支持填写多行，多行填写格式为`1,2,3`或`1:3`
-- **方式**`Integer`: 选择设置行高的方式。包括根据内容自适应高度、指定高度
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+
+- **行号**`string`: 输入行号，多行用1,2,3或1:3
+
+- **方式**`Integer`: 选择设置行高的方式
+
+- **行高**`Integer`: 输入行高
 
 - **Sheet页名称**`string`: 工作表名称
 

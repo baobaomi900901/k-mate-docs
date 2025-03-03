@@ -17,13 +17,9 @@ order: 1
 
 **指令输入**
 
-- **Line**`Integer`: 
-
-- **ScriptName**`string`: 
+- **日志类型**`Integer`: 日志类型
 
 - **日志内容**`Variant`: 日志内容
-
-- **日志类型**`Integer`: 日志类型
 
 
 **指令输出**

@@ -17,13 +17,13 @@ order: 10
 
 **指令输入**
 
-- **特殊字符**`Boolean`: 当键Key含有部分特殊字符时，勾选此按钮。
-
-- **Key**`string`: 键
+- **Json对象**`TJson`: Json对象
 
 - **节点对象**`TJson`: 节点对象
 
-- **Json对象**`TJson`: Json对象
+- **Key**`string`: 键
+
+- **特殊字符**`Boolean`: 当键Key含有部分特殊字符时，勾选此按钮。
 
 
 **指令输出**

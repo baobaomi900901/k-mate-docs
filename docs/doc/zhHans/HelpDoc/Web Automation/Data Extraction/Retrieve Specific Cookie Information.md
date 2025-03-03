@@ -17,15 +17,15 @@ order: 7
 
 **指令输入**
 
-- **Cookie Name**`string`: 根据给定的Name筛选Cookie，为空则忽略Name筛选条件
-
-- **Cookie Url**`string`: 根据给定的Url筛选Cookie，为空则忽略Url筛选条件
-
-- **浏览器类型**`Integer`: 获取指定类型浏览器Cookie
+- **Url设置方式**`Integer`: Cookie Url设置值来源，可选择手动输入，如果选择网页对象，则自动使用网页Url指定
 
 - **网页对象**`TBrowser`: 输入一个获取到的或者通过'打开网页'函数创建的网页对象
 
-- **Url设置方式**`Integer`: Cookie Url设置值来源，可选择手动输入，如果选择网页对象，则自动使用网页Url指定
+- **浏览器类型**`Integer`: 获取指定类型浏览器Cookie
+
+- **Cookie Url**`string`: 根据给定的Url筛选Cookie，为空则忽略Url筛选条件
+
+- **Cookie Name**`string`: 根据给定的Name筛选Cookie，为空则忽略Name筛选条件
 
 
 **指令输出**

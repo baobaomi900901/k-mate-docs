@@ -17,13 +17,13 @@ order: 14
 
 **指令输入**
 
-- **结束位置**`Integer`: 根据选择方式填写结束位置
-
-- **起始位置**`Integer`: 根据选择方式填写起始位置
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
 
 - **选择方式**`Integer`: 选中的方式
 
-- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **起始位置**`Integer`: 根据选择方式填写起始位置
+
+- **结束位置**`Integer`: 根据选择方式填写结束位置
 
 
 **指令输出**
