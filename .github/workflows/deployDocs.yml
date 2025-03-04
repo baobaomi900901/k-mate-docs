@@ -104,9 +104,9 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             whoami
-            echo ${{ env.TARGET }}
             cd ${{ env.TARGET }}
-            ls -al
+            find . -mindepth 1 ! -name 'dist.tar.gz' -exec rm -rf {} +
+            tar -xvf dist.tar.gz --strip-components 2
 
       # - name: Deploy to Centos server
       #   uses: easingthemes/ssh-deploy@main
