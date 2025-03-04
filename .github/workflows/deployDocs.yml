@@ -23,7 +23,7 @@ concurrency:
 
 # 全局变量
 env:
-  TARGET: "/www/wwwroot/artifact-test"
+  TARGET: "/www/wwwroot/k-mate-docs"
 
 jobs:
   # 构建工作
