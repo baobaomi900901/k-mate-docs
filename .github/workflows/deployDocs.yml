@@ -104,8 +104,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             whoami
-            echo $TARGET
-            cd $TARGET
+            echo ${{ env.TARGET }}
+            cd ${{ env.TARGET }}
             ls -al
 
       # - name: Deploy to Centos server
