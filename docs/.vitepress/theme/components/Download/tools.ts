@@ -10,7 +10,7 @@ export interface IVersion {
   }[]
 }
 
-export const baseUrl = 'https://k-rpa-lite.donxj.com'
+export const baseUrl = 'http://k-rpa-lite.kingsware.cn:48080'
 /**
  * @param {string} url 相对于基础 URL 的路径
  * @param {'json'|'text'|'blob'} format 响应体的解析格式，默认为 'json'
@@ -30,7 +30,7 @@ export const ajaxAPI = async (url: string, format: string = 'json') => {
  * @returns
  */
 export const getVersionListAPI = async () => {
-  return await ajaxAPI('/allSystems.json')
+  return await ajaxAPI('/config.json?t=' + Date.now())
 }
 
 /**
