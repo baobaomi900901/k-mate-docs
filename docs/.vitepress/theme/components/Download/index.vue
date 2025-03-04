@@ -11,6 +11,7 @@ import {
   IVersion,
 } from "./tools";
 import { KSelect, KOption, KScrollbar, KButton } from "@ksware/ksw-ux";
+import { IconLoading } from "ksw-vue-icon";
 
 const system = ref("");
 const version = ref("");
@@ -22,6 +23,8 @@ const versionOptions = ref<IOptions[]>([]);
 /** 系统版本对象 */
 const versionObject = ref<IVersion>({});
 const markdownContent = ref<string>("");
+
+const loading = ref<Boolean>(false);
 
 // 初始化时设置默认版本
 const initData = async () => {
@@ -54,11 +57,12 @@ const isAllowDown = computed(() => {
   return !!(system.value && version.value);
 });
 
-const downloadRPA = () => {
+const downloadRPA = async () => {
   if (!isAllowDown) return;
-  const fullPath =
-    "/" + system.value + "/" + version.value + "/K-RPA%20Lite.exe";
-  downServerFile(fullPath, version.value + ".exe");
+  const fullPath = "/" + system.value + "/" + version.value + "/K-RPA Lite.zip";
+  loading.value = true;
+  await downServerFile(fullPath, version.value + ".zip");
+  loading.value = false;
 };
 
 const downloadPlugin = () => {
@@ -156,8 +160,10 @@ watch(
             main
             class="btn"
             @click="downloadRPA"
+            :loading="loading"
           >
-            下载
+            <IconLoading v-if="loading" />
+            {{ loading ? "下载中..." : "下载" }}
           </k-button>
           <k-button
             :disabled="!isAllowDown"
@@ -376,6 +382,11 @@ watch(
         background-position: center; /* 图片居中显示 */
       }
     }
+  }
+}
+.k-button.is-loading.button-loading {
+  :deep span {
+    margin-left: 0;
   }
 }
 </style>
