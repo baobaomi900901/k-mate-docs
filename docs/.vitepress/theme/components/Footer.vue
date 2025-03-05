@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-col items-center px-8 pt-[100px] pb-[60px] bg-gray-900">
-    <div class="flex justify-between w-full max-w-[1440px]">
+  <div class="flex flex-col items-center px-8 py-16 lg:pt-[100px] bg-gray-900">
+    <div class="flex justify-center lg:justify-between w-full max-w-[1440px]">
       <LogoWhite />
       <div class="flex gap-[80px] text-white">
         <div
           v-for="(section, index) in sections"
           :key="index"
-          class="flex flex-col gap-6"
+          class="hidden lg:flex flex-col gap-6"
         >
           <div class="text-base font-medium">{{ section.title }}</div>
           <template v-for="(link, linkIndex) in section.links" :key="linkIndex">
@@ -32,7 +32,7 @@
 </template>
 
 <script setup>
-import LogoWhite from "./assets/LogoWhite.vue";
+import LogoWhite from "./svgElements/LogoWhite.vue";
 
 const sections = [
   {

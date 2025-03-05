@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Footer from '../../components/Footer.vue'
 import DOMPurify from "dompurify";
 import markdownit from "markdown-it";
 import { computed, nextTick, onMounted, ref, watch } from "vue";
@@ -181,21 +182,7 @@ watch(
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="left">
-        <p>版权所有：©2025 金智维</p>
-        <p>粤ICP备16115221号-1</p>
-      </div>
-      <div class="right">
-        <div class="policy">商业策略</div>
-        <div class="line"></div>
-        <div class="policy">隐私策略</div>
-        <div class="line"></div>
-        <div class="policy">安全政策</div>
-        <div class="line"></div>
-        <div class="bgcImg"></div>
-      </div>
-    </div>
+    <Footer />
   </div>
 </template>
 
