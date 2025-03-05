@@ -17,11 +17,11 @@
           href="/Download"
           >免费下载</a
         >
-        <a
+        <!-- <a
           class="px-14 py-4 text-gray-700 rounded-full border border-gray-200"
           href="/"
           >查看介绍</a
-        >
+        > -->
       </div>
     </div>
     <div

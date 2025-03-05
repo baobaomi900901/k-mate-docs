@@ -4,8 +4,8 @@ on:
     branches:
       - main
     paths:
-      - 'docs/**'
-      - '.github/workflows/deployDocs.yml'
+      - "docs/**"
+      - ".github/workflows/deployDocs.yml"
   # 允许你从 Actions 选项卡手动运行此工作流程
   workflow_dispatch:
 
@@ -42,7 +42,7 @@ jobs:
 
       # - name: Setup Pages
       #   uses: actions/configure-pages@v4
-        
+
       - name: Install dependencies
         run: |
           npm i
@@ -107,6 +107,18 @@ jobs:
             cd ${{ env.TARGET }}
             find . -mindepth 1 ! -name 'dist.tar.gz' -exec rm -rf {} +
             tar -xvf dist.tar.gz --strip-components 2
+
+      - name: Deploy local dist
+        run: |
+          echo "部署到内网"
+          curl --location 'http://k-rpa-lite.kingsware.cn:58080/deploy' \
+            --max-time 900 \
+            --header 'Content-Type: application/json' \
+            --header 'Authorization: Bearer q38qjF0Uj1fMw1zfVGrw' \
+            --data '{
+                "url": "https://king.docs.donxj.com/dist.tar.gz",
+                "target": "/root/k-rpa-lite-docs"
+            }'
 
       # - name: Deploy to Centos server
       #   uses: easingthemes/ssh-deploy@main
