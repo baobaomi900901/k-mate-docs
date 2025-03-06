@@ -32,8 +32,9 @@
       </div>
       <div class="card col-span-1 flex flex-col !p-0">
         <div class="flex flex-col p-12 pb-0">
-          <div class="text-[40px] leading-tight font-bold text-blue-500">
+          <div class="flex items-center gap-2 text-[40px] leading-tight font-bold text-blue-500">
             支持中文脚本、Python
+            <span class="text-base bg-blue-600 text-white px-2 py-1 rounded-full">今年支持</span>
           </div>
           <div class="text-lg mt-4 opacity-70">
             全面支持中文脚本和Python代码，兼容各种Python库的接入。通过支持Python表达式，用户可以更灵活地满足各类业务需求。
@@ -96,7 +97,10 @@
       </div>
       <div class="card col-span-1 flex flex-col !p-0 ai-card-bg">
         <div class="flex flex-col p-12 pb-0 text-white">
-          <div class="text-[40px] leading-tight font-bold">AI自动化新纪元</div>
+          <div class="flex items-center gap-2 text-[40px] leading-tight font-bold">
+            AI自动化新纪元
+            <span class="text-base bg-purple-600 text-white px-2 py-1 rounded-full">今年支持</span>
+          </div>
           <div class="text-lg mt-4 opacity-70 mb-7">
             打破传统自动化界限，无限释放生产力
           </div>
@@ -110,7 +114,10 @@
       </div>
       <div class="card col-span-1 flex flex-col !p-0 app-store-card-bg">
         <div class="flex flex-col p-12 pb-0 text-white">
-          <div class="text-[40px] leading-tight font-bold">应用市场</div>
+          <div class="flex items-center gap-2  text-[40px] leading-tight font-bold">
+            应用市场
+            <span class="text-base bg-[rgba(255,255,255,0.2)] text-white px-2 py-1 rounded-full">今年支持</span>
+          </div>
         </div>
         <div class="w-full h-full pt-6">
           <img
