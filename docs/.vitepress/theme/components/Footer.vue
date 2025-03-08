@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center px-8 py-16 lg:pt-[100px] bg-gray-900">
+  <div class="flex flex-col items-center w-full px-8 py-16 lg:pt-[100px] bg-gray-900 dark:bg-black">
     <div class="flex justify-center lg:justify-between w-full max-w-[1440px]">
       <LogoWhite />
       <div class="flex gap-[80px] text-white">
