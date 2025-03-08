@@ -14,7 +14,6 @@
   "dependencies": {
     "@ksware/ksw-ux": "^1.1.14",
     "autoprefixer": "^10.4.19",
-    "dompurify": "^3.2.4",
     "gsap": "^3.12.5",
     "ksw-vue-icon": "^2.4.16",
     "less": "^4.2.0",

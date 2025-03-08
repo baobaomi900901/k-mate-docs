@@ -1,18 +1,19 @@
 <script setup lang="ts">
-import Footer from '../../components/Footer.vue'
-import DOMPurify from "dompurify";
+import Footer from "../../components/Footer.vue";
 import markdownit from "markdown-it";
 import { computed, nextTick, onMounted, ref, watch } from "vue";
 import {
+  baseUrl,
   downServerFile,
+  downloadFile,
   findLatestVersion,
   getUpdateLogAPI,
   getVersionListAPI,
   IOptions,
   IVersion,
 } from "./tools";
-import { KSelect, KOption, KScrollbar, KButton } from "@ksware/ksw-ux";
-import { IconLoading } from "ksw-vue-icon";
+import { KSelect, KOption, KDropdown, KDropdownItem, KScrollbar, KButton } from "@ksware/ksw-ux";
+import { IconLoading, IconDown } from "ksw-vue-icon";
 
 const system = ref("");
 const version = ref("");
@@ -46,8 +47,8 @@ const getLog = async () => {
     `/${system.value}/${version.value}/changeLog.md`
   );
   const htmlContent = await md.render(logData);
-  const cleanHtml = DOMPurify.sanitize(htmlContent);
-  markdownContent.value = cleanHtml;
+  // const cleanHtml = DOMPurify.sanitize(htmlContent);
+  markdownContent.value = htmlContent;
 };
 
 onMounted(async () => {
@@ -58,18 +59,24 @@ const isAllowDown = computed(() => {
   return !!(system.value && version.value);
 });
 
-const downloadRPA = async () => {
+const getDownloadRPAAndPluginUrl = () => {
   if (!isAllowDown) return;
-  const fullPath = "/" + system.value + "/" + version.value + "/K-RPA Lite.zip";
-  loading.value = true;
-  await downServerFile(fullPath, version.value + ".zip");
-  loading.value = false;
+  const fullPath =
+    baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite_plugin.zip";
+  return fullPath;
 };
 
-const downloadPlugin = () => {
+const getDownloadRPAUrl = () => {
   if (!isAllowDown) return;
-  const fullPath = "/plugin/" + pluginValue.value + ".zip";
-  downServerFile(fullPath, pluginValue.value + ".zip");
+  const fullPath =
+    baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite.zip";
+  return fullPath;
+};
+
+const getDownloadPluginUrl = () => {
+  if (!isAllowDown) return;
+  const fullPath = baseUrl + "/plugin/" + pluginValue.value + ".zip";
+  return fullPath;
 };
 
 const changeSystem = (key: string) => {
@@ -114,266 +121,109 @@ watch(
 </script>
 
 <template>
-  <div class="update-about">
-    <div class="main">
-      <div class="box">
-        <div class="title">下载 K-RPA Lite®</div>
-        <div class="version">
-          <div class="text">获取 K-RPA Lite®</div>
-          <div class="select">
-            <k-select
-              v-model="system"
-              placeholder="系统"
-              style="width: 100%"
-              @change="changeSystem"
-            >
-              <k-option
-                v-for="item in systemOptions"
-                :key="item.value"
-                :label="item.label"
-                :value="item.value"
-              />
-              <template #empty>暂无系统</template>
-            </k-select>
-          </div>
-          <div class="text">环境中的</div>
-          <div class="select">
-            <k-select
-              v-model="version"
-              placeholder="版本"
-              style="width: 100%"
-              @change="changeVersion"
-            >
-              <k-option
-                v-for="item in versionOptions"
-                :key="item.value"
-                :label="item.label"
-                :value="item.value"
-              />
-              <template #empty>先选系统系统</template>
-            </k-select>
-          </div>
-          <div class="text">版本。</div>
-        </div>
-        <span>
-          <k-button
-            :disabled="!isAllowDown"
-            main
-            class="btn"
-            @click="downloadRPA"
-            :loading="loading"
-          >
-            <IconLoading v-if="loading" />
-            {{ loading ? "下载中..." : "下载" }}
-          </k-button>
-          <k-button
-            :disabled="!isAllowDown"
-            main
-            class="btn"
-            @click="downloadPlugin"
-          >
-            下载插件包
-          </k-button>
-        </span>
-        <div class="remark">
-          <k-scrollbar height="100%">
-            <div class="content vp-doc" v-html="markdownContent"></div>
-          </k-scrollbar>
-        </div>
+  <div class="flex flex-col items-center max-w-[860px] mx-auto">
+    <div class="flex flex-col items-center mt-24 mx-auto w-fit">
+      <div class="text-7xl font-bold">下载 K-RPA Lite</div>
+      <div class="text-xl font-medium mt-10">
+        支持 Windows、信创系统<sup class="text-gray-400">*</sup>、网页等
       </div>
+      <div class="text-xs text-gray-400 mt-3">信创系统今年支持</div>
     </div>
-    <Footer />
+    <div class="flex gap-4 flex-col items-center mt-8 mx-auto w-fit">
+      <div class="select">
+        <k-select
+          v-model="system"
+          placeholder="系统"
+          size="large"
+          @change="changeSystem"
+        >
+          <k-option
+            v-for="item in systemOptions"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value"
+          />
+          <template #empty>暂无系统</template>
+        </k-select>
+      </div>
+      <div class="select">
+        <k-select
+          v-model="version"
+          placeholder="版本"
+          size="large"
+          @change="changeVersion"
+        >
+          <k-option
+            v-for="item in versionOptions"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value"
+          />
+          <template #empty>先选系统系统</template>
+        </k-select>
+      </div>
+      <a class="flex justify-center text-base font-medium bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-xl w-full transition-all mt-5 select-none cursor-pointer" @click="downloadFile(getDownloadRPAAndPluginUrl())">下载客户端 & 插件包</a>
+      <div class="flex items-center gap-4">
+        <a class="flex justify-center text-base text-blue-500 hover:text-blue-400 py-[1px] px-1 rounded-md transition-all select-none cursor-pointer" @click="downloadFile(getDownloadRPA())">下载客户端</a>
+        <hr class="border border-gray-200 h-4 rounded-full" /> 
+        <div class="flex justify-center text-base text-blue-500 hover:text-blue-400 py-[1px] px-1 rounded-md transition-all select-none cursor-pointer" @click="downloadFile(getDownloadPluginUrl())">下载插件包</div>
+      </div>
+      <!-- <k-dropdown class="text-base text-blue-500 hover:text-blue-400 focus-visible:outline-none" size="large">
+        <template #title>
+          <div class="flex items-center gap-1 py-[1px] px-1 focus-visible:outline-none">
+            更多下载
+            <IconDown class=" transition-all" :size="16" />
+          </div>
+        </template>
+        <template #default>
+          <k-dropdown-item @click="downloadFile(getDownloadRPA())">客户端</k-dropdown-item>
+          <k-dropdown-item @click="downloadFile(getDownloadPluginUrl())">插件包</k-dropdown-item>
+        </template>
+      </k-dropdown> -->
+    </div>
+    <div class="my-12 w-full border-t border-gray-200 dark:border-[rgba(0,0,0,0.5)] rounded-full" />
+    <div class="flex flex-col gap-4 items-center">
+      <div class="text-4xl font-bold">更新日志</div>
+      <div class="text-base opacity-70">不断优化 K-RPA Lite，为您带来更好体验</div>
+    </div>
+    <div class="mt-12 min-h-96 w-full max-w-[580px]">
+      <div class="changelog content vp-doc" v-html="markdownContent"></div>
+    </div>
   </div>
+  <Footer />
 </template>
 
 <style lang="scss" scoped>
-.update-about {
-  --primary-color: #4a90e2;
-  --secondary-color: #adb5bd;
-  --background-color: #343a40;
-  --text-color: #e9ecef;
+.select {
+  @apply transition-all duration-300;
+  width: 300px;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, .08) 0px 4px 6px 0px;
+  &:hover {
+    box-shadow: rgba(23, 25, 29, .2) 0px 16px 16px -16px, rgb(23 25 29 / 3%) 0px 14px 20px;
+  }
+  .dark & {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+  .k-select {
+    :deep(.el-select__wrapper){
+      background: transparent;
+      .el-select__selected-item {
+        color: var(--vp-c-text-1);
+      }
+      .dark & {
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+      &:hover {
+        border-color: var(--border-color--hover);
+      }
+    }
+  }
 }
-[data-theme="la"] {
-  --primary-color: #4a90e2;
-  --secondary-color: #adb5bd;
-  --background-color: #343a40;
-  --text-color: #e9ecef;
-}
-.update-about {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--vp-c-bg);
-  .main {
+/* .changelog{
+  :deep(h1) {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin-bottom: auto;
-    .box {
-      display: flex;
-      flex-direction: column;
-      /* align-items: center; */
-      width: 960px;
-      margin: 2.5rem auto;
-      padding-bottom: 4rem;
-      .title {
-        font-size: 32px;
-        font-weight: bold;
-        line-height: normal;
-        letter-spacing: 0em;
-        color: var(--vp-c-text-1);
-        margin-bottom: 16px;
-      }
-      .version {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        gap: 8px;
-        margin-bottom: 1rem;
-        color: #ffffff;
-        .text {
-          font-size: 1rem;
-          font-weight: 400;
-          letter-spacing: 0em;
-          color: var(--vp-c-text-1);
-        }
-        .select {
-          width: 168px;
-          height: 32px;
-          border: 1px solid #d1d5db;
-          background-color: #fff;
-          border-radius: 0.5rem;
-          padding: 0 0.5rem;
-          .dark & {
-            border-color: #9ca3af;
-            background-color: #000;
-          }
-          .k-select {
-            :deep .el-select__wrapper {
-              background: transparent;
-              &.is-focused {
-                box-shadow: none;
-              }
-              .el-select__selected-item {
-                color: var(--vp-c-text-1);
-              }
-            }
-          }
-        }
-      }
-      .remark {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
-        gap: 1rem;
-        background: var(--vp-custom-block-details-bg);
-        box-sizing: border-box;
-        width: 960px;
-        height: calc(100vh - 400px);
-        max-height: 600px;
-        min-height: 300px;
-        border-radius: 1rem;
-        overflow: hidden;
-        .content {
-          color: var(--vp-c-text-1);
-        }
-        .mark-title {
-          font-size: 18px;
-          font-weight: bold;
-          line-height: normal;
-          letter-spacing: 0em;
-          font-feature-settings: "kern" on;
-          color: #ffffff;
-        }
-        .li-box {
-          margin-top: 12px;
-          color: #ffffff;
-          ol,
-          li {
-            list-style: none; /* 移除列表项标记 */
-            padding: 0;
-            margin: 0;
-          }
-          li {
-            padding: 2px;
-          }
-        }
-      }
-      .btn {
-        color: #ffffff;
-        background-color: rgb(59, 130, 246);
-        font-size: 1rem;
-        font-weight: 500;
-        margin-bottom: 2rem;
-        padding: 0.5rem 1.25rem;
-        border-radius: 0.5rem;
-        border: none;
-        transition: background-color 0.2s;
-        &:hover {
-          background-color: rgb(96, 165, 250);
-        }
-      }
-    }
   }
-  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 14px 48px;
-    border: 1px solid var(--vp-c-divider);
-    width: 100%;
-    height: 48px;
-    position: fixed;
-    bottom: 0;
-    background-color: var(--vp-c-bg);
-    .left {
-      display: flex;
-      justify-content: start;
-      gap: 24px;
-      p {
-        font-size: 12px;
-        font-weight: normal;
-        line-height: 16px;
-        letter-spacing: 0em;
-        color: #9e9e9e;
-      }
-    }
-    .right {
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      gap: 24px;
-      .policy {
-        font-size: 12px;
-        font-weight: normal;
-        line-height: 16px;
-        letter-spacing: 0em;
-        color: #9e9e9e;
-        cursor: pointer;
-      }
-      .line {
-        width: 1px;
-        height: 12px;
-        background-color: #9e9e9e;
-      }
-      .bgcImg {
-        width: 64px;
-        height: 16px;
-        background-image: url("./imgs//ksware.png"); /* 设置背景图片的路径 */
-        background-size: cover; /* 背景图片根据容器大小自动调整 */
-        background-position: center; /* 图片居中显示 */
-      }
-    }
-  }
-}
-.k-button.is-loading.button-loading {
-  :deep span {
-    margin-left: 0;
-  }
-}
+} */
 </style>
