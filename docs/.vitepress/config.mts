@@ -46,7 +46,7 @@ const vitePressConfig = {
       ],
     },
     ssr: {
-      noExternal: ['ksw-vue-icon', '@ksware/ksw-ux']
+      noExternal: ['gsap', 'gsap/*', 'ksw-vue-icon', '@ksware/ksw-ux']
     },
     // Network
     server: {
@@ -58,28 +58,28 @@ const vitePressConfig = {
   // 优化搜索引擎结果
   head: [
     // 使用 cdn
-    [
-      'link',
-      {
-        rel: 'preload stylesheet',
-        href: 'https://cdn.jsdelivr.net/npm/@ksware/ksw-ux/kingsware-ui/style.min.css',
-        as: 'style',
-        'data-cdn': 'ksw-css'
-      }
-    ],
-    // 修改 css 顺序
-    [
-      'script',
-      {},
-      `
-      const kswCssLink = document.querySelector('link[data-cdn="ksw-css"]');
-      if (kswCssLink) {
-        document.head.insertBefore(kswCssLink, document.head.firstChild);
-      } else {
-        console.error('ksw-css link not found!');
-      }
-      `
-    ],
+    // [
+    //   'link',
+    //   {
+    //     rel: 'preload stylesheet',
+    //     href: 'https://cdn.jsdelivr.net/npm/@ksware/ksw-ux/kingsware-ui/style.min.css',
+    //     as: 'style',
+    //     'data-cdn': 'ksw-css'
+    //   }
+    // ],
+    // // 修改 css 顺序
+    // [
+    //   'script',
+    //   {},
+    //   `
+    //   const kswCssLink = document.querySelector('link[data-cdn="ksw-css"]');
+    //   if (kswCssLink) {
+    //     document.head.insertBefore(kswCssLink, document.head.firstChild);
+    //   } else {
+    //     console.error('ksw-css link not found!');
+    //   }
+    //   `
+    // ],
     ["link", { rel: "icon", type: "image/svg+xml", href: "/k-rpa-lite-logo.svg" }],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:locale", content: "zh" }],

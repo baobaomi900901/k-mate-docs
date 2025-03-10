@@ -52,7 +52,9 @@ Object.entries(config).forEach(([path, translations]) => {
       });
     } else {
       const link = isExternalLink ? path : (lang === rootLocale ? `/${path}` : `/${lang}/${path}`); // 动态生成 link
-      navConfig[lang].nav.push({ text, link });
+      const activeMatch = isExternalLink ? '' : `^${link}`;
+      navConfig[lang].nav.push({ text, link, activeMatch });
+      
     }
 
     // 生成 vitePressSidebarConfig（仅对内部路径且 Sidebar 不为 false）

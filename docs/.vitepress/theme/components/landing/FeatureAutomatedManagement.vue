@@ -16,6 +16,7 @@
     <div class="grid grid-cols-2 gap-6 w-full">
       <div class="card col-span-2 flex flex-col lg:flex-row gap-6">
         <div class="flex flex-col p-6 w-full lg:w-1/2 justify-center">
+          <span class="w-fit text-base font-medium bg-blue-600 text-white px-2 py-1 rounded-full mb-4">规划中</span>
           <div class="text-[40px] leading-tight font-bold">
             全面掌控的智能任务管理平台
           </div>
@@ -48,8 +49,9 @@
       </div>
       <div class="card manage-app-store-bg col-span-1 row-span-2 flex gap-6 flex-col !p-0">
         <div class="flex flex-col p-12 pb-0">
-          <div class="text-[40px] leading-tight font-bold">
+          <div class="flex items-center gap-2 text-[40px] leading-tight font-bold">
             高效管理您的应用市场
+            <span class="text-base bg-blue-600 text-white px-2 py-1 rounded-full">今年支持</span>
           </div>
           <div class="text-lg mt-4 opacity-70">
             通过精细的权限设置，企业可以全面掌控应用市场，轻松管理所有自动化应用，实现快速部署、更新和优化，确保技术始终与业务需求保持一致，提升管理效率与安全性。

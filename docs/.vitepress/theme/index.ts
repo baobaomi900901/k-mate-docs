@@ -1,10 +1,11 @@
 import DefaultTheme from 'vitepress/theme';
-import { h } from 'vue';
+import { h, onMounted } from 'vue';
 import type { Theme } from 'vitepress';
-// import '@ksware/ksw-ux/kingsware-ui/style.css';
+// import './KingAutometa.theme.css';
+import '@ksware/ksw-ux/kingsware-ui/style.css';
+import 'ksw-vue-icon/styles/icon.css';
 import './custom.less';
 import '~/tailwind.css';
-import 'ksw-vue-icon/styles/icon.css';
 
 export default {
   extends: DefaultTheme,
@@ -12,6 +13,11 @@ export default {
     return h(DefaultTheme.Layout, null, {
     });
   },
-  enhanceApp({ app }) {
+  async enhanceApp({ app }) {
+  },
+  setup() {
+    onMounted(() => {
+      document.body.classList.add("KingAutometa")
+    });
   }
 } satisfies Theme;

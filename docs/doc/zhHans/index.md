@@ -14,7 +14,7 @@ import FeatureSection from '../../.vitepress/theme/components/landing/FeatureSec
 import FeatureRichFeatures from '../../.vitepress/theme/components/landing/FeatureRichFeatures.vue'
 import FeatureAutomatedManagement from '../../.vitepress/theme/components/landing/FeatureAutomatedManagement.vue'
 import GetStartedSection from '../../.vitepress/theme/components/landing/GetStartedSection.vue'
-import Footer from '../../.vitepress/theme/components/landing/Footer.vue'
+import Footer from '../../.vitepress/theme/components/Footer.vue'
 </script>
 
 <div class="vp-raw bg-gray-50">

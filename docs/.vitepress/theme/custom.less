@@ -4,6 +4,11 @@
   --glassmorphism-search-button-bg: rgba(0, 0, 0, 0.04);
 }
 
+// 覆盖 组件库样式
+body {
+  font-family: var(--vp-font-family-base);
+}
+
 .dark {
   --glassmorphism-bg: rgba(0, 0, 0, 0.8);
   --glassmorphism-search-button-bg: rgba(0, 0, 0, 0.3);
@@ -24,11 +29,6 @@ header.VPNav {
       // 背景毛玻璃
       background: var(--glassmorphism-bg);
       backdrop-filter: var(--glassmorphism-filter);
-      .wrapper {
-        padding: 0;
-        width: 1280px;
-        margin: auto;
-      }
       &.top {
         background-color: rgb(249 250 251);
         .dark & {
