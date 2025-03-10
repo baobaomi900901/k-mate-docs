@@ -1,5 +1,6 @@
 ---
 title: Execute JavaScript
+order: 8
 ---
 
 # Execute JavaScript
@@ -10,19 +11,21 @@ title: Execute JavaScript
 Execute a piece of JavaScript in the specified web page and get the result of the script execution
 :::
 
+![Execute JavaScript](../../../assets/Execute JavaScript_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **JavaScript Script**`string`: Write a piece of JavaScript for execution
-
-- **Parameter**`string`: Fill in the parameters to be passed into the JavaScript
+- **Web Page Object**`TBrowser`: Enter a web page object that has been obtained or created by the 'Open Web Page' function
 
 - **Operation Target**`TTarget`: Select the web element to operate on
 
-- **Web Page Object**`TBrowser`: Enter a web page object that has been obtained or created by the 'Open Web Page' function
+- **Parameter**`string`: Fill in the parameters to be passed into the JavaScript
+
+- **JavaScript Script**`string`: Write a piece of JavaScript for execution
 
 
 **Command Output**
@@ -31,10 +34,14 @@ Execute a piece of JavaScript in the specified web page and get the result of th
 
 ### Advanced
 
-- **Execution Environment**`Integer`: The target execution environment for the JS script
-
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout time to wait for the element to exist
 
+- **Execution Environment**`Integer`: The target execution environment for the JS script
+
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

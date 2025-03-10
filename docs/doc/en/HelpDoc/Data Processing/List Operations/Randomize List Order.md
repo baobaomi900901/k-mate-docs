@@ -1,5 +1,6 @@
 ---
 title: Randomize List Order
+order: 12
 ---
 
 # Randomize List Order
@@ -9,6 +10,8 @@ title: Randomize List Order
 :::tip 
 This command is used to randomly sort a list
 :::
+
+![Randomize List Order](../../../assets/Randomize List Order_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,8 @@ This command is used to randomly sort a list
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

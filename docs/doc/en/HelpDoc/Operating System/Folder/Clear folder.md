@@ -1,5 +1,6 @@
 ---
 title: Clear folder
+order: 6
 ---
 
 # Clear folder
@@ -9,6 +10,8 @@ title: Clear folder
 :::tip 
 Delete all files and subfolders within the folder, but keep the folder itself
 :::
+
+![Clear folder](../../../assets/Clear folder_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Delete all files and subfolders within the folder, but keep the folder itself
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

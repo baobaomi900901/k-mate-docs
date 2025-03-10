@@ -1,5 +1,6 @@
 ---
 title: OpenAI Audio
+order: 3
 ---
 
 # OpenAI Audio
@@ -9,6 +10,8 @@ title: OpenAI Audio
 :::tip 
 Recognize audio files and convert the audio into text
 :::
+
+![OpenAI Audio](../../../assets/OpenAI Audio_command.png)
 
 ## Configuration Item Description
 
@@ -25,10 +28,14 @@ Recognize audio files and convert the audio into text
 
 ### Advanced
 
+- **Proxy Parameters**`string`: When our program cannot directly connect to the target network but the other party has installed a proxy server in the format Address:Port
+
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
 
-- **Proxy Parameters**`string`: Proxy server in the format Address:Port
 
+**Command Output**
 
 ### Error Handling
 

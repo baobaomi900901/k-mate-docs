@@ -1,5 +1,6 @@
 ---
 title: Switch FTP Working Path
+order: 4
 ---
 
 # Switch FTP Working Path
@@ -10,21 +11,25 @@ title: Switch FTP Working Path
 Switch the working path of the FTP connection
 :::
 
+![Switch FTP Working Path](../../../assets/Switch FTP Working Path_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Working Path**`string`: The new working path to which it needs to be switched
-
 - **FTP Connection Object**`TFTP`: The FTP object for which the working path needs to be switched
+
+- **Working Path**`string`: The new working path to which it needs to be switched
 
 
 **Command Output**
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

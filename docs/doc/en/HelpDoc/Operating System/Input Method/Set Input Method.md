@@ -1,5 +1,6 @@
 ---
 title: Set Input Method
+order: 2
 ---
 
 # Set Input Method
@@ -9,6 +10,8 @@ title: Set Input Method
 :::tip 
 Set the input method for the currently active window
 :::
+
+![Set Input Method](../../../assets/Set Input Method_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Set the input method for the currently active window
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Remove Duplicates
+order: 15
 ---
 
 # Remove Duplicates
@@ -9,6 +10,8 @@ title: Remove Duplicates
 :::tip 
 This command is used to remove duplicate items from a list
 :::
+
+![Remove Duplicates](../../../assets/Remove Duplicates_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,8 @@ This command is used to remove duplicate items from a list
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

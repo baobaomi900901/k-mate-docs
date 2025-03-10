@@ -1,5 +1,6 @@
 ---
 title: Copy folder
+order: 7
 ---
 
 # Copy folder
@@ -10,23 +11,31 @@ title: Copy folder
 Copy the source folder to the target folder
 :::
 
+![Copy folder](../../../assets/Copy folder_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Copy method**`Integer`: How to handle when files already exist
+- **Source folder**`string`: Enter or select the path of the folder to be copied
 
 - **Target folder**`string`: Enter the target folder path
 
-- **Source folder**`string`: Enter or select the path of the folder to be copied
+- **Copy method**`Integer`: How to handle when files already exist
 
 
 **Command Output**
 
 - **Copied folder path**`string`: Enter a name to save the path of the copied folder
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

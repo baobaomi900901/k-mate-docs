@@ -1,6 +1,6 @@
 ---
 title: 移除Cookie
-order: 5
+order: 6
 ---
 
 # 移除Cookie
@@ -10,6 +10,8 @@ order: 5
 :::tip 功能描述
 移除通过Cookie url、Cookie name指定的Cookie
 :::
+
+![移除Cookie](../../../assets/移除Cookie_command.png)
 
 ## 配置项说明
 
@@ -34,6 +36,10 @@ order: 5
 
 当前指令无输出
 
+### 高级
+
+- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+
 ### 错误处理
 
 - **打印错误日志**`Boolean`：当指令运行出错时，打印错误日志到【日志】面板。默认勾选。
@@ -48,7 +54,7 @@ order: 5
 
 ## 使用示例
 
-流程逻辑描述：
+**流程逻辑描述：** 
 
 ## 常见错误及处理
 

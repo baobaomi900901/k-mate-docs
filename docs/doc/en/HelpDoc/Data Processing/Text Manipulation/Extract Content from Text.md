@@ -1,5 +1,6 @@
 ---
 title: Extract Content from Text
+order: 1
 ---
 
 # Extract Content from Text
@@ -10,27 +11,31 @@ title: Extract Content from Text
 Extract specified content from text based on regular expressions
 :::
 
+![Extract Content from Text](../../../assets/Extract Content from Text_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Ignore Case**`Boolean`: Whether to ignore case when matching strings
-
-- **Only Find First Match**`Boolean`: For example, if two phone numbers are found in the text, you can choose to get only the first one
-
-- **Regular Expression**`string`: Enter a regular expression pattern
+- **Text Content**`string`: Enter a text string or select a variable containing the string
 
 - **Extraction Method**`Integer`: Choose a method for extracting content
 
-- **Text Content**`string`: Enter a text string or select a variable containing the string
+- **Regular Expression**`string`: Enter a regular expression pattern
+
+- **Only Find First Match**`Boolean`: For example, if two phone numbers are found in the text, you can choose to get only the first one
+
+- **Ignore Case**`Boolean`: Whether to ignore case when matching strings
 
 
 **Command Output**
 
 - **Save Result To**`string`: Specify a variable to save the extracted content
 
+
+**Command Output**
 
 ### Error Handling
 

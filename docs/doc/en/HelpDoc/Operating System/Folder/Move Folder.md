@@ -1,5 +1,6 @@
 ---
 title: Move Folder
+order: 8
 ---
 
 # Move Folder
@@ -10,21 +11,29 @@ title: Move Folder
 Move the source folder to the target folder
 :::
 
+![Move Folder](../../../assets/Move Folder_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Target Folder**`string`: Enter the target folder path
-
 - **Source Folder Path**`string`: Enter or select the path of the folder to be moved
+
+- **Target Folder**`string`: Enter the target folder path
 
 
 **Command Output**
 
 - **Moved Folder Path**`string`: Enter a name to save the path of the moved folder
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Open DateTime Dialog
+order: 3
 ---
 
 # Open DateTime Dialog
@@ -10,23 +11,25 @@ title: Open DateTime Dialog
 Open DateTime Dialog
 :::
 
+![Open DateTime Dialog](../../../assets/Open DateTime Dialog_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **End Time**`string`: End Time
-
-- **Start Time**`string`: Start Time
-
-- **Default Time**`string`: Default Time
-
-- **Time Format**`Integer`: Time Format
+- **Dialog Title**`string`: Dialog Title
 
 - **Time Type**`Integer`: Time Type
 
-- **Dialog Title**`string`: Dialog Title
+- **Time Format**`Integer`: Time Format
+
+- **Default Time**`string`: Default Time
+
+- **Start Time**`string`: Start Time
+
+- **End Time**`string`: End Time
 
 
 **Command Output**
@@ -37,6 +40,10 @@ Open DateTime Dialog
 
 - **Dialog Explanation**`string`: Dialog Explanation
 
+- **Timeout (milliseconds)**`Integer`: The duration for which the notification is displayed, default is 30000 milliseconds
+
+
+**Command Output**
 
 ### Error Handling
 

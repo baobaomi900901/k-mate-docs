@@ -1,5 +1,6 @@
 ---
 title: FTP File Deletion
+order: 9
 ---
 
 # FTP File Deletion
@@ -10,21 +11,29 @@ title: FTP File Deletion
 Delete one or more files from the remote path
 :::
 
+![FTP File Deletion](../../../assets/FTP File Deletion_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **File to be deleted**`string`: The name(s) of the remote file(s) to be deleted, separated by '|' if multiple
-
 - **FTP Connection Object**`TFTP`: The FTP object from which the files will be deleted
+
+- **File to be deleted**`string`: The name(s) of the remote file(s) to be deleted, separated by '|' if multiple
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

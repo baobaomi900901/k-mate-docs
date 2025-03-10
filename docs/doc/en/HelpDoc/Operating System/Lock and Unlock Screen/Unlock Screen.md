@@ -1,5 +1,6 @@
 ---
 title: Unlock Screen
+order: 2
 ---
 
 # Unlock Screen
@@ -10,23 +11,31 @@ title: Unlock Screen
 Unlock the system screen and enter the system screen
 :::
 
+![Unlock Screen](../../../assets/Unlock Screen_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Domain**`string`: Please enter the login domain, or leave it blank
+- **Username**`string`: Please enter your username
 
 - **Login Password**`string`: Please enter your login password
 
-- **Username**`string`: Please enter your username
+- **Domain**`string`: Please enter the login domain, or leave it blank
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

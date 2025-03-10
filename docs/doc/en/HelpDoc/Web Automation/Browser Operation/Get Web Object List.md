@@ -1,5 +1,6 @@
 ---
 title: Get Web Object List
+order: 4
 ---
 
 # Get Web Object List
@@ -10,21 +11,23 @@ title: Get Web Object List
 Get the list of currently opened web objects to perform batch automation on each webpage
 :::
 
+![Get Web Object List](../../../assets/Get Web Object List_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Match with Wildcards**`Boolean`: Match with wildcards
-
-- **URL**`string`: Enter the webpage address you want to open
-
-- **Title**`string`: Enter the title of the webpage you want to match, supports fuzzy matching
+- **Browser Type**`Integer`: Select the browser type. You need to install the corresponding browser plugin in [Settings]-[Plugin Center] to automate it
 
 - **Matching Mode**`Integer`: Enter the web address you want to open
 
-- **Browser Type**`Integer`: Select the browser type. You need to install the corresponding browser plugin in [Settings]-[Plugin Center] to automate it
+- **Title**`string`: Enter the title of the webpage you want to match, supports fuzzy matching
+
+- **URL**`string`: Enter the webpage address you want to open
+
+- **Match with Wildcards**`Boolean`: Match with wildcards
 
 
 **Command Output**
@@ -33,8 +36,10 @@ Get the list of currently opened web objects to perform batch automation on each
 
 ### Advanced
 
-- **Run without taking over mouse and keyboard**`Boolean`: Use API method for subsequent operations on the webpage, which will improve stability and avoid occupying mouse and keyboard
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
+
+**Command Output**
 
 ### Error Handling
 

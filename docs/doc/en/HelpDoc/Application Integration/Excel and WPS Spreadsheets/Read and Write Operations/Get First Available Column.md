@@ -1,5 +1,6 @@
 ---
 title: Get First Available Column
+order: 6
 ---
 
 # Get First Available Column
@@ -10,21 +11,29 @@ title: Get First Available Column
 Get the first available column
 :::
 
+![Get First Available Column](../../../../assets/Get First Available Column_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
-
 - **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
 
 **Command Output**
 
 - **Save Column Name To**`string`: Specify a variable to save the first available column name of the sheet
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

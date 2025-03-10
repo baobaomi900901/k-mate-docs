@@ -1,5 +1,6 @@
 ---
 title: Save PDF as Image
+order: 5
 ---
 
 # Save PDF as Image
@@ -10,25 +11,27 @@ title: Save PDF as Image
 This instruction is used to save a specific page as an image
 :::
 
+![Save PDF as Image](../../../assets/Save PDF as Image_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Save image to**`string`: Please enter the folder path to save the image
-
-- **Image name prefix**`string`: Please enter the image name prefix
-
-- **Ending page number**`Integer`: Please enter the ending page number to extract. Page index starts from 1
-
-- **Starting page number**`Integer`: Please enter the starting page number to extract. Page index starts from 1
-
-- **Page number**`Integer`: Please enter the page number to extract. Page index starts from 1
+- **File path**`string`: Please enter the PDF file path
 
 - **Extract range**`Integer`: Select the page range to extract
 
-- **File path**`string`: Please enter the PDF file path
+- **Page number**`Integer`: Please enter the page number to extract. Page index starts from 1
+
+- **Starting page number**`Integer`: Please enter the starting page number to extract. Page index starts from 1
+
+- **Ending page number**`Integer`: Please enter the ending page number to extract. Page index starts from 1
+
+- **Image name prefix**`string`: Please enter the image name prefix
+
+- **Save image to**`string`: Please enter the folder path to save the image
 
 
 **Command Output**
@@ -37,10 +40,14 @@ This instruction is used to save a specific page as an image
 
 ### Advanced
 
-- **Password**`string`: Password required to open the file
-
 - **Use password**`Boolean`: Whether a password is required to open the file
 
+- **Password**`string`: Password required to open the file
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

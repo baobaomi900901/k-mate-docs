@@ -1,5 +1,6 @@
 ---
 title: Rename Sheet
+order: 5
 ---
 
 # Rename Sheet
@@ -10,23 +11,31 @@ title: Rename Sheet
 Rename the sheet
 :::
 
+![Rename Sheet](../../../../assets/Rename Sheet_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **New Sheet Name**`string`: Enter the new name for the sheet, cannot be empty
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 - **Sheet Name**`string`: Enter the name of the sheet to be renamed, cannot be empty
 
-- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **New Sheet Name**`string`: Enter the new name for the sheet, cannot be empty
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

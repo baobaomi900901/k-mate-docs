@@ -1,5 +1,6 @@
 ---
 title: Get Dictionary Key List
+order: 4
 ---
 
 # Get Dictionary Key List
@@ -9,6 +10,8 @@ title: Get Dictionary Key List
 :::tip 
 This command is used to get a list of key names from a dictionary
 :::
+
+![Get Dictionary Key List](../../../assets/Get Dictionary Key List_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,8 @@ This command is used to get a list of key names from a dictionary
 
 - **Save Key List To**`TList<String>`: Enter a name to save the found key list
 
+
+**Command Output**
 
 ### Error Handling
 

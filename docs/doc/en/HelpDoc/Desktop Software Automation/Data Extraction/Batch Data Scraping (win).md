@@ -1,5 +1,6 @@
 ---
 title: Batch Data Scraping (win)
+order: 5
 ---
 
 # Batch Data Scraping (win)
@@ -10,23 +11,25 @@ title: Batch Data Scraping (win)
 Scrape batch data from the target window, commonly used for scraping list pages, detail pages, and multi-page data by setting the pagination button.
 :::
 
+![Batch Data Scraping (win)](../../../assets/Batch Data Scraping (win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Save to Data Table**`Boolean`: Whether to save the results to a data table
-
-- **Number of Pages**`Integer`: Maximum pages to scrape
-
-- **Next Page Button**`TTarget`: Pagination element
-
-- **Number of Pages to Extract**`Integer`: Choose how many pages of data to extract
+- **Window Object**`TWinObj`: Enter the window object
 
 - **Operation Target**`TTarget`: Table element to be scraped
 
-- **Window Object**`TWinObj`: Enter the window object
+- **Number of Pages to Extract**`Integer`: Choose how many pages of data to extract
+
+- **Next Page Button**`TTarget`: Pagination element
+
+- **Number of Pages**`Integer`: Maximum pages to scrape
+
+- **Save to Data Table**`Boolean`: Whether to save the results to a data table
 
 
 **Command Output**
@@ -35,22 +38,28 @@ Scrape batch data from the target window, commonly used for scraping list pages,
 
 ### Advanced
 
-- **Maximum Delay Duration (milliseconds)**`Integer`: Longest wait time after execution
-
-- **Minimum Delay Duration (milliseconds)**`Integer`: Shortest wait time after execution
-
-- **Simulate Page Turn Delay**`Boolean`: Simulate the delay during a real person's page turn
-
-- **Automatically Scroll to the Bottom of the Page**`Boolean`: Automatically scroll to load the page before scraping, can be disabled
-
-- **Send Window Messages**`Boolean`: Send window messages to trigger the click
-
-- **Simulate Manual Click on Next Page Button**`Boolean`: Simulate a manual click event
+- **Custom Column Name**`string`: Custom column names, separated by commas.
 
 - **Page Turn Interval (milliseconds)**`Integer`: Interval between page turns
 
-- **Custom Column Name**`string`: Custom column names, separated by commas.
+- **Simulate Manual Click on Next Page Button**`Boolean`: Simulate a manual click event
 
+- **Send Window Messages**`Boolean`: Send window messages to trigger the click
+
+- **Automatically Scroll to the Bottom of the Page**`Boolean`: Automatically scroll to load the page before scraping, can be disabled
+
+- **Simulate Page Turn Delay**`Boolean`: Simulate the delay during a real person's page turn
+
+- **Minimum Delay Duration (milliseconds)**`Integer`: Shortest wait time after execution
+
+- **Maximum Delay Duration (milliseconds)**`Integer`: Longest wait time after execution
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **TimeOut**`Integer`: 
+
+
+**Command Output**
 
 ### Error Handling
 

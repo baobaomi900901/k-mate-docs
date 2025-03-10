@@ -1,5 +1,6 @@
 ---
 title: Rename File
+order: 4
 ---
 
 # Rename File
@@ -10,21 +11,29 @@ title: Rename File
 Rename a file
 :::
 
+![Rename File](../../../assets/Rename File_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **New File Name**`string`: The new file name
-
 - **Source File**`string`: The file to be renamed
+
+- **New File Name**`string`: The new file name
 
 
 **Command Output**
 
 - **New File Path**`string`: Enter a name to save the new file path
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

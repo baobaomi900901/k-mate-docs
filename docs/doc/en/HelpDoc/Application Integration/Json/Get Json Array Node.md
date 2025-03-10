@@ -1,5 +1,6 @@
 ---
 title: Get Json Array Node
+order: 8
 ---
 
 # Get Json Array Node
@@ -10,21 +11,29 @@ title: Get Json Array Node
 Get a node from the Json array
 :::
 
+![Get Json Array Node](../../../assets/Get Json Array Node_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Node Index**`Integer`: Node Index
-
 - **Json Object**`TJson`: Json Object
+
+- **Node Index**`Integer`: Node Index
 
 
 **Command Output**
 
 - **Node Object**`TJson`: Node Object
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

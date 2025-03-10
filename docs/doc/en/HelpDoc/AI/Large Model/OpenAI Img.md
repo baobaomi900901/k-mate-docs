@@ -1,5 +1,6 @@
 ---
 title: OpenAI Img
+order: 2
 ---
 
 # OpenAI Img
@@ -10,15 +11,17 @@ title: OpenAI Img
 Use prompt text to instruct AI to create an image.
 :::
 
+![OpenAI Img](../../../assets/OpenAI Img_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Image Size**`Integer`: Choose the image size to generate
-
 - **Prompt Text**`string`: Enter the prompt text
+
+- **Image Size**`Integer`: Choose the image size to generate
 
 
 **Command Output**
@@ -27,10 +30,14 @@ Use prompt text to instruct AI to create an image.
 
 ### Advanced
 
+- **Proxy Parameters**`string`: When our program cannot directly connect to the target network but the other party has installed a proxy server, format as Address:Port
+
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Timeout (milliseconds)**`Integer`: Maximum waiting time (milliseconds)
 
-- **Proxy Parameters**`string`: Proxy server, format as Address:Port
 
+**Command Output**
 
 ### Error Handling
 

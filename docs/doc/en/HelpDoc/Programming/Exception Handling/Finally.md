@@ -1,5 +1,6 @@
 ---
 title: Finally
+order: 3
 ---
 
 # Finally
@@ -9,6 +10,8 @@ title: Finally
 :::tip 
 Always execute regardless of try success
 :::
+
+![Finally](../../../assets/Finally_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,8 @@ No input for the current command
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

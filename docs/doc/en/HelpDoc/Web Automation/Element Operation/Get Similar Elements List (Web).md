@@ -1,5 +1,6 @@
 ---
 title: Get Similar Elements List (Web)
+order: 10
 ---
 
 # Get Similar Elements List (Web)
@@ -10,47 +11,53 @@ title: Get Similar Elements List (Web)
 You can locate a set of similar elements on the web page through three methods: capturing the element, CSS, and XPath, and obtain their object or text information.
 :::
 
+![Get Similar Elements List (Web)](../../../assets/Get Similar Elements List (Web)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Output Similar Element Count**`Boolean`: Whether to output the count of similar elements.
-
-- **Attribute Name**`string`: The attribute name of the web element.
-
-- **Intelligently Identify and Supplement Address Prefix (http:// or https://)**`Boolean`: Intelligently identify and supplement address prefix.
-
-- **Element Operation**`Integer`: Information of the acquired element.
-
-- **Parent Element**`TTarget`: Search for the target element within the parent element.
-
-- **Related Parent Element**`Boolean`: Whether to associate with the parent element.
-
-- **XPath Selector**`string`: XPath Selector
-
-- **CSS Selector**`string`: CSS Selector
-
-- **Operation Target**`TTarget`: Select the web element you want to operate on.
+- **Web Page Object**`TBrowser`: Enter a web page object that has been obtained or created through the 'Open Web Page' function.
 
 - **Positioning Method**`Integer`: Positioning Method
 
-- **Web Page Object**`TBrowser`: Enter a web page object that has been obtained or created through the 'Open Web Page' function.
+- **Operation Target**`TTarget`: Select the web element you want to operate on.
+
+- **CSS Selector**`string`: CSS Selector
+
+- **XPath Selector**`string`: XPath Selector
+
+- **Related Parent Element**`Boolean`: Whether to associate with the parent element.
+
+- **Parent Element**`TTarget`: Search for the target element within the parent element.
+
+- **Element Operation**`Integer`: Information of the acquired element.
+
+- **Intelligently Identify and Supplement Address Prefix (http:// or https://)**`Boolean`: Intelligently identify and supplement address prefix.
+
+- **Attribute Name**`string`: The attribute name of the web element.
+
+- **Output Similar Element Count**`Boolean`: Whether to output the count of similar elements.
 
 
 **Command Output**
 
-- **Save Similar Element Count To**`Integer`: Save the count of similar elements obtained.
+- **Save Similar Element List To**`TList<TUiElement>`: Save the list of similar elements obtained.
 
 - **Save Similar Element List Information To**`TList<String>`: Save the information of the similar elements list obtained.
 
-- **Save Similar Element List To**`TList<TUiElement>`: Save the list of similar elements obtained.
+- **Save Similar Element Count To**`Integer`: Save the count of similar elements obtained.
 
 ### Advanced
 
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
 - **Wait for Element to Exist (Milliseconds)**`Integer`: The timeout period for waiting for the target associated element to exist.
 
+
+**Command Output**
 
 ### Error Handling
 

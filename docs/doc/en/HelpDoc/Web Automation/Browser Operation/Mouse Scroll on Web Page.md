@@ -1,5 +1,6 @@
 ---
 title: Mouse Scroll on Web Page
+order: 7
 ---
 
 # Mouse Scroll on Web Page
@@ -10,27 +11,29 @@ title: Mouse Scroll on Web Page
 Scroll the mouse in the specified web page, which can be set to scroll to the top, bottom, or a specific position
 :::
 
+![Mouse Scroll on Web Page](../../../assets/Mouse Scroll on Web Page_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Scroll Effect**`Integer`: Specify the scroll effect of the mouse
-
-- **Vertical Coordinate**`Integer`: The vertical coordinate where the mouse moves to the target position
-
-- **Horizontal Coordinate**`Integer`: The horizontal coordinate where the mouse moves to the target position
-
-- **Scroll Position**`Integer`: Specify the target position for web page scrolling
-
-- **If Element Has No Scrollbar, Search Upwards Automatically**`Boolean`: If the current element has no scrollbar, automatically search upwards for an element with a scrollbar
-
-- **Operation Target**`TTarget`: Select the web element to operate on
+- **Web Page Object**`TBrowser`: Enter a web page object that is obtained or created through the 'Open Web Page' function
 
 - **Scroll on Specified Element**`Boolean`: Scroll on the specified element
 
-- **Web Page Object**`TBrowser`: Enter a web page object that is obtained or created through the 'Open Web Page' function
+- **Operation Target**`TTarget`: Select the web element to operate on
+
+- **If Element Has No Scrollbar, Search Upwards Automatically**`Boolean`: If the current element has no scrollbar, automatically search upwards for an element with a scrollbar
+
+- **Scroll Position**`Integer`: Specify the target position for web page scrolling
+
+- **Horizontal Coordinate**`Integer`: The horizontal coordinate where the mouse moves to the target position
+
+- **Vertical Coordinate**`Integer`: The vertical coordinate where the mouse moves to the target position
+
+- **Scroll Effect**`Integer`: Specify the scroll effect of the mouse
 
 
 **Command Output**
@@ -41,6 +44,10 @@ No output for the current command
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout in milliseconds to wait for the element to exist
 
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

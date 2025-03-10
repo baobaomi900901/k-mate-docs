@@ -1,5 +1,6 @@
 ---
 title: Refresh Excel Data
+order: 2
 ---
 
 # Refresh Excel Data
@@ -9,6 +10,8 @@ title: Refresh Excel Data
 :::tip 
 Refresh the data in Excel
 :::
+
+![Refresh Excel Data](../../../../assets/Refresh Excel Data_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Refresh the data in Excel
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

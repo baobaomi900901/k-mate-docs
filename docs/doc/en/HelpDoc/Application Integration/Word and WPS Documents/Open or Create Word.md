@@ -1,5 +1,6 @@
 ---
 title: Open or Create Word
+order: 1
 ---
 
 # Open or Create Word
@@ -10,19 +11,21 @@ title: Open or Create Word
 Open an existing Word file or create a new one to automate Word operations
 :::
 
+![Open or Create Word](../../../assets/Open or Create Word_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Visible**`Boolean`: This option does not limit Word automation capabilities, it is used to control whether the operation is visible to the user. If running Word in non-visible mode, the Word file must be closed after saving
-
-- **Word File Path**`string`: Enter or select the path of the Word file to open
+- **Launch Method**`Integer`: Select whether to create a new Word file or open an existing one
 
 - **Driver Method**`Integer`: Select the driver method
 
-- **Launch Method**`Integer`: Select whether to create a new Word file or open an existing one
+- **Word File Path**`string`: Enter or select the path of the Word file to open
+
+- **Visible**`Boolean`: This option does not limit Word automation capabilities, it is used to control whether the operation is visible to the user. If running Word in non-visible mode, the Word file must be closed after saving
 
 
 **Command Output**
@@ -31,10 +34,14 @@ Open an existing Word file or create a new one to automate Word operations
 
 ### Advanced
 
-- **Edit Password**`string`: Password used to edit an encrypted Word file
-
 - **Open Password**`string`: Password used to open the encrypted Word file
 
+- **Edit Password**`string`: Password used to edit an encrypted Word file
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

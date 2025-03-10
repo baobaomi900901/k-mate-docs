@@ -1,5 +1,6 @@
 ---
 title: FTP File Upload
+order: 7
 ---
 
 # FTP File Upload
@@ -10,25 +11,33 @@ title: FTP File Upload
 Upload one or more local files to the FTP remote service path
 :::
 
+![FTP File Upload](../../../assets/FTP File Upload_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Upload Mode**`Integer`: How to handle existing files on the remote server when uploading the files
-
-- **Local File**`string`: The local file or list of files to be uploaded, separated by '|' for multiple files
+- **FTP Connection Object**`TFTP`: The FTP object to which the files will be uploaded
 
 - **Remote Path**`string`: The remote path where the local files will be uploaded
 
-- **FTP Connection Object**`TFTP`: The FTP object to which the files will be uploaded
+- **Local File**`string`: The local file or list of files to be uploaded, separated by '|' for multiple files
+
+- **Upload Mode**`Integer`: How to handle existing files on the remote server when uploading the files
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

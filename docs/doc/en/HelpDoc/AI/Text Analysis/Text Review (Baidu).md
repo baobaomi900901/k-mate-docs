@@ -1,5 +1,6 @@
 ---
 title: Text Review (Baidu)
+order: 7
 ---
 
 # Text Review (Baidu)
@@ -9,6 +10,8 @@ title: Text Review (Baidu)
 :::tip 
 Call Baidu AI for text review
 :::
+
+![Text Review (Baidu)](../../../assets/Text Review (Baidu)_command.png)
 
 ## Configuration Item Description
 
@@ -25,8 +28,14 @@ Call Baidu AI for text review
 
 ### Advanced
 
-- **Proxy Parameters**`string`: Proxy server, format as Address:Port
+- **Proxy Parameters**`string`: When our program cannot directly connect to the target network but the other party has installed a proxy server, format as Address:Port
 
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Retrieve Email
+order: 3
 ---
 
 # Retrieve Email
@@ -10,31 +11,33 @@ title: Retrieve Email
 Retrieve email from the specified mailbox
 :::
 
+![Retrieve Email](../../../assets/Retrieve Email_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Save Folder**`string`: Path to save attachments
-
-- **Save Email Attachments**`Boolean`: Whether to save email attachments
-
-- **Only Unread Emails**`Boolean`: Retrieve only unread emails
-
-- **Number of Emails**`Integer`: Retrieve the top N emails from the mailbox
-
-- **Authorization Code**`string`: The authorization code for IMAP server authentication, usually requires SMS verification to enable, some email services may use account password instead, depending on the email service provider
-
-- **Email Account**`string`: The user for IMAP server authentication, usually the email account
-
-- **Enable SSL**`Boolean`: Specify whether SSL should be used to send messages
-
-- **IMAP Port**`Integer`: Enter the specified IMAP port number
+- **Email Type**`Integer`: Send email messages using different email types
 
 - **IMAP Server**`string`: Enter the specified IMAP server
 
-- **Email Type**`Integer`: Send email messages using different email types
+- **IMAP Port**`Integer`: Enter the specified IMAP port number
+
+- **Enable SSL**`Boolean`: Specify whether SSL should be used to send messages
+
+- **Email Account**`string`: The user for IMAP server authentication, usually the email account
+
+- **Authorization Code**`string`: The authorization code for IMAP server authentication, usually requires SMS verification to enable, some email services may use account password instead, depending on the email service provider
+
+- **Number of Emails**`Integer`: Retrieve the top N emails from the mailbox
+
+- **Only Unread Emails**`Boolean`: Retrieve only unread emails
+
+- **Save Email Attachments**`Boolean`: Whether to save email attachments
+
+- **Save Folder**`string`: Path to save attachments
 
 
 **Command Output**
@@ -43,20 +46,22 @@ Retrieve email from the specified mailbox
 
 ### Advanced
 
-- **Content in Body**`string`: Content in the body of the email
-
-- **Content in Subject**`string`: Content in the subject line
-
-- **Content in Recipient**`string`: Content in the recipient field
-
-- **Content in Sender**`string`: Content in the sender field
+- **Folder Name**`string`: Folder name
 
 - **Mark as Read**`Boolean`: After retrieving emails, mark them as read
 
-- **Folder Name**`string`: Folder name
+- **Content in Sender**`string`: Content in the sender field
 
-- **Folder Specification Mode**`Integer`: Folder specification method
+- **Content in Recipient**`string`: Content in the recipient field
 
+- **Content in Subject**`string`: Content in the subject line
+
+- **Content in Body**`string`: Content in the body of the email
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

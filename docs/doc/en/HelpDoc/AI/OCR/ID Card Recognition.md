@@ -1,5 +1,6 @@
 ---
 title: ID Card Recognition
+order: 4
 ---
 
 # ID Card Recognition
@@ -10,37 +11,45 @@ title: ID Card Recognition
 Call the AI interface for ID card recognition
 :::
 
+![ID Card Recognition](../../../assets/ID Card Recognition_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Front and Back**`Integer`: Front: The side of the ID card with the photo; Back: The side of the ID card with the national emblem
-
-- **Recognition Object Type**`Integer`: Front of the ID card, Back of the ID card, Front and Back of the ID card
+- **Recognition Method**`Integer`: Select recognition method
 
 - **Image Path**`string`: Enter the image address to select
 
-- **Recognition Method**`Integer`: Select recognition method
+- **Recognition Object Type**`Integer`: Front of the ID card, Back of the ID card, Front and Back of the ID card
+
+- **Front and Back**`Integer`: Front: The side of the ID card with the photo; Back: The side of the ID card with the national emblem
 
 
 **Command Output**
 
-- **Error Information**`String`: Specify a variable to store the error information
-
-- **Response Body Information**`String`: Specify a variable to store the response body information
+- **Result**`string`: Specify a variable to store the recognition result
 
 - **Response Header Information**`String`: Specify a variable to store the response header information
 
-- **Result**`string`: Specify a variable to store the recognition result
+- **Response Body Information**`String`: Specify a variable to store the response body information
+
+- **Error Information**`String`: Specify a variable to store the error information
 
 ### Advanced
 
+- **Proxy Parameter**`string`: When our program cannot directly connect to the target network but the other party has installed a proxy server, format is Address:Port
+
 - **Response Header Type**`array of string`: When the server and client create a long connection, necessary settings need to be made to the HTTP response header's connection. Default is ['Connection']
 
-- **Proxy Parameter**`string`: Proxy server, format is Address:Port
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

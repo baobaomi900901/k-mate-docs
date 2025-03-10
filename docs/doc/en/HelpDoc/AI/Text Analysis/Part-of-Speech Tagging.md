@@ -1,5 +1,6 @@
 ---
 title: Part-of-Speech Tagging
+order: 5
 ---
 
 # Part-of-Speech Tagging
@@ -9,6 +10,8 @@ title: Part-of-Speech Tagging
 :::tip 
 Call the Kingsware AI interface for part-of-speech tagging (such as nouns, verbs, adjectives, prepositions, classifiers, etc.)
 :::
+
+![Part-of-Speech Tagging](../../../assets/Part-of-Speech Tagging_command.png)
 
 ## Configuration Item Description
 
@@ -21,16 +24,22 @@ Call the Kingsware AI interface for part-of-speech tagging (such as nouns, verbs
 
 **Command Output**
 
-- **Error Information**`String`: Return the error information
+- **Response Header Information**`String`: Return the response header information
 
 - **Response Body Information**`String`: Return the response body information
 
-- **Response Header Information**`String`: Return the response header information
+- **Error Information**`String`: Return the error information
 
 ### Advanced
 
 - **Response Header Type**`array of string`: When a long connection is created between the server and the client, necessary settings must be made for the HTTP response header's connection, default is ['Connection']
 
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

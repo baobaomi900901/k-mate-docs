@@ -1,5 +1,6 @@
 ---
 title: Set Json Array Node
+order: 7
 ---
 
 # Set Json Array Node
@@ -10,25 +11,33 @@ title: Set Json Array Node
 Set a node to the Json array
 :::
 
+![Set Json Array Node](../../../assets/Set Json Array Node_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Append**`Boolean`: If true, append to the array, ignoring the 'Node Index'
-
-- **Node Index**`Integer`: Node Index
+- **Json Object**`TJson`: Json Object
 
 - **Node Object**`TJson`: Node Object
 
-- **Json Object**`TJson`: Json Object
+- **Node Index**`Integer`: Node Index
+
+- **Append**`Boolean`: If true, append to the array, ignoring the 'Node Index'
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

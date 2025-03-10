@@ -1,5 +1,6 @@
 ---
 title: Select Tree Node (SAP)
+order: 3
 ---
 
 # Select Tree Node (SAP)
@@ -10,17 +11,19 @@ title: Select Tree Node (SAP)
 Expand the tree to display the target node, and then select the target node
 :::
 
+![Select Tree Node (SAP)](../../../assets/Select Tree Node (SAP)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Node Path**`string`: Node location path
+- **Window Object**`TWinObj`: Enter a retrieved SAP session window
 
 - **Tree Element**`TTarget`: Select the SAP tree element where the target node is located
 
-- **Window Object**`TWinObj`: Enter a retrieved SAP session window
+- **Node Path**`string`: Node location path
 
 
 **Command Output**
@@ -29,8 +32,12 @@ Expand the tree to display the target node, and then select the target node
 
 ### Advanced
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target tree element to exist
 
+
+**Command Output**
 
 ### Error Handling
 

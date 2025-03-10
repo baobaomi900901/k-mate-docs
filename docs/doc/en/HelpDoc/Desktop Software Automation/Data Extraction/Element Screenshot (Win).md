@@ -1,5 +1,6 @@
 ---
 title: Element Screenshot (Win)
+order: 1
 ---
 
 # Element Screenshot (Win)
@@ -10,25 +11,25 @@ title: Element Screenshot (Win)
 Take a screenshot of an element in the desktop software and save it to a specified file
 :::
 
+![Element Screenshot (Win)](../../../assets/Element Screenshot (Win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Overwrite file if it exists**`Boolean`: Overwrite file if it exists
-
-- **Custom file name**`string`: Custom file name
-
-- **Use automatic random file name**`Boolean`: Automatically generate a unique file name
-
-- **Save folder**`string`: The folder where the screenshot will be saved
-
-- **Save image to clipboard**`Boolean`: Save image to clipboard
+- **Window object**`TWinObj`: Enter a captured window object
 
 - **Operation target**`TTarget`: Select the window element
 
-- **Window object**`TWinObj`: Enter a captured window object
+- **Save image to clipboard**`Boolean`: Save image to clipboard
+
+- **Save folder**`string`: The folder where the screenshot will be saved
+
+- **Use automatic random file name**`Boolean`: Automatically generate a unique file name
+
+- **Custom file name**`string`: Custom file name
 
 
 **Command Output**
@@ -37,8 +38,12 @@ Take a screenshot of an element in the desktop software and save it to a specifi
 
 ### Advanced
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
+
+**Command Output**
 
 ### Error Handling
 

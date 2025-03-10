@@ -1,5 +1,6 @@
 ---
 title: Get Dropdown Options (web)
+order: 3
 ---
 
 # Get Dropdown Options (web)
@@ -10,17 +11,19 @@ title: Get Dropdown Options (web)
 Get the options of a dropdown in the web page
 :::
 
+![Get Dropdown Options (web)](../../../assets/Get Dropdown Options (web)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Get Content**`Integer`: Get Content
+- **Web Page Object**`TBrowser`: Input a web page object that has been obtained or created through the 'Open Web Page' function
 
 - **Operation Target**`TTarget`: Select the web element to be operated on
 
-- **Web Page Object**`TBrowser`: Input a web page object that has been obtained or created through the 'Open Web Page' function
+- **Get Content**`Integer`: Get Content
 
 
 **Command Output**
@@ -29,8 +32,12 @@ Get the options of a dropdown in the web page
 
 ### Advanced
 
+- **DelayBefore**`Integer`: 
+
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target dropdown to exist
 
+
+**Command Output**
 
 ### Error Handling
 

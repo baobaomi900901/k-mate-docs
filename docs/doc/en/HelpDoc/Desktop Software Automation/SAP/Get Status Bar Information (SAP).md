@@ -1,5 +1,6 @@
 ---
 title: Get Status Bar Information (SAP)
+order: 9
 ---
 
 # Get Status Bar Information (SAP)
@@ -10,27 +11,33 @@ title: Get Status Bar Information (SAP)
 This command is used to read the type and text of information from the status bar
 :::
 
+![Get Status Bar Information (SAP)](../../../assets/Get Status Bar Information (SAP)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Operation Target**`TTarget`: Select the SAP status bar element to be operated on
-
 - **Window Object**`TWinObj`: Enter a retrieved SAP session window
+
+- **Operation Target**`TTarget`: Select the SAP status bar element to be operated on
 
 
 **Command Output**
 
-- **Save Information Content To**`TObject`: Specify a variable to save the content of the information read
-
 - **Save Information Type To**`TObject`: Specify a variable to save the type of information read
+
+- **Save Information Content To**`TObject`: Specify a variable to save the content of the information read
 
 ### Advanced
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
+
+**Command Output**
 
 ### Error Handling
 

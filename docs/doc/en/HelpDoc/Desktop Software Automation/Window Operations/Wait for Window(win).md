@@ -1,5 +1,6 @@
 ---
 title: Wait for Window(win)
+order: 5
 ---
 
 # Wait for Window(win)
@@ -10,33 +11,41 @@ title: Wait for Window(win)
 Wait for the window state to change
 :::
 
+![Wait for Window(win)](../../../assets/Wait for Window(win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Timeout (ms)**`Integer`: Please enter the maximum waiting time
-
-- **Set timeout**`Boolean`: Whether to set a timeout
-
-- **Wait state**`Integer`: Choose the window state to wait for
-
-- **Window type**`string`: Enter the window type
-
-- **Add window type**`Boolean`: Add window type
-
-- **Window title**`string`: Enter the window title
+- **Method to get the window**`Integer`: Choose the method to get the window
 
 - **Operation target**`TTarget`: Select a window element
 
-- **Method to get the window**`Integer`: Choose the method to get the window
+- **Window title**`string`: Enter the window title
+
+- **Add window type**`Boolean`: Add window type
+
+- **Window type**`string`: Enter the window type
+
+- **Wait state**`Integer`: Choose the window state to wait for
+
+- **Set timeout**`Boolean`: Whether to set a timeout
+
+- **Timeout (ms)**`Integer`: Please enter the maximum waiting time
 
 
 **Command Output**
 
 - **waitResult**`Boolean`: 
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

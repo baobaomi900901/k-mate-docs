@@ -1,5 +1,6 @@
 ---
 title: Set dropdown (web)
+order: 4
 ---
 
 # Set dropdown (web)
@@ -10,21 +11,23 @@ title: Set dropdown (web)
 Set the selected item in a web dropdown. Only effective for `<select>` tags on the webpage.
 :::
 
+![Set dropdown (web)](../../../assets/Set dropdown (web)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Matching mode**`Integer`: The matching mode for the selected content.
-
-- **Selected value**`string`: Enter the option content or the option position.
-
-- **Selection type**`Integer`: Set the basis for selection.
+- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
 
 - **Operation target**`TTarget`: Select the web element to be operated on.
 
-- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
+- **Selection type**`Integer`: Set the basis for selection.
+
+- **Selected value**`string`: Enter the option content or the option position.
+
+- **Matching mode**`Integer`: The matching mode for the selected content.
 
 
 **Command Output**
@@ -33,10 +36,14 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target dropdown to exist.
-
 - **Delay time (ms)**`Integer`: Time to continue waiting after the command is executed.
 
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+- **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target dropdown to exist.
+
+
+**Command Output**
 
 ### Error Handling
 

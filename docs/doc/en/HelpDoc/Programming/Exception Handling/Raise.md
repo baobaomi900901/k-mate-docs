@@ -1,5 +1,6 @@
 ---
 title: Raise
+order: 5
 ---
 
 # Raise
@@ -9,6 +10,8 @@ title: Raise
 :::tip 
 Throw an exception
 :::
+
+![Raise](../../../assets/Raise_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,8 @@ Throw an exception
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

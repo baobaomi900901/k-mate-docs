@@ -1,5 +1,6 @@
 ---
 title: Get Selected Text
+order: 4
 ---
 
 # Get Selected Text
@@ -9,6 +10,8 @@ title: Get Selected Text
 :::tip 
 Get the currently selected text in the active window
 :::
+
+![Get Selected Text](../../../assets/Get Selected Text_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Get the currently selected text in the active window
 
 - **Save the selected text to**`string`: Specify a variable to save the selected text content
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: ERNIE Bot Chat Prompt Model
+order: 5
 ---
 
 # ERNIE Bot Chat Prompt Model
@@ -10,17 +11,19 @@ title: ERNIE Bot Chat Prompt Model
 Used to retrieve the content of templates from the Prompt project
 :::
 
+![ERNIE Bot Chat Prompt Model](../../../assets/ERNIE Bot Chat Prompt Model_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Variable Value**`string`: The value corresponding to the variable inserted into the Prompt template
+- **Template ID**`integer`: Enter the Prompt template ID, which can be obtained by creating a template on the Baidu Smart Cloud Qianfan Large Model Platform
 
 - **Variable Name**`string`: The name of the variable inserted into the Prompt template
 
-- **Template ID**`integer`: Enter the Prompt template ID, which can be obtained by creating a template on the Baidu Smart Cloud Qianfan Large Model Platform
+- **Variable Value**`string`: The value corresponding to the variable inserted into the Prompt template
 
 
 **Command Output**
@@ -29,10 +32,14 @@ Used to retrieve the content of templates from the Prompt project
 
 ### Advanced
 
-- **Proxy Parameters**`string`: Proxy server in the format Address:Port
-
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
 
+- **Proxy Parameters**`string`: When our program cannot directly connect to the target network but the other party has installed a proxy server in the format Address:Port
+
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

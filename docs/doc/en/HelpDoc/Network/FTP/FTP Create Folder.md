@@ -1,5 +1,6 @@
 ---
 title: FTP Create Folder
+order: 11
 ---
 
 # FTP Create Folder
@@ -10,21 +11,29 @@ title: FTP Create Folder
 Create a new folder on the remote server
 :::
 
+![FTP Create Folder](../../../assets/FTP Create Folder_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **New Folder**`string`: The name of the new folder to be created
-
 - **FTP**`TFTP`: 
+
+- **New Folder**`string`: The name of the new folder to be created
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

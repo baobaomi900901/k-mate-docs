@@ -1,5 +1,6 @@
 ---
 title: Run or Open
+order: 1
 ---
 
 # Run or Open
@@ -10,35 +11,39 @@ title: Run or Open
 Run software, open software, open folder, open website, execute system commands, etc.
 :::
 
+![Run or Open](../../assets/Run or Open_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Wait time**`Integer`: Maximum wait time
-
-- **Wait timeout**`Boolean`: If unchecked, it means wait indefinitely
+- **Path or Command**`string`: Open a program or file
 
 - **After command execution**`Integer`: Choose whether to continue executing commands or wait for program to finish, file to close
 
-- **Path or Command**`string`: Open a program or file
+- **Wait timeout**`Boolean`: If unchecked, it means wait indefinitely
+
+- **Wait time**`Integer`: Maximum wait time
 
 
 **Command Output**
 
-- **Save execution result to**`string`: Enter a name to save the execution result
+- **Save execution result to**`TRPADictionary`: Enter a name to save the execution result
 
 ### Advanced
 
-- **Window Style**`Integer`: Specify how the new window should be displayed
-
-- **Run as Administrator**`Boolean`: Whether to run as administrator
+- **Arguments (optional)**`string`: Additional arguments for program execution
 
 - **Working Directory (optional)**`string`: The working directory for the command in the process
 
-- **Arguments (optional)**`string`: Additional arguments for program execution
+- **Window Style**`Integer`: Specify how the new window should be displayed
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

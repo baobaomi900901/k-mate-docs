@@ -1,5 +1,6 @@
 ---
 title: Delete Json Object
+order: 13
 ---
 
 # Delete Json Object
@@ -10,21 +11,29 @@ title: Delete Json Object
 Delete a node from the Json object
 :::
 
+![Delete Json Object](../../../assets/Delete Json Object_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Node Path**`string`: Path of the node to be deleted
-
 - **Json Object**`TJson`: Json Object
+
+- **Node Path**`string`: Path of the node to be deleted
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

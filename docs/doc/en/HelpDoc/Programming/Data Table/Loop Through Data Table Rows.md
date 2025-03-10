@@ -1,5 +1,6 @@
 ---
 title: Loop Through Data Table Rows
+order: 20
 ---
 
 # Loop Through Data Table Rows
@@ -9,6 +10,8 @@ title: Loop Through Data Table Rows
 :::tip 
 Loop through each row in the data table.
 :::
+
+![Loop Through Data Table Rows](../../../assets/Loop Through Data Table Rows_command.png)
 
 ## Configuration Item Description
 
@@ -21,10 +24,12 @@ Loop through each row in the data table.
 
 **Command Output**
 
-- **Index**`Integer`: The output row index.
-
 - **Row Object**`TDataRow`: The output row object.
 
+- **Index**`Integer`: The output row index.
+
+
+**Command Output**
 
 ### Error Handling
 

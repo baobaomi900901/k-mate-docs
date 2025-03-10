@@ -1,5 +1,6 @@
 ---
 title: Input Character
+order: 2
 ---
 
 # Input Character
@@ -10,15 +11,17 @@ title: Input Character
 Input text to the currently active window
 :::
 
+![Input Character](../../assets/Input Character_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Clear Field**`Boolean`: If checked, clear the content before inputting
-
 - **Text Content**`string`: Input text content
+
+- **Clear Field**`Boolean`: If checked, clear the content before inputting
 
 
 **Command Output**
@@ -29,6 +32,10 @@ No output for the current command
 
 - **Key Input Interval (Milliseconds)**`Integer`: Time interval between two key presses
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

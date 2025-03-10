@@ -1,5 +1,6 @@
 ---
 title: Wait for Page Load to Complete
+order: 2
 ---
 
 # Wait for Page Load to Complete
@@ -10,23 +11,31 @@ title: Wait for Page Load to Complete
 Wait for the web page to load completely
 :::
 
+![Wait for Page Load to Complete](../../../assets/Wait for Page Load to Complete_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Action if Timeout**`Integer`: The action to perform if the page load times out
+- **Webpage Object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
 
 - **Load Timeout (milliseconds)**`Integer`: The timeout for the page to load completely
 
-- **Webpage Object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
+- **Action if Timeout**`Integer`: The action to perform if the page load times out
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

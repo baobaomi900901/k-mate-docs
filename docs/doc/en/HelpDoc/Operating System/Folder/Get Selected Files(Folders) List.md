@@ -1,5 +1,6 @@
 ---
 title: Get Selected Files(Folders) List
+order: 2
 ---
 
 # Get Selected Files(Folders) List
@@ -9,6 +10,8 @@ title: Get Selected Files(Folders) List
 :::tip 
 Get the list of selected files or folders in the currently active file explorer (if the desktop is active, the target is the desktop)
 :::
+
+![Get Selected Files(Folders) List](../../../assets/Get Selected Files(Folders) List_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Get the list of selected files or folders in the currently active file explorer 
 
 - **Save Files(Folders) List To**`TList<String>`: Enter a name to save the files(folders) list
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

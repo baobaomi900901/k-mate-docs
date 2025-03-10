@@ -1,5 +1,6 @@
 ---
 title: Merge PDF documents
+order: 4
 ---
 
 # Merge PDF documents
@@ -10,17 +11,19 @@ title: Merge PDF documents
 This instruction is used to merge multiple PDF documents and save them as a new document. Before using it, please install the PDF plugin in [Settings] - [Plugin Center].
 :::
 
+![Merge PDF documents](../../../assets/Merge PDF documents_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **If the file already exists**`Integer`: Please choose how to handle the case when the target file already exists.
+- **List of files to be merged**`string`: You can select multiple files at once. Separate file paths with the '|' symbol.
 
 - **Save the merged file to**`string`: Please enter the path to save the merged file.
 
-- **List of files to be merged**`string`: You can select multiple files at once. Separate file paths with the '|' symbol.
+- **If the file already exists**`Integer`: Please choose how to handle the case when the target file already exists.
 
 
 **Command Output**
@@ -29,12 +32,16 @@ This instruction is used to merge multiple PDF documents and save them as a new 
 
 ### Advanced
 
-- **Delimiter**`string`: Set the delimiter between passwords.
+- **Use password protection**`Boolean`: Choose whether the files to be merged include any that require password protection.
 
 - **Password**`string`: Enter the password for each file to be merged. Enter the passwords in the order the files are added, and separate them with the specified delimiter. For example, if the files to be merged are file1.pdf (no password) and file2.pdf (requires password), and the delimiter is ';', enter ';password for file2.pdf' in the password box.
 
-- **Use password protection**`Boolean`: Choose whether the files to be merged include any that require password protection.
+- **Delimiter**`string`: Set the delimiter between passwords.
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

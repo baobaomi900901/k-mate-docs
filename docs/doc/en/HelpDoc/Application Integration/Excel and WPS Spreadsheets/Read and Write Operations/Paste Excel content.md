@@ -1,5 +1,6 @@
 ---
 title: Paste Excel content
+order: 3
 ---
 
 # Paste Excel content
@@ -10,33 +11,41 @@ title: Paste Excel content
 Paste Excel content
 :::
 
+![Paste Excel content](../../../../assets/Paste Excel content_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet name**`string`: If empty, it defaults to the currently active sheet
+- **Excel object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
 
-- **Transpose**`Boolean`: Whether to transpose
+- **Unit row number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
 
-- **Skip empty cells**`Boolean`: Whether to skip empty cells
-
-- **Selective paste operation**`Integer`: Selective paste operation
+- **Unit column name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
 
 - **Selective paste**`Integer`: Selective paste
 
-- **Unit column name**`string`: Column name. Starting from A
+- **Selective paste operation**`Integer`: Selective paste operation
 
-- **Unit row number**`Integer`: Row number. Starting from 1
+- **Skip empty cells**`Boolean`: Whether to skip empty cells
 
-- **Excel object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+- **Transpose**`Boolean`: Whether to transpose
+
+- **Sheet name**`string`: If empty, it defaults to the currently active sheet
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

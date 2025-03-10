@@ -1,5 +1,6 @@
 ---
 title: Notification
+order: 7
 ---
 
 # Notification
@@ -10,19 +11,21 @@ title: Notification
 Open or close the notification dialog box
 :::
 
+![Notification](../../../assets/Notification_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Content**`string`: 
-
-- **Placement**`Integer`: 
+- **Operation Type**`Integer`: Choose to open or close the notification
 
 - **Message Type**`Integer`: The type of message displayed in the notification, including: Information, Warning, Error
 
-- **Operation Type**`Integer`: Choose to open or close the notification
+- **Message Position**`Integer`: The position of the notification on the screen, such as: Top, Bottom, Bottom-Right
+
+- **Message Content**`string`: The information to be displayed to the user in the notification dialog box
 
 
 **Command Output**
@@ -31,8 +34,10 @@ No output for the current command
 
 ### Advanced
 
-- **Timeout**`Integer`: 
+- **Close Timeout (milliseconds)**`Integer`: The duration for which the notification is displayed, default is 3000 milliseconds
 
+
+**Command Output**
 
 ### Error Handling
 

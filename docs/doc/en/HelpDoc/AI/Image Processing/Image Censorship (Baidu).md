@@ -1,5 +1,6 @@
 ---
 title: Image Censorship (Baidu)
+order: 1
 ---
 
 # Image Censorship (Baidu)
@@ -9,6 +10,8 @@ title: Image Censorship (Baidu)
 :::tip 
 Call Baidu AI API to check if the image complies with regulations
 :::
+
+![Image Censorship (Baidu)](../../../assets/Image Censorship (Baidu)_command.png)
 
 ## Configuration Item Description
 
@@ -25,8 +28,14 @@ Call Baidu AI API to check if the image complies with regulations
 
 ### Advanced
 
-- **Proxy Parameters**`string`: Proxy server, in the format of address:port
+- **Proxy Parameters**`string`: When our program cannot directly connect to the target network but the other party has installed a proxy server, in the format of address:port
 
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

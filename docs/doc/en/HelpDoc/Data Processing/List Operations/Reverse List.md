@@ -1,5 +1,6 @@
 ---
 title: Reverse List
+order: 14
 ---
 
 # Reverse List
@@ -9,6 +10,8 @@ title: Reverse List
 :::tip 
 This command is used to reverse a list
 :::
+
+![Reverse List](../../../assets/Reverse List_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,8 @@ This command is used to reverse a list
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

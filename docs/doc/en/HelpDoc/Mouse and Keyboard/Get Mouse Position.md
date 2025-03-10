@@ -1,5 +1,6 @@
 ---
 title: Get Mouse Position
+order: 5
 ---
 
 # Get Mouse Position
@@ -9,6 +10,8 @@ title: Get Mouse Position
 :::tip 
 Get the position of the mouse when this instruction is executed during the robot's runtime
 :::
+
+![Get Mouse Position](../../assets/Get Mouse Position_command.png)
 
 ## Configuration Item Description
 
@@ -21,10 +24,16 @@ Get the position of the mouse when this instruction is executed during the robot
 
 **Command Output**
 
-- **Relative vertical coordinate**`Integer`: Specify a variable to store the vertical coordinate of the current mouse position
-
 - **Relative horizontal coordinate**`Integer`: Specify a variable to store the horizontal coordinate of the current mouse position
 
+- **Relative vertical coordinate**`Integer`: Specify a variable to store the vertical coordinate of the current mouse position
+
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

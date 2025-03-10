@@ -1,5 +1,6 @@
 ---
 title: Insert Table in Word
+order: 9
 ---
 
 # Insert Table in Word
@@ -10,25 +11,33 @@ title: Insert Table in Word
 Insert a table in a Word document
 :::
 
+![Insert Table in Word](../../../assets/Insert Table in Word_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Line break before inserting table**`Boolean`: If checked, a line break will be inserted before the table
+- **Word Object**`TDocumentApplication`: Enter a Word object created using the 'Open or Create Word' function
+
+- **Table Data**`TDataTable`: Enter a data table variable
 
 - **Does the table have borders?**`Boolean`: If checked, the table will have borders
 
-- **Table Data**`TDataTable`: The data format of the content needs to correspond to the range, with content for rows, columns, and areas provided as a list
-
-- **Word Object**`TDocumentApplication`: Enter a Word object created using the 'Open or Create Word' function
+- **Line break before inserting table**`Boolean`: If checked, a line break will be inserted before the table
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

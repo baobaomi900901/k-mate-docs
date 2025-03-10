@@ -1,5 +1,6 @@
 ---
 title: Delete Duplicate Rows
+order: 11
 ---
 
 # Delete Duplicate Rows
@@ -7,8 +8,10 @@ title: Delete Duplicate Rows
 ## Function Description
 
 :::tip 
-Achieve the function of deleting duplicate values in Excel
+Implement the function of deleting duplicate rows in Excel
 :::
+
+![Delete Duplicate Rows](../../../../assets/Delete Duplicate Rows_command.png)
 
 ## Configuration Item Description
 
@@ -16,21 +19,27 @@ Achieve the function of deleting duplicate values in Excel
 
 **Command Input**
 
-- **Data Contains Header**`Boolean`: When checked, the first row is a header and does not participate in the duplicate calculation
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+
+- **Column Name with Duplicate Values**`string`: Enter the column name (supports A or 1), use A,B,C or A:C for multiple columns, if not filled in, it means all columns
+
+- **Starting Row Number**`Integer`: Optional, defaults to the first line, -N represents the Nth to last row
 
 - **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
-- **Starting Row Number**`Integer`: Row number. Starts from 1
-
-- **Column Name with Duplicate Values**`string`: Column name. Starts from A
-
-- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Data Contains Header**`Boolean`: When checked, the first row is a header and does not participate in the duplicate calculation
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

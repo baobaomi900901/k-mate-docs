@@ -1,5 +1,6 @@
 ---
 title: Get Json Data Type
+order: 4
 ---
 
 # Get Json Data Type
@@ -9,6 +10,8 @@ title: Get Json Data Type
 :::tip 
 Get the data type of the Json object
 :::
+
+![Get Json Data Type](../../../assets/Get Json Data Type_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Get the data type of the Json object
 
 - **Data Type**`string`: Data Type
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

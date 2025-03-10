@@ -1,5 +1,6 @@
 ---
 title: Get Json Object
+order: 11
 ---
 
 # Get Json Object
@@ -10,23 +11,31 @@ title: Get Json Object
 Get a node from the Json object
 :::
 
+![Get Json Object](../../../assets/Get Json Object_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Special Characters**`Boolean`: Check this box if the Key contains certain special characters.
+- **Json Object**`TJson`: Json Object
 
 - **Key**`string`: Key
 
-- **Json Object**`TJson`: Json Object
+- **Special Characters**`Boolean`: Check this box if the Key contains certain special characters.
 
 
 **Command Output**
 
 - **Node Object**`TJson`: Node Object
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

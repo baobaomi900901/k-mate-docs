@@ -1,5 +1,6 @@
 ---
 title: Start Transaction (SAP)
+order: 8
 ---
 
 # Start Transaction (SAP)
@@ -9,6 +10,8 @@ title: Start Transaction (SAP)
 :::tip 
 Execute a transaction
 :::
+
+![Start Transaction (SAP)](../../../assets/Start Transaction (SAP)_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Execute a transaction
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

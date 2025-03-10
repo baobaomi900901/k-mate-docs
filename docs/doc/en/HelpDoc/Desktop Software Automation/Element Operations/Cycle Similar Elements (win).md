@@ -1,5 +1,6 @@
 ---
 title: Cycle Similar Elements (win)
+order: 10
 ---
 
 # Cycle Similar Elements (win)
@@ -10,37 +11,41 @@ title: Cycle Similar Elements (win)
 Sequentially cycle through each item in the similar elements list of the desktop software window for automation operations.
 :::
 
+![Cycle Similar Elements (win)](../../../assets/Cycle Similar Elements (win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Output Loop Item Position**`Boolean`: Whether to output the position of the loop item.
-
-- **Attribute Name**`string`: Element attribute name.
-
-- **Element Operation**`Integer`: Operate on element information.
+- **Window Object**`TWinObj`: Enter a captured window object.
 
 - **Operation Target**`TTarget`: Select the window element that needs to be operated on.
 
-- **Window Object**`TWinObj`: Enter a captured window object.
+- **Element Operation**`Integer`: Operate on element information.
+
+- **Attribute Name**`string`: Element attribute name.
+
+- **Output Loop Item Position**`Boolean`: Whether to output the position of the loop item.
 
 
 **Command Output**
 
-- **Save Current Loop Position To**`Integer`: Save the count of obtained similar elements.
-
 - **Save Current Loop Item To**`TUiElement`: Specify a variable name to store current loop item information.
+
+- **Save Current Loop Position To**`Integer`: Save the count of obtained similar elements.
 
 ### Advanced
 
-- **Wait for Element to Exist (ms)**`Integer`: Timeout time for waiting for the target associated element to exist.
+- **Loop Start Position**`Integer`: Loop start position, 0 is the first item.
 
 - **Loop End Position**`Integer`: Loop end position, -1 is the last item.
 
-- **Loop Start Position**`Integer`: Loop start position, 0 is the first item.
+- **Wait for Element to Exist (ms)**`Integer`: Timeout time for waiting for the target associated element to exist.
 
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Get Element Object (win)
+order: 7
 ---
 
 # Get Element Object (win)
@@ -10,19 +11,21 @@ title: Get Element Object (win)
 Get the specific data item of an element in the window, which can be used for content extraction and value setting automation operations
 :::
 
+![Get Element Object (win)](../../../assets/Get Element Object (win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Parent element**`TTarget`: Search for the target element within the specified parent element
-
-- **Associated parent element**`Boolean`: Whether to associate with the parent element
+- **Window object**`TWinObj`: Enter a captured window object
 
 - **Operation target**`TTarget`: Select the window element to operate on
 
-- **Window object**`TWinObj`: Enter a captured window object
+- **Associated parent element**`Boolean`: Whether to associate with the parent element
+
+- **Parent element**`TTarget`: Search for the target element within the specified parent element
 
 
 **Command Output**
@@ -31,8 +34,12 @@ Get the specific data item of an element in the window, which can be used for co
 
 ### Advanced
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
+
+**Command Output**
 
 ### Error Handling
 

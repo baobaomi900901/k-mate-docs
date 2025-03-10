@@ -1,5 +1,6 @@
 ---
 title: Hover the mouse over an element (win)
+order: 4
 ---
 
 # Hover the mouse over an element (win)
@@ -10,15 +11,17 @@ title: Hover the mouse over an element (win)
 Hover the mouse over an element in the window
 :::
 
+![Hover the mouse over an element (win)](../../assets/Hover the mouse over an element (win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Operation Target**`TTarget`: Select the window element to operate on
-
 - **Window Object**`TWinObj`: The acquired window object
+
+- **Operation Target**`TTarget`: Select the window element to operate on
 
 
 **Command Output**
@@ -27,20 +30,24 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for the element to exist (ms)**`Integer`: Timeout for waiting for the element to exist
+- **Send Window Messages**`Boolean`: Send window messages to hover
 
-- **Vertical Translation**`Integer`: Enter a positive number to move down, and a negative number to move up
-
-- **OoffsetX**`Integer`: 
-
-- **Custom**`Integer`: Custom position
-
-- **Position of the target text**`Integer`: Supports clicking at the center of the element (center point of the element's rectangular area), a random position (automatically specifying a point within the element's rectangular range), and a custom position (manually specifying the target point)
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Delay After Execution (ms)**`Integer`: Time to continue waiting after the command execution is completed
 
-- **Send Window Messages**`Boolean`: Send window messages to hover
+- **Position of the target text**`Integer`: Supports clicking at the center of the element (center point of the element's rectangular area), a random position (automatically specifying a point within the element's rectangular range), and a custom position (manually specifying the target point)
 
+- **Custom**`Integer`: Custom position
+
+- **Horizontal Translation**`Integer`: Enter a positive number to move right, and a negative number to move left
+
+- **Vertical Translation**`Integer`: Enter a positive number to move down, and a negative number to move up
+
+- **Wait for the element to exist (ms)**`Integer`: Timeout for waiting for the element to exist
+
+
+**Command Output**
 
 ### Error Handling
 

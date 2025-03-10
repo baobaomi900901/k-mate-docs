@@ -1,5 +1,6 @@
 ---
 title: Get Window Info
+order: 1
 ---
 
 # Get Window Info
@@ -10,35 +11,43 @@ title: Get Window Info
 Get window text content, process, title, and other information
 :::
 
+![Get Window Info](../../../assets/Get Window Info_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Operation**`Integer`: Window operation mode
-
-- **Window Handle**`Integer`: Enter a window handle
-
-- **Match by Wildcard**`Boolean`: Match by wildcard
-
-- **Window Type**`string`: Enter the window type
-
-- **Add Window Type**`Boolean`: Add window type
-
-- **Window Title**`string`: Enter the window title
-
-- **Operation Target**`TTarget`: Select a window element
+- **Window Retrieval Method**`Integer`: Select the window retrieval method
 
 - **Window Object**`TWinObj`: Enter a window object
 
-- **Window Retrieval Method**`Integer`: Select the window retrieval method
+- **Operation Target**`TTarget`: Select a window element
+
+- **Window Title**`string`: Enter the window title
+
+- **Add Window Type**`Boolean`: Add window type
+
+- **Window Type**`string`: Enter the window type
+
+- **Match by Wildcard**`Boolean`: Match by wildcard
+
+- **Window Handle**`Integer`: Enter a window handle
+
+- **Operation**`Integer`: Window operation mode
 
 
 **Command Output**
 
 - **Save Window Info To**`string`: The saved window property object
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

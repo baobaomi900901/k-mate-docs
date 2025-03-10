@@ -1,5 +1,6 @@
 ---
 title: Take Web Screenshot
+order: 1
 ---
 
 # Take Web Screenshot
@@ -10,27 +11,27 @@ title: Take Web Screenshot
 Take a screenshot of the specified area and save it to a file or add it to the clipboard.
 :::
 
+![Take Web Screenshot](../../../assets/Take Web Screenshot_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Overwrite If File Exists**`Boolean`: Overwrite If File Exists
-
-- **Custom File Name**`string`: Custom file name.
-
-- **Use Unique File Names**`Boolean`: Automatically generate non-repeating file names.
-
-- **Save Folder**`string`: The folder where the screenshot is saved.
-
-- **Save Image to Clipboard**`Boolean`: Save the image to the clipboard.
-
-- **Operation Target**`TTarget`: Select the web page element to be operated on.
+- **Web Page Object**`TBrowser`: Input an obtained or created web page object using the 'Open Web Page' function.
 
 - **Screenshot Area**`Integer`: Three types of areas:
 
-- **Web Page Object**`TBrowser`: Input an obtained or created web page object using the 'Open Web Page' function.
+- **Operation Target**`TTarget`: Select the web page element to be operated on.
+
+- **Save Image to Clipboard**`Boolean`: Save the image to the clipboard.
+
+- **Save Folder**`string`: The folder where the screenshot is saved.
+
+- **Use Unique File Names**`Boolean`: Automatically generate non-repeating file names.
+
+- **Custom File Name**`string`: Custom file name.
 
 
 **Command Output**
@@ -39,8 +40,12 @@ Take a screenshot of the specified area and save it to a file or add it to the c
 
 ### Advanced
 
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist.
 
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Get Current Date and Time
+order: 1
 ---
 
 # Get Current Date and Time
@@ -9,6 +10,8 @@ title: Get Current Date and Time
 :::tip 
 Get the current date and time
 :::
+
+![Get Current Date and Time](../../../assets/Get Current Date and Time_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ No input for the current command
 
 - **Save Current Date To**`TDateTime`: Specify a variable to save the current date and time
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

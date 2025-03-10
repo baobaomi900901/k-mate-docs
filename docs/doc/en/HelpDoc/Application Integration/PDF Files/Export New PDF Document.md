@@ -1,5 +1,6 @@
 ---
 title: Export New PDF Document
+order: 3
 ---
 
 # Export New PDF Document
@@ -10,25 +11,27 @@ title: Export New PDF Document
 This command is used to extract part of the content from the current PDF file and save it as a new PDF document. Please install the PDF plugin first from [Settings] - [Plugin Center] before use.
 :::
 
+![Export New PDF Document](../../../assets/Export New PDF Document_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **If File Exists**`Integer`: Please select the file saving method when the file already exists
-
-- **Save New File To**`string`: Please enter the save path for the new file
-
-- **End Page Number**`Integer`: Please enter the end page number to extract. The page index starts from 1
-
-- **Start Page Number**`Integer`: Please enter the start page number to extract. The page index starts from 1
-
-- **Page Number**`Integer`: Please enter the page number to be exported. The page index starts from 1
+- **Original File Path**`string`: Please enter the original file path
 
 - **Extract Range**`Integer`: Select the page range to extract
 
-- **Original File Path**`string`: Please enter the original file path
+- **Page Number**`Integer`: Please enter the page number to be exported. The page index starts from 1
+
+- **Start Page Number**`Integer`: Please enter the start page number to extract. The page index starts from 1
+
+- **End Page Number**`Integer`: Please enter the end page number to extract. The page index starts from 1
+
+- **Save New File To**`string`: Please enter the save path for the new file
+
+- **If File Exists**`Integer`: Please select the file saving method when the file already exists
 
 
 **Command Output**
@@ -37,10 +40,14 @@ This command is used to extract part of the content from the current PDF file an
 
 ### Advanced
 
-- **Password**`string`: Password required to open the file
-
 - **Use Password**`Boolean`: Whether a password is required to open the file
 
+- **Password**`string`: Password required to open the file
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

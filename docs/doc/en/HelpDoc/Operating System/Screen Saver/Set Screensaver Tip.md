@@ -1,5 +1,6 @@
 ---
 title: Set Screensaver Tip
+order: 2
 ---
 
 # Set Screensaver Tip
@@ -10,6 +11,8 @@ title: Set Screensaver Tip
 Set the tip text displayed on the screensaver
 :::
 
+![Set Screensaver Tip](../../../assets/Set Screensaver Tip_command.png)
+
 ## Configuration Item Description
 
 ### General
@@ -18,13 +21,17 @@ Set the tip text displayed on the screensaver
 
 - **Screensaver Tip**`string`: Set the text displayed on the screensaver
 
-- **Edit Text Format**`string`: Tip Settings
-
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

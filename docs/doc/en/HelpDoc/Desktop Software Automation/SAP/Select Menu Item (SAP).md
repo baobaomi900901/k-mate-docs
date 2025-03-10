@@ -1,5 +1,6 @@
 ---
 title: Select Menu Item (SAP)
+order: 10
 ---
 
 # Select Menu Item (SAP)
@@ -10,17 +11,19 @@ title: Select Menu Item (SAP)
 Select a menu item from the menu bar
 :::
 
+![Select Menu Item (SAP)](../../../assets/Select Menu Item (SAP)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Menu Item**`string`: Path of the menu item
+- **Window Object**`TWinObj`: Enter a retrieved SAP session window
 
 - **Operation Target**`TTarget`: Select the SAP menu bar element to be operated on
 
-- **Window Object**`TWinObj`: Enter a retrieved SAP session window
+- **Menu Item**`string`: Path of the menu item
 
 
 **Command Output**
@@ -29,8 +32,12 @@ No output for the current command
 
 ### Advanced
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
+
+**Command Output**
 
 ### Error Handling
 

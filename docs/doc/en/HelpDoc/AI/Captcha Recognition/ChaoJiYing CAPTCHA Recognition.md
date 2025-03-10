@@ -1,5 +1,6 @@
 ---
 title: ChaoJiYing CAPTCHA Recognition
+order: 2
 ---
 
 # ChaoJiYing CAPTCHA Recognition
@@ -10,17 +11,19 @@ title: ChaoJiYing CAPTCHA Recognition
 Call the ChaoJiYing AI API for CAPTCHA recognition
 :::
 
+![ChaoJiYing CAPTCHA Recognition](../../../assets/ChaoJiYing CAPTCHA Recognition_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Error return score**`Boolean`: Report that the recognition result of a specific image ID is incorrect to the server, which will return the points or attempts to the user.
+- **Image File**`string`: Enter or select the image path
 
 - **CAPTCHA Type**`Integer`: Select the captcha type to identify
 
-- **Image File**`string`: Enter or select the image path
+- **Error return score**`Boolean`: Report that the recognition result of a specific image ID is incorrect to the server, which will return the points or attempts to the user.
 
 
 **Command Output**
@@ -29,14 +32,20 @@ Call the ChaoJiYing AI API for CAPTCHA recognition
 
 ### Advanced
 
-- **Software ID**`string`: Software ID, defaults to reading the configuration file
-
-- **User password**`string`: User password, defaults to reading the configuration file
+- **Proxy parameters**`string`: When our program cannot directly connect to the target network but the other party has installed a proxy server, format: address:port
 
 - **User account**`string`: User account, defaults to reading the configuration file
 
-- **Proxy parameters**`string`: Proxy server, format: address:port
+- **User password**`string`: User password, defaults to reading the configuration file
 
+- **Software ID**`string`: Software ID, defaults to reading the configuration file
+
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Terminate Process
+order: 3
 ---
 
 # Terminate Process
@@ -10,23 +11,31 @@ title: Terminate Process
 Used to terminate a running program
 :::
 
+![Terminate Process](../../assets/Terminate Process_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Process ID**`Integer`: ID of the process to be terminated
+- **Termination Method**`Integer`: Choose whether to terminate the process by process ID or process name
 
 - **Process Name**`string`: Name of the process to be terminated
 
-- **Termination Method**`Integer`: Choose whether to terminate the process by process ID or process name
+- **Process ID**`Integer`: ID of the process to be terminated
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

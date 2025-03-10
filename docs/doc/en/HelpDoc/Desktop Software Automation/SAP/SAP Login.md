@@ -1,5 +1,6 @@
 ---
 title: SAP Login
+order: 2
 ---
 
 # SAP Login
@@ -10,33 +11,41 @@ title: SAP Login
 SAP Login
 :::
 
+![SAP Login](../../../assets/SAP Login_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Timeout**`Integer`: Timeout
-
-- **Multiple Login Options**`Integer`: Multiple Login Options
-
-- **Language**`string`: Language
-
-- **Secure Password**`string`: Secure Password
-
-- **Password**`string`: Password
-
-- **Username**`string`: Username
+- **Target**`TTarget`: Target
 
 - **Client**`string`: Client
 
-- **Target**`TTarget`: Target
+- **Username**`string`: Username
+
+- **Password**`string`: Password
+
+- **Secure Password**`string`: Secure Password
+
+- **Language**`string`: Language
+
+- **Multiple Login Options**`Integer`: Multiple Login Options
+
+- **Timeout**`Integer`: Timeout
 
 
 **Command Output**
 
 - **SAP Session Window**`TUiElement`: Specify a variable to save the SAP session window
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Close Database
+order: 4
 ---
 
 # Close Database
@@ -9,6 +10,8 @@ title: Close Database
 :::tip 
 Close the database
 :::
+
+![Close Database](../../../assets/Close Database_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Close the database
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

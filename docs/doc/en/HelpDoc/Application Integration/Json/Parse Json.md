@@ -1,5 +1,6 @@
 ---
 title: Parse Json
+order: 2
 ---
 
 # Parse Json
@@ -10,25 +11,33 @@ title: Parse Json
 Parse a string or file to generate a Json object
 :::
 
+![Parse Json](../../../assets/Parse Json_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Handle Type**`Integer`: Json handling type, default uses original logic, second option uses uLkJSON handling logic.
-
-- **Encoding**`Integer`: File encoding
+- **Input**`string`: Input Json string or Json file
 
 - **Parse Type**`Integer`: Select parse method: file/string
 
-- **Input**`string`: Input Json string or Json file
+- **Encoding**`Integer`: File encoding
+
+- **Handle Type**`Integer`: Json handling type, default uses original logic, second option uses uLkJSON handling logic.
 
 
 **Command Output**
 
 - **Json Object**`TJson`: Returned Json object
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

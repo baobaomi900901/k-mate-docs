@@ -1,5 +1,6 @@
 ---
 title: Stop Listening to Web Requests
+order: 10
 ---
 
 # Stop Listening to Web Requests
@@ -9,6 +10,8 @@ title: Stop Listening to Web Requests
 :::tip 
 Stop listening to web requests.
 :::
+
+![Stop Listening to Web Requests](../../../assets/Stop Listening to Web Requests_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Stop listening to web requests.
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Set element value (web)
+order: 6
 ---
 
 # Set element value (web)
@@ -10,17 +11,19 @@ title: Set element value (web)
 Set the value of an element on the webpage, typically for input and select elements.
 :::
 
+![Set element value (web)](../../../assets/Set element value (web)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Element value**`string`: Enter the value to be set for the element.
+- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
 
 - **Operation target**`TTarget`: Select the web element to be operated on.
 
-- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
+- **Element value**`string`: Enter the value to be set for the element.
 
 
 **Command Output**
@@ -29,8 +32,12 @@ No output for the current command
 
 ### Advanced
 
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
 - **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target element to exist.
 
+
+**Command Output**
 
 ### Error Handling
 

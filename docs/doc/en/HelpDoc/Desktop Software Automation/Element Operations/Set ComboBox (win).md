@@ -1,5 +1,6 @@
 ---
 title: Set ComboBox (win)
+order: 4
 ---
 
 # Set ComboBox (win)
@@ -10,21 +11,23 @@ title: Set ComboBox (win)
 Set the selected item in the window's ComboBox
 :::
 
+![Set ComboBox (win)](../../../assets/Set ComboBox (win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Matching mode**`Integer`: Content matching mode
-
-- **Selection value**`string`: Option content or position
-
-- **Selection method**`Integer`: Choose whether to select by option content or position
+- **Window object**`TWinObj`: Enter a captured window object
 
 - **Target for operation**`TTarget`: Select the window element to operate on
 
-- **Window object**`TWinObj`: Enter a captured window object
+- **Selection method**`Integer`: Choose whether to select by option content or position
+
+- **Selection value**`string`: Option content or position
+
+- **Matching mode**`Integer`: Content matching mode
 
 
 **Command Output**
@@ -33,10 +36,14 @@ No output for the current command
 
 ### Advanced
 
-- **Timeout (milliseconds)**`Integer`: Set the maximum wait time
-
 - **Delay after execution (milliseconds)**`Integer`: Time to continue waiting after command execution
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (milliseconds)**`Integer`: Set the maximum wait time
+
+
+**Command Output**
 
 ### Error Handling
 

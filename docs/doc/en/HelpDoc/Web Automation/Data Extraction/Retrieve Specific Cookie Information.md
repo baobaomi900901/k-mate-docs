@@ -1,5 +1,6 @@
 ---
 title: Retrieve Specific Cookie Information
+order: 7
 ---
 
 # Retrieve Specific Cookie Information
@@ -10,27 +11,35 @@ title: Retrieve Specific Cookie Information
 If multiple cookies with the same name exist in the specified URL, the cookie with the longest path will be returned. If the path lengths are the same, the cookie with the earliest creation time will be returned.
 :::
 
+![Retrieve Specific Cookie Information](../../../assets/Retrieve Specific Cookie Information_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Cookie Name**`string`: Ignore if CookieName is empty
-
-- **Cookie URL**`string`: URL filter condition
-
-- **Browser Type**`Integer`: Set the browser type for specific cookies.
+- **URL Setting Method**`Integer`: The source for setting the Cookie URL value, which can be manually entered. If a web object is selected, the web page's URL will be used automatically.
 
 - **Web Page Object**`TBrowser`: Enter a web page object that has been obtained or created using the 'Open Web Page' function.
 
-- **URL Setting Method**`Integer`: The source for setting the Cookie URL value, which can be manually entered. If a web object is selected, the web page's URL will be used automatically.
+- **Browser Type**`Integer`: Set the browser type for specific cookies.
+
+- **Cookie URL**`string`: URL filter condition
+
+- **Cookie Name**`string`: Ignore if CookieName is empty
 
 
 **Command Output**
 
-- **CookieStr**`string`: 
+- **Save Cookie To**`string`: Save the obtained cookie
 
+### Advanced
+
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

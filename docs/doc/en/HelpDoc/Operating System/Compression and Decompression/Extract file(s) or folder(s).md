@@ -1,5 +1,6 @@
 ---
 title: Extract file(s) or folder(s)
+order: 2
 ---
 
 # Extract file(s) or folder(s)
@@ -10,25 +11,33 @@ title: Extract file(s) or folder(s)
 Used to extract files/folders
 :::
 
+![Extract file(s) or folder(s)](../../../assets/Extract file(s) or folder(s)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Create folder with the same name**`Boolean`: Extract to a folder with the same name as the compressed file
-
-- **Decompressed folder path**`string`: Please enter the path for the extracted folder
+- **Compressed file path**`string`: Enter or select the path of the file to extract
 
 - **Password**`string`: Enter the password; leave blank if there is no password
 
-- **Compressed file path**`string`: Enter or select the path of the file to extract
+- **Decompressed folder path**`string`: Please enter the path for the extracted folder
+
+- **Create folder with the same name**`Boolean`: Extract to a folder with the same name as the compressed file
 
 
 **Command Output**
 
 - **Save folder path to**`string`: Specify a variable name to store the folder path
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Invoke Sub-script
+order: 1
 ---
 
 # Invoke Sub-script
@@ -10,21 +11,25 @@ title: Invoke Sub-script
 Execute a sub-script with a specified name
 :::
 
+![Invoke Sub-script](../../assets/Invoke Sub-script_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Input Parameters**`string`: Enter input parameters for the sub-script
-
 - **Sub-script Name**`string`: Select the name of the sub-script to execute
+
+- **Input Parameters**`string`: Enter input parameters for the sub-script
 
 
 **Command Output**
 
 - **Save Output Result To**`string`: Specify a variable name to save the output result of the sub-script
 
+
+**Command Output**
 
 ### Error Handling
 

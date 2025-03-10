@@ -1,5 +1,6 @@
 ---
 title: Cycle through Excel content
+order: 6
 ---
 
 # Cycle through Excel content
@@ -10,43 +11,49 @@ title: Cycle through Excel content
 Cycle through the content of an Excel object and save the loop items
 :::
 
+![Cycle through Excel content](../../../assets/Cycle through Excel content_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet name**`string`: If left blank, the currently active sheet will be used by default
-
-- **Ending column name**`string`: Ending column name, starting from A
-
-- **Starting column name**`string`: Starting column name, starting from A
-
-- **Ending row number**`Integer`: Ending row number, starting from 1
-
-- **Starting row number**`Integer`: Starting row number, starting from 1
+- **Excel object**`TWorkbookApplication`: Enter an Excel object obtained through the functions 'Open or create a new Excel'/'Get the currently active Excel object'
 
 - **Cycle mode**`Integer`: Cycle through consecutive rows or columns
 
-- **Excel object**`TWorkbookApplication`: Enter an Excel object obtained through the functions 'Open or create a new Excel'/'Get the currently active Excel object'
+- **Starting row number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Ending row number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Starting column name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **Ending column name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **Sheet name**`string`: If left blank, the currently active sheet will be used by default
 
 
 **Command Output**
 
-- **Save the current column name to**`string`: Specify a variable to save the column name of the Excel loop item
+- **Save the current loop item to**`TList<String>`: Specify a variable to save the Excel loop item
 
 - **Save the current row number to**`Integer`: Specify a variable to save the row number of the Excel loop item
 
-- **Save the current loop item to**`TList<String>`: Specify a variable to save the Excel loop item
+- **Save the current column name to**`string`: Specify a variable to save the column name of the Excel loop item
 
 ### Advanced
 
-- **Remove leading and trailing spaces from cells**`Boolean`: If checked, leading and trailing spaces in the read content will be automatically removed
+- **Read the displayed content of cells**`Boolean`: If not checked, integers will be read as decimals (1 = 1.0)
 
 - **Columns to display content**`string`: Display visible content. Separate multiple columns with commas
 
-- **Read the displayed content of cells**`Boolean`: If not checked, integers will be read as decimals (1 = 1.0)
+- **Remove leading and trailing spaces from cells**`Boolean`: If checked, leading and trailing spaces in the read content will be automatically removed
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

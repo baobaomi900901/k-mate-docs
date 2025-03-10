@@ -1,5 +1,6 @@
 ---
 title: Clear clipboard
+order: 4
 ---
 
 # Clear clipboard
@@ -9,6 +10,8 @@ title: Clear clipboard
 :::tip 
 Clear the content of the clipboard
 :::
+
+![Clear clipboard](../../../assets/Clear clipboard_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ No input for the current command
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

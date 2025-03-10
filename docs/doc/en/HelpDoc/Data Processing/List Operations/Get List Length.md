@@ -1,5 +1,6 @@
 ---
 title: Get List Length
+order: 7
 ---
 
 # Get List Length
@@ -9,6 +10,8 @@ title: Get List Length
 :::tip 
 This command is used to get the length of a list
 :::
+
+![Get List Length](../../../assets/Get List Length_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,8 @@ This command is used to get the length of a list
 
 - **Save List Length To**`Integer`: Specify a variable to save the length of the list
 
+
+**Command Output**
 
 ### Error Handling
 

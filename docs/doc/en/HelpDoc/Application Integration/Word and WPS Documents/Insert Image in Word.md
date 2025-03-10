@@ -1,5 +1,6 @@
 ---
 title: Insert Image in Word
+order: 10
 ---
 
 # Insert Image in Word
@@ -10,27 +11,35 @@ title: Insert Image in Word
 Insert an image into a Word document
 :::
 
+![Insert Image in Word](../../../assets/Insert Image in Word_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Line break before inserting image**`Boolean`: If checked, a line break will be inserted before the image
-
-- **Image Scale Percentage**`Integer`: The scaling percentage of the inserted image
-
-- **Image Path**`string`: Select the image path on your hard drive
+- **Word Object**`TDocumentApplication`: Enter a Word object created using the 'Open or Create Word' function
 
 - **Image Source**`Integer`: Select an image source
 
-- **Word Object**`TDocumentApplication`: Enter a Word object created using the 'Open or Create Word' function
+- **Image Path**`string`: Select the image path on your hard drive
+
+- **Image Scale Percentage**`Integer`: The scaling percentage of the inserted image
+
+- **Line break before inserting image**`Boolean`: If checked, a line break will be inserted before the image
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

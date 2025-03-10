@@ -1,5 +1,6 @@
 ---
 title: Set element attribute (web)
+order: 7
 ---
 
 # Set element attribute (web)
@@ -10,19 +11,21 @@ title: Set element attribute (web)
 Set the attributes of a web element.
 :::
 
+![Set element attribute (web)](../../../assets/Set element attribute (web)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Attribute value**`string`: Enter the value for the attribute.
-
-- **Attribute name**`string`: Enter the name of the attribute to set.
+- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
 
 - **Operation target**`TTarget`: Select the web element to be operated on.
 
-- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
+- **Attribute name**`string`: Enter the name of the attribute to set.
+
+- **Attribute value**`string`: Enter the value for the attribute.
 
 
 **Command Output**
@@ -31,8 +34,12 @@ No output for the current command
 
 ### Advanced
 
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
 - **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target element to exist.
 
+
+**Command Output**
 
 ### Error Handling
 

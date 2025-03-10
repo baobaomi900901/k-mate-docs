@@ -1,5 +1,6 @@
 ---
 title: Output Data Row
+order: 21
 ---
 
 # Output Data Row
@@ -10,23 +11,27 @@ title: Output Data Row
 Output a data row
 :::
 
+![Output Data Row](../../../assets/Output Data Row_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Data Row**`TDataRow`: The data row object to be output. If this property is set, the 'Row Index' property is ignored.
+- **Data Table**`TDataTable`: The data table object from which the row will be output.
 
 - **Row Index**`Integer`: Row Index
 
-- **Data Table**`TDataTable`: The data table object from which the row will be output.
+- **Data Row**`TDataRow`: The data row object to be output. If this property is set, the 'Row Index' property is ignored.
 
 
 **Command Output**
 
 - **Row Data**`string`: Row data
 
+
+**Command Output**
 
 ### Error Handling
 

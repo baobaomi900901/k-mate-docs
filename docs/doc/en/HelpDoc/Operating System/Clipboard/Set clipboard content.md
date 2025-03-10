@@ -1,5 +1,6 @@
 ---
 title: Set clipboard content
+order: 2
 ---
 
 # Set clipboard content
@@ -9,6 +10,8 @@ title: Set clipboard content
 :::tip 
 Set the content for the clipboard, allowing subsequent Ctrl+V pasting
 :::
+
+![Set clipboard content](../../../assets/Set clipboard content_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Set the content for the clipboard, allowing subsequent Ctrl+V pasting
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

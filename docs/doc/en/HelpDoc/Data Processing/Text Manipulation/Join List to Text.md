@@ -1,5 +1,6 @@
 ---
 title: Join List to Text
+order: 8
 ---
 
 # Join List to Text
@@ -10,27 +11,31 @@ title: Join List to Text
 This command is used to concatenate each element in the list with a specified delimiter, and finally convert it into a text string
 :::
 
+![Join List to Text](../../../assets/Join List to Text_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Custom Delimiter**`string`: Enter a custom delimiter
-
-- **Number of Delimiters**`Integer`: The number of times the delimiter should be repeated
-
-- **Standard Delimiter**`Integer`: Select a delimiter
+- **List to Convert**`TList<String>`: Enter a list
 
 - **Delimiter Type**`Integer`: Select a delimiter type
 
-- **List to Convert**`TList<String>`: Enter a list
+- **Standard Delimiter**`Integer`: Select a delimiter
+
+- **Number of Delimiters**`Integer`: The number of times the delimiter should be repeated
+
+- **Custom Delimiter**`string`: Enter a custom delimiter
 
 
 **Command Output**
 
 - **Save Result To**`string`: Specify a variable to save the concatenated text
 
+
+**Command Output**
 
 ### Error Handling
 

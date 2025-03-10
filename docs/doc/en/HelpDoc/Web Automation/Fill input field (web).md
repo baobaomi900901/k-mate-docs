@@ -1,5 +1,6 @@
 ---
 title: Fill input field (web)
+order: 5
 ---
 
 # Fill input field (web)
@@ -10,19 +11,21 @@ title: Fill input field (web)
 Enter content in the web input field
 :::
 
+![Fill input field (web)](../../assets/Fill input field (web)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Append input**`Boolean`: If checked, the input will be appended to the existing content; otherwise, the content will be cleared and re-entered
-
-- **Input text**`string`: The text to be entered
+- **Webpage object**`TBrowser`: Input a webpage object obtained or created through the 'Open Webpage' function
 
 - **Operation target**`TTarget`: The web element to be operated on
 
-- **Webpage object**`TBrowser`: Input a webpage object obtained or created through the 'Open Webpage' function
+- **Input text**`string`: The text to be entered
+
+- **Append input**`Boolean`: If checked, the input will be appended to the existing content; otherwise, the content will be cleared and re-entered
 
 
 **Command Output**
@@ -31,30 +34,30 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target input field to exist
-
-- **Vertical translation**`Integer`: Enter a positive number to move down, a negative number to move up
-
-- **Horizontal translation**`Integer`: Enter a positive number to move right, a negative number to move left
-
-- **Custom position**`Integer`: Custom position settings
-
-- **Mouse click position**`Integer`: Supported click positions for the element
-
-- **Click element before input**`Boolean`: Click the element before the input action
-
-- **Delay after execution (ms)**`Integer`: Time to continue waiting after the command is executed
-
-- **Focus timeout (ms)**`Integer`: Focus timeout period
+- **Input method**`Integer`: Method of input
 
 - **Key press delay (ms)**`Integer`: The interval time between two key presses
 
-- **Force load US keyboard (ENG)**`Boolean`: Switch to English input method
+- **Focus timeout (ms)**`Integer`: Focus timeout period
 
-- **Input contains shortcut keys**`Boolean`: The input content contains shortcut keys
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
-- **Input method**`Integer`: Method of input
+- **Delay after execution (ms)**`Integer`: Time to continue waiting after the command is executed
 
+- **Click element before input**`Boolean`: Click the element before the input action
+
+- **Mouse click position**`Integer`: Supported click positions for the element
+
+- **Custom position**`Integer`: Custom position settings
+
+- **Horizontal translation**`Integer`: Enter a positive number to move right, a negative number to move left
+
+- **Vertical translation**`Integer`: Enter a positive number to move down, a negative number to move up
+
+- **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target input field to exist
+
+
+**Command Output**
 
 ### Error Handling
 

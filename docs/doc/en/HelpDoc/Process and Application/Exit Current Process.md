@@ -1,5 +1,6 @@
 ---
 title: Exit Current Process
+order: 2
 ---
 
 # Exit Current Process
@@ -9,6 +10,8 @@ title: Exit Current Process
 :::tip 
 Exit the current process and continue with other processes
 :::
+
+![Exit Current Process](../../assets/Exit Current Process_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,8 @@ No input for the current command
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

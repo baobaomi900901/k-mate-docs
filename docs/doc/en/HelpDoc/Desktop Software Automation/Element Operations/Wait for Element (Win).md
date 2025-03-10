@@ -1,5 +1,6 @@
 ---
 title: Wait for Element (Win)
+order: 2
 ---
 
 # Wait for Element (Win)
@@ -10,27 +11,35 @@ title: Wait for Element (Win)
 Wait for an element in the window to appear or disappear before proceeding with the next steps
 :::
 
+![Wait for Element (Win)](../../../assets/Wait for Element (Win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Timeout (ms)**`Integer`: Set the maximum wait time
-
-- **Set Timeout**`Boolean`: The process will automatically continue after the timeout
-
-- **Wait State**`Integer`: Select the wait state
+- **Window Object**`TWinObj`: Enter a captured window object
 
 - **Target Element**`TTarget`: Select the window element to operate on
 
-- **Window Object**`TWinObj`: Enter a captured window object
+- **Wait State**`Integer`: Select the wait state
+
+- **Set Timeout**`Boolean`: The process will automatically continue after the timeout
+
+- **Timeout (ms)**`Integer`: Set the maximum wait time
 
 
 **Command Output**
 
 - **Wait Result**`Boolean`: Return success if True, otherwise wait for timeout
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

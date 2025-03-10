@@ -1,5 +1,6 @@
 ---
 title: Get Web Page Information
+order: 4
 ---
 
 # Get Web Page Information
@@ -10,21 +11,29 @@ title: Get Web Page Information
 Get web page text content, URL, source code, title, etc.
 :::
 
+![Get Web Page Information](../../../assets/Get Web Page Information_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Operation**`Integer`: The web information to be obtained
-
 - **Web Page Object**`TBrowser`: Input a web page object that has been obtained or created through the 'Open Web Page' function
+
+- **Operation**`Integer`: The web information to be obtained
 
 
 **Command Output**
 
-- **WebRst**`string`: 
+- **Save Web Page Information To**`string`: Save the obtained web page information
 
+### Advanced
+
+- **DelayBefore**`Integer`: 
+
+
+**Command Output**
 
 ### Error Handling
 

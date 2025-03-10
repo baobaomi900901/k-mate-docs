@@ -1,5 +1,6 @@
 ---
 title: Delete Excel Row
+order: 10
 ---
 
 # Delete Excel Row
@@ -10,23 +11,31 @@ title: Delete Excel Row
 Delete row
 :::
 
+![Delete Excel Row](../../../../assets/Delete Excel Row_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: Worksheet name
-
-- **Row Number**`Integer`: Row number. Starts from 1
-
 - **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+
+- **Row Number**`string`: Enter line number, use 1,2,3 or 1:3 for multiple lines, -N represents the Nth to last row
+
+- **Sheet Name**`string`: Worksheet name
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

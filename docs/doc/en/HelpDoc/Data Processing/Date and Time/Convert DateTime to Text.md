@@ -1,5 +1,6 @@
 ---
 title: Convert DateTime to Text
+order: 6
 ---
 
 # Convert DateTime to Text
@@ -10,23 +11,31 @@ title: Convert DateTime to Text
 Convert DateTime object to text
 :::
 
+![Convert DateTime to Text](../../../assets/Convert DateTime to Text_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Custom Format**`string`: Custom Format
+- **DateTime:**`TDateTime`: Enter the DateTime object to be converted to text
 
 - **Date Time Format:**`Integer`: Set the date time format for the conversion
 
-- **DateTime:**`TDateTime`: Enter the DateTime object to be converted to text
+- **Custom Format**`string`: Custom Format
 
 
 **Command Output**
 
 - **Save Text To**`string`: Specify a variable to save the converted text
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

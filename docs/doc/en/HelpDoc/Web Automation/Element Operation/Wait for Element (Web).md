@@ -1,5 +1,6 @@
 ---
 title: Wait for Element (Web)
+order: 2
 ---
 
 # Wait for Element (Web)
@@ -10,27 +11,35 @@ title: Wait for Element (Web)
 Wait for the specified element on the web page to appear or disappear before proceeding with the next steps
 :::
 
+![Wait for Element (Web)](../../../assets/Wait for Element (Web)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Timeout (Milliseconds)**`Integer`: Set the maximum wait time
-
-- **Set Timeout**`Boolean`: Set the wait timeout period; the process will continue automatically if it times out
-
-- **Wait State**`Integer`: Select the wait state
+- **Web Page Object**`TBrowser`: Enter a web page object obtained or created by the 'Open Web Page' function
 
 - **Target Element**`TTarget`: Select the web element you want to operate on
 
-- **Web Page Object**`TBrowser`: Enter a web page object obtained or created by the 'Open Web Page' function
+- **Wait State**`Integer`: Select the wait state
+
+- **Set Timeout**`Boolean`: Set the wait timeout period; the process will continue automatically if it times out
+
+- **Timeout (Milliseconds)**`Integer`: Set the maximum wait time
 
 
 **Command Output**
 
 - **Wait Result**`Boolean`: If true, the wait was successful; otherwise, it timed out
 
+### Advanced
+
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Click Image
+order: 7
 ---
 
 # Click Image
@@ -10,31 +11,31 @@ title: Click Image
 Click Image
 :::
 
+![Click Image](../../assets/Click Image_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Click Method**`Integer`: Single click or double click
-
-- **Mouse**`Integer`: Choose the mouse button used to trigger the click
-
-- **Vertical Translation**`Integer`: Enter a positive number to move down, negative to move up
-
-- **Horizontal Translation**`Integer`: Enter a positive number to move right, negative to move left
-
-- **Custom**`Integer`: Custom Position
-
-- **Target Image Part**`Integer`: Choose the part of the target image to click
-
-- **Target Image**`string`: You can select multiple images to search in sequence until any matching image is found within the timeout period and clicked
-
-- **sAllImages**`string`: 
+- **Search Range**`Integer`: Search Range
 
 - **Window Object**`TWinObj`: Please select the window object
 
-- **Search Range**`Integer`: Search Range
+- **Target Image**`string`: You can select multiple images to search in sequence until any matching image is found within the timeout period and clicked
+
+- **Target Image Part**`Integer`: Choose the part of the target image to click
+
+- **Custom**`Integer`: Custom Position
+
+- **Horizontal Translation**`Integer`: Enter a positive number to move right, negative to move left
+
+- **Vertical Translation**`Integer`: Enter a positive number to move down, negative to move up
+
+- **Mouse**`Integer`: Choose the mouse button used to trigger the click
+
+- **Click Method**`Integer`: Single click or double click
 
 
 **Command Output**
@@ -43,14 +44,18 @@ No output for the current command
 
 ### Advanced
 
-- **Delay After Execution (milliseconds)**`Integer`: Time to wait after the command is executed
-
-- **Timeout (milliseconds)**`Integer`: Set the maximum wait time
+- **Keyboard Modifier Keys**`Integer`: The keyboard function keys that need to be pressed
 
 - **Show Mouse Movement Path**`Boolean`: Whether to show the mouse movement path
 
-- **Keyboard Modifier Keys**`Integer`: The keyboard function keys that need to be pressed
+- **Timeout (milliseconds)**`Integer`: Set the maximum wait time
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Delay After Execution (milliseconds)**`Integer`: Time to wait after the command is executed
+
+
+**Command Output**
 
 ### Error Handling
 

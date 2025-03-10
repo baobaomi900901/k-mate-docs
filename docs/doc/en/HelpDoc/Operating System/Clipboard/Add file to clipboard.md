@@ -1,5 +1,6 @@
 ---
 title: Add file to clipboard
+order: 1
 ---
 
 # Add file to clipboard
@@ -9,6 +10,8 @@ title: Add file to clipboard
 :::tip 
 Add a file to the clipboard for quick sending
 :::
+
+![Add file to clipboard](../../../assets/Add file to clipboard_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Add a file to the clipboard for quick sending
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

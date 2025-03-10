@@ -1,5 +1,6 @@
 ---
 title: Filter Pivot Table
+order: 9
 ---
 
 # Filter Pivot Table
@@ -10,29 +11,37 @@ title: Filter Pivot Table
 Filter the pivot table
 :::
 
+![Filter Pivot Table](../../../../assets/Filter Pivot Table_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Filter Value**`Array of string`: Enter the filter value list
-
-- **Selection Type**`Integer`: You can choose between All Selection and Partial Selection
-
-- **Filter Name**`string`: Enter the filter field name
-
-- **Pivot Table Name or Index**`string`: If there is only one pivot table in a sheet, you can enter 1
+- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 - **Sheet Name**`string`: The name of the Sheet where the pivot table is located
 
-- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Pivot Table Name or Index**`string`: If there is only one pivot table in a sheet, you can enter 1
+
+- **Filter Name**`string`: Enter the filter field name
+
+- **Selection Type**`Integer`: You can choose between All Selection and Partial Selection
+
+- **Filter Value**`Array of string`: Enter the filter value list
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

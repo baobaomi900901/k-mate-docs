@@ -1,5 +1,6 @@
 ---
 title: Wake up Screensaver
+order: 1
 ---
 
 # Wake up Screensaver
@@ -10,21 +11,29 @@ title: Wake up Screensaver
 Execute instructions while the screensaver is active and display custom text prompts
 :::
 
+![Wake up Screensaver](../../../assets/Wake up Screensaver_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Tip Text**`string`: Set the text displayed on the screensaver
-
 - **Edit Screensaver Style**`string`: Screensaver settings
+
+- **Tip Text**`string`: Set the text displayed on the screensaver
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

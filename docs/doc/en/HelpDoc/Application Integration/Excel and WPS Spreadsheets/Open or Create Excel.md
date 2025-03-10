@@ -1,5 +1,6 @@
 ---
 title: Open or Create Excel
+order: 1
 ---
 
 # Open or Create Excel
@@ -10,23 +11,23 @@ title: Open or Create Excel
 Open an existing Excel file or create a new one to automate Excel operations
 :::
 
+![Open or Create Excel](../../../assets/Open or Create Excel_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Auto Update External Links**`Boolean`: Automatically update external links. It is recommended to check the visual mode.
-
-- **Ignore Formula**`Boolean`: Ignore the formulas in Excel and only read the formula results. If this option is checked, the file cannot be saved after opening to prevent loss of formulas.
-
-- **Visible**`Boolean`: This option does not affect the automation capabilities of Excel, it only controls whether the operations are visible to the user. If operating Excel in non-visual mode, Excel must be closed after saving.
-
-- **Excel File Path**`string`: Enter or select the path of the Excel file to open
+- **Launch Method**`Integer`: Choose whether to create a new Excel file or open an existing one
 
 - **Driver Method**`Integer`: Choose the driver method for creating or opening an Excel file
 
-- **Launch Method**`Integer`: Choose whether to create a new Excel file or open an existing one
+- **Excel File Path**`string`: Enter or select the path of the Excel file to open
+
+- **Visible**`Boolean`: This option does not affect the automation capabilities of Excel, it only controls whether the operations are visible to the user. If operating Excel in non-visual mode, Excel must be closed after saving.
+
+- **Auto Update External Links**`Boolean`: Automatically update external links. It is recommended to check the visual mode.
 
 
 **Command Output**
@@ -35,10 +36,14 @@ Open an existing Excel file or create a new one to automate Excel operations
 
 ### Advanced
 
-- **Edit Password**`string`: Password used to edit the encrypted Excel file
-
 - **Open Password**`string`: Password used to open the encrypted Excel file
 
+- **Edit Password**`string`: Password used to edit the encrypted Excel file
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Compress file(s) or folder(s)
+order: 1
 ---
 
 # Compress file(s) or folder(s)
@@ -10,25 +11,33 @@ title: Compress file(s) or folder(s)
 Used to compress files/folders
 :::
 
+![Compress file(s) or folder(s)](../../../assets/Compress file(s) or folder(s)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Save compressed file to**`string`: Enter the save path for the compressed file (including file extension), supporting common compression formats such as zip, rar, 7z, etc.
-
-- **Compression method**`Integer`: Set the compression level
+- **File(s)/folder to compress**`string`: Enter or select the path of the file(s)/folder to compress, separate multiple paths with '|'
 
 - **Password**`string`: Enter a password; leave blank if no password is set
 
-- **File(s)/folder to compress**`string`: Enter or select the path of the file(s)/folder to compress, separate multiple paths with '|'
+- **Compression method**`Integer`: Set the compression level
+
+- **Save compressed file to**`string`: Enter the save path for the compressed file (including file extension), supporting common compression formats such as zip, rar, 7z, etc.
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Get Detailed DateTime Information
+order: 7
 ---
 
 # Get Detailed DateTime Information
@@ -9,6 +10,8 @@ title: Get Detailed DateTime Information
 :::tip 
 Get the year, month, day, hour, minute, second, weekday, last day of the month, week number of the year, and day of the year from a DateTime object
 :::
+
+![Get Detailed DateTime Information](../../../assets/Get Detailed DateTime Information_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Get the year, month, day, hour, minute, second, weekday, last day of the month, 
 
 - **Save DateTime data to**`TDateTime`: Specify a variable to save the year, month, day, hour, minute, and second information obtained
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Batch Data Scraping (Web)
+order: 11
 ---
 
 # Batch Data Scraping (Web)
@@ -10,23 +11,25 @@ title: Batch Data Scraping (Web)
 Scrape batch data from web pages, commonly used for scraping list and detail pages, and can scrape multiple pages of data by setting pagination buttons
 :::
 
+![Batch Data Scraping (Web)](../../../assets/Batch Data Scraping (Web)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Save to Data Table**`Boolean`: Whether to save the results to the data table
-
-- **Number of Pages**`Integer`: The maximum number of pages to scrape
-
-- **Next Page Button**`TTarget`: Pagination element
-
-- **Number of Pages to Extract**`Integer`: Number of Pages to Extract
+- **Web Page Object**`TBrowser`: Input a web page object that is obtained or created by the 'Open Web Page' function
 
 - **Operation Target**`TTarget`: The table element to be scraped
 
-- **UiBrowser**`TBrowser`: 
+- **Number of Pages to Extract**`Integer`: Number of Pages to Extract
+
+- **Next Page Button**`TTarget`: Pagination element
+
+- **Number of Pages**`Integer`: The maximum number of pages to scrape
+
+- **Save to Data Table**`Boolean`: Whether to save the results to the data table
 
 
 **Command Output**
@@ -35,22 +38,28 @@ Scrape batch data from web pages, commonly used for scraping list and detail pag
 
 ### Advanced
 
-- **Maximum Pause Duration (milliseconds)**`Integer`: The longest waiting time after execution is complete
-
-- **Minimum Pause Duration (milliseconds)**`Integer`: The shortest waiting time after execution is complete
-
-- **Simulate Pause During Page Turning**`Boolean`: Simulate a real person's pause during page turning
-
-- **Automatically Scroll to Bottom of Page**`Boolean`: Automatically scroll to load the page before scraping, can be cancelled
-
-- **Send Window Messages**`Boolean`: Send window messages to click
-
-- **Simulate Manual Click on Pagination Button**`Boolean`: Simulate a manual click event
+- **Custom Column Names**`string`: You can customize the column names, separated by commas.
 
 - **Page Interval (milliseconds)**`Integer`: Time interval between page turns
 
-- **Custom Column Names**`string`: You can customize the column names, separated by commas.
+- **Simulate Manual Click on Pagination Button**`Boolean`: Simulate a manual click event
 
+- **Send Window Messages**`Boolean`: Send window messages to click
+
+- **Automatically Scroll to Bottom of Page**`Boolean`: Automatically scroll to load the page before scraping, can be cancelled
+
+- **Simulate Pause During Page Turning**`Boolean`: Simulate a real person's pause during page turning
+
+- **Minimum Pause Duration (milliseconds)**`Integer`: The shortest waiting time after execution is complete
+
+- **Maximum Pause Duration (milliseconds)**`Integer`: The longest waiting time after execution is complete
+
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+- **TimeOut**`Integer`: 
+
+
+**Command Output**
 
 ### Error Handling
 

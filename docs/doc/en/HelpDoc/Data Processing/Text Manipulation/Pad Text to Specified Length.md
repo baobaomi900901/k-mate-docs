@@ -1,5 +1,6 @@
 ---
 title: Pad Text to Specified Length
+order: 5
 ---
 
 # Pad Text to Specified Length
@@ -10,25 +11,29 @@ title: Pad Text to Specified Length
 This command is used to pad text to a specified length
 :::
 
+![Pad Text to Specified Length](../../../assets/Pad Text to Specified Length_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Total Length**`Integer`: The total length of the padded text
-
-- **Padding Text**`string`: Enter a text string or select a variable containing the string
+- **Original Text**`string`: Enter a text string or select a variable containing the string
 
 - **Padding Method**`Integer`: Add padding text to the left or right end of the original text
 
-- **Original Text**`string`: Enter a text string or select a variable containing the string
+- **Padding Text**`string`: Enter a text string or select a variable containing the string
+
+- **Total Length**`Integer`: The total length of the padded text
 
 
 **Command Output**
 
 - **Save Result To**`string`: Specify a variable to save the padded text content
 
+
+**Command Output**
 
 ### Error Handling
 

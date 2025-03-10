@@ -1,5 +1,6 @@
 ---
 title: Click Text (OCR)
+order: 10
 ---
 
 # Click Text (OCR)
@@ -10,21 +11,23 @@ title: Click Text (OCR)
 Search and click the given text in UI elements. Install the Text Plugin or OCR Plugin from the Plugin Center before using.
 :::
 
+![Click Text (OCR)](../../assets/Click Text (OCR)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Mouse Button**`Integer`: Select the mouse button to trigger the click
-
-- **Click Type**`Integer`: Specify the type of mouse click to simulate (Single Click, Double Click, Scroll Up, Scroll Down). Single Click is selected by default.
-
-- **Target**`TTarget`: Select the target for the operation
+- **Text**`string`: Enter the text to be clicked
 
 - **Recognition Method**`Integer`: Select a recognition method. The Text recognition method requires the Text Plugin to be installed; the OCR recognition method requires the OCR Plugin to be installed.
 
-- **Text**`string`: Enter the text to be clicked
+- **Target**`TTarget`: Select the target for the operation
+
+- **Click Type**`Integer`: Specify the type of mouse click to simulate (Single Click, Double Click, Scroll Up, Scroll Down). Single Click is selected by default.
+
+- **Mouse Button**`Integer`: Select the mouse button to trigger the click
 
 
 **Command Output**
@@ -33,26 +36,28 @@ No output for the current command
 
 ### Advanced
 
-- **Delay After Execution (Milliseconds)**`Integer`: Time to wait after the command execution is completed
-
-- **Timeout (Milliseconds)**`Integer`: Set the maximum wait time
-
-- **Vertical Offset**`Integer`: Enter a positive number to move downward, a negative number to move upward
-
-- **Horizontal Offset**`Integer`: Enter a positive number to move to the right, a negative number to move to the left
-
-- **Custom**`Integer`: Custom position
-
-- **Position of Target Text**`Integer`: Supports clicking at the center of the element (the center of the element's rectangle), random position (automatically selects a point within the element's rectangle), or custom position (manually specify the target point).
-
-- **Modifier Keys**`Integer`: Select modifier keys
-
-- **Formatted Text**`Boolean`: If checked, the screen layout of the selected text is preserved.
+- **Occurrence**`Integer`: Indicates how many times the text appears in the UI element
 
 - **Send Window Messages**`Boolean`: If checked, the click will be executed by sending specific messages to the target application. This input method is faster and works in the background. By default, this checkbox is unchecked. If unchecked, the default method uses hardware drivers to execute the click, which is slower but compatible with all desktop applications.
 
-- **Occurrence**`Integer`: Indicates how many times the text appears in the UI element
+- **Modifier Keys**`Integer`: Select modifier keys
 
+- **Position of Target Text**`Integer`: Supports clicking at the center of the element (the center of the element's rectangle), random position (automatically selects a point within the element's rectangle), or custom position (manually specify the target point).
+
+- **Custom**`Integer`: Custom position
+
+- **Horizontal Offset**`Integer`: Enter a positive number to move to the right, a negative number to move to the left
+
+- **Vertical Offset**`Integer`: Enter a positive number to move downward, a negative number to move upward
+
+- **Timeout (Milliseconds)**`Integer`: Set the maximum wait time
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Delay After Execution (Milliseconds)**`Integer`: Time to wait after the command execution is completed
+
+
+**Command Output**
 
 ### Error Handling
 

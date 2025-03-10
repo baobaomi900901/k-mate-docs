@@ -1,5 +1,6 @@
 ---
 title: Insert Blank Row
+order: 14
 ---
 
 # Insert Blank Row
@@ -10,25 +11,33 @@ title: Insert Blank Row
 Insert a blank row in the Excel table
 :::
 
+![Insert Blank Row](../../../../assets/Insert Blank Row_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+
+- **Before which row**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
 
 - **How many rows to insert**`Integer`: How many blank rows to insert
 
-- **Before which row**`Integer`: Row number. Starts from 1
-
-- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

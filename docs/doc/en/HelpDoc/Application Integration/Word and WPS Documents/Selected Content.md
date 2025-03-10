@@ -1,5 +1,6 @@
 ---
 title: Selected Content
+order: 14
 ---
 
 # Selected Content
@@ -10,25 +11,33 @@ title: Selected Content
 Selected Content
 :::
 
+![Selected Content](../../../assets/Selected Content_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **End Position**`Integer`: Fill in the end position based on the selection type
-
-- **Start Position**`Integer`: Fill in the start position based on the selection type
+- **Word Object**`TDocumentApplication`: Enter a Word object created by the function 'Open or Create Word'
 
 - **Selection Type**`Integer`: Selected type
 
-- **Word Object**`TDocumentApplication`: Enter a Word object created by the function 'Open or Create Word'
+- **Start Position**`Integer`: Fill in the start position based on the selection type
+
+- **End Position**`Integer`: Fill in the end position based on the selection type
 
 
 **Command Output**
 
 - **Selected Text**`string`: Selected Text
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Excel Sorting
+order: 11
 ---
 
 # Excel Sorting
@@ -10,47 +11,55 @@ title: Excel Sorting
 Perform ascending, descending, or custom sort on specified columns in Excel
 :::
 
+![Excel Sorting](../../../../assets/Excel Sorting_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: Worksheet name
-
-- **Column Name**`string`: Column name. Starts with A
-
-- **Row Number**`Integer`: Row number. Starts from 1
-
-- **End Column Name**`string`: Column name. Starts with A
-
-- **End Row Number**`Integer`: Row number. Starts from 1
-
-- **Start Column Name**`string`: Column name. Starts with A
-
-- **Start Row Number**`Integer`: Row number. Starts from 1
-
-- **Region Type**`Integer`: Select the sort region type
-
-- **Custom Sort Column**`string`: Custom Sort Column
-
-- **Custom Sort Settings**`string`: After completing the custom sort settings in Excel, click here to extract the settings information
-
-- **Exclude First Row from Sort**`Boolean`: If checked, the first row will not be included in the sort
-
-- **Expand Selected Range**`Boolean`: Expand Selected Range
-
-- **Sort Column**`string`: Enter the column name
+- **Excel Instance**`TWorkbookApplication`: Input an Excel instance obtained through 'Open or Create Excel'/'Get currently active Excel instance' function
 
 - **Sort Method**`Integer`: Select the sort method
 
-- **Excel Instance**`TWorkbookApplication`: Input an Excel instance obtained through 'Open or Create Excel'/'Get currently active Excel instance' function
+- **Sort Column**`string`: Enter the column name (supports A or 1), use A,B,C or A:C for multiple columns, -N represents the nth to last column
+
+- **Expand Selected Range**`Boolean`: Expand Selected Range
+
+- **Exclude First Row from Sort**`Boolean`: If checked, the first row will not be included in the sort
+
+- **Custom List**`string`: Custom sequence, such as: Sun, Mon, Tue, Wed, Thu, Fri, Sat
+
+- **Custom Sort Column**`string`: Enter the column name (supports A or 1), use A,B,C or A:C for multiple columns, -N represents the nth to last column
+
+- **Region Type**`Integer`: Select the sort region type
+
+- **Start Row Number**`Integer`: Row number. Starts from 1
+
+- **Start Column Name**`string`: Column name. Starts with A
+
+- **End Row Number**`Integer`: Row number. Starts from 1
+
+- **End Column Name**`string`: Column name. Starts with A
+
+- **Row Number**`Integer`: Row number. Starts from 1
+
+- **Column Name**`string`: Column name. Starts with A
+
+- **Sheet Name**`string`: Worksheet name
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

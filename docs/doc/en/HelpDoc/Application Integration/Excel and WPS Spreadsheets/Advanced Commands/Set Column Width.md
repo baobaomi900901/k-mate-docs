@@ -1,5 +1,6 @@
 ---
 title: Set Column Width
+order: 6
 ---
 
 # Set Column Width
@@ -10,27 +11,35 @@ title: Set Column Width
 Set column width
 :::
 
+![Set Column Width](../../../../assets/Set Column Width_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: Worksheet name
+- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
-- **Column Width**`Integer`: Enter the column width
+- **Column Name**`string`: Enter the column name (supports A or 1), use A,B,C or A:C for multiple columns
 
 - **Mode**`Integer`: Choose the method to set the column width
 
-- **Column Name**`string`: Column name. Starting from A
+- **Column Width**`Integer`: Enter the column width
 
-- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Sheet Name**`string`: Worksheet name
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Run Excel Macro
+order: 1
 ---
 
 # Run Excel Macro
@@ -10,25 +11,33 @@ title: Run Excel Macro
 Execute a macro in the workbook. The workbook file must be a macro-enabled workbook. Changes will be saved immediately.
 :::
 
+![Run Excel Macro](../../../../assets/Run Excel Macro_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Macro Parameters**`TList<String>`: A set of parameters to pass to the macro (up to 30)
-
-- **Macro Name**`string`: The name of the macro to be executed
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 - **Macro File**`string`: The macro file to be executed
 
-- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Macro Name**`string`: The name of the macro to be executed
+
+- **Macro Parameters**`TList<String>`: A set of parameters to pass to the macro (up to 30)
 
 
 **Command Output**
 
 - **Macro Output**`string`: Specify a variable to save the output of the macro (if any)
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Output Data Table
+order: 22
 ---
 
 # Output Data Table
@@ -10,13 +11,13 @@ title: Output Data Table
 Write the data table to a string in CSV format.
 :::
 
+![Output Data Table](../../../assets/Output Data Table_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
-
-- **Delimiter**`string`: Use this delimiter for splitting and content output.
 
 - **Data Table**`TDataTable`: The data table object to be written to the string.
 
@@ -25,6 +26,8 @@ Write the data table to a string in CSV format.
 
 - **Text**`string`: The data table output as a string.
 
+
+**Command Output**
 
 ### Error Handling
 

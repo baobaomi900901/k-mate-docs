@@ -1,5 +1,6 @@
 ---
 title: Create Pivot Table
+order: 7
 ---
 
 # Create Pivot Table
@@ -10,29 +11,37 @@ title: Create Pivot Table
 Create a pivot table from the specified range
 :::
 
+![Create Pivot Table](../../../../assets/Create Pivot Table_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Source Range**`string`: The source data range from which you want to create the pivot table
-
-- **Source Table Name**`string`: The name of the source table from which to create the pivot table
-
-- **Sheet Name**`string`: The name of the worksheet in the workbook
-
-- **Table Name**`string`: The name of the data pivot table to be created
+- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 - **Range**`string`: Specify the location range for creating the pivot table
 
-- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Table Name**`string`: The name of the data pivot table to be created
+
+- **Sheet Name**`string`: The name of the worksheet in the workbook
+
+- **Source Table Name**`string`: The name of the source table from which to create the pivot table
+
+- **Source Range**`string`: The source data range from which you want to create the pivot table
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

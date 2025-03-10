@@ -1,5 +1,6 @@
 ---
 title: Sort List
+order: 11
 ---
 
 # Sort List
@@ -10,21 +11,25 @@ title: Sort List
 This command is used to sort a list
 :::
 
+![Sort List](../../../assets/Sort List_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sort Order**`string`: Select ascending or descending order to sort the list
-
 - **List**`TList<String>`: Enter the list variable
+
+- **Sort Order**`Integer`: Select ascending or descending order to sort the list
 
 
 **Command Output**
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

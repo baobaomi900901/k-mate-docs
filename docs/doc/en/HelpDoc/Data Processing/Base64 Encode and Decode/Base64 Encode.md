@@ -1,5 +1,6 @@
 ---
 title: Base64 Encode
+order: 1
 ---
 
 # Base64 Encode
@@ -10,13 +11,13 @@ title: Base64 Encode
 Base64 Encode
 :::
 
+![Base64 Encode](../../../assets/Base64 Encode_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
-
-- **Output String**`Boolean`: Output string
 
 - **Content**`string`: Enter the content to be encoded
 
@@ -25,6 +26,8 @@ Base64 Encode
 
 - **Save Encoded Result To**`string`: Enter a name to save the Base64 encoded result
 
+
+**Command Output**
 
 ### Error Handling
 

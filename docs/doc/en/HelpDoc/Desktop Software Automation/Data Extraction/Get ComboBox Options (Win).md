@@ -1,5 +1,6 @@
 ---
 title: Get ComboBox Options (Win)
+order: 3
 ---
 
 # Get ComboBox Options (Win)
@@ -10,17 +11,19 @@ title: Get ComboBox Options (Win)
 Get the options of a combo box in the window
 :::
 
+![Get ComboBox Options (Win)](../../../assets/Get ComboBox Options (Win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Get Content**`Integer`: Choose to get the currently selected item or all drop-down options
+- **Window Object**`TWinObj`: Enter the window object
 
 - **Operation Target**`TTarget`: Select the desktop software element to operate on
 
-- **Window Object**`TWinObj`: Enter the window object
+- **Get Content**`Integer`: Choose to get the currently selected item or all drop-down options
 
 
 **Command Output**
@@ -29,8 +32,12 @@ Get the options of a combo box in the window
 
 ### Advanced
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target element to exist
 
+
+**Command Output**
 
 ### Error Handling
 

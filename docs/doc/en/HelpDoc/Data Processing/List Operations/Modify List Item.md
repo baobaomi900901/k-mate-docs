@@ -1,5 +1,6 @@
 ---
 title: Modify List Item
+order: 4
 ---
 
 # Modify List Item
@@ -10,23 +11,27 @@ title: Modify List Item
 This command is used to modify the value of an item at a specific position in the list
 :::
 
+![Modify List Item](../../../assets/Modify List Item_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **New Item Value**`String`: The new value to be modified
+- **List**`TList<String>`: Enter the list variable
 
 - **Item Position**`Integer`: Enter the index of the item position. Counting forwards: the first item is 0, the second item is 1, and so on; counting backwards: the last item is -1, the second to last item is -2, and so on.
 
-- **List**`TList<String>`: Enter the list variable
+- **New Item Value**`String`: The new value to be modified
 
 
 **Command Output**
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

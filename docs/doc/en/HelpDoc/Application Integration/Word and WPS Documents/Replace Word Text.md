@@ -1,5 +1,6 @@
 ---
 title: Replace Word Text
+order: 7
 ---
 
 # Replace Word Text
@@ -10,27 +11,35 @@ title: Replace Word Text
 Replace text content in a Word document
 :::
 
+![Replace Word Text](../../../assets/Replace Word Text_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Case Sensitive**`Boolean`: If checked, the replacement will be case sensitive
-
-- **Replace All**`Boolean`: If checked, replace all found text
-
-- **Replace with**`string`: Text to replace
+- **Word Object**`TDocumentApplication`: Enter a Word object created by the 'Open or Create Word' function
 
 - **Find Text**`string`: Text to find
 
-- **Word Object**`TDocumentApplication`: Enter a Word object created by the 'Open or Create Word' function
+- **Replace with**`string`: Text to replace
+
+- **Replace All**`Boolean`: If checked, replace all found text
+
+- **Case Sensitive**`Boolean`: If checked, the replacement will be case sensitive
 
 
 **Command Output**
 
 - **Save number of replacements to**`Integer`: Specify a variable name to store the number of replacements
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

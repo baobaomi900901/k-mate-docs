@@ -1,5 +1,6 @@
 ---
 title: Get Selected Range
+order: 17
 ---
 
 # Get Selected Range
@@ -9,6 +10,8 @@ title: Get Selected Range
 :::tip 
 Get the start and end row numbers and column names of the currently selected range in the current sheet
 :::
+
+![Get Selected Range](../../../../assets/Get Selected Range_command.png)
 
 ## Configuration Item Description
 
@@ -21,14 +24,20 @@ Get the start and end row numbers and column names of the currently selected ran
 
 **Command Output**
 
-- **End Column Name Save To**`string`: Specify a variable to save the ending column name of the selected range
-
-- **End Row Number Save To**`Integer`: Specify a variable to save the ending row number of the selected range
+- **Start Row Number Save To**`Integer`: Specify a variable to save the starting row number of the selected range
 
 - **Start Column Name Save To**`string`: Specify a variable to save the starting column name of the selected range
 
-- **Start Row Number Save To**`Integer`: Specify a variable to save the starting row number of the selected range
+- **End Row Number Save To**`Integer`: Specify a variable to save the ending row number of the selected range
 
+- **End Column Name Save To**`string`: Specify a variable to save the ending column name of the selected range
+
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

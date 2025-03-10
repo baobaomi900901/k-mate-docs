@@ -1,5 +1,6 @@
 ---
 title: Clear List
+order: 2
 ---
 
 # Clear List
@@ -9,6 +10,8 @@ title: Clear List
 :::tip 
 This command is used to clear the list
 :::
+
+![Clear List](../../../assets/Clear List_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,8 @@ This command is used to clear the list
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

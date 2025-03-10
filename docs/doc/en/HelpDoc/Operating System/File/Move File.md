@@ -1,5 +1,6 @@
 ---
 title: Move File
+order: 3
 ---
 
 # Move File
@@ -10,23 +11,31 @@ title: Move File
 Move files to a specified directory
 :::
 
+![Move File](../../../assets/Move File_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Move Method**`Integer`: How to handle when the file already exists
+- **Source Files to Move**`string`: Enter or select the file paths to move. Separate multiple file paths with '|'.
 
 - **Target Folder**`string`: Enter the target folder path
 
-- **Source Files to Move**`string`: Enter or select the file paths to move. Separate multiple file paths with '|'.
+- **Move Method**`Integer`: How to handle when the file already exists
 
 
 **Command Output**
 
 - **List of Moved File Paths**`TList<String>`: Enter a name to save the list of moved file paths
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

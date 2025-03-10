@@ -1,5 +1,6 @@
 ---
 title: Sentiment Analysis
+order: 3
 ---
 
 # Sentiment Analysis
@@ -9,6 +10,8 @@ title: Sentiment Analysis
 :::tip 
 Call the Kingsware AI interface to identify whether the user's sentiment in the text is positive or negative
 :::
+
+![Sentiment Analysis](../../../assets/Sentiment Analysis_command.png)
 
 ## Configuration Item Description
 
@@ -21,16 +24,22 @@ Call the Kingsware AI interface to identify whether the user's sentiment in the 
 
 **Command Output**
 
-- **Error information**`String`: Return error information
+- **Response header information**`String`: Return response header information
 
 - **Response body information**`String`: Return response body information
 
-- **Response header information**`String`: Return response header information
+- **Error information**`String`: Return error information
 
 ### Advanced
 
 - **Response header type**`array of string`: When the server and client create a long connection, necessary settings should be made for the HTTP response header's connection, default is ['Connection']
 
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

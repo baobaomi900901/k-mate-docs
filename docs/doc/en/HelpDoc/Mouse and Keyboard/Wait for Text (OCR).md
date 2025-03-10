@@ -1,5 +1,6 @@
 ---
 title: Wait for Text (OCR)
+order: 12
 ---
 
 # Wait for Text (OCR)
@@ -10,17 +11,19 @@ title: Wait for Text (OCR)
 Wait for the specified text to appear/disappear on the screen
 :::
 
+![Wait for Text (OCR)](../../assets/Wait for Text (OCR)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
+- **Text**`string`: The string to wait for
+
 - **iOCRType**`Integer`: 
 
 - **Target**`TTarget`: Target element
-
-- **Text**`string`: The string to wait for
 
 
 **Command Output**
@@ -29,8 +32,12 @@ No output for the current command
 
 ### Advanced
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Timeout (Milliseconds)**`Integer`: Maximum wait time
 
+
+**Command Output**
 
 ### Error Handling
 

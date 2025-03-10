@@ -1,5 +1,6 @@
 ---
 title: SAP Start
+order: 1
 ---
 
 # SAP Start
@@ -10,25 +11,33 @@ title: SAP Start
 Start SAP
 :::
 
+![SAP Start](../../../assets/SAP Start_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Retry Interval**`Integer`: Retry interval
-
-- **Retry Number**`Integer`: Number of retries
+- **SAP Launch Path**`string`: The path where the SAP launch program is located
 
 - **Connection Name**`string`: The connection name used for SAP login
 
-- **SAP Launch Path**`string`: The path where the SAP launch program is located
+- **Retry Number**`Integer`: Number of retries
+
+- **Retry Interval**`Integer`: Retry interval
 
 
 **Command Output**
 
 - **SAP Login Window**`TUiElement`: Specify a variable to save the SAP login window
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

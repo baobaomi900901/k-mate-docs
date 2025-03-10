@@ -1,5 +1,6 @@
 ---
 title: Connect to Database
+order: 1
 ---
 
 # Connect to Database
@@ -10,35 +11,43 @@ title: Connect to Database
 Select a database type to connect to the database
 :::
 
+![Connect to Database](../../../assets/Connect to Database_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Login Method**`Integer`: Select a login method
-
-- **Database Charset**`string`: Please enter the database charset
-
-- **Password**`string`: Please enter the database password
-
-- **Username**`string`: Please enter the database username
-
-- **Database**`string`: Please enter the database name
-
-- **Port**`Integer`: Please enter the database connection port
-
-- **Address**`string`: Please enter the database connection address
+- **Database Type**`Integer`: Select a database connection type
 
 - **Connection String**`string`: Please enter the database connection string
 
-- **Database Type**`Integer`: Select a database connection type
+- **Address**`string`: Please enter the database connection address
+
+- **Port**`Integer`: Please enter the database connection port
+
+- **Database**`string`: Please enter the database name
+
+- **Username**`string`: Please enter the database username
+
+- **Password**`string`: Please enter the database password
+
+- **Database Charset**`string`: Please enter the database charset
+
+- **Login Method**`Integer`: Select a login method
 
 
 **Command Output**
 
 - **Save Database Connection Object to**`TDatabase`: Specify a variable name that will store the database connection object
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

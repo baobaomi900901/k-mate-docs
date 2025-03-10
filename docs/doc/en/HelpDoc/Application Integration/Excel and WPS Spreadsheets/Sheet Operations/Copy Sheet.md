@@ -1,5 +1,6 @@
 ---
 title: Copy Sheet
+order: 3
 ---
 
 # Copy Sheet
@@ -10,29 +11,37 @@ title: Copy Sheet
 Copy the specified sheet
 :::
 
+![Copy Sheet](../../../../assets/Copy Sheet_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Overwrite if Exists**`Boolean`: If the new sheet exists, it will overwrite the existing sheet
-
-- **New Sheet Name**`string`: Enter the name of the new sheet, cannot be empty
-
-- **Destination Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
-
-- **Copy Method**`Integer`: Choose the copy method
+- **Source Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 - **Source Sheet Name**`string`: Enter the name of the sheet to be copied, cannot be empty
 
-- **Source Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Copy Method**`Integer`: Choose the copy method
+
+- **Destination Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+
+- **New Sheet Name**`string`: Enter the name of the new sheet, cannot be empty
+
+- **Overwrite if Exists**`Boolean`: If the new sheet exists, it will overwrite the existing sheet
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

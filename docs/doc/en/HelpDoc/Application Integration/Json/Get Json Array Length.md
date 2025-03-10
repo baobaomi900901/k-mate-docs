@@ -1,5 +1,6 @@
 ---
 title: Get Json Array Length
+order: 9
 ---
 
 # Get Json Array Length
@@ -9,6 +10,8 @@ title: Get Json Array Length
 :::tip 
 Get the length of the Json array
 :::
+
+![Get Json Array Length](../../../assets/Get Json Array Length_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Get the length of the Json array
 
 - **Array Length**`Integer`: Specify a variable to store the array length
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

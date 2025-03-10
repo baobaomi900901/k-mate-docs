@@ -1,5 +1,6 @@
 ---
 title: Filter List
+order: 10
 ---
 
 # Filter List
@@ -10,21 +11,25 @@ title: Filter List
 This command is used to remove all items in list 2 from list 1 and save the result to a new list
 :::
 
+![Filter List](../../../assets/Filter List_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **List 2**`TList<String>`: The list containing items to be removed from List 1
-
 - **List 1**`TList<String>`: The list that needs to be filtered
+
+- **List 2**`TList<String>`: The list containing items to be removed from List 1
 
 
 **Command Output**
 
 - **Save List Object To**`TList<String>`: Specify a variable to save the filtered new list
 
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Fill Password Field (Win)
+order: 3
 ---
 
 # Fill Password Field (Win)
@@ -10,17 +11,19 @@ title: Fill Password Field (Win)
 Enter password in the password field in the window
 :::
 
+![Fill Password Field (Win)](../../../assets/Fill Password Field (Win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Entered Password**`string`: Enter the password to be filled in
+- **Window Object**`TWinObj`: Enter a captured window object
 
 - **Target Element**`TTarget`: Select the window element to operate on
 
-- **Window Object**`TWinObj`: Enter a captured window object
+- **Entered Password**`string`: Enter the password to be filled in
 
 
 **Command Output**
@@ -29,26 +32,30 @@ No output for the current command
 
 ### Advanced
 
-- **Timeout (ms)**`Integer`: Set the maximum wait time
-
-- **Vertical Translation**`Integer`: Enter a positive number to move down, a negative number to move up
-
-- **OoffsetX**`Integer`: 
-
-- **Custom Position**`Integer`: Specify the custom position
-
-- **Mouse Click Position**`Integer`: Supports clicking at the center of the element, a random position within the element's rectangular area, or a custom specified point
-
-- **Click Element Before Input**`Boolean`: Click the element before performing the input action
-
-- **Post-Execution Delay (ms)**`Integer`: Wait time after the command execution completes
-
-- **Focus Timeout (ms)**`Integer`: Focus timeout period
+- **Input Method**`Integer`: Select the input method
 
 - **Key Press Interval (ms)**`Integer`: Interval time between two key presses
 
-- **Input Method**`Integer`: Select the input method
+- **Focus Timeout (ms)**`Integer`: Focus timeout period
 
+- **Post-Execution Delay (ms)**`Integer`: Wait time after the command execution completes
+
+- **Click Element Before Input**`Boolean`: Click the element before performing the input action
+
+- **Mouse Click Position**`Integer`: Supports clicking at the center of the element, a random position within the element's rectangular area, or a custom specified point
+
+- **Custom Position**`Integer`: Specify the custom position
+
+- **Horizontal Translation**`Integer`: Enter a positive number to move right, a negative number to move left
+
+- **Vertical Translation**`Integer`: Enter a positive number to move down, a negative number to move up
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (ms)**`Integer`: Set the maximum wait time
+
+
+**Command Output**
 
 ### Error Handling
 

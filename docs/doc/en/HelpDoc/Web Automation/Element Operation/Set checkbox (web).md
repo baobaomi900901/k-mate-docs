@@ -1,5 +1,6 @@
 ---
 title: Set checkbox (web)
+order: 5
 ---
 
 # Set checkbox (web)
@@ -10,17 +11,19 @@ title: Set checkbox (web)
 Set the state of a checkbox on the webpage to checked or unchecked.
 :::
 
+![Set checkbox (web)](../../../assets/Set checkbox (web)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Operation**`Integer`: The operation to be performed on the checkbox.
+- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
 
 - **Operation target**`TTarget`: Select the web element to be operated on.
 
-- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
+- **Operation**`Integer`: The operation to be performed on the checkbox.
 
 
 **Command Output**
@@ -29,10 +32,14 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target checkbox to exist.
-
 - **Delay time (ms)**`Integer`: Time to continue waiting after the command is executed.
 
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+- **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target checkbox to exist.
+
+
+**Command Output**
 
 ### Error Handling
 

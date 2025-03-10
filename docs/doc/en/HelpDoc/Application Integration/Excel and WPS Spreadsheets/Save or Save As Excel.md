@@ -1,5 +1,6 @@
 ---
 title: Save or Save As Excel
+order: 3
 ---
 
 # Save or Save As Excel
@@ -10,27 +11,35 @@ title: Save or Save As Excel
 Save or Save As Excel
 :::
 
+![Save or Save As Excel](../../../assets/Save or Save As Excel_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Save and Close**`Boolean`: Save and then close
-
-- **Overwrite if the file exists**`Boolean`: Overwrite the file if it exists
-
-- **Excel File Path**`string`: Path of the opened Excel file
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained from the function 'Open or Create Excel'/'Get the currently active Excel object'
 
 - **Save Type**`Integer`: Select a save type
 
-- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained from the function 'Open or Create Excel'/'Get the currently active Excel object'
+- **Excel File Path**`string`: Path of the opened Excel file
+
+- **Overwrite if the file exists**`Boolean`: Overwrite the file if it exists
+
+- **Save and Close**`Boolean`: Save and then close
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

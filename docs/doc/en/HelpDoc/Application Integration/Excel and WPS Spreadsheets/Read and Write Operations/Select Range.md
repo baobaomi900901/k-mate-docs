@@ -1,5 +1,6 @@
 ---
 title: Select Range
+order: 16
 ---
 
 # Select Range
@@ -10,33 +11,41 @@ title: Select Range
 Select a range in the Excel object
 :::
 
+![Select Range](../../../../assets/Select Range_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Column Name**`string`: Column name. Starts from A
-
-- **Row Number**`Integer`: Row number. Starts from 1
-
-- **End Column Name**`string`: Column name. Starts from A
-
-- **End Row Number**`Integer`: Row number. Starts from 1
-
-- **Start Column Name**`string`: Column name. Starts from A
-
-- **Start Row Number**`Integer`: Row number. Starts from 1
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 - **Selection Method**`Integer`: Choose selection method: range, row, or column
 
-- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Start Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Start Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **End Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **End Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

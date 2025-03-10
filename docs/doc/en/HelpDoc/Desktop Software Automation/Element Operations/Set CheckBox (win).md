@@ -1,5 +1,6 @@
 ---
 title: Set CheckBox (win)
+order: 5
 ---
 
 # Set CheckBox (win)
@@ -10,17 +11,19 @@ title: Set CheckBox (win)
 Set the state of the check box in the window to checked or unchecked
 :::
 
+![Set CheckBox (win)](../../../assets/Set CheckBox (win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Operation**`Integer`: Operation for the check box
+- **Window object**`TWinObj`: Enter a captured window object
 
 - **Operation target**`TTarget`: Select the window element to operate on
 
-- **Window object**`TWinObj`: Enter a captured window object
+- **Operation**`Integer`: Operation for the check box
 
 
 **Command Output**
@@ -29,10 +32,14 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target check box to exist
-
 - **Delay after execution (milliseconds)**`Integer`: Time to continue waiting after command execution
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target check box to exist
+
+
+**Command Output**
 
 ### Error Handling
 

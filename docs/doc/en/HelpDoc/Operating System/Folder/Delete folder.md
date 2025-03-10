@@ -1,5 +1,6 @@
 ---
 title: Delete folder
+order: 5
 ---
 
 # Delete folder
@@ -9,6 +10,8 @@ title: Delete folder
 :::tip 
 Delete the folder, including all subfolders and files within it
 :::
+
+![Delete folder](../../../assets/Delete folder_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Delete the folder, including all subfolders and files within it
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

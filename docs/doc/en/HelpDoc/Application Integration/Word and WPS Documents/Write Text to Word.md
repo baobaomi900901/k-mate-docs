@@ -1,5 +1,6 @@
 ---
 title: Write Text to Word
+order: 4
 ---
 
 # Write Text to Word
@@ -10,25 +11,33 @@ title: Write Text to Word
 Write or overwrite text in the current selection area of the Word document
 :::
 
+![Write Text to Word](../../../assets/Write Text to Word_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Line Break Before Writing**`Boolean`: If checked, a line break will occur before writing the text
-
-- **Text Style**`string`: Set the text style
+- **Word Object**`TDocumentApplication`: Enter a Word object created by the 'Open or Create Word' function
 
 - **Text Content**`string`: Text to be written into the current selection area
 
-- **Word Object**`TDocumentApplication`: Enter a Word object created by the 'Open or Create Word' function
+- **Text Style**`string`: Set the text style
+
+- **Line Break Before Writing**`Boolean`: If checked, a line break will occur before writing the text
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

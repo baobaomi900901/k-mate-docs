@@ -1,5 +1,6 @@
 ---
 title: Move Window Position
+order: 6
 ---
 
 # Move Window Position
@@ -10,37 +11,45 @@ title: Move Window Position
 Move window to specified position
 :::
 
+![Move Window Position](../../../assets/Move Window Position_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Y**`Integer`: Window vertical coordinate
-
-- **X**`Integer`: Window horizontal coordinate
-
-- **Window Handle**`Integer`: Input a window handle
-
-- **Match Using Wildcards**`Boolean`: Match using wildcards
-
-- **Window Type**`string`: Input the window type
-
-- **Add Window Type**`Boolean`: Add window type
-
-- **Window Title**`string`: Input the window title
-
-- **Operation Target**`TTarget`: Select a window element
+- **Get Window Method**`Integer`: Select the method to get the window
 
 - **Window Object**`TWinObj`: Input a captured window object
 
-- **Get Window Method**`Integer`: Select the method to get the window
+- **Operation Target**`TTarget`: Select a window element
+
+- **Window Title**`string`: Input the window title
+
+- **Add Window Type**`Boolean`: Add window type
+
+- **Window Type**`string`: Input the window type
+
+- **Match Using Wildcards**`Boolean`: Match using wildcards
+
+- **Window Handle**`Integer`: Input a window handle
+
+- **X**`Integer`: Window horizontal coordinate
+
+- **Y**`Integer`: Window vertical coordinate
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

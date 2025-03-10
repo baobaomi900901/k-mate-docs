@@ -1,5 +1,6 @@
 ---
 title: OpenAI Chat
+order: 1
 ---
 
 # OpenAI Chat
@@ -10,15 +11,17 @@ title: OpenAI Chat
 Use natural language dialogue to let AI complete tasks like original writing, error checking, customer service dialogues, translation, etc.
 :::
 
+![OpenAI Chat](../../../assets/OpenAI Chat_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Model Method**`Integer`: Choose the model method
-
 - **Question Text**`string`: Enter the question text
+
+- **Model Method**`Integer`: Choose the model method
 
 
 **Command Output**
@@ -27,10 +30,14 @@ Use natural language dialogue to let AI complete tasks like original writing, er
 
 ### Advanced
 
+- **Proxy Parameters**`string`: When our program cannot directly connect to the target network but the other party has installed a proxy server, format as Address:Port
+
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Timeout (milliseconds)**`Integer`: Maximum waiting time (milliseconds)
 
-- **Proxy Parameters**`string`: Proxy server, format as Address:Port
 
+**Command Output**
 
 ### Error Handling
 

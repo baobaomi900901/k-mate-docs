@@ -1,5 +1,6 @@
 ---
 title: DingTalk Group Notification
+order: 2
 ---
 
 # DingTalk Group Notification
@@ -10,31 +11,39 @@ title: DingTalk Group Notification
 Send content to DingTalk group
 :::
 
+![DingTalk Group Notification](../../../assets/DingTalk Group Notification_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **@Everyone**`Boolean`: @Everyone
-
-- **@Someone**`String`: Enter the phone number bound to the member you want to @, for multiple members, switch to programming mode and input a list of numbers, like ['PhoneNumber1', 'PhoneNumber2']
-
-- **MarkDown Content**`string`: MarkDown content
-
-- **Text Content**`string`: Text content
-
-- **Message Format Type**`Integer`: Message type and data format
+- **Bot Address**`string`: The bot's web address, i.e., WebHook, needs to be applied for separately
 
 - **Secret Key**`string`: The string starting with SEC shown under the signature section on the bot security settings page
 
-- **Bot Address**`string`: The bot's web address, i.e., WebHook, needs to be applied for separately
+- **Message Format Type**`Integer`: Message type and data format
+
+- **Text Content**`string`: Text content
+
+- **MarkDown Content**`string`: MarkDown content
+
+- **@Someone**`String`: Enter the phone number bound to the member you want to @, for multiple members, switch to programming mode and input a list of numbers, like ['PhoneNumber1', 'PhoneNumber2']
+
+- **@Everyone**`Boolean`: @Everyone
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

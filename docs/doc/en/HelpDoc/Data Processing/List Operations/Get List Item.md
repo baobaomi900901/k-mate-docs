@@ -1,5 +1,6 @@
 ---
 title: Get List Item
+order: 5
 ---
 
 # Get List Item
@@ -10,21 +11,25 @@ title: Get List Item
 This command is used to get an item from a specific position in the list
 :::
 
+![Get List Item](../../../assets/Get List Item_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Item Position**`Integer`: Enter the item position. Counting forwards: the first item is 0, the second item is 1, and so on; counting backwards: the last item is -1, the second to last item is -2, and so on.
-
 - **List**`TList<String>`: Enter the list variable
+
+- **Item Position**`Integer`: Enter the item position. Counting forwards: the first item is 0, the second item is 1, and so on; counting backwards: the last item is -1, the second to last item is -2, and so on.
 
 
 **Command Output**
 
 - **Save List Item To**`String`: Specify a variable to save the found list item
 
+
+**Command Output**
 
 ### Error Handling
 

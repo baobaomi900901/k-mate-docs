@@ -1,5 +1,6 @@
 ---
 title: Set Json Value
+order: 5
 ---
 
 # Set Json Value
@@ -10,27 +11,35 @@ title: Set Json Value
 Set the value of a Json object with the specified type
 :::
 
+![Set Json Value](../../../assets/Set Json Value_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Special Characters**`Boolean`: Check this box if the Key contains special characters.
-
-- **Data Type**`Integer`: Data Type
-
-- **Value**`string`: Value
+- **Json Object**`TJson`: Json Object
 
 - **Key**`string`: Key
 
-- **Json Object**`TJson`: Json Object
+- **Value**`string`: Value
+
+- **Data Type**`Integer`: Data Type
+
+- **Special Characters**`Boolean`: Check this box if the Key contains special characters.
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

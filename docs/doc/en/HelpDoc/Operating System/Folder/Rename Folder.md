@@ -1,5 +1,6 @@
 ---
 title: Rename Folder
+order: 9
 ---
 
 # Rename Folder
@@ -10,21 +11,29 @@ title: Rename Folder
 Rename the folder
 :::
 
+![Rename Folder](../../../assets/Rename Folder_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **New Folder Name**`string`: Enter the new folder name
-
 - **Source Folder**`string`: The folder to be renamed
+
+- **New Folder Name**`string`: Enter the new folder name
 
 
 **Command Output**
 
 - **New Folder Path**`string`: Enter a name to save the new folder path
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

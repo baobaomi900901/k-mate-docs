@@ -1,5 +1,6 @@
 ---
 title: Position Word cursor
+order: 5
 ---
 
 # Position Word cursor
@@ -10,31 +11,39 @@ title: Position Word cursor
 Position the cursor at the specified location in the Word document
 :::
 
+![Position Word cursor](../../../assets/Position Word cursor_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Position the cursor at**`Integer`: Choose whether to position the cursor before or after the text
-
-- **Bookmark name**`string`: Bookmark name
-
-- **Search from the beginning**`Boolean`: If checked, search from the beginning; otherwise, search from the current position
-
-- **Text location**`Integer`: The location where the text appears
-
-- **Text content**`string`: The text to be located
+- **Word object**`TDocumentApplication`: Enter a Word object created by the 'Open or Create Word' function
 
 - **Relative to**`Integer`: Select positioning type
 
-- **Word object**`TDocumentApplication`: Enter a Word object created by the 'Open or Create Word' function
+- **Text content**`string`: The text to be located
+
+- **Text location**`Integer`: The location where the text appears
+
+- **Search from the beginning**`Boolean`: If checked, search from the beginning; otherwise, search from the current position
+
+- **Bookmark name**`string`: Bookmark name
+
+- **Position the cursor at**`Integer`: Choose whether to position the cursor before or after the text
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

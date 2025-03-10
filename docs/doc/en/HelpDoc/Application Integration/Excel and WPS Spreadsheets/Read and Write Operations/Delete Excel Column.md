@@ -1,5 +1,6 @@
 ---
 title: Delete Excel Column
+order: 13
 ---
 
 # Delete Excel Column
@@ -10,23 +11,31 @@ title: Delete Excel Column
 Delete column
 :::
 
+![Delete Excel Column](../../../../assets/Delete Excel Column_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
-
-- **Column Name**`string`: Column name. Starts from A
-
 - **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+
+- **Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

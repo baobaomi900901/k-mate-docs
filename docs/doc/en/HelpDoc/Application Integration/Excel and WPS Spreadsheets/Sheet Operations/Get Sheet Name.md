@@ -1,5 +1,6 @@
 ---
 title: Get Sheet Name
+order: 6
 ---
 
 # Get Sheet Name
@@ -10,23 +11,31 @@ title: Get Sheet Name
 Get the name of the sheet
 :::
 
+![Get Sheet Name](../../../../assets/Get Sheet Name_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Scope**`Integer`: Select the sheet to get the name from
-
 - **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+
+- **Sheet Scope**`Integer`: Select the sheet to get the name from
 
 
 **Command Output**
 
-- **Save Sheet Name List To**`TList<String>`: Specify a variable to save the list of sheet names
-
 - **Save Sheet Name To**`string`: Variable to save the sheet name
 
+- **Save Sheet Name List To**`TList<String>`: Specify a variable to save the list of sheet names
+
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

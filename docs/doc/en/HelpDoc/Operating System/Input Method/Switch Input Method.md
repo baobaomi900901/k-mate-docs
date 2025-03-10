@@ -1,5 +1,6 @@
 ---
 title: Switch Input Method
+order: 4
 ---
 
 # Switch Input Method
@@ -9,6 +10,8 @@ title: Switch Input Method
 :::tip 
 Switch the system input method, requires administrator privileges
 :::
+
+![Switch Input Method](../../../assets/Switch Input Method_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Switch the system input method, requires administrator privileges
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

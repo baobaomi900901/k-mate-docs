@@ -1,5 +1,6 @@
 ---
 title: Copy File
+order: 2
 ---
 
 # Copy File
@@ -10,23 +11,31 @@ title: Copy File
 Copy a file to a specified directory
 :::
 
+![Copy File](../../../assets/Copy File_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Copy Method**`Integer`: How to handle when the file already exists
+- **Source Files to Copy**`string`: Enter or select the file paths to copy. Separate multiple file paths with '|'.
 
 - **Target Folder**`string`: Enter the target folder path
 
-- **Source Files to Copy**`string`: Enter or select the file paths to copy. Separate multiple file paths with '|'.
+- **Copy Method**`Integer`: How to handle when the file already exists
 
 
 **Command Output**
 
 - **List of Copied File Paths**`TList<String>`: Enter a name to save the list of copied file paths
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

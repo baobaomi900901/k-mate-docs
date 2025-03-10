@@ -1,5 +1,6 @@
 ---
 title: Write content to Excel worksheet
+order: 8
 ---
 
 # Write content to Excel worksheet
@@ -10,39 +11,47 @@ title: Write content to Excel worksheet
 Write content in the Excel worksheet, supporting appending, inserting, or overwriting
 :::
 
+![Write content to Excel worksheet](../../../assets/Write content to Excel worksheet_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet name**`string`: If empty, it defaults to the currently active sheet
-
-- **Write content**`TDataTable`: When the region is a range, the write content should be a data table type variable
-
-- **Column name**`string`: Column name starts from A
-
-- **Write method**`Integer`: Select the write method
-
-- **Starting row number**`Integer`: Row number starts from 1
-
-- **Row number**`Integer`: Row number starts from 1
-
-- **Starting column name**`string`: Column name starts from A
-
-- **Unit column name**`string`: Column name starts from A
-
-- **Unit row number**`Integer`: Row number starts from 1
+- **Excel object**`TWorkbookApplication`: Enter an Excel object obtained through the 'Open or create new Excel' / 'Get currently active Excel object' function
 
 - **Write range**`Integer`: Select the write range
 
-- **Excel object**`TWorkbookApplication`: Enter an Excel object obtained through the 'Open or create new Excel' / 'Get currently active Excel object' function
+- **Unit row number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Unit column name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **Starting column name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **Row number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Starting row number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Write method**`Integer`: Select the write method
+
+- **Column name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **Write content**`TDataTable`: When the region is a range, the write content should be a data table type variable
+
+- **Sheet name**`string`: If empty, it defaults to the currently active sheet
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

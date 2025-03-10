@@ -1,5 +1,6 @@
 ---
 title: FeiShu Group Notification
+order: 3
 ---
 
 # FeiShu Group Notification
@@ -10,35 +11,43 @@ title: FeiShu Group Notification
 Send content to FeiShu group
 :::
 
+![FeiShu Group Notification](../../../assets/FeiShu Group Notification_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Image Path**`string`: Must not exceed 10MB, supports JPG and PNG formats
-
-- **Message Card Content**`string`: Message cards are FeiShu's unique message format. You can use FeiShu's official message card builder tool to edit message cards
-
-- **Rich Text Content**`string`: Supports using FeiShu's original format content. Refer to FeiShu's message documentation. If you need to @ someone using a phone number or email, you must be able to obtain the corresponding user_id based on the phone number or email
-
-- **Text Content**`string`: Text content
-
-- **app_secret**`string`: Obtain tenant_access_token, used in rich text messages and message cards
-
-- **app_id**`string`: Obtain tenant_access_token, used in rich text messages and message cards
-
-- **Message Format Type**`Integer`: Message type and data format
+- **Bot Address**`string`: The bot's web address, i.e., WebHook, needs to be applied for separately
 
 - **Signature Verification**`string`: Signature verification in bot security settings; no input is needed if signature verification is not set
 
-- **Bot Address**`string`: The bot's web address, i.e., WebHook, needs to be applied for separately
+- **Message Format Type**`Integer`: Message type and data format
+
+- **app_id**`string`: Obtain tenant_access_token, used in rich text messages and message cards
+
+- **app_secret**`string`: Obtain tenant_access_token, used in rich text messages and message cards
+
+- **Text Content**`string`: Text content
+
+- **Rich Text Content**`string`: Supports using FeiShu's original format content. Refer to FeiShu's message documentation. If you need to @ someone using a phone number or email, you must be able to obtain the corresponding user_id based on the phone number or email
+
+- **Message Card Content**`string`: Message cards are FeiShu's unique message format. You can use FeiShu's official message card builder tool to edit message cards
+
+- **Image Path**`string`: Must not exceed 10MB, supports JPG and PNG formats
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

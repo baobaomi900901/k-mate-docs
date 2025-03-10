@@ -1,5 +1,6 @@
 ---
 title: Navigate to New URL
+order: 1
 ---
 
 # Navigate to New URL
@@ -10,19 +11,19 @@ title: Navigate to New URL
 Navigate the Web browser to a new page, back, forward, or reload the current page
 :::
 
+![Navigate to New URL](../../../assets/Navigate to New URL_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **New URL**`string`: The target URL for navigation
-
-- **Ignore Cache**`Boolean`: Whether to ignore the browser cache when reloading
+- **Webpage Object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
 
 - **Navigation Type**`Integer`: The type of web navigation
 
-- **Webpage Object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
+- **New URL**`string`: The target URL for navigation
 
 
 **Command Output**
@@ -33,6 +34,10 @@ No output for the current command
 
 - **Page Load Timeout (milliseconds)**`Integer`: The timeout for the page to load completely
 
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

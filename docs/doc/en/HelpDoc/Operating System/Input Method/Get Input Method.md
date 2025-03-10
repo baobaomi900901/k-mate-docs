@@ -1,5 +1,6 @@
 ---
 title: Get Input Method
+order: 1
 ---
 
 # Get Input Method
@@ -9,6 +10,8 @@ title: Get Input Method
 :::tip 
 Get the input status (Chinese or English) of the currently active window's input method
 :::
+
+![Get Input Method](../../../assets/Get Input Method_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ No input for the current command
 
 - **Save the input method name to**`string`: Enter a variable to save the input method name
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

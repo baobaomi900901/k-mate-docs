@@ -1,5 +1,6 @@
 ---
 title: ERNIE Bot Chat
+order: 4
 ---
 
 # ERNIE Bot Chat
@@ -10,15 +11,17 @@ title: ERNIE Bot Chat
 Use natural language conversation to allow AI to complete tasks such as original writing, error checking, customer service dialogue, and translation
 :::
 
+![ERNIE Bot Chat](../../../assets/ERNIE Bot Chat_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Model Method**`Integer`: Select model method
-
 - **Question Text**`string`: Enter the question text
+
+- **Model Method**`Integer`: Select model method
 
 
 **Command Output**
@@ -27,10 +30,14 @@ Use natural language conversation to allow AI to complete tasks such as original
 
 ### Advanced
 
+- **Proxy Parameters**`string`: When our program cannot directly connect to the target network but the other party has installed a proxy server in the format Address:Port
+
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
 
-- **Proxy Parameters**`string`: Proxy server in the format Address:Port
 
+**Command Output**
 
 ### Error Handling
 

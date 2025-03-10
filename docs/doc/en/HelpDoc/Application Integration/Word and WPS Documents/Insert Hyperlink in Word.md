@@ -1,5 +1,6 @@
 ---
 title: Insert Hyperlink in Word
+order: 11
 ---
 
 # Insert Hyperlink in Word
@@ -10,25 +11,33 @@ title: Insert Hyperlink in Word
 Insert a hyperlink in a Word document
 :::
 
+![Insert Hyperlink in Word](../../../assets/Insert Hyperlink in Word_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Line Break Before Inserting Hyperlink**`Boolean`: Check this box to insert a line break before the hyperlink
-
-- **Hyperlink Address**`string`: The hyperlink address for access
+- **Word Object**`TDocumentApplication`: Enter a Word object created using the 'Open or Create Word' function
 
 - **Display Text**`string`: Text to be displayed before the hyperlink
 
-- **Word Object**`TDocumentApplication`: Enter a Word object created using the 'Open or Create Word' function
+- **Hyperlink Address**`string`: The hyperlink address for access
+
+- **Line Break Before Inserting Hyperlink**`Boolean`: Check this box to insert a line break before the hyperlink
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

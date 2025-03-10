@@ -1,5 +1,6 @@
 ---
 title: Change Text Case
+order: 7
 ---
 
 # Change Text Case
@@ -10,21 +11,25 @@ title: Change Text Case
 This command is used to change the case of text (to all uppercase, all lowercase, or capitalize each word)
 :::
 
+![Change Text Case](../../../assets/Change Text Case_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Convert To**`Integer`: Select a conversion method
-
 - **Text Content**`string`: Enter a text string or select a variable containing the string
+
+- **Convert To**`Integer`: Select a conversion method
 
 
 **Command Output**
 
 - **Save Result To**`string`: Specify a variable to save the converted text content
 
+
+**Command Output**
 
 ### Error Handling
 

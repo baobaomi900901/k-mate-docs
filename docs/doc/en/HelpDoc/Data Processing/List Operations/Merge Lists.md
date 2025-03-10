@@ -1,5 +1,6 @@
 ---
 title: Merge Lists
+order: 13
 ---
 
 # Merge Lists
@@ -10,21 +11,25 @@ title: Merge Lists
 This command is used to merge two lists
 :::
 
+![Merge Lists](../../../assets/Merge Lists_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **List 2**`TList<String>`: Enter the second list variable
-
 - **List 1**`TList<String>`: Enter the first list variable
+
+- **List 2**`TList<String>`: Enter the second list variable
 
 
 **Command Output**
 
 - **Save Merged List To**`TList<String>`: Enter a name to save the merged list
 
+
+**Command Output**
 
 ### Error Handling
 

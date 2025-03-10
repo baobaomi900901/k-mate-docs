@@ -1,5 +1,6 @@
 ---
 title: Add Sheet
+order: 1
 ---
 
 # Add Sheet
@@ -10,23 +11,31 @@ title: Add Sheet
 Add a new sheet to the Excel object, specifying whether to add it at the beginning or the end
 :::
 
+![Add Sheet](../../../../assets/Add Sheet_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Add Method**`Integer`: Add position
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 - **Sheet Name**`string`: Enter the name of the sheet to be added, cannot be empty
 
-- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Add Method**`Integer`: Add position
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

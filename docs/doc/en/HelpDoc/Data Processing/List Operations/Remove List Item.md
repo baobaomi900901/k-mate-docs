@@ -1,5 +1,6 @@
 ---
 title: Remove List Item
+order: 8
 ---
 
 # Remove List Item
@@ -10,25 +11,29 @@ title: Remove List Item
 This command is used to remove a specified item from the list
 :::
 
+![Remove List Item](../../../assets/Remove List Item_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Position to Remove**`Integer`: Enter the position to remove. Counting forwards: the first item is 0, the second item is 1, and so on; counting backwards: the last item is -1, the second to last item is -2, and so on.
-
-- **Content to Remove**`String`: Enter the content to be removed
+- **List**`TList<String>`: Enter the list variable
 
 - **Removal Method**`Integer`: Select the removal method. For example, in 'helloworld', if you want to remove the first 'o' (at position 4), select 'By Index' and enter 4 (index starts from 0); to remove all 'o's, select 'By Content' and enter the letter 'o'
 
-- **List**`TList<String>`: Enter the list variable
+- **Content to Remove**`String`: Enter the content to be removed
+
+- **Position to Remove**`Integer`: Enter the position to remove. Counting forwards: the first item is 0, the second item is 1, and so on; counting backwards: the last item is -1, the second to last item is -2, and so on.
 
 
 **Command Output**
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Set Format
+order: 3
 ---
 
 # Set Format
@@ -10,41 +11,49 @@ title: Set Format
 Set cell format: number, alignment, font, border, fill, protection
 :::
 
+![Set Format](../../../../assets/Set Format_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: Worksheet name
-
-- **Column Name**`string`: Column name starting from A
-
-- **Row Number**`Integer`: Row number starting from 1
-
-- **End Column Name**`string`: Column name starting from A
-
-- **End Row Number**`Integer`: Row number starting from 1
-
-- **Start Column Name**`string`: Column name starting from A
-
-- **Start Row Number**`Integer`: Row number starting from 1
-
-- **Column Name of Cell**`string`: Column name starting from A
-
-- **Row Number of Cell**`Integer`: Row number starting from 1
-
-- **Region Type**`Integer`: Specify the region to set the format for
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
 - **FormatSet**`string`: 
 
-- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Region Type**`Integer`: Specify the region to set the format for
+
+- **Row Number of Cell**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Column Name of Cell**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **Start Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Start Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **End Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **End Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **Sheet Name**`string`: Worksheet name
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Move Mouse
+order: 4
 ---
 
 # Move Mouse
@@ -10,19 +11,21 @@ title: Move Mouse
 Move the mouse to a specified position
 :::
 
+![Move Mouse](../../assets/Move Mouse_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Move speed**`Integer`: Speed of mouse movement
-
-- **Move the mouse to Y**`Integer`: Relative vertical coordinate
+- **Relative to**`Integer`: The position of the mouse
 
 - **Move the mouse to X**`Integer`: Relative horizontal coordinate
 
-- **Relative to**`Integer`: The position of the mouse
+- **Move the mouse to Y**`Integer`: Relative vertical coordinate
+
+- **Move speed**`Integer`: Speed of mouse movement
 
 
 **Command Output**
@@ -31,8 +34,12 @@ No output for the current command
 
 ### Advanced
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Delay after execution (milliseconds)**`Integer`: Time to wait after the instruction is executed
 
+
+**Command Output**
 
 ### Error Handling
 

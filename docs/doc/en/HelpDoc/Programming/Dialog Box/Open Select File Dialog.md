@@ -1,5 +1,6 @@
 ---
 title: Open Select File Dialog
+order: 5
 ---
 
 # Open Select File Dialog
@@ -10,29 +11,33 @@ title: Open Select File Dialog
 Open Select File Dialog
 :::
 
+![Open Select File Dialog](../../../assets/Open Select File Dialog_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Check if File Exists**`Boolean`: Check if file exists
-
-- **Allow Multiple Selections**`Boolean`: Allow multiple selections
+- **Dialog Title**`string`: Dialog Title
 
 - **File Type**`Integer`: File Type
 
-- **Dialog Title**`string`: Dialog Title
+- **Allow Multiple Selections**`Boolean`: Allow multiple selections
+
+- **Check if File Exists**`Boolean`: Check if file exists
 
 
 **Command Output**
 
-- **Save Selected File Result To**`string`: Specify a variable name to save the selected file result, return None if the user cancels the dialog, otherwise return a dict object
+- **Save Selected File Result To**`string`: Specify a variable name to save the selected file result, return null string if the user cancels the dialog
 
 ### Advanced
 
 - **Default Folder**`string`: Default folder
 
+
+**Command Output**
 
 ### Error Handling
 

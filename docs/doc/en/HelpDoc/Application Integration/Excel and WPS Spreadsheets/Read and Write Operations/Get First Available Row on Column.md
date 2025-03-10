@@ -1,5 +1,6 @@
 ---
 title: Get First Available Row on Column
+order: 5
 ---
 
 # Get First Available Row on Column
@@ -10,23 +11,31 @@ title: Get First Available Row on Column
 Get the first available row on the specified column
 :::
 
+![Get First Available Row on Column](../../../../assets/Get First Available Row on Column_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
-
-- **Column Name**`string`: Column name. Starts from A
-
 - **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+
+- **Column Name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
 
 **Command Output**
 
 - **Save Row Number To**`Integer`: Specify a variable to save the first available row number on the column
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

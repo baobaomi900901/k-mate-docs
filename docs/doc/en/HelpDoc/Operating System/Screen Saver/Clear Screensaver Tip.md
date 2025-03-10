@@ -1,5 +1,6 @@
 ---
 title: Clear Screensaver Tip
+order: 3
 ---
 
 # Clear Screensaver Tip
@@ -9,6 +10,8 @@ title: Clear Screensaver Tip
 :::tip 
 Clear the tip displayed on the screensaver
 :::
+
+![Clear Screensaver Tip](../../../assets/Clear Screensaver Tip_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ No input for the current command
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

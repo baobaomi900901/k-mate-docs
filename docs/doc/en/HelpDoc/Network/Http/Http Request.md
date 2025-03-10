@@ -1,5 +1,6 @@
 ---
 title: Http Request
+order: 1
 ---
 
 # Http Request
@@ -10,19 +11,21 @@ title: Http Request
 Http Request
 :::
 
+![Http Request](../../../assets/Http Request_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Protocol Body**`string`: Enter the content to be sent to the server
-
-- **Protocol Header**`string`: Protocol headers, multiple lines, use commas to separate, each line in the format 'Header Name: Header Content'
+- **Method**`Integer`: Select the operation method
 
 - **URL**`string`: Please enter the request URL
 
-- **Method**`Integer`: Select the operation method
+- **Protocol Header**`string`: Protocol headers, multiple lines, use commas to separate, each line in the format 'Header Name: Header Content'
+
+- **Protocol Body**`string`: Enter the content to be sent to the server
 
 
 **Command Output**
@@ -31,18 +34,18 @@ Http Request
 
 ### Advanced
 
-- **Webpage Object**`TObject`: Enter a webpage object created by 'Get Open Webpage Object'
-
-- **Send Http Request via Webpage**`Boolean`: Use case: Requires authentication information to send successfully, select the relative webpage object for authentication
-
-- **File Name**`string`: Enter the name to be saved in the folder
-
-- **File Save Directory**`string`: Enter the path where the file will be saved
-
-- **Save Result to File**`Boolean`: Whether to save the response result to a file
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Connection Timeout in Milliseconds**`Integer`: Enter the connection timeout in seconds
 
+- **Save Result to File**`Boolean`: Whether to save the response result to a file
+
+- **File Save Directory**`string`: Enter the path where the file will be saved
+
+- **File Name**`string`: Enter the name to be saved in the folder
+
+
+**Command Output**
 
 ### Error Handling
 

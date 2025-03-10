@@ -1,5 +1,6 @@
 ---
 title: Add Data Validation
+order: 10
 ---
 
 # Add Data Validation
@@ -10,63 +11,71 @@ title: Add Data Validation
 Add Data Validation
 :::
 
+![Add Data Validation](../../../../assets/Add Data Validation_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: Worksheet name
-
-- **Column Name**`string`: Column name. Start from A
-
-- **Row Number**`Integer`: Row number. Start from 1
-
-- **End Column Name**`string`: Column name. Start from A
-
-- **End Row Number**`Integer`: Row number. Start from 1
-
-- **Start Column Name**`string`: Column name. Start from A
-
-- **Start Row Number**`Integer`: Row number. Start from 1
-
-- **Unit Column Name**`string`: Column name. Start from A
-
-- **Unit Row Number**`Integer`: Row number. Start from 1
-
-- **Region Type**`Integer`: Select the range for data validation
-
-- **Formula**`string`: Formula
-
-- **End Time**`string`: End Time
-
-- **Start Time**`string`: Start Time
-
-- **End Date**`string`: End Date
-
-- **Start Date**`string`: Start Date
-
-- **Source**`string`: Source
-
-- **Maximum Value**`Integer`: Maximum Value
-
-- **Minimum Value**`Integer`: Minimum Value
-
-- **Data Type**`Integer`: Select data calculation method
-
-- **Provide Dropdown Arrow**`Boolean`: Provide Dropdown Arrow
-
-- **Ignore Null Values**`Boolean`: If checked, null values will be ignored
+- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained by the functions 'Open or New Excel'/'Get Active Excel Instance'
 
 - **Allow Type**`Integer`: Allow Type
 
-- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained by the functions 'Open or New Excel'/'Get Active Excel Instance'
+- **Ignore Null Values**`Boolean`: If checked, null values will be ignored
+
+- **Provide Dropdown Arrow**`Boolean`: Provide Dropdown Arrow
+
+- **Data Type**`Integer`: Select data calculation method
+
+- **Minimum Value**`Integer`: Minimum Value
+
+- **Maximum Value**`Integer`: Maximum Value
+
+- **Source**`string`: Source
+
+- **Start Date**`string`: Start Date
+
+- **End Date**`string`: End Date
+
+- **Start Time**`string`: Start Time
+
+- **End Time**`string`: End Time
+
+- **Formula**`string`: Formula
+
+- **Region Type**`Integer`: Select the range for data validation
+
+- **Unit Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Unit Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **Start Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Start Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **End Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **End Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **Sheet Name**`string`: Worksheet name
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

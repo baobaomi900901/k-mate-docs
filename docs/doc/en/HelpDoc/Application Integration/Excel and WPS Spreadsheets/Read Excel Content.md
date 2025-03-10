@@ -1,5 +1,6 @@
 ---
 title: Read Excel Content
+order: 7
 ---
 
 # Read Excel Content
@@ -10,33 +11,35 @@ title: Read Excel Content
 Read content from an Excel file, supports reading within a rectangular area range.
 :::
 
+![Read Excel Content](../../../assets/Read Excel Content_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Page Name**`string`: If empty, it defaults to the currently active Sheet page.
-
-- **Ending Column Name**`string`: Column name. Starts from A.
-
-- **Ending Row Number**`Integer`: Row number. Starts from 1.
-
-- **Starting Column Name**`string`: Column name. Starts from A.
-
-- **Starting Row Number**`Integer`: Row number. Starts from 1.
-
-- **Column Name**`string`: Column name. Starts from A.
-
-- **Row Number**`Integer`: Row number. Starts from 1.
-
-- **Cell Column Name**`string`: Column name. Starts from A.
-
-- **Cell Row Number**`Integer`: Row number. Starts from 1.
+- **Excel Object**`TWorkbookApplication`: Input an Excel object obtained through the function 'Open or New Excel'/'Get Currently Active Excel Object'.
 
 - **Read Method**`Integer`: The method of reading an Excel file.
 
-- **Excel Object**`TWorkbookApplication`: Input an Excel object obtained through the function 'Open or New Excel'/'Get Currently Active Excel Object'.
+- **Cell Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Cell Column Name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Column Name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **Starting Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Starting Column Name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **Ending Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Ending Column Name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **Sheet Page Name**`string`: If empty, it defaults to the currently active Sheet page.
 
 
 **Command Output**
@@ -45,12 +48,14 @@ Read content from an Excel file, supports reading within a rectangular area rang
 
 ### Advanced
 
-- **Clear Space Before and After Cell**`Boolean`: If checked, automatically clears spaces before and after the read content.
-
 - **Displayed Content Column**`string`: Display visible content, multiple columns separated by commas.
 
-- **Read Cell Displayed Content**`Boolean`: If unchecked, integers are read as decimals (1=1.0).
+- **Clear Space Before and After Cell**`Boolean`: If checked, automatically clears spaces before and after the read content.
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

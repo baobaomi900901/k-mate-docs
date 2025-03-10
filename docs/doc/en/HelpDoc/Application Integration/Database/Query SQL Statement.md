@@ -1,5 +1,6 @@
 ---
 title: Query SQL Statement
+order: 3
 ---
 
 # Query SQL Statement
@@ -10,23 +11,29 @@ title: Query SQL Statement
 Execute Select query SQL statement in the specified database
 :::
 
+![Query SQL Statement](../../../assets/Query SQL Statement_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Timeout in milliseconds**`Integer`: Please enter the query timeout in milliseconds for the database
+- **Database Connection Object**`TDatabase`: Enter the database connection object
 
 - **Database Query Statement**`string`: Enter the database query statement
-
-- **Database Connection Object**`TDatabase`: Enter the database connection object
 
 
 **Command Output**
 
 - **Data Table**`TDataTable`: Specify a variable name that will store the query result from the database
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

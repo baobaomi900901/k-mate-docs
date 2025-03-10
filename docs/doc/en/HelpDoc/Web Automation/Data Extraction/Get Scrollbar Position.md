@@ -1,5 +1,6 @@
 ---
 title: Get Scrollbar Position
+order: 5
 ---
 
 # Get Scrollbar Position
@@ -10,23 +11,25 @@ title: Get Scrollbar Position
 Get the current position or bottom position (i.e., scroll length) of the scrollbar in a web page or element
 :::
 
+![Get Scrollbar Position](../../../assets/Get Scrollbar Position_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Position**`Integer`: Current scrollbar position relative to the top, bottom position is the maximum scroll length of the scrollbar
-
-- **Scrollbar**`Integer`: Actual operation scrollbar direction
-
-- **No Element Scrollbar, Auto Upward Search**`Boolean`: No Element Scrollbar, Auto Upward Search
-
-- **Operation Target**`TTarget`: Select the web element to be operated on
+- **Web Page Object**`TBrowser`: Input a web page object that has been obtained or created through the 'Open Web Page' function
 
 - **Element Scrollbar**`Boolean`: Get the scrollbar position of the specified element, otherwise the scrollbar of the entire web page
 
-- **Web Page Object**`TBrowser`: Input a web page object that has been obtained or created through the 'Open Web Page' function
+- **Operation Target**`TTarget`: Select the web element to be operated on
+
+- **No Element Scrollbar, Auto Upward Search**`Boolean`: No Element Scrollbar, Auto Upward Search
+
+- **Scrollbar**`Integer`: Actual operation scrollbar direction
+
+- **Position**`Integer`: Current scrollbar position relative to the top, bottom position is the maximum scroll length of the scrollbar
 
 
 **Command Output**
@@ -35,8 +38,12 @@ Get the current position or bottom position (i.e., scroll length) of the scrollb
 
 ### Advanced
 
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target scrollbar to exist
 
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Wait
+order: 1
 ---
 
 # Wait
@@ -10,25 +11,29 @@ title: Wait
 Wait for a period of time
 :::
 
+![Wait](../../assets/Wait_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Maximum Duration (Milliseconds)**`Integer`: The random number is generated from the range between the start and end numbers, inclusive of both
-
-- **Minimum Duration (Milliseconds)**`Integer`: The random number is generated from the range between the start and end numbers, inclusive of both
+- **Random Wait Duration**`Boolean`: The wait duration is a random number
 
 - **Duration (Milliseconds)**`Integer`: Wait duration
 
-- **Random Wait Duration**`Boolean`: The wait duration is a random number
+- **Minimum Duration (Milliseconds)**`Integer`: The random number is generated from the range between the start and end numbers, inclusive of both
+
+- **Maximum Duration (Milliseconds)**`Integer`: The random number is generated from the range between the start and end numbers, inclusive of both
 
 
 **Command Output**
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

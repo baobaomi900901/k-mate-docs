@@ -1,5 +1,6 @@
 ---
 title: Speech to Text
+order: 1
 ---
 
 # Speech to Text
@@ -9,6 +10,8 @@ title: Speech to Text
 :::tip 
 Call the Kingsware AI interface to recognize and output the content of the speech file
 :::
+
+![Speech to Text](../../../assets/Speech to Text_command.png)
 
 ## Configuration Item Description
 
@@ -21,16 +24,22 @@ Call the Kingsware AI interface to recognize and output the content of the speec
 
 **Command Output**
 
-- **Error Information**`String`: Specify a variable to store the error information
+- **Response Header Information**`String`: Specify a variable to store the response header information
 
 - **Response Body Information**`String`: Specify a variable to store the response body information
 
-- **Response Header Information**`String`: Specify a variable to store the response header information
+- **Error Information**`String`: Specify a variable to store the error information
 
 ### Advanced
 
 - **Response Header Type**`array of string`: When a long connection is established between the server and client, necessary settings for the HTTP response header 'connection' are required. Default is ['Connection']
 
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Set Window State
+order: 3
 ---
 
 # Set Window State
@@ -10,35 +11,43 @@ title: Set Window State
 Perform operations to restore, maximize, or minimize a window
 :::
 
+![Set Window State](../../../assets/Set Window State_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Window State to Set**`Integer`: Set the window state
-
-- **Window Handle**`Integer`: Enter a window handle
-
-- **Match by Wildcard**`Boolean`: Match by wildcard
-
-- **Window Class Name**`string`: Enter window class name
-
-- **Add Window Type**`Boolean`: Add window type
-
-- **Window Title**`string`: Enter window title
-
-- **Operation Target**`TTarget`: Select window element
+- **Method of Getting Window**`Integer`: Select the method to get the window
 
 - **Window Object**`TWinObj`: The window object obtained
 
-- **Method of Getting Window**`Integer`: Select the method to get the window
+- **Operation Target**`TTarget`: Select window element
+
+- **Window Title**`string`: Enter window title
+
+- **Add Window Type**`Boolean`: Add window type
+
+- **Window Class Name**`string`: Enter window class name
+
+- **Match by Wildcard**`Boolean`: Match by wildcard
+
+- **Window Handle**`Integer`: Enter a window handle
+
+- **Window State to Set**`Integer`: Set the window state
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

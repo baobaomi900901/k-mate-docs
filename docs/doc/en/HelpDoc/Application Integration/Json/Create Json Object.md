@@ -1,5 +1,6 @@
 ---
 title: Create Json Object
+order: 1
 ---
 
 # Create Json Object
@@ -10,21 +11,29 @@ title: Create Json Object
 Create a Json object of a specified type
 :::
 
+![Create Json Object](../../../assets/Create Json Object_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Processing Type**`Integer`: The processing type for Json, default uses the original logic, second option uses uLkJSON processing logic
-
 - **Data Type**`Integer`: Select the data type
+
+- **Processing Type**`Integer`: The processing type for Json, default uses the original logic, second option uses uLkJSON processing logic
 
 
 **Command Output**
 
 - **Json Object**`TJson`: Returned Json object
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

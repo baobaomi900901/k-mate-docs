@@ -1,5 +1,6 @@
 ---
 title: Get List Item Index
+order: 6
 ---
 
 # Get List Item Index
@@ -10,21 +11,27 @@ title: Get List Item Index
 Retrieve the position of a specified item in the list, with list positions starting from 0, where 0 is the first item, 1 is the second item, and so on
 :::
 
+![Get List Item Index](../../../assets/Get List Item Index_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
+- **List**`TList<String>`: Enter the list variable
+
 - **Specified Item Value**`String`: Enter the value of the specified item in the list
 
-- **List**`TList<String>`: Enter the list variable
+- **Output Type**`Integer`: By default, only the first occurrence position is retained, and all positions can be selected to be retained
 
 
 **Command Output**
 
-- **Save Position To**`Integer`: Specify a variable to save the position of the found specified item in the list
+- **Save Position To**`Integer`: Specify a integer variable to save the position of the found specified item in the list
 
+
+**Command Output**
 
 ### Error Handling
 

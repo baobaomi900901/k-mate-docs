@@ -1,5 +1,6 @@
 ---
 title: Copy Excel content
+order: 2
 ---
 
 # Copy Excel content
@@ -10,39 +11,47 @@ title: Copy Excel content
 Copy content from the Excel file
 :::
 
+![Copy Excel content](../../../../assets/Copy Excel content_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet name**`string`: If empty, it defaults to the currently active sheet
-
-- **End column name**`string`: Column name. Starting from A
-
-- **End row number**`Integer`: Row number. Starting from 1
-
-- **Start column name**`string`: Column name. Starting from A
-
-- **Start row number**`Integer`: Row number. Starting from 1
-
-- **Column name**`string`: Column name. Starting from A
-
-- **Row number**`Integer`: Row number. Starting from 1
-
-- **Unit column name**`string`: Column name. Starting from A
-
-- **Unit row number**`Integer`: Row number. Starting from 1
+- **Excel object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
 
 - **Read method**`Integer`: Select read method
 
-- **Excel object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+- **Unit row number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Unit column name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **Row number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Column name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **Start row number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Start column name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **End row number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **End column name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+
+- **Sheet name**`string`: If empty, it defaults to the currently active sheet
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

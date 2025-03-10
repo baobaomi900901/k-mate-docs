@@ -1,5 +1,6 @@
 ---
 title: Get Input Method List
+order: 3
 ---
 
 # Get Input Method List
@@ -9,6 +10,8 @@ title: Get Input Method List
 :::tip 
 Get all system input method names, requires administrator privileges
 :::
+
+![Get Input Method List](../../../assets/Get Input Method List_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ No input for the current command
 
 - **Save input method names to**`TList<String>`: Enter a variable to save the list of input method names
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Mouse hover over the image
+order: 8
 ---
 
 # Mouse hover over the image
@@ -10,27 +11,27 @@ title: Mouse hover over the image
 Mouse hover over the image
 :::
 
+![Mouse hover over the image](../../assets/Mouse hover over the image_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Vertical offset**`Integer`: Enter a positive value to move down, negative value to move up
-
-- **Horizontal offset**`Integer`: Enter a positive value to move right, negative value to move left
-
-- **Custom**`Integer`: Custom position
-
-- **Position of the target image**`Integer`: Select the position on the target image to hover
-
-- **Target image**`string`: Multiple images can be selected, and they will be searched in sequence until any matching image is found and clicked within the timeout period
-
-- **sAllImages**`string`: 
+- **Search scope**`Integer`: Search scope
 
 - **Window object**`TWinObj`: Please select the window object
 
-- **Search scope**`Integer`: Search scope
+- **Target image**`string`: Multiple images can be selected, and they will be searched in sequence until any matching image is found and clicked within the timeout period
+
+- **Position of the target image**`Integer`: Select the position on the target image to hover
+
+- **Custom**`Integer`: Custom position
+
+- **Horizontal offset**`Integer`: Enter a positive value to move right, negative value to move left
+
+- **Vertical offset**`Integer`: Enter a positive value to move down, negative value to move up
 
 
 **Command Output**
@@ -39,10 +40,14 @@ No output for the current command
 
 ### Advanced
 
-- **Delay after execution (milliseconds)**`Integer`: The time to wait after the instruction is executed
-
 - **Timeout (milliseconds)**`Integer`: Set the maximum waiting time
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Delay after execution (milliseconds)**`Integer`: The time to wait after the instruction is executed
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Get Associated Element (Web)
+order: 9
 ---
 
 # Get Associated Element (Web)
@@ -10,35 +11,41 @@ title: Get Associated Element (Web)
 Get the associated element (parent, child, adjacent) of an element in a specified web page.
 :::
 
+![Get Associated Element (Web)](../../../assets/Get Associated Element (Web)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Adjacency Direction**`integer`: Choose the direction of adjacency.
-
-- **Child Element Position**`Integer`: The index position in the parent element, starting from 0.
-
-- **Child Element Retrieval Method**`integer`: Choose the method for retrieving child elements.
-
-- **Association Type**`Integer`: Choose the type of association.
+- **Web Page Object**`TBrowser`: Enter a web page object that is either obtained or created by the 'Open Web Page' function.
 
 - **Operation Target**`TTarget`: Select the web element you want to operate on.
 
-- **Web Page Object**`TBrowser`: Enter a web page object that is either obtained or created by the 'Open Web Page' function.
+- **Association Type**`Integer`: Choose the type of association.
+
+- **Child Element Retrieval Method**`integer`: Choose the method for retrieving child elements.
+
+- **Child Element Position**`Integer`: The index position in the parent element, starting from 0.
+
+- **Adjacency Direction**`integer`: Choose the direction of adjacency.
 
 
 **Command Output**
 
-- **Save Element List To**`TList<TUiElement>`: Specify a variable to save the list of obtained element objects to.
-
 - **Save Web Element To**`TUiElement`: Specify a variable to save the obtained element object to.
+
+- **Save Element List To**`TList<TUiElement>`: Specify a variable to save the list of obtained element objects to.
 
 ### Advanced
 
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
 - **Wait for Element to Exist (Milliseconds)**`Integer`: The timeout period for waiting for the target associated element to exist.
 
+
+**Command Output**
 
 ### Error Handling
 

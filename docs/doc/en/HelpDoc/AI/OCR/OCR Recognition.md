@@ -1,5 +1,6 @@
 ---
 title: OCR Recognition
+order: 7
 ---
 
 # OCR Recognition
@@ -10,25 +11,27 @@ title: OCR Recognition
 OCR Recognition
 :::
 
+![OCR Recognition](../../../assets/OCR Recognition_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Card Side**`Integer`: Front or back of the card
-
-- **Signature Method**`Integer`: Signature method used for API requests
-
-- **Region**`Integer`: Region
-
-- **Recognition Type**`Integer`: Recognition Type
-
-- **Application Name**`string`: Application Name
+- **Recognition Method**`Integer`: Select recognition method
 
 - **Image Path**`string`: Enter the image address to be selected
 
-- **Recognition Method**`Integer`: Select recognition method
+- **Application Name**`string`: Application Name
+
+- **Recognition Type**`Integer`: Recognition Type
+
+- **Region**`Integer`: Region
+
+- **Signature Method**`Integer`: Signature method used for API requests
+
+- **Card Side**`Integer`: Front or back of the card
 
 
 **Command Output**
@@ -37,8 +40,14 @@ OCR Recognition
 
 ### Advanced
 
-- **Proxy Parameter**`string`: Proxy server, format: address:port
+- **Proxy Parameter**`string`: When our program cannot directly connect to the target network but the other party has installed a proxy server, format: address:port
 
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

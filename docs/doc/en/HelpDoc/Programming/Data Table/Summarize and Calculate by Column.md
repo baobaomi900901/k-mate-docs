@@ -1,5 +1,6 @@
 ---
 title: Summarize and Calculate by Column
+order: 17
 ---
 
 # Summarize and Calculate by Column
@@ -10,27 +11,29 @@ title: Summarize and Calculate by Column
 Perform sum, mean, count, etc., on a specified column of the data table.
 :::
 
+![Summarize and Calculate by Column](../../../assets/Summarize and Calculate by Column_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Preview in Data Table**`Boolean`: Preview in Data Table
-
-- **Specified Data Type**`Integer`: Specify the data type of the calculation result.
-
-- **Calculation Type**`Integer`: Select the type of calculation.
+- **Data Table Object**`TDataTable`: Can use the variable returned by the 'Create Data Table' component.
 
 - **Specified Column Name**`string`: Specify the column name for which to perform the summary calculation; only single-column calculations are supported.
 
-- **Data Table Object**`TDataTable`: Can use the variable returned by the 'Create Data Table' component.
+- **Calculation Type**`Integer`: Select the type of calculation.
+
+- **Specified Data Type**`Integer`: Specify the data type of the calculation result.
 
 
 **Command Output**
 
 - **Calculation Result**`Double`: Used to store the calculated result.
 
+
+**Command Output**
 
 ### Error Handling
 

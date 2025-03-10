@@ -1,5 +1,6 @@
 ---
 title: Read Total Row Count of Table (SAP)
+order: 5
 ---
 
 # Read Total Row Count of Table (SAP)
@@ -10,15 +11,17 @@ title: Read Total Row Count of Table (SAP)
 Read the total number of rows in the data table
 :::
 
+![Read Total Row Count of Table (SAP)](../../../assets/Read Total Row Count of Table (SAP)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Operation Target**`TTarget`: Select the SAP table element to be operated on
-
 - **Window Object**`TWinObj`: Enter a retrieved SAP session window
+
+- **Operation Target**`TTarget`: Select the SAP table element to be operated on
 
 
 **Command Output**
@@ -27,8 +30,12 @@ Read the total number of rows in the data table
 
 ### Advanced
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
+
+**Command Output**
 
 ### Error Handling
 

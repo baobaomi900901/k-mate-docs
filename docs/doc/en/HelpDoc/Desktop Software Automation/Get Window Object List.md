@@ -1,5 +1,6 @@
 ---
 title: Get Window Object List
+order: 2
 ---
 
 # Get Window Object List
@@ -10,21 +11,29 @@ title: Get Window Object List
 Get all window objects that meet the conditions
 :::
 
+![Get Window Object List](../../assets/Get Window Object List_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Match Using Wildcards**`Boolean`: Match using wildcards
-
 - **Window Title Contains**`string`: Enter characters contained in the window title
+
+- **Match Using Wildcards**`Boolean`: Match using wildcards
 
 
 **Command Output**
 
 - **Save Window List Object To**`TList<TUiElement>`: The saved window object list
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

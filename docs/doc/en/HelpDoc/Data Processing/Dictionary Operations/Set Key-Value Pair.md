@@ -1,5 +1,6 @@
 ---
 title: Set Key-Value Pair
+order: 2
 ---
 
 # Set Key-Value Pair
@@ -10,23 +11,27 @@ title: Set Key-Value Pair
 This command is used to set a key-value pair in a dictionary, modifying the value if the key already exists
 :::
 
+![Set Key-Value Pair](../../../assets/Set Key-Value Pair_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Value**`string`: Enter the key value
+- **Dictionary**`TRPADictionary`: Enter the dictionary variable
 
 - **Key Name**`string`: Enter the key name
 
-- **Dictionary**`TRPADictionary`: Enter the dictionary variable
+- **Value**`string`: Enter the key value
 
 
 **Command Output**
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

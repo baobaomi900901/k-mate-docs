@@ -1,5 +1,6 @@
 ---
 title: Move Word Cursor
+order: 6
 ---
 
 # Move Word Cursor
@@ -10,25 +11,33 @@ title: Move Word Cursor
 Move the cursor in a Word document
 :::
 
+![Move Word Cursor](../../../assets/Move Word Cursor_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Is Shift Key Pressed**`Boolean`: If checked, the Shift key is held down during movement, and the text in the moved area is selected
-
-- **Move Length**`Integer`: Enter the unit length to move
+- **Word Object**`TDocumentApplication`: Enter a Word object created through the 'Open or Create Word' function
 
 - **Move Direction**`Integer`: Choose the direction to move the cursor
 
-- **Word Object**`TDocumentApplication`: Enter a Word object created through the 'Open or Create Word' function
+- **Move Length**`Integer`: Enter the unit length to move
+
+- **Is Shift Key Pressed**`Boolean`: If checked, the Shift key is held down during movement, and the text in the moved area is selected
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

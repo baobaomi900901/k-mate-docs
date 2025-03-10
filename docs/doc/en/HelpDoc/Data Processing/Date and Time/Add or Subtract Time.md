@@ -1,5 +1,6 @@
 ---
 title: Add or Subtract Time
+order: 3
 ---
 
 # Add or Subtract Time
@@ -10,29 +11,37 @@ title: Add or Subtract Time
 Add or subtract time from a specified date and time, supporting text-formatted dates
 :::
 
+![Add or Subtract Time](../../../assets/Add or Subtract Time_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Output Text Format**`Boolean`: If checked, specify that the output of this command is in text format of the new date, otherwise it is a date and time object
-
-- **Time Unit**`Integer`: Select the time unit
-
-- **Duration**`Integer`: Enter the duration
+- **Original Date and Time**`TDateTime`: Enter a date and time object
 
 - **Adjustment Method:**`Integer`: Choose to add or subtract time
 
-- **Original Date and Time**`TDateTime`: Enter a date and time object
+- **Duration**`Integer`: Enter the duration
+
+- **Time Unit**`Integer`: Select the time unit
+
+- **Output Text Format**`Boolean`: If checked, specify that the output of this command is in text format of the new date, otherwise it is a date and time object
 
 
 **Command Output**
 
-- **Save New Date Text To**`string`: Specify a variable to save the text of the changed date and time
-
 - **Save New Date and Time To**`TDateTime`: Specify a variable to save the changed date and time
 
+- **Save New Date Text To**`string`: Specify a variable to save the text of the changed date and time
+
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

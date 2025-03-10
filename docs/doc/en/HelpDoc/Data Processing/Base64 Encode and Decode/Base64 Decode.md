@@ -1,5 +1,6 @@
 ---
 title: Base64 Decode
+order: 2
 ---
 
 # Base64 Decode
@@ -10,13 +11,13 @@ title: Base64 Decode
 Base64 Decode
 :::
 
+![Base64 Decode](../../../assets/Base64 Decode_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
-
-- **Output String**`Boolean`: Output string
 
 - **Content to Decode**`string`: Enter the content to be decoded
 
@@ -25,6 +26,8 @@ Base64 Decode
 
 - **Save Decoded Result To**`string`: Enter a name to save the Base64 decoded result
 
+
+**Command Output**
 
 ### Error Handling
 

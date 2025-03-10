@@ -1,5 +1,6 @@
 ---
 title: Convert DateTime to Timestamp
+order: 8
 ---
 
 # Convert DateTime to Timestamp
@@ -10,21 +11,29 @@ title: Convert DateTime to Timestamp
 Convert the DateTime to a timestamp
 :::
 
+![Convert DateTime to Timestamp](../../../assets/Convert DateTime to Timestamp_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Timestamp Level**`Integer`: Select the timestamp level, which can be second, millisecond, or microsecond. The level determines the length of the timestamp: 10 digits for seconds, 13 for milliseconds, and 16 for microseconds.
-
 - **DateTime**`TDateTime`: Enter a DateTime object
+
+- **Timestamp Level**`Integer`: Select the timestamp level, which can be second, millisecond, or microsecond. The level determines the length of the timestamp: 10 digits for seconds, 13 for milliseconds, and 16 for microseconds.
 
 
 **Command Output**
 
 - **Save Timestamp To**`string`: Specify a variable to save the converted timestamp
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

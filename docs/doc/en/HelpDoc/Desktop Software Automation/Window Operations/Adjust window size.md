@@ -1,5 +1,6 @@
 ---
 title: Adjust window size
+order: 7
 ---
 
 # Adjust window size
@@ -10,37 +11,45 @@ title: Adjust window size
 Adjust the window size
 :::
 
+![Adjust window size](../../../assets/Adjust window size_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Height**`Integer`: Window height
-
-- **Width**`Integer`: Window width
-
-- **Window handle**`Integer`: Enter a window handle
-
-- **Match using wildcard**`Boolean`: Match using wildcard
-
-- **Window class name**`string`: Enter the window class name
-
-- **Add window type**`Boolean`: Add window type
-
-- **Window title**`string`: Enter the window title
-
-- **Operation target**`TTarget`: Select the window element
+- **Method to get window**`Integer`: Select the method to get the window
 
 - **Window object**`TWinObj`: Enter a captured window object
 
-- **Method to get window**`Integer`: Select the method to get the window
+- **Operation target**`TTarget`: Select the window element
+
+- **Window title**`string`: Enter the window title
+
+- **Add window type**`Boolean`: Add window type
+
+- **Window class name**`string`: Enter the window class name
+
+- **Match using wildcard**`Boolean`: Match using wildcard
+
+- **Window handle**`Integer`: Enter a window handle
+
+- **Width**`Integer`: Window width
+
+- **Height**`Integer`: Window height
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

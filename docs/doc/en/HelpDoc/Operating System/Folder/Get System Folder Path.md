@@ -1,5 +1,6 @@
 ---
 title: Get System Folder Path
+order: 10
 ---
 
 # Get System Folder Path
@@ -9,6 +10,8 @@ title: Get System Folder Path
 :::tip 
 Get the system folder path
 :::
+
+![Get System Folder Path](../../../assets/Get System Folder Path_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Get the system folder path
 
 - **System Folder Path**`string`: Enter a name to save the system folder path
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

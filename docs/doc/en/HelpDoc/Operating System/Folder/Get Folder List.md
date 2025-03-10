@@ -1,5 +1,6 @@
 ---
 title: Get Folder List
+order: 1
 ---
 
 # Get Folder List
@@ -10,23 +11,31 @@ title: Get Folder List
 Get subfolders under the specified folder path
 :::
 
+![Get Folder List](../../../assets/Get Folder List_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Recursively Find Subfolders**`Boolean`: Whether to recursively find subfolders
+- **Folder Path**`string`: The path of the folder to search
 
 - **Subfolder Name Match Rule**`string`: Enter the folder name match rule, wildcards are allowed. For example: 'Images*', 'Images?', multiple rules can be separated by commas, e.g., rule1, rule2
 
-- **Folder Path**`string`: The path of the folder to search
+- **Recursively Find Subfolders**`Boolean`: Whether to recursively find subfolders
 
 
 **Command Output**
 
 - **Save Folder List To**`TList<String>`: Enter a name to save the folder list
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

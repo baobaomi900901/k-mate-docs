@@ -1,5 +1,6 @@
 ---
 title: Write Cell
+order: 19
 ---
 
 # Write Cell
@@ -10,25 +11,33 @@ title: Write Cell
 Write a value/formula into a cell or range in the spreadsheet. If a value exists, it will be overwritten. The changes are saved immediately.
 :::
 
+![Write Cell](../../../../assets/Write Cell_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Value**`string`: Enter value/formula
-
-- **Sheet Name**`string`: Sheet name in the workbook
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
 
 - **Range**`string`: Cell or range
 
-- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+- **Sheet Name**`string`: Sheet name in the workbook
+
+- **Value**`string`: Enter value/formula
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

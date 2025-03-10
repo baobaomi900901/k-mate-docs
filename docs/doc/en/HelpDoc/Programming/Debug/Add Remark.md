@@ -1,5 +1,6 @@
 ---
 title: Add Remark
+order: 3
 ---
 
 # Add Remark
@@ -9,6 +10,8 @@ title: Add Remark
 :::tip 
 Insert a textual remark into the process
 :::
+
+![Add Remark](../../../assets/Add Remark_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,8 @@ Insert a textual remark into the process
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

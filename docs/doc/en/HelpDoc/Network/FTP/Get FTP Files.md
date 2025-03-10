@@ -1,5 +1,6 @@
 ---
 title: Get FTP Files
+order: 3
 ---
 
 # Get FTP Files
@@ -9,6 +10,8 @@ title: Get FTP Files
 :::tip 
 Retrieve all files and subdirectories from the current path of the FTP server
 :::
+
+![Get FTP Files](../../../assets/Get FTP Files_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Retrieve all files and subdirectories from the current path of the FTP server
 
 - **Save returned files to**`TList<String>`: Specify a variable name that will store the returned files and subfolder data
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

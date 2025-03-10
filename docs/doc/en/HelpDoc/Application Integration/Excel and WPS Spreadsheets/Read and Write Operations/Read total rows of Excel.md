@@ -1,5 +1,6 @@
 ---
 title: Read total rows of Excel
+order: 1
 ---
 
 # Read total rows of Excel
@@ -10,21 +11,29 @@ title: Read total rows of Excel
 Read total rows of Excel
 :::
 
+![Read total rows of Excel](../../../../assets/Read total rows of Excel_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet name**`string`: If empty, it defaults to the currently active sheet
-
 - **Excel object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+
+- **Sheet name**`string`: If empty, it defaults to the currently active sheet
 
 
 **Command Output**
 
 - **Save total rows to**`Integer`: Save total rows
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

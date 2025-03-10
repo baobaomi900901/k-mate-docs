@@ -1,5 +1,6 @@
 ---
 title: Click Toolbar Button (SAP)
+order: 4
 ---
 
 # Click Toolbar Button (SAP)
@@ -10,17 +11,19 @@ title: Click Toolbar Button (SAP)
 In the toolbar, click the target button
 :::
 
+![Click Toolbar Button (SAP)](../../../assets/Click Toolbar Button (SAP)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Button Name**`string`: Fill in the button name
+- **Window Object**`TWinObj`: Enter a retrieved SAP session window
 
 - **Operation Target**`TTarget`: Select the toolbar element
 
-- **Window Object**`TWinObj`: Enter a retrieved SAP session window
+- **Button Name**`string`: Fill in the button name
 
 
 **Command Output**
@@ -29,8 +32,12 @@ No output for the current command
 
 ### Advanced
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
+
+**Command Output**
 
 ### Error Handling
 

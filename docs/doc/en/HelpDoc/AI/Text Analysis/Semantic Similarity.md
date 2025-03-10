@@ -1,5 +1,6 @@
 ---
 title: Semantic Similarity
+order: 2
 ---
 
 # Semantic Similarity
@@ -10,29 +11,37 @@ title: Semantic Similarity
 Call the Kingsware AI interface to analyze the similarity between two short texts
 :::
 
+![Semantic Similarity](../../../assets/Semantic Similarity_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Text 2**`string`: Enter the text content
-
 - **Text 1**`string`: Enter the text content
+
+- **Text 2**`string`: Enter the text content
 
 
 **Command Output**
 
-- **Error information**`String`: Return error information
+- **Response header information**`String`: Return response header information
 
 - **Response body information**`String`: Return response body information
 
-- **Response header information**`String`: Return response header information
+- **Error information**`String`: Return error information
 
 ### Advanced
 
 - **Response header type**`array of string`: When the server and client create a long connection, necessary settings should be made for the HTTP response header's connection, default is ['Connection']
 
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

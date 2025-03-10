@@ -1,5 +1,6 @@
 ---
 title: Read CSV Data
+order: 1
 ---
 
 # Read CSV Data
@@ -10,25 +11,33 @@ title: Read CSV Data
 Read the content of a CSV file
 :::
 
+![Read CSV Data](../../../assets/Read CSV Data_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **First Row is Column Header**`Boolean`: Is the first row of the CSV file a column header?
-
-- **Content Delimiter**`Integer`: Select the content delimiter, default is comma
+- **CSV File Path**`string`: Enter the path to the CSV file
 
 - **File Encoding**`Integer`: Select the text encoding format, UTF-8-SIG is UTF-8 with BOM
 
-- **CSV File Path**`string`: Enter the path to the CSV file
+- **Content Delimiter**`Integer`: Select the content delimiter, default is comma
+
+- **First Row is Column Header**`Boolean`: Is the first row of the CSV file a column header?
 
 
 **Command Output**
 
 - **Save Data Table To**`TDataTable`: Specify a variable to save the read data table
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

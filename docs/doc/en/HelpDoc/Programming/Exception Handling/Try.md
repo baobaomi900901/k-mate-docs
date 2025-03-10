@@ -1,5 +1,6 @@
 ---
 title: Try
+order: 1
 ---
 
 # Try
@@ -9,6 +10,8 @@ title: Try
 :::tip 
 Try to execute the starting block
 :::
+
+![Try](../../../assets/Try_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,8 @@ No input for the current command
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

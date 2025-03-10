@@ -1,5 +1,6 @@
 ---
 title: Get clipboard text
+order: 3
 ---
 
 # Get clipboard text
@@ -9,6 +10,8 @@ title: Get clipboard text
 :::tip 
 Retrieve text content from the clipboard
 :::
+
+![Get clipboard text](../../../assets/Get clipboard text_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ No input for the current command
 
 - **Save clipboard text to**`string`: Enter a name to save the clipboard text content
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

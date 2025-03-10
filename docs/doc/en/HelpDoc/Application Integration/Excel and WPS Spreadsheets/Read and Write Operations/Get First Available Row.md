@@ -1,5 +1,6 @@
 ---
 title: Get First Available Row
+order: 4
 ---
 
 # Get First Available Row
@@ -10,21 +11,29 @@ title: Get First Available Row
 Get the first available row
 :::
 
+![Get First Available Row](../../../../assets/Get First Available Row_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
-
 - **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
 
 **Command Output**
 
 - **Save Row Number To**`Integer`: Specify a variable to save the first available row number of the sheet
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

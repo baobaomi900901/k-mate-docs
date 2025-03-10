@@ -1,5 +1,6 @@
 ---
 title: Set Row Height
+order: 5
 ---
 
 # Set Row Height
@@ -10,27 +11,35 @@ title: Set Row Height
 Set row height
 :::
 
+![Set Row Height](../../../../assets/Set Row Height_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: Worksheet name
+- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
 
-- **Row Height**`Integer`: Enter the row height
+- **Row Number**`string`: Enter line number, use 1,2,3 or 1:3 for multiple lines
 
 - **Mode**`Integer`: Choose the method to set the row height
 
-- **Row Number**`string`: Row number. Starting from 1
+- **Row Height**`Integer`: Enter the row height
 
-- **Excel Instance**`TWorkbookApplication`: Enter an Excel instance obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Sheet Name**`string`: Worksheet name
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

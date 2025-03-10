@@ -1,5 +1,6 @@
 ---
 title: Read Word Text
+order: 3
 ---
 
 # Read Word Text
@@ -10,21 +11,29 @@ title: Read Word Text
 Read text from a Word file
 :::
 
+![Read Word Text](../../../assets/Read Word Text_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Read Range**`Integer`: Specify the range of Word content to be read
-
 - **Word Object**`TDocumentApplication`: Enter a Word object created through the 'Open or Create Word' function
+
+- **Read Range**`Integer`: Specify the range of Word content to be read
 
 
 **Command Output**
 
 - **Save Word Content As**`string`: Specify a variable name to save the field data content
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

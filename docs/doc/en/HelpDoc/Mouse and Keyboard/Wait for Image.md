@@ -1,5 +1,6 @@
 ---
 title: Wait for Image
+order: 9
 ---
 
 # Wait for Image
@@ -10,33 +11,39 @@ title: Wait for Image
 Wait for the target image to appear or disappear before continuing the process
 :::
 
+![Wait for Image](../../assets/Wait for Image_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Timeout (milliseconds)**`Integer`: Set the maximum wait time
-
-- **Set timeout (milliseconds)**`Boolean`: Set the timeout duration for waiting, after which the process will continue automatically
-
-- **Wait for all images to appear (or disappear) before continuing**`Boolean`: Wait for all images or wait for just one
-
-- **Target Image**`string`: You can select multiple images from the image library, and the process will continue when one appears (or disappears)
-
-- **sAllImages**`string`: 
-
-- **Wait Method**`Integer`: Wait for the target image to appear or disappear
+- **Search Range**`Integer`: Search range
 
 - **Window Object**`TWinObj`: Please select a window object
 
-- **Search Range**`Integer`: Search range
+- **Wait Method**`Integer`: Wait for the target image to appear or disappear
+
+- **Target Image**`string`: You can select multiple images from the image library, and the process will continue when one appears (or disappears)
+
+- **Wait for all images to appear (or disappear) before continuing**`Boolean`: Wait for all images or wait for just one
+
+- **Set timeout (milliseconds)**`Boolean`: Set the timeout duration for waiting, after which the process will continue automatically
+
+- **Timeout (milliseconds)**`Integer`: Set the maximum wait time
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

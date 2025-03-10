@@ -1,5 +1,6 @@
 ---
 title: FTP File Download
+order: 5
 ---
 
 # FTP File Download
@@ -10,25 +11,33 @@ title: FTP File Download
 Download one or more files from the specified path of the FTP remote server to a local path
 :::
 
+![FTP File Download](../../../assets/FTP File Download_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Download Mode**`Integer`: How to handle existing files in the local folder when downloading the remote files
-
-- **Local Path**`string`: The local path where the remote files will be downloaded
+- **FTP Connection Object**`TFTP`: The FTP object from which files need to be downloaded
 
 - **Remote File**`string`: The file or list of files to be downloaded, separated by '|' for multiple files
 
-- **FTP Connection Object**`TFTP`: The FTP object from which files need to be downloaded
+- **Local Path**`string`: The local path where the remote files will be downloaded
+
+- **Download Mode**`Integer`: How to handle existing files in the local folder when downloading the remote files
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

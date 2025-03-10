@@ -1,5 +1,6 @@
 ---
 title: Mouse hover over text (OCR)
+order: 11
 ---
 
 # Mouse hover over text (OCR)
@@ -10,17 +11,19 @@ title: Mouse hover over text (OCR)
 Search for and hover the mouse over the specified text in a UI element. Before use, you need to install the text or OCR plugin from the Plugin Center.
 :::
 
+![Mouse hover over text (OCR)](../../assets/Mouse hover over text (OCR)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Target**`TTarget`: Target element
+- **Text**`string`: The text to hover over
 
 - **Recognition method**`Integer`: Select the recognition method. The text recognition method requires the text plugin to be installed, and the OCR recognition method requires the OCR plugin to be installed.
 
-- **Text**`string`: The text to hover over
+- **Target**`TTarget`: Target element
 
 
 **Command Output**
@@ -29,24 +32,26 @@ No output for the current command
 
 ### Advanced
 
-- **Delay after execution (milliseconds)**`Integer`: Time to continue waiting after the instruction is executed.
-
-- **Timeout (milliseconds)**`Integer`: Maximum waiting time
-
-- **Vertical offset**`Integer`: Enter a positive number to move down, a negative number to move up.
-
-- **Horizontal offset**`Integer`: Enter a positive number to move right, a negative number to move left.
-
-- **Custom**`Integer`: Custom position
-
-- **Target text position**`Integer`: Supports clicking the center of the element (center of the element's rectangular area), a random position (randomly specified point within the element's rectangular area), or a custom position (manually specified target point).
-
-- **Formatted text**`Boolean`: If this checkbox is selected, the selected text’s screen layout will be preserved.
+- **Occurrence count**`Integer`: The number of times the text appears in the UI element
 
 - **Send window messages**`Boolean`: If this checkbox is selected, hovering is performed by sending a specific message to the target application. This input method is faster and works in the background. By default, this checkbox is unchecked. If unchecked, the default method performs the hover using hardware drivers, which is the slowest method and cannot work in the background but is compatible with all desktop applications.
 
-- **Occurrence count**`Integer`: The number of times the text appears in the UI element
+- **Target text position**`Integer`: Supports clicking the center of the element (center of the element's rectangular area), a random position (randomly specified point within the element's rectangular area), or a custom position (manually specified target point).
 
+- **Custom**`Integer`: Custom position
+
+- **Horizontal offset**`Integer`: Enter a positive number to move right, a negative number to move left.
+
+- **Vertical offset**`Integer`: Enter a positive number to move down, a negative number to move up.
+
+- **Timeout (milliseconds)**`Integer`: Maximum waiting time
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Delay after execution (milliseconds)**`Integer`: Time to continue waiting after the instruction is executed.
+
+
+**Command Output**
 
 ### Error Handling
 

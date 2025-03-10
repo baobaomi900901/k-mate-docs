@@ -1,5 +1,6 @@
 ---
 title: Execute SQL Statement
+order: 2
 ---
 
 # Execute SQL Statement
@@ -10,23 +11,29 @@ title: Execute SQL Statement
 Execute SQL statements such as Insert, Update, Delete in the specified database
 :::
 
+![Execute SQL Statement](../../../assets/Execute SQL Statement_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Timeout in milliseconds**`Integer`: Please enter the timeout in milliseconds for the database
+- **Database Connection Object**`TDatabase`: Enter the database connection object
 
 - **SQL Execution Statement**`string`: Enter the SQL execution statement
-
-- **Database Connection Object**`TDatabase`: Enter the database connection object
 
 
 **Command Output**
 
 - **Rows Affected**`Integer`: Specify a variable name that will store the number of rows affected by the database execution
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

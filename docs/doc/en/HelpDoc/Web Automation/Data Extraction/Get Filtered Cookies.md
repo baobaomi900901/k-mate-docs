@@ -1,5 +1,6 @@
 ---
 title: Get Filtered Cookies
+order: 6
 ---
 
 # Get Filtered Cookies
@@ -10,39 +11,45 @@ title: Get Filtered Cookies
 Retrieve all cookies from a single Cookie store that match the given criteria
 :::
 
+![Get Filtered Cookies](../../../assets/Get Filtered Cookies_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Cookie Key**`string`: Leave blank for any key
-
-- **Cookie Path**`string`: Defaults to the path part of the URL, leave blank if not applicable
-
-- **Cookie Domain**`string`: Defaults to the domain part of the URL, ignore for host-only cookies
-
-- **Cookie Name**`string`: Leave blank for any name
+- **Browser Type**`Integer`: Set the type of browser cookies to filter
 
 - **Cookie URL**`string`: URL filter condition
 
-- **Browser Type**`Integer`: Set the type of browser cookies to filter
+- **Cookie Name**`string`: Leave blank for any name
+
+- **Cookie Domain**`string`: Defaults to the domain part of the URL, ignore for host-only cookies
+
+- **Cookie Path**`string`: Defaults to the path part of the URL, leave blank if not applicable
+
+- **Cookie Key**`string`: Leave blank for any key
 
 
 **Command Output**
 
-- **CookieJsonStr**`string`: 
+- **Save Cookie List To**`string`: Save the retrieved cookie list
 
 ### Advanced
 
-- **Only Session Cookies**`Boolean`: Filter session cookie collection
-
-- **Filter by Cookie's lifecycle**`Boolean`: Default setting is session cookies, uncheck for persistent cookies
+- **Filter by Cookie's Secure attribute**`Boolean`: Filter by Cookie's Secure attribute
 
 - **Only Secure Cookies**`Boolean`: Set whether the cookie is marked as HttpOnly, default is False
 
-- **Filter by Cookie's Secure attribute**`Boolean`: Filter by Cookie's Secure attribute
+- **Filter by Cookie's lifecycle**`Boolean`: Default setting is session cookies, uncheck for persistent cookies
 
+- **Only Session Cookies**`Boolean`: Filter session cookie collection
+
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

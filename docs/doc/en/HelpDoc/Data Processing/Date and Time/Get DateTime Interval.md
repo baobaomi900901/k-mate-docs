@@ -1,5 +1,6 @@
 ---
 title: Get DateTime Interval
+order: 4
 ---
 
 # Get DateTime Interval
@@ -10,23 +11,31 @@ title: Get DateTime Interval
 Get the interval between two dates and times
 :::
 
+![Get DateTime Interval](../../../assets/Get DateTime Interval_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Time Unit**`Integer`: Choose the time unit for the interval calculation
+- **Start Time**`TDateTime`: Enter a date and time object for the start
 
 - **End Time**`TDateTime`: Enter a date and time object for the end
 
-- **Start Time**`TDateTime`: Enter a date and time object for the start
+- **Time Unit**`Integer`: Choose the time unit for the interval calculation
 
 
 **Command Output**
 
 - **Save Interval To**`Integer`: Specify a variable to save the calculated interval
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

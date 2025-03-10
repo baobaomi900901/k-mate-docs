@@ -1,5 +1,6 @@
 ---
 title: Close Webpage
+order: 6
 ---
 
 # Close Webpage
@@ -10,25 +11,33 @@ title: Close Webpage
 Close one or all open webpages
 :::
 
+![Close Webpage](../../assets/Close Webpage_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Webpage Object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
-
-- **Terminate Browser Process**`Boolean`: If checked, it will forcibly end the specified browser process belonging to the current user and all its spawned child processes
+- **Operation**`Integer`: Choose to close a specified webpage or all webpages
 
 - **Browser Type**`Integer`: Select the browser object to operate on
 
-- **Operation**`Integer`: Choose to close a specified webpage or all webpages
+- **Terminate Browser Process**`Boolean`: If checked, it will forcibly end the specified browser process belonging to the current user and all its spawned child processes
+
+- **Webpage Object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'Open Webpage' function
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

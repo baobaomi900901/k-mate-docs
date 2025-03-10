@@ -1,5 +1,6 @@
 ---
 title: Wait for file
+order: 9
 ---
 
 # Wait for file
@@ -10,25 +11,33 @@ title: Wait for file
 Wait for the file to be created or deleted
 :::
 
+![Wait for file](../../../assets/Wait for file_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Timeout duration (milliseconds)**`Integer`: Enter the timeout duration (milliseconds)
-
-- **Set timeout**`Boolean`: Set the timeout duration
+- **File path**`string`: Enter the file path
 
 - **Wait for the file to be**`Integer`: Select the desired file state
 
-- **File path**`string`: Enter the file path
+- **Set timeout**`Boolean`: Set the timeout duration
+
+- **Timeout duration (milliseconds)**`Integer`: Enter the timeout duration (milliseconds)
 
 
 **Command Output**
 
 - **Wait result**`Boolean`: If True, wait was successful; otherwise, the wait timed out
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

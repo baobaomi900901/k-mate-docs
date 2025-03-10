@@ -1,5 +1,6 @@
 ---
 title: Table Recognition
+order: 2
 ---
 
 # Table Recognition
@@ -10,37 +11,45 @@ title: Table Recognition
 Call the AI interface to recognize the content of the table
 :::
 
+![Table Recognition](../../../assets/Table Recognition_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Version**`Integer`: Old Version V1.0: Calls the interface from the old official website of INTSIG; New Version V1.0: Calls the interface from the new official website of INTSIG, returning the recognized content in coordinates format; New Version V2.0: Calls the interface from the new official website of INTSIG, returning the recognized content in JSON format
-
-- **Structure Recognition Type**`Integer`: Return table structure analysis, or only return text detection results
+- **Recognition Method**`Integer`: Select the recognition method
 
 - **Image Path**`string`: Enter the image address to be selected
 
-- **Recognition Method**`Integer`: Select the recognition method
+- **Structure Recognition Type**`Integer`: Return table structure analysis, or only return text detection results
+
+- **Version**`Integer`: Old Version V1.0: Calls the interface from the old official website of INTSIG; New Version V1.0: Calls the interface from the new official website of INTSIG, returning the recognized content in coordinates format; New Version V2.0: Calls the interface from the new official website of INTSIG, returning the recognized content in JSON format
 
 
 **Command Output**
 
-- **Error Information**`String`: Specify a variable to store the error information
-
-- **Response Body Information**`String`: Specify a variable to store the response body information
+- **Result**`string`: Specify a variable to store the recognition result
 
 - **Response Header Information**`String`: Specify a variable to store the response header information
 
-- **Result**`string`: Specify a variable to store the recognition result
+- **Response Body Information**`String`: Specify a variable to store the response body information
+
+- **Error Information**`String`: Specify a variable to store the error information
 
 ### Advanced
 
+- **Proxy Parameter**`string`: When our program cannot directly connect to the target network but the other party has installed a proxy server, format is Address:Port
+
 - **Response Header Type**`array of string`: When the server and client create a long connection, necessary settings for the HTTP response header's connection are required. The default is ['Connection']
 
-- **Proxy Parameter**`string`: Proxy server, format is Address:Port
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

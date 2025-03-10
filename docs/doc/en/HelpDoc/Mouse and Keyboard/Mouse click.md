@@ -1,5 +1,6 @@
 ---
 title: Mouse click
+order: 3
 ---
 
 # Mouse click
@@ -10,25 +11,27 @@ title: Mouse click
 Actions like mouse press, release, single-click, double-click, and right-click are available.
 :::
 
+![Mouse click](../../assets/Mouse click_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Move speed**`Integer`: Speed of mouse movement
-
-- **Move mouse to Y**`Integer`: Relative vertical coordinate
-
-- **Move mouse to X**`Integer`: Relative horizontal coordinate
-
-- **Relative to**`Integer`: Mouse position
-
-- **Move the mouse to a specified position before clicking**`Boolean`: Move the mouse to a specified position before clicking
+- **Mouse button**`Integer`: Select the mouse button to trigger the click
 
 - **Click type**`Integer`: Single-click or double-click
 
-- **Mouse button**`Integer`: Select the mouse button to trigger the click
+- **Move the mouse to a specified position before clicking**`Boolean`: Move the mouse to a specified position before clicking
+
+- **Relative to**`Integer`: Mouse position
+
+- **Move mouse to X**`Integer`: Relative horizontal coordinate
+
+- **Move mouse to Y**`Integer`: Relative vertical coordinate
+
+- **Move speed**`Integer`: Speed of mouse movement
 
 
 **Command Output**
@@ -37,12 +40,14 @@ No output for the current command
 
 ### Advanced
 
-- **Delay after execution (milliseconds)**`Integer`: Time to wait after the instruction is executed
-
 - **Keyboard auxiliary buttons**`Integer`: Required keyboard function keys
 
-- **Hardware-driven click**`Boolean`: Click using hardware drivers
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
+- **Delay after execution (milliseconds)**`Integer`: Time to wait after the instruction is executed
+
+
+**Command Output**
 
 ### Error Handling
 

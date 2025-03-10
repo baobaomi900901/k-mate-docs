@@ -1,5 +1,6 @@
 ---
 title: Set Element Value (win)
+order: 6
 ---
 
 # Set Element Value (win)
@@ -10,17 +11,19 @@ title: Set Element Value (win)
 Set the value of an element in the window, typically for input and select elements
 :::
 
+![Set Element Value (win)](../../../assets/Set Element Value (win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Element value**`string`: Fill in the value to set for the element
+- **Window object**`TWinObj`: Enter a captured window object
 
 - **Operation target**`TTarget`: Select the window element to operate on
 
-- **Window object**`TWinObj`: Enter a captured window object
+- **Element value**`string`: Fill in the value to set for the element
 
 
 **Command Output**
@@ -29,8 +32,12 @@ No output for the current command
 
 ### Advanced
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target element to exist
 
+
+**Command Output**
 
 ### Error Handling
 

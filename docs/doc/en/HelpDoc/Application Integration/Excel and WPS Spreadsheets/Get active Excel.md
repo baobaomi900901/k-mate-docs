@@ -1,5 +1,6 @@
 ---
 title: Get active Excel
+order: 2
 ---
 
 # Get active Excel
@@ -9,6 +10,8 @@ title: Get active Excel
 :::tip 
 Get the currently active Excel object
 :::
+
+![Get active Excel](../../../assets/Get active Excel_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ No input for the current command
 
 - **Save Excel object to**`TWorkbookApplication`: This variable stores the Excel object, which can be used for automation operations on Excel
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

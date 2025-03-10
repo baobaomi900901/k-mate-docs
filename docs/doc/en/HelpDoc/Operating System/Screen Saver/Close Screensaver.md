@@ -1,5 +1,6 @@
 ---
 title: Close Screensaver
+order: 4
 ---
 
 # Close Screensaver
@@ -9,6 +10,8 @@ title: Close Screensaver
 :::tip 
 Close the awakened screensaver
 :::
+
+![Close Screensaver](../../../assets/Close Screensaver_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ No input for the current command
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

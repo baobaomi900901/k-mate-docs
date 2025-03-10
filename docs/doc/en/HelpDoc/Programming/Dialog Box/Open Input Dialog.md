@@ -1,5 +1,6 @@
 ---
 title: Open Input Dialog
+order: 2
 ---
 
 # Open Input Dialog
@@ -10,15 +11,17 @@ title: Open Input Dialog
 Open Input Dialog
 :::
 
+![Open Input Dialog](../../../assets/Open Input Dialog_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Input Field Type**`Integer`: Input Field Type
-
 - **Dialog Title**`string`: Dialog Title
+
+- **Input Field Type**`Integer`: Input Field Type
 
 
 **Command Output**
@@ -27,10 +30,14 @@ Open Input Dialog
 
 ### Advanced
 
-- **Default Value**`string`: Default Value
-
 - **Dialog Explanation**`string`: Dialog Explanation
 
+- **Default Value**`string`: Default Value
+
+- **Timeout (milliseconds)**`Integer`: The duration for which the notification is displayed, default is 30000 milliseconds
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Open Select Dialog
+order: 4
 ---
 
 # Open Select Dialog
@@ -10,21 +11,23 @@ title: Open Select Dialog
 Open Select Dialog
 :::
 
+![Open Select Dialog](../../../assets/Open Select Dialog_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Select First Option by Default**`Boolean`: Select the first option by default
-
-- **Option List**`string`: Option list, each line represents an option
-
-- **Selection Mode**`Integer`: Selection Mode
+- **Dialog Title**`string`: Dialog Title
 
 - **Selection Box Type**`Integer`: Selection Box Type
 
-- **Dialog Title**`string`: Dialog Title
+- **Selection Mode**`Integer`: Selection Mode
+
+- **Option List**`string`: Option list, each line represents an option
+
+- **Select First Option by Default**`Boolean`: Select the first option by default
 
 
 **Command Output**
@@ -35,6 +38,10 @@ Open Select Dialog
 
 - **Dialog Explanation**`string`: Dialog Explanation
 
+- **Timeout (milliseconds)**`Integer`: The duration for which the notification is displayed, default is 30000 milliseconds
+
+
+**Command Output**
 
 ### Error Handling
 

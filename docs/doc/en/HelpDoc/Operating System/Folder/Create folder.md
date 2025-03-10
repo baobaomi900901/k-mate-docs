@@ -1,5 +1,6 @@
 ---
 title: Create folder
+order: 4
 ---
 
 # Create folder
@@ -10,21 +11,29 @@ title: Create folder
 Create a folder
 :::
 
+![Create folder](../../../assets/Create folder_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **New folder name**`string`: Enter the name of the newly created folder
-
 - **Parent folder path**`string`: Enter or select the directory where the new folder will be created
+
+- **New folder name**`string`: Enter the name of the newly created folder
 
 
 **Command Output**
 
 - **Save new folder path to**`string`: Enter a name to save the new folder path
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

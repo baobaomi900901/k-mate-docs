@@ -1,5 +1,6 @@
 ---
 title: Image Processing
+order: 2
 ---
 
 # Image Processing
@@ -10,37 +11,45 @@ title: Image Processing
 Call the Kingsware AI interface for image distortion correction, enhancement, background removal, and other processing.
 :::
 
+![Image Processing](../../../assets/Image Processing_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Enhancement Type**`Integer`: Get the image enhancement type
-
-- **Model Name**`Integer`: Get the model name
-
-- **Image Path 2**`string`: Enter the image address to be selected.
+- **Processing Method**`Integer`: Select a processing method
 
 - **Image Path**`string`: Enter the image address to be selected.
 
-- **Processing Method**`Integer`: Select a processing method
+- **Image Path 2**`string`: Enter the image address to be selected.
+
+- **Model Name**`Integer`: Get the model name
+
+- **Enhancement Type**`Integer`: Get the image enhancement type
 
 
 **Command Output**
 
-- **Error Information**`String`: Specify a variable to store the error information
+- **Response Header Information**`String`: Specify a variable to store the response header information
 
 - **Response Body Information**`String`: Specify a variable to store the response body information
 
-- **Response Header Information**`String`: Specify a variable to store the response header information
+- **Error Information**`String`: Specify a variable to store the error information
 
 ### Advanced
 
-- **Conversion Path**`string`: The address of the converted image
-
 - **Response Header Type**`array of string`: When a long connection is created between the server and the client, it is necessary to set the 'connection' in the HTTP response header. The default is ['Connection'].
 
+- **Conversion Path**`string`: The address of the converted image
+
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

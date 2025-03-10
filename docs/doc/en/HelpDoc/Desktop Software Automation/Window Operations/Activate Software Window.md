@@ -1,5 +1,6 @@
 ---
 title: Activate Software Window
+order: 2
 ---
 
 # Activate Software Window
@@ -10,33 +11,41 @@ title: Activate Software Window
 Activate the specified window to run in the foreground
 :::
 
+![Activate Software Window](../../../assets/Activate Software Window_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Window Handle**`Integer`: Enter a window handle
-
-- **Match Using Wildcards**`Boolean`: Match using wildcards
-
-- **Window Type**`string`: Enter the window type
-
-- **Add Window Type**`Boolean`: Add window type
-
-- **Window Title**`string`: Enter the window title
-
-- **Operation Target**`TTarget`: Select a window element
+- **Method to Get Window**`Integer`: Select the method to get the window
 
 - **Window Object**`TWinObj`: Enter a captured window object
 
-- **Method to Get Window**`Integer`: Select the method to get the window
+- **Operation Target**`TTarget`: Select a window element
+
+- **Window Title**`string`: Enter the window title
+
+- **Add Window Type**`Boolean`: Add window type
+
+- **Window Type**`string`: Enter the window type
+
+- **Match Using Wildcards**`Boolean`: Match using wildcards
+
+- **Window Handle**`Integer`: Enter a window handle
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Text Segmentation
+order: 1
 ---
 
 # Text Segmentation
@@ -9,6 +10,8 @@ title: Text Segmentation
 :::tip 
 Call the Kingsware AI interface to split continuous natural language text into a list of words that have meaningful coherence and completeness
 :::
+
+![Text Segmentation](../../../assets/Text Segmentation_command.png)
 
 ## Configuration Item Description
 
@@ -21,16 +24,22 @@ Call the Kingsware AI interface to split continuous natural language text into a
 
 **Command Output**
 
-- **Error information**`String`: Return error information
+- **Response header information**`String`: Return response header information
 
 - **Response body information**`String`: Return response body information
 
-- **Response header information**`String`: Return response header information
+- **Error information**`String`: Return error information
 
 ### Advanced
 
 - **Response header type**`array of string`: When the server and client create a long connection, necessary settings should be made for the HTTP response header's connection, default is ['Connection']
 
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

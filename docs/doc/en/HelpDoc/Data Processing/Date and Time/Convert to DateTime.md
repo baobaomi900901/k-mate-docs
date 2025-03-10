@@ -1,5 +1,6 @@
 ---
 title: Convert to DateTime
+order: 5
 ---
 
 # Convert to DateTime
@@ -10,23 +11,31 @@ title: Convert to DateTime
 Convert text to a DateTime, using the default format of %Y-%m-%d if not specified otherwise
 :::
 
+![Convert to DateTime](../../../assets/Convert to DateTime_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Date Time Format**`Integer`: Set the date time format for the conversion
+- **Text**`string`: Enter the text to be converted to DateTime
 
 - **Use Custom Format**`Boolean`: Whether to use a custom date time format
 
-- **Text**`string`: Enter the text to be converted to DateTime
+- **Date Time Format**`Integer`: Set the date time format for the conversion
 
 
 **Command Output**
 
 - **Save DateTime To**`TDateTime`: Specify a variable to save the converted DateTime
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

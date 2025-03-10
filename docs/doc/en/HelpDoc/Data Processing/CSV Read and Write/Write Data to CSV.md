@@ -1,5 +1,6 @@
 ---
 title: Write Data to CSV
+order: 2
 ---
 
 # Write Data to CSV
@@ -10,25 +11,33 @@ title: Write Data to CSV
 Write data to a CSV file
 :::
 
+![Write Data to CSV](../../../assets/Write Data to CSV_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Data Table**`TDataTable`: Enter the data table to be written to the CSV file
-
-- **Write Method**`Integer`: Select the write method
+- **CSV File Path**`string`: Enter the path to the CSV file
 
 - **File Encoding**`Integer`: Select the text encoding format
 
-- **CSV File Path**`string`: Enter the path to the CSV file
+- **Write Method**`Integer`: Select the write method
+
+- **Data Table**`TDataTable`: Enter the data table to be written to the CSV file
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Delete All Rows
+order: 12
 ---
 
 # Delete All Rows
@@ -10,21 +11,29 @@ title: Delete All Rows
 Delete all rows
 :::
 
+![Delete All Rows](../../../../assets/Delete All Rows_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: Worksheet name
-
 - **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+
+- **Sheet Name**`string`: Worksheet name
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

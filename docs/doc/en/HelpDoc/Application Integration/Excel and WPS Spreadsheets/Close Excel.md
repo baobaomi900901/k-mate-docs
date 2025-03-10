@@ -1,5 +1,6 @@
 ---
 title: Close Excel
+order: 4
 ---
 
 # Close Excel
@@ -10,31 +11,39 @@ title: Close Excel
 Close Excel
 :::
 
+![Close Excel](../../../assets/Close Excel_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Terminate Excel Process**`Boolean`: Force close the specified Excel process
-
-- **Close Process**`Integer`: Select process to close
-
-- **Overwrite if file exists**`Boolean`: Overwrite if file exists
-
-- **Excel File Path**`string`: Path of the opened Excel file
-
-- **Close Type**`Integer`: Select close type
+- **Operation**`Integer`: Operation on Excel
 
 - **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained by the function 'Open or Create Excel'/'Get current active Excel object'
 
-- **Operation**`Integer`: Operation on Excel
+- **Close Type**`Integer`: Select close type
+
+- **Excel File Path**`string`: Path of the opened Excel file
+
+- **Overwrite if file exists**`Boolean`: Overwrite if file exists
+
+- **Close Process**`Integer`: Select process to close
+
+- **Terminate Excel Process**`Boolean`: Force close the specified Excel process
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

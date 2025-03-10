@@ -1,5 +1,6 @@
 ---
 title: Start Listening to Web Requests
+order: 8
 ---
 
 # Start Listening to Web Requests
@@ -10,25 +11,33 @@ title: Start Listening to Web Requests
 Filter web listening results based on the entered resource path and resource type.
 :::
 
+![Start Listening to Web Requests](../../../assets/Start Listening to Web Requests_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Filter Resource Type**`Integer`: Get the type of web listening.
-
-- **Match According to Wildcard**`Boolean`: Use wildcards to filter the URL.
+- **Web Page Object**`TBrowser`: Enter a web page object that has been obtained or created through the 'Open Web Page' function.
 
 - **Resource Path URL**`string`: Enter the resource for filtering the listening results.
 
-- **Web Page Object**`TBrowser`: Enter a web page object that has been obtained or created through the 'Open Web Page' function.
+- **Match According to Wildcard**`Boolean`: Use wildcards to filter the URL.
+
+- **Filter Resource Type**`Integer`: Get the type of web request being listened to
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

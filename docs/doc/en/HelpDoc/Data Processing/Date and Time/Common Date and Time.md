@@ -1,5 +1,6 @@
 ---
 title: Common Date and Time
+order: 2
 ---
 
 # Common Date and Time
@@ -10,23 +11,31 @@ title: Common Date and Time
 Output common date and time in a specified format
 :::
 
+![Common Date and Time](../../../assets/Common Date and Time_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Remove Leading Zeros:**`Boolean`: Remove leading zeros from months and days, e.g., change 06 month to 6 month
+- **Date:**`Integer`: The date to be obtained, supporting today's date, yesterday's date, tomorrow's date, the first day of the week, the last day of the week, etc.
 
 - **Date Format:**`Integer`: Supports YYYY-MM-DD, YYYY/MM/DD, etc.
 
-- **Date:**`Integer`: The date to be obtained, supporting today's date, yesterday's date, tomorrow's date, the first day of the week, the last day of the week, etc.
+- **Remove Leading Zeros:**`Boolean`: Remove leading zeros from months and days, e.g., change 06 month to 6 month
 
 
 **Command Output**
 
 - **Date String:**`string`: Output common date in a specified format
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

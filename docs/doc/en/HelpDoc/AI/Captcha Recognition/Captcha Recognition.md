@@ -1,5 +1,6 @@
 ---
 title: Captcha Recognition
+order: 1
 ---
 
 # Captcha Recognition
@@ -10,41 +11,49 @@ title: Captcha Recognition
 Call the Kingsware AI interface for captcha recognition
 :::
 
+![Captcha Recognition](../../../assets/Captcha Recognition_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Captcha Type**`Integer`: Enter the appropriate captcha type
-
-- **Type**`Integer`: Obtain the type
-
-- **Slider Image File**`string`: Enter the path of the slider image file to select
-
-- **Label**`String`: Objects in the 9-grid
-
-- **Label Type**`String`: Enter the correct label type
+- **Recognition Method**`Integer`: Choose the recognition method
 
 - **Image Path**`string`: Enter the image path to select
 
-- **Recognition Method**`Integer`: Choose the recognition method
+- **Label Type**`String`: Enter the correct label type
+
+- **Label**`String`: Objects in the 9-grid
+
+- **Slider Image File**`string`: Enter the path of the slider image file to select
+
+- **Type**`Integer`: Obtain the type
+
+- **Captcha Type**`Integer`: Enter the appropriate captcha type
 
 
 **Command Output**
 
-- **Error Information**`String`: Specify a variable to store the error information.
+- **Response Header Information**`String`: Specify a variable to store the response header information.
 
 - **Response Body Information**`String`: Specify a variable to store the response body information.
 
-- **Response Header Information**`String`: Specify a variable to store the response header information.
+- **Error Information**`String`: Specify a variable to store the error information.
 
 ### Advanced
 
-- **sProxyParam**`string`: 
-
 - **Response Header Type**`array of string`: When the server and client establish a long connection, it is necessary to set the HTTP response header 'Connection'. The default is ['Connection'].
 
+- **Proxy parameter**`string`: When our program cannot directly connect to the target network but the other party has installed a proxy server, format: address:port
+
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Print Log
+order: 1
 ---
 
 # Print Log
@@ -10,25 +11,25 @@ title: Print Log
 Print variable or text output, and the output content can be viewed in the [Run Output] area
 :::
 
+![Print Log](../../../assets/Print Log_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Line**`Integer`: 
-
-- **ScriptName**`string`: 
+- **Log Type**`Integer`: Type of the log
 
 - **Log Content**`Variant`: Content of the log
-
-- **Log Type**`Integer`: Type of the log
 
 
 **Command Output**
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

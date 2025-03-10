@@ -1,5 +1,6 @@
 ---
 title: Delete Dictionary Key-Value Pair
+order: 6
 ---
 
 # Delete Dictionary Key-Value Pair
@@ -10,21 +11,25 @@ title: Delete Dictionary Key-Value Pair
 This command is used to delete a key-value pair from a dictionary
 :::
 
+![Delete Dictionary Key-Value Pair](../../../assets/Delete Dictionary Key-Value Pair_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Key to Delete**`string`: Enter the key name to be deleted
-
 - **Dictionary**`TRPADictionary`: Enter the dictionary variable
+
+- **Key to Delete**`string`: Enter the key name to be deleted
 
 
 **Command Output**
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Get Value by Key
+order: 3
 ---
 
 # Get Value by Key
@@ -10,25 +11,29 @@ title: Get Value by Key
 This command is used to get the value corresponding to a specified key name in a dictionary
 :::
 
+![Get Value by Key](../../../assets/Get Value by Key_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Default Value**`string`: Enter default key value
-
-- **When Key Does Not Exist**`Integer`: Choose how to handle when the input key does not exist
+- **Dictionary**`TRPADictionary`: Enter the dictionary variable
 
 - **Key Name**`string`: Enter the key name
 
-- **Dictionary**`TRPADictionary`: Enter the dictionary variable
+- **When Key Does Not Exist**`Integer`: Choose how to handle when the input key does not exist
+
+- **Default Value**`string`: Enter default key value
 
 
 **Command Output**
 
 - **Save Value To**`string`: Specify a variable to save the found key value
 
+
+**Command Output**
 
 ### Error Handling
 

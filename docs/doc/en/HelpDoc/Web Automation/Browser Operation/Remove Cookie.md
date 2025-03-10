@@ -1,5 +1,6 @@
 ---
 title: Remove Cookie
+order: 6
 ---
 
 # Remove Cookie
@@ -10,29 +11,37 @@ title: Remove Cookie
 Remove the cookie specified by the cookie URL and cookie name
 :::
 
+![Remove Cookie](../../../assets/Remove Cookie_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Cookie Name**`string`: The name of the cookie to be removed
-
-- **Removal Method**`Integer`: 
-
-- **Cookie URL**`string`: The cookie URL to be removed
-
-- **Browser Type**`Integer`: Set the type of browser for the cookie
+- **URL Setting Method**`Integer`: The source of the cookie URL setting value; you can choose to manually enter it, or if you select a web object, the web page URL will be automatically used
 
 - **Web Object**`TBrowser`: Enter a web object that has been obtained or created through the 'Open Web Page' function
 
-- **URL Setting Method**`Integer`: The source of the cookie URL setting value; you can choose to manually enter it, or if you select a web object, the web page URL will be automatically used
+- **Browser Type**`Integer`: Set the type of browser for the cookie
+
+- **Cookie URL**`string`: The cookie URL to be removed
+
+- **Removal Method**`Integer`: 
+
+- **Cookie Name**`string`: The name of the cookie to be removed
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

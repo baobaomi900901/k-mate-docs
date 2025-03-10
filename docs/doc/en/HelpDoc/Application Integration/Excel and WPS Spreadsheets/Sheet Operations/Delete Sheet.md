@@ -1,5 +1,6 @@
 ---
 title: Delete Sheet
+order: 4
 ---
 
 # Delete Sheet
@@ -10,21 +11,29 @@ title: Delete Sheet
 Delete the specified sheet
 :::
 
+![Delete Sheet](../../../../assets/Delete Sheet_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: Enter the name of the sheet to be deleted, cannot be empty
-
 - **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+
+- **Sheet Name**`string`: Enter the name of the sheet to be deleted, cannot be empty
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

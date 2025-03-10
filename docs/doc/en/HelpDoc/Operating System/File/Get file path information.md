@@ -1,5 +1,6 @@
 ---
 title: Get file path information
+order: 8
 ---
 
 # Get file path information
@@ -9,6 +10,8 @@ title: Get file path information
 :::tip 
 Retrieve the root directory, parent directory, file name, base file name, and file extension of the file path
 :::
+
+![Get file path information](../../../assets/Get file path information_command.png)
 
 ## Configuration Item Description
 
@@ -21,8 +24,14 @@ Retrieve the root directory, parent directory, file name, base file name, and fi
 
 **Command Output**
 
-- **File path information**`TList<String>`: Enter a name to save the file path information
+- **File path information**`TRPADictionary`: Enter a name to save the file path information
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

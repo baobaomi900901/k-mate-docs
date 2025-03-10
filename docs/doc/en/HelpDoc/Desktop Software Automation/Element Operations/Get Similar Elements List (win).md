@@ -1,5 +1,6 @@
 ---
 title: Get Similar Elements List (win)
+order: 9
 ---
 
 # Get Similar Elements List (win)
@@ -10,35 +11,41 @@ title: Get Similar Elements List (win)
 You can locate a set of similar elements on the window through capturing elements, CSS, and XPath, and get their objects or text information.
 :::
 
+![Get Similar Elements List (win)](../../../assets/Get Similar Elements List (win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Output Similar Element Count**`Boolean`: Whether to output the count of similar elements.
-
-- **Attribute Name**`string`: Element attribute name.
-
-- **Element Operation**`Integer`: Operate on element information.
+- **Window Object**`TWinObj`: Enter a captured window object.
 
 - **Operation Target**`TTarget`: Select the window element that needs to be operated on.
 
-- **Window Object**`TWinObj`: Enter a captured window object.
+- **Element Operation**`Integer`: Operate on element information.
+
+- **Attribute Name**`string`: Element attribute name.
+
+- **Output Similar Element Count**`Boolean`: Whether to output the count of similar elements.
 
 
 **Command Output**
 
-- **Save Similar Element Count To**`Integer`: Save the count of obtained elements.
+- **Save Similar Element Object List To**`TList<TUiElement>`: Save the list of obtained element objects.
 
 - **Save Similar Element Information List To**`TList<String>`: Save the list of obtained element information.
 
-- **Save Similar Element Object List To**`TList<TUiElement>`: Save the list of obtained element objects.
+- **Save Similar Element Count To**`Integer`: Save the count of obtained elements.
 
 ### Advanced
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
 - **Wait for Element to Exist (ms)**`Integer`: Timeout time for waiting for the target associated element to exist.
 
+
+**Command Output**
 
 ### Error Handling
 

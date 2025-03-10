@@ -1,5 +1,6 @@
 ---
 title: Get Common Items
+order: 16
 ---
 
 # Get Common Items
@@ -10,21 +11,25 @@ title: Get Common Items
 This command is used to get the common items from two lists and save the result to a new list
 :::
 
+![Get Common Items](../../../assets/Get Common Items_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **List 2**`TList<String>`: Enter the second list variable
-
 - **List 1**`TList<String>`: Enter the first list variable
+
+- **List 2**`TList<String>`: Enter the second list variable
 
 
 **Command Output**
 
 - **Save List Object To**`TList<String>`: Specify a variable to save the new list
 
+
+**Command Output**
 
 ### Error Handling
 

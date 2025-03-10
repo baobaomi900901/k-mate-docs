@@ -1,5 +1,6 @@
 ---
 title: Delete File
+order: 5
 ---
 
 # Delete File
@@ -9,6 +10,8 @@ title: Delete File
 :::tip 
 Delete the specified file
 :::
+
+![Delete File](../../../assets/Delete File_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Delete the specified file
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

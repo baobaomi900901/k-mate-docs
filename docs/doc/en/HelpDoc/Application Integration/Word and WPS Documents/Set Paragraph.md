@@ -1,5 +1,6 @@
 ---
 title: Set Paragraph
+order: 15
 ---
 
 # Set Paragraph
@@ -10,33 +11,41 @@ title: Set Paragraph
 Set the style of the currently selected content (alignment, indentation, line spacing, outline level, etc.)
 :::
 
+![Set Paragraph](../../../assets/Set Paragraph_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Outline Level**`Integer`: Outline Level
-
-- **Line Spacing**`Integer`: Line Spacing
-
-- **Line Spacing Rule**`Integer`: Line Spacing Rule
-
-- **Right Indent**`Integer`: Right Indentation
-
-- **Left Indent**`Integer`: Left Indentation
-
-- **First Line Indent**`Integer`: First Line Indentation
+- **Word Object**`TDocumentApplication`: Enter a Word object created by the function 'Open or Create Word'
 
 - **Alignment**`Integer`: Selected alignment option
 
-- **Word Object**`TDocumentApplication`: Enter a Word object created by the function 'Open or Create Word'
+- **First Line Indent**`Integer`: First Line Indentation
+
+- **Left Indent**`Integer`: Left Indentation
+
+- **Right Indent**`Integer`: Right Indentation
+
+- **Line Spacing Rule**`Integer`: Line Spacing Rule
+
+- **Line Spacing**`Integer`: Line Spacing
+
+- **Outline Level**`Integer`: Outline Level
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

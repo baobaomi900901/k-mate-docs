@@ -1,5 +1,6 @@
 ---
 title: Remove Leading and Trailing Spaces
+order: 6
 ---
 
 # Remove Leading and Trailing Spaces
@@ -10,21 +11,25 @@ title: Remove Leading and Trailing Spaces
 This command is used to remove leading and trailing spaces (including newline, carriage return, and tab characters) from text
 :::
 
+![Remove Leading and Trailing Spaces](../../../assets/Remove Leading and Trailing Spaces_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Trim Method**`Integer`: Select which side of the text's spaces you want to remove
-
 - **Original Text**`string`: Enter a text string or select a variable containing the string
+
+- **Trim Method**`Integer`: Select which side of the text's spaces you want to remove
 
 
 **Command Output**
 
 - **Save Result To**`string`: Specify a variable to save the trimmed text content
 
+
+**Command Output**
 
 ### Error Handling
 

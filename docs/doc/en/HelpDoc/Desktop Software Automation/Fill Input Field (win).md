@@ -1,5 +1,6 @@
 ---
 title: Fill Input Field (win)
+order: 5
 ---
 
 # Fill Input Field (win)
@@ -10,19 +11,21 @@ title: Fill Input Field (win)
 Enter content into the input field in the window
 :::
 
+![Fill Input Field (win)](../../assets/Fill Input Field (win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Append Input**`Boolean`: Continue entering after the existing content
-
-- **Input Content**`string`: The content to enter
+- **Window Object**`TWinObj`: The obtained window object
 
 - **Target for Operation**`TTarget`: Select the window element to be operated on
 
-- **Window Object**`TWinObj`: The obtained window object
+- **Input Content**`string`: The content to enter
+
+- **Append Input**`Boolean`: Continue entering after the existing content
 
 
 **Command Output**
@@ -31,30 +34,30 @@ No output for the current command
 
 ### Advanced
 
-- **TimeOut**`Integer`: 
-
-- **Vertical Translation**`Integer`: Positive values move down, negative values move up
-
-- **OoffsetX**`Integer`: 
-
-- **Custom Position**`Integer`: Custom position
-
-- **Mouse Click Position**`Integer`: Supports clicking at the center of the element, a random position within the element's rectangle, or a custom position manually specified
-
-- **Click Element Before Input**`Boolean`: Click the element before the input action
-
-- **Delay After Execution (ms)**`Integer`: Time to continue waiting after command execution
-
-- **Focus Timeout (ms)**`Integer`: Focus timeout duration
+- **Input Method**`Integer`: Method of input
 
 - **Key Press Interval (ms)**`Integer`: Interval between key presses
 
-- **Force Load American Keyboard (ENG)**`Boolean`: Switch to English input method
+- **Focus Timeout (ms)**`Integer`: Focus timeout duration
 
-- **Input Contains Shortcuts**`Boolean`: Incorporate shortcuts in the content
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
-- **Input Method**`Integer`: Method of input
+- **Delay After Execution (ms)**`Integer`: Time to continue waiting after command execution
 
+- **Click Element Before Input**`Boolean`: Click the element before the input action
+
+- **Mouse Click Position**`Integer`: Supports clicking at the center of the element, a random position within the element's rectangle, or a custom position manually specified
+
+- **Custom Position**`Integer`: Custom position
+
+- **Horizontal Translation**`Integer`: Positive values move right, negative values move left
+
+- **Vertical Translation**`Integer`: Positive values move down, negative values move up
+
+- **Wait for Element Presence (ms)**`Integer`: Timeout for waiting for the target input field to appear
+
+
+**Command Output**
 
 ### Error Handling
 

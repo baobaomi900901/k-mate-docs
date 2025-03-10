@@ -1,5 +1,6 @@
 ---
 title: Merge Data Table
+order: 14
 ---
 
 # Merge Data Table
@@ -10,23 +11,27 @@ title: Merge Data Table
 Merge the specified data table with the current data table, specifying whether to keep changes and how to handle schemas missing in the current data table.
 :::
 
+![Merge Data Table](../../../assets/Merge Data Table_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Missing Schema Action**`Integer`: Missing Schema Action
+- **Destination**`TDataTable`: The data table object to which the source data table will be merged.
 
 - **Source**`TDataTable`: The data table object to be added to the destination data table.
 
-- **Destination**`TDataTable`: The data table object to which the source data table will be merged.
+- **Missing Schema Action**`Integer`: Missing Schema Action
 
 
 **Command Output**
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

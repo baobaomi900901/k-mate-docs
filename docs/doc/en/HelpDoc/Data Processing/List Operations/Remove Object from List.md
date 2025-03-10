@@ -1,5 +1,6 @@
 ---
 title: Remove Object from List
+order: 9
 ---
 
 # Remove Object from List
@@ -10,25 +11,29 @@ title: Remove Object from List
 This command is used to remove a specified item from an object list
 :::
 
+![Remove Object from List](../../../assets/Remove Object from List_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Position to Remove**`Integer`: Enter the position to remove. Counting forwards: the first item is 0, the second item is 1, and so on; counting backwards: the last item is -1, the second to last item is -2, and so on.
-
-- **Object to Remove**`TObject`: Enter the object to be removed
+- **List**`TList<TObject>`: Enter the object list variable
 
 - **Removal Method**`Integer`: Select whether to remove by index or by object
 
-- **List**`TList<TObject>`: Enter the object list variable
+- **Object to Remove**`TObject`: Enter the object to be removed
+
+- **Position to Remove**`Integer`: Enter the position to remove. Counting forwards: the first item is 0, the second item is 1, and so on; counting backwards: the last item is -1, the second to last item is -2, and so on.
 
 
 **Command Output**
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

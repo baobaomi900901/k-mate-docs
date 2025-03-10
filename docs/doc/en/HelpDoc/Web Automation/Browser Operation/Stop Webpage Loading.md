@@ -1,5 +1,6 @@
 ---
 title: Stop Webpage Loading
+order: 3
 ---
 
 # Stop Webpage Loading
@@ -9,6 +10,8 @@ title: Stop Webpage Loading
 :::tip 
 Force stop the webpage loading if it has not completed
 :::
+
+![Stop Webpage Loading](../../../assets/Stop Webpage Loading_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Force stop the webpage loading if it has not completed
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

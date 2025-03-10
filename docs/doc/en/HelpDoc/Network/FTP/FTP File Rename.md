@@ -1,5 +1,6 @@
 ---
 title: FTP File Rename
+order: 10
 ---
 
 # FTP File Rename
@@ -10,23 +11,31 @@ title: FTP File Rename
 Rename a file on the remote server
 :::
 
+![FTP File Rename](../../../assets/FTP File Rename_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **New Name**`string`: The new name for the remote file
+- **FTP Connection Object**`TFTP`: The FTP object from which the file will be renamed
 
 - **Remote File**`string`: The name of the remote file to be renamed
 
-- **FTP Connection Object**`TFTP`: The FTP object from which the file will be renamed
+- **New Name**`string`: The new name for the remote file
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

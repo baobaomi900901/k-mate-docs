@@ -1,5 +1,6 @@
 ---
 title: Open Select Folder Dialog
+order: 6
 ---
 
 # Open Select Folder Dialog
@@ -9,6 +10,8 @@ title: Open Select Folder Dialog
 :::tip 
 Open Select Folder Dialog
 :::
+
+![Open Select Folder Dialog](../../../assets/Open Select Folder Dialog_command.png)
 
 ## Configuration Item Description
 
@@ -21,12 +24,14 @@ Open Select Folder Dialog
 
 **Command Output**
 
-- **Save Selected Folder Result To**`string`: Specify a variable name to save the selected folder result, return None if the user cancels the dialog, otherwise return a dict object
+- **Save Selected Folder Result To**`string`: Specify a variable name to save the selected folder result, return null string if the user cancels the dialog
 
 ### Advanced
 
 - **Default Path**`string`: Default path
 
+
+**Command Output**
 
 ### Error Handling
 

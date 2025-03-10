@@ -1,5 +1,6 @@
 ---
 title: End Try
+order: 4
 ---
 
 # End Try
@@ -9,6 +10,8 @@ title: End Try
 :::tip 
 End the try execution block
 :::
+
+![End Try](../../../assets/End Try_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,8 @@ No input for the current command
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

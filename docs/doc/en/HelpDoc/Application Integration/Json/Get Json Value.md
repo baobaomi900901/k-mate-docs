@@ -1,5 +1,6 @@
 ---
 title: Get Json Value
+order: 6
 ---
 
 # Get Json Value
@@ -10,25 +11,33 @@ title: Get Json Value
 Get the value of a Json object with the specified type
 :::
 
+![Get Json Value](../../../assets/Get Json Value_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Special Characters**`Boolean`: Check this box if the Key contains special characters.
-
-- **Data Type**`Integer`: Data Type
+- **Json Object**`TJson`: Json Object
 
 - **Key**`string`: Key
 
-- **Json Object**`TJson`: Json Object
+- **Data Type**`Integer`: Data Type
+
+- **Special Characters**`Boolean`: Check this box if the Key contains special characters.
 
 
 **Command Output**
 
 - **Value**`string`: Value
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

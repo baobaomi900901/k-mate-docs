@@ -1,5 +1,6 @@
 ---
 title: Insert Blank Column
+order: 15
 ---
 
 # Insert Blank Column
@@ -10,25 +11,33 @@ title: Insert Blank Column
 Insert a blank column in the Excel table
 :::
 
+![Insert Blank Column](../../../../assets/Insert Blank Column_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+
+- **Before which column**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
 
 - **How many columns to insert**`Integer`: How many blank columns to insert
 
-- **Before which column**`string`: Column name. Starts from A
-
-- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or New Excel'/'Get currently active Excel object'
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

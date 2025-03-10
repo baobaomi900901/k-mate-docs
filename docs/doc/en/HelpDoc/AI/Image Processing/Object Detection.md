@@ -1,5 +1,6 @@
 ---
 title: Object Detection
+order: 3
 ---
 
 # Object Detection
@@ -10,29 +11,37 @@ title: Object Detection
 Call the Kingsware AI interface for object detection.
 :::
 
+![Object Detection](../../../assets/Object Detection_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Image Path**`string`: Enter the image address to be selected.
-
 - **Recognition Method**`Integer`: Select a recognition method.
+
+- **Image Path**`string`: Enter the image address to be selected.
 
 
 **Command Output**
 
-- **Error Information**`String`: Specify a variable to store the error information.
+- **Response Header Information**`String`: Specify a variable to store the response header information.
 
 - **Response Body Information**`String`: Specify a variable to store the response body information.
 
-- **Response Header Information**`String`: Specify a variable to store the response header information.
+- **Error Information**`String`: Specify a variable to store the error information.
 
 ### Advanced
 
 - **Response Header Type**`array of string`: When the server and client establish a long connection, it is necessary to set the HTTP response header 'Connection'. The default is ['Connection'].
 
+- **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
+
+
+**Command Output**
 
 ### Error Handling
 

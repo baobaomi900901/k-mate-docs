@@ -1,5 +1,6 @@
 ---
 title: Wait for Load Completion (SAP)
+order: 7
 ---
 
 # Wait for Load Completion (SAP)
@@ -9,6 +10,8 @@ title: Wait for Load Completion (SAP)
 :::tip 
 Wait for the SAP to load completely
 :::
+
+![Wait for Load Completion (SAP)](../../../assets/Wait for Load Completion (SAP)_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,12 @@ Wait for the SAP to load completely
 
 - **Wait Result**`Boolean`: Specify a variable to save whether the SAP has loaded within the specified time
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

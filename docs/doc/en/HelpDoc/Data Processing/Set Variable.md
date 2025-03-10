@@ -1,5 +1,6 @@
 ---
 title: Set Variable
+order: 1
 ---
 
 # Set Variable
@@ -10,21 +11,25 @@ title: Set Variable
 Create a new variable and assign it a value, or reassign a value to an existing variable
 :::
 
+![Set Variable](../../assets/Set Variable_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Value**`Variant`: Specify the value to be saved in the variable
-
 - **Variable Type**`Integer`: Select the appropriate type based on the variable's value
+
+- **Value**`Variant`: Specify the value to be saved in the variable
 
 
 **Command Output**
 
 - **Variable Name**`Variant`: Enter a name for the variable to save the value into
 
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Open Message Dialog
+order: 1
 ---
 
 # Open Message Dialog
@@ -10,29 +11,33 @@ title: Open Message Dialog
 Open a message dialog
 :::
 
+![Open Message Dialog](../../../assets/Open Message Dialog_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Timeout in milliseconds**`Integer`: Set the time in milliseconds for the dialog to automatically close if no user action is taken
-
-- **Automatically click default button after timeout**`Boolean`: Automatically click the default button when the dialog exceeds the specified time without user interaction
-
-- **Default Selected Button**`Integer`: Select a default button
-
-- **Dialog Buttons**`Integer`: Select dialog buttons
+- **Dialog Title**`string`: Dialog title
 
 - **Dialog Content**`string`: Dialog content
 
-- **Dialog Title**`string`: Dialog title
+- **Dialog Buttons**`Integer`: Select dialog buttons
+
+- **Default Selected Button**`Integer`: Select a default button
+
+- **Automatically click default button after timeout**`Boolean`: Automatically click the default button when the dialog exceeds the specified time without user interaction
+
+- **Timeout in milliseconds**`Integer`: Set the time in milliseconds for the dialog to automatically close if no user action is taken
 
 
 **Command Output**
 
 - **Button Name**`string`: Specify a variable name to save the name of the pressed button
 
+
+**Command Output**
 
 ### Error Handling
 

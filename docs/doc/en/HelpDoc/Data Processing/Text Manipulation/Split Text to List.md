@@ -1,5 +1,6 @@
 ---
 title: Split Text to List
+order: 9
 ---
 
 # Split Text to List
@@ -10,29 +11,33 @@ title: Split Text to List
 This command uses a specified delimiter to split the target text into a list
 :::
 
+![Split Text to List](../../../assets/Split Text to List_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Filter Empty Items**`Boolean`: Filter out empty items
-
-- **Regular Expression**`Boolean`: Use regular expressions
-
-- **Custom Delimiter**`string`: Enter a custom delimiter
-
-- **Standard Delimiter**`Integer`: Select a standard delimiter
+- **Text to Convert**`string`: Enter a text string or select a variable containing the string
 
 - **Delimiter Type**`Integer`: Select a method for splitting the list
 
-- **Text to Convert**`string`: Enter a text string or select a variable containing the string
+- **Standard Delimiter**`Integer`: Select a standard delimiter
+
+- **Custom Delimiter**`string`: Enter a custom delimiter
+
+- **Regular Expression**`Boolean`: Use regular expressions
+
+- **Filter Empty Items**`Boolean`: Filter out empty items
 
 
 **Command Output**
 
 - **Save Result To**`TList<String>`: Specify a variable to save the converted list
 
+
+**Command Output**
 
 ### Error Handling
 

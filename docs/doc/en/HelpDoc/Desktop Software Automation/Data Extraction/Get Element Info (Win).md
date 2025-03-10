@@ -1,5 +1,6 @@
 ---
 title: Get Element Info (Win)
+order: 2
 ---
 
 # Get Element Info (Win)
@@ -10,21 +11,23 @@ title: Get Element Info (Win)
 Get the text content, attributes, value, and position of a specified element in the window
 :::
 
+![Get Element Info (Win)](../../../assets/Get Element Info (Win)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Relative To**`Integer`: Position in the screen
-
-- **Attribute Name**`string`: Element Attribute Name
-
-- **Operation**`Integer`: Window Element Information
+- **Window Object**`TWinObj`: Enter a captured window object
 
 - **Operation Target**`TTarget`: Select the desktop software element to operate on
 
-- **Window Object**`TWinObj`: Enter a captured window object
+- **Operation**`Integer`: Window Element Information
+
+- **Attribute Name**`string`: Element Attribute Name
+
+- **Relative To**`Integer`: Position in the screen
 
 
 **Command Output**
@@ -33,10 +36,14 @@ Get the text content, attributes, value, and position of a specified element in 
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target element to exist
-
 - **Convert to 96 DPI Corresponding Value**`Boolean`: Whether to convert border attributes to device-independent units (each unit is 1/96 inch)
 
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target element to exist
+
+
+**Command Output**
 
 ### Error Handling
 

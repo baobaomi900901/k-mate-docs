@@ -1,5 +1,6 @@
 ---
 title: Get element object (web)
+order: 8
 ---
 
 # Get element object (web)
@@ -10,25 +11,27 @@ title: Get element object (web)
 Locate an element on a webpage using capture, CSS, or XPath methods.
 :::
 
+![Get element object (web)](../../../assets/Get element object (web)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Parent element**`TTarget`: Find the target element within the parent element.
-
-- **Associated parent element**`Boolean`: Whether to associate with the parent element.
-
-- **XPath selector**`string`: Enter the XPath selector.
-
-- **CSS selector**`string`: Enter the CSS selector.
-
-- **Operation target**`TTarget`: Select the web element to be operated on.
+- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
 
 - **Locating method**`Integer`: Specify a method to locate an element.
 
-- **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created through the 'open webpage' function.
+- **Operation target**`TTarget`: Select the web element to be operated on.
+
+- **CSS selector**`string`: Enter the CSS selector.
+
+- **XPath selector**`string`: Enter the XPath selector.
+
+- **Associated parent element**`Boolean`: Whether to associate with the parent element.
+
+- **Parent element**`TTarget`: Find the target element within the parent element.
 
 
 **Command Output**
@@ -37,8 +40,12 @@ Locate an element on a webpage using capture, CSS, or XPath methods.
 
 ### Advanced
 
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
 - **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target element to exist.
 
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: WeCom Group Notification
+order: 1
 ---
 
 # WeCom Group Notification
@@ -10,33 +11,41 @@ title: WeCom Group Notification
 Send content to WeCom group
 :::
 
+![WeCom Group Notification](../../../assets/WeCom Group Notification_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **@Everyone**`Boolean`: @Everyone
-
-- **@Someone**`array of String`: Enter the phone number bound to the member you want to @, for multiple members, switch to programming mode and input a list of numbers, like ['PhoneNumber1', 'PhoneNumber2']
-
-- **Image Path**`string`: Should not exceed 2MB, supports JPG and PNG formats
-
-- **File Path**`string`: The file size should be between 5B and 20MB
-
-- **MarkDown Content**`string`: MarkDown content, up to 4096 bytes
-
-- **Text Content**`string`: Text content, up to 2048 bytes
+- **Bot Address**`string`: The bot's web address, i.e., WebHook, needs to be applied for separately
 
 - **Message Format Type**`Integer`: Message type and data format
 
-- **Bot Address**`string`: The bot's web address, i.e., WebHook, needs to be applied for separately
+- **Text Content**`string`: Text content, up to 2048 bytes
+
+- **MarkDown Content**`string`: MarkDown content, up to 4096 bytes
+
+- **File Path**`string`: The file size should be between 5B and 20MB
+
+- **Image Path**`string`: Should not exceed 2MB, supports JPG and PNG formats
+
+- **@Someone**`String`: Enter the phone number bound to the member you want to @, for multiple members, switch to programming mode and input a list of numbers, like ['PhoneNumber1', 'PhoneNumber2']
+
+- **@Everyone**`Boolean`: @Everyone
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

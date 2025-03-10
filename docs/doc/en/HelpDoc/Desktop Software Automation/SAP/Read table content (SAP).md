@@ -1,5 +1,6 @@
 ---
 title: Read table content (SAP)
+order: 12
 ---
 
 # Read table content (SAP)
@@ -10,29 +11,31 @@ title: Read table content (SAP)
 Read content from SAP table, supporting rectangular area reading
 :::
 
+![Read table content (SAP)](../../../assets/Read table content (SAP)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Column number**`Integer`: Column number
-
-- **Row number**`Integer`: Row number
-
-- **End column number**`Integer`: End column number
-
-- **End row number**`Integer`: End row number
-
-- **Start column number**`Integer`: Start column number
-
-- **Start row number**`Integer`: Start row number
-
-- **Reading method**`Integer`: Choose how to read
+- **Window object**`TWinObj`: Enter a SAP session window that has been obtained
 
 - **Operation target**`TTarget`: Select the SAP table element to operate on
 
-- **Window object**`TWinObj`: Enter a SAP session window that has been obtained
+- **Reading method**`Integer`: Choose how to read
+
+- **Start row number**`Integer`: Start row number
+
+- **Start column number**`Integer`: Start column number
+
+- **End row number**`Integer`: End row number
+
+- **End column number**`Integer`: End column number
+
+- **Row number**`Integer`: Row number
+
+- **Column number**`Integer`: Column number
 
 
 **Command Output**
@@ -41,10 +44,14 @@ Read content from SAP table, supporting rectangular area reading
 
 ### Advanced
 
-- **Whether to need table column names**`Boolean`: After checking, automatically fill in the column names in the output column
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for element to exist (milliseconds)**`Integer`: Timeout time for waiting for the target element to exist
 
+- **Whether to need table column names**`Boolean`: After checking, automatically fill in the column names in the output column
+
+
+**Command Output**
 
 ### Error Handling
 

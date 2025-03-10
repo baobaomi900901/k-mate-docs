@@ -1,5 +1,6 @@
 ---
 title: Lock Screen
+order: 1
 ---
 
 # Lock Screen
@@ -10,21 +11,29 @@ title: Lock Screen
 Lock the system screen to ensure subsequent commands can run normally in the locked state
 :::
 
+![Lock Screen](../../../assets/Lock Screen_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Login Password**`string`: Please enter your login password
-
 - **Username**`string`: Please enter your username
+
+- **Login Password**`string`: Please enter your login password
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

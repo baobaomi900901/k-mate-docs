@@ -1,5 +1,6 @@
 ---
 title: Hover over element (web)
+order: 4
 ---
 
 # Hover over element (web)
@@ -10,15 +11,17 @@ title: Hover over element (web)
 Hover over an element on the web page
 :::
 
+![Hover over element (web)](../../assets/Hover over element (web)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Operation target**`TTarget`: The webpage element to be operated on
-
 - **Webpage object**`TBrowser`: Enter a webpage object that has been obtained or created with the 'Open Webpage' function
+
+- **Operation target**`TTarget`: The webpage element to be operated on
 
 
 **Command Output**
@@ -27,21 +30,24 @@ No output for the current command
 
 ### Advanced
 
-- **Wait for element to exist (ms)**`Integer`: Timeout for waiting for the target element to exist
+- **Send window messages**`Boolean`: Directly simulate hovering through the operating system's messaging mechanism, bypassing the browser's event system. Execution is faster, but may not trigger all interactive logic within the webpage.
 
-- **Vertical translation**`Integer`: Enter a positive number to move down, a negative number to move up
-
-- **Horizontal translation**`Integer`: Enter a positive number to move right, a negative number to move left
-
-- **Custom**`Integer`: Custom position
-
-- **Position of the target text**`Integer`: Supported positions for clicking elements
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **Delay after execution (ms)**`Integer`: Time to continue waiting after the command execution is completed
 
-- **Send window messages**`Boolean`: Directly simulate hovering through the operating system's messaging mechanism, bypassing the browser's event system. Execution is faster, but may not trigger all interactive logic within the webpage.
+- **Position of the target text**`Integer`: Supported positions for clicking elements
 
-- **Simulate manual hover**`Boolean`: Simulate user hover behavior, trigger the browser's event mechanism to ensure consistency with real operations. Suitable for scenarios requiring simulation of user interaction.
+- **Custom**`Integer`: Custom position
+
+- **Horizontal translation**`Integer`: Enter a positive number to move right, a negative number to move left
+
+- **Vertical translation**`Integer`: Enter a positive number to move down, a negative number to move up
+
+- **Wait for element to exist (ms)**`Integer`: Timeout for waiting for the target element to exist
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Export to PDF
+order: 5
 ---
 
 # Export to PDF
@@ -10,27 +11,35 @@ title: Export to PDF
 Export the Excel file to PDF
 :::
 
+![Export to PDF](../../../assets/Export to PDF_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Overwrite if file exists**`Boolean`: Overwrite if file exists
-
-- **Save PDF to**`string`: The filename where the exported PDF will be saved
-
-- **All Sheets**`Boolean`: If checked, export all worksheets
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained by the function 'Open or Create Excel'/'Get current active Excel object'
 
 - **Sheet Name**`string`: Enter sheet name, leave blank for the currently active sheet
 
-- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained by the function 'Open or Create Excel'/'Get current active Excel object'
+- **All Sheets**`Boolean`: If checked, export all worksheets
+
+- **Save PDF to**`string`: The filename where the exported PDF will be saved
+
+- **Overwrite if file exists**`Boolean`: Overwrite if file exists
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

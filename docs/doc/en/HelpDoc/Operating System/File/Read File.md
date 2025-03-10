@@ -1,5 +1,6 @@
 ---
 title: Read File
+order: 6
 ---
 
 # Read File
@@ -10,23 +11,31 @@ title: Read File
 Read the content of the file at the specified path
 :::
 
+![Read File](../../../assets/Read File_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **File Encoding**`Integer`: Select text encoding
+- **File Path**`string`: The path of the file to read
 
 - **Read Method**`Integer`: The format of the file content
 
-- **File Path**`string`: The path of the file to read
+- **File Encoding**`Integer`: Select text encoding
 
 
 **Command Output**
 
 - **Save File Content to**`string`: Enter a name to save the file content
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

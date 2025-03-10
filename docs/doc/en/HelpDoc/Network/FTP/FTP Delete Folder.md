@@ -1,5 +1,6 @@
 ---
 title: FTP Delete Folder
+order: 12
 ---
 
 # FTP Delete Folder
@@ -10,21 +11,29 @@ title: FTP Delete Folder
 Delete a folder on the remote server
 :::
 
+![FTP Delete Folder](../../../assets/FTP Delete Folder_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Remote Folder**`string`: The name of the folder to be deleted
-
 - **FTP Connection Object**`TFTP`: The FTP object from which the folder will be deleted
+
+- **Remote Folder**`string`: The name of the folder to be deleted
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

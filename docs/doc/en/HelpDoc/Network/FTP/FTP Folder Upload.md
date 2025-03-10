@@ -1,5 +1,6 @@
 ---
 title: FTP Folder Upload
+order: 8
 ---
 
 # FTP Folder Upload
@@ -10,25 +11,33 @@ title: FTP Folder Upload
 Upload one or more local folders to the FTP remote service path
 :::
 
+![FTP Folder Upload](../../../assets/FTP Folder Upload_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Upload Mode**`Integer`: How to handle existing sub-files on the remote server when uploading folders
-
-- **Local Files**`string`: The local folder or list of folders to be uploaded, separated by '|' for multiple folders
+- **FTP Connection Object**`TFTP`: The FTP object to which the folder will be uploaded
 
 - **Remote Path**`string`: The remote path where the local folder will be uploaded
 
-- **FTP Connection Object**`TFTP`: The FTP object to which the folder will be uploaded
+- **Local Files**`string`: The local folder or list of folders to be uploaded, separated by '|' for multiple folders
+
+- **Upload Mode**`Integer`: How to handle existing sub-files on the remote server when uploading folders
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

@@ -1,5 +1,6 @@
 ---
 title: Cycle Similar Elements (Web)
+order: 11
 ---
 
 # Cycle Similar Elements (Web)
@@ -10,39 +11,45 @@ title: Cycle Similar Elements (Web)
 Iterate through each item in the similar element list on the web page for automated operations.
 :::
 
+![Cycle Similar Elements (Web)](../../../assets/Cycle Similar Elements (Web)_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Output Loop Position**`Boolean`: Whether to output the position of the loop item.
-
-- **Attribute Name**`string`: The attribute name of the web page element.
-
-- **Intelligently Identify and Supplement Address Prefix (http:// or https://)**`Boolean`: Intelligent identification and supplementation of address prefix.
-
-- **Element Operation**`Integer`: Information about the obtained element.
+- **Web Page Object**`TBrowser`: Input a captured or created web page object using the 'Open Web Page' function.
 
 - **Operation Target**`TTarget`: Select the web page element to be operated on.
 
-- **Web Page Object**`TBrowser`: Input a captured or created web page object using the 'Open Web Page' function.
+- **Element Operation**`Integer`: Information about the obtained element.
+
+- **Intelligently Identify and Supplement Address Prefix (http:// or https://)**`Boolean`: Intelligent identification and supplementation of address prefix.
+
+- **Attribute Name**`string`: The attribute name of the web page element.
+
+- **Output Loop Position**`Boolean`: Whether to output the position of the loop item.
 
 
 **Command Output**
 
-- **Save Current Loop Position To**`Integer`: Save the count of obtained similar elements.
-
 - **Save Current Loop Item To**`TUiElement`: Specify a variable name to store the current loop item information.
+
+- **Save Current Loop Position To**`Integer`: Save the count of obtained similar elements.
 
 ### Advanced
 
-- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the existence of the target associated element.
+- **Loop Start Position**`Integer`: Loop start position, 0 is the first item.
 
 - **Loop End Position**`Integer`: Loop end position, -1 is the last item.
 
-- **Loop Start Position**`Integer`: Loop start position, 0 is the first item.
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
+- **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the existence of the target associated element.
+
+
+**Command Output**
 
 ### Error Handling
 

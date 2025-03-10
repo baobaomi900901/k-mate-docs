@@ -1,5 +1,6 @@
 ---
 title: Set Window Visibility
+order: 4
 ---
 
 # Set Window Visibility
@@ -10,35 +11,43 @@ title: Set Window Visibility
 Set window visibility or hide state
 :::
 
+![Set Window Visibility](../../../assets/Set Window Visibility_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Window Visibility**`Integer`: Set the visibility of the window
-
-- **Window Handle**`Integer`: Input a window handle
-
-- **Match Using Wildcards**`Boolean`: Match using wildcards
-
-- **Window Type**`string`: Input the window type
-
-- **Add Window Type**`Boolean`: Add window type
-
-- **Window Title**`string`: Input the window title
-
-- **Operation Target**`TTarget`: Select a window element
+- **Get Window Method**`Integer`: Select the method to get the window
 
 - **Window Object**`TWinObj`: Input a captured window object
 
-- **Get Window Method**`Integer`: Select the method to get the window
+- **Operation Target**`TTarget`: Select a window element
+
+- **Window Title**`string`: Input the window title
+
+- **Add Window Type**`Boolean`: Add window type
+
+- **Window Type**`string`: Input the window type
+
+- **Match Using Wildcards**`Boolean`: Match using wildcards
+
+- **Window Handle**`Integer`: Input a window handle
+
+- **Window Visibility**`Integer`: Set the visibility of the window
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

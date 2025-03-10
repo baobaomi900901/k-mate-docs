@@ -1,5 +1,6 @@
 ---
 title: Open Web Page
+order: 1
 ---
 
 # Open Web Page
@@ -10,15 +11,17 @@ title: Open Web Page
 Open a web page using a specified browser to achieve web automation
 :::
 
+![Open Web Page](../../assets/Open Web Page_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **URL**`string`: Enter the web address to open
-
 - **Browser Type**`Integer`: Select the browser type. You need to install the corresponding browser plugin in [Settings]-[Plugin Center] to achieve automation. Additionally, if the browser installation path is not the default system drive, you need to set the installation path in advanced options.
+
+- **URL**`string`: Enter the web address to open
 
 
 **Command Output**
@@ -27,17 +30,20 @@ Open a web page using a specified browser to achieve web automation
 
 ### Advanced
 
-- **Command line arguments**`string`: Command line arguments, must be supported by the browser, can be empty
-
-- **Browser installation path**`string`: The default is the system drive installation path. If the installation path is not default, please select the program path of the corresponding browser
-
-- **Action after timeout**`Integer`: The action to perform after the page load times out
+- **Wait for the web page to load completely**`Boolean`: Whether to wait for the web page to load completely
 
 - **Load timeout (milliseconds)**`Integer`: The time to wait for the page to load before timing out (milliseconds)
 
-- **Wait for the web page to load completely**`Boolean`: Whether to wait for the web page to load completely
+- **Action after timeout**`Integer`: The action to perform after the page load times out
 
-- **Run without grabbing mouse and keyboard**`Boolean`: Perform subsequent operations on the web page using API methods, which will improve stability and avoid occupying the mouse and keyboard
+- **Browser installation path**`string`: The default is the system drive installation path. If the installation path is not default, please select the program path of the corresponding browser
+
+- **Command line arguments**`string`: Command line arguments, must be supported by the browser, can be empty
+
+- **Delay Before (ms)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

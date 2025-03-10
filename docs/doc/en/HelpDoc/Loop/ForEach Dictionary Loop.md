@@ -1,5 +1,6 @@
 ---
 title: ForEach Dictionary Loop
+order: 4
 ---
 
 # ForEach Dictionary Loop
@@ -9,6 +10,8 @@ title: ForEach Dictionary Loop
 :::tip 
 This instruction is used to loop through each key-value pair in the dictionary
 :::
+
+![ForEach Dictionary Loop](../../assets/ForEach Dictionary Loop_command.png)
 
 ## Configuration Item Description
 
@@ -21,9 +24,24 @@ This instruction is used to loop through each key-value pair in the dictionary
 
 **Command Output**
 
+- **Key Name**`string`: Specify a variable name to store the key name of the current loop
+
 - **Key Value**`string`: Specify a variable name to store the value of the current loop key
 
-- **Key Name**`string`: Specify a variable name to store the key name of the current loop
+
+**Command Output**
+
+### Error Handling
+
+- **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 
+
+- **Handling Method**`Integer`:
+
+    - **Terminate Process**: If the command fails, terminate the process.
+
+    - **Ignore Exception and Continue Execution**: If the command fails, ignore the exception and continue the process.
+
+    - **Retry This Command**: If the command fails, retry the command a specified number of times with a specified interval between retries.
 
 ## Usage Example
 

@@ -1,5 +1,6 @@
 ---
 title: Clear Excel Content
+order: 9
 ---
 
 # Clear Excel Content
@@ -10,41 +11,49 @@ title: Clear Excel Content
 Clear content or format from the Excel file
 :::
 
+![Clear Excel Content](../../../../assets/Clear Excel Content_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
-
-- **End Column Name**`string`: Column name. Starts from A
-
-- **End Row Number**`Integer`: Row number. Starts from 1
-
-- **Start Column Name**`string`: Column name. Starts from A
-
-- **Start Row Number**`Integer`: Row number. Starts from 1
-
-- **Column Name**`string`: Column name. Starts from A
-
-- **Row Number**`Integer`: Row number. Starts from 1
-
-- **Unit Column Name**`string`: Column name. Starts from A
-
-- **Unit Row Number**`Integer`: Row number. Starts from 1
-
-- **Clear Method**`Integer`: Choose to clear by cell/row/column/range
+- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
 
 - **Clear Content**`Integer`: Choose to clear content/format/all
 
-- **Excel Object**`TWorkbookApplication`: Enter an Excel object obtained through the function 'Open or create new Excel' / 'Get currently active Excel object'
+- **Clear Method**`Integer`: Choose to clear by cell/row/column/range
+
+- **Unit Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Unit Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **Start Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **Start Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **End Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+
+- **End Column Name**`string`: Enter the column name, starting from A or 1, -N represents the nth to last column
+
+- **Sheet Name**`string`: If empty, it defaults to the currently active sheet
 
 
 **Command Output**
 
 No output for the current command
 
+### Advanced
+
+- **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
+
+
+**Command Output**
 
 ### Error Handling
 

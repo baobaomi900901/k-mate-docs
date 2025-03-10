@@ -1,5 +1,6 @@
 ---
 title: Release Data Table
+order: 23
 ---
 
 # Release Data Table
@@ -9,6 +10,8 @@ title: Release Data Table
 :::tip 
 Release the data table
 :::
+
+![Release Data Table](../../../assets/Release Data Table_command.png)
 
 ## Configuration Item Description
 
@@ -23,6 +26,8 @@ Release the data table
 
 No output for the current command
 
+
+**Command Output**
 
 ### Error Handling
 

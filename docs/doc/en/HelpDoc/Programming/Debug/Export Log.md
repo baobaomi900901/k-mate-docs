@@ -1,5 +1,6 @@
 ---
 title: Export Log
+order: 2
 ---
 
 # Export Log
@@ -10,21 +11,25 @@ title: Export Log
 Export log content to a file
 :::
 
+![Export Log](../../../assets/Export Log_command.png)
+
 ## Configuration Item Description
 
 ### General
 
 **Command Input**
 
-- **File Name**`string`: Specify the file name
-
 - **Folder Path**`string`: Specify the folder path
+
+- **File Name**`string`: Specify the file name
 
 
 **Command Output**
 
 - **File Path**`string`: Specify a variable name, this variable will be used to store the location of the exported file
 
+
+**Command Output**
 
 ### Error Handling
 
