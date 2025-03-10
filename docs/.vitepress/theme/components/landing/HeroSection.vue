@@ -28,7 +28,7 @@
     </div>
     <div
       ref="videoActions"
-      class="w-3/4 absolute bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-[0px_10px_36px_0px_rgba(0,0,0,0.16)] select-none pointer-events-none"
+      class="w-3/4 absolute opacity-0 invisible bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-[0px_10px_36px_0px_rgba(0,0,0,0.16)] select-none pointer-events-none"
     >
       <img class="w-full h-auto" src="./assets/window-bar.svg" alt="" />
       <video
@@ -127,28 +127,27 @@ onMounted(() => {
         textActions.value.querySelectorAll('div'),
         {
           y: 200,
-          opacity: 0,
           autoAlpha: 0,
         },
         {
           y: 0,
-          opacity: 1,
           autoAlpha: 1,
           duration: 0.5,
           stagger: 0.1,
+          delay: 0.1,
         }
       );
       const heroVideoAnimation = gsap.fromTo(
         videoActions.value,
         {
           css: {
-            opacity: 0,
+            autoAlpha: 0,
             top: `calc(${windowlHeight} + 200px)`,
           },
         },
         {
           css: {
-            opacity: 1,
+            autoAlpha: 1,
             top: windowlHeight,
             transform: `translate(0%, ${initialHeight})`,
           },
@@ -177,12 +176,12 @@ onMounted(() => {
       {
         css: {
           y:0,
-          opacity: 1,
+          autoAlpha: 1,
         },
       }, {
         css: {
           transform: `translate(0%, ${textTranslate}) scale(${videoScale})`,
-          opacity: 0,
+          autoAlpha: 0,
         },
         duration: 0.5,
       });
