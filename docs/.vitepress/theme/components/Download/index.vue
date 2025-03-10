@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Footer from "../../components/Footer.vue";
-import markdownit from "markdown-it";
-import { computed, nextTick, onMounted, ref, watch } from "vue";
+import Footer from '../../components/Footer.vue';
+import markdownit from 'markdown-it';
+import { computed, nextTick, onMounted, ref, watch } from 'vue';
 import {
   baseUrl,
   downServerFile,
@@ -10,13 +10,13 @@ import {
   getUpdateLogAPI,
   getVersionListAPI,
   IOptions,
-  IVersion,
-} from "./tools";
-import { KSelect, KOption, KDropdown, KDropdownItem, KScrollbar, KButton } from "@ksware/ksw-ux";
-import { IconLoading, IconDown } from "ksw-vue-icon";
+  IVersion
+} from './tools';
+import { KSelect, KOption, KDropdown, KDropdownItem, KScrollbar, KButton } from '@ksware/ksw-ux';
+import { IconLoading, IconDown } from 'ksw-vue-icon';
 
-const system = ref("");
-const version = ref("");
+const system = ref('');
+const version = ref('');
 const pluginValue = ref<string>();
 /** 系统选项 */
 const systemOptions = ref<IOptions[]>([]);
@@ -24,7 +24,7 @@ const systemOptions = ref<IOptions[]>([]);
 const versionOptions = ref<IOptions[]>([]);
 /** 系统版本对象 */
 const versionObject = ref<IVersion>({});
-const markdownContent = ref<string>("");
+const markdownContent = ref<string>('');
 
 const loading = ref<Boolean>(false);
 
@@ -43,9 +43,7 @@ const md = markdownit();
 /** 获取日志 */
 const getLog = async () => {
   await nextTick();
-  const logData = await getUpdateLogAPI(
-    `/${system.value}/${version.value}/changeLog.md`
-  );
+  const logData = await getUpdateLogAPI(`/${system.value}/${version.value}/changeLog.md`);
   const htmlContent = await md.render(logData);
   // const cleanHtml = DOMPurify.sanitize(htmlContent);
   markdownContent.value = htmlContent;
@@ -61,21 +59,25 @@ const isAllowDown = computed(() => {
 
 const getDownloadRPAAndPluginUrl = () => {
   if (!isAllowDown) return;
-  const fullPath =
-    baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite_plugin.zip";
+  const fullPath = baseUrl + '/' + system.value + '/' + version.value + '/K-RPA Lite_plugin.zip';
   return fullPath;
 };
 
 const getDownloadRPAUrl = () => {
   if (!isAllowDown) return;
-  const fullPath =
-    baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite.zip";
+  const fullPath = baseUrl + '/' + system.value + '/' + version.value + '/K-RPA Lite.zip';
   return fullPath;
 };
 
 const getDownloadPluginUrl = () => {
   if (!isAllowDown) return;
-  const fullPath = baseUrl + "/plugin/" + pluginValue.value + ".zip";
+  const fullPath = baseUrl + '/plugin/' + pluginValue.value + '.zip';
+  return fullPath;
+};
+
+const getDownloadWebView2Url = () => {
+  if (!isAllowDown) return;
+  const fullPath = baseUrl + '/webView2/x64/MicrosoftEdgeWebView2RuntimeInstallerX64.exe';
   return fullPath;
 };
 
@@ -92,7 +94,7 @@ const changeSystem = (key: string) => {
   versionOptions.value = arr.map((item) => {
     return { value: item.version, label: item.version, plugin: item.plugin };
   });
-  const maxVersion = findLatestVersion(versionOptions.value, "value");
+  const maxVersion = findLatestVersion(versionOptions.value, 'value');
   const { plugin, value } = maxVersion;
   version.value = value;
   pluginValue.value = plugin;
@@ -115,7 +117,7 @@ watch(
     changeSystem(key);
   },
   {
-    once: true,
+    once: true
   }
 );
 </script>
@@ -124,49 +126,49 @@ watch(
   <div class="flex flex-col items-center max-w-[860px] mx-auto">
     <div class="flex flex-col items-center mt-24 mx-auto w-fit">
       <div class="text-7xl font-bold">下载 K-RPA Lite</div>
-      <div class="text-xl font-medium mt-10">
-        支持 Windows、信创系统<sup class="text-gray-400">*</sup>、网页等
-      </div>
+      <div class="text-xl font-medium mt-10">支持 Windows、信创系统<sup class="text-gray-400">*</sup>、网页等</div>
       <div class="text-xs text-gray-400 mt-3">信创系统今年支持</div>
     </div>
     <div class="flex gap-4 flex-col items-center mt-8 mx-auto w-fit">
       <div class="select">
-        <k-select
-          v-model="system"
-          placeholder="系统"
-          size="large"
-          @change="changeSystem"
-        >
-          <k-option
-            v-for="item in systemOptions"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value"
-          />
+        <k-select v-model="system" placeholder="系统" size="large" @change="changeSystem">
+          <k-option v-for="item in systemOptions" :key="item.value" :label="item.label" :value="item.value" />
           <template #empty>暂无系统</template>
         </k-select>
       </div>
       <div class="select">
-        <k-select
-          v-model="version"
-          placeholder="版本"
-          size="large"
-          @change="changeVersion"
-        >
-          <k-option
-            v-for="item in versionOptions"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value"
-          />
+        <k-select v-model="version" placeholder="版本" size="large" @change="changeVersion">
+          <k-option v-for="item in versionOptions" :key="item.value" :label="item.label" :value="item.value" />
           <template #empty>先选系统系统</template>
         </k-select>
       </div>
-      <a class="flex justify-center text-base font-medium bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-xl w-full transition-all mt-5 select-none cursor-pointer" @click="downloadFile(getDownloadRPAAndPluginUrl())">下载客户端 & 插件包</a>
+      <a
+        class="flex justify-center text-base font-medium bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-xl w-full transition-all mt-5 select-none cursor-pointer"
+        style="max-width: 300px"
+        @click="downloadFile(getDownloadRPAAndPluginUrl())"
+        >下载客户端 & 插件包</a
+      >
       <div class="flex items-center gap-4">
-        <a class="flex justify-center text-base text-blue-500 hover:text-blue-400 py-[1px] px-1 rounded-md transition-all select-none cursor-pointer" @click="downloadFile(getDownloadRPAUrl())">下载客户端</a>
-        <hr class="border border-gray-200 h-4 rounded-full" /> 
-        <div class="flex justify-center text-base text-blue-500 hover:text-blue-400 py-[1px] px-1 rounded-md transition-all select-none cursor-pointer" @click="downloadFile(getDownloadPluginUrl())">下载插件包</div>
+        <div
+          class="flex justify-center text-base text-blue-500 hover:text-blue-400 py-[1px] px-1 rounded-md transition-all select-none cursor-pointer min-w-40"
+          @click="downloadFile(getDownloadRPAUrl())"
+        >
+          下载客户端
+        </div>
+        <hr class="border border-gray-200 h-4 rounded-full" />
+        <div
+          class="flex justify-center text-base text-blue-500 hover:text-blue-400 py-[1px] px-1 rounded-md transition-all select-none cursor-pointer min-w-40"
+          @click="downloadFile(getDownloadPluginUrl())"
+        >
+          下载插件包
+        </div>
+        <hr class="border border-gray-200 h-4 rounded-full" />
+        <div
+          class="flex justify-center text-base text-blue-500 hover:text-blue-400 py-[1px] px-1 rounded-md transition-all select-none cursor-pointer min-w-40"
+          @click="downloadFile(getDownloadWebView2Url())"
+        >
+          下载 viewView2_x64
+        </div>
       </div>
       <!-- <k-dropdown class="text-base text-blue-500 hover:text-blue-400 focus-visible:outline-none" size="large">
         <template #title>
@@ -198,15 +200,15 @@ watch(
   @apply transition-all duration-300;
   width: 300px;
   border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, .08) 0px 4px 6px 0px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 6px 0px;
   &:hover {
-    box-shadow: rgba(23, 25, 29, .2) 0px 16px 16px -16px, rgb(23 25 29 / 3%) 0px 14px 20px;
+    box-shadow: rgba(23, 25, 29, 0.2) 0px 16px 16px -16px, rgb(23 25 29 / 3%) 0px 14px 20px;
   }
   .dark & {
     background-color: rgba(255, 255, 255, 0.02);
   }
   .k-select {
-    :deep(.el-select__wrapper){
+    :deep(.el-select__wrapper) {
       background: transparent;
       .el-select__selected-item {
         color: var(--vp-c-text-1);
