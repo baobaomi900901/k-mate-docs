@@ -164,7 +164,7 @@ watch(
       </div>
       <a class="flex justify-center text-base font-medium bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-xl w-full transition-all mt-5 select-none cursor-pointer" @click="downloadFile(getDownloadRPAAndPluginUrl())">下载客户端 & 插件包</a>
       <div class="flex items-center gap-4">
-        <a class="flex justify-center text-base text-blue-500 hover:text-blue-400 py-[1px] px-1 rounded-md transition-all select-none cursor-pointer" @click="downloadFile(getDownloadRPA())">下载客户端</a>
+        <a class="flex justify-center text-base text-blue-500 hover:text-blue-400 py-[1px] px-1 rounded-md transition-all select-none cursor-pointer" @click="downloadFile(getDownloadRPAUrl())">下载客户端</a>
         <hr class="border border-gray-200 h-4 rounded-full" /> 
         <div class="flex justify-center text-base text-blue-500 hover:text-blue-400 py-[1px] px-1 rounded-md transition-all select-none cursor-pointer" @click="downloadFile(getDownloadPluginUrl())">下载插件包</div>
       </div>
