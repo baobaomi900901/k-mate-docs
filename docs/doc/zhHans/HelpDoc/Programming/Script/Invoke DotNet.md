@@ -11,7 +11,7 @@ order: 1
 执行指定的.net Script，可选择向其传递一个输入参数列表。
 :::
 
-![调用 .net](../../../assets/调用 .net_command.png)
+![调用 .net](../../../assets/调用%20.net_command.png)
 
 ## 配置项说明
 
