@@ -11,7 +11,7 @@ order: 4
 Set window visibility or hide state
 :::
 
-![Set Window Visibility](../../../assets/Set Window Visibility_command.png)
+![Set Window Visibility](../../../assets/Set%20Window%20Visibility_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

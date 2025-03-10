@@ -11,7 +11,7 @@ order: 3
 Open DateTime Dialog
 :::
 
-![Open DateTime Dialog](../../../assets/Open DateTime Dialog_command.png)
+![Open DateTime Dialog](../../../assets/Open%20DateTime%20Dialog_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ Open DateTime Dialog
 - **Dialog Explanation**`string`: Dialog Explanation
 
 - **Timeout (milliseconds)**`Integer`: The duration for which the notification is displayed, default is 30000 milliseconds
-
-
-**Command Output**
 
 ### Error Handling
 

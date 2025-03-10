@@ -11,7 +11,7 @@ order: 4
 This command is used to get a list of key names from a dictionary
 :::
 
-![Get Dictionary Key List](../../../assets/Get Dictionary Key List_command.png)
+![Get Dictionary Key List](../../../assets/Get%20Dictionary%20Key%20List_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ This command is used to get a list of key names from a dictionary
 **Command Output**
 
 - **Save Key List To**`TList<String>`: Enter a name to save the found key list
-
-
-**Command Output**
 
 ### Error Handling
 

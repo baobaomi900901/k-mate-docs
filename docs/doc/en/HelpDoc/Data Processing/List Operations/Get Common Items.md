@@ -11,7 +11,7 @@ order: 16
 This command is used to get the common items from two lists and save the result to a new list
 :::
 
-![Get Common Items](../../../assets/Get Common Items_command.png)
+![Get Common Items](../../../assets/Get%20Common%20Items_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ This command is used to get the common items from two lists and save the result 
 **Command Output**
 
 - **Save List Object To**`TList<String>`: Specify a variable to save the new list
-
-
-**Command Output**
 
 ### Error Handling
 

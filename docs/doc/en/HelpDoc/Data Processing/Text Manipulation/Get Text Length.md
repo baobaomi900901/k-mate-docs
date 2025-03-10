@@ -11,7 +11,7 @@ order: 2
 This command is used to get the length of a text string
 :::
 
-![Get Text Length](../../../assets/Get Text Length_command.png)
+![Get Text Length](../../../assets/Get%20Text%20Length_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ This command is used to get the length of a text string
 **Command Output**
 
 - **Save Text Length To**`Integer`: Specify a variable to save the length of the text content
-
-
-**Command Output**
 
 ### Error Handling
 

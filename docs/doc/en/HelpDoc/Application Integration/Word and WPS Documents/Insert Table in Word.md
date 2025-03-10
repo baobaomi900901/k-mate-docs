@@ -11,7 +11,7 @@ order: 9
 Insert a table in a Word document
 :::
 
-![Insert Table in Word](../../../assets/Insert Table in Word_command.png)
+![Insert Table in Word](../../../assets/Insert%20Table%20in%20Word_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

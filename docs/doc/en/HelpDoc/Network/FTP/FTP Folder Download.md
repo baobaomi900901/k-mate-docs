@@ -11,7 +11,7 @@ order: 6
 Download one or more folders from a specified path on the FTP remote server to a local path
 :::
 
-![FTP Folder Download](../../../assets/FTP Folder Download_command.png)
+![FTP Folder Download](../../../assets/FTP%20Folder%20Download_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

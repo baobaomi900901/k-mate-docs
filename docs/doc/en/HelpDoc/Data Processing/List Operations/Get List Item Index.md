@@ -11,7 +11,7 @@ order: 6
 Retrieve the position of a specified item in the list, with list positions starting from 0, where 0 is the first item, 1 is the second item, and so on
 :::
 
-![Get List Item Index](../../../assets/Get List Item Index_command.png)
+![Get List Item Index](../../../assets/Get%20List%20Item%20Index_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Retrieve the position of a specified item in the list, with list positions start
 **Command Output**
 
 - **Save Position To**`Integer`: Specify a integer variable to save the position of the found specified item in the list
-
-
-**Command Output**
 
 ### Error Handling
 

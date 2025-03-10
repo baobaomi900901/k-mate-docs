@@ -11,7 +11,7 @@ order: 8
 This action will close the specified window
 :::
 
-![Close software window](../../../assets/Close software window_command.png)
+![Close software window](../../../assets/Close%20software%20window_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

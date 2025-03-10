@@ -36,9 +36,6 @@ No output for the current command
 
 - **Close Timeout (milliseconds)**`Integer`: The duration for which the notification is displayed, default is 3000 milliseconds
 
-
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

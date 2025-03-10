@@ -11,7 +11,7 @@ order: 1
 Take a screenshot of an element in the desktop software and save it to a specified file
 :::
 
-![Element Screenshot (Win)](../../../assets/Element Screenshot (Win)_command.png)
+![Element Screenshot (Win)](../../../assets/Element%20Screenshot%20(Win)_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ Take a screenshot of an element in the desktop software and save it to a specifi
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 10
 This command is used to remove all items in list 2 from list 1 and save the result to a new list
 :::
 
-![Filter List](../../../assets/Filter List_command.png)
+![Filter List](../../../assets/Filter%20List_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ This command is used to remove all items in list 2 from list 1 and save the resu
 **Command Output**
 
 - **Save List Object To**`TList<String>`: Specify a variable to save the filtered new list
-
-
-**Command Output**
 
 ### Error Handling
 

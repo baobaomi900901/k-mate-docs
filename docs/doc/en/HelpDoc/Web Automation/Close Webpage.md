@@ -11,7 +11,7 @@ order: 6
 Close one or all open webpages
 :::
 
-![Close Webpage](../../assets/Close Webpage_command.png)
+![Close Webpage](../../assets/Close%20Webpage_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

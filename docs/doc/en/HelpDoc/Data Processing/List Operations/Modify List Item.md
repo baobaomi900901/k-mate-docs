@@ -11,7 +11,7 @@ order: 4
 This command is used to modify the value of an item at a specific position in the list
 :::
 
-![Modify List Item](../../../assets/Modify List Item_command.png)
+![Modify List Item](../../../assets/Modify%20List%20Item_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ This command is used to modify the value of an item at a specific position in th
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

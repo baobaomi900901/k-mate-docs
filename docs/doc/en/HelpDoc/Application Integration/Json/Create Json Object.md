@@ -11,7 +11,7 @@ order: 1
 Create a Json object of a specified type
 :::
 
-![Create Json Object](../../../assets/Create Json Object_command.png)
+![Create Json Object](../../../assets/Create%20Json%20Object_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Create a Json object of a specified type
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

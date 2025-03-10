@@ -11,7 +11,7 @@ order: 11
 Get a node from the Json object
 :::
 
-![Get Json Object](../../../assets/Get Json Object_command.png)
+![Get Json Object](../../../assets/Get%20Json%20Object_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Get a node from the Json object
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

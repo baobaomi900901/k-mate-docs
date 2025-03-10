@@ -11,7 +11,7 @@ order: 20
 Loop through each row in the data table.
 :::
 
-![Loop Through Data Table Rows](../../../assets/Loop Through Data Table Rows_command.png)
+![Loop Through Data Table Rows](../../../assets/Loop%20Through%20Data%20Table%20Rows_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ Loop through each row in the data table.
 - **Row Object**`TDataRow`: The output row object.
 
 - **Index**`Integer`: The output row index.
-
-
-**Command Output**
 
 ### Error Handling
 

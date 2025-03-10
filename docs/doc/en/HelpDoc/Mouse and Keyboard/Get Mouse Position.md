@@ -11,7 +11,7 @@ order: 5
 Get the position of the mouse when this instruction is executed during the robot's runtime
 :::
 
-![Get Mouse Position](../../assets/Get Mouse Position_command.png)
+![Get Mouse Position](../../assets/Get%20Mouse%20Position_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Get the position of the mouse when this instruction is executed during the robot
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

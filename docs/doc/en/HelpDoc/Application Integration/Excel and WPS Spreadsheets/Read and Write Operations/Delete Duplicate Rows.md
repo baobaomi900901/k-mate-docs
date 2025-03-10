@@ -11,7 +11,7 @@ order: 11
 Implement the function of deleting duplicate rows in Excel
 :::
 
-![Delete Duplicate Rows](../../../../assets/Delete Duplicate Rows_command.png)
+![Delete Duplicate Rows](../../../../assets/Delete%20Duplicate%20Rows_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

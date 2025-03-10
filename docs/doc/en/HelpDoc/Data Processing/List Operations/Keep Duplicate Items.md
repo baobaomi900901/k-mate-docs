@@ -11,7 +11,7 @@ order: 17
 This feature will return a new list that only retains duplicate elements.
 :::
 
-![Keep Duplicate Items](../../../assets/Keep Duplicate Items_command.png)
+![Keep Duplicate Items](../../../assets/Keep%20Duplicate%20Items_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ This feature will return a new list that only retains duplicate elements.
 **Command Output**
 
 - **Save List Object To**`TList<String>`: Specify a variable to save the new list
-
-
-**Command Output**
 
 ### Error Handling
 

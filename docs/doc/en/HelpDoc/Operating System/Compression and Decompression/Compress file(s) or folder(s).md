@@ -11,7 +11,7 @@ order: 1
 Used to compress files/folders
 :::
 
-![Compress file(s) or folder(s)](../../../assets/Compress file(s) or folder(s)_command.png)
+![Compress file(s) or folder(s)](../../../assets/Compress%20file(s)%20or%20folder(s)_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 7
 Click Image
 :::
 
-![Click Image](../../assets/Click Image_command.png)
+![Click Image](../../assets/Click%20Image_command.png)
 
 ## Configuration Item Description
 
@@ -53,9 +53,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Delay After Execution (milliseconds)**`Integer`: Time to wait after the command is executed
-
-
-**Command Output**
 
 ### Error Handling
 

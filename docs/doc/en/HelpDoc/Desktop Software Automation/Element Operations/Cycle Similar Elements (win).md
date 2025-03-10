@@ -11,7 +11,7 @@ order: 10
 Sequentially cycle through each item in the similar elements list of the desktop software window for automation operations.
 :::
 
-![Cycle Similar Elements (win)](../../../assets/Cycle Similar Elements (win)_command.png)
+![Cycle Similar Elements (win)](../../../assets/Cycle%20Similar%20Elements%20(win)_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ Sequentially cycle through each item in the similar elements list of the desktop
 - **Loop End Position**`Integer`: Loop end position, -1 is the last item.
 
 - **Wait for Element to Exist (ms)**`Integer`: Timeout time for waiting for the target associated element to exist.
-
-
-**Command Output**
 
 ### Error Handling
 

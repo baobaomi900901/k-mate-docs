@@ -11,7 +11,7 @@ order: 3
 Open the folder. If it's a file path, the file will be selected after the folder is opened
 :::
 
-![Open folder](../../../assets/Open folder_command.png)
+![Open folder](../../../assets/Open%20folder_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

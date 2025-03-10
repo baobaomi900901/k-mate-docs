@@ -11,7 +11,7 @@ order: 1
 Open an existing Excel file or create a new one to automate Excel operations
 :::
 
-![Open or Create Excel](../../../assets/Open or Create Excel_command.png)
+![Open or Create Excel](../../../assets/Open%20or%20Create%20Excel_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ Open an existing Excel file or create a new one to automate Excel operations
 - **Edit Password**`string`: Password used to edit the encrypted Excel file
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

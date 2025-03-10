@@ -11,7 +11,7 @@ order: 4
 Close the database
 :::
 
-![Close Database](../../../assets/Close Database_command.png)
+![Close Database](../../../assets/Close%20Database_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

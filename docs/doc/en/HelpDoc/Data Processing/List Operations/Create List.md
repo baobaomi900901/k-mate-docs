@@ -11,7 +11,7 @@ order: 1
 Create an empty list, which is an array of multiple data items
 :::
 
-![Create List](../../../assets/Create List_command.png)
+![Create List](../../../assets/Create%20List_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ No input for the current command
 **Command Output**
 
 - **Keep the list object to**`TList<String>`: Specify a variable to save the newly created list
-
-
-**Command Output**
 
 ### Error Handling
 

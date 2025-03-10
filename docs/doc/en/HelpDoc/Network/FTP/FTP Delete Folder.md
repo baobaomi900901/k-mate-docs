@@ -11,7 +11,7 @@ order: 12
 Delete a folder on the remote server
 :::
 
-![FTP Delete Folder](../../../assets/FTP Delete Folder_command.png)
+![FTP Delete Folder](../../../assets/FTP%20Delete%20Folder_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

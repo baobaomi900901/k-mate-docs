@@ -11,7 +11,7 @@ order: 6
 Set column width
 :::
 
-![Set Column Width](../../../../assets/Set Column Width_command.png)
+![Set Column Width](../../../../assets/Set%20Column%20Width_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

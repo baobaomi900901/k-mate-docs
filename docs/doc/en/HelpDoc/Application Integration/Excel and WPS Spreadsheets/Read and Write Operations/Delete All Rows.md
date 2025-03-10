@@ -11,7 +11,7 @@ order: 12
 Delete all rows
 :::
 
-![Delete All Rows](../../../../assets/Delete All Rows_command.png)
+![Delete All Rows](../../../../assets/Delete%20All%20Rows_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

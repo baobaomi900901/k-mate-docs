@@ -11,7 +11,7 @@ order: 6
 Get the name of the sheet
 :::
 
-![Get Sheet Name](../../../../assets/Get Sheet Name_command.png)
+![Get Sheet Name](../../../../assets/Get%20Sheet%20Name_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Get the name of the sheet
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

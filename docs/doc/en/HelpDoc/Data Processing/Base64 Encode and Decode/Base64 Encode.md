@@ -11,7 +11,7 @@ order: 1
 Base64 Encode
 :::
 
-![Base64 Encode](../../../assets/Base64 Encode_command.png)
+![Base64 Encode](../../../assets/Base64%20Encode_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ Base64 Encode
 **Command Output**
 
 - **Save Encoded Result To**`string`: Enter a name to save the Base64 encoded result
-
-
-**Command Output**
 
 ### Error Handling
 

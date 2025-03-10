@@ -11,7 +11,7 @@ order: 4
 Use natural language conversation to allow AI to complete tasks such as original writing, error checking, customer service dialogue, and translation
 :::
 
-![ERNIE Bot Chat](../../../assets/ERNIE Bot Chat_command.png)
+![ERNIE Bot Chat](../../../assets/ERNIE%20Bot%20Chat_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Use natural language conversation to allow AI to complete tasks such as original
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

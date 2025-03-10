@@ -11,7 +11,7 @@ order: 2
 Open Input Dialog
 :::
 
-![Open Input Dialog](../../../assets/Open Input Dialog_command.png)
+![Open Input Dialog](../../../assets/Open%20Input%20Dialog_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Open Input Dialog
 - **Default Value**`string`: Default Value
 
 - **Timeout (milliseconds)**`Integer`: The duration for which the notification is displayed, default is 30000 milliseconds
-
-
-**Command Output**
 
 ### Error Handling
 

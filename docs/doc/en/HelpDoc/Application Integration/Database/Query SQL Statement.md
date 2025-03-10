@@ -11,7 +11,7 @@ order: 3
 Execute Select query SQL statement in the specified database
 :::
 
-![Query SQL Statement](../../../assets/Query SQL Statement_command.png)
+![Query SQL Statement](../../../assets/Query%20SQL%20Statement_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Execute Select query SQL statement in the specified database
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

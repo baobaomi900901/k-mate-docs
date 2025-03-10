@@ -11,7 +11,7 @@ order: 5
 Set the cookie based on the specified cookie data, overwriting if an equivalent cookie exists
 :::
 
-![Set Cookie](../../../assets/Set Cookie_command.png)
+![Set Cookie](../../../assets/Set%20Cookie_command.png)
 
 ## Configuration Item Description
 
@@ -51,9 +51,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

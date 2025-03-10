@@ -11,7 +11,7 @@ order: 21
 Output a data row
 :::
 
-![Output Data Row](../../../assets/Output Data Row_command.png)
+![Output Data Row](../../../assets/Output%20Data%20Row_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Output a data row
 **Command Output**
 
 - **Row Data**`string`: Row data
-
-
-**Command Output**
 
 ### Error Handling
 

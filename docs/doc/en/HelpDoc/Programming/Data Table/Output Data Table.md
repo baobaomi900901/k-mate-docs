@@ -11,7 +11,7 @@ order: 22
 Write the data table to a string in CSV format.
 :::
 
-![Output Data Table](../../../assets/Output Data Table_command.png)
+![Output Data Table](../../../assets/Output%20Data%20Table_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ Write the data table to a string in CSV format.
 **Command Output**
 
 - **Text**`string`: The data table output as a string.
-
-
-**Command Output**
 
 ### Error Handling
 

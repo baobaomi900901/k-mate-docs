@@ -11,7 +11,7 @@ order: 2
 Call the AI interface to recognize the content of the table
 :::
 
-![Table Recognition](../../../assets/Table Recognition_command.png)
+![Table Recognition](../../../assets/Table%20Recognition_command.png)
 
 ## Configuration Item Description
 
@@ -47,9 +47,6 @@ Call the AI interface to recognize the content of the table
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

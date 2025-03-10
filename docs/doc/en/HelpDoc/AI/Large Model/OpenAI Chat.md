@@ -11,7 +11,7 @@ order: 1
 Use natural language dialogue to let AI complete tasks like original writing, error checking, customer service dialogues, translation, etc.
 :::
 
-![OpenAI Chat](../../../assets/OpenAI Chat_command.png)
+![OpenAI Chat](../../../assets/OpenAI%20Chat_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Use natural language dialogue to let AI complete tasks like original writing, er
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum waiting time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

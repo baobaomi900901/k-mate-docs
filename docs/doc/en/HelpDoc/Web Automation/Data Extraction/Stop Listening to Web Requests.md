@@ -11,7 +11,7 @@ order: 10
 Stop listening to web requests.
 :::
 
-![Stop Listening to Web Requests](../../../assets/Stop Listening to Web Requests_command.png)
+![Stop Listening to Web Requests](../../../assets/Stop%20Listening%20to%20Web%20Requests_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

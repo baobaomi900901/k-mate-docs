@@ -11,7 +11,7 @@ order: 4
 This instruction is used to merge multiple PDF documents and save them as a new document. Before using it, please install the PDF plugin in [Settings] - [Plugin Center].
 :::
 
-![Merge PDF documents](../../../assets/Merge PDF documents_command.png)
+![Merge PDF documents](../../../assets/Merge%20PDF%20documents_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ This instruction is used to merge multiple PDF documents and save them as a new 
 - **Delimiter**`string`: Set the delimiter between passwords.
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

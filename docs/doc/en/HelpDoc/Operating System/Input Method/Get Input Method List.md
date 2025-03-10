@@ -11,7 +11,7 @@ order: 3
 Get all system input method names, requires administrator privileges
 :::
 
-![Get Input Method List](../../../assets/Get Input Method List_command.png)
+![Get Input Method List](../../../assets/Get%20Input%20Method%20List_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No input for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

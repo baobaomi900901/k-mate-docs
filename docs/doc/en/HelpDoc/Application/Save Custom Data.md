@@ -11,7 +11,7 @@ order: 2
 Persistently save user data within the process
 :::
 
-![Save Custom Data](../../assets/Save Custom Data_command.png)
+![Save Custom Data](../../assets/Save%20Custom%20Data_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ Persistently save user data within the process
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

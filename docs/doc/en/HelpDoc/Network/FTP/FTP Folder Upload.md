@@ -11,7 +11,7 @@ order: 8
 Upload one or more local folders to the FTP remote service path
 :::
 
-![FTP Folder Upload](../../../assets/FTP Folder Upload_command.png)
+![FTP Folder Upload](../../../assets/FTP%20Folder%20Upload_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

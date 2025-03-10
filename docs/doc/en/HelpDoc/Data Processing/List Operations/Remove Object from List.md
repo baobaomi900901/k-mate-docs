@@ -11,7 +11,7 @@ order: 9
 This command is used to remove a specified item from an object list
 :::
 
-![Remove Object from List](../../../assets/Remove Object from List_command.png)
+![Remove Object from List](../../../assets/Remove%20Object%20from%20List_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ This command is used to remove a specified item from an object list
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

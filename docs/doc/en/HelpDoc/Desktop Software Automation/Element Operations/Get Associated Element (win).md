@@ -11,7 +11,7 @@ order: 8
 Get the associated element of an element in the specified window (parent, child, adjacent elements)
 :::
 
-![Get Associated Element (win)](../../../assets/Get Associated Element (win)_command.png)
+![Get Associated Element (win)](../../../assets/Get%20Associated%20Element%20(win)_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ Get the associated element of an element in the specified window (parent, child,
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target associated element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

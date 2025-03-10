@@ -11,7 +11,7 @@ order: 2
 Wait for the web page to load completely
 :::
 
-![Wait for Page Load to Complete](../../../assets/Wait for Page Load to Complete_command.png)
+![Wait for Page Load to Complete](../../../assets/Wait%20for%20Page%20Load%20to%20Complete_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

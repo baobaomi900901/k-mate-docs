@@ -11,7 +11,7 @@ order: 19
 This function will return a new data table, determine whether there are duplicate elements in the specified column, and return the row where the element is located
 :::
 
-![Keep Duplicate Rows](../../../assets/Keep Duplicate Rows_command.png)
+![Keep Duplicate Rows](../../../assets/Keep%20Duplicate%20Rows_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ This function will return a new data table, determine whether there are duplicat
 **Command Output**
 
 - **Duplicate lines Table**`TDataTable`: Data table returned after retention
-
-
-**Command Output**
 
 ### Error Handling
 

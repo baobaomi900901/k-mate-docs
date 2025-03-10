@@ -11,7 +11,7 @@ order: 17
 Perform sum, mean, count, etc., on a specified column of the data table.
 :::
 
-![Summarize and Calculate by Column](../../../assets/Summarize and Calculate by Column_command.png)
+![Summarize and Calculate by Column](../../../assets/Summarize%20and%20Calculate%20by%20Column_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Perform sum, mean, count, etc., on a specified column of the data table.
 **Command Output**
 
 - **Calculation Result**`Double`: Used to store the calculated result.
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 3
 This command is used to get the value corresponding to a specified key name in a dictionary
 :::
 
-![Get Value by Key](../../../assets/Get Value by Key_command.png)
+![Get Value by Key](../../../assets/Get%20Value%20by%20Key_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ This command is used to get the value corresponding to a specified key name in a
 **Command Output**
 
 - **Save Value To**`string`: Specify a variable to save the found key value
-
-
-**Command Output**
 
 ### Error Handling
 

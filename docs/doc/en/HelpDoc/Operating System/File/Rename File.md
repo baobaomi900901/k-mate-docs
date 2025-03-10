@@ -11,7 +11,7 @@ order: 4
 Rename a file
 :::
 
-![Rename File](../../../assets/Rename File_command.png)
+![Rename File](../../../assets/Rename%20File_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Rename a file
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

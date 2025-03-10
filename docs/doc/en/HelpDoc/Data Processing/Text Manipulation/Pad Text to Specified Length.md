@@ -11,7 +11,7 @@ order: 5
 This command is used to pad text to a specified length
 :::
 
-![Pad Text to Specified Length](../../../assets/Pad Text to Specified Length_command.png)
+![Pad Text to Specified Length](../../../assets/Pad%20Text%20to%20Specified%20Length_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ This command is used to pad text to a specified length
 **Command Output**
 
 - **Save Result To**`string`: Specify a variable to save the padded text content
-
-
-**Command Output**
 
 ### Error Handling
 

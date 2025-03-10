@@ -11,7 +11,7 @@ order: 1
 Open a message dialog
 :::
 
-![Open Message Dialog](../../../assets/Open Message Dialog_command.png)
+![Open Message Dialog](../../../assets/Open%20Message%20Dialog_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Open a message dialog
 **Command Output**
 
 - **Button Name**`string`: Specify a variable name to save the name of the pressed button
-
-
-**Command Output**
 
 ### Error Handling
 

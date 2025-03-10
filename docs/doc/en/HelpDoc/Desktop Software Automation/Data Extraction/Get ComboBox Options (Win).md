@@ -11,7 +11,7 @@ order: 3
 Get the options of a combo box in the window
 :::
 
-![Get ComboBox Options (Win)](../../../assets/Get ComboBox Options (Win)_command.png)
+![Get ComboBox Options (Win)](../../../assets/Get%20ComboBox%20Options%20(Win)_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Get the options of a combo box in the window
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

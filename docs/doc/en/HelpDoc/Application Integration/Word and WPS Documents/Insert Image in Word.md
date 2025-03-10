@@ -11,7 +11,7 @@ order: 10
 Insert an image into a Word document
 :::
 
-![Insert Image in Word](../../../assets/Insert Image in Word_command.png)
+![Insert Image in Word](../../../assets/Insert%20Image%20in%20Word_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

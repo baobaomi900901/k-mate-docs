@@ -11,7 +11,7 @@ order: 9
 Clear content or format from the Excel file
 :::
 
-![Clear Excel Content](../../../../assets/Clear Excel Content_command.png)
+![Clear Excel Content](../../../../assets/Clear%20Excel%20Content_command.png)
 
 ## Configuration Item Description
 
@@ -51,9 +51,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

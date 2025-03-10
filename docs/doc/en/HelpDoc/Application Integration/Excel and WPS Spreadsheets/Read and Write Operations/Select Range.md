@@ -11,7 +11,7 @@ order: 16
 Select a range in the Excel object
 :::
 
-![Select Range](../../../../assets/Select Range_command.png)
+![Select Range](../../../../assets/Select%20Range_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

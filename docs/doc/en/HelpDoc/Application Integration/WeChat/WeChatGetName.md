@@ -30,9 +30,6 @@ Get the WeChat name of the WeChat window object
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
-
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

@@ -11,7 +11,7 @@ order: 14
 Get all keys of the Json object
 :::
 
-![Get All Keys of Json Object](../../../assets/Get All Keys of Json Object_command.png)
+![Get All Keys of Json Object](../../../assets/Get%20All%20Keys%20of%20Json%20Object_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Get all keys of the Json object
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

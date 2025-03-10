@@ -11,7 +11,7 @@ order: 5
 Set the state of a checkbox on the webpage to checked or unchecked.
 :::
 
-![Set checkbox (web)](../../../assets/Set checkbox (web)_command.png)
+![Set checkbox (web)](../../../assets/Set%20checkbox%20(web)_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ No output for the current command
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target checkbox to exist.
-
-
-**Command Output**
 
 ### Error Handling
 

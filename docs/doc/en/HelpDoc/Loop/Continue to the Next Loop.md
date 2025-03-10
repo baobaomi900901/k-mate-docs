@@ -11,7 +11,7 @@ order: 6
 Ignore this loop and continue to the next loop
 :::
 
-![Continue to the Next Loop](../../assets/Continue to the Next Loop_command.png)
+![Continue to the Next Loop](../../assets/Continue%20to%20the%20Next%20Loop_command.png)
 
 ## Configuration Item Description
 
@@ -26,20 +26,6 @@ No input for the current command
 
 No output for the current command
 
-
-**Command Output**
-
-### Error Handling
-
-- **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 
-
-- **Handling Method**`Integer`:
-
-    - **Terminate Process**: If the command fails, terminate the process.
-
-    - **Ignore Exception and Continue Execution**: If the command fails, ignore the exception and continue the process.
-
-    - **Retry This Command**: If the command fails, retry the command a specified number of times with a specified interval between retries.
 
 ## Usage Example
 

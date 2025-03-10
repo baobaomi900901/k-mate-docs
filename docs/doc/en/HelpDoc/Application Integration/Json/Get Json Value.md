@@ -11,7 +11,7 @@ order: 6
 Get the value of a Json object with the specified type
 :::
 
-![Get Json Value](../../../assets/Get Json Value_command.png)
+![Get Json Value](../../../assets/Get%20Json%20Value_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Get the value of a Json object with the specified type
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

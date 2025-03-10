@@ -11,7 +11,7 @@ order: 11
 Insert a hyperlink in a Word document
 :::
 
-![Insert Hyperlink in Word](../../../assets/Insert Hyperlink in Word_command.png)
+![Insert Hyperlink in Word](../../../assets/Insert%20Hyperlink%20in%20Word_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

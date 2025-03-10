@@ -11,7 +11,7 @@ order: 5
 Enter content into the input field in the window
 :::
 
-![Fill Input Field (win)](../../assets/Fill Input Field (win)_command.png)
+![Fill Input Field (win)](../../assets/Fill%20Input%20Field%20(win)_command.png)
 
 ## Configuration Item Description
 
@@ -55,9 +55,6 @@ No output for the current command
 - **Vertical Translation**`Integer`: Positive values move down, negative values move up
 
 - **Wait for Element Presence (ms)**`Integer`: Timeout for waiting for the target input field to appear
-
-
-**Command Output**
 
 ### Error Handling
 

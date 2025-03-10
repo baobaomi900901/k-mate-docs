@@ -11,7 +11,7 @@ order: 8
 Execute a transaction
 :::
 
-![Start Transaction (SAP)](../../../assets/Start Transaction (SAP)_command.png)
+![Start Transaction (SAP)](../../../assets/Start%20Transaction%20(SAP)_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

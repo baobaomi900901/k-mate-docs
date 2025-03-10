@@ -11,7 +11,7 @@ order: 3
 Copy the specified sheet
 :::
 
-![Copy Sheet](../../../../assets/Copy Sheet_command.png)
+![Copy Sheet](../../../../assets/Copy%20Sheet_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

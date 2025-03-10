@@ -11,7 +11,7 @@ order: 2
 Use prompt text to instruct AI to create an image.
 :::
 
-![OpenAI Img](../../../assets/OpenAI Img_command.png)
+![OpenAI Img](../../../assets/OpenAI%20Img_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Use prompt text to instruct AI to create an image.
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum waiting time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

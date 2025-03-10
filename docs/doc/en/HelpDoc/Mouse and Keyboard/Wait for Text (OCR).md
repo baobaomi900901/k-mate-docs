@@ -11,7 +11,7 @@ order: 12
 Wait for the specified text to appear/disappear on the screen
 :::
 
-![Wait for Text (OCR)](../../assets/Wait for Text (OCR)_command.png)
+![Wait for Text (OCR)](../../assets/Wait%20for%20Text%20(OCR)_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (Milliseconds)**`Integer`: Maximum wait time
-
-
-**Command Output**
 
 ### Error Handling
 

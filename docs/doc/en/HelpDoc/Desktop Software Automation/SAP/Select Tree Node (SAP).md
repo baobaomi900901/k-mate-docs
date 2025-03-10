@@ -11,7 +11,7 @@ order: 3
 Expand the tree to display the target node, and then select the target node
 :::
 
-![Select Tree Node (SAP)](../../../assets/Select Tree Node (SAP)_command.png)
+![Select Tree Node (SAP)](../../../assets/Select%20Tree%20Node%20(SAP)_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Expand the tree to display the target node, and then select the target node
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target tree element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

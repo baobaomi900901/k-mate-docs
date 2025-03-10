@@ -11,7 +11,7 @@ order: 6
 Write data to the specified row and column of the data table
 :::
 
-![Write Data to Table](../../../assets/Write Data to Table_command.png)
+![Write Data to Table](../../../assets/Write%20Data%20to%20Table_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ Write data to the specified row and column of the data table
 **Command Output**
 
 - **Result after Writing**`TDataTable`: Output the data table after successful data writing.
-
-
-**Command Output**
 
 ### Error Handling
 

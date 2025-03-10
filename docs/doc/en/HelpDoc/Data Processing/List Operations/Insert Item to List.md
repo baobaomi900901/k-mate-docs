@@ -11,7 +11,7 @@ order: 3
 Insert an item at a specific position in the list
 :::
 
-![Insert Item to List](../../../assets/Insert Item to List_command.png)
+![Insert Item to List](../../../assets/Insert%20Item%20to%20List_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Insert an item at a specific position in the list
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 12
 Delete duplicate row data from the specified column or the entire table of the data table object.
 :::
 
-![Delete Duplicate Rows](../../../assets/Delete Duplicate Rows_command.png)
+![Delete Duplicate Rows](../../../assets/Delete%20Duplicate%20Rows_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Delete duplicate row data from the specified column or the entire table of the d
 **Command Output**
 
 - **Data After Deletion**`TDataTable`: Used to store the data table after deleting duplicates.
-
-
-**Command Output**
 
 ### Error Handling
 

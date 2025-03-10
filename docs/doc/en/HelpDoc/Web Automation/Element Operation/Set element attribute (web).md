@@ -11,7 +11,7 @@ order: 7
 Set the attributes of a web element.
 :::
 
-![Set element attribute (web)](../../../assets/Set element attribute (web)_command.png)
+![Set element attribute (web)](../../../assets/Set%20element%20attribute%20(web)_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ No output for the current command
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target element to exist.
-
-
-**Command Output**
 
 ### Error Handling
 

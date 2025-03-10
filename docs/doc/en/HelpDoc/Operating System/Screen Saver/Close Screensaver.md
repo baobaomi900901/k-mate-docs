@@ -11,7 +11,7 @@ order: 4
 Close the awakened screensaver
 :::
 
-![Close Screensaver](../../../assets/Close Screensaver_command.png)
+![Close Screensaver](../../../assets/Close%20Screensaver_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 9
 Wait for the file to be created or deleted
 :::
 
-![Wait for file](../../../assets/Wait for file_command.png)
+![Wait for file](../../../assets/Wait%20for%20file_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Wait for the file to be created or deleted
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 7
 Get the specific data item of an element in the window, which can be used for content extraction and value setting automation operations
 :::
 
-![Get Element Object (win)](../../../assets/Get Element Object (win)_command.png)
+![Get Element Object (win)](../../../assets/Get%20Element%20Object%20(win)_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Get the specific data item of an element in the window, which can be used for co
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

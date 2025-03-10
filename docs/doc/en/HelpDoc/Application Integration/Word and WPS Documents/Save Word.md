@@ -11,7 +11,7 @@ order: 12
 Save Word
 :::
 
-![Save Word](../../../assets/Save Word_command.png)
+![Save Word](../../../assets/Save%20Word_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

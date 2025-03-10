@@ -11,7 +11,7 @@ order: 4
 Return the specified email content
 :::
 
-![Email Content](../../../assets/Email Content_command.png)
+![Email Content](../../../assets/Email%20Content_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ Return the specified email content
 **Command Output**
 
 - **EMailContent**`string`: Returned email content
-
-
-**Command Output**
 
 ### Error Handling
 

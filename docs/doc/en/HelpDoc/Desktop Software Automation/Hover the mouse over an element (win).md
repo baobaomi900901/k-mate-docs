@@ -11,7 +11,7 @@ order: 4
 Hover the mouse over an element in the window
 :::
 
-![Hover the mouse over an element (win)](../../assets/Hover the mouse over an element (win)_command.png)
+![Hover the mouse over an element (win)](../../assets/Hover%20the%20mouse%20over%20an%20element%20(win)_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ No output for the current command
 - **Vertical Translation**`Integer`: Enter a positive number to move down, and a negative number to move up
 
 - **Wait for the element to exist (ms)**`Integer`: Timeout for waiting for the element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 2
 Get the text content, source code, attribute value, and position of elements in the web page
 :::
 
-![Get Element Information (web)](../../../assets/Get Element Information (web)_command.png)
+![Get Element Information (web)](../../../assets/Get%20Element%20Information%20(web)_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ Get the text content, source code, attribute value, and position of elements in 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

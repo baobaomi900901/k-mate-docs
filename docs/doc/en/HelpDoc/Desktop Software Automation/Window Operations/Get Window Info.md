@@ -11,7 +11,7 @@ order: 1
 Get window text content, process, title, and other information
 :::
 
-![Get Window Info](../../../assets/Get Window Info_command.png)
+![Get Window Info](../../../assets/Get%20Window%20Info_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ Get window text content, process, title, and other information
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

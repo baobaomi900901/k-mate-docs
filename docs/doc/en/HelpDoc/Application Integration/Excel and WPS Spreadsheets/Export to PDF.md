@@ -11,7 +11,7 @@ order: 5
 Export the Excel file to PDF
 :::
 
-![Export to PDF](../../../assets/Export to PDF_command.png)
+![Export to PDF](../../../assets/Export%20to%20PDF_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

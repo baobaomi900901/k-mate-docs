@@ -11,7 +11,7 @@ order: 7
 OCR Recognition
 :::
 
-![OCR Recognition](../../../assets/OCR Recognition_command.png)
+![OCR Recognition](../../../assets/OCR%20Recognition_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ OCR Recognition
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

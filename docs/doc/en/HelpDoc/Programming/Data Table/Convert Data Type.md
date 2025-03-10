@@ -11,7 +11,7 @@ order: 11
 Convert the specified column or the entire table of a data table object into string (str), integer (int), or float (float).
 :::
 
-![Convert Data Type](../../../assets/Convert Data Type_command.png)
+![Convert Data Type](../../../assets/Convert%20Data%20Type_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Convert the specified column or the entire table of a data table object into str
 **Command Output**
 
 - **Conversion Result**`TDataTable`: Conversion Result
-
-
-**Command Output**
 
 ### Error Handling
 

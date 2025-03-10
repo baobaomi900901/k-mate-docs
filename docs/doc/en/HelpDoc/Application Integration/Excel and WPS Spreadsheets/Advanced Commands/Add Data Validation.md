@@ -11,7 +11,7 @@ order: 10
 Add Data Validation
 :::
 
-![Add Data Validation](../../../../assets/Add Data Validation_command.png)
+![Add Data Validation](../../../../assets/Add%20Data%20Validation_command.png)
 
 ## Configuration Item Description
 
@@ -73,9 +73,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

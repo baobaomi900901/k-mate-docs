@@ -11,7 +11,7 @@ order: 2
 Call the Kingsware AI interface to analyze the similarity between two short texts
 :::
 
-![Semantic Similarity](../../../assets/Semantic Similarity_command.png)
+![Semantic Similarity](../../../assets/Semantic%20Similarity_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ Call the Kingsware AI interface to analyze the similarity between two short text
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

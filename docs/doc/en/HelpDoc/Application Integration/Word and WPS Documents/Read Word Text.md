@@ -11,7 +11,7 @@ order: 3
 Read text from a Word file
 :::
 
-![Read Word Text](../../../assets/Read Word Text_command.png)
+![Read Word Text](../../../assets/Read%20Word%20Text_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Read text from a Word file
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 5
 Wait for the window state to change
 :::
 
-![Wait for Window(win)](../../../assets/Wait for Window(win)_command.png)
+![Wait for Window(win)](../../../assets/Wait%20for%20Window(win)_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ Wait for the window state to change
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

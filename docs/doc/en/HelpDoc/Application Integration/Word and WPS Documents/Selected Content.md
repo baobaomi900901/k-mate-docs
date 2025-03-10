@@ -11,7 +11,7 @@ order: 14
 Selected Content
 :::
 
-![Selected Content](../../../assets/Selected Content_command.png)
+![Selected Content](../../../assets/Selected%20Content_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Selected Content
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

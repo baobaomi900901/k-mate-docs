@@ -11,7 +11,7 @@ order: 8
 Execute a piece of JavaScript in the specified web page and get the result of the script execution
 :::
 
-![Execute JavaScript](../../../assets/Execute JavaScript_command.png)
+![Execute JavaScript](../../../assets/Execute%20JavaScript_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ Execute a piece of JavaScript in the specified web page and get the result of th
 - **Execution Environment**`Integer`: The target execution environment for the JS script
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

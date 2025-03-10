@@ -11,7 +11,7 @@ order: 8
 Mouse hover over the image
 :::
 
-![Mouse hover over the image](../../assets/Mouse hover over the image_command.png)
+![Mouse hover over the image](../../assets/Mouse%20hover%20over%20the%20image_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Delay after execution (milliseconds)**`Integer`: The time to wait after the instruction is executed
-
-
-**Command Output**
 
 ### Error Handling
 

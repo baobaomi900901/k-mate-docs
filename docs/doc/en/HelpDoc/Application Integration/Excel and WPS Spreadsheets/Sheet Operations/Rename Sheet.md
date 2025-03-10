@@ -11,7 +11,7 @@ order: 5
 Rename the sheet
 :::
 
-![Rename Sheet](../../../../assets/Rename Sheet_command.png)
+![Rename Sheet](../../../../assets/Rename%20Sheet_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 9
 Convert the timestamp to a DateTime, defaulting to second-level timestamps
 :::
 
-![Convert Timestamp to DateTime](../../../assets/Convert Timestamp to DateTime_command.png)
+![Convert Timestamp to DateTime](../../../assets/Convert%20Timestamp%20to%20DateTime_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Convert the timestamp to a DateTime, defaulting to second-level timestamps
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

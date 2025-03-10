@@ -38,9 +38,6 @@ Specify WeChat name or WeChat ID to send WeChat messages or emoticons
 
 - **Texts**`TList<String>`: Message text list
 
-
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

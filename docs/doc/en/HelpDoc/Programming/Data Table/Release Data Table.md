@@ -11,7 +11,7 @@ order: 23
 Release the data table
 :::
 
-![Release Data Table](../../../assets/Release Data Table_command.png)
+![Release Data Table](../../../assets/Release%20Data%20Table_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ Release the data table
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

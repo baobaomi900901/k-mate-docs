@@ -11,7 +11,7 @@ order: 15
 Filter a data table by specifying conditions in the 'Filter Wizard' window. This activity can retain or remove rows/columns based on the logical conditions specified in the wizard.
 :::
 
-![Filter Data Table](../../../assets/Filter Data Table_command.png)
+![Filter Data Table](../../../assets/Filter%20Data%20Table_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Filter a data table by specifying conditions in the 'Filter Wizard' window. This
 **Command Output**
 
 - **Output Data Table**`TDataTable`: The variable of the generated filtered data table.
-
-
-**Command Output**
 
 ### Error Handling
 

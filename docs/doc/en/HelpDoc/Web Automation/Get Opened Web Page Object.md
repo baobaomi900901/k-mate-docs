@@ -11,7 +11,7 @@ order: 2
 Get a web page that is already open and matches the URL or title, or get the currently selected web page in the browser
 :::
 
-![Get Opened Web Page Object](../../assets/Get Opened Web Page Object_command.png)
+![Get Opened Web Page Object](../../assets/Get%20Opened%20Web%20Page%20Object_command.png)
 
 ## Configuration Item Description
 
@@ -47,9 +47,6 @@ Get a web page that is already open and matches the URL or title, or get the cur
 - **New URL**`string`: The URL of the new web page to open
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

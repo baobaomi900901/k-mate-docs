@@ -11,7 +11,7 @@ order: 3
 Call the Kingsware AI interface to detect actions (including: drinking, eating, using a phone, taking photos, and writing) in a video file, and return the detection result
 :::
 
-![Action Detection](../../../assets/Action Detection_command.png)
+![Action Detection](../../../assets/Action%20Detection_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Call the Kingsware AI interface to detect actions (including: drinking, eating, 
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

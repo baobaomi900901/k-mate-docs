@@ -11,7 +11,7 @@ order: 2
 Set the tip text displayed on the screensaver
 :::
 
-![Set Screensaver Tip](../../../assets/Set Screensaver Tip_command.png)
+![Set Screensaver Tip](../../../assets/Set%20Screensaver%20Tip_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 3
 Perform operations to restore, maximize, or minimize a window
 :::
 
-![Set Window State](../../../assets/Set Window State_command.png)
+![Set Window State](../../../assets/Set%20Window%20State_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

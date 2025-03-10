@@ -11,7 +11,7 @@ order: 1
 This command is used to extract text from a PDF file. Please install the PDF plugin in [Settings] - [Plugin Center] before using.
 :::
 
-![PDF Extract Text](../../../assets/PDF Extract Text_command.png)
+![PDF Extract Text](../../../assets/PDF%20Extract%20Text_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ This command is used to extract text from a PDF file. Please install the PDF plu
 - **Password**`string`: Enter the password required to open the file
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 3
 Append new text content after the original text, completing the text concatenation function
 :::
 
-![Append New Text](../../../assets/Append New Text_command.png)
+![Append New Text](../../../assets/Append%20New%20Text_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Append new text content after the original text, completing the text concatenati
 **Command Output**
 
 - **Save Result To**`string`: Specify a variable to save the result. If the variable name is the same as the original text variable, it will be overwritten
-
-
-**Command Output**
 
 ### Error Handling
 

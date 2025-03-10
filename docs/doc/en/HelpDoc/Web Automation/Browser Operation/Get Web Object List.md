@@ -11,7 +11,7 @@ order: 4
 Get the list of currently opened web objects to perform batch automation on each webpage
 :::
 
-![Get Web Object List](../../../assets/Get Web Object List_command.png)
+![Get Web Object List](../../../assets/Get%20Web%20Object%20List_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Get the list of currently opened web objects to perform batch automation on each
 ### Advanced
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

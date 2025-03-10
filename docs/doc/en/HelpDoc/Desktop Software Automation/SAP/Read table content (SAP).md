@@ -11,7 +11,7 @@ order: 12
 Read content from SAP table, supporting rectangular area reading
 :::
 
-![Read table content (SAP)](../../../assets/Read table content (SAP)_command.png)
+![Read table content (SAP)](../../../assets/Read%20table%20content%20(SAP)_command.png)
 
 ## Configuration Item Description
 
@@ -49,9 +49,6 @@ Read content from SAP table, supporting rectangular area reading
 - **Wait for element to exist (milliseconds)**`Integer`: Timeout time for waiting for the target element to exist
 
 - **Whether to need table column names**`Boolean`: After checking, automatically fill in the column names in the output column
-
-
-**Command Output**
 
 ### Error Handling
 

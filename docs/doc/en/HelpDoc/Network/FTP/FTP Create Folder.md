@@ -11,7 +11,7 @@ order: 11
 Create a new folder on the remote server
 :::
 
-![FTP Create Folder](../../../assets/FTP Create Folder_command.png)
+![FTP Create Folder](../../../assets/FTP%20Create%20Folder_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

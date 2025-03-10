@@ -11,7 +11,7 @@ order: 2
 This command is used to extract images from a PDF file. Before using, please install the PDF plugin in [Settings] - [Plugin Center].
 :::
 
-![PDF Extract Images](../../../assets/PDF Extract Images_command.png)
+![PDF Extract Images](../../../assets/PDF%20Extract%20Images_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ This command is used to extract images from a PDF file. Before using, please ins
 - **Password**`string`: Enter the password required to open the file
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

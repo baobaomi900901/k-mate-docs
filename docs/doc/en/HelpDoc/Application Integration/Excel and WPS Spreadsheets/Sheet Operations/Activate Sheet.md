@@ -11,7 +11,7 @@ order: 2
 Activate the specified sheet by name or position
 :::
 
-![Activate Sheet](../../../../assets/Activate Sheet_command.png)
+![Activate Sheet](../../../../assets/Activate%20Sheet_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 3
 Convert Json object to string
 :::
 
-![Json to String](../../../assets/Json to String_command.png)
+![Json to String](../../../assets/Json%20to%20String_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Convert Json object to string
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

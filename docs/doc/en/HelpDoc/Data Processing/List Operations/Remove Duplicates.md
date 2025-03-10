@@ -11,7 +11,7 @@ order: 15
 This command is used to remove duplicate items from a list
 :::
 
-![Remove Duplicates](../../../assets/Remove Duplicates_command.png)
+![Remove Duplicates](../../../assets/Remove%20Duplicates_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ This command is used to remove duplicate items from a list
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 4
 In the toolbar, click the target button
 :::
 
-![Click Toolbar Button (SAP)](../../../assets/Click Toolbar Button (SAP)_command.png)
+![Click Toolbar Button (SAP)](../../../assets/Click%20Toolbar%20Button%20(SAP)_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

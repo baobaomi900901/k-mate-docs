@@ -11,7 +11,7 @@ order: 3
 Retrieve email from the specified mailbox
 :::
 
-![Retrieve Email](../../../assets/Retrieve Email_command.png)
+![Retrieve Email](../../../assets/Retrieve%20Email_command.png)
 
 ## Configuration Item Description
 
@@ -59,9 +59,6 @@ Retrieve email from the specified mailbox
 - **Content in Body**`string`: Content in the body of the email
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

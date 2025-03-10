@@ -11,7 +11,7 @@ order: 5
 Call the AI interface to perform bank receipt recognition
 :::
 
-![Bank Receipt Recognition](../../../assets/Bank Receipt Recognition_command.png)
+![Bank Receipt Recognition](../../../assets/Bank%20Receipt%20Recognition_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ Call the AI interface to perform bank receipt recognition
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

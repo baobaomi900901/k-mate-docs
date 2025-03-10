@@ -11,7 +11,7 @@ order: 6
 Read the total number of columns in the data table
 :::
 
-![Read Total Column Count of Table (SAP)](../../../assets/Read Total Column Count of Table (SAP)_command.png)
+![Read Total Column Count of Table (SAP)](../../../assets/Read%20Total%20Column%20Count%20of%20Table%20(SAP)_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Read the total number of columns in the data table
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

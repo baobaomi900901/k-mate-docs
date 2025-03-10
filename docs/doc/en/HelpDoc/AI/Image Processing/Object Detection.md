@@ -11,7 +11,7 @@ order: 3
 Call the Kingsware AI interface for object detection.
 :::
 
-![Object Detection](../../../assets/Object Detection_command.png)
+![Object Detection](../../../assets/Object%20Detection_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ Call the Kingsware AI interface for object detection.
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

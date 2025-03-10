@@ -11,7 +11,7 @@ order: 9
 Filter the pivot table
 :::
 
-![Filter Pivot Table](../../../../assets/Filter Pivot Table_command.png)
+![Filter Pivot Table](../../../../assets/Filter%20Pivot%20Table_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

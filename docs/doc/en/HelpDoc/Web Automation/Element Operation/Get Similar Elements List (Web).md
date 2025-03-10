@@ -11,7 +11,7 @@ order: 10
 You can locate a set of similar elements on the web page through three methods: capturing the element, CSS, and XPath, and obtain their object or text information.
 :::
 
-![Get Similar Elements List (Web)](../../../assets/Get Similar Elements List (Web)_command.png)
+![Get Similar Elements List (Web)](../../../assets/Get%20Similar%20Elements%20List%20(Web)_command.png)
 
 ## Configuration Item Description
 
@@ -55,9 +55,6 @@ You can locate a set of similar elements on the web page through three methods: 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: The timeout period for waiting for the target associated element to exist.
-
-
-**Command Output**
 
 ### Error Handling
 

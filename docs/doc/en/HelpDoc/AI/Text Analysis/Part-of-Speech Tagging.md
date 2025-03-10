@@ -11,7 +11,7 @@ order: 5
 Call the Kingsware AI interface for part-of-speech tagging (such as nouns, verbs, adjectives, prepositions, classifiers, etc.)
 :::
 
-![Part-of-Speech Tagging](../../../assets/Part-of-Speech Tagging_command.png)
+![Part-of-Speech Tagging](../../../assets/Part-of-Speech%20Tagging_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Call the Kingsware AI interface for part-of-speech tagging (such as nouns, verbs
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 9
 This command is used to read the type and text of information from the status bar
 :::
 
-![Get Status Bar Information (SAP)](../../../assets/Get Status Bar Information (SAP)_command.png)
+![Get Status Bar Information (SAP)](../../../assets/Get%20Status%20Bar%20Information%20(SAP)_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ This command is used to read the type and text of information from the status ba
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

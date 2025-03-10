@@ -11,7 +11,7 @@ order: 4
 This command is used to extract a segment of text
 :::
 
-![Extract Text](../../../assets/Extract Text_command.png)
+![Extract Text](../../../assets/Extract%20Text_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ This command is used to extract a segment of text
 **Command Output**
 
 - **Save Result To**`string`: Specify a variable to save the extracted text content
-
-
-**Command Output**
 
 ### Error Handling
 

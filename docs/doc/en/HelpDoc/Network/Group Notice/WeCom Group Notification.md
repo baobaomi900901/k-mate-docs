@@ -11,7 +11,7 @@ order: 1
 Send content to WeCom group
 :::
 
-![WeCom Group Notification](../../../assets/WeCom Group Notification_command.png)
+![WeCom Group Notification](../../../assets/WeCom%20Group%20Notification_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

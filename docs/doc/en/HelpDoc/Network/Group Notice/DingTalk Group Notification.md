@@ -11,7 +11,7 @@ order: 2
 Send content to DingTalk group
 :::
 
-![DingTalk Group Notification](../../../assets/DingTalk Group Notification_command.png)
+![DingTalk Group Notification](../../../assets/DingTalk%20Group%20Notification_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

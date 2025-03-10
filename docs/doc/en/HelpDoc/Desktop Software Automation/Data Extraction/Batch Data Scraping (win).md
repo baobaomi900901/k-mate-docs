@@ -11,7 +11,7 @@ order: 5
 Scrape batch data from the target window, commonly used for scraping list pages, detail pages, and multi-page data by setting the pagination button.
 :::
 
-![Batch Data Scraping (win)](../../../assets/Batch Data Scraping (win)_command.png)
+![Batch Data Scraping (win)](../../../assets/Batch%20Data%20Scraping%20(win)_command.png)
 
 ## Configuration Item Description
 
@@ -57,9 +57,6 @@ Scrape batch data from the target window, commonly used for scraping list pages,
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **TimeOut**`Integer`: 
-
-
-**Command Output**
 
 ### Error Handling
 

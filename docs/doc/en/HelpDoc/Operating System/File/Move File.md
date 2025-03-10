@@ -11,7 +11,7 @@ order: 3
 Move files to a specified directory
 :::
 
-![Move File](../../../assets/Move File_command.png)
+![Move File](../../../assets/Move%20File_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Move files to a specified directory
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

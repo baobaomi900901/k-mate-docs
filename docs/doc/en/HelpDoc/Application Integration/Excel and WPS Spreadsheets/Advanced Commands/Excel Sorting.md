@@ -11,7 +11,7 @@ order: 11
 Perform ascending, descending, or custom sort on specified columns in Excel
 :::
 
-![Excel Sorting](../../../../assets/Excel Sorting_command.png)
+![Excel Sorting](../../../../assets/Excel%20Sorting_command.png)
 
 ## Configuration Item Description
 
@@ -57,9 +57,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

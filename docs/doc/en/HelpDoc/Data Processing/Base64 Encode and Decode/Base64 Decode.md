@@ -11,7 +11,7 @@ order: 2
 Base64 Decode
 :::
 
-![Base64 Decode](../../../assets/Base64 Decode_command.png)
+![Base64 Decode](../../../assets/Base64%20Decode_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ Base64 Decode
 **Command Output**
 
 - **Save Decoded Result To**`string`: Enter a name to save the Base64 decoded result
-
-
-**Command Output**
 
 ### Error Handling
 

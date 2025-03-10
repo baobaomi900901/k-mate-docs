@@ -11,7 +11,7 @@ order: 5
 This command is used to get an item from a specific position in the list
 :::
 
-![Get List Item](../../../assets/Get List Item_command.png)
+![Get List Item](../../../assets/Get%20List%20Item_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ This command is used to get an item from a specific position in the list
 **Command Output**
 
 - **Save List Item To**`String`: Specify a variable to save the found list item
-
-
-**Command Output**
 
 ### Error Handling
 

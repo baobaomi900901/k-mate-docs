@@ -11,7 +11,7 @@ order: 1
 Add a file to the clipboard for quick sending
 :::
 
-![Add file to clipboard](../../../assets/Add file to clipboard_command.png)
+![Add file to clipboard](../../../assets/Add%20file%20to%20clipboard_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

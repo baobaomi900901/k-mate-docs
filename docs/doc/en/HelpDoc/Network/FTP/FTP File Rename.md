@@ -11,7 +11,7 @@ order: 10
 Rename a file on the remote server
 :::
 
-![FTP File Rename](../../../assets/FTP File Rename_command.png)
+![FTP File Rename](../../../assets/FTP%20File%20Rename_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

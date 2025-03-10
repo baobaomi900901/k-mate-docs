@@ -11,7 +11,7 @@ order: 1
 Navigate the Web browser to a new page, back, forward, or reload the current page
 :::
 
-![Navigate to New URL](../../../assets/Navigate to New URL_command.png)
+![Navigate to New URL](../../../assets/Navigate%20to%20New%20URL_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 - **Page Load Timeout (milliseconds)**`Integer`: The timeout for the page to load completely
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

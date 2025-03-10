@@ -11,7 +11,7 @@ order: 3
 Enter password in the password field in the window
 :::
 
-![Fill Password Field (Win)](../../../assets/Fill Password Field (Win)_command.png)
+![Fill Password Field (Win)](../../../assets/Fill%20Password%20Field%20(Win)_command.png)
 
 ## Configuration Item Description
 
@@ -53,9 +53,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (ms)**`Integer`: Set the maximum wait time
-
-
-**Command Output**
 
 ### Error Handling
 

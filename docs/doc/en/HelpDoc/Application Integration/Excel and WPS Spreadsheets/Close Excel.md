@@ -11,7 +11,7 @@ order: 4
 Close Excel
 :::
 
-![Close Excel](../../../assets/Close Excel_command.png)
+![Close Excel](../../../assets/Close%20Excel_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 2
 Write data to a CSV file
 :::
 
-![Write Data to CSV](../../../assets/Write Data to CSV_command.png)
+![Write Data to CSV](../../../assets/Write%20Data%20to%20CSV_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

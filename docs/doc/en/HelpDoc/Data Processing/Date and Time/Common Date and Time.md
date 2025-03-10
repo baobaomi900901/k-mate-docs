@@ -11,7 +11,7 @@ order: 2
 Output common date and time in a specified format
 :::
 
-![Common Date and Time](../../../assets/Common Date and Time_command.png)
+![Common Date and Time](../../../assets/Common%20Date%20and%20Time_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Output common date and time in a specified format
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

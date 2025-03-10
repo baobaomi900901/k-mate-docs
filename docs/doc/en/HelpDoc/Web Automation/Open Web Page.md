@@ -11,7 +11,7 @@ order: 1
 Open a web page using a specified browser to achieve web automation
 :::
 
-![Open Web Page](../../assets/Open Web Page_command.png)
+![Open Web Page](../../assets/Open%20Web%20Page_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ Open a web page using a specified browser to achieve web automation
 - **Command line arguments**`string`: Command line arguments, must be supported by the browser, can be empty
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

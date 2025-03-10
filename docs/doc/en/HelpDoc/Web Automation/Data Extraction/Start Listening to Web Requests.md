@@ -11,7 +11,7 @@ order: 8
 Filter web listening results based on the entered resource path and resource type.
 :::
 
-![Start Listening to Web Requests](../../../assets/Start Listening to Web Requests_command.png)
+![Start Listening to Web Requests](../../../assets/Start%20Listening%20to%20Web%20Requests_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

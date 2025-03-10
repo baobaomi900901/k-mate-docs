@@ -11,7 +11,7 @@ order: 4
 Hover over an element on the web page
 :::
 
-![Hover over element (web)](../../assets/Hover over element (web)_command.png)
+![Hover over element (web)](../../assets/Hover%20over%20element%20(web)_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ No output for the current command
 - **Vertical translation**`Integer`: Enter a positive number to move down, a negative number to move up
 
 - **Wait for element to exist (ms)**`Integer`: Timeout for waiting for the target element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

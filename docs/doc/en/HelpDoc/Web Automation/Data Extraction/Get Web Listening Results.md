@@ -11,7 +11,7 @@ order: 9
 Get Web Listening Results
 :::
 
-![Get Web Listening Results](../../../assets/Get Web Listening Results_command.png)
+![Get Web Listening Results](../../../assets/Get%20Web%20Listening%20Results_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Get Web Listening Results
 ### Advanced
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

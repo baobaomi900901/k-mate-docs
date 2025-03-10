@@ -11,7 +11,7 @@ order: 1
 Call the Kingsware AI interface to compare two face images and return the detection result
 :::
 
-![Face Comparison](../../../assets/Face Comparison_command.png)
+![Face Comparison](../../../assets/Face%20Comparison_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ Call the Kingsware AI interface to compare two face images and return the detect
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

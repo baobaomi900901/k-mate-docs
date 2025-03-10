@@ -11,7 +11,7 @@ order: 6
 This command is used to remove leading and trailing spaces (including newline, carriage return, and tab characters) from text
 :::
 
-![Remove Leading and Trailing Spaces](../../../assets/Remove Leading and Trailing Spaces_command.png)
+![Remove Leading and Trailing Spaces](../../../assets/Remove%20Leading%20and%20Trailing%20Spaces_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ This command is used to remove leading and trailing spaces (including newline, c
 **Command Output**
 
 - **Save Result To**`string`: Specify a variable to save the trimmed text content
-
-
-**Command Output**
 
 ### Error Handling
 

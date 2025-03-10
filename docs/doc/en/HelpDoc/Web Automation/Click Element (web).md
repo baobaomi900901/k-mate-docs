@@ -11,7 +11,7 @@ order: 3
 Click on a button, link or any other element in the web page
 :::
 
-![Click Element (web)](../../assets/Click Element (web)_command.png)
+![Click Element (web)](../../assets/Click%20Element%20(web)_command.png)
 
 ## Configuration Item Description
 
@@ -55,9 +55,6 @@ No output for the current command
 - **Vertical Translation**`Integer`: Enter a positive number to move down, a negative number to move up
 
 - **Wait for Element to Exist (ms)**`Integer`: Timeout for waiting for the target element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

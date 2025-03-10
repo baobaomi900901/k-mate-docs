@@ -11,7 +11,7 @@ order: 3
 Click an element in the window, such as a button, link, or any other element
 :::
 
-![Click Element (win)](../../assets/Click Element (win)_command.png)
+![Click Element (win)](../../assets/Click%20Element%20(win)_command.png)
 
 ## Configuration Item Description
 
@@ -55,9 +55,6 @@ No output for the current command
 - **Vertical Translation**`Integer`: Enter a positive number to move down, a negative number to move up
 
 - **Wait for Element Presence (ms)**`Integer`: Timeout for waiting for the element to be present
-
-
-**Command Output**
 
 ### Error Handling
 

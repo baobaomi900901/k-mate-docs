@@ -11,7 +11,7 @@ order: 8
 Convert the DateTime to a timestamp
 :::
 
-![Convert DateTime to Timestamp](../../../assets/Convert DateTime to Timestamp_command.png)
+![Convert DateTime to Timestamp](../../../assets/Convert%20DateTime%20to%20Timestamp_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Convert the DateTime to a timestamp
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

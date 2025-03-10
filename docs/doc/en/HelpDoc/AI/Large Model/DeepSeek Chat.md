@@ -11,7 +11,7 @@ order: 6
 I am DeepSeek, and I can help you write code and various creative content. Please entrust your task to me~
 :::
 
-![DeepSeek Chat](../../../assets/DeepSeek Chat_command.png)
+![DeepSeek Chat](../../../assets/DeepSeek%20Chat_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ I am DeepSeek, and I can help you write code and various creative content. Pleas
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 2
 Disconnect the current FTP connection
 :::
 
-![Disconnect FTP Connection](../../../assets/Disconnect FTP Connection_command.png)
+![Disconnect FTP Connection](../../../assets/Disconnect%20FTP%20Connection_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ Disconnect the current FTP connection
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

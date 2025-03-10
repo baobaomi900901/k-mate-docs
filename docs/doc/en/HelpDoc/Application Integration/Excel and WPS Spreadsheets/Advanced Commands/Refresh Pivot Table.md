@@ -11,7 +11,7 @@ order: 8
 Refresh the pivot table
 :::
 
-![Refresh Pivot Table](../../../../assets/Refresh Pivot Table_command.png)
+![Refresh Pivot Table](../../../../assets/Refresh%20Pivot%20Table_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

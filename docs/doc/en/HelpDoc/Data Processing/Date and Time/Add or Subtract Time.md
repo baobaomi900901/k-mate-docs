@@ -11,7 +11,7 @@ order: 3
 Add or subtract time from a specified date and time, supporting text-formatted dates
 :::
 
-![Add or Subtract Time](../../../assets/Add or Subtract Time_command.png)
+![Add or Subtract Time](../../../assets/Add%20or%20Subtract%20Time_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ Add or subtract time from a specified date and time, supporting text-formatted d
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

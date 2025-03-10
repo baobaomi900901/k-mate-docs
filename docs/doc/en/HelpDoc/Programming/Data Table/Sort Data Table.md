@@ -11,7 +11,7 @@ order: 16
 Sort the data table by a specified column in ascending or descending order.
 :::
 
-![Sort Data Table](../../../assets/Sort Data Table_command.png)
+![Sort Data Table](../../../assets/Sort%20Data%20Table_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Sort the data table by a specified column in ascending or descending order.
 **Command Output**
 
 - **Sorted Data**`TDataTable`: Used to store the sorted data table.
-
-
-**Command Output**
 
 ### Error Handling
 

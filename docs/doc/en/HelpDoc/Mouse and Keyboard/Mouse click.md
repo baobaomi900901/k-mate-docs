@@ -11,7 +11,7 @@ order: 3
 Actions like mouse press, release, single-click, double-click, and right-click are available.
 :::
 
-![Mouse click](../../assets/Mouse click_command.png)
+![Mouse click](../../assets/Mouse%20click_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Delay after execution (milliseconds)**`Integer`: Time to wait after the instruction is executed
-
-
-**Command Output**
 
 ### Error Handling
 

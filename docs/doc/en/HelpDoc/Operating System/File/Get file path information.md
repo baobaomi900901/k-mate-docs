@@ -11,7 +11,7 @@ order: 8
 Retrieve the root directory, parent directory, file name, base file name, and file extension of the file path
 :::
 
-![Get file path information](../../../assets/Get file path information_command.png)
+![Get file path information](../../../assets/Get%20file%20path%20information_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Retrieve the root directory, parent directory, file name, base file name, and fi
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

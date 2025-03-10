@@ -11,7 +11,7 @@ order: 2
 HTTP Download
 :::
 
-![HTTP Download](../../../assets/HTTP Download_command.png)
+![HTTP Download](../../../assets/HTTP%20Download_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ HTTP Download
 - **Connection Timeout (Milliseconds)**`Integer`: Enter the connection timeout in milliseconds
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 10
 Select a menu item from the menu bar
 :::
 
-![Select Menu Item (SAP)](../../../assets/Select Menu Item (SAP)_command.png)
+![Select Menu Item (SAP)](../../../assets/Select%20Menu%20Item%20(SAP)_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 6
 Read the content of the file at the specified path
 :::
 
-![Read File](../../../assets/Read File_command.png)
+![Read File](../../../assets/Read%20File_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Read the content of the file at the specified path
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

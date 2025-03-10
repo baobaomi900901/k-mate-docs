@@ -11,7 +11,7 @@ order: 1
 Stop the entire application from running
 :::
 
-![Terminate Application](../../assets/Terminate Application_command.png)
+![Terminate Application](../../assets/Terminate%20Application_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ No input for the current command
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

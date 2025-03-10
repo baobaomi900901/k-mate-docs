@@ -11,7 +11,7 @@ order: 6
 Get the first available column
 :::
 
-![Get First Available Column](../../../../assets/Get First Available Column_command.png)
+![Get First Available Column](../../../../assets/Get%20First%20Available%20Column_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Get the first available column
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

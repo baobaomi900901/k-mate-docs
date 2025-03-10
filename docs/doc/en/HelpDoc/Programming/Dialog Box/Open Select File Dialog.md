@@ -11,7 +11,7 @@ order: 5
 Open Select File Dialog
 :::
 
-![Open Select File Dialog](../../../assets/Open Select File Dialog_command.png)
+![Open Select File Dialog](../../../assets/Open%20Select%20File%20Dialog_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Open Select File Dialog
 ### Advanced
 
 - **Default Folder**`string`: Default folder
-
-
-**Command Output**
 
 ### Error Handling
 

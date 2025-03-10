@@ -11,7 +11,7 @@ order: 9
 Rename the folder
 :::
 
-![Rename Folder](../../../assets/Rename Folder_command.png)
+![Rename Folder](../../../assets/Rename%20Folder_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Rename the folder
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

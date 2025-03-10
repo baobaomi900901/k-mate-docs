@@ -11,7 +11,7 @@ order: 3
 This command is used to extract part of the content from the current PDF file and save it as a new PDF document. Please install the PDF plugin first from [Settings] - [Plugin Center] before use.
 :::
 
-![Export New PDF Document](../../../assets/Export New PDF Document_command.png)
+![Export New PDF Document](../../../assets/Export%20New%20PDF%20Document_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ This command is used to extract part of the content from the current PDF file an
 - **Password**`string`: Password required to open the file
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

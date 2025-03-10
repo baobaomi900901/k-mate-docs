@@ -11,7 +11,7 @@ order: 1
 Select a database type to connect to the database
 :::
 
-![Connect to Database](../../../assets/Connect to Database_command.png)
+![Connect to Database](../../../assets/Connect%20to%20Database_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ Select a database type to connect to the database
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 6
 Retrieve all cookies from a single Cookie store that match the given criteria
 :::
 
-![Get Filtered Cookies](../../../assets/Get Filtered Cookies_command.png)
+![Get Filtered Cookies](../../../assets/Get%20Filtered%20Cookies_command.png)
 
 ## Configuration Item Description
 
@@ -47,9 +47,6 @@ Retrieve all cookies from a single Cookie store that match the given criteria
 - **Only Session Cookies**`Boolean`: Filter session cookie collection
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

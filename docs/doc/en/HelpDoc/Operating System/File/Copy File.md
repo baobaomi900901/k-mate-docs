@@ -11,7 +11,7 @@ order: 2
 Copy a file to a specified directory
 :::
 
-![Copy File](../../../assets/Copy File_command.png)
+![Copy File](../../../assets/Copy%20File_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Copy a file to a specified directory
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

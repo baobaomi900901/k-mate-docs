@@ -11,7 +11,7 @@ order: 4
 Delete the specified sheet
 :::
 
-![Delete Sheet](../../../../assets/Delete Sheet_command.png)
+![Delete Sheet](../../../../assets/Delete%20Sheet_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 2
 This command is used to set a key-value pair in a dictionary, modifying the value if the key already exists
 :::
 
-![Set Key-Value Pair](../../../assets/Set Key-Value Pair_command.png)
+![Set Key-Value Pair](../../../assets/Set%20Key-Value%20Pair_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ This command is used to set a key-value pair in a dictionary, modifying the valu
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

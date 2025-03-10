@@ -11,7 +11,7 @@ order: 2
 Refresh the data in Excel
 :::
 
-![Refresh Excel Data](../../../../assets/Refresh Excel Data_command.png)
+![Refresh Excel Data](../../../../assets/Refresh%20Excel%20Data_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 1
 Call Baidu AI API to check if the image complies with regulations
 :::
 
-![Image Censorship (Baidu)](../../../assets/Image Censorship (Baidu)_command.png)
+![Image Censorship (Baidu)](../../../assets/Image%20Censorship%20(Baidu)_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Call Baidu AI API to check if the image complies with regulations
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

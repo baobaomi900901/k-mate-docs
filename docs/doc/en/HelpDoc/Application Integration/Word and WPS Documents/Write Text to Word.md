@@ -11,7 +11,7 @@ order: 4
 Write or overwrite text in the current selection area of the Word document
 :::
 
-![Write Text to Word](../../../assets/Write Text to Word_command.png)
+![Write Text to Word](../../../assets/Write%20Text%20to%20Word_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

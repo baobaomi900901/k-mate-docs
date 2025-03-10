@@ -11,7 +11,7 @@ order: 2
 Generate a random number
 :::
 
-![Generate Random Number](../../assets/Generate Random Number_command.png)
+![Generate Random Number](../../assets/Generate%20Random%20Number_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ Generate a random number
 **Command Output**
 
 - **Save Random Number As**`Integer`: Enter a name to save the generated random number
-
-
-**Command Output**
 
 ### Error Handling
 

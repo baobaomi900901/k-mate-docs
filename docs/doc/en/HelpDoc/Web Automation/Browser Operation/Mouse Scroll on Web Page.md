@@ -11,7 +11,7 @@ order: 7
 Scroll the mouse in the specified web page, which can be set to scroll to the top, bottom, or a specific position
 :::
 
-![Mouse Scroll on Web Page](../../../assets/Mouse Scroll on Web Page_command.png)
+![Mouse Scroll on Web Page](../../../assets/Mouse%20Scroll%20on%20Web%20Page_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ No output for the current command
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout in milliseconds to wait for the element to exist
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

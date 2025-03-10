@@ -11,7 +11,7 @@ order: 1
 Get the input status (Chinese or English) of the currently active window's input method
 :::
 
-![Get Input Method](../../../assets/Get Input Method_command.png)
+![Get Input Method](../../../assets/Get%20Input%20Method_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No input for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 2
 Parse a string or file to generate a Json object
 :::
 
-![Parse Json](../../../assets/Parse Json_command.png)
+![Parse Json](../../../assets/Parse%20Json_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Parse a string or file to generate a Json object
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

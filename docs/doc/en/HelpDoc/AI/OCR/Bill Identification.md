@@ -11,7 +11,7 @@ order: 1
 Call the AI interface to recognize various bills such as VAT invoices, train tickets, taxi receipts, etc.
 :::
 
-![Bill Identification](../../../assets/Bill Identification_command.png)
+![Bill Identification](../../../assets/Bill%20Identification_command.png)
 
 ## Configuration Item Description
 
@@ -49,9 +49,6 @@ Call the AI interface to recognize various bills such as VAT invoices, train tic
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

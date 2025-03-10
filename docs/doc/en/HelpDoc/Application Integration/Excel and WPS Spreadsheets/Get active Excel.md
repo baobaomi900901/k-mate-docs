@@ -11,7 +11,7 @@ order: 2
 Get the currently active Excel object
 :::
 
-![Get active Excel](../../../assets/Get active Excel_command.png)
+![Get active Excel](../../../assets/Get%20active%20Excel_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No input for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 3
 Recognize audio files and convert the audio into text
 :::
 
-![OpenAI Audio](../../../assets/OpenAI Audio_command.png)
+![OpenAI Audio](../../../assets/OpenAI%20Audio_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Recognize audio files and convert the audio into text
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

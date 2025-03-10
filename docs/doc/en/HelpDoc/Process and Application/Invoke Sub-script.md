@@ -11,7 +11,7 @@ order: 1
 Execute a sub-script with a specified name
 :::
 
-![Invoke Sub-script](../../assets/Invoke Sub-script_command.png)
+![Invoke Sub-script](../../assets/Invoke%20Sub-script_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ Execute a sub-script with a specified name
 **Command Output**
 
 - **Save Output Result To**`string`: Specify a variable name to save the output result of the sub-script
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 6
 Convert DateTime object to text
 :::
 
-![Convert DateTime to Text](../../../assets/Convert DateTime to Text_command.png)
+![Convert DateTime to Text](../../../assets/Convert%20DateTime%20to%20Text_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Convert DateTime object to text
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

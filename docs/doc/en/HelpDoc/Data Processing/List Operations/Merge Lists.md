@@ -11,7 +11,7 @@ order: 13
 This command is used to merge two lists
 :::
 
-![Merge Lists](../../../assets/Merge Lists_command.png)
+![Merge Lists](../../../assets/Merge%20Lists_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ This command is used to merge two lists
 **Command Output**
 
 - **Save Merged List To**`TList<String>`: Enter a name to save the merged list
-
-
-**Command Output**
 
 ### Error Handling
 

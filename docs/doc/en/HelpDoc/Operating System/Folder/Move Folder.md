@@ -11,7 +11,7 @@ order: 8
 Move the source folder to the target folder
 :::
 
-![Move Folder](../../../assets/Move Folder_command.png)
+![Move Folder](../../../assets/Move%20Folder_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Move the source folder to the target folder
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

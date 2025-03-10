@@ -11,7 +11,7 @@ order: 3
 Call AI interface for text recognition
 :::
 
-![Text Recognition](../../../assets/Text Recognition_command.png)
+![Text Recognition](../../../assets/Text%20Recognition_command.png)
 
 ## Configuration Item Description
 
@@ -49,9 +49,6 @@ Call AI interface for text recognition
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

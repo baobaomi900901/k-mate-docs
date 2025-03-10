@@ -11,7 +11,7 @@ order: 16
 Free Json
 :::
 
-![Free Json Object](../../../assets/Free Json Object_command.png)
+![Free Json Object](../../../assets/Free%20Json%20Object_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

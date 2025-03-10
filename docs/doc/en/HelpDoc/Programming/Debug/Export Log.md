@@ -11,7 +11,7 @@ order: 2
 Export log content to a file
 :::
 
-![Export Log](../../../assets/Export Log_command.png)
+![Export Log](../../../assets/Export%20Log_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ Export log content to a file
 **Command Output**
 
 - **File Path**`string`: Specify a variable name, this variable will be used to store the location of the exported file
-
-
-**Command Output**
 
 ### Error Handling
 

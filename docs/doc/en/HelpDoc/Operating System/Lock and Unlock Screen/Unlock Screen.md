@@ -11,7 +11,7 @@ order: 2
 Unlock the system screen and enter the system screen
 :::
 
-![Unlock Screen](../../../assets/Unlock Screen_command.png)
+![Unlock Screen](../../../assets/Unlock%20Screen_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

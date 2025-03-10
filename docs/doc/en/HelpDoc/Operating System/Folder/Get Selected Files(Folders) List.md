@@ -11,7 +11,7 @@ order: 2
 Get the list of selected files or folders in the currently active file explorer (if the desktop is active, the target is the desktop)
 :::
 
-![Get Selected Files(Folders) List](../../../assets/Get Selected Files(Folders) List_command.png)
+![Get Selected Files(Folders) List](../../../assets/Get%20Selected%20Files(Folders)%20List_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Get the list of selected files or folders in the currently active file explorer 
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

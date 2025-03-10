@@ -11,7 +11,7 @@ order: 10
 Delete row
 :::
 
-![Delete Excel Row](../../../../assets/Delete Excel Row_command.png)
+![Delete Excel Row](../../../../assets/Delete%20Excel%20Row_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

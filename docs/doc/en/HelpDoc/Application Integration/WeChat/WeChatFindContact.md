@@ -36,9 +36,6 @@ Search for contacts based on the provided WeChat ID and WeChat name or notes
 
 No output for the current command
 
-
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

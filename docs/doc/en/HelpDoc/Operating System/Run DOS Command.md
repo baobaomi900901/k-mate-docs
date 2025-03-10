@@ -11,7 +11,7 @@ order: 2
 This instruction is used to execute a DOS command and return the result
 :::
 
-![Run DOS Command](../../assets/Run DOS Command_command.png)
+![Run DOS Command](../../assets/Run%20DOS%20Command_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ This instruction is used to execute a DOS command and return the result
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

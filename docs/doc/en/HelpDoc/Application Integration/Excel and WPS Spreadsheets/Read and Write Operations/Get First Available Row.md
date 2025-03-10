@@ -11,7 +11,7 @@ order: 4
 Get the first available row
 :::
 
-![Get First Available Row](../../../../assets/Get First Available Row_command.png)
+![Get First Available Row](../../../../assets/Get%20First%20Available%20Row_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Get the first available row
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

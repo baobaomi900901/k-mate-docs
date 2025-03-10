@@ -11,7 +11,7 @@ order: 3
 Used to terminate a running program
 :::
 
-![Terminate Process](../../assets/Terminate Process_command.png)
+![Terminate Process](../../assets/Terminate%20Process_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 5
 Set the state of the check box in the window to checked or unchecked
 :::
 
-![Set CheckBox (win)](../../../assets/Set CheckBox (win)_command.png)
+![Set CheckBox (win)](../../../assets/Set%20CheckBox%20(win)_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target check box to exist
-
-
-**Command Output**
 
 ### Error Handling
 

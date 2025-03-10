@@ -11,7 +11,7 @@ order: 3
 Read custom data that has been saved in the process
 :::
 
-![Read Custom Data](../../assets/Read Custom Data_command.png)
+![Read Custom Data](../../assets/Read%20Custom%20Data_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ Read custom data that has been saved in the process
 **Command Output**
 
 - **Data Content**`string`: Save the retrieved custom data content to a variable, return null if not found based on the Key
-
-
-**Command Output**
 
 ### Error Handling
 

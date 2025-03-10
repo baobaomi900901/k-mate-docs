@@ -11,7 +11,7 @@ order: 8
 This command is used to remove a specified item from the list
 :::
 
-![Remove List Item](../../../assets/Remove List Item_command.png)
+![Remove List Item](../../../assets/Remove%20List%20Item_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ This command is used to remove a specified item from the list
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

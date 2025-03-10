@@ -11,7 +11,7 @@ order: 2
 Send an email
 :::
 
-![Send Email](../../../assets/Send Email_command.png)
+![Send Email](../../../assets/Send%20Email_command.png)
 
 ## Configuration Item Description
 
@@ -61,9 +61,6 @@ No output for the current command
 - **Authorization Code**`string`: The authorization code for SMTP server authentication
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 6
 Remove the cookie specified by the cookie URL and cookie name
 :::
 
-![Remove Cookie](../../../assets/Remove Cookie_command.png)
+![Remove Cookie](../../../assets/Remove%20Cookie_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

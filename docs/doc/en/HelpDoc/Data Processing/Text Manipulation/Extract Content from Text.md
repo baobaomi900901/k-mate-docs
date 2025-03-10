@@ -11,7 +11,7 @@ order: 1
 Extract specified content from text based on regular expressions
 :::
 
-![Extract Content from Text](../../../assets/Extract Content from Text_command.png)
+![Extract Content from Text](../../../assets/Extract%20Content%20from%20Text_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Extract specified content from text based on regular expressions
 **Command Output**
 
 - **Save Result To**`string`: Specify a variable to save the extracted content
-
-
-**Command Output**
 
 ### Error Handling
 

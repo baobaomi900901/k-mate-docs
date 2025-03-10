@@ -11,7 +11,7 @@ order: 7
 Wait for the SAP to load completely
 :::
 
-![Wait for Load Completion (SAP)](../../../assets/Wait for Load Completion (SAP)_command.png)
+![Wait for Load Completion (SAP)](../../../assets/Wait%20for%20Load%20Completion%20(SAP)_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Wait for the SAP to load completely
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

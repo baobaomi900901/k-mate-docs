@@ -11,7 +11,7 @@ order: 11
 Scrape batch data from web pages, commonly used for scraping list and detail pages, and can scrape multiple pages of data by setting pagination buttons
 :::
 
-![Batch Data Scraping (Web)](../../../assets/Batch Data Scraping (Web)_command.png)
+![Batch Data Scraping (Web)](../../../assets/Batch%20Data%20Scraping%20(Web)_command.png)
 
 ## Configuration Item Description
 
@@ -57,9 +57,6 @@ Scrape batch data from web pages, commonly used for scraping list and detail pag
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **TimeOut**`Integer`: 
-
-
-**Command Output**
 
 ### Error Handling
 

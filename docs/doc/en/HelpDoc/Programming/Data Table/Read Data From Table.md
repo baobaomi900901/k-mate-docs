@@ -11,7 +11,7 @@ order: 3
 Read partial data from the data table
 :::
 
-![Read Data From Table](../../../assets/Read Data From Table_command.png)
+![Read Data From Table](../../../assets/Read%20Data%20From%20Table_command.png)
 
 ## Configuration Item Description
 
@@ -77,9 +77,6 @@ Read partial data from the data table
 - **Save Read Result To**`TDataTable`: Save Read Result To
 
 - **Save Read Result To (List)**`TList<String>`: Save Read Result To (List)
-
-
-**Command Output**
 
 ### Error Handling
 

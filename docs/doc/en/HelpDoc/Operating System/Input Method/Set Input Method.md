@@ -11,7 +11,7 @@ order: 2
 Set the input method for the currently active window
 :::
 
-![Set Input Method](../../../assets/Set Input Method_command.png)
+![Set Input Method](../../../assets/Set%20Input%20Method_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

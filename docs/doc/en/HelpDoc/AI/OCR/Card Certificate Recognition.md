@@ -11,7 +11,7 @@ order: 6
 Call the AI interface to recognize card certificates such as bank cards, business licenses, passports, etc.
 :::
 
-![Card Certificate Recognition](../../../assets/Card Certificate Recognition_command.png)
+![Card Certificate Recognition](../../../assets/Card%20Certificate%20Recognition_command.png)
 
 ## Configuration Item Description
 
@@ -47,9 +47,6 @@ Call the AI interface to recognize card certificates such as bank cards, busines
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

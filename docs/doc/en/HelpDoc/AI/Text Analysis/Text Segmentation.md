@@ -11,7 +11,7 @@ order: 1
 Call the Kingsware AI interface to split continuous natural language text into a list of words that have meaningful coherence and completeness
 :::
 
-![Text Segmentation](../../../assets/Text Segmentation_command.png)
+![Text Segmentation](../../../assets/Text%20Segmentation_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Call the Kingsware AI interface to split continuous natural language text into a
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

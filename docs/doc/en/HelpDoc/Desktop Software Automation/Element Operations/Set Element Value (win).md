@@ -11,7 +11,7 @@ order: 6
 Set the value of an element in the window, typically for input and select elements
 :::
 
-![Set Element Value (win)](../../../assets/Set Element Value (win)_command.png)
+![Set Element Value (win)](../../../assets/Set%20Element%20Value%20(win)_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for element to exist (milliseconds)**`Integer`: Timeout for waiting for the target element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

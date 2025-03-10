@@ -11,7 +11,7 @@ order: 2
 Get all window objects that meet the conditions
 :::
 
-![Get Window Object List](../../assets/Get Window Object List_command.png)
+![Get Window Object List](../../assets/Get%20Window%20Object%20List_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Get all window objects that meet the conditions
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

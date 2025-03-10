@@ -11,7 +11,7 @@ order: 1
 Run software, open software, open folder, open website, execute system commands, etc.
 :::
 
-![Run or Open](../../assets/Run or Open_command.png)
+![Run or Open](../../assets/Run%20or%20Open_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ Run software, open software, open folder, open website, execute system commands,
 - **Window Style**`Integer`: Specify how the new window should be displayed
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

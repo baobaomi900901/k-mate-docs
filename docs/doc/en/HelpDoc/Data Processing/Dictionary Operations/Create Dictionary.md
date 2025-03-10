@@ -11,7 +11,7 @@ order: 1
 Create an empty dictionary
 :::
 
-![Create Dictionary](../../../assets/Create Dictionary_command.png)
+![Create Dictionary](../../../assets/Create%20Dictionary_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ No input for the current command
 **Command Output**
 
 - **Save Dictionary Object To**`TRPADictionary`: Specify a variable to save the new dictionary
-
-
-**Command Output**
 
 ### Error Handling
 

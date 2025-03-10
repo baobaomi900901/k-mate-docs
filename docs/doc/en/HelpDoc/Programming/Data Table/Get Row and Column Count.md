@@ -11,7 +11,7 @@ order: 4
 Read the number of rows and columns in the data table
 :::
 
-![Get Row and Column Count](../../../assets/Get Row and Column Count_command.png)
+![Get Row and Column Count](../../../assets/Get%20Row%20and%20Column%20Count_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Read the number of rows and columns in the data table
 - **Number of Rows**`Integer`: Number of Rows
 
 - **Number of Columns**`Integer`: Number of Columns
-
-
-**Command Output**
 
 ### Error Handling
 

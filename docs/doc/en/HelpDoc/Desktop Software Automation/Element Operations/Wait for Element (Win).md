@@ -11,7 +11,7 @@ order: 2
 Wait for an element in the window to appear or disappear before proceeding with the next steps
 :::
 
-![Wait for Element (Win)](../../../assets/Wait for Element (Win)_command.png)
+![Wait for Element (Win)](../../../assets/Wait%20for%20Element%20(Win)_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Wait for an element in the window to appear or disappear before proceeding with 
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

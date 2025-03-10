@@ -11,7 +11,7 @@ order: 1
 Retrieve files from a folder
 :::
 
-![Get file list](../../../assets/Get file list_command.png)
+![Get file list](../../../assets/Get%20file%20list_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ Retrieve files from a folder
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

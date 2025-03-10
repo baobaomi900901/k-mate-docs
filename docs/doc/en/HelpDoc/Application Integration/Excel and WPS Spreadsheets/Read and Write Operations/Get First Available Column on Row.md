@@ -11,7 +11,7 @@ order: 7
 Get the first available column on the specified row
 :::
 
-![Get First Available Column on Row](../../../../assets/Get First Available Column on Row_command.png)
+![Get First Available Column on Row](../../../../assets/Get%20First%20Available%20Column%20on%20Row_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Get the first available column on the specified row
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

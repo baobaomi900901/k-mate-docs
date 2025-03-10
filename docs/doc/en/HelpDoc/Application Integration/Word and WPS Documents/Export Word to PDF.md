@@ -11,7 +11,7 @@ order: 2
 Export a Word document as a PDF
 :::
 
-![Export Word to PDF](../../../assets/Export Word to PDF_command.png)
+![Export Word to PDF](../../../assets/Export%20Word%20to%20PDF_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

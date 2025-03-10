@@ -11,7 +11,7 @@ order: 2
 Activate the specified window to run in the foreground
 :::
 
-![Activate Software Window](../../../assets/Activate Software Window_command.png)
+![Activate Software Window](../../../assets/Activate%20Software%20Window_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

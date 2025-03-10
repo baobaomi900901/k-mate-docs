@@ -11,7 +11,7 @@ order: 1
 Call the Kingsware AI interface to recognize and output the content of the speech file
 :::
 
-![Speech to Text](../../../assets/Speech to Text_command.png)
+![Speech to Text](../../../assets/Speech%20to%20Text_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Call the Kingsware AI interface to recognize and output the content of the speec
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

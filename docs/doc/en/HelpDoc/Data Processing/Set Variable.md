@@ -11,7 +11,7 @@ order: 1
 Create a new variable and assign it a value, or reassign a value to an existing variable
 :::
 
-![Set Variable](../../assets/Set Variable_command.png)
+![Set Variable](../../assets/Set%20Variable_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ Create a new variable and assign it a value, or reassign a value to an existing 
 **Command Output**
 
 - **Variable Name**`Variant`: Enter a name for the variable to save the value into
-
-
-**Command Output**
 
 ### Error Handling
 

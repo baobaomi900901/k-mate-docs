@@ -11,7 +11,7 @@ order: 12
 This command is used to randomly sort a list
 :::
 
-![Randomize List Order](../../../assets/Randomize List Order_command.png)
+![Randomize List Order](../../../assets/Randomize%20List%20Order_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ This command is used to randomly sort a list
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

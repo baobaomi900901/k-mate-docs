@@ -11,7 +11,7 @@ order: 6
 This command is used to delete a key-value pair from a dictionary
 :::
 
-![Delete Dictionary Key-Value Pair](../../../assets/Delete Dictionary Key-Value Pair_command.png)
+![Delete Dictionary Key-Value Pair](../../../assets/Delete%20Dictionary%20Key-Value%20Pair_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ This command is used to delete a key-value pair from a dictionary
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

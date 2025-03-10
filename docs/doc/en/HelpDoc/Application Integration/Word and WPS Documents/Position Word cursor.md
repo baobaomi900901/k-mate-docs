@@ -11,7 +11,7 @@ order: 5
 Position the cursor at the specified location in the Word document
 :::
 
-![Position Word cursor](../../../assets/Position Word cursor_command.png)
+![Position Word cursor](../../../assets/Position%20Word%20cursor_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 1
 Drag an element to a specified position in the web page
 :::
 
-![Drag Element (Web)](../../../assets/Drag Element (Web)_command.png)
+![Drag Element (Web)](../../../assets/Drag%20Element%20(Web)_command.png)
 
 ## Configuration Item Description
 
@@ -53,9 +53,6 @@ No output for the current command
 - **Vertical Translation**`Integer`: Enter a positive number to move down, a negative number to move up
 
 - **Wait for Element (Milliseconds)**`Integer`: Timeout for waiting for the element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

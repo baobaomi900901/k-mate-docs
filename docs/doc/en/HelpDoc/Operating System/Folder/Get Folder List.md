@@ -11,7 +11,7 @@ order: 1
 Get subfolders under the specified folder path
 :::
 
-![Get Folder List](../../../assets/Get Folder List_command.png)
+![Get Folder List](../../../assets/Get%20Folder%20List_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Get subfolders under the specified folder path
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

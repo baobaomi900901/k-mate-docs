@@ -11,7 +11,7 @@ order: 5
 Delete the folder, including all subfolders and files within it
 :::
 
-![Delete folder](../../../assets/Delete folder_command.png)
+![Delete folder](../../../assets/Delete%20folder_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

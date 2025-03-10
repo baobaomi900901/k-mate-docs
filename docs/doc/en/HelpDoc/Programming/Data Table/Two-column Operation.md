@@ -11,7 +11,7 @@ order: 18
 Perform addition, subtraction, multiplication, and division on the specified two columns of the data table and save the result to a new column.
 :::
 
-![Two-column Operation](../../../assets/Two-column Operation_command.png)
+![Two-column Operation](../../../assets/Two-column%20Operation_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Perform addition, subtraction, multiplication, and division on the specified two
 **Command Output**
 
 - **Post-operation Data**`TDataTable`: Used to store the data table after the operation.
-
-
-**Command Output**
 
 ### Error Handling
 

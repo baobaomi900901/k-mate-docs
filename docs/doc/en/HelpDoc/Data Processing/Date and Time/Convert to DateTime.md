@@ -11,7 +11,7 @@ order: 5
 Convert text to a DateTime, using the default format of %Y-%m-%d if not specified otherwise
 :::
 
-![Convert to DateTime](../../../assets/Convert to DateTime_command.png)
+![Convert to DateTime](../../../assets/Convert%20to%20DateTime_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Convert text to a DateTime, using the default format of %Y-%m-%d if not specifie
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

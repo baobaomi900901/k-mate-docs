@@ -11,7 +11,7 @@ order: 8
 This command is used to concatenate each element in the list with a specified delimiter, and finally convert it into a text string
 :::
 
-![Join List to Text](../../../assets/Join List to Text_command.png)
+![Join List to Text](../../../assets/Join%20List%20to%20Text_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ This command is used to concatenate each element in the list with a specified de
 **Command Output**
 
 - **Save Result To**`string`: Specify a variable to save the concatenated text
-
-
-**Command Output**
 
 ### Error Handling
 

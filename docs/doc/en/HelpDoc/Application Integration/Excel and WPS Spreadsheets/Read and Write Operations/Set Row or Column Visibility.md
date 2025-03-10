@@ -11,7 +11,7 @@ order: 18
 Hide or unhide rows and columns in Excel
 :::
 
-![Set Row or Column Visibility](../../../../assets/Set Row or Column Visibility_command.png)
+![Set Row or Column Visibility](../../../../assets/Set%20Row%20or%20Column%20Visibility_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

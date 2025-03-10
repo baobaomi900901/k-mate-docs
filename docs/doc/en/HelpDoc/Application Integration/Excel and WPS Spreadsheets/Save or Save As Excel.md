@@ -11,7 +11,7 @@ order: 3
 Save or Save As Excel
 :::
 
-![Save or Save As Excel](../../../assets/Save or Save As Excel_command.png)
+![Save or Save As Excel](../../../assets/Save%20or%20Save%20As%20Excel_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

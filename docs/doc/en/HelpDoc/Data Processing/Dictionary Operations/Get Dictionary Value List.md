@@ -11,7 +11,7 @@ order: 5
 This command is used to get a list of values from a dictionary
 :::
 
-![Get Dictionary Value List](../../../assets/Get Dictionary Value List_command.png)
+![Get Dictionary Value List](../../../assets/Get%20Dictionary%20Value%20List_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ This command is used to get a list of values from a dictionary
 **Command Output**
 
 - **Save Value List To**`TList<String>`: Enter a name to save the found value list
-
-
-**Command Output**
 
 ### Error Handling
 

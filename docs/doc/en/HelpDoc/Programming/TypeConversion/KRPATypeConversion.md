@@ -40,9 +40,6 @@ By specifying a type conversion method, convert the corresponding data to boolea
 
 - **OutputFloat**`Double`: Output data through type conversion
 
-
-**Command Output**
-
 ### Error Handling
 
 - **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 

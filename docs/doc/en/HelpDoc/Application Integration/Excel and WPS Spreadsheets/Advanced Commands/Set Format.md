@@ -11,7 +11,7 @@ order: 3
 Set cell format: number, alignment, font, border, fill, protection
 :::
 
-![Set Format](../../../../assets/Set Format_command.png)
+![Set Format](../../../../assets/Set%20Format_command.png)
 
 ## Configuration Item Description
 
@@ -51,9 +51,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 7
 Write text content to an existing file, if the file does not exist, it will be automatically created
 :::
 
-![Write to File](../../../assets/Write to File_command.png)
+![Write to File](../../../assets/Write%20to%20File_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

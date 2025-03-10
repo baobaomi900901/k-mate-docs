@@ -11,7 +11,7 @@ order: 14
 Insert a blank row in the Excel table
 :::
 
-![Insert Blank Row](../../../../assets/Insert Blank Row_command.png)
+![Insert Blank Row](../../../../assets/Insert%20Blank%20Row_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

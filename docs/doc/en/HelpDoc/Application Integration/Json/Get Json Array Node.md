@@ -11,7 +11,7 @@ order: 8
 Get a node from the Json array
 :::
 
-![Get Json Array Node](../../../assets/Get Json Array Node_command.png)
+![Get Json Array Node](../../../assets/Get%20Json%20Array%20Node_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Get a node from the Json array
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

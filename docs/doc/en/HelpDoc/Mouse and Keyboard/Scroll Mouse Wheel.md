@@ -11,7 +11,7 @@ order: 6
 Scroll the mouse wheel
 :::
 
-![Scroll Mouse Wheel](../../assets/Scroll Mouse Wheel_command.png)
+![Scroll Mouse Wheel](../../assets/Scroll%20Mouse%20Wheel_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ No output for the current command
 - **Move Mouse to Y**`Integer`: Relative vertical coordinate
 
 - **Movement Speed**`Integer`: Speed of the mouse movement
-
-
-**Command Output**
 
 ### Error Handling
 

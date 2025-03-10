@@ -11,7 +11,7 @@ order: 4
 Set the selected item in the window's ComboBox
 :::
 
-![Set ComboBox (win)](../../../assets/Set ComboBox (win)_command.png)
+![Set ComboBox (win)](../../../assets/Set%20ComboBox%20(win)_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Set the maximum wait time
-
-
-**Command Output**
 
 ### Error Handling
 

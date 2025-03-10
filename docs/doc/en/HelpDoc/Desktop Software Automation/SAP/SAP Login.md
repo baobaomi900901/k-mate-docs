@@ -11,7 +11,7 @@ order: 2
 SAP Login
 :::
 
-![SAP Login](../../../assets/SAP Login_command.png)
+![SAP Login](../../../assets/SAP%20Login_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ SAP Login
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

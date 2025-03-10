@@ -11,7 +11,7 @@ order: 11
 Search for and hover the mouse over the specified text in a UI element. Before use, you need to install the text or OCR plugin from the Plugin Center.
 :::
 
-![Mouse hover over text (OCR)](../../assets/Mouse hover over text (OCR)_command.png)
+![Mouse hover over text (OCR)](../../assets/Mouse%20hover%20over%20text%20(OCR)_command.png)
 
 ## Configuration Item Description
 
@@ -49,9 +49,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Delay after execution (milliseconds)**`Integer`: Time to continue waiting after the instruction is executed.
-
-
-**Command Output**
 
 ### Error Handling
 

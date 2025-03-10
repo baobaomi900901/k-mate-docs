@@ -11,7 +11,7 @@ order: 7
 Check if the specified element is contained within the specified window
 :::
 
-![IF window contains](../../assets/IF window contains_command.png)
+![IF window contains](../../assets/IF%20window%20contains_command.png)
 
 ## Configuration Item Description
 
@@ -30,20 +30,6 @@ Check if the specified element is contained within the specified window
 
 No output for the current command
 
-
-**Command Output**
-
-### Error Handling
-
-- **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 
-
-- **Handling Method**`Integer`:
-
-    - **Terminate Process**: If the command fails, terminate the process.
-
-    - **Ignore Exception and Continue Execution**: If the command fails, ignore the exception and continue the process.
-
-    - **Retry This Command**: If the command fails, retry the command a specified number of times with a specified interval between retries.
 
 ## Usage Example
 

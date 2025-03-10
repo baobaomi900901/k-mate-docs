@@ -11,7 +11,7 @@ order: 1
 Lock the system screen to ensure subsequent commands can run normally in the locked state
 :::
 
-![Lock Screen](../../../assets/Lock Screen_command.png)
+![Lock Screen](../../../assets/Lock%20Screen_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

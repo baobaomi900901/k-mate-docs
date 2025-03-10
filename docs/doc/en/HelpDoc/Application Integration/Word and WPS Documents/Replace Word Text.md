@@ -11,7 +11,7 @@ order: 7
 Replace text content in a Word document
 :::
 
-![Replace Word Text](../../../assets/Replace Word Text_command.png)
+![Replace Word Text](../../../assets/Replace%20Word%20Text_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Replace text content in a Word document
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

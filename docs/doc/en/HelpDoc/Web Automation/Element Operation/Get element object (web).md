@@ -11,7 +11,7 @@ order: 8
 Locate an element on a webpage using capture, CSS, or XPath methods.
 :::
 
-![Get element object (web)](../../../assets/Get element object (web)_command.png)
+![Get element object (web)](../../../assets/Get%20element%20object%20(web)_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ Locate an element on a webpage using capture, CSS, or XPath methods.
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target element to exist.
-
-
-**Command Output**
 
 ### Error Handling
 

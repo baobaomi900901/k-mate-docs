@@ -11,7 +11,7 @@ order: 3
 Retrieve all files and subdirectories from the current path of the FTP server
 :::
 
-![Get FTP Files](../../../assets/Get FTP Files_command.png)
+![Get FTP Files](../../../assets/Get%20FTP%20Files_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Retrieve all files and subdirectories from the current path of the FTP server
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

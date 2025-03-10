@@ -11,7 +11,7 @@ order: 9
 This command uses a specified delimiter to split the target text into a list
 :::
 
-![Split Text to List](../../../assets/Split Text to List_command.png)
+![Split Text to List](../../../assets/Split%20Text%20to%20List_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ This command uses a specified delimiter to split the target text into a list
 **Command Output**
 
 - **Save Result To**`TList<String>`: Specify a variable to save the converted list
-
-
-**Command Output**
 
 ### Error Handling
 

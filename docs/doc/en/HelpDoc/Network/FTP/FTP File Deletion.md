@@ -11,7 +11,7 @@ order: 9
 Delete one or more files from the remote path
 :::
 
-![FTP File Deletion](../../../assets/FTP File Deletion_command.png)
+![FTP File Deletion](../../../assets/FTP%20File%20Deletion_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

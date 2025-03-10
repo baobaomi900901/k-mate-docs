@@ -11,7 +11,7 @@ order: 17
 Get the start and end row numbers and column names of the currently selected range in the current sheet
 :::
 
-![Get Selected Range](../../../../assets/Get Selected Range_command.png)
+![Get Selected Range](../../../../assets/Get%20Selected%20Range_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Get the start and end row numbers and column names of the currently selected ran
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

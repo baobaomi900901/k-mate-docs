@@ -11,7 +11,7 @@ order: 6
 Open Select Folder Dialog
 :::
 
-![Open Select Folder Dialog](../../../assets/Open Select Folder Dialog_command.png)
+![Open Select Folder Dialog](../../../assets/Open%20Select%20Folder%20Dialog_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Open Select Folder Dialog
 ### Advanced
 
 - **Default Path**`string`: Default path
-
-
-**Command Output**
 
 ### Error Handling
 

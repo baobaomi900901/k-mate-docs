@@ -11,7 +11,7 @@ order: 7
 Call Baidu AI for text review
 :::
 
-![Text Review (Baidu)](../../../assets/Text Review (Baidu)_command.png)
+![Text Review (Baidu)](../../../assets/Text%20Review%20(Baidu)_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Call Baidu AI for text review
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

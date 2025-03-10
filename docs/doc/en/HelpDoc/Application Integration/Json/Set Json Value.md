@@ -11,7 +11,7 @@ order: 5
 Set the value of a Json object with the specified type
 :::
 
-![Set Json Value](../../../assets/Set Json Value_command.png)
+![Set Json Value](../../../assets/Set%20Json%20Value_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

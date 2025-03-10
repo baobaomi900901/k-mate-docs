@@ -11,7 +11,7 @@ order: 13
 Concatenate two columns of data using a specified delimiter to form a new column.
 :::
 
-![Splice Two Columns of Data](../../../assets/Splice Two Columns of Data_command.png)
+![Splice Two Columns of Data](../../../assets/Splice%20Two%20Columns%20of%20Data_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ Concatenate two columns of data using a specified delimiter to form a new column
 **Command Output**
 
 - **Concatenated Data**`TDataTable`: Concatenate two columns of data using the specified delimiter to form a new column.
-
-
-**Command Output**
 
 ### Error Handling
 

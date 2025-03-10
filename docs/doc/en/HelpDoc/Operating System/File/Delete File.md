@@ -11,7 +11,7 @@ order: 5
 Delete the specified file
 :::
 
-![Delete File](../../../assets/Delete File_command.png)
+![Delete File](../../../assets/Delete%20File_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

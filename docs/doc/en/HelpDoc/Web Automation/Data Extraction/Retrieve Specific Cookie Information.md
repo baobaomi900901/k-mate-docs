@@ -11,7 +11,7 @@ order: 7
 If multiple cookies with the same name exist in the specified URL, the cookie with the longest path will be returned. If the path lengths are the same, the cookie with the earliest creation time will be returned.
 :::
 
-![Retrieve Specific Cookie Information](../../../assets/Retrieve Specific Cookie Information_command.png)
+![Retrieve Specific Cookie Information](../../../assets/Retrieve%20Specific%20Cookie%20Information_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ If multiple cookies with the same name exist in the specified URL, the cookie wi
 ### Advanced
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

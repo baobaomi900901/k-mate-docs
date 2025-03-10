@@ -11,7 +11,7 @@ order: 3
 Call Fateadm AI interface for CAPTCHA recognition
 :::
 
-![Fateadm CAPTCHA Recognition](../../../assets/Fateadm CAPTCHA Recognition_command.png)
+![Fateadm CAPTCHA Recognition](../../../assets/Fateadm%20CAPTCHA%20Recognition_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Call Fateadm AI interface for CAPTCHA recognition
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

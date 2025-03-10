@@ -11,7 +11,7 @@ order: 1
 Read total rows of Excel
 :::
 
-![Read total rows of Excel](../../../../assets/Read total rows of Excel_command.png)
+![Read total rows of Excel](../../../../assets/Read%20total%20rows%20of%20Excel_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Read total rows of Excel
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

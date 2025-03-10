@@ -11,7 +11,7 @@ order: 1
 Executes a specified Script, optionally passing it a list of input parameters.
 :::
 
-![Invoke DotNet](../../../assets/Invoke DotNet_command.png)
+![Invoke DotNet](../../../assets/Invoke%20DotNet_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Executes a specified Script, optionally passing it a list of input parameters.
 **Command Output**
 
 - **Result**`string`: Enter a expression
-
-
-**Command Output**
 
 ### Error Handling
 

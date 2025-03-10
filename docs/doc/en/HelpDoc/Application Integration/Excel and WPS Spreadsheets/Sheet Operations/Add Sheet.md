@@ -11,7 +11,7 @@ order: 1
 Add a new sheet to the Excel object, specifying whether to add it at the beginning or the end
 :::
 
-![Add Sheet](../../../../assets/Add Sheet_command.png)
+![Add Sheet](../../../../assets/Add%20Sheet_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

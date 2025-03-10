@@ -11,7 +11,7 @@ order: 13
 Delete column
 :::
 
-![Delete Excel Column](../../../../assets/Delete Excel Column_command.png)
+![Delete Excel Column](../../../../assets/Delete%20Excel%20Column_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

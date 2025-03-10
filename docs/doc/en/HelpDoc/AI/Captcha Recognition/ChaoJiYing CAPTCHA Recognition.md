@@ -11,7 +11,7 @@ order: 2
 Call the ChaoJiYing AI API for CAPTCHA recognition
 :::
 
-![ChaoJiYing CAPTCHA Recognition](../../../assets/ChaoJiYing CAPTCHA Recognition_command.png)
+![ChaoJiYing CAPTCHA Recognition](../../../assets/ChaoJiYing%20CAPTCHA%20Recognition_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ Call the ChaoJiYing AI API for CAPTCHA recognition
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 9
 Get the length of the Json array
 :::
 
-![Get Json Array Length](../../../assets/Get Json Array Length_command.png)
+![Get Json Array Length](../../../assets/Get%20Json%20Array%20Length_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Get the length of the Json array
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

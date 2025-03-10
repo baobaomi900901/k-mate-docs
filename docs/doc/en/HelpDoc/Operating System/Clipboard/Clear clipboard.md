@@ -11,7 +11,7 @@ order: 4
 Clear the content of the clipboard
 :::
 
-![Clear clipboard](../../../assets/Clear clipboard_command.png)
+![Clear clipboard](../../../assets/Clear%20clipboard_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

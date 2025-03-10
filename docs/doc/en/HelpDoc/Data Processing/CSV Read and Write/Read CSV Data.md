@@ -11,7 +11,7 @@ order: 1
 Read the content of a CSV file
 :::
 
-![Read CSV Data](../../../assets/Read CSV Data_command.png)
+![Read CSV Data](../../../assets/Read%20CSV%20Data_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Read the content of a CSV file
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

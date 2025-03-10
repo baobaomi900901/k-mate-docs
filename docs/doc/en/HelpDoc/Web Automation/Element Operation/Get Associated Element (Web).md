@@ -11,7 +11,7 @@ order: 9
 Get the associated element (parent, child, adjacent) of an element in a specified web page.
 :::
 
-![Get Associated Element (Web)](../../../assets/Get Associated Element (Web)_command.png)
+![Get Associated Element (Web)](../../../assets/Get%20Associated%20Element%20(Web)_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ Get the associated element (parent, child, adjacent) of an element in a specifie
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: The timeout period for waiting for the target associated element to exist.
-
-
-**Command Output**
 
 ### Error Handling
 

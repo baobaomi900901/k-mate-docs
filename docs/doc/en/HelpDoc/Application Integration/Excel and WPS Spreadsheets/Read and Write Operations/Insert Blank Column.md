@@ -11,7 +11,7 @@ order: 15
 Insert a blank column in the Excel table
 :::
 
-![Insert Blank Column](../../../../assets/Insert Blank Column_command.png)
+![Insert Blank Column](../../../../assets/Insert%20Blank%20Column_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

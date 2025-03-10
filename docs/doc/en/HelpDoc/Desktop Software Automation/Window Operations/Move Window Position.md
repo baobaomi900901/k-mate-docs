@@ -11,7 +11,7 @@ order: 6
 Move window to specified position
 :::
 
-![Move Window Position](../../../assets/Move Window Position_command.png)
+![Move Window Position](../../../assets/Move%20Window%20Position_command.png)
 
 ## Configuration Item Description
 
@@ -47,9 +47,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

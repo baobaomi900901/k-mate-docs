@@ -11,7 +11,7 @@ order: 1
 To perform automated operations on a specific window, you first need to obtain the window object of the running software
 :::
 
-![Get Window Object](../../assets/Get Window Object_command.png)
+![Get Window Object](../../assets/Get%20Window%20Object_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ To perform automated operations on a specific window, you first need to obtain t
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

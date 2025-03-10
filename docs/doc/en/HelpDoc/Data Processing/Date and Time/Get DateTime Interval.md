@@ -11,7 +11,7 @@ order: 4
 Get the interval between two dates and times
 :::
 
-![Get DateTime Interval](../../../assets/Get DateTime Interval_command.png)
+![Get DateTime Interval](../../../assets/Get%20DateTime%20Interval_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Get the interval between two dates and times
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

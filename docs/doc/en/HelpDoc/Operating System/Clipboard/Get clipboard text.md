@@ -11,7 +11,7 @@ order: 3
 Retrieve text content from the clipboard
 :::
 
-![Get clipboard text](../../../assets/Get clipboard text_command.png)
+![Get clipboard text](../../../assets/Get%20clipboard%20text_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No input for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 8
 Get the last column
 :::
 
-![Get Last Column](../../../../assets/Get Last Column_command.png)
+![Get Last Column](../../../../assets/Get%20Last%20Column_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Get the last column
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 6
 Delete all files and subfolders within the folder, but keep the folder itself
 :::
 
-![Clear folder](../../../assets/Clear folder_command.png)
+![Clear folder](../../../assets/Clear%20folder_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

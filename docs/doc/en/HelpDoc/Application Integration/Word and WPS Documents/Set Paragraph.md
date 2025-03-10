@@ -11,7 +11,7 @@ order: 15
 Set the style of the currently selected content (alignment, indentation, line spacing, outline level, etc.)
 :::
 
-![Set Paragraph](../../../assets/Set Paragraph_command.png)
+![Set Paragraph](../../../assets/Set%20Paragraph_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

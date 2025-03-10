@@ -11,7 +11,7 @@ order: 9
 Wait for the target image to appear or disappear before continuing the process
 :::
 
-![Wait for Image](../../assets/Wait for Image_command.png)
+![Wait for Image](../../assets/Wait%20for%20Image_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

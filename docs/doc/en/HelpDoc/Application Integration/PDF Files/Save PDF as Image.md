@@ -11,7 +11,7 @@ order: 5
 This instruction is used to save a specific page as an image
 :::
 
-![Save PDF as Image](../../../assets/Save PDF as Image_command.png)
+![Save PDF as Image](../../../assets/Save%20PDF%20as%20Image_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ This instruction is used to save a specific page as an image
 - **Password**`string`: Password required to open the file
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

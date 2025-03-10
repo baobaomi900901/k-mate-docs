@@ -11,7 +11,7 @@ order: 4
 Call the AI interface for ID card recognition
 :::
 
-![ID Card Recognition](../../../assets/ID Card Recognition_command.png)
+![ID Card Recognition](../../../assets/ID%20Card%20Recognition_command.png)
 
 ## Configuration Item Description
 
@@ -47,9 +47,6 @@ Call the AI interface for ID card recognition
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

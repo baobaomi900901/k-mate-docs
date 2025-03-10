@@ -11,7 +11,7 @@ order: 4
 Move the mouse to a specified position
 :::
 
-![Move Mouse](../../assets/Move Mouse_command.png)
+![Move Mouse](../../assets/Move%20Mouse_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Delay after execution (milliseconds)**`Integer`: Time to wait after the instruction is executed
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 1
 Create a file server connection and return the connection object
 :::
 
-![Establish FTP Connection](../../../assets/Establish FTP Connection_command.png)
+![Establish FTP Connection](../../../assets/Establish%20FTP%20Connection_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ Create a file server connection and return the connection object
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Connection Timeout (ms)**`Integer`: Enter the connection timeout in milliseconds
-
-
-**Command Output**
 
 ### Error Handling
 

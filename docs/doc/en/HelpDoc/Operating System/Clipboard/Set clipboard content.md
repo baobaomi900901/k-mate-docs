@@ -11,7 +11,7 @@ order: 2
 Set the content for the clipboard, allowing subsequent Ctrl+V pasting
 :::
 
-![Set clipboard content](../../../assets/Set clipboard content_command.png)
+![Set clipboard content](../../../assets/Set%20clipboard%20content_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

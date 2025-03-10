@@ -11,7 +11,7 @@ order: 1
 Send English characters or key commands to the currently active window. To send Chinese characters, use the function [Input Characters]
 :::
 
-![Keyboard Input](../../assets/Keyboard Input_command.png)
+![Keyboard Input](../../assets/Keyboard%20Input_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Delay After Execution (Milliseconds)**`Integer`: Time to wait after the command execution is complete
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 8
 Write content in the Excel worksheet, supporting appending, inserting, or overwriting
 :::
 
-![Write content to Excel worksheet](../../../assets/Write content to Excel worksheet_command.png)
+![Write content to Excel worksheet](../../../assets/Write%20content%20to%20Excel%20worksheet_command.png)
 
 ## Configuration Item Description
 
@@ -49,9 +49,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

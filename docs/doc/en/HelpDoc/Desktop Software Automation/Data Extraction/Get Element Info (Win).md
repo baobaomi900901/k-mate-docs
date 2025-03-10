@@ -11,7 +11,7 @@ order: 2
 Get the text content, attributes, value, and position of a specified element in the window
 :::
 
-![Get Element Info (Win)](../../../assets/Get Element Info (Win)_command.png)
+![Get Element Info (Win)](../../../assets/Get%20Element%20Info%20(Win)_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ Get the text content, attributes, value, and position of a specified element in 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 7
 Copy the source folder to the target folder
 :::
 
-![Copy folder](../../../assets/Copy folder_command.png)
+![Copy folder](../../../assets/Copy%20folder_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Copy the source folder to the target folder
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

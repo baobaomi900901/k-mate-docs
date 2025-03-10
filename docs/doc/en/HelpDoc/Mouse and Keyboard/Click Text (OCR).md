@@ -11,7 +11,7 @@ order: 10
 Search and click the given text in UI elements. Install the Text Plugin or OCR Plugin from the Plugin Center before using.
 :::
 
-![Click Text (OCR)](../../assets/Click Text (OCR)_command.png)
+![Click Text (OCR)](../../assets/Click%20Text%20(OCR)_command.png)
 
 ## Configuration Item Description
 
@@ -55,9 +55,6 @@ No output for the current command
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Delay After Execution (Milliseconds)**`Integer`: Time to wait after the command execution is completed
-
-
-**Command Output**
 
 ### Error Handling
 

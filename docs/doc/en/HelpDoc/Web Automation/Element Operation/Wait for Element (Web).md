@@ -11,7 +11,7 @@ order: 2
 Wait for the specified element on the web page to appear or disappear before proceeding with the next steps
 :::
 
-![Wait for Element (Web)](../../../assets/Wait for Element (Web)_command.png)
+![Wait for Element (Web)](../../../assets/Wait%20for%20Element%20(Web)_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Wait for the specified element on the web page to appear or disappear before pro
 ### Advanced
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

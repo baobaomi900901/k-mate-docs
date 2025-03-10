@@ -11,7 +11,7 @@ order: 1
 Start SAP
 :::
 
-![SAP Start](../../../assets/SAP Start_command.png)
+![SAP Start](../../../assets/SAP%20Start_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Start SAP
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

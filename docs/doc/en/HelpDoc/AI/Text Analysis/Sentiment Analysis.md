@@ -11,7 +11,7 @@ order: 3
 Call the Kingsware AI interface to identify whether the user's sentiment in the text is positive or negative
 :::
 
-![Sentiment Analysis](../../../assets/Sentiment Analysis_command.png)
+![Sentiment Analysis](../../../assets/Sentiment%20Analysis_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Call the Kingsware AI interface to identify whether the user's sentiment in the 
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

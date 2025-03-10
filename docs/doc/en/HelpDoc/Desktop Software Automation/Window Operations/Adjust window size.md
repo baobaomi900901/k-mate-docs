@@ -11,7 +11,7 @@ order: 7
 Adjust the window size
 :::
 
-![Adjust window size](../../../assets/Adjust window size_command.png)
+![Adjust window size](../../../assets/Adjust%20window%20size_command.png)
 
 ## Configuration Item Description
 
@@ -47,9 +47,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

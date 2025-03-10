@@ -11,7 +11,7 @@ order: 5
 Used to retrieve the content of templates from the Prompt project
 :::
 
-![ERNIE Bot Chat Prompt Model](../../../assets/ERNIE Bot Chat Prompt Model_command.png)
+![ERNIE Bot Chat Prompt Model](../../../assets/ERNIE%20Bot%20Chat%20Prompt%20Model_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Used to retrieve the content of templates from the Prompt project
 - **Proxy Parameters**`string`: When our program cannot directly connect to the target network but the other party has installed a proxy server in the format Address:Port
 
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

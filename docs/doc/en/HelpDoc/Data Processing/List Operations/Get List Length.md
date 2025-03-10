@@ -11,7 +11,7 @@ order: 7
 This command is used to get the length of a list
 :::
 
-![Get List Length](../../../assets/Get List Length_command.png)
+![Get List Length](../../../assets/Get%20List%20Length_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ This command is used to get the length of a list
 **Command Output**
 
 - **Save List Length To**`Integer`: Specify a variable to save the length of the list
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 8
 Modify the row and column names of a data table
 :::
 
-![Modify Row and Column Names](../../../assets/Modify Row and Column Names_command.png)
+![Modify Row and Column Names](../../../assets/Modify%20Row%20and%20Column%20Names_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Modify the row and column names of a data table
 **Command Output**
 
 - **Modification Result**`TDataTable`: The data table after modifying row and column names
-
-
-**Command Output**
 
 ### Error Handling
 

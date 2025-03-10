@@ -11,7 +11,7 @@ order: 10
 Get the system folder path
 :::
 
-![Get System Folder Path](../../../assets/Get System Folder Path_command.png)
+![Get System Folder Path](../../../assets/Get%20System%20Folder%20Path_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Get the system folder path
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

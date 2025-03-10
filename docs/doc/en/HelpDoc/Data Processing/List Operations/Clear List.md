@@ -11,7 +11,7 @@ order: 2
 This command is used to clear the list
 :::
 
-![Clear List](../../../assets/Clear List_command.png)
+![Clear List](../../../assets/Clear%20List_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ This command is used to clear the list
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

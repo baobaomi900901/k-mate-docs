@@ -11,7 +11,7 @@ order: 9
 Delete specified rows or columns from the data table
 :::
 
-![Delete Rows or Columns](../../../assets/Delete Rows or Columns_command.png)
+![Delete Rows or Columns](../../../assets/Delete%20Rows%20or%20Columns_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ Delete specified rows or columns from the data table
 **Command Output**
 
 - **Result after Deletion**`TDataTable`: The data table after deleting rows/columns.
-
-
-**Command Output**
 
 ### Error Handling
 

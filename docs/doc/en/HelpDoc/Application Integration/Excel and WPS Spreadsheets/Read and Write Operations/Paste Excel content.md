@@ -11,7 +11,7 @@ order: 3
 Paste Excel content
 :::
 
-![Paste Excel content](../../../../assets/Paste Excel content_command.png)
+![Paste Excel content](../../../../assets/Paste%20Excel%20content_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

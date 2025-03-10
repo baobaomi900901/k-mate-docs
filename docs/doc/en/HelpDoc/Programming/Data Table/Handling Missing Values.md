@@ -11,7 +11,7 @@ order: 10
 Fill missing values (NaN) in the data table with a fixed value, fill with the previous value, fill with the next value, or delete missing values.
 :::
 
-![Handling Missing Values](../../../assets/Handling Missing Values_command.png)
+![Handling Missing Values](../../../assets/Handling%20Missing%20Values_command.png)
 
 ## Configuration Item Description
 
@@ -47,9 +47,6 @@ Fill missing values (NaN) in the data table with a fixed value, fill with the pr
 **Command Output**
 
 - **Result After Handling**`TDataTable`: The data table after handling the missing values.
-
-
-**Command Output**
 
 ### Error Handling
 

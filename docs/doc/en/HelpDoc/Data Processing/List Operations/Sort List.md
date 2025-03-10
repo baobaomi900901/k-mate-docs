@@ -11,7 +11,7 @@ order: 11
 This command is used to sort a list
 :::
 
-![Sort List](../../../assets/Sort List_command.png)
+![Sort List](../../../assets/Sort%20List_command.png)
 
 ## Configuration Item Description
 
@@ -27,9 +27,6 @@ This command is used to sort a list
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

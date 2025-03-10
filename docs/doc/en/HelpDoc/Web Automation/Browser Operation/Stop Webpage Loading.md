@@ -11,7 +11,7 @@ order: 3
 Force stop the webpage loading if it has not completed
 :::
 
-![Stop Webpage Loading](../../../assets/Stop Webpage Loading_command.png)
+![Stop Webpage Loading](../../../assets/Stop%20Webpage%20Loading_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

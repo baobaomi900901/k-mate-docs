@@ -11,7 +11,7 @@ order: 4
 Open Select Dialog
 :::
 
-![Open Select Dialog](../../../assets/Open Select Dialog_command.png)
+![Open Select Dialog](../../../assets/Open%20Select%20Dialog_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ Open Select Dialog
 - **Dialog Explanation**`string`: Dialog Explanation
 
 - **Timeout (milliseconds)**`Integer`: The duration for which the notification is displayed, default is 30000 milliseconds
-
-
-**Command Output**
 
 ### Error Handling
 

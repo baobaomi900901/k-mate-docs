@@ -11,7 +11,7 @@ order: 4
 Create a folder
 :::
 
-![Create folder](../../../assets/Create folder_command.png)
+![Create folder](../../../assets/Create%20folder_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Create a folder
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 7
 Set a node to the Json array
 :::
 
-![Set Json Array Node](../../../assets/Set Json Array Node_command.png)
+![Set Json Array Node](../../../assets/Set%20Json%20Array%20Node_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

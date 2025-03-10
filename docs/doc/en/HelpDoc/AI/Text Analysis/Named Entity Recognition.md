@@ -11,7 +11,7 @@ order: 6
 Call the Kingsware AI interface to extract entities such as organizations, names, and places from sentences, supporting the simultaneous parsing of multiple sentences
 :::
 
-![Named Entity Recognition](../../../assets/Named Entity Recognition_command.png)
+![Named Entity Recognition](../../../assets/Named%20Entity%20Recognition_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Call the Kingsware AI interface to extract entities such as organizations, names
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

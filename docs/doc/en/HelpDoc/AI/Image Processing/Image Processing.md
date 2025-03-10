@@ -11,7 +11,7 @@ order: 2
 Call the Kingsware AI interface for image distortion correction, enhancement, background removal, and other processing.
 :::
 
-![Image Processing](../../../assets/Image Processing_command.png)
+![Image Processing](../../../assets/Image%20Processing_command.png)
 
 ## Configuration Item Description
 
@@ -47,9 +47,6 @@ Call the Kingsware AI interface for image distortion correction, enhancement, ba
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

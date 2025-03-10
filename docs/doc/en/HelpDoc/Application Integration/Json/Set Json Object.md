@@ -11,7 +11,7 @@ order: 10
 Set a node to the Json object
 :::
 
-![Set Json Object](../../../assets/Set Json Object_command.png)
+![Set Json Object](../../../assets/Set%20Json%20Object_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

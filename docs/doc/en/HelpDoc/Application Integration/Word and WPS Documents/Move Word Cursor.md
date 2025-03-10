@@ -11,7 +11,7 @@ order: 6
 Move the cursor in a Word document
 :::
 
-![Move Word Cursor](../../../assets/Move Word Cursor_command.png)
+![Move Word Cursor](../../../assets/Move%20Word%20Cursor_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

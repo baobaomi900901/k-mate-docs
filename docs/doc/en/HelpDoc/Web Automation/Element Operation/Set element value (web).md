@@ -11,7 +11,7 @@ order: 6
 Set the value of an element on the webpage, typically for input and select elements.
 :::
 
-![Set element value (web)](../../../assets/Set element value (web)_command.png)
+![Set element value (web)](../../../assets/Set%20element%20value%20(web)_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target element to exist.
-
-
-**Command Output**
 
 ### Error Handling
 

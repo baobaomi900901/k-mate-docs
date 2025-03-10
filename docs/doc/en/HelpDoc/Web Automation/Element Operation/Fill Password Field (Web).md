@@ -11,7 +11,7 @@ order: 3
 Enter a password in the web page's password field
 :::
 
-![Fill Password Field (Web)](../../../assets/Fill Password Field (Web)_command.png)
+![Fill Password Field (Web)](../../../assets/Fill%20Password%20Field%20(Web)_command.png)
 
 ## Configuration Item Description
 
@@ -53,9 +53,6 @@ No output for the current command
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (Milliseconds)**`Integer`: Set the maximum wait time
-
-
-**Command Output**
 
 ### Error Handling
 

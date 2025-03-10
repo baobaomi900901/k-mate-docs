@@ -11,7 +11,7 @@ order: 14
 This command is used to reverse a list
 :::
 
-![Reverse List](../../../assets/Reverse List_command.png)
+![Reverse List](../../../assets/Reverse%20List_command.png)
 
 ## Configuration Item Description
 
@@ -25,9 +25,6 @@ This command is used to reverse a list
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

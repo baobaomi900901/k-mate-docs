@@ -11,7 +11,7 @@ order: 4
 Get web page text content, URL, source code, title, etc.
 :::
 
-![Get Web Page Information](../../../assets/Get Web Page Information_command.png)
+![Get Web Page Information](../../../assets/Get%20Web%20Page%20Information_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Get web page text content, URL, source code, title, etc.
 ### Advanced
 
 - **DelayBefore**`Integer`: 
-
-
-**Command Output**
 
 ### Error Handling
 

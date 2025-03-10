@@ -11,7 +11,7 @@ order: 7
 Read content from an Excel file, supports reading within a rectangular area range.
 :::
 
-![Read Excel Content](../../../assets/Read Excel Content_command.png)
+![Read Excel Content](../../../assets/Read%20Excel%20Content_command.png)
 
 ## Configuration Item Description
 
@@ -53,9 +53,6 @@ Read content from an Excel file, supports reading within a rectangular area rang
 - **Clear Space Before and After Cell**`Boolean`: If checked, automatically clears spaces before and after the read content.
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

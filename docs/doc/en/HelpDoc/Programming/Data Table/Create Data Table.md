@@ -11,7 +11,7 @@ order: 1
 Create a data table (2D table)
 :::
 
-![Create Data Table](../../../assets/Create Data Table_command.png)
+![Create Data Table](../../../assets/Create%20Data%20Table_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Create a data table (2D table)
 ### Advanced
 
 - **Encoding Format**`Integer`: If the data appears with garbled characters, set the encoding format. Generally use utf-8 for Excel files and gb18030 for CSV files.
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 1
 Execute instructions while the screensaver is active and display custom text prompts
 :::
 
-![Wake up Screensaver](../../../assets/Wake up Screensaver_command.png)
+![Wake up Screensaver](../../../assets/Wake%20up%20Screensaver_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

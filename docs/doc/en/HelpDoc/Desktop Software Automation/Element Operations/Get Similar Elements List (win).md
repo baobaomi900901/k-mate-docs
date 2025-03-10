@@ -11,7 +11,7 @@ order: 9
 You can locate a set of similar elements on the window through capturing elements, CSS, and XPath, and get their objects or text information.
 :::
 
-![Get Similar Elements List (win)](../../../assets/Get Similar Elements List (win)_command.png)
+![Get Similar Elements List (win)](../../../assets/Get%20Similar%20Elements%20List%20(win)_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ You can locate a set of similar elements on the window through capturing element
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (ms)**`Integer`: Timeout time for waiting for the target associated element to exist.
-
-
-**Command Output**
 
 ### Error Handling
 

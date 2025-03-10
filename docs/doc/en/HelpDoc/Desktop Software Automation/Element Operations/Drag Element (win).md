@@ -11,7 +11,7 @@ order: 1
 Drag the element to the specified position in the specified window
 :::
 
-![Drag Element (win)](../../../assets/Drag Element (win)_command.png)
+![Drag Element (win)](../../../assets/Drag%20Element%20(win)_command.png)
 
 ## Configuration Item Description
 
@@ -55,9 +55,6 @@ No output for the current command
 - **Vertical Panning**`Integer`: Enter a positive number to move down, a negative number to move up
 
 - **Wait for Element to Exist (ms)**`Integer`: Timeout for waiting for the element to exist
-
-
-**Command Output**
 
 ### Error Handling
 

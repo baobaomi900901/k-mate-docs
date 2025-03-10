@@ -11,7 +11,7 @@ order: 10
 Replace specified content in the text
 :::
 
-![Replace Text](../../../assets/Replace Text_command.png)
+![Replace Text](../../../assets/Replace%20Text_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Replace specified content in the text
 **Command Output**
 
 - **Save Result To**`string`: Specify a variable to save the replaced content
-
-
-**Command Output**
 
 ### Error Handling
 

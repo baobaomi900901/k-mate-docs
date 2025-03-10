@@ -11,7 +11,7 @@ order: 3
 Send content to FeiShu group
 :::
 
-![FeiShu Group Notification](../../../assets/FeiShu Group Notification_command.png)
+![FeiShu Group Notification](../../../assets/FeiShu%20Group%20Notification_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

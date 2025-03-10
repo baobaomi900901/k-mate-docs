@@ -11,7 +11,7 @@ order: 4
 Clear cell format
 :::
 
-![Clear Format](../../../../assets/Clear Format_command.png)
+![Clear Format](../../../../assets/Clear%20Format_command.png)
 
 ## Configuration Item Description
 
@@ -49,9 +49,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

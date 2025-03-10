@@ -11,7 +11,7 @@ order: 2
 Write the data table to an Excel or CSV file
 :::
 
-![Write to File](../../../assets/Write to File_command.png)
+![Write to File](../../../assets/Write%20to%20File_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ Write the data table to an Excel or CSV file
 **Command Output**
 
 - **Path After Writing**`string`: Output the path after successful writing.
-
-
-**Command Output**
 
 ### Error Handling
 

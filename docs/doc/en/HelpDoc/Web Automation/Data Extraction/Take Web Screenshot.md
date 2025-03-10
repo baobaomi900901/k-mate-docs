@@ -11,7 +11,7 @@ order: 1
 Take a screenshot of the specified area and save it to a file or add it to the clipboard.
 :::
 
-![Take Web Screenshot](../../../assets/Take Web Screenshot_command.png)
+![Take Web Screenshot](../../../assets/Take%20Web%20Screenshot_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ Take a screenshot of the specified area and save it to a file or add it to the c
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the target element to exist.
-
-
-**Command Output**
 
 ### Error Handling
 

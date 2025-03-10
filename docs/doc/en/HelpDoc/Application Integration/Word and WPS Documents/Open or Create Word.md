@@ -11,7 +11,7 @@ order: 1
 Open an existing Word file or create a new one to automate Word operations
 :::
 
-![Open or Create Word](../../../assets/Open or Create Word_command.png)
+![Open or Create Word](../../../assets/Open%20or%20Create%20Word_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ Open an existing Word file or create a new one to automate Word operations
 - **Edit Password**`string`: Password used to edit an encrypted Word file
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 5
 Get the current position or bottom position (i.e., scroll length) of the scrollbar in a web page or element
 :::
 
-![Get Scrollbar Position](../../../assets/Get Scrollbar Position_command.png)
+![Get Scrollbar Position](../../../assets/Get%20Scrollbar%20Position_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ Get the current position or bottom position (i.e., scroll length) of the scrollb
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target scrollbar to exist
-
-
-**Command Output**
 
 ### Error Handling
 

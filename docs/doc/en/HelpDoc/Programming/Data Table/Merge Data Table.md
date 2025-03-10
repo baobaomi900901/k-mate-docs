@@ -11,7 +11,7 @@ order: 14
 Merge the specified data table with the current data table, specifying whether to keep changes and how to handle schemas missing in the current data table.
 :::
 
-![Merge Data Table](../../../assets/Merge Data Table_command.png)
+![Merge Data Table](../../../assets/Merge%20Data%20Table_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Merge the specified data table with the current data table, specifying whether t
 **Command Output**
 
 No output for the current command
-
-
-**Command Output**
 
 ### Error Handling
 

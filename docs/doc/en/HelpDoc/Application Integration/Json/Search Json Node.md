@@ -11,7 +11,7 @@ order: 12
 Search a Json node by path
 :::
 
-![Search Json Node](../../../assets/Search Json Node_command.png)
+![Search Json Node](../../../assets/Search%20Json%20Node_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Search a Json node by path
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

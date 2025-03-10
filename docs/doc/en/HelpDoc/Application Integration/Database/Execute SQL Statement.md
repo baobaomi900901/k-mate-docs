@@ -11,7 +11,7 @@ order: 2
 Execute SQL statements such as Insert, Update, Delete in the specified database
 :::
 
-![Execute SQL Statement](../../../assets/Execute SQL Statement_command.png)
+![Execute SQL Statement](../../../assets/Execute%20SQL%20Statement_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ Execute SQL statements such as Insert, Update, Delete in the specified database
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

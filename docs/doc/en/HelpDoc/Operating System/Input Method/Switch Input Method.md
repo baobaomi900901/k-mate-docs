@@ -11,7 +11,7 @@ order: 4
 Switch the system input method, requires administrator privileges
 :::
 
-![Switch Input Method](../../../assets/Switch Input Method_command.png)
+![Switch Input Method](../../../assets/Switch%20Input%20Method_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 2
 Used to extract files/folders
 :::
 
-![Extract file(s) or folder(s)](../../../assets/Extract file(s) or folder(s)_command.png)
+![Extract file(s) or folder(s)](../../../assets/Extract%20file(s)%20or%20folder(s)_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Used to extract files/folders
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 11
 Iterate through each item in the similar element list on the web page for automated operations.
 :::
 
-![Cycle Similar Elements (Web)](../../../assets/Cycle Similar Elements (Web)_command.png)
+![Cycle Similar Elements (Web)](../../../assets/Cycle%20Similar%20Elements%20(Web)_command.png)
 
 ## Configuration Item Description
 
@@ -47,9 +47,6 @@ Iterate through each item in the similar element list on the web page for automa
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout for waiting for the existence of the target associated element.
-
-
-**Command Output**
 
 ### Error Handling
 

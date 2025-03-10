@@ -11,7 +11,7 @@ order: 4
 Set the selected item in a web dropdown. Only effective for `<select>` tags on the webpage.
 :::
 
-![Set dropdown (web)](../../../assets/Set dropdown (web)_command.png)
+![Set dropdown (web)](../../../assets/Set%20dropdown%20(web)_command.png)
 
 ## Configuration Item Description
 
@@ -41,9 +41,6 @@ No output for the current command
 - **Delay Before (ms)**`Integer`: The waiting time before instruction execution
 
 - **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target dropdown to exist.
-
-
-**Command Output**
 
 ### Error Handling
 

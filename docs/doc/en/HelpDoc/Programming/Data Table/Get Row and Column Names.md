@@ -11,7 +11,7 @@ order: 5
 Read the row and column names of the data table
 :::
 
-![Get Row and Column Names](../../../assets/Get Row and Column Names_command.png)
+![Get Row and Column Names](../../../assets/Get%20Row%20and%20Column%20Names_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Read the row and column names of the data table
 - **Row Names**`string`: The default row name is the first position of each row in the data table
 
 - **Column Names**`string`: Column Names
-
-
-**Command Output**
 
 ### Error Handling
 

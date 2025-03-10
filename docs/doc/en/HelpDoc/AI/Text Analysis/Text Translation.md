@@ -11,7 +11,7 @@ order: 4
 Call the Kingsware AI interface for text translation
 :::
 
-![Text Translation](../../../assets/Text Translation_command.png)
+![Text Translation](../../../assets/Text%20Translation_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ Call the Kingsware AI interface for text translation
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

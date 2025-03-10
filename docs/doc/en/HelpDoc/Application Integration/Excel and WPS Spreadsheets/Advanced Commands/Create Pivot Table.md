@@ -11,7 +11,7 @@ order: 7
 Create a pivot table from the specified range
 :::
 
-![Create Pivot Table](../../../../assets/Create Pivot Table_command.png)
+![Create Pivot Table](../../../../assets/Create%20Pivot%20Table_command.png)
 
 ## Configuration Item Description
 
@@ -39,9 +39,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

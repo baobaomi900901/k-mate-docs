@@ -11,7 +11,7 @@ order: 1
 Execute a macro in the workbook. The workbook file must be a macro-enabled workbook. Changes will be saved immediately.
 :::
 
-![Run Excel Macro](../../../../assets/Run Excel Macro_command.png)
+![Run Excel Macro](../../../../assets/Run%20Excel%20Macro_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Execute a macro in the workbook. The workbook file must be a macro-enabled workb
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

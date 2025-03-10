@@ -11,7 +11,7 @@ order: 13
 Delete a node from the Json object
 :::
 
-![Delete Json Object](../../../assets/Delete Json Object_command.png)
+![Delete Json Object](../../../assets/Delete%20Json%20Object_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

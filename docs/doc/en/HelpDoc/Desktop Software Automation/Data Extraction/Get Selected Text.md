@@ -11,7 +11,7 @@ order: 4
 Get the currently selected text in the active window
 :::
 
-![Get Selected Text](../../../assets/Get Selected Text_command.png)
+![Get Selected Text](../../../assets/Get%20Selected%20Text_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Get the currently selected text in the active window
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

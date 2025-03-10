@@ -11,7 +11,7 @@ order: 2
 Call the Kingsware AI interface to detect human body keypoints (including head, facial features, neck, limbs, etc.) and return the detection result
 :::
 
-![Human Body Keypoint Detection](../../../assets/Human Body Keypoint Detection_command.png)
+![Human Body Keypoint Detection](../../../assets/Human%20Body%20Keypoint%20Detection_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Call the Kingsware AI interface to detect human body keypoints (including head, 
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

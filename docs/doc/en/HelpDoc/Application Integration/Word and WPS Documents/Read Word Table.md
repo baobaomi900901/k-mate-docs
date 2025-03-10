@@ -11,7 +11,7 @@ order: 8
 Read the table content from a Word document
 :::
 
-![Read Word Table](../../../assets/Read Word Table_command.png)
+![Read Word Table](../../../assets/Read%20Word%20Table_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ Read the table content from a Word document
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

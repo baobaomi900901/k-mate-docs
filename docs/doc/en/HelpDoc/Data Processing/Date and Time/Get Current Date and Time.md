@@ -11,7 +11,7 @@ order: 1
 Get the current date and time
 :::
 
-![Get Current Date and Time](../../../assets/Get Current Date and Time_command.png)
+![Get Current Date and Time](../../../assets/Get%20Current%20Date%20and%20Time_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ No input for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

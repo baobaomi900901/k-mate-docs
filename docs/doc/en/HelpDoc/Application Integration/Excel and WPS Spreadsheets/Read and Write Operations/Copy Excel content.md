@@ -11,7 +11,7 @@ order: 2
 Copy content from the Excel file
 :::
 
-![Copy Excel content](../../../../assets/Copy Excel content_command.png)
+![Copy Excel content](../../../../assets/Copy%20Excel%20content_command.png)
 
 ## Configuration Item Description
 
@@ -49,9 +49,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

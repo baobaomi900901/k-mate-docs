@@ -11,7 +11,7 @@ order: 4
 Get the data type of the Json object
 :::
 
-![Get Json Data Type](../../../assets/Get Json Data Type_command.png)
+![Get Json Data Type](../../../assets/Get%20Json%20Data%20Type_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Get the data type of the Json object
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

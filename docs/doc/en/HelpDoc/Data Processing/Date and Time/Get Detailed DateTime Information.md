@@ -11,7 +11,7 @@ order: 7
 Get the year, month, day, hour, minute, second, weekday, last day of the month, week number of the year, and day of the year from a DateTime object
 :::
 
-![Get Detailed DateTime Information](../../../assets/Get Detailed DateTime Information_command.png)
+![Get Detailed DateTime Information](../../../assets/Get%20Detailed%20DateTime%20Information_command.png)
 
 ## Configuration Item Description
 
@@ -29,9 +29,6 @@ Get the year, month, day, hour, minute, second, weekday, last day of the month, 
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

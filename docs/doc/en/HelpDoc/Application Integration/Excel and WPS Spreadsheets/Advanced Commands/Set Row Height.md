@@ -11,7 +11,7 @@ order: 5
 Set row height
 :::
 
-![Set Row Height](../../../../assets/Set Row Height_command.png)
+![Set Row Height](../../../../assets/Set%20Row%20Height_command.png)
 
 ## Configuration Item Description
 
@@ -37,9 +37,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

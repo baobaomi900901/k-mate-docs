@@ -11,7 +11,7 @@ order: 1
 Http Request
 :::
 
-![Http Request](../../../assets/Http Request_command.png)
+![Http Request](../../../assets/Http%20Request_command.png)
 
 ## Configuration Item Description
 
@@ -43,9 +43,6 @@ Http Request
 - **File Save Directory**`string`: Enter the path where the file will be saved
 
 - **File Name**`string`: Enter the name to be saved in the folder
-
-
-**Command Output**
 
 ### Error Handling
 

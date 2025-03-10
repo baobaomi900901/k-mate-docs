@@ -11,7 +11,7 @@ order: 15
 Save Json
 :::
 
-![Save Json](../../../assets/Save Json_command.png)
+![Save Json](../../../assets/Save%20Json_command.png)
 
 ## Configuration Item Description
 
@@ -31,9 +31,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

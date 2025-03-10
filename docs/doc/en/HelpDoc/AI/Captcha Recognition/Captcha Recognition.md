@@ -11,7 +11,7 @@ order: 1
 Call the Kingsware AI interface for captcha recognition
 :::
 
-![Captcha Recognition](../../../assets/Captcha Recognition_command.png)
+![Captcha Recognition](../../../assets/Captcha%20Recognition_command.png)
 
 ## Configuration Item Description
 
@@ -51,9 +51,6 @@ Call the Kingsware AI interface for captcha recognition
 - **DelayBefore(milliseconds)**`Integer`: The waiting time before instruction execution
 
 - **Timeout (milliseconds)**`Integer`: Maximum wait time (milliseconds)
-
-
-**Command Output**
 
 ### Error Handling
 

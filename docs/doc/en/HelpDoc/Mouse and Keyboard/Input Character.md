@@ -11,7 +11,7 @@ order: 2
 Input text to the currently active window
 :::
 
-![Input Character](../../assets/Input Character_command.png)
+![Input Character](../../assets/Input%20Character_command.png)
 
 ## Configuration Item Description
 
@@ -33,9 +33,6 @@ No output for the current command
 - **Key Input Interval (Milliseconds)**`Integer`: Time interval between two key presses
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

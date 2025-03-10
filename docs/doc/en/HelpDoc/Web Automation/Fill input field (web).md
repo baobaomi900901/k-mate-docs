@@ -11,7 +11,7 @@ order: 5
 Enter content in the web input field
 :::
 
-![Fill input field (web)](../../assets/Fill input field (web)_command.png)
+![Fill input field (web)](../../assets/Fill%20input%20field%20(web)_command.png)
 
 ## Configuration Item Description
 
@@ -55,9 +55,6 @@ No output for the current command
 - **Vertical translation**`Integer`: Enter a positive number to move down, a negative number to move up
 
 - **Wait for element existence (ms)**`Integer`: Timeout for waiting for the target input field to exist
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 6
 Cycle through the content of an Excel object and save the loop items
 :::
 
-![Cycle through Excel content](../../../assets/Cycle through Excel content_command.png)
+![Cycle through Excel content](../../../assets/Cycle%20through%20Excel%20content_command.png)
 
 ## Configuration Item Description
 
@@ -51,9 +51,6 @@ Cycle through the content of an Excel object and save the loop items
 - **Remove leading and trailing spaces from cells**`Boolean`: If checked, leading and trailing spaces in the read content will be automatically removed
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

@@ -11,7 +11,7 @@ order: 19
 Write a value/formula into a cell or range in the spreadsheet. If a value exists, it will be overwritten. The changes are saved immediately.
 :::
 
-![Write Cell](../../../../assets/Write Cell_command.png)
+![Write Cell](../../../../assets/Write%20Cell_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ No output for the current command
 ### Advanced
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
-
-
-**Command Output**
 
 ### Error Handling
 

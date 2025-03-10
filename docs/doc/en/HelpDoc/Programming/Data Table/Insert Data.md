@@ -11,7 +11,7 @@ order: 7
 Insert a row or column of data at a specified position in the data table. If the inserted data is empty, an empty row or column will be inserted.
 :::
 
-![Insert Data](../../../assets/Insert Data_command.png)
+![Insert Data](../../../assets/Insert%20Data_command.png)
 
 ## Configuration Item Description
 
@@ -45,9 +45,6 @@ Insert a row or column of data at a specified position in the data table. If the
 **Command Output**
 
 - **Result after Inserting**`TDataTable`: The data table after inserting data.
-
-
-**Command Output**
 
 ### Error Handling
 

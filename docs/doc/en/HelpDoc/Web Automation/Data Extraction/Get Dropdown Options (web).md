@@ -11,7 +11,7 @@ order: 3
 Get the options of a dropdown in the web page
 :::
 
-![Get Dropdown Options (web)](../../../assets/Get Dropdown Options (web)_command.png)
+![Get Dropdown Options (web)](../../../assets/Get%20Dropdown%20Options%20(web)_command.png)
 
 ## Configuration Item Description
 
@@ -35,9 +35,6 @@ Get the options of a dropdown in the web page
 - **DelayBefore**`Integer`: 
 
 - **Wait for Element to Exist (Milliseconds)**`Integer`: Timeout period for waiting for the target dropdown to exist
-
-
-**Command Output**
 
 ### Error Handling
 
