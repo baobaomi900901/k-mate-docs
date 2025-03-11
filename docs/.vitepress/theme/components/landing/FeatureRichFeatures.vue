@@ -85,7 +85,7 @@
             元素捕获器
           </div>
           <div class="text-lg mt-4 opacity-70">
-            全面支持中文脚本和Python代码，兼容各种Python库的接入。通过支持Python表达式，用户可以更灵活地满足各类业务需求。
+            通过快捷键快速捕获任何网页或桌面软件中的元素，迅速实现业务流程的操作，提高效率。
           </div>
         </div>
         <div class="w-full h-full">
