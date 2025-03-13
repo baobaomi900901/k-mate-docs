@@ -13,10 +13,10 @@ hero:
   actions:
     - theme: brand
       text: Start
-      link: /Start
+      link: /HelpDoc
     - theme: alt
       text: Document
-      link: /Document
+      link: /HelpDoc
 features:
   - icon: 📝
     title: 专注内容
