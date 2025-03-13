@@ -53,6 +53,32 @@ const vitePressConfig = {
       host: "0.0.0.0",
       port: 3000,
     },
+    esbuild: {
+      // minifySyntax: false,
+      // minifyWhitespace: false,
+      // minifyIdentifiers: false,
+      drop: ["console", "debugger"],
+    },
+    // build: {
+    //   // cssCodeSplit: true, //拆分 css
+    //   rollupOptions: {
+    //     plugins: [],
+    //     output: {
+    //       // chunkFileNames: 'assets/js/chunks/[name]-[hash].js',
+    //       // entryFileNames: 'assets/js/entries/[name]-[hash].js', //会干扰 VitePress 内部模块解析
+    //       assetFileNames: ({ name }) => {
+    //         if (/\.(woff2?|ttf|eot)$/.test(name ?? "")) {
+    //           return "assets/fonts/[name]-[hash][extname]";
+    //         }
+    //         if (/\.(png|jpe?g|gif|webp|avif)$/.test(name ?? "")) {
+    //           return "assets/img/[name]-[hash][extname]";
+    //         }
+    //         return "assets/[ext]/[name]-[hash][extname]";
+    //       },
+    //       manualChunks: (id) => {},
+    //     },
+    //   },
+    // },
   },
 
   // 优化搜索引擎结果
@@ -96,29 +122,29 @@ const vitePressConfig = {
   themeConfig: {
     logo: { src: "/k-rpa-lite-logo.svg", width: 32, height: 32 },
 
-    meilisearch: {
-      host: "https://meilisearch.donxj.com",
-      apiKey:
-        "646f90bf02522026b531be2d4d491ba1e2721802f43b72ae72f0a2e5eeca711a",
-      indexUid: "k-rpa-lite-zh", // 默认中文索引
-      locales: {
-        en: {
-          indexUid: "k-rpa-lite-en",
-          translations: {
-            button: { buttonText: "Search" },
-            modal: {
-              searchDocsPlaceHolder: "Search documentation...",
-              resetButtonTitle: "Reset search",
-              cancelButtonText: "Cancel",
-              selectText: "Select",
-              navigateText: "Navigate",
-              closeText: "Close",
-              poweredByText: "Powered by",
-            },
-          },
-        },
-      },
-    },
+    // meilisearch: {
+    //   host: "https://meilisearch.donxj.com",
+    //   apiKey:
+    //     "646f90bf02522026b531be2d4d491ba1e2721802f43b72ae72f0a2e5eeca711a",
+    //   indexUid: "k-rpa-lite-zh", // 默认中文索引
+    //   locales: {
+    //     en: {
+    //       indexUid: "k-rpa-lite-en",
+    //       translations: {
+    //         button: { buttonText: "Search" },
+    //         modal: {
+    //           searchDocsPlaceHolder: "Search documentation...",
+    //           resetButtonTitle: "Reset search",
+    //           cancelButtonText: "Cancel",
+    //           selectText: "Select",
+    //           navigateText: "Navigate",
+    //           closeText: "Close",
+    //           poweredByText: "Powered by",
+    //         },
+    //       },
+    //     },
+    //   },
+    // },
     // search: {
     //   provider: 'local',
     //   options: {
@@ -145,10 +171,11 @@ const vitePressConfig = {
       md.use(paragraphIds);
     },
   },
+  // assetsDir: "assets/js",
   metaChunk: true,
-  sitemap: {
-    hostname: "https://king.docs.donxj.com",
-  },
+  // sitemap: {
+  //   hostname: "https://krpalite.com",
+  // },
 };
 
 export default defineConfig(

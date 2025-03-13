@@ -48,8 +48,9 @@
 import { onMounted, ref } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "../../../plugin/ScrollSmoother.js";
 import { TextPlugin } from "gsap/TextPlugin";
-gsap.registerPlugin(ScrollTrigger, TextPlugin);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, TextPlugin);
 
 const heroActions = ref(null);
 const textActions = ref(null);
@@ -60,6 +61,12 @@ const mainTitle = ref(null);
 const description = ref(null);
 
 onMounted(() => {
+  // 平滑滚动
+  // ScrollSmoother.create({
+  //   smooth: 1, // 需要多长时间（以秒为单位）才能“追上”原始滚动位置
+  //   effects: true, // 在元素上查找数据-速度和数据-延迟属性
+  //   smoothTouch: 0.1, // 触摸设备上的平滑时间更短（默认为触摸设备上无平滑处理）
+  // });
   // 滚动动画
   // 统一配置对象
   const breakpoints = {
