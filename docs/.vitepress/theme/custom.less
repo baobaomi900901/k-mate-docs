@@ -131,6 +131,18 @@ img {
   border-radius: 0.5rem;
 }
 
+// 滚动条样式
+.os-scrollbar {
+  --os-handle-bg: rgba(0, 0, 0, 0.44);
+  --os-handle-bg-hover: rgba(0, 0, 0, 0.55);
+  --os-handle-bg-active: rgba(0, 0, 0, 0.66);
+}
+.dark .os-scrollbar {
+  --os-handle-bg: rgba(255, 255, 255, 0.44);
+  --os-handle-bg-hover: rgba(255, 255, 255, 0.55);
+  --os-handle-bg-active: rgba(255, 255, 255, 0.66);
+}
+
 @media (min-width: 960px) {
   header.VPNav {
     .VPNavBar:not(.has-sidebar):not(.top.home) {
