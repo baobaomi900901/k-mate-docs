@@ -19,18 +19,18 @@ order: 1
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
 - **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
 
 
 **指令输出**
 
-- **保存总行数至**`Integer`: 保存总行数
+- **存储总行数到**`Integer`: 存储总行数
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

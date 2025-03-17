@@ -1,17 +1,17 @@
 ---
-title: 打开或新建Word
+title: 打开/新建Word
 order: 1
 ---
 
-# 打开或新建Word
+# 打开/新建Word
 
 ## 功能说明
 
 :::tip 功能描述
-打开已有的Word文件，或新建Word，以实现Word程序的自动化
+打开/新建Word文件，实现Word程序自动化处理
 :::
 
-![打开或新建Word](../../../assets/打开或新建Word_command.png)
+![打开/新建Word](../../../assets/打开/新建Word_command.png)
 
 ## 配置项说明
 
@@ -19,18 +19,18 @@ order: 1
 
 **指令输入**
 
-- **启动方式**`Integer`: 选择要新建一个Word文件还是打开一个Word文件
+- **启动方式**`Integer`: 新建一个Word文件或者打开已有的Word文件
 
-- **驱动方式**`Integer`: 选择驱动方式
+- **驱动方式**`Integer`: 指定驱动方式
 
-- **Word文件路径**`string`: 填写或选择要打开的Word文件路径
+- **Word文件路径**`string`: 配置要打开的Word文件路径
 
-- **是否可视化**`Boolean`: 此选项并不会限制Word自动化的能力，只是用于控制可视化操作是否用户可见，如果是非可视化下操作Word，保存之后必须要关闭Word
+- **是否可视化**`Boolean`: 此选项不会影响Word自动化的相关操作，只是用于显示可视化操作过程，如果是非可视化下操作Word，保存之后必须要关闭Word
 
 
 **指令输出**
 
-- **保存Word对象至**`TDocumentApplication`: 指定一个变量，用于保存Word对象，使用此Word对象可以对Word进行自动化操作
+- **存储Word对象到**`TDocumentApplication`: 指定一个变量，用于存储Word对象，使用此Word对象可以对Word进行自动化处理
 
 ### 高级
 
@@ -38,7 +38,7 @@ order: 1
 
 - **编辑密码**`string`: 用于打开加密Word文件编辑权限的编辑密码
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

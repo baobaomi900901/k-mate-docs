@@ -8,7 +8,7 @@ order: 8
 ## 功能说明
 
 :::tip 功能描述
-刷新数据透视表
+刷新Excel中的数据透视表
 :::
 
 ![刷新数据透视表](../../../../assets/刷新数据透视表_command.png)
@@ -19,11 +19,11 @@ order: 8
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
 - **所在Sheet页名称**`string`: 视图所在Sheet页名称
 
-- **透视表名称或位置**`string`: 若一个sheet页只有一个数据透视表，填1即可
+- **透视表名称或位置**`string`: 如果sheet页只有一个数据透视表，填1即可
 
 
 **指令输出**
@@ -32,7 +32,7 @@ order: 8
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

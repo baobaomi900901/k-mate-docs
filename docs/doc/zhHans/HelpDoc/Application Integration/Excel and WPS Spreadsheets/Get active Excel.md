@@ -24,11 +24,11 @@ order: 2
 
 **指令输出**
 
-- **保存Excel对象至**`TWorkbookApplication`: 该变量保存的是Excel对象，使用此Excel对象可以对Excel进行自动化操作
+- **存储Excel对象到**`TWorkbookApplication`: 该变量存储的是Excel对象，使用此Excel对象可以对Excel进行自动化相关操作
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

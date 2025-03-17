@@ -1,17 +1,17 @@
 ---
-title: 保存或另存Excel
+title: 保存或另存为Excel文件
 order: 3
 ---
 
-# 保存或另存Excel
+# 保存或另存为Excel文件
 
 ## 功能说明
 
 :::tip 功能描述
-保存或者另存Excel
+保存或者另存为Excel文件
 :::
 
-![保存或另存Excel](../../../assets/保存或另存Excel_command.png)
+![保存或另存为Excel文件](../../../assets/保存或另存为Excel文件_command.png)
 
 ## 配置项说明
 
@@ -19,11 +19,11 @@ order: 3
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **保存方式**`Integer`: 选择保存方式
+- **保存方式**`Integer`: 指定保存方式
 
-- **Excel文件路径**`string`: 打开的Excel文件路径
+- **Excel文件路径**`string`: 保存的Excel文件路径
 
 - **如果文件存在则覆盖**`Boolean`: 如果文件存在则覆盖
 
@@ -36,7 +36,7 @@ order: 3
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

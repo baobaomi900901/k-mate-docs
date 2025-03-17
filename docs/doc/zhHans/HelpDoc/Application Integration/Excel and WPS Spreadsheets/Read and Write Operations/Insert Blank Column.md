@@ -1,17 +1,17 @@
 ---
-title: 插入空列
+title: 插入空白列
 order: 15
 ---
 
-# 插入空列
+# 插入空白列
 
 ## 功能说明
 
 :::tip 功能描述
-在Excel表格中插入空列
+在Excel表格中插入空白列
 :::
 
-![插入空列](../../../../assets/插入空列_command.png)
+![插入空白列](../../../../assets/插入空白列_command.png)
 
 ## 配置项说明
 
@@ -19,11 +19,11 @@ order: 15
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **在第几列之前**`string`: 输入列名,从A或1开始，-n表示倒数第n列
+- **在第几列之前**`string`: 指定列名,从A或1开始，-n表示倒数第n列
 
-- **插入几列**`Integer`: 插入几个空列
+- **插入列数**`Integer`: 插入空白列列数
 
 - **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
 
@@ -34,7 +34,7 @@ order: 15
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

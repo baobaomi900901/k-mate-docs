@@ -8,7 +8,7 @@ order: 6
 ## 功能说明
 
 :::tip 功能描述
-设置列宽
+设置单元格列宽
 :::
 
 ![设置列宽](../../../../assets/设置列宽_command.png)
@@ -19,13 +19,13 @@ order: 6
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **列名称**`string`: 输入列名(支持A或1)，多列用A,B,C
+- **列名称**`string`: 指定列名(支持A或1)，多列用A,B,C
 
-- **方式**`Integer`: 选择设置列宽的方式
+- **方式**`Integer`: 设置列宽的方式
 
-- **列宽**`Integer`: 输入列宽
+- **列宽**`Integer`: 指定列宽
 
 - **Sheet页名称**`string`: 工作表名称
 
@@ -36,7 +36,7 @@ order: 6
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

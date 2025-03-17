@@ -1,17 +1,17 @@
 ---
-title: 删除所有行
+title: 清空所有行
 order: 12
 ---
 
-# 删除所有行
+# 清空所有行
 
 ## 功能说明
 
 :::tip 功能描述
-删除所有行
+清空所有行
 :::
 
-![删除所有行](../../../../assets/删除所有行_command.png)
+![清空所有行](../../../../assets/清空所有行_command.png)
 
 ## 配置项说明
 
@@ -19,7 +19,7 @@ order: 12
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
 - **Sheet页名称**`string`: 工作表名称
 
@@ -30,7 +30,7 @@ order: 12
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

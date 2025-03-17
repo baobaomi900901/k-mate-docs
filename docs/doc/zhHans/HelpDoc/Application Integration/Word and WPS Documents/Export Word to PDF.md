@@ -8,7 +8,7 @@ order: 2
 ## 功能说明
 
 :::tip 功能描述
-将Word文档导出为PDF
+将Word文档导出成PDF文件
 :::
 
 ![Word导出PDF](../../../assets/Word导出PDF_command.png)
@@ -19,17 +19,17 @@ order: 2
 
 **指令输入**
 
-- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开/新建Word'返回的Word对象
 
-- **导出范围**`Integer`: 提供多种Word导出范围
+- **导出范围**`Integer`: 设置Word导出范围
 
-- **起始页数**`Integer`: 填写要导出为PDF的起始页数，页码索引从1开始
+- **开始页数**`Integer`: 配置要导出为PDF的开始页数，页码索引从1开始
 
-- **结束页数**`Integer`: 填写要导出为PDF的结束页数，页码索引从1开始
+- **结束页数**`Integer`: 配置要导出为PDF的结束页数，页码索引从1开始
 
-- **PDF保存到**`string`: 填写要导出的PDF保存的文件名
+- **PDF文件保存到**`string`: 配置要导出的PDF文件保存的文件名
 
-- **如果文件存在则覆盖**`Boolean`: 如果文件存在则覆盖,PDF保存路径若不存在会自动创建
+- **如果文件存在则覆盖**`Boolean`: 如果文件存在则覆盖,PDF文件保存路径不存在则自动创建
 
 
 **指令输出**
@@ -38,7 +38,7 @@ order: 2
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

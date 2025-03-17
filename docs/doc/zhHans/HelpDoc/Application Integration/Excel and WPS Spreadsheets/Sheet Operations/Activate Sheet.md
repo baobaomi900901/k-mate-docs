@@ -19,11 +19,11 @@ order: 2
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **激活方式**`Integer`: 选择激活方式
+- **激活方式**`Integer`: 指定激活方式
 
-- **Sheet页名称/位置**`string`: 输入待激活的Sheet页名称,不能为空
+- **Sheet页名称/位置**`string`: 指定待激活的Sheet页名称,不能为空
 
 
 **指令输出**
@@ -32,7 +32,7 @@ order: 2
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

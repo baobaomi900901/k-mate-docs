@@ -8,7 +8,7 @@ order: 1
 ## 功能说明
 
 :::tip 功能描述
-打开已有的Excel文件，或新建Excel，以实现Excel程序的自动化
+打开已有的Excel文件，或新建Excel文件，以实现Excel程序的自动化
 :::
 
 ![打开或新建Excel](../../../assets/打开或新建Excel_command.png)
@@ -19,20 +19,18 @@ order: 1
 
 **指令输入**
 
-- **启动方式**`Integer`: 选择要新建一个Excel文件还是打开一个Excel文件
+- **启动方式**`Integer`: 请选择是否新建Excel文件，或者打开已有Excel文件
 
-- **驱动方式**`Integer`: 选择新建Excel文件或者打开Excel文件的驱动方式
+- **驱动方式**`Integer`: 请选择打开Excel文件的驱动方式
 
-- **Excel文件路径**`string`: 填写或选择要打开的Excel文件路径
+- **Excel文件路径**`string`: 选择或填写要打开的Excel文件路径
 
-- **是否可视化**`Boolean`: 此选项并不会限制Excel自动化的能力，只是用于控制可视化操作是否用户可见，如果是非可视化下操作Excel，保存之后必须要关闭Excel
-
-- **自动更新外部链接**`Boolean`: 自动更新外部链接，建议勾选可视化
+- **是否可视化**`Boolean`: 此选项不会影响Excel自动化的相关操作，只是用于控制可视化操作是否用户可见。如果是非可视化下操作Excel，保存之后必须要关闭Excel
 
 
 **指令输出**
 
-- **保存Excel对象至**`TWorkbookApplication`: 指定一个变量，用于保存Excel对象。使用此Excel对象可以对Excel进行自动化操作
+- **存储Excel对象到**`TWorkbookApplication`: 指定一个变量，用于存储Excel对象。使用此Excel对象可以对Excel进行自动化相关操作
 
 ### 高级
 
@@ -40,7 +38,7 @@ order: 1
 
 - **编辑密码**`string`: 用于编辑加密Excel的密码
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

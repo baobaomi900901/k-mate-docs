@@ -8,7 +8,7 @@ order: 11
 ## 功能说明
 
 :::tip 功能描述
-对Excel指定列做升序、降序，或者指定区域做自定义排序操作
+对Excel指定范围进行升降序，或自定义排序操作
 :::
 
 ![Excel排序](../../../../assets/Excel排序_command.png)
@@ -19,25 +19,25 @@ order: 11
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **排序方法**`Integer`: 可选择排序的方式
+- **排序方法**`Integer`: 指定排序方式
 
-- **排序列**`string`: 输入列名(支持A或1)，多列用A,B,C或A:C，-n表示倒数第n列
+- **排序列**`string`: 指定列名(支持A或1)，多列用A,B,C或A:C，-n表示倒数第n列
 
 - **扩展选定区域**`Boolean`: 扩展选定区域
 
-- **首行不参与排序**`Boolean`: 若勾选，则首行不参与排序
+- **首行不参与排序**`Boolean`: 设置是否首行不参与排序
 
 - **自定义序列**`string`: 自定义序列,如：Sun,Mon,Tue,Wed,Thu,Fri,Sat
 
-- **列**`string`: 输入列名(支持A或1)，多列用A,B,C或A:C，-n表示倒数第n列
+- **列**`string`: 指定列名(支持A或1)，多列用A,B,C或A:C，-n表示倒数第n列
 
-- **区域**`Integer`: 选择排序区域
+- **区域**`Integer`: 设置排序区域
 
-- **起始行号**`Integer`: 行号。从1开始
+- **开始行号**`Integer`: 行号。从1开始
 
-- **起始列名**`string`: 列名。从A开始
+- **开始列名**`string`: 列名。从A开始
 
 - **结束行号**`Integer`: 行号。从1开始
 
@@ -56,7 +56,7 @@ order: 11
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

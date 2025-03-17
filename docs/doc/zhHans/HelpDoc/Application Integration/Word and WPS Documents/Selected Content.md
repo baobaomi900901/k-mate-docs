@@ -1,17 +1,17 @@
 ---
-title: 选中内容
+title: 选中Word文档内容
 order: 14
 ---
 
-# 选中内容
+# 选中Word文档内容
 
 ## 功能说明
 
 :::tip 功能描述
-选中内容
+选中Word文档内容
 :::
 
-![选中内容](../../../assets/选中内容_command.png)
+![选中Word文档内容](../../../assets/选中Word文档内容_command.png)
 
 ## 配置项说明
 
@@ -19,22 +19,22 @@ order: 14
 
 **指令输入**
 
-- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开/新建Word'返回的Word对象
 
-- **选择方式**`Integer`: 选中的方式
+- **选择方式**`Integer`: 选中方式
 
-- **起始位置**`Integer`: 根据选择方式填写起始位置
+- **开始位置**`Integer`: 根据选择方式填写开始位置
 
 - **结束位置**`Integer`: 根据选择方式填写结束位置
 
 
 **指令输出**
 
-- **选中的文本**`string`: 选中的文本
+- **选中的文本**`string`: 选中的文本内容
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

@@ -8,7 +8,7 @@ order: 10
 ## 功能说明
 
 :::tip 功能描述
-删除行
+删除单元行
 :::
 
 ![删除Excel行](../../../../assets/删除Excel行_command.png)
@@ -19,9 +19,9 @@ order: 10
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **行号**`string`: 输入行号,多行用1,2,3或1:3, -n表示倒数第n行
+- **行号**`string`: 指定行号,多行用1,2,3或1:3, -n表示倒数第n行
 
 - **Sheet页名称**`string`: 工作表名称
 
@@ -32,7 +32,7 @@ order: 10
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

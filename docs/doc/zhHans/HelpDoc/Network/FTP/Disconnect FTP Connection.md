@@ -1,17 +1,17 @@
 ---
-title: 断开FTP连接
+title: 关闭FTP连接
 order: 2
 ---
 
-# 断开FTP连接
+# 关闭FTP连接
 
 ## 功能说明
 
 :::tip 功能描述
-断开当前FTP连接
+关闭当前FTP连接
 :::
 
-![断开FTP连接](../../../assets/断开FTP连接_command.png)
+![关闭FTP连接](../../../assets/关闭FTP连接_command.png)
 
 ## 配置项说明
 
@@ -19,7 +19,7 @@ order: 2
 
 **指令输入**
 
-- **FTP连接对象**`TFTP`: 需要断开连接的FTP对象
+- **FTP连接对象**`TFTP`: 请输入需要断开连接的FTP对象
 
 
 **指令输出**

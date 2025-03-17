@@ -11,7 +11,7 @@ order: 11
 如果不满足前面IF指令的条件，则执行以下操作
 :::
 
-![image-20250227163547117](../../assets/image-20250227163547117.png)
+![Else](../../assets/Else_command.png)
 
 ## 配置项说明
 

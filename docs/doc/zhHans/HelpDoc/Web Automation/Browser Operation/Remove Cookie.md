@@ -8,7 +8,7 @@ order: 6
 ## 功能说明
 
 :::tip 功能描述
-移除通过Cookie url、Cookie name指定的Cookie
+将通过Cookie url、Cookie name指定的Cookie移除
 :::
 
 ![移除Cookie](../../../assets/移除Cookie_command.png)
@@ -19,17 +19,17 @@ order: 6
 
 **指令输入**
 
-- **Url设置方式**`Integer`: Cookie Url设置值来源，可选择手动输入，如果选择网页对象，则自动使用网页Url指定
+- **Url设置方式**`Integer`: Cookie Url 的设置来源，也可选择手动输入，若选择网页对象，则自动使用该网页对象的 Url
 
-- **网页对象**`TBrowser`: 输入一个获取到的或者通过'打开网页'函数创建的网页对象
+- **网页对象**`TBrowser`: 输入一个获取到的或通过'打开网页'函数创建的网页对象
 
 - **浏览器类型**`Integer`: 设置指定类型浏览器Cookie
 
-- **Cookie Url**`string`: Cookie Url，将被移除的Cookie Url
+- **Cookie Url**`string`: Cookie Url，将要被移除的Cookie Url
 
 - **移除方式**`Integer`: 
 
-- **Cookie Name**`string`: 将被移除的Cookie名称
+- **Cookie Name**`string`: 将要被移除的Cookie名称
 
 
 **指令输出**
@@ -38,7 +38,7 @@ order: 6
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

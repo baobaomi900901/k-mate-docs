@@ -8,7 +8,7 @@ order: 6
 ## 功能说明
 
 :::tip 功能描述
-从单个Cookie store中获取与给定信息匹配的所有Cookie集合
+从单个Cookie store中获取与给定的信息匹配的所有Cookie集合
 :::
 
 ![获取筛选所有Cookie](../../../assets/获取筛选所有Cookie_command.png)
@@ -19,17 +19,17 @@ order: 6
 
 **指令输入**
 
-- **浏览器类型**`Integer`: 获取指定类型浏览器Cookie
+- **浏览器类型**`Integer`: 在指定类型浏览器中获取Cookie
 
-- **Cookie Url**`string`: 根据给定的Url筛选Cookie，为空则忽略Url筛选条件
+- **Cookie Url**`string`: 根据给定的Url筛选Cookie，如果为空则忽略Url筛选条件
 
-- **Cookie Name**`string`: 根据给定的Name筛选Cookie，为空则忽略Name筛选条件
+- **Cookie Name**`string`: 根据给定的Name筛选Cookie，如果为空则忽略Name筛选条件
 
-- **Cookie Domain**`string`: 默认为Url的Domain部分，忽略则该Cookie为host-only Cookie
+- **Cookie Domain**`string`: 默认为Url的Domain部分，如果忽略则该Cookie为host-only Cookie
 
-- **Cookie Path**`string`: 默认为Url的Path部分，为空则忽略Path筛选条件
+- **Cookie Path**`string`: 默认为Url的Path部分，如果为空则忽略Path筛选条件
 
-- **Cookie PartitionKey**`string`: 根据给定的PartitionKey筛选Cookie，为空则忽略PartitionKey筛选条件
+- **Cookie PartitionKey**`string`: 根据给定的PartitionKey条件筛选Cookie，如果留空则代表忽略PartitionKey中的筛选条件
 
 
 **指令输出**
@@ -38,15 +38,15 @@ order: 6
 
 ### 高级
 
-- **根据Cookie Secure属性筛选**`Boolean`: 筛选 secure=true 的Cookie或 secure=fasle 的Cookie
+- **根据Cookie Secure属性筛选**`Boolean`: 筛选 secure=true 或 secure=fasle 的Cookie
 
-- **仅Secure Cookie**`Boolean`: 设置Cookie是否被标记为HttpOnly，默认False
+- **仅Secure Cookie**`Boolean`: 设置Cookie是否被标记为HttpOnly，默认值为False
 
-- **根据Cookie 生命周期筛选**`Boolean`: 默认设置会话Cookie，取消勾选则设置持久化Cookie
+- **根据Cookie 生命周期筛选**`Boolean`: 默认设置会话Cookie，取消勾选则为持久化Cookie
 
 - **仅会话Cookie**`Boolean`: 筛选会话cookie集合
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

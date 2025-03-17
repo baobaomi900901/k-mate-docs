@@ -19,20 +19,20 @@ order: 5
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **列名**`string`: 输入列名(支持A或1)，-n表示倒数第n列
+- **列名**`string`: 指定列名(支持A或1)，-n表示倒数第n列
 
 - **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
 
 
 **指令输出**
 
-- **Sheet行号保存至**`Integer`: 指定一个变量，用于保存列上的第一个可用行号
+- **Sheet行号保存到**`Integer`: 指定一个变量，用于存储列上的第一个可用行号
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

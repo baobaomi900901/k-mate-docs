@@ -1,9 +1,9 @@
 ---
-title: 添加Sheet页
+title: 添加新Sheet页
 order: 1
 ---
 
-# 添加Sheet页
+# 添加新Sheet页
 
 ## 功能说明
 
@@ -11,7 +11,7 @@ order: 1
 子Excel对象中添加一个新的Sheet页，可以指定在头部添加或者末尾添加
 :::
 
-![添加Sheet页](../../../../assets/添加Sheet页_command.png)
+![添加新Sheet页](../../../../assets/添加新Sheet页_command.png)
 
 ## 配置项说明
 
@@ -19,9 +19,9 @@ order: 1
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **Sheet页名称**`string`: 输入待添加的Sheet页名称,不能为空
+- **Sheet页名称**`string`: 指定待添加的Sheet页名称,不能为空
 
 - **添加方式**`Integer`: 添加位置
 
@@ -32,7 +32,7 @@ order: 1
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

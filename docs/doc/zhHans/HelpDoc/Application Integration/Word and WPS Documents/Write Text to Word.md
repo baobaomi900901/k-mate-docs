@@ -1,17 +1,17 @@
 ---
-title: 写入文本至Word中
+title: 写入Word文本
 order: 4
 ---
 
-# 写入文本至Word中
+# 写入Word文本
 
 ## 功能说明
 
 :::tip 功能描述
-在Word文档当前选择区域中写入或覆盖文本
+在Word文档当前选择区域中写入文本
 :::
 
-![写入文本至Word中](../../../assets/写入文本至Word中_command.png)
+![写入Word文本](../../../assets/写入Word文本_command.png)
 
 ## 配置项说明
 
@@ -19,13 +19,13 @@ order: 4
 
 **指令输入**
 
-- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开/新建Word'返回的Word对象
 
-- **文本内容**`string`: 写入到当前选择区域的文本
+- **文本内容**`string`: 写入到Word指定区域的文本
 
-- **文本样式**`string`: 设置文本样式
+- **文本样式**`string`: 指定文本样式
 
-- **写入文本前换行**`Boolean`: 若勾选,则在写入前换行
+- **写入文本前换行**`Boolean`: 是否在写入前进行换行
 
 
 **指令输出**
@@ -34,7 +34,7 @@ order: 4
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

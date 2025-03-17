@@ -19,15 +19,15 @@ order: 18
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **状态**`Integer`: 设置Excel行列的隐藏属性
+- **设置行列属性**`Integer`: 设置Excel行列的隐藏属性
 
 - **区域**`Integer`: 指定要隐藏/取消隐藏的行或者列
 
-- **行号**`string`: 输入行号，多行用1,2,3或1:3，-n表示倒数第n行
+- **行号**`string`: 指定行号，多行用1,2,3或1:3，-n表示倒数第n行
 
-- **列名**`string`: 输入列名(支持A或1)，多列用A,B,C或A:C，-n表示倒数第n列
+- **列名**`string`: 指定列名(支持A或1)，多列用A,B,C或A:C，-n表示倒数第n列
 
 - **Sheet页名称**`string`: 为空则默认为当前激活的Sheet页
 
@@ -38,7 +38,7 @@ order: 18
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

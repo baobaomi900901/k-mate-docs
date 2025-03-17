@@ -19,11 +19,11 @@ order: 5
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **Sheet页名称**`string`: 输入待重命名的Sheet页名称,不能为空
+- **Sheet页名称**`string`: 指定待重命名的Sheet页名称,不能为空
 
-- **新的Sheet页名称**`string`: 输入新的Sheet页名称,不能为空
+- **新的Sheet页名称**`string`: 指定新的Sheet页名称,不能为空
 
 
 **指令输出**
@@ -32,7 +32,7 @@ order: 5
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

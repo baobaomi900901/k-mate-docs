@@ -1,17 +1,17 @@
 ---
-title: 保存Word
+title: 保存Word文档
 order: 12
 ---
 
-# 保存Word
+# 保存Word文档
 
 ## 功能说明
 
 :::tip 功能描述
-保存Word
+保存Word文档
 :::
 
-![保存Word](../../../assets/保存Word_command.png)
+![保存Word文档](../../../assets/保存Word文档_command.png)
 
 ## 配置项说明
 
@@ -19,13 +19,13 @@ order: 12
 
 **指令输入**
 
-- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开/新建Word'返回的Word对象
 
-- **保存方式**`Integer`: 输入一个通过'新建Word'或'打开Word'创建的Word对象
+- **保存方式**`Integer`: 输入一个通过'新建Word'或'打开Word'返回的Word对象
 
-- **Word文件路径**`string`: 填写或选择要打开的Word文件路径
+- **Word文件路径**`string`: 输入要打开的Word文件路径
 
-- **如果文件存在则覆盖**`Boolean`: 若文件已存在,又选择不覆盖,会报错提示文件已存在
+- **文件存在则覆盖**`Boolean`: 如果文件已存在,且没有勾选文件存在则覆盖,会报错提示文件已存在
 
 - **保存后关闭**`Boolean`: 保存后关闭
 
@@ -36,7 +36,7 @@ order: 12
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

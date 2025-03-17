@@ -19,15 +19,15 @@ order: 3
 
 **指令输入**
 
-- **源Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **源Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **源Sheet页名称**`string`: 输入待拷贝的Sheet页名称,不能为空
+- **源Sheet页名称**`string`: 指定待拷贝的Sheet页名称,不能为空
 
-- **拷贝方式**`Integer`: 选择拷贝方式
+- **拷贝方式**`Integer`: 指定拷贝方式
 
-- **目标Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **目标Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **新的Sheet页名称**`string`: 输入拷贝至的Sheet页名称,不能为空
+- **新的Sheet页名称**`string`: 指定拷贝至的Sheet页名称,不能为空
 
 - **新的Sheet页存在则覆盖**`Boolean`: 若新的sheet页存在，会覆盖原sheet页
 
@@ -38,7 +38,7 @@ order: 3
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

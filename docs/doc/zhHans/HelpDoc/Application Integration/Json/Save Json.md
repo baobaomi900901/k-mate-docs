@@ -1,17 +1,17 @@
 ---
-title: 保存Json
+title: 保存Json对象
 order: 15
 ---
 
-# 保存Json
+# 保存Json对象
 
 ## 功能说明
 
 :::tip 功能描述
-保存Json
+保存Json对象
 :::
 
-![保存Json](../../../assets/保存Json_command.png)
+![保存Json对象](../../../assets/保存Json对象_command.png)
 
 ## 配置项说明
 
@@ -19,9 +19,9 @@ order: 15
 
 **指令输入**
 
-- **Json对象**`TJson`: Json对象
+- **Json对象**`TJson`: 指定Json对象
 
-- **保存路径**`string`: 保存路径
+- **保存路径**`string`: 填写保存路径
 
 
 **指令输出**
@@ -30,7 +30,7 @@ order: 15
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

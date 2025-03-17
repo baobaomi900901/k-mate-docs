@@ -8,7 +8,7 @@ order: 6
 ## 功能说明
 
 :::tip 功能描述
-移动Word文档中光标
+移动Word文档中的光标位置
 :::
 
 ![移动Word光标](../../../assets/移动Word光标_command.png)
@@ -19,13 +19,13 @@ order: 6
 
 **指令输入**
 
-- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开/新建Word'返回的Word对象
 
-- **移动方向**`Integer`: 选择光标移动方向
+- **移动方向**`Integer`: 指定光标移动方向
 
-- **移动长度**`Integer`: 输入需要移动的单位长度
+- **移动长度**`Integer`: 设置需要移动的单位长度
 
-- **是否按下Shift键**`Boolean`: 若勾选,则在移动时按下Shift,移动区域的文本被选中
+- **是否按下Shift键**`Boolean`: 勾选后,移动时会按下Shift,移动区域的文本将被选中
 
 
 **指令输出**
@@ -34,7 +34,7 @@ order: 6
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

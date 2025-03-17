@@ -8,7 +8,7 @@ order: 3
 ## 功能说明
 
 :::tip 功能描述
-从Word文件中读取文本
+从Word文件中读取文本信息
 :::
 
 ![读取Word文本](../../../assets/读取Word文本_command.png)
@@ -19,18 +19,18 @@ order: 3
 
 **指令输入**
 
-- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开/新建Word'返回的Word对象
 
-- **读取范围**`Integer`: 提供Word内容读取范围
+- **读取范围**`Integer`: 指定Word内容读取范围
 
 
 **指令输出**
 
-- **保存Word内容为**`string`: 指定一个变量名称，该变量用于保存域数据内容
+- **存储Word内容到**`string`: 指定一个变量名称，该变量用于存储域数据内容
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

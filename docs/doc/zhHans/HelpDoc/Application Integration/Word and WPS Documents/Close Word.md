@@ -1,17 +1,17 @@
 ---
-title: 关闭Word
+title: 关闭Word文档
 order: 13
 ---
 
-# 关闭Word
+# 关闭Word文档
 
 ## 功能说明
 
 :::tip 功能描述
-关闭Word
+关闭Word文档
 :::
 
-![关闭Word](../../../assets/关闭Word_command.png)
+![关闭Word文档](../../../assets/关闭Word文档_command.png)
 
 ## 配置项说明
 
@@ -19,19 +19,19 @@ order: 13
 
 **指令输入**
 
-- **操作**`Integer`: 选择要关闭一共指定的Word文件还是关闭所有Word文件
+- **操作**`Integer`: 关闭指定的Word文件或关闭所有Word文件
 
-- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开或新建Word'创建的Word对象
+- **Word对象**`TDocumentApplication`: 输入一个通过函数'打开/新建Word'返回的Word对象
 
 - **关闭进程**`Integer`: 关闭进程
 
-- **终止Word进程**`Boolean`: 如果勾选,将强制结束属于当前用户的指定Word进程和由它启动的所有子进程
+- **终止Word进程**`Boolean`: 勾选后,将强制结束属于当前用户指定的Word进程和其启动的所有子进程
 
-- **关闭方式**`Integer`: 关闭方式
+- **关闭方式**`Integer`: 选择一个关闭方式
 
-- **Word文件路径**`string`: 填写或选择要打开的Word文件路径
+- **Word文件路径**`string`: 输入要打开的Word文件路径
 
-- **如果文件存在则覆盖**`Boolean`: 若文件已存在,又选择不覆盖,会报错提示文件已存在
+- **文件存在则覆盖**`Boolean`: 如果文件已存在,且没有勾选文件存在则覆盖,会报错提示文件已存在
 
 
 **指令输出**
@@ -40,7 +40,7 @@ order: 13
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

@@ -1,17 +1,17 @@
 ---
-title: 导出为PDF
+title: 导出为PDF文件格式
 order: 5
 ---
 
-# 导出为PDF
+# 导出为PDF文件格式
 
 ## 功能说明
 
 :::tip 功能描述
-将Excel文件导出为PDF
+将Excel文件导出为PDF文件格式
 :::
 
-![导出为PDF](../../../assets/导出为PDF_command.png)
+![导出为PDF文件格式](../../../assets/导出为PDF文件格式_command.png)
 
 ## 配置项说明
 
@@ -19,13 +19,13 @@ order: 5
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
 - **Sheet页名称**`string`: 填写Sheet页名称，为空则默认为当前激活的Sheet页
 
-- **全部Sheet页**`Boolean`: 若勾选，导出所有工作表
+- **全部Sheet页**`Boolean`: 若勾选，则导出所有工作表信息
 
-- **PDF保存到**`string`: 导出PDF保存的文件名
+- **PDF保存到**`string`: 导出PDF保存的文件路径
 
 - **如果文件存在则覆盖**`Boolean`: 如果文件存在则覆盖
 
@@ -36,7 +36,7 @@ order: 5
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

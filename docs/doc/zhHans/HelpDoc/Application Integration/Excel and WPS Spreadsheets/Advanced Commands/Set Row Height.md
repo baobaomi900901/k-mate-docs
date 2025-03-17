@@ -8,7 +8,7 @@ order: 5
 ## 功能说明
 
 :::tip 功能描述
-设置行高
+设置单元格行高
 :::
 
 ![设置行高](../../../../assets/设置行高_command.png)
@@ -19,13 +19,13 @@ order: 5
 
 **指令输入**
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'获得的Excel对象
+- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **行号**`string`: 输入行号，多行用1,2,3或1:3
+- **行号**`string`: 指定行号，多行用1,2,3或1:3
 
-- **方式**`Integer`: 选择设置行高的方式
+- **方式**`Integer`: 设置行高的方式
 
-- **行高**`Integer`: 输入行高
+- **行高**`Integer`: 指定行高
 
 - **Sheet页名称**`string`: 工作表名称
 
@@ -36,7 +36,7 @@ order: 5
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 

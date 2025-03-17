@@ -11,7 +11,7 @@ order: 10
 条件分支判断
 :::
 
-![image-20250227151313377](../../assets/image-20250227151313377.png)
+![Else IF](../../assets/Else IF_command.png)
 
 ## 配置项说明
 

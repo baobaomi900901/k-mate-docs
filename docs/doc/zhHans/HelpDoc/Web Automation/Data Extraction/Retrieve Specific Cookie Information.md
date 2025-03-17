@@ -8,7 +8,7 @@ order: 7
 ## 功能说明
 
 :::tip 功能描述
-如果指定的URL存在多个相同name的cookie，则返回path最长的cookie，若path长度相同，返回创建时间早的cookie
+用于根据规则获取指定的Cookie信息，如果指定的URL存在多个相同 Name 的 Cookie ，则返回 Path 最长的 Cookie ，如果Path长度相同，则返回创建时间最早的 Cookie
 :::
 
 ![获取指定Cookie信息](../../../assets/获取指定Cookie信息_command.png)
@@ -19,24 +19,24 @@ order: 7
 
 **指令输入**
 
-- **Url设置方式**`Integer`: Cookie Url设置值来源，可选择手动输入，如果选择网页对象，则自动使用网页Url指定
+- **Url设置方式**`Integer`: Cookie URL 设置值来源，可手动输入或选择网页对象，若选择网页对象，则自动使用网页的 URL
 
-- **网页对象**`TBrowser`: 输入一个获取到的或者通过'打开网页'函数创建的网页对象
+- **网页对象**`TBrowser`: 输入一个获取到的或通过'打开网页'函数创建的网页对象
 
-- **浏览器类型**`Integer`: 获取指定类型浏览器Cookie
+- **浏览器类型**`Integer`: 在指定类型的浏览器中获取Cookie
 
-- **Cookie Url**`string`: 根据给定的Url筛选Cookie，为空则忽略Url筛选条件
+- **Cookie Url**`string`: 根据给定的Url筛选Cookie，如果为空则代表忽略Url筛选条件
 
-- **Cookie Name**`string`: 根据给定的Name筛选Cookie，为空则忽略Name筛选条件
+- **Cookie Name**`string`: 根据给定的Name筛选Cookie，如果为空则代表忽略Name筛选条件
 
 
 **指令输出**
 
-- **保存Cookie至**`string`: 保存获取到的Cookie
+- **保存Cookie至**`string`: 指定一个变量，用于保存获取到的Cookie
 
 ### 高级
 
-- **执行前延迟(毫秒)**`Integer`: 指令执行前等待的时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
 
 ### 错误处理
 
