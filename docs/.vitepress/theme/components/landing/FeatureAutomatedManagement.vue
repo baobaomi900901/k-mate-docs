@@ -24,9 +24,9 @@
             通过云端管理和集群支持，让您能够灵活设定定期和按需的任务计划，确保重要工作按时完成，避免遗漏。同时，云端集中管理让您随时随地掌控任务进度，轻松实现跨部门、跨区域的无缝协作。
           </div>
         </div>
-        <div class="task-management-platform-bg rounded-3xl w-full lg:w-1/2 h-[480px] p-6 relative">
+        <div class="task-management-platform-bg rounded-3xl w-full lg:w-1/2 h-[480px]">
           <img
-            class="object-contain absolute origin-top-left scale-125 lg:scale-[160%] -translate-x-[8%] lg:-translate-x-[18%] -translate-y-[8%]"
+            class="h-[580px] max-h-fit max-w-fit object-cover object-left-top -translate-x-[1%] -translate-y-[1%]"
             src="./assets/task-management-platform@3x.png"
           />
         </div>

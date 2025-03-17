@@ -10,7 +10,7 @@ export interface IVersion {
   }[]
 }
 
-export const baseUrl = 'http://k-rpa-lite.kingsware.cn:48080'
+export const baseUrl = 'http://k-rpa-lite.kingsware.cn:58690'
 export const baseUrl2 = 'https://k-rpa-lite.donxj.com'
 const timeoutDuration = 15000
 let lastCheckedBaseUrl = baseUrl // 默认使用第一个 baseUrl
