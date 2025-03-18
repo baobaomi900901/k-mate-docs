@@ -1,0 +1,33 @@
+{
+  "index_uid": "k-rpa-lite-zh",
+  "start_urls": [
+    "https://king.docs.donxj.com/"
+  ],
+  "sitemap_urls": [
+    "https://king.docs.donxj.com/sitemap.xml"
+  ],
+  "stop_urls": [
+    "https://king.docs.donxj.com/en"
+  ],
+  "selectors": {
+    "lvl0": {
+      "selector": "section.has-active div h2",
+      "global": true,
+      "default_value": "Documentation"
+    },
+    "lvl1": {
+      "selector": ".content h1",
+      "global": true
+    },
+    "lvl2": ".content h2",
+    "lvl3": ".content h3",
+    "lvl4": ".content h4",
+    "lvl5": ".content h5",
+    "lvl6": ".content h6",
+    "text": ".content p, .content li"
+  },
+  "strip_chars": " .,;:#",
+  "min_indexed_level": 2,
+  "scrap_start_urls": true,
+  "relative_url": true
+}
