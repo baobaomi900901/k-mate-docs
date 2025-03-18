@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import { fileURLToPath, URL } from "node:url";
 import path from "node:path";
+import del from "rollup-plugin-delete";
 import paragraphIds from "./markdown-it-paragraph-ids.cjs";
 // import MiniSearch from "minisearch";
 import { withSidebar } from "vitepress-sidebar";
@@ -40,18 +41,47 @@ const vitePressConfig = {
         {
           find: /^.*\/VPNavBarSearch\.vue$/,
           replacement: fileURLToPath(
-            new URL("./theme/components/MeiliSearchBox/MeiliSearchBox.vue", import.meta.url)
+            new URL(
+              "./theme/components/MeiliSearchBox/MeiliSearchBox.vue",
+              import.meta.url
+            )
           ),
         },
       ],
     },
     ssr: {
-      noExternal: ['gsap', 'gsap/*', 'ksw-vue-icon', '@ksware/ksw-ux']
+      noExternal: ["gsap", "gsap/*", "ksw-vue-icon", "@ksware/ksw-ux"],
     },
     // Network
     server: {
       host: "0.0.0.0",
       port: 3000,
+    },
+    esbuild: {
+      drop: ["console", "debugger"],
+    },
+    build: {
+      rollupOptions: {
+        plugins: [
+          del({
+            targets: ["./docs/.vitepress/dist/*", "./docs/.vitepress/cache/*"],
+            runOnce: true,
+          }),
+        ],
+        output: {
+          chunkFileNames: "assets/js/chunks/[name]-[hash].js",
+          assetFileNames: ({ name }) => {
+            if (/\.(woff2?|ttf|eot)$/.test(name ?? "")) {
+              return "assets/fonts/[name]-[hash][extname]";
+            }
+            if (/\.(png|jpe?g|gif|webp|avif)$/.test(name ?? "")) {
+              return "assets/img/[name]-[hash][extname]";
+            }
+            return "assets/[ext]/[name]-[hash][extname]";
+          },
+          manualChunks: (id) => {},
+        },
+      },
     },
   },
 
@@ -80,7 +110,10 @@ const vitePressConfig = {
     //   }
     //   `
     // ],
-    ["link", { rel: "icon", type: "image/svg+xml", href: "/k-rpa-lite-logo.svg" }],
+    [
+      "link",
+      { rel: "icon", type: "image/svg+xml", href: "/k-rpa-lite-logo.svg" },
+    ],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:locale", content: "zh" }],
     [
@@ -145,6 +178,7 @@ const vitePressConfig = {
       md.use(paragraphIds);
     },
   },
+  assetsDir: "assets/js",
   metaChunk: true,
   sitemap: {
     hostname: "https://king.docs.donxj.com",
