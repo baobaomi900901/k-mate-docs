@@ -11,7 +11,7 @@ order: 5
 用于判断特定文本或元素是否在网页上可见
 :::
 
-![IF 元素可见(Web)](../../assets/IF 元素可见(Web)_command.png)
+![IF 元素可见(Web)](../../assets/IF%20元素可见(Web)_command.png)
 
 ## 配置项说明
 

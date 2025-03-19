@@ -11,7 +11,7 @@ order: 12
 条件判断结束标记。【End IF】指令需与其他条件判断预处理指令如【IF 条件】、【IF 窗口包含】等组合使用，成对出现，形成条件编译的区块。
 :::
 
-![End IF](../../assets/End IF_command.png)
+![End IF](../../assets/End%20IF_command.png)
 
 ## 配置项说明
 

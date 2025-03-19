@@ -11,7 +11,7 @@ order: 2
 用于判断指定文件是否存在
 :::
 
-![IF 文件存在](../../assets/IF 文件存在_command.png)
+![IF 文件存在](../../assets/IF%20文件存在_command.png)
 
 ## 配置项说明
 

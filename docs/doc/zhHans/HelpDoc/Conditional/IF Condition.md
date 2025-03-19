@@ -11,7 +11,7 @@ order: 1
 作为条件判断的开始标记
 :::
 
-![IF 条件](../../assets/IF 条件_command.png)
+![IF 条件](../../assets/IF%20条件_command.png)
 
 ## 配置项说明
 

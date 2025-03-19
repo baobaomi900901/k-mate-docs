@@ -11,7 +11,7 @@ order: 10
 条件分支判断
 :::
 
-![Else IF](../../assets/Else IF_command.png)
+![Else IF](../../assets/Else%20IF_command.png)
 
 ## 配置项说明
 

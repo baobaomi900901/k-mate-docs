@@ -11,7 +11,7 @@ order: 3
 用于判断指定文件夹是否存在
 :::
 
-![IF 文件夹存在](../../assets/IF 文件夹存在_command.png)
+![IF 文件夹存在](../../assets/IF%20文件夹存在_command.png)
 
 ## 配置项说明
 

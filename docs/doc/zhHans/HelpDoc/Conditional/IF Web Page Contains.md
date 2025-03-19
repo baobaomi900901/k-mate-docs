@@ -11,7 +11,7 @@ order: 4
 用于判断特定文本或元素是否在指定的网页上存在
 :::
 
-![IF 网页包含](../../assets/IF 网页包含_command.png)
+![IF 网页包含](../../assets/IF%20网页包含_command.png)
 
 ## 配置项说明
 

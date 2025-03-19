@@ -11,7 +11,7 @@ order: 6
 用于判断指定的窗口是否存在
 :::
 
-![IF 窗口存在](../../assets/IF 窗口存在_command.png)
+![IF 窗口存在](../../assets/IF%20窗口存在_command.png)
 
 ## 配置项说明
 

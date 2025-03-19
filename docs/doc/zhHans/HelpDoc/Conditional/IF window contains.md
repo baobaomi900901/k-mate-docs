@@ -11,7 +11,7 @@ order: 7
 用于判断特定的元素是否包含在指定窗口中
 :::
 
-![IF 窗口包含](../../assets/IF 窗口包含_command.png)
+![IF 窗口包含](../../assets/IF%20窗口包含_command.png)
 
 ## 配置项说明
 
