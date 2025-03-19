@@ -1,4 +1,4 @@
-import { defineConfig } from "vitepress";
+import { loadEnv, defineConfig } from "vitepress";
 import { fileURLToPath, URL } from "node:url";
 import path from "node:path";
 import del from "rollup-plugin-delete";
@@ -7,6 +7,11 @@ import paragraphIds from "./markdown-it-paragraph-ids.cjs";
 import { withSidebar } from "vitepress-sidebar";
 import { withI18n } from "vitepress-i18n";
 import { vitePressSidebarConfig, vitePressI18nConfig } from "./navs/i18nNavs";
+
+// 加载环境变量
+const mode = process.env.VP_MODE || "main";
+const env = loadEnv(mode, process.cwd(), "VITEPRESS_"); // 只加载 VITEPRESS_ 前缀变量
+console.log("当前环境:", env);
 
 const suffixes = (term, minLength) => {
   if (term == null) {
@@ -20,6 +25,7 @@ const suffixes = (term, minLength) => {
 };
 
 const vitePressConfig = {
+  base: env.VITEPRESS_BASE,
   lang: "zh-CN",
   title: "K-RPA Lite",
   description: "",
@@ -64,7 +70,10 @@ const vitePressConfig = {
       rollupOptions: {
         plugins: [
           del({
-            targets: ["./docs/.vitepress/dist/*", "./docs/.vitepress/cache/*"],
+            targets: [
+              `${env.VITEPRESS_OUTDIR || "./docs/.vitepress/dist"}/*`,
+              "./docs/.vitepress/cache/*",
+            ],
             runOnce: true,
           }),
         ],
@@ -133,10 +142,10 @@ const vitePressConfig = {
       host: "https://meilisearch.donxj.com",
       apiKey:
         "646f90bf02522026b531be2d4d491ba1e2721802f43b72ae72f0a2e5eeca711a",
-      indexUid: "k-rpa-lite-zh", // 默认中文索引
+      indexUid: env.VITEPRESS_MEILISEARCH_INDEX_UID || "",
       locales: {
         en: {
-          indexUid: "k-rpa-lite-en",
+          indexUid: env.VITEPRESS_MEILISEARCH_INDEX_UID_EN || "",
           translations: {
             button: { buttonText: "Search" },
             modal: {
@@ -179,9 +188,10 @@ const vitePressConfig = {
     },
   },
   assetsDir: "assets/js",
+  outDir: env.VITEPRESS_OUTDIR,
   metaChunk: true,
   sitemap: {
-    hostname: "https://king.docs.donxj.com",
+    hostname: env.VITEPRESS_SITEAMP,
   },
 };
 

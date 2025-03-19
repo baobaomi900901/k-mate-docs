@@ -48,7 +48,11 @@ jobs:
           npm i
       - name: Build with VitePress
         run: |
-          npm run docs:build && cd "docs/.vitepress" && tar -zcvf dist.tar.gz ./dist
+          npm run docs:build
+          npm run docs:build:sub
+          cd "docs/.vitepress"
+          tar -zcvf dist.tar.gz ./dist
+          tar -zcvf dist-sub-krpalite.tar.gz ./dist-sub-krpalite
       # - name: Upload pages artifact
       #   uses: actions/upload-pages-artifact@v3
       #   with:
@@ -60,6 +64,7 @@ jobs:
           path: |
             docs/.vitepress/dist
             docs/.vitepress/dist.tar.gz
+            docs/.vitepress/dist-sub-krpalite.tar.gz
 
   # 部署 GitHub Pages
   # deploy-github-pages:
@@ -85,28 +90,48 @@ jobs:
         with:
           name: VitePress-artifact
 
-      - name: Copy file to centos server
-        uses: appleboy/scp-action@v0.1.7
+      - name: Deploy to Centos server
+        uses: easingthemes/ssh-deploy@main
         with:
-          host: ${{ secrets.REMOTE_HOST }}
-          username: ${{ secrets.REMOTE_USER }}
-          port: ${{ secrets.REMOTE_PORT }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "dist.tar.gz"
-          target: ${{ env.TARGET }}
-
-      - name: Deploy dist
-        uses: appleboy/ssh-action@v1.2.1
-        with:
-          host: ${{ secrets.REMOTE_HOST }}
-          username: ${{ secrets.REMOTE_USER }}
-          port: ${{ secrets.REMOTE_PORT }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rlgoDzv -i --delete"
+          SOURCE: "./"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.TARGET }}
+          EXCLUDE: "/dist/, /docs/.vitepress/dist/, /node_modules/"
+          SCRIPT_BEFORE: |
             whoami
-            cd ${{ env.TARGET }}
-            find . -mindepth 1 ! -name 'dist.tar.gz' -exec rm -rf {} +
-            tar -xvf dist.tar.gz --strip-components 2
+            ls -al
+          SCRIPT_AFTER: |
+            whoami
+            ls -al
+            echo $RSYNC_STDOUT
+        # continue-on-error: true  # 即使失败，也继续下一个步骤
+
+      # - name: Copy file to centos server
+      #   uses: appleboy/scp-action@v0.1.7
+      #   with:
+      #     host: ${{ secrets.REMOTE_HOST }}
+      #     username: ${{ secrets.REMOTE_USER }}
+      #     port: ${{ secrets.REMOTE_PORT }}
+      #     key: ${{ secrets.SSH_PRIVATE_KEY }}
+      #     source: "dist.tar.gz,dist-sub-krpalite.tar.gz"
+      #     target: ${{ env.TARGET }}
+
+      # - name: Deploy dist
+      #   uses: appleboy/ssh-action@v1.2.1
+      #   with:
+      #     host: ${{ secrets.REMOTE_HOST }}
+      #     username: ${{ secrets.REMOTE_USER }}
+      #     port: ${{ secrets.REMOTE_PORT }}
+      #     key: ${{ secrets.SSH_PRIVATE_KEY }}
+      #     script: |
+      #       whoami
+      #       cd ${{ env.TARGET }}
+      #       find . -mindepth 1 ! -name 'dist.tar.gz' -exec rm -rf {} +
+      #       tar -xvf dist.tar.gz --strip-components 2
 
       - name: Deploy local dist
         env:
@@ -114,6 +139,8 @@ jobs:
           API_KEY: ${{ secrets.DEPLOY_WEBHOOK_API_KEY }}
           DIST_URL: ${{ secrets.DEPLOY_WEBHOOK_DIST_URL }}
           TARGET: ${{ secrets.DEPLOY_WEBHOOK_TARGET }}
+          DIST_SUB_URL: ${{ secrets.DEPLOY_WEBHOOK_DIST_SUB_URL }}
+          SUB_TARGET: ${{ secrets.DEPLOY_WEBHOOK_SUB_TARGET }}
         run: |
           curl --location "$HOST_URL" \
             --max-time 900 \
@@ -123,26 +150,14 @@ jobs:
                 \"url\": \"$DIST_URL\",
                 \"target\": \"$TARGET\"
             }"
-
-      # - name: Deploy to Centos server
-      #   uses: easingthemes/ssh-deploy@main
-      #   with:
-      #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-      #     ARGS: "-rlgoDzv -i --delete"
-      #     SOURCE: "./"
-      #     REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-      #     REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-      #     REMOTE_USER: ${{ secrets.REMOTE_USER }}
-      #     TARGET: ${{ secrets.TARGET }}
-      #     EXCLUDE: "/dist/, /docs/.vitepress/dist/, /node_modules/"
-      #     SCRIPT_BEFORE: |
-      #       whoami
-      #       ls -al
-      #     SCRIPT_AFTER: |
-      #       whoami
-      #       ls -al
-      #       echo $RSYNC_STDOUT
-      #   continue-on-error: true  # 即使失败，也继续下一个步骤
+          curl --location "$HOST_URL" \
+            --max-time 900 \
+            --header 'Content-Type: application/json' \
+            --header "Authorization: Bearer $API_KEY" \
+            --data "{
+                \"url\": \"$DIST_SUB_URL\",
+                \"target\": \"$SUB_TARGET\"
+            }"
 
   scrape-docs:
     needs: deploy-centos
@@ -156,7 +171,9 @@ jobs:
           HOST_URL: ${{ secrets.MEILISEARCH_HOST_URL }}
           API_KEY: ${{ secrets.MEILISEARCH_API_KEY }}
           ZH_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite.zh.docs-scraper.config.json
+          ZH_SUB_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite-sub.zh.docs-scraper.config.json
           EN_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite.en.docs-scraper.config.json
+          EN_SUB_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite-sub.en.docs-scraper.config.json
         run: |
           echo "抓取中文站点"
           docker run -t --rm \
@@ -165,9 +182,23 @@ jobs:
             -v $ZH_CONFIG_FILE_PATH:/docs-scraper/config.json \
             donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
           
+          echo "抓取子中文站点"
+          docker run -t --rm \
+            -e MEILISEARCH_HOST_URL=$HOST_URL \
+            -e MEILISEARCH_API_KEY=$API_KEY \
+            -v $ZH_SUB_CONFIG_FILE_PATH:/docs-scraper/config.json \
+            donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
+          
           echo "抓取英文站点"
           docker run -t --rm \
             -e MEILISEARCH_HOST_URL=$HOST_URL \
             -e MEILISEARCH_API_KEY=$API_KEY \
             -v $EN_CONFIG_FILE_PATH:/docs-scraper/config.json \
+            donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
+
+          echo "抓取子英文站点"
+          docker run -t --rm \
+            -e MEILISEARCH_HOST_URL=$HOST_URL \
+            -e MEILISEARCH_API_KEY=$API_KEY \
+            -v $EN_SUB_CONFIG_FILE_PATH:/docs-scraper/config.json \
             donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json

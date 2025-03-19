@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "docs:build": "VP_MODE=main vitepress build docs",
+    "docs:build:sub": "VP_MODE=sub vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
