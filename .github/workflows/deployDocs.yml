@@ -109,16 +109,20 @@ jobs:
             tar -xvf dist.tar.gz --strip-components 2
 
       - name: Deploy local dist
+        env:
+          HOST_URL: ${{ secrets.DEPLOY_WEBHOOK_HOST_URL }}
+          API_KEY: ${{ secrets.DEPLOY_WEBHOOK_API_KEY }}
+          DIST_URL: ${{ secrets.DEPLOY_WEBHOOK_DIST_URL }}
+          TARGET: ${{ secrets.DEPLOY_WEBHOOK_TARGET }}
         run: |
-          echo "部署到内网"
-          curl --location 'http://k-rpa-lite.kingsware.cn:58080/deploy' \
+          curl --location "$HOST_URL" \
             --max-time 900 \
             --header 'Content-Type: application/json' \
-            --header 'Authorization: Bearer q38qjF0Uj1fMw1zfVGrw' \
-            --data '{
-                "url": "https://king.docs.donxj.com/dist.tar.gz",
-                "target": "/root/k-rpa-lite-docs"
-            }'
+            --header "Authorization: Bearer $API_KEY" \
+            --data "{
+                \"url\": \"$DIST_URL\",
+                \"target\": \"$TARGET\"
+            }"
 
       # - name: Deploy to Centos server
       #   uses: easingthemes/ssh-deploy@main
@@ -139,3 +143,31 @@ jobs:
       #       ls -al
       #       echo $RSYNC_STDOUT
       #   continue-on-error: true  # 即使失败，也继续下一个步骤
+
+  scrape-docs:
+    needs: deploy-centos
+    runs-on: ubuntu-latest
+    name: scrape and push content on Meilisearch instance
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run docs-scraper
+        env:
+          HOST_URL: ${{ secrets.MEILISEARCH_HOST_URL }}
+          API_KEY: ${{ secrets.MEILISEARCH_API_KEY }}
+          ZH_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite.zh.docs-scraper.config.json
+          EN_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite.en.docs-scraper.config.json
+        run: |
+          echo "抓取中文站点"
+          docker run -t --rm \
+            -e MEILISEARCH_HOST_URL=$HOST_URL \
+            -e MEILISEARCH_API_KEY=$API_KEY \
+            -v $ZH_CONFIG_FILE_PATH:/docs-scraper/config.json \
+            donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
+          
+          echo "抓取英文站点"
+          docker run -t --rm \
+            -e MEILISEARCH_HOST_URL=$HOST_URL \
+            -e MEILISEARCH_API_KEY=$API_KEY \
+            -v $EN_CONFIG_FILE_PATH:/docs-scraper/config.json \
+            donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
