@@ -16,7 +16,7 @@
       <div ref="description" class="flex gap-6 text-xl font-medium">
         <a
           class="bg-blue-500 hover:bg-blue-400 px-14 py-4 text-white rounded-full"
-          href="/Download"
+          :href="withBase('/Download')"
           >免费下载</a
         >
         <!-- <a
@@ -45,6 +45,7 @@
 </template>
 
 <script setup>
+import { withBase } from 'vitepress'
 import { onMounted, ref } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

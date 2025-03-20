@@ -10,47 +10,8 @@ export interface IVersion {
   }[]
 }
 
-export const baseUrl = 'http://k-rpa-lite.kingsware.cn:58690'
-export const baseUrl2 = 'https://k-rpa-lite.donxj.com'
+export const baseUrl = 'https://www.kingsware.cn/krpalite/package'
 const timeoutDuration = 15000
-let lastCheckedBaseUrl = baseUrl // 默认使用第一个 baseUrl
-let lastCheckedTime = Date.now() // 上次检查的时间戳
-
-/**
- * 检查指定的 baseUrl 是否可用
- * @param {string} url
- * @returns {Promise<boolean>}
- */
-// async function isBaseUrlAvailable(url: string) {
-//   try {
-//     const response = await fetch(url, { method: 'HEAD' })
-//     return response.ok
-//   } catch (error) {
-//     return false
-//   }
-// }
-
-/**
- * 获取当前可用的 baseUrl
- * @returns {Promise<string>}
- */
-// async function getAvailableBaseUrl() {
-//   const currentTime = Date.now()
-//   // 如果距离上次检查时间不足10分钟，则直接返回上次使用的 baseUrl
-//   if (currentTime - lastCheckedTime < 10 * 60 * 1000) {
-//     return lastCheckedBaseUrl
-//   }
-//   // 检查两个 baseUrl 的可用性
-//   const baseUrls = [baseUrl, baseUrl2]
-//   for (const currentBaseUrl of baseUrls) {
-//     if (await isBaseUrlAvailable(currentBaseUrl)) {
-//       lastCheckedBaseUrl = currentBaseUrl
-//       lastCheckedTime = currentTime
-//       return currentBaseUrl
-//     }
-//   }
-//   throw new Error('所有 baseUrl 都不可用')
-// }
 
 /**
  * 发起 API 请求
@@ -89,35 +50,6 @@ export const getVersionListAPI = async () => {
 export const getUpdateLogAPI = async (url: string) => {
   return await ajaxAPI(url, 'text')
 }
-
-/** 下载文件 */
-// export const downServerFile = async (url: string, name: string = '') => {
-//   const currentBaseUrl = await getAvailableBaseUrl()
-//   const fullUrl = `${currentBaseUrl}${url}`
-//   const res = await fetch(fullUrl).then((response) => response.blob())
-//   const blob = new Blob([res])
-//   await downloadBlob(blob, 'K-RPA Lite' + name)
-// }
-// /**
-//  * 创建下载文件，解决浏览器直接打开文件的问题
-//  * @param blob
-//  * @param fileName
-//  */
-// async function downloadBlob(blob: Blob, fileName: string = '下载文件') {
-//   try {
-//     const href = window.URL.createObjectURL(blob) //创建下载的链接
-//     const downloadElement = document.createElement('a')
-//     downloadElement.href = href
-//     downloadElement.target = '_blank'
-//     downloadElement.download = fileName
-//     document.body.appendChild(downloadElement)
-//     downloadElement.click() // 点击下载
-//     document.body.removeChild(downloadElement) // 下载完成移除元素
-//     window.URL.revokeObjectURL(href) // 释放掉blob对象
-//   } catch (e) {
-//     console.error('文件保存失败:', e)
-//   }
-// }
 
 /**
  * 下载文件
