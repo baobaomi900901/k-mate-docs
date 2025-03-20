@@ -105,7 +105,7 @@ jobs:
             ls -al
             echo $RSYNC_STDOUT
             cd "/www/wwwroot/k-mate-docs"
-            find . -mindepth 1 ! -name 'dist*.tar.gz' -exec rm -rf {} +
+            find . -mindepth 1 ! -name 'dist*.tar.gz' -delete
             tar -xvf dist.tar.gz --strip-components 2
         # continue-on-error: true  # 即使失败，也继续下一个步骤
 
@@ -143,7 +143,7 @@ jobs:
           DIST_SUB_URL: ${{ secrets.DEPLOY_WEBHOOK_DIST_SUB_URL }}
           SUB_TARGET: ${{ secrets.DEPLOY_WEBHOOK_SUB_TARGET }}
         run: |
-          curl --location $HOST_URL \
+          curl --location "$HOST_URL" \
             --max-time 900 \
             --header 'Content-Type: application/json' \
             --header "Authorization: Bearer $API_KEY" \
@@ -151,7 +151,7 @@ jobs:
                 \"url\": \"$DIST_URL\",
                 \"target\": \"$TARGET\"
             }"
-          curl --location $HOST_URL \
+          curl --location "$HOST_URL" \
             --max-time 900 \
             --header 'Content-Type: application/json' \
             --header "Authorization: Bearer $API_KEY" \
