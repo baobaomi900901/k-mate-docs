@@ -15,7 +15,11 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {});
   },
-  async enhanceApp({ app }) {},
+  async enhanceApp({ app }) {
+    // if (!import.meta.env.SSR) {
+    //   // 动态导入...
+    // }
+  },
   setup() {
     onMounted(() => {
       createChatbot();

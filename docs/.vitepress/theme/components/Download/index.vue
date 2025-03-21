@@ -15,6 +15,16 @@ import {
 import { KSelect, KOption, KDropdown, KDropdownItem, KScrollbar, KButton } from '@ksware/ksw-ux';
 import { IconLoading, IconDown } from 'ksw-vue-icon';
 
+
+// KSW 组件动态导入
+// import { defineClientComponent } from 'vitepress'
+// const KSelect = defineClientComponent(() => import('@ksware/ksw-ux').then(m => m.KSelect))
+// const KOption = defineClientComponent(() => import('@ksware/ksw-ux').then(m => m.KOption))
+// const KDropdown = defineClientComponent(() => import('@ksware/ksw-ux').then(m => m.KDropdown))
+// const KDropdownItem = defineClientComponent(() => import('@ksware/ksw-ux').then(m => m.KDropdownItem))
+// const KScrollbar = defineClientComponent(() => import('@ksware/ksw-ux').then(m => m.KScrollbar))
+// const KButton = defineClientComponent(() => import('@ksware/ksw-ux').then(m => m.KButton))
+
 const system = ref('');
 const version = ref('');
 const pluginValue = ref<string>();

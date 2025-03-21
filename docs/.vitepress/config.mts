@@ -64,14 +64,17 @@ const vitePressConfig = {
       port: 3000,
     },
     esbuild: {
-      drop: ["console", "debugger"],
+      // minifySyntax: false,
+      // minifyWhitespace: false,
+      // minifyIdentifiers: false,
+      // drop: ['console', 'debugger']
     },
     build: {
       rollupOptions: {
         plugins: [
           del({
             targets: [
-              `${env.VITEPRESS_OUTDIR || "./docs/.vitepress/dist"}/*`,
+              env.VITEPRESS_DEL_TARGETS,
               "./docs/.vitepress/cache/*",
             ],
             runOnce: true,
@@ -161,6 +164,7 @@ const vitePressConfig = {
         },
       },
     },
+    search: false,
     // search: {
     //   provider: 'local',
     //   options: {
