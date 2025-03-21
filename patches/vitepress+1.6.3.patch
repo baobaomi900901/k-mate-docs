@@ -1,0 +1,40 @@
+diff --git a/node_modules/vitepress/dist/client/theme-default/Layout.vue b/node_modules/vitepress/dist/client/theme-default/Layout.vue
+index 6928414..3b8161e 100644
+--- a/node_modules/vitepress/dist/client/theme-default/Layout.vue
++++ b/node_modules/vitepress/dist/client/theme-default/Layout.vue
+@@ -35,20 +35,22 @@ provide('hero-image-slot-exists', heroImageSlotExists)
+     <slot name="layout-top" />
+     <VPSkipLink />
+     <VPBackdrop class="backdrop" :show="isSidebarOpen" @click="closeSidebar" />
+-    <VPNav>
+-      <template #nav-bar-title-before><slot name="nav-bar-title-before" /></template>
+-      <template #nav-bar-title-after><slot name="nav-bar-title-after" /></template>
+-      <template #nav-bar-content-before><slot name="nav-bar-content-before" /></template>
+-      <template #nav-bar-content-after><slot name="nav-bar-content-after" /></template>
+-      <template #nav-screen-content-before><slot name="nav-screen-content-before" /></template>
+-      <template #nav-screen-content-after><slot name="nav-screen-content-after" /></template>
+-    </VPNav>
+-    <VPLocalNav :open="isSidebarOpen" @open-menu="openSidebar" />
++    <ClientOnly>
++      <VPNav>
++        <template #nav-bar-title-before><slot name="nav-bar-title-before" /></template>
++        <template #nav-bar-title-after><slot name="nav-bar-title-after" /></template>
++        <template #nav-bar-content-before><slot name="nav-bar-content-before" /></template>
++        <template #nav-bar-content-after><slot name="nav-bar-content-after" /></template>
++        <template #nav-screen-content-before><slot name="nav-screen-content-before" /></template>
++        <template #nav-screen-content-after><slot name="nav-screen-content-after" /></template>
++      </VPNav>
++      <VPLocalNav :open="isSidebarOpen" @open-menu="openSidebar" />
+   
+-    <VPSidebar :open="isSidebarOpen">
+-      <template #sidebar-nav-before><slot name="sidebar-nav-before" /></template>
+-      <template #sidebar-nav-after><slot name="sidebar-nav-after" /></template>
+-    </VPSidebar>
++      <VPSidebar :open="isSidebarOpen">
++        <template #sidebar-nav-before><slot name="sidebar-nav-before" /></template>
++        <template #sidebar-nav-after><slot name="sidebar-nav-after" /></template>
++      </VPSidebar>
++    </ClientOnly>
+ 
+     <VPContent>
+       <template #page-top><slot name="page-top" /></template>
