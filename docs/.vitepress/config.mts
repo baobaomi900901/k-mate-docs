@@ -122,6 +122,11 @@ const vitePressConfig = {
   themeConfig: {
     logo: { src: "/k-rpa-lite-logo.svg", width: 32, height: 32 },
 
+    footer: {
+      message: "Released under the MIT License.",
+      copyright:
+        'Copyright © 2025-present <a href="https://beian.miit.gov.cn/" target="_blank" style="margin-left: 0.75rem;text-decoration: none;">粤ICP备2022023946号-2</a>',
+    },
     // meilisearch: {
     //   host: "https://meilisearch.donxj.com",
     //   apiKey:
