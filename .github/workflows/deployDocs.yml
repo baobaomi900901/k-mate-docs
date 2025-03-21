@@ -90,34 +90,26 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDvWP --no-compress"
-          SOURCE: "./"
+          ARGS: "-rlgoDv --delete --no-compress"
+          SOURCE: "./dist/ dist.tar.gz dist-sub-krpalite.tar.gz"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ secrets.TARGET }}
-          EXCLUDE: "/dist/, /docs/.vitepress/dist/, /node_modules/"
-          SCRIPT_BEFORE: |
-            whoami
-            ls -al
-          SCRIPT_AFTER: |
-            whoami
-            ls -al
-            echo $RSYNC_STDOUT
-            cd "/www/wwwroot/k-mate-docs"
-            find . -mindepth 1 ! -name 'dist*.tar.gz' -delete
-            tar -xvf dist.tar.gz --strip-components 2
-        # continue-on-error: true  # 即使失败，也继续下一个步骤
+          # EXCLUDE: "dist.tar.gz, dist-sub-krpalite.tar.gz"
 
-      # - name: Copy file to centos server
-      #   uses: appleboy/scp-action@v0.1.7
+      # - name: Deploy dist.tar.gz
+      #   uses: easingthemes/ssh-deploy@main
       #   with:
-      #     host: ${{ secrets.REMOTE_HOST }}
-      #     username: ${{ secrets.REMOTE_USER }}
-      #     port: ${{ secrets.REMOTE_PORT }}
-      #     key: ${{ secrets.SSH_PRIVATE_KEY }}
-      #     source: "dist.tar.gz,dist-sub-krpalite.tar.gz"
-      #     target: ${{ secrets.TARGET }}
+      #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      #     ARGS: "-rlgoDvWP --no-compress"
+      #     SOURCE: "./"
+      #     REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+      #     REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+      #     REMOTE_USER: ${{ secrets.REMOTE_USER }}
+      #     TARGET: ${{ secrets.TARGET }}
+      #     EXCLUDE: "/dist/, /docs/.vitepress/dist/, /node_modules/"
+        # continue-on-error: true  # 即使失败，也继续下一个步骤
 
       # - name: Deploy dist
       #   uses: appleboy/ssh-action@v1.2.1
