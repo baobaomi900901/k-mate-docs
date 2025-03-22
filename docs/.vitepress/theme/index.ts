@@ -28,10 +28,15 @@ export default {
       const scrollableElements = document.querySelectorAll("body, aside");
       // 对每个元素初始化 OverlayScrollbars
       scrollableElements.forEach((element) => {
-        OverlayScrollbars(element, {
+        OverlayScrollbars(
+          {
+            target: element,
+            cancel: {
+              nativeScrollbarsOverlaid: true,
+            },  
+          }, {
           // 这里可以设置 OverlayScrollbars 的选项
           scrollbars: {
-            theme: "os-theme-dark",
             autoHide: "move", // 是否在某个用户操作之后自动隐藏可见的滚动条。有效值为：'never'、'scroll'和'leave', 'move'
             autoHideSuspend: true, //暂停自动隐藏功能，直到执行第一次滚动交互。
           },
