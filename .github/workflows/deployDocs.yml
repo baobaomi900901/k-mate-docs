@@ -90,25 +90,25 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDv --delete --no-compress"
-          SOURCE: "./dist/ dist.tar.gz dist-sub-krpalite.tar.gz"
+          ARGS: "-rlgoDv -i --delete --no-compress"
+          SOURCE: "./dist/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ secrets.TARGET }}
           # EXCLUDE: "dist.tar.gz, dist-sub-krpalite.tar.gz"
 
-      # - name: Deploy dist.tar.gz
-      #   uses: easingthemes/ssh-deploy@main
-      #   with:
-      #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-      #     ARGS: "-rlgoDvWP --no-compress"
-      #     SOURCE: "./"
-      #     REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-      #     REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-      #     REMOTE_USER: ${{ secrets.REMOTE_USER }}
-      #     TARGET: ${{ secrets.TARGET }}
-      #     EXCLUDE: "/dist/, /docs/.vitepress/dist/, /node_modules/"
+      - name: Deploy dist.tar.gz
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rlgoDvWP -i --no-compress"
+          SOURCE: "dist.tar.gz dist-sub-krpalite.tar.gz"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.TARGET }}
+          EXCLUDE: "/dist/, /docs/.vitepress/dist/, /node_modules/"
         # continue-on-error: true  # 即使失败，也继续下一个步骤
 
       # - name: Deploy dist
@@ -174,14 +174,14 @@ jobs:
             -e MEILISEARCH_API_KEY=$API_KEY \
             -v $ZH_CONFIG_FILE_PATH:/docs-scraper/config.json \
             donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
-          
+
           echo "抓取子中文站点"
           docker run -t --rm \
             -e MEILISEARCH_HOST_URL=$HOST_URL \
             -e MEILISEARCH_API_KEY=$API_KEY \
             -v $ZH_SUB_CONFIG_FILE_PATH:/docs-scraper/config.json \
             donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
-          
+
           echo "抓取英文站点"
           docker run -t --rm \
             -e MEILISEARCH_HOST_URL=$HOST_URL \
