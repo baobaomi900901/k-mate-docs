@@ -46,9 +46,9 @@ jobs:
         run: |
           npm run docs:build
           npm run docs:build:sub
-          cd "docs/.vitepress"
-          tar -zcvf dist.tar.gz ./dist
-          tar -zcvf dist-sub-krpalite.tar.gz ./dist-sub-krpalite
+      #    cd "docs/.vitepress"
+      #    tar -zcvf dist.tar.gz ./dist
+      #    tar -zcvf dist-sub-krpalite.tar.gz ./dist-sub-krpalite
       # - name: Upload pages artifact
       #   uses: actions/upload-pages-artifact@v3
       #   with:
@@ -58,9 +58,11 @@ jobs:
         with:
           name: VitePress-artifact
           path: |
+            .github/scripts/frpc.sh
             docs/.vitepress/dist
-            docs/.vitepress/dist.tar.gz
-            docs/.vitepress/dist-sub-krpalite.tar.gz
+            docs/.vitepress/dist-sub-krpalite
+      #      docs/.vitepress/dist.tar.gz
+      #      docs/.vitepress/dist-sub-krpalite.tar.gz
 
   # 部署 GitHub Pages
   # deploy-github-pages:
@@ -76,8 +78,8 @@ jobs:
   #       uses: actions/deploy-pages@v4
   #       continue-on-error: true  # 即使失败，也继续下一个步骤
 
-  # 部署到 Centos 服务器
-  deploy-centos:
+  # 部署到服务器
+  deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -86,30 +88,59 @@ jobs:
         with:
           name: VitePress-artifact
 
+      - name: Run FRPC
+        env:
+          FRP_CONFIG: ${{ secrets.FRP_CLIENT_CONFIG }}
+        run: |
+          chmod +x .github/scripts/frpc.sh
+          sh .github/scripts/frpc.sh
+
       - name: Deploy to Centos server
         uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDv -i --delete --no-compress"
-          SOURCE: "./dist/"
+          SOURCE: "./docs/.vitepress/dist/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ secrets.TARGET }}
           # EXCLUDE: "dist.tar.gz, dist-sub-krpalite.tar.gz"
 
-      - name: Deploy dist.tar.gz
+      - name: Deploy to local server
         uses: easingthemes/ssh-deploy@main
         with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDvWP -i --no-compress"
-          SOURCE: "dist.tar.gz dist-sub-krpalite.tar.gz"
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.TARGET }}
-          EXCLUDE: "/dist/, /docs/.vitepress/dist/, /node_modules/"
-        # continue-on-error: true  # 即使失败，也继续下一个步骤
+          SSH_PRIVATE_KEY: ${{ secrets.RPALITE_SSH_PRIVATE_KEY }}
+          ARGS: "-rlgoDv -i --delete --no-compress"
+          SOURCE: "./docs/.vitepress/dist/"
+          REMOTE_HOST: ${{ secrets.RPALITE_REMOTE_HOST }}
+          REMOTE_PORT: ${{ secrets.RPALITE_REMOTE_PORT }}
+          REMOTE_USER: ${{ secrets.RPALITE_REMOTE_USER }}
+          TARGET: ${{ secrets.RPALITE_TARGET }}
+
+      - name: Deploy sub to local server
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.RPALITE_SSH_PRIVATE_KEY }}
+          ARGS: "-rlgoDv -i --delete --no-compress"
+          SOURCE: "./docs/.vitepress/dist-sub-krpalite/"
+          REMOTE_HOST: ${{ secrets.RPALITE_REMOTE_HOST }}
+          REMOTE_PORT: ${{ secrets.RPALITE_REMOTE_PORT }}
+          REMOTE_USER: ${{ secrets.RPALITE_REMOTE_USER }}
+          TARGET: ${{ secrets.RPALITE_SUB_TARGET }}
+
+      # - name: Deploy dist.tar.gz
+      #   uses: easingthemes/ssh-deploy@main
+      #   with:
+      #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      #     ARGS: "-rlgoDvWP -i --no-compress"
+      #     SOURCE: "dist.tar.gz dist-sub-krpalite.tar.gz"
+      #     REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+      #     REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+      #     REMOTE_USER: ${{ secrets.REMOTE_USER }}
+      #     TARGET: ${{ secrets.TARGET }}
+      #     EXCLUDE: "/dist/, /docs/.vitepress/dist/, /node_modules/"
+      # continue-on-error: true  # 即使失败，也继续下一个步骤
 
       # - name: Deploy dist
       #   uses: appleboy/ssh-action@v1.2.1
@@ -126,34 +157,34 @@ jobs:
       #       find . -mindepth 1 ! -name 'dist*.tar.gz' -exec rm -rf {} +
       #       tar -xvf dist.tar.gz --strip-components 2
 
-      - name: Deploy local dist
-        env:
-          HOST_URL: ${{ secrets.DEPLOY_WEBHOOK_HOST_URL }}
-          API_KEY: ${{ secrets.DEPLOY_WEBHOOK_API_KEY }}
-          DIST_URL: ${{ secrets.DEPLOY_WEBHOOK_DIST_URL }}
-          TARGET: ${{ secrets.DEPLOY_WEBHOOK_TARGET }}
-          DIST_SUB_URL: ${{ secrets.DEPLOY_WEBHOOK_DIST_SUB_URL }}
-          SUB_TARGET: ${{ secrets.DEPLOY_WEBHOOK_SUB_TARGET }}
-        run: |
-          curl --location "$HOST_URL" \
-            --max-time 900 \
-            --header 'Content-Type: application/json' \
-            --header "Authorization: Bearer $API_KEY" \
-            --data "{
-                \"url\": \"$DIST_URL\",
-                \"target\": \"$TARGET\"
-            }"
-          curl --location "$HOST_URL" \
-            --max-time 900 \
-            --header 'Content-Type: application/json' \
-            --header "Authorization: Bearer $API_KEY" \
-            --data "{
-                \"url\": \"$DIST_SUB_URL\",
-                \"target\": \"$SUB_TARGET\"
-            }"
+      # - name: Deploy local dist
+      #   env:
+      #     HOST_URL: ${{ secrets.DEPLOY_WEBHOOK_HOST_URL }}
+      #     API_KEY: ${{ secrets.DEPLOY_WEBHOOK_API_KEY }}
+      #     DIST_URL: ${{ secrets.DEPLOY_WEBHOOK_DIST_URL }}
+      #     TARGET: ${{ secrets.DEPLOY_WEBHOOK_TARGET }}
+      #     DIST_SUB_URL: ${{ secrets.DEPLOY_WEBHOOK_DIST_SUB_URL }}
+      #     SUB_TARGET: ${{ secrets.DEPLOY_WEBHOOK_SUB_TARGET }}
+      #   run: |
+      #     curl --location "$HOST_URL" \
+      #       --max-time 900 \
+      #       --header 'Content-Type: application/json' \
+      #       --header "Authorization: Bearer $API_KEY" \
+      #       --data "{
+      #           \"url\": \"$DIST_URL\",
+      #           \"target\": \"$TARGET\"
+      #       }"
+      #     curl --location "$HOST_URL" \
+      #       --max-time 900 \
+      #       --header 'Content-Type: application/json' \
+      #       --header "Authorization: Bearer $API_KEY" \
+      #       --data "{
+      #           \"url\": \"$DIST_SUB_URL\",
+      #           \"target\": \"$SUB_TARGET\"
+      #       }"
 
   scrape-docs:
-    needs: deploy-centos
+    needs: deploy
     runs-on: ubuntu-latest
     name: scrape and push content on Meilisearch instance
     steps:
