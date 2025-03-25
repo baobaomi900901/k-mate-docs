@@ -30,6 +30,9 @@ const vitePressConfig = {
   title: "K-RPA Lite",
   description: "",
   vite: {
+    define: {
+      'import.meta.env.VITEPRESS_RECORDED': JSON.stringify(env.VITEPRESS_RECORDED),
+    },
     plugins: [],
     resolve: {
       // 自定义替换默认组件

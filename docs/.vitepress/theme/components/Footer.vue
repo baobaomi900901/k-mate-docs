@@ -1,38 +1,38 @@
 <template>
-  <div class="flex flex-col items-center w-full px-8 py-16 lg:pt-[100px] bg-gray-900 dark:bg-black">
-    <div class="flex justify-center lg:justify-between w-full max-w-[1440px]">
+  <div class="flex w-full flex-col items-center bg-gray-900 px-8 py-16 lg:pt-[100px] dark:bg-black">
+    <div class="flex w-full max-w-[1440px] justify-center lg:justify-between">
       <LogoWhite />
       <div class="flex gap-[80px] text-white">
         <div
           v-for="(section, index) in sections"
           :key="index"
-          class="hidden lg:flex flex-col gap-6"
+          class="hidden flex-col gap-6 lg:flex"
         >
           <div class="text-base font-medium">{{ section.title }}</div>
           <template v-for="(link, linkIndex) in section.links" :key="linkIndex">
-            <a
-              v-if="link.href"
-              class="text-sm text-gray-400 hover:text-blue-500"
-              :href="link.href"
-            >
+            <a v-if="link.href" class="text-sm text-gray-400 hover:text-blue-500" :href="link.href">
               {{ link.text }}
             </a>
-            <span
-              v-else
-              class="text-sm text-gray-400 hover:text-blue-500 cursor-default"
-            >
+            <span v-else class="cursor-default text-sm text-gray-400 hover:text-blue-500">
               {{ link.text }}
             </span>
           </template>
         </div>
       </div>
     </div>
-    <div class="mt-10 text-gray-500">Copyright ©2025 金智维</div>
+    <div class="mt-10 text-gray-500">
+      Copyright ©2025 kingsware. All rights reserved.
+      <a v-if="showRecord" class="ml-0" href="https://beian.miit.gov.cn/" target="_blank"
+        >粤ICP备2022023946号-2</a
+      >
+    </div>
   </div>
 </template>
 
 <script setup>
 import LogoWhite from "./svgElements/LogoWhite.vue";
+
+const showRecord = import.meta.env.VITEPRESS_RECORDED === "true";
 
 const sections = [
   {
