@@ -11,7 +11,7 @@ order: 4
 使用IBM Notes客户端发送电子邮件消息。
 :::
 
-![发送IBM Notes邮件](../../../../assets/发送IBM Notes邮件_command.png)
+![发送IBM Notes邮件](../../../../assets/发送IBM%20Notes邮件_command.png)
 
 ## 配置项说明
 

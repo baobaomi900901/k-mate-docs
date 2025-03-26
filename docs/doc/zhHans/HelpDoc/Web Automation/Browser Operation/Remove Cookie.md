@@ -27,7 +27,7 @@ order: 6
 
 - **Cookie Url**`string`: Cookie Url，将要被移除的Cookie Url
 
-- **移除方式**`Integer`: 
+- **移除方式**`Integer`: 选择移除指定Cookie或移除所有Cookie
 
 - **Cookie Name**`string`: 将要被移除的Cookie名称
 
@@ -38,7 +38,7 @@ order: 6
 
 ### 高级
 
-- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间
+- **执行前的延迟(毫秒)**`Integer`: 指令执行前的等待时间（毫秒）
 
 ### 错误处理
 
@@ -54,7 +54,9 @@ order: 6
 
 ## 使用示例
 
-**流程逻辑描述：** 
+![移除Cookie](../../../assets/移除Cookie_demo.png)
+
+**流程逻辑描述：** 使用【获取以打开的网页对象】指令获取已经打开的网页对象 --> 使用【移除Cookie】指令移除指定的Cookie
 
 ## 常见错误及处理
 

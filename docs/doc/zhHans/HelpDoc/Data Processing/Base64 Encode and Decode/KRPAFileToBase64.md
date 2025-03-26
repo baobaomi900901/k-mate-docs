@@ -1,17 +1,17 @@
 ---
-title: 移动IBM Notes邮件
-order: 3
+title: 文件转Base64
+order: 4
 ---
 
-# 移动IBM Notes邮件
+# Base64解码
 
 ## 功能说明
 
 :::tip 功能描述
-将IBM Notes电子邮件消息移至指定文件夹中。
+将文件转换成Base64格式的字符串
 :::
 
-![移动IBM Notes邮件](../../../../assets/移动IBM%20Notes邮件_command.png)
+![文件转Base64](../../../assets/文件转Base64_command.png)
 
 ## 配置项说明
 
@@ -19,16 +19,12 @@ order: 3
 
 **指令输入**
 
-- **从文件夹**`string`: 可查找到邮件消息的邮件文件夹。
-
-- **邮件文件夹**`string`: 邮件消息将被移至其中的邮件文件夹。
-
-- **邮件消息**`TMailMessage`: 待移动的邮件消息对象。
+- **文件路径**`string`: 请输入待转换成Base64字符串的文件路径
 
 
 **指令输出**
 
-当前指令无输出
+- **输出base字符**`string`: 输入一个变量，用于保存base64格式的字符串
 
 ### 错误处理
 

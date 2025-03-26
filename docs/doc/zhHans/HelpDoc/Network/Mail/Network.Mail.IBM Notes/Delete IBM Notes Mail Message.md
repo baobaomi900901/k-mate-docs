@@ -11,7 +11,7 @@ order: 1
 删除IBM Notes电子邮件消息。
 :::
 
-![删除IBM Notes邮件](../../../../assets/删除IBM Notes邮件_command.png)
+![删除IBM Notes邮件](../../../../assets/删除IBM%20Notes邮件_command.png)
 
 ## 配置项说明
 

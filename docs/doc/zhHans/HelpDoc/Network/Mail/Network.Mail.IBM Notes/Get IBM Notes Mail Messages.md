@@ -11,7 +11,7 @@ order: 2
 从部署了工作流的IBM Notes客户端检索电子邮件
 :::
 
-![获取IBM Notes邮件](../../../../assets/获取IBM Notes邮件_command.png)
+![获取IBM Notes邮件](../../../../assets/获取IBM%20Notes邮件_command.png)
 
 ## 配置项说明
 
