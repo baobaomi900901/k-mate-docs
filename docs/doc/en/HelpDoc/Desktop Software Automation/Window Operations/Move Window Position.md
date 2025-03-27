@@ -33,8 +33,6 @@ Move window to specified position
 
 - **Match Using Wildcards**`Boolean`: Match using wildcards
 
-- **Window Handle**`Integer`: Input a window handle
-
 - **X**`Integer`: Window horizontal coordinate
 
 - **Y**`Integer`: Window vertical coordinate

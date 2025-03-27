@@ -1,6 +1,6 @@
 ---
 title: Rename Folder
-order: 9
+order: 8
 ---
 
 # Rename Folder

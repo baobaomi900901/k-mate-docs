@@ -35,11 +35,15 @@ Read content from an Excel file, supports reading within a rectangular area rang
 
 - **Starting Column Name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
 
-- **Ending Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row
+- **Ending Row Number**`Integer`: Enter the line number, starting from 1, -N represents the nth to last row, Note: Fill in 0 to default to the last row of the worksheet usage scope
 
-- **Ending Column Name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column
+- **Ending Column Name**`string`: Enter the column name (supports A or 1), -N represents the nth to last column, Note: Fill in * to default to the last column of the worksheet usage scope
 
 - **Sheet Page Name**`string`: If empty, it defaults to the currently active Sheet page.
+
+- **Output By Type**`Boolean`: After selecting, the output is a string when reading as a cell, a list when reading as a row or column, and a data table when reading as a range
+
+- **Preview in Data Table**`Boolean`: Preview in Data Table
 
 
 **Command Output**
@@ -48,9 +52,9 @@ Read content from an Excel file, supports reading within a rectangular area rang
 
 ### Advanced
 
-- **Displayed Content Column**`string`: Display visible content, multiple columns separated by commas.
-
 - **Clear Space Before and After Cell**`Boolean`: If checked, automatically clears spaces before and after the read content.
+
+- **Add Headers**`Boolean`: After checking, the first row read will be set as the column header, which cannot be duplicated
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution
 

@@ -29,7 +29,7 @@ Filter the pivot table
 
 - **Selection Type**`Integer`: You can choose between All Selection and Partial Selection
 
-- **Filter Value**`Array of string`: Enter the filter value list
+- **Filter Value**`string`: Enter the filter value list
 
 
 **Command Output**

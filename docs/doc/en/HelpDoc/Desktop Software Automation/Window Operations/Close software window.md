@@ -33,8 +33,6 @@ This action will close the specified window
 
 - **Match using wildcard**`Boolean`: Match using wildcard
 
-- **Window handle**`Integer`: Enter a window handle
-
 
 **Command Output**
 

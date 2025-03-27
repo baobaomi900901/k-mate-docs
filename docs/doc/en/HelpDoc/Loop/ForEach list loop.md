@@ -34,6 +34,17 @@ Loop through each item in the list for automation operations
 
 - **Loop end position**`Integer`: The ending position of the loop, -1 indicates the last item, and the result includes the item at the end position
 
+### Error Handling
+
+- **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 
+
+- **Handling Method**`Integer`:
+
+    - **Terminate Process**: If the command fails, terminate the process.
+
+    - **Ignore Exception and Continue Execution**: If the command fails, ignore the exception and continue the process.
+
+    - **Retry This Command**: If the command fails, retry the command a specified number of times with a specified interval between retries.
 
 ## Usage Example
 

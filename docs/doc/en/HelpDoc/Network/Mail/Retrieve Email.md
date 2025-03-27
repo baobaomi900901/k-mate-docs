@@ -27,6 +27,8 @@ Retrieve email from the specified mailbox
 
 - **Enable SSL**`Boolean`: Specify whether SSL should be used to send messages
 
+- **SSL**`Integer`: Can switch between different secure socket protocols for sending
+
 - **Email Account**`string`: The user for IMAP server authentication, usually the email account
 
 - **Authorization Code**`string`: The authorization code for IMAP server authentication, usually requires SMS verification to enable, some email services may use account password instead, depending on the email service provider

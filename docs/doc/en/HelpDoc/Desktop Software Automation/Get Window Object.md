@@ -23,8 +23,6 @@ To perform automated operations on a specific window, you first need to obtain t
 
 - **Operation Target**`TTarget`: Select window element
 
-- **Window Handle**`Integer`: Enter a window handle
-
 - **Window Title**`string`: Enter window title
 
 - **Add Window Type**`Boolean`: Add window type

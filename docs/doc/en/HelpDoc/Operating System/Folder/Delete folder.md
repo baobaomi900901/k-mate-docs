@@ -1,6 +1,6 @@
 ---
 title: Delete folder
-order: 5
+order: 4
 ---
 
 # Delete folder

@@ -19,7 +19,7 @@ Specify WeChat name or WeChat ID to send WeChat messages
 
 **Command Input**
 
-- **Target, indicate WeChat operation elements, please capture the outermost window of WeChat**`TTarget`: Target
+- **Indicate the operational elements of WeChat, please use UIA mode to capture the outermost window of WeChat, UIA mode cannot capture, this parameter can be empty**`TTarget`: Target
 
 - **Remarks/WeChatName**`string`: Priority should be given to searching through Remarks/WeChatName
 

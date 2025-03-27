@@ -19,7 +19,7 @@ Batch sending WeChat messages by reading specific information from template file
 
 **Command Input**
 
-- **Target**`TTarget`: Target, indicate WeChat operation elements, please capture the outermost window of WeChat
+- **Target**`TTarget`: Indicate the operational elements of WeChat, please use UIA mode to capture the outermost window of WeChat, UIA mode cannot capture, this parameter can be empty
 
 - **Remarks/WeChatName**`string`: Priority should be given to searching through Remarks/WeChatName
 

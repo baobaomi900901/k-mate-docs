@@ -21,7 +21,7 @@ Retrieve the position of a specified item in the list, with list positions start
 
 - **List**`TList<String>`: Enter the list variable
 
-- **Specified Item Value**`String`: Enter the value of the specified item in the list
+- **Specified Item Value**`String`: Enter the value of the specified item in the list, If it returns to -1, it means that the item does not exist in the list
 
 - **Output Type**`Integer`: By default, only the first occurrence position is retained, and all positions can be selected to be retained
 

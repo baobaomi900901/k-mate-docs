@@ -8,7 +8,7 @@ order: 15
 ## Function Description
 
 :::tip 
-Filter a data table by specifying conditions in the 'Filter Wizard' window. This activity can retain or remove rows/columns based on the logical conditions specified in the wizard.
+Filter the data table by specifying criteria in 'Filter'. Retain or delete rows/columns based on specified logical conditions.
 :::
 
 ![Filter Data Table](../../../assets/Filter%20Data%20Table_command.png)
@@ -21,11 +21,15 @@ Filter a data table by specifying conditions in the 'Filter Wizard' window. This
 
 - **Data Table**`TDataTable`: The data table to be filtered.
 
-- **Filter**`String`: Filter.
+- **Filter**`String`: Set filtering criteria, which can be achieved by combining or setting multiple criteria.
 
-- **Filter Rows Mode**`Integer`: Filter Rows Mode
+- **Duplicate**`Boolean`: When data is duplicated, data deduplication
 
-- **Select Columns Mode**`Integer`: Select Columns Mode
+- **Optimization Mode**`Boolean`: Optimize and switch between retain and remove filter modes
+
+- **Preview in Data Table**`Boolean`: Preview in Data Table
+
+- **IsPrintRes**`Boolean`: 
 
 
 **Command Output**

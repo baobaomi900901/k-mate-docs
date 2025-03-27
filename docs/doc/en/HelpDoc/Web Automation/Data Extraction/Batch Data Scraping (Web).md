@@ -31,6 +31,8 @@ Scrape batch data from web pages, commonly used for scraping list and detail pag
 
 - **Save to Data Table**`Boolean`: Whether to save the results to the data table
 
+- **Preview in Data Table**`Boolean`: Preview in Data Table
+
 
 **Command Output**
 

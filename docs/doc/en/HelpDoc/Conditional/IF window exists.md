@@ -33,8 +33,6 @@ Check if the specified window exists
 
 - **Match by wildcard**`Boolean`: Whether to enable wildcard matching, which determines if common wildcards are used as regular characters or as wildcards. For example, when selected, ‘*Notepad’ matches windows whose titles end with ‘Notepad’
 
-- **Window handle**`Integer`: Enter a window handle
-
 - **Window existence**`Integer`: Select whether to check if the window exists or does not exist
 
 
@@ -42,6 +40,17 @@ Check if the specified window exists
 
 No output for the current command
 
+### Error Handling
+
+- **Print Error Logs**`Boolean`: Whether to print error logs to the "Logs" panel when the command fails. Default is checked. 
+
+- **Handling Method**`Integer`:
+
+    - **Terminate Process**: If the command fails, terminate the process.
+
+    - **Ignore Exception and Continue Execution**: If the command fails, ignore the exception and continue the process.
+
+    - **Retry This Command**: If the command fails, retry the command a specified number of times with a specified interval between retries.
 
 ## Usage Example
 

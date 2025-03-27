@@ -1,6 +1,6 @@
 ---
 title: Move Folder
-order: 8
+order: 7
 ---
 
 # Move Folder

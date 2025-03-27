@@ -29,6 +29,8 @@ Read the table content from a Word document
 
 - **Use first row as header**`Boolean`: Whether to use the first row as the header
 
+- **Preview in Data Table**`Boolean`: Preview in Data Table
+
 
 **Command Output**
 

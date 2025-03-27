@@ -41,6 +41,8 @@ Fill missing values (NaN) in the data table with a fixed value, fill with the pr
 
 - **Deletion Condition**`Integer`: Supports deleting the row/column if there is a missing value in the specified row/column, or only deleting the row/column if all values in the specified row/column are missing values.
 
+- **Preview in Data Table**`Boolean`: Preview in Data Table
+
 - **Print Component's Output Variable Value**`Boolean`: After checking, the component will output the generated variable data or variable value and print it to the console output log.
 
 

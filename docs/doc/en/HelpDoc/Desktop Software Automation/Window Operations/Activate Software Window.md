@@ -33,8 +33,6 @@ Activate the specified window to run in the foreground
 
 - **Match Using Wildcards**`Boolean`: Match using wildcards
 
-- **Window Handle**`Integer`: Enter a window handle
-
 
 **Command Output**
 

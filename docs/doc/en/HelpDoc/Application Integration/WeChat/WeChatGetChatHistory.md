@@ -19,7 +19,7 @@ Specify WeChat name or WeChat ID to send WeChat messages or emoticons
 
 **Command Input**
 
-- **Target**`TTarget`: Target, indicate WeChat operation elements, please capture the outermost window of WeChat
+- **Target**`TTarget`: Indicate the operational elements of WeChat, please use UIA mode to capture the outermost window of WeChat, UIA mode cannot capture, this parameter can be empty
 
 - **KeepSystemMessages**`Boolean`: Keep system message(such as nudge)
 

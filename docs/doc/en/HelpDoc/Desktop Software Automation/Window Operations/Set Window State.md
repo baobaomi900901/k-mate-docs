@@ -33,8 +33,6 @@ Perform operations to restore, maximize, or minimize a window
 
 - **Match by Wildcard**`Boolean`: Match by wildcard
 
-- **Window Handle**`Integer`: Enter a window handle
-
 - **Window State to Set**`Integer`: Set the window state
 
 

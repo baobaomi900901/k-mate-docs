@@ -19,7 +19,7 @@ Get the WeChat chat search box
 
 **Command Input**
 
-- **Target**`TTarget`: Target, indicate WeChat operation elements, please capture the outermost window of WeChat
+- **Target**`TTarget`: Indicate the operational elements of WeChat, please use UIA mode to capture the outermost window of WeChat, UIA mode cannot capture, this parameter can be empty
 
 - **WaitBeforeMs(milliseconds)**`Integer`: Wait for loading time before execution(in milliseconds)
 

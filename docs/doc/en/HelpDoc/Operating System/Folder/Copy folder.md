@@ -1,6 +1,6 @@
 ---
 title: Copy folder
-order: 7
+order: 6
 ---
 
 # Copy folder

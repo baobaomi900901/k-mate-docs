@@ -40,6 +40,8 @@ No output for the current command
 
 ### Advanced
 
+- **MoveMouse**`Boolean`: 
+
 - **Timeout (milliseconds)**`Integer`: Set the maximum waiting time
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution

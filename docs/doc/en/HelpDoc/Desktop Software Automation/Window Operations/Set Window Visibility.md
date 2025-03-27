@@ -33,8 +33,6 @@ Set window visibility or hide state
 
 - **Match Using Wildcards**`Boolean`: Match using wildcards
 
-- **Window Handle**`Integer`: Input a window handle
-
 - **Window Visibility**`Integer`: Set the visibility of the window
 
 

@@ -1,6 +1,6 @@
 ---
 title: Get System Folder Path
-order: 10
+order: 9
 ---
 
 # Get System Folder Path

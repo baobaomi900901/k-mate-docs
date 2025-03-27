@@ -27,8 +27,6 @@ Open an existing Excel file or create a new one to automate Excel operations
 
 - **Visible**`Boolean`: This option does not affect the automation capabilities of Excel, it only controls whether the operations are visible to the user. If operating Excel in non-visual mode, Excel must be closed after saving.
 
-- **Auto Update External Links**`Boolean`: Automatically update external links. It is recommended to check the visual mode.
-
 
 **Command Output**
 

@@ -33,8 +33,6 @@ Get window text content, process, title, and other information
 
 - **Match by Wildcard**`Boolean`: Match by wildcard
 
-- **Window Handle**`Integer`: Enter a window handle
-
 - **Operation**`Integer`: Window operation mode
 
 

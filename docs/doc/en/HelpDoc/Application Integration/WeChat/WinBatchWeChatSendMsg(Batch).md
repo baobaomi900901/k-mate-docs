@@ -19,7 +19,7 @@ order: 1
 
 **Command Input**
 
-- **Target**`TTarget`: Target
+- **Target**`TTarget`: Indicate the operational elements of WeChat, please use UIA mode to capture the outermost window of WeChat, UIA mode cannot capture, this parameter can be empty
 
 - **ExcelFilePath**`string`: Please enter the template file path
 

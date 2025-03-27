@@ -23,6 +23,8 @@ Execute Select query SQL statement in the specified database
 
 - **Database Query Statement**`string`: Enter the database query statement
 
+- **Preview in Data Table**`Boolean`: Preview in Data Table
+
 
 **Command Output**
 

@@ -44,10 +44,6 @@ Cycle through the content of an Excel object and save the loop items
 
 ### Advanced
 
-- **Read the displayed content of cells**`Boolean`: If not checked, integers will be read as decimals (1 = 1.0)
-
-- **Columns to display content**`string`: Display visible content. Separate multiple columns with commas
-
 - **Remove leading and trailing spaces from cells**`Boolean`: If checked, leading and trailing spaces in the read content will be automatically removed
 
 - **Delay Before(milliseconds)**`Integer`: The waiting time before instruction execution

@@ -25,6 +25,8 @@ Convert DateTime object to text
 
 - **Custom Format**`string`: Custom Format
 
+- **Remove Leading Zeros:**`Boolean`: Remove leading zeros from months and days, e.g., change 06 month to 6 month
+
 
 **Command Output**
 

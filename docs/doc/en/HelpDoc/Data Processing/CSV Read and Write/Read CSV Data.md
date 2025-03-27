@@ -27,6 +27,8 @@ Read the content of a CSV file
 
 - **First Row is Column Header**`Boolean`: Is the first row of the CSV file a column header?
 
+- **Preview in Data Table**`Boolean`: Preview in Data Table
+
 
 **Command Output**
 
