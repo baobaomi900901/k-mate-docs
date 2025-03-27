@@ -40,7 +40,7 @@ const vitePressConfig = {
         // {
         //   find: /^.*\/VPLocalSearchBox\.vue$/,
         //   replacement: fileURLToPath(
-        //     new URL("./components/MyCustomSearchBox.vue", import.meta.url)
+        //     new URL("./theme/components/MyCustomSearchBox.vue", import.meta.url)
         //   ),
         // },
         {

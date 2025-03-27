@@ -8,7 +8,7 @@ import "@ksware/ksw-ux/kingsware-ui/style.css";
 import "ksw-vue-icon/styles/icon.css";
 import "./custom.less";
 import "~/tailwind.css";
-import { createChatbot } from "../chatBot";
+import { createChatbot } from "../../../plugin/chatBot";
 
 export default {
   extends: DefaultTheme,

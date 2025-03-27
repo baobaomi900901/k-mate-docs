@@ -24,6 +24,6 @@ https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/?form=MA13LH
 
 ![alt text](assets/webView2/d8cddf2abfb7f7500252f6b7149ec82.png)
 
-或者在咱们 [下载中心](http://k-rpa-lite.kingsware.cn:50351/Download) 找到对应环境下载
+或者在咱们 [下载中心](/Download) 找到对应环境下载
 
 ![alt text](assets/webView2/image.png)
