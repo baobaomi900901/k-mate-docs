@@ -88,13 +88,6 @@ jobs:
         with:
           name: VitePress-artifact
 
-      - name: Run FRPC
-        env:
-          FRP_CONFIG: ${{ secrets.FRP_CLIENT_CONFIG }}
-        run: |
-          chmod +x .github/scripts/frpc.sh
-          sh .github/scripts/frpc.sh
-
       - name: Deploy to Centos server
         uses: easingthemes/ssh-deploy@main
         with:
@@ -106,28 +99,6 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ secrets.TARGET }}
           # EXCLUDE: "dist.tar.gz, dist-sub-krpalite.tar.gz"
-
-      - name: Deploy to local server
-        uses: easingthemes/ssh-deploy@main
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.RPALITE_SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDv -i --delete --no-compress"
-          SOURCE: "./docs/.vitepress/dist/"
-          REMOTE_HOST: ${{ secrets.RPALITE_REMOTE_HOST }}
-          REMOTE_PORT: ${{ secrets.RPALITE_REMOTE_PORT }}
-          REMOTE_USER: ${{ secrets.RPALITE_REMOTE_USER }}
-          TARGET: ${{ secrets.RPALITE_TARGET }}
-
-      - name: Deploy sub to local server
-        uses: easingthemes/ssh-deploy@main
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.RPALITE_SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDv -i --delete --no-compress"
-          SOURCE: "./docs/.vitepress/dist-sub-krpalite/"
-          REMOTE_HOST: ${{ secrets.RPALITE_REMOTE_HOST }}
-          REMOTE_PORT: ${{ secrets.RPALITE_REMOTE_PORT }}
-          REMOTE_USER: ${{ secrets.RPALITE_REMOTE_USER }}
-          TARGET: ${{ secrets.RPALITE_SUB_TARGET }}
 
       # - name: Deploy dist.tar.gz
       #   uses: easingthemes/ssh-deploy@main
@@ -182,6 +153,45 @@ jobs:
       #           \"url\": \"$DIST_SUB_URL\",
       #           \"target\": \"$SUB_TARGET\"
       #       }"
+
+  # 部署到内部服务器
+  deploy-local:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download project files
+        uses: actions/download-artifact@v4
+        with:
+          name: VitePress-artifact
+
+      - name: Run FRPC
+        env:
+          FRP_CONFIG: ${{ secrets.FRP_CLIENT_CONFIG }}
+        run: |
+          chmod +x .github/scripts/frpc.sh
+          sh .github/scripts/frpc.sh
+
+      - name: Deploy to local server
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.RPALITE_SSH_PRIVATE_KEY }}
+          ARGS: "-rlgoDv -i --delete --no-compress"
+          SOURCE: "./docs/.vitepress/dist/"
+          REMOTE_HOST: ${{ secrets.RPALITE_REMOTE_HOST }}
+          REMOTE_PORT: ${{ secrets.RPALITE_REMOTE_PORT }}
+          REMOTE_USER: ${{ secrets.RPALITE_REMOTE_USER }}
+          TARGET: ${{ secrets.RPALITE_TARGET }}
+
+      - name: Deploy sub to local server
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.RPALITE_SSH_PRIVATE_KEY }}
+          ARGS: "-rlgoDv -i --delete --no-compress"
+          SOURCE: "./docs/.vitepress/dist-sub-krpalite/"
+          REMOTE_HOST: ${{ secrets.RPALITE_REMOTE_HOST }}
+          REMOTE_PORT: ${{ secrets.RPALITE_REMOTE_PORT }}
+          REMOTE_USER: ${{ secrets.RPALITE_REMOTE_USER }}
+          TARGET: ${{ secrets.RPALITE_SUB_TARGET }}
 
   # scrape-docs:
   #   needs: deploy
