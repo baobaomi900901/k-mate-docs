@@ -2,7 +2,7 @@
 
 ## 现象
 
-错误截图.jpg
+![缺少MicrosoftWebView2运行环境](./assets/webView2/缺少MicrosoftWebView2运行环境.png)
 
 ## 原因
 
