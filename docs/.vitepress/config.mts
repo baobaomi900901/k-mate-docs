@@ -3,6 +3,7 @@ import { fileURLToPath, URL } from "node:url";
 import path from "path";
 import del from "rollup-plugin-delete";
 import paragraphIds from "./plugin/markdown-it-paragraph-ids.cjs";
+import { ignoreMissingImages } from './plugin/markdown-it-ignore-images'
 // import MiniSearch from "minisearch";
 import { withSidebar } from "vitepress-sidebar";
 import { withI18n } from "vitepress-i18n";
@@ -191,6 +192,7 @@ const vitePressConfig = {
   cleanUrls: true,
   markdown: {
     config: (md) => {
+      md.use(ignoreMissingImages);
       md.use(paragraphIds);
     },
   },
