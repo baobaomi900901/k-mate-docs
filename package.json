@@ -18,7 +18,7 @@
     "@ksware/ksw-ux": "^1.1.14",
     "autoprefixer": "^10.4.19",
     "gsap": "^3.12.5",
-    "ksw-vue-icon": "^2.4.16",
+    "ksw-vue-icon": "^2.5.0",
     "less": "^4.2.0",
     "less-loader": "^12.2.0",
     "markdown-it": "^14.1.0",

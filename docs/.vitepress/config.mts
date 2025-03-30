@@ -1,8 +1,8 @@
 import { loadEnv, defineConfig } from "vitepress";
 import { fileURLToPath, URL } from "node:url";
-import path from "node:path";
+import path from "path";
 import del from "rollup-plugin-delete";
-import paragraphIds from "./markdown-it-paragraph-ids.cjs";
+import paragraphIds from "./plugin/markdown-it-paragraph-ids.cjs";
 // import MiniSearch from "minisearch";
 import { withSidebar } from "vitepress-sidebar";
 import { withI18n } from "vitepress-i18n";

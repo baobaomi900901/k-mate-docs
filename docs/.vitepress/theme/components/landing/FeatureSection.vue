@@ -89,12 +89,12 @@
 </template>
 
 <script setup>
-import { IconRPASystemColor } from "ksw-vue-icon/KingAutometa";
 import {
   IconSystemTypeLinuxColor,
   IconArrowRight,
   IconPointer,
   IconProgressBolt,
+  IconRPASystemColor,
 } from "ksw-vue-icon";
 </script>
 

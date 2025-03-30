@@ -11,7 +11,6 @@ export default (options = {}) => {
   const values = languages.reduce((acc, lang) => {
     const key = mapLanguage(lang);
     acc[key] = key;
-    console.log(acc);
     return acc;
   }, {});
 
