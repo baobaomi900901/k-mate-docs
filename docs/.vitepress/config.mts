@@ -32,7 +32,7 @@ const vitePressConfig = {
   description: "",
   vite: {
     define: {
-      'import.meta.env.VITEPRESS_RECORDED': JSON.stringify(env.VITEPRESS_RECORDED),
+      'import.meta.env.VITEPRESS_ICP': JSON.stringify(env.VITEPRESS_ICP),
     },
     plugins: [],
     resolve: {
@@ -184,6 +184,7 @@ const vitePressConfig = {
     //     }
     //   }
     // },
+    ICP: "粤ICP备2022023946号-2"
   },
   rewrites: {
     "doc/zhHans/:rest*": ":rest*",

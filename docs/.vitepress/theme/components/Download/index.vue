@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import Footer from "../../components/Footer.vue";
+import Footer from "../../components/Footer/index.vue";
 import markdownit from "markdown-it";
 import { computed, nextTick, onMounted, ref, watch } from "vue";
+import { useData } from "vitepress";
 import {
   baseUrl,
   downServerFile,
@@ -14,6 +15,12 @@ import {
 } from "./tools";
 import { KSelect, KOption, KDropdown, KDropdownItem, KScrollbar, KButton } from "@ksware/ksw-ux";
 import { IconLoading, IconDown } from "ksw-vue-icon";
+import { i18n } from "./i18n/index";
+
+// 加载多语言
+const { lang } = useData();
+const langPrefix = computed(() => lang.value.split("-")[0]);
+const t = computed(() => i18n(langPrefix.value));
 
 // KSW 组件动态导入
 // import { defineClientComponent } from 'vitepress'
@@ -132,17 +139,22 @@ watch(
 </script>
 
 <template>
-  <div class="mx-auto flex max-w-[860px] flex-col items-center">
+  <div class="mx-auto flex max-w-[860px] flex-col items-center lang-en:mb-24">
     <div class="mx-auto mt-24 flex w-fit flex-col items-center">
-      <div class="text-4xl font-bold md:text-7xl">下载 K-RPA Lite</div>
+      <div class="text-4xl font-bold md:text-7xl">{{ t.title }}</div>
       <div class="mt-10 text-xl font-medium">
-        支持 Windows、信创系统<sup class="text-gray-400">*</sup>、网页等
+        {{ t.subTitle }}<sup class="text-gray-400">*</sup>{{ t.subTitle2 }}
       </div>
-      <div class="mt-3 text-xs text-gray-400">信创系统今年支持</div>
+      <div class="mt-3 text-xs text-gray-400">{{ t.comment }}</div>
     </div>
     <div class="mx-auto mt-8 flex w-fit flex-col items-center gap-4">
       <div class="select">
-        <k-select v-model="system" placeholder="系统" size="large" @change="changeSystem">
+        <k-select
+          v-model="system"
+          :placeholder="t.selectPlaceholderSystem"
+          size="large"
+          @change="changeSystem"
+        >
           <k-option
             v-for="item in systemOptions"
             :key="item.value"
@@ -153,7 +165,12 @@ watch(
         </k-select>
       </div>
       <div class="select">
-        <k-select v-model="version" placeholder="版本" size="large" @change="changeVersion">
+        <k-select
+          v-model="version"
+          :placeholder="t.selectPlaceholderVersion"
+          size="large"
+          @change="changeVersion"
+        >
           <k-option
             v-for="item in versionOptions"
             :key="item.value"
@@ -167,28 +184,28 @@ watch(
         class="mt-5 flex w-full cursor-pointer select-none justify-center rounded-xl bg-blue-500 px-6 py-3 text-base font-medium text-white transition-all hover:bg-blue-600"
         style="max-width: 300px"
         @click="downloadFile(getDownloadRPAAndPluginUrl())"
-        >下载客户端 & 插件包</a
+        >{{ t.buttonText }}</a
       >
       <div class="flex flex-col items-center gap-4 md:flex-row">
         <div
           class="flex min-w-40 cursor-pointer select-none justify-center rounded-md px-1 py-[1px] text-base text-blue-500 transition-all hover:text-blue-400"
           @click="downloadFile(getDownloadRPAUrl())"
         >
-          下载客户端
+          {{ t.linkText }}
         </div>
-        <hr class="hidden h-4 rounded-full border border-gray-200 md:block" />
+        <hr class="hidden h-4 rounded-full border border-gray-200 md:block dark:border-gray-700" />
         <div
           class="flex min-w-40 cursor-pointer select-none justify-center rounded-md px-1 py-[1px] text-base text-blue-500 transition-all hover:text-blue-400"
           @click="downloadFile(getDownloadPluginUrl())"
         >
-          下载插件包
+          {{ t.linkTwoText }}
         </div>
-        <hr class="hidden h-4 rounded-full border border-gray-200 md:block" />
+        <hr class="hidden h-4 rounded-full border border-gray-200 md:block dark:border-gray-700" />
         <div
           class="flex min-w-40 cursor-pointer select-none justify-center rounded-md px-1 py-[1px] text-base text-blue-500 transition-all hover:text-blue-400"
           @click="downloadFile(getDownloadWebView2Url())"
         >
-          下载 viewView2_x64
+          {{ t.linkThreeText }}
         </div>
       </div>
       <!-- <k-dropdown class="text-base text-blue-500 hover:text-blue-400 focus-visible:outline-none" size="large">
@@ -204,16 +221,19 @@ watch(
         </template>
       </k-dropdown> -->
     </div>
-    <div class="my-12 w-full rounded-full border-t border-gray-200 dark:border-[rgba(0,0,0,0.5)]" />
-    <div class="flex flex-col items-center gap-4">
+    <div
+      v-if="langPrefix == 'zh'"
+      class="my-12 w-full rounded-full border-t border-gray-200 dark:border-[rgba(0,0,0,0.5)]"
+    />
+    <div v-if="langPrefix == 'zh'" class="flex flex-col items-center gap-4 lang-en:hidden">
       <div class="text-4xl font-bold">更新日志</div>
       <div class="text-base opacity-70">不断优化 K-RPA Lite，为您带来更好体验</div>
     </div>
-    <div class="mt-12 min-h-96 w-full max-w-[580px]">
+    <div v-if="langPrefix == 'zh'" class="mt-12 min-h-96 w-full max-w-[580px]">
       <div class="changelog content vp-doc mx-6" v-html="markdownContent"></div>
     </div>
   </div>
-  <Footer />
+  <Footer class="footer" />
 </template>
 
 <style lang="scss" scoped>
@@ -243,6 +263,12 @@ watch(
         border-color: var(--border-color--hover);
       }
     }
+  }
+}
+@media screen and (min-height: 1054px) {
+  [lang^="en"] .footer {
+    position: fixed;
+    bottom: 0;
   }
 }
 /* .changelog{

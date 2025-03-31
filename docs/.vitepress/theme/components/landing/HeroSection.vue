@@ -5,17 +5,17 @@
       class="mx-auto mt-28 flex w-fit flex-col items-center gap-8 text-center lg:gap-10 2xl:mt-40"
     >
       <div class="text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl xl:text-7xl">
-        <span ref="titleText">自动化您的工作，释放</span>
-        <span ref="highlightText" class="highlight">无限可能</span>
+        <span ref="titleText">{{ t.title }}</span>
+        <span ref="highlightText" class="highlight">{{ t.highlightText }}</span>
       </div>
       <div class="text-xl font-medium text-gray-700 lg:text-2xl xl:text-3xl">
-        简化操作，提升产出，让每个团队成员专注于更重要的任务
+        {{ t.featureTitle }}
       </div>
       <div ref="description" class="flex gap-6 text-xl font-medium">
         <a
           class="rounded-full bg-blue-500 px-14 py-4 text-white hover:bg-blue-400"
-          :href="withBase('/Download')"
-          >免费下载</a
+          :href="withBase(t.buttonUrl)"
+          >{{ t.buttonText }}</a
         >
         <!-- <a
           class="px-14 py-4 text-gray-700 rounded-full border border-gray-200"
@@ -34,8 +34,8 @@
         autoplay
         muted
         class="rounded-2xl"
-        src="./assets/home-editor.mp4"
-        poster="./assets/home-editor.jpg"
+        :src="useAssets(langPrefix, 'home-editor.mp4')"
+        :poster="useAssets(langPrefix, 'home-editor.jpg')"
         playsinline
       ></video>
     </div>
@@ -43,11 +43,17 @@
 </template>
 
 <script setup>
-import { withBase } from "vitepress";
-import { onMounted, ref } from "vue";
+import { onMounted, ref, computed } from "vue";
+import { withBase, useData } from "vitepress";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
+import { i18n, useAssets } from "./i18n/index";
+
+const { lang } = useData();
+const langPrefix = computed(() => lang.value.split("-")[0]);
+const t = computed(() => i18n(langPrefix.value)?.hero);
+
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 const heroActions = ref(null);
