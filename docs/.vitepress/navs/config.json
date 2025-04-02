@@ -1,4 +1,7 @@
 {
+  "guide": {
+    "zhHans": "入门指南"
+  },
   "HelpDoc": {
     "zhHans": "帮助文档",
     "en": "Help document"
