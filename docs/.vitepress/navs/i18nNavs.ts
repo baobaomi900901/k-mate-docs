@@ -1,7 +1,7 @@
-import config from './config.json';
+import config from "./config.json";
 
 // 设置默认语言
-const rootLocale = 'zhHans'
+const rootLocale = "zhHans";
 
 const baseSidebarOptions = {
   useTitleFromFileHeading: true, // 启用后，会从文件头部的 title 标签获取标题
@@ -15,8 +15,8 @@ const baseSidebarOptions = {
   sortMenusByFrontmatterOrder: true, //按 frontmatter 的 order 属性对菜单项排序
   // sortMenusByFrontmatterDate: true, //根据前端的date属性对菜单项进行排序
   // sortMenusOrderByDescending: true, //如果此值为 true，则按降序排列菜单项中的项目
-  frontmatterOrderDefaultValue: 9999,  //设置 frontmatter 的 order 属性未设置时的默认值
-  excludeFilesByFrontmatterFieldName: 'exclude',  //如果选项值为exclude,则菜单中不会显示内容包含exclude: true的文档
+  frontmatterOrderDefaultValue: 9999, //设置 frontmatter 的 order 属性未设置时的默认值
+  excludeFilesByFrontmatterFieldName: "exclude", //如果选项值为exclude,则菜单中不会显示内容包含exclude: true的文档
   collapsed: false, // 文件夹折叠
   collapseDepth: 4,
   // debugPrint: true,
@@ -27,10 +27,11 @@ const vitePressSidebarConfig = [] as any;
 const locales = new Set();
 
 Object.entries(config).forEach(([path, translations]) => {
-  const isExternalLink = path.startsWith('http'); // 判断是否是外部链接
+  const isExternalLink = path.startsWith("http"); // 判断是否是外部链接
 
   Object.entries(translations).forEach(([lang, text]) => {
-    if (lang === "Sidebar"|| lang === "items") return; // 跳过 Sidebar 字段
+    // 跳过特殊字段处理
+    if (["base", "sidebar", "items"].includes(lang)) return;
 
     // 收集所有语言
     locales.add(lang);
@@ -51,14 +52,17 @@ Object.entries(config).forEach(([path, translations]) => {
         items: subItems,
       });
     } else {
-      const link = isExternalLink ? path : (lang === rootLocale ? `/${path}` : `/${lang}/${path}`); // 动态生成 link
-      const activeMatch = isExternalLink ? '' : `^${link}`;
-      navConfig[lang].nav.push({ text, link, activeMatch });
-      
+      // 动态生成 link
+      const link = isExternalLink ? path : lang === rootLocale ? `/${path}` : `/${lang}/${path}`;
+      // 生成带 base 的 link
+      const baseLink = translations.base ? `${link}/${translations.base}` : link;
+
+      const activeMatch = isExternalLink ? "" : `^${link}`;
+      navConfig[lang].nav.push({ text, link: baseLink, activeMatch });
     }
 
-    // 生成 vitePressSidebarConfig（仅对内部路径且 Sidebar 不为 false）
-    if (!isExternalLink && (translations as { Sidebar?: boolean }).Sidebar !== false) {
+    // 生成 vitePressSidebarConfig（仅对内部路径且 sidebar 不为 false）
+    if (!isExternalLink && (translations as { sidebar?: boolean }).sidebar !== false) {
       const basePath = lang === rootLocale ? `/${path}/` : `/${lang}/${path}/`;
       vitePressSidebarConfig.push({
         ...baseSidebarOptions,
@@ -70,12 +74,12 @@ Object.entries(config).forEach(([path, translations]) => {
   });
 });
 
-export {navConfig, vitePressSidebarConfig}
+export { navConfig, vitePressSidebarConfig };
 
 export const vitePressI18nConfig = {
   // VitePress I18n config
   locales: Array.from(locales),
-  searchProvider: 'local',
+  searchProvider: "local",
   themeConfig: navConfig,
 };
 

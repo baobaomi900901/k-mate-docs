@@ -1,18 +1,21 @@
 {
   "guide": {
-    "zhHans": "入门指南"
+    "zhHans": "入门指南",
+    "base": "introduction"
   },
   "HelpDoc": {
     "zhHans": "帮助文档",
-    "en": "Help document"
+    "en": "Help document",
+    "base": "Conditional/IF Condition"
   },
   "FAQ": {
     "zhHans": "常见问题",
-    "en": "FAQ"
+    "en": "FAQ",
+    "base": "webView2"
   },
   "Download": {
     "zhHans": "下载中心 ",
     "en": "Download Center",
-    "Sidebar": false
+    "sidebar": false
   }
 }
