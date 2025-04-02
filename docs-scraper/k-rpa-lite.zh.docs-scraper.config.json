@@ -1,13 +1,13 @@
 {
   "index_uid": "k-rpa-lite-zh",
   "start_urls": [
-    "https://king.docs.donxj.com/"
+    "https://krpalite.com/"
   ],
   "sitemap_urls": [
-    "https://king.docs.donxj.com/sitemap.xml"
+    "https://krpalite.com/sitemap.xml"
   ],
   "stop_urls": [
-    "https://king.docs.donxj.com/en"
+    "https://krpalite.com/en"
   ],
   "selectors": {
     "lvl0": {

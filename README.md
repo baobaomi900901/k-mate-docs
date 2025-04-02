@@ -42,13 +42,14 @@
 ```
 
 远端部署
+
 ```
 curl --location 'http://k-rpa-lite.kingsware.cn:58080/deploy' \
 --max-time 900 \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer q38qjF0Uj1fMw1zfVGrw' \
 --data '{
-    "url": "https://king.docs.donxj.com/dist.tar.gz",
+    "url": "https://krpalite.com/dist.tar.gz",
     "target": "/root/k-rpa-lite-docs"
 }'
 ```
