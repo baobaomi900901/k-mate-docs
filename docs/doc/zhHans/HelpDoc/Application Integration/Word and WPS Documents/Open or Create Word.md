@@ -1,9 +1,9 @@
 ---
-title: 打开/新建Word
+title: 打开或新建Word
 order: 1
 ---
 
-# 打开/新建Word
+# 打开或新建Word
 
 ## 功能说明
 
@@ -11,7 +11,7 @@ order: 1
 打开/新建Word文件，实现Word程序自动化处理
 :::
 
-![打开/新建Word](../../../assets/打开或新建Word_command.png)
+![打开或新建Word](../../../assets/打开或新建Word_command.png)
 
 ## 配置项说明
 

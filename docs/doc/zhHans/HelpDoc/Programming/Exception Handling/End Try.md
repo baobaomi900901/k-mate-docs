@@ -11,7 +11,7 @@ order: 4
 结束尝试执行标记
 :::
 
-![End Try](../../../assets/End Try_command.png)
+![End Try](../../../assets/End%20Try_command.png)
 
 ## 配置项说明
 
