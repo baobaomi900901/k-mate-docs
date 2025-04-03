@@ -128,7 +128,7 @@ const vitePressConfig = {
     // ],
     [
       "link",
-      { rel: "icon", type: "image/svg+xml", href: "/k-rpa-lite-logo.svg" },
+      { rel: "icon", type: "image/svg+xml", href: `${env.VITEPRESS_BASE}k-rpa-lite-logo.svg` },
     ],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:locale", content: "zh" }],
