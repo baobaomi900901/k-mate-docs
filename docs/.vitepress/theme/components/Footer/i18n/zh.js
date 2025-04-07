@@ -3,7 +3,7 @@ export default {
     {
       title: "产品",
       links: [
-        { text: "PRA", href: "https://www.kingsware.cn/tech-rpa" },
+        { text: "RPA", href: "https://www.kingsware.cn/tech-rpa" },
         { text: "AI", href: "https://www.kingsware.cn/a-iF4z" },
         { text: "运维", href: "https://www.kingsware.cn/kuniops" },
         { text: "低代码", href: "https://www.kingsware.cn/tech-code" },

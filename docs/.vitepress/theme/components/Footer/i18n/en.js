@@ -3,7 +3,7 @@ export default {
     {
       title: "Product",
       links: [
-        { text: "PRA", href: "https://www.kingswarei.com/tech-rpa" },
+        { text: "RPA", href: "https://www.kingswarei.com/tech-rpa" },
         { text: "AI", href: "https://www.kingswarei.com/a-iF4z" },
         { text: "Tech code", href: "https://www.kingswarei.com/K-pine" },
       ],
