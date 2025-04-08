@@ -7,8 +7,8 @@ on:
       - "docs-scraper/**"
       - ".github/workflows/scrapeDocs.yml"
   schedule:
-    # 每天凌晨3点运行
-    - cron: "0 3 * * *"
+    # 每天3点运行, GMT 时区
+    - cron: "0 7 * * *"
   # 允许你从 Actions 选项卡手动运行此工作流程
   workflow_dispatch:
 
@@ -41,18 +41,34 @@ jobs:
             -v $ZH_CONFIG_FILE_PATH:/docs-scraper/config.json \
             donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
 
-          echo "抓取子中文站点"
-          docker run -t --rm \
-            -e MEILISEARCH_HOST_URL=$HOST_URL \
-            -e MEILISEARCH_API_KEY=$API_KEY \
-            -v $ZH_SUB_CONFIG_FILE_PATH:/docs-scraper/config.json \
-            donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
-
           echo "抓取英文站点"
           docker run -t --rm \
             -e MEILISEARCH_HOST_URL=$HOST_URL \
             -e MEILISEARCH_API_KEY=$API_KEY \
             -v $EN_CONFIG_FILE_PATH:/docs-scraper/config.json \
+            donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
+
+  scrape-docs-sub:
+    runs-on: ubuntu-latest
+    name: scrape sub and push content on Meilisearch instance
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run docs-sub-scraper
+        env:
+          HOST_URL: ${{ secrets.MEILISEARCH_HOST_URL }}
+          API_KEY: ${{ secrets.MEILISEARCH_API_KEY }}
+          ZH_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite.zh.docs-scraper.config.json
+          ZH_SUB_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite-sub.zh.docs-scraper.config.json
+          EN_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite.en.docs-scraper.config.json
+          EN_SUB_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite-sub.en.docs-scraper.config.json
+        run: |
+
+          echo "抓取子中文站点"
+          docker run -t --rm \
+            -e MEILISEARCH_HOST_URL=$HOST_URL \
+            -e MEILISEARCH_API_KEY=$API_KEY \
+            -v $ZH_SUB_CONFIG_FILE_PATH:/docs-scraper/config.json \
             donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
 
           echo "抓取子英文站点"
