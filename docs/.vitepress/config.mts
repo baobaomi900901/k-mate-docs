@@ -3,7 +3,7 @@ import { fileURLToPath, URL } from "node:url";
 import path from "path";
 import del from "rollup-plugin-delete";
 import paragraphIds from "./plugin/markdown-it-paragraph-ids.cjs";
-import { ignoreMissingImages } from './plugin/markdown-it-ignore-images'
+import { ignoreMissingImages } from "./plugin/markdown-it-ignore-images";
 // import MiniSearch from "minisearch";
 import { withSidebar } from "vitepress-sidebar";
 import { withI18n } from "vitepress-i18n";
@@ -32,7 +32,7 @@ const vitePressConfig = {
   description: "",
   vite: {
     define: {
-      'import.meta.env.VITEPRESS_ICP': JSON.stringify(env.VITEPRESS_ICP),
+      "import.meta.env.VITEPRESS_ICP": JSON.stringify(env.VITEPRESS_ICP),
     },
     plugins: [],
     resolve: {
@@ -51,10 +51,7 @@ const vitePressConfig = {
         {
           find: /^.*\/VPNavBarSearch\.vue$/,
           replacement: fileURLToPath(
-            new URL(
-              "./theme/components/MeiliSearchBox/MeiliSearchBox.vue",
-              import.meta.url
-            )
+            new URL("./theme/components/MeiliSearchBox/MeiliSearchBox.vue", import.meta.url),
           ),
         },
       ],
@@ -77,10 +74,7 @@ const vitePressConfig = {
       rollupOptions: {
         plugins: [
           del({
-            targets: [
-              env.VITEPRESS_DEL_TARGETS,
-              "./docs/.vitepress/cache/*",
-            ],
+            targets: [env.VITEPRESS_DEL_TARGETS, "./docs/.vitepress/cache/*"],
             runOnce: true,
           }),
         ],
@@ -147,8 +141,7 @@ const vitePressConfig = {
 
     meilisearch: {
       host: "https://meilisearch.donxj.com",
-      apiKey:
-        "646f90bf02522026b531be2d4d491ba1e2721802f43b72ae72f0a2e5eeca711a",
+      apiKey: "646f90bf02522026b531be2d4d491ba1e2721802f43b72ae72f0a2e5eeca711a",
       indexUid: env.VITEPRESS_MEILISEARCH_INDEX_UID || "",
       locales: {
         en: {
@@ -184,7 +177,7 @@ const vitePressConfig = {
     //     }
     //   }
     // },
-    ICP: "粤ICP备2022023946号-2"
+    ICP: "粤ICP备2022023946号-2",
   },
   rewrites: {
     "doc/zhHans/:rest*": ":rest*",
@@ -206,8 +199,5 @@ const vitePressConfig = {
 };
 
 export default defineConfig(
-  withSidebar(
-    withI18n(vitePressConfig, vitePressI18nConfig),
-    vitePressSidebarConfig
-  )
+  withSidebar(withI18n(vitePressConfig, vitePressI18nConfig), vitePressSidebarConfig),
 );
