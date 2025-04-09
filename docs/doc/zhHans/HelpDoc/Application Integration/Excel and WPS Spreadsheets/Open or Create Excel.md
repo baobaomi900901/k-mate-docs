@@ -19,11 +19,17 @@ order: 1
 
 **指令输入**
 
-- **启动方式**`Integer`: 请选择是否新建Excel文件，或者打开已有Excel文件
+- **启动方式**`Integer`: 选择是否新建Excel文件，或者打开已有Excel文件
 
-- **驱动方式**`Integer`: 请选择打开Excel文件的驱动方式
+- **驱动方式**`Integer`: 选择打开Excel文件的驱动方式
 
-- **Excel文件路径**`string`: 选择或填写要打开的Excel文件路径
+    - 自动检测：自动检测设备支持的驱动方式
+
+    - Office：使用Microsoft Office Excel的驱动方式打开文件。适用于安装了Office套件的设备。
+
+    - WPS：使用WPS表格的驱动方式打开文件，适用于安装了WPS办公软件的设备。
+
+- **Excel文件路径**`string`: Excel文件的绝对路径
 
 - **是否可视化**`Boolean`: 此选项不会影响Excel自动化的相关操作，只是用于控制可视化操作是否用户可见。如果是非可视化下操作Excel，保存之后必须要关闭Excel
 
