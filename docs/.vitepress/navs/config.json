@@ -17,5 +17,9 @@
     "zhHans": "下载中心 ",
     "en": "Download Center",
     "sidebar": false
+  },
+  "tutorial-demo/#/": {
+    "zhHans": "教学环境 ",
+    "sidebar": false
   }
 }
