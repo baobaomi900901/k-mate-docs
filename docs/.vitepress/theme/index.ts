@@ -15,10 +15,23 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {});
   },
-  async enhanceApp({ app }) {
-    // if (!import.meta.env.SSR) {
-    //   // 动态导入...
-    // }
+  async enhanceApp({ app, router }) {
+    if (!import.meta.env.SSR) {
+      // 动态导入...
+      // 导入 mermaid 插件
+      const createMermaidRenderer = await import("donxj-vitepress-mermaid-renderer").then(
+        (m) => m.createMermaidRenderer,
+      );
+      const mermaidRenderer = createMermaidRenderer();
+      mermaidRenderer.initialize();
+      if (router) {
+        router.onAfterRouteChange = () => {
+          nextTick(() => {
+            mermaidRenderer.renderMermaidDiagrams();
+          });
+        };
+      }
+    }
   },
   setup() {
     onMounted(async () => {
