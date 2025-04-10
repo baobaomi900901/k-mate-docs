@@ -8,7 +8,7 @@ import "@ksware/ksw-ux/kingsware-ui/style.css";
 import "ksw-vue-icon/styles/icon.css";
 import "./custom.less";
 import "~/tailwind.css";
-import { createChatbot } from "../../../plugin/chatBot";
+// import { createChatbot } from "../../../plugin/chatBot";
 
 export default {
   extends: DefaultTheme,
@@ -37,7 +37,7 @@ export default {
     onMounted(async () => {
       // 等待页面初始化
       await nextTick();
-      createChatbot();
+      // createChatbot();
       document.body.classList.add("KingAutometa");
       // 选择所有具有滚动条的元素
       const scrollableElements = document.querySelectorAll("body, aside");
