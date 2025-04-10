@@ -1,4 +1,4 @@
-import config from "./config.json";
+import config from "./config.js";
 
 // 设置默认语言
 const rootLocale = "zhHans";
