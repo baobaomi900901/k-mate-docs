@@ -6,7 +6,7 @@ export default {
   buttonText: "Download client and plugin",
   linkText: "Download client",
   linkTwoText: "Download plugin",
-  linkThreeText: "Download viewView2_x64",
+  linkThreeText: "Download View2_x64",
   selectPlaceholderSystem: "System",
   selectPlaceholderVersion: "Version",
 };
