@@ -10,9 +10,7 @@ import { withI18n } from "vitepress-i18n";
 import { vitePressSidebarConfig, vitePressI18nConfig } from "./navs/i18nNavs";
 
 // 加载环境变量
-const mode = process.env.VP_MODE || "main";
-const env = loadEnv(mode, process.cwd(), "VITEPRESS_"); // 只加载 VITEPRESS_ 前缀变量
-console.log("当前环境:", env);
+import { env } from "./plugin/loadEnv";
 
 const suffixes = (term, minLength) => {
   if (term == null) {

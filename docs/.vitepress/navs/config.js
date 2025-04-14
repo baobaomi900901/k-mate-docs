@@ -1,6 +1,4 @@
-import { loadEnv } from "vitepress";
-const mode = process.env.VP_MODE || "main";
-const env = loadEnv(mode, process.cwd(), "VITEPRESS_"); // 只加载 VITEPRESS_ 前缀变量
+import { env } from "../plugin/loadEnv";
 
 export default {
   guide: {
