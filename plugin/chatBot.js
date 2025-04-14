@@ -1,6 +1,6 @@
 const difyChatbotConfig = {
   token: "IGIgXSCrqqjpnUIS",
-  baseUrl: "http://14.29.70.194:53005",
+  baseUrl: "https://doc-chat.krpalite.com",
 };
 
 export function createChatbot() {
