@@ -31,6 +31,7 @@ const vitePressConfig = {
   vite: {
     define: {
       "import.meta.env.VITEPRESS_ICP": JSON.stringify(env.VITEPRESS_ICP),
+      "import.meta.env.VITEPRESS_DIFY_URL": JSON.stringify(env.VITEPRESS_DIFY_URL),
     },
     plugins: [],
     resolve: {

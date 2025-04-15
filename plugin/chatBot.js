@@ -1,6 +1,6 @@
 const difyChatbotConfig = {
   token: "IGIgXSCrqqjpnUIS",
-  baseUrl: "https://doc-chat.krpalite.com",
+  baseUrl: import.meta.env.VITEPRESS_DIFY_URL,
 };
 
 export function createChatbot() {
