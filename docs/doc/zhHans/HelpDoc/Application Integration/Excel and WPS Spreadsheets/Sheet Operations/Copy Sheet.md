@@ -21,15 +21,19 @@ order: 3
 
 - **源Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-- **源Sheet页名称**`string`: 指定待拷贝的Sheet页名称,不能为空
+- **源Sheet页名称**`string`: 指定待拷贝的Sheet页的名称,不能为空
 
-- **拷贝方式**`Integer`: 指定拷贝方式
+- **拷贝方式**`Integer`: 选择拷贝方式。包括
+
+    - 当前工作簿内拷贝：将拷贝的Sheet页粘贴至当前Excel工作簿
+    
+    - 拷贝到另外的工作簿：将拷贝的Sheet页粘贴至新的Excel工作簿
 
 - **目标Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
 - **新的Sheet页名称**`string`: 指定拷贝至的Sheet页名称,不能为空
 
-- **新的Sheet页存在则覆盖**`Boolean`: 若新的sheet页存在，会覆盖原sheet页
+- **新的Sheet页存在则覆盖**`Boolean`: 若新的sheet页名称已存在，则覆盖
 
 
 **指令输出**
@@ -53,8 +57,7 @@ order: 3
  - **重试此指令**：指令运行出错时，重试运行指定次数指令，每次重试间隔指定时长。
 
 ## 使用示例
-
-**流程逻辑描述：** 
+无
 
 ## 常见错误及处理
 
