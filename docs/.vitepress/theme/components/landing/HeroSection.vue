@@ -95,7 +95,7 @@ onMounted(() => {
       xl: `(min-width: ${breakpoints.xl}px)`,
       xl2: `(min-width: ${breakpoints.xl2}px)`,
       mdH: `screen and (max-height: 700px)`,
-      lgH: `screen and (max-height: 900px)`,
+      lgH: `screen and (max-height: 960px)`,
     },
     (context) => {
       const { sm, md, lg, xl, xl2, mdH, lgH } = context.conditions;
@@ -116,7 +116,7 @@ onMounted(() => {
 
       // console.log(scrollParams);
       // console.log(initialHeight);
-      // console.log('windowlHeight', windowlHeight);
+      // console.log("windowlHeight", windowlHeight);
       // console.log(videoScale);
 
       // 创建动画

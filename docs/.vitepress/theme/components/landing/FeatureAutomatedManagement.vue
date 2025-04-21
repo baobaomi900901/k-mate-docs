@@ -1,13 +1,16 @@
 <template>
   <div class="hero mx-auto mt-40 flex max-w-[1440px] flex-col items-center px-8">
-    <div class="mx-auto my-16 flex w-fit flex-col items-center gap-10 text-center">
+    <div
+      ref="textActions"
+      class="mx-auto my-16 flex w-fit flex-col items-center gap-10 text-center"
+    >
       <div class="text-4xl font-bold text-gray-900 md:text-6xl">
         <span>{{ t.title }}</span>
         <span class="text-purple-500">{{ t.highlightText }}</span>
       </div>
       <div class="text-xl lg:text-2xl xl:text-3xl">{{ t.description }}</div>
     </div>
-    <div class="grid w-full grid-cols-2 gap-6">
+    <div ref="cardGroup" class="grid w-full grid-cols-2 gap-6">
       <div class="card col-span-2 flex flex-col gap-6 lg:flex-row">
         <div class="flex w-full flex-col justify-center p-0 md:p-6 lg:w-1/2">
           <span
@@ -85,13 +88,25 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { ref, computed, onMounted } from "vue";
 import { useData } from "vitepress";
 import { i18n, useAssets } from "./i18n/index";
+import { createScrollAnimation, defaultScrollOptions } from "./utils/scrollAnimation";
 
 const { lang } = useData();
 const langPrefix = computed(() => lang.value.split("-")[0]);
 const t = computed(() => i18n(langPrefix.value)?.featureAutomatedManagement);
+
+const textActions = ref(null);
+const cardGroup = ref(null);
+
+onMounted(() => {
+  // 调用动画函数
+  createScrollAnimation(
+    [...textActions.value.children, ...cardGroup.value.children],
+    defaultScrollOptions,
+  );
+});
 </script>
 
 <style scoped>

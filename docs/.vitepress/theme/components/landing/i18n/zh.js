@@ -11,7 +11,7 @@ export default {
     highlightText: "能做什么",
     description: "借助先进的RPA技术，提升业务流程的灵活性和响应速度，推动数字化转型",
     cardOne: {
-      title: "实现对任何操作系统、桌面软件和Web程序的全面自动化。",
+      title: "实现对任何操作系统、桌面软件和网页的全面自动化。",
       description:
         "我们能够自动化所有操作系统上的桌面应用程序，包括ERP系统、浏览器、CRM、微信、钉钉，以及您日常使用的其他任何应用程序。",
       systemWindows: {
