@@ -10,6 +10,10 @@ export default {
     en: "Help document",
     base: "Conditional/IF Condition",
   },
+  UserDoc: {
+    zhHans: "用户手册",
+    base: "K-RPA Lite User Manual",
+  },
   FAQ: {
     zhHans: "常见问题",
     en: "FAQ",
