@@ -176,6 +176,9 @@ const vitePressConfig = {
     //     }
     //   }
     // },
+    outline: {
+      level: "deep",
+    },
     ICP: "粤ICP备2022023946号-2",
   },
   rewrites: {
@@ -197,6 +200,13 @@ const vitePressConfig = {
   },
 };
 
-export default defineConfig(
-  withSidebar(withI18n(vitePressConfig, vitePressI18nConfig), vitePressSidebarConfig),
+// 临时方案 outline.level = "deep"
+const i18nconfig = withSidebar(
+  withI18n(vitePressConfig, vitePressI18nConfig),
+  vitePressSidebarConfig,
 );
+
+i18nconfig.locales.root.themeConfig.outline.level = "deep";
+i18nconfig.locales.en.themeConfig.outline.level = "deep";
+
+export default defineConfig(i18nconfig);
