@@ -200,13 +200,10 @@ const vitePressConfig = {
   },
 };
 
-// 临时方案 outline.level = "deep"
+// i18n 配置
 const i18nconfig = withSidebar(
   withI18n(vitePressConfig, vitePressI18nConfig),
   vitePressSidebarConfig,
 );
-
-i18nconfig.locales.root.themeConfig.outline.level = "deep";
-i18nconfig.locales.en.themeConfig.outline.level = "deep";
 
 export default defineConfig(i18nconfig);
