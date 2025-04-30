@@ -75,7 +75,14 @@ const isAllowDown = computed(() => {
 
 const getDownloadRPAAndPluginUrl = () => {
   if (!isAllowDown) return;
-  const fullPath = baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite_plugin.zip";
+  let fullPath = "";
+  if (system.value === "linux_arm") {
+    fullPath = baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite_arm.zip";
+  } else if (system.value === "linux_x86") {
+    fullPath = baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite_x86.zip";
+  } else {
+    fullPath = baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite_plugin.zip";
+  }
   return fullPath;
 };
 
@@ -186,7 +193,7 @@ watch(
         @click="downloadFile(getDownloadRPAAndPluginUrl())"
         >{{ t.buttonText }}</a
       >
-      <div class="flex flex-col items-center gap-4 md:flex-row">
+      <div class="flex flex-col items-center gap-4 md:flex-row" v-if="system == 'windows'">
         <div
           class="flex min-w-40 cursor-pointer select-none justify-center rounded-md px-1 py-[1px] text-base text-blue-500 transition-all hover:text-blue-400"
           @click="downloadFile(getDownloadRPAUrl())"
