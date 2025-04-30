@@ -4,8 +4,11 @@ export default {
     highlightText: "more possibilities",
     featureTitle:
       "Simplify operations, increase output, and let each team member focus on more important tasks.",
-    buttonText: "Download",
+    buttonText: "More versions",
     buttonUrl: "/en/Download",
+    buttonText1: "Download Windows",
+    buttonText2: "Download Linux x86",
+    buttonText3: "Download Linux arm",
   },
   feature: {
     title: "What can ",

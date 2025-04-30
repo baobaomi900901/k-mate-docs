@@ -11,17 +11,39 @@
       <div class="text-xl font-medium text-gray-700 lg:text-2xl xl:text-3xl">
         {{ t.featureTitle }}
       </div>
-      <div ref="description" class="flex gap-6 text-xl font-medium">
-        <a
-          class="rounded-full bg-blue-500 px-14 py-4 text-white hover:bg-blue-400"
-          :href="withBase(t.buttonUrl)"
-          >{{ t.buttonText }}</a
-        >
-        <!-- <a
-          class="px-14 py-4 text-gray-700 rounded-full border border-gray-200"
-          href="/"
-          >查看介绍</a
-        > -->
+      <div
+        ref="description"
+        class="flex flex-col items-center justify-center gap-6 text-xl font-medium"
+      >
+        <div class="flex gap-6 text-xl font-medium">
+          <!-- <a
+            class="rounded-full bg-blue-500 px-14 py-4 text-white hover:bg-blue-400"
+            :href="withBase(t.buttonUrl)"
+            >{{ t.buttonText }}</a
+          > -->
+          <a
+            class="cursor-pointer select-none rounded-full bg-blue-500 px-8 py-4 text-white hover:bg-blue-400"
+            @click="downloadFile(getDownloadRPAUrl('windows'))"
+            >{{ t.buttonText1 }}</a
+          >
+          <a
+            class="cursor-pointer select-none rounded-full bg-blue-500 px-8 py-4 text-white hover:bg-blue-400"
+            @click="downloadFile(getDownloadRPAUrl('linux_x86'))"
+            >{{ t.buttonText2 }}</a
+          >
+          <a
+            class="cursor-pointer select-none rounded-full bg-blue-500 px-8 py-4 text-white hover:bg-blue-400"
+            @click="downloadFile(getDownloadRPAUrl('linux_arm'))"
+            >{{ t.buttonText3 }}</a
+          >
+        </div>
+        <div>
+          <a
+            class="more-btn flex w-fit cursor-pointer select-none items-center gap-1 text-center text-base text-gray-400 hover:text-blue-400"
+            :href="withBase(t.buttonUrl)"
+            >{{ t.buttonText }} <IconArrowUpRight :size="12"
+          /></a>
+        </div>
       </div>
     </div>
     <div
@@ -49,6 +71,41 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 import { i18n, useAssets } from "./i18n/index";
+import { IconArrowUpRight } from "ksw-vue-icon";
+
+import { baseUrl, getVersionListAPI, downloadFile } from "../Download/tools";
+
+const system = ref("");
+// const version = ref("");
+/** 系统选项 */
+const systemOptions = ref([]);
+/** 版本选项 */
+const versionOptions = ref([]);
+/** 系统版本对象 */
+const versionObject = ref({});
+// 初始化时设置默认版本
+const initData = async () => {
+  versionObject.value = await getVersionListAPI();
+  const systemKeys = Object.keys(versionObject.value);
+  if (systemKeys.length === 0) return;
+  systemOptions.value = systemKeys.map((item) => {
+    return { value: item, label: item };
+  });
+  // system.value = systemKeys[0];
+  console.log(versionObject.value["windows"]);
+};
+const getDownloadRPAUrl = (sys) => {
+  let fullPath = "";
+  let version = versionObject.value[sys].at(-1).version;
+  if (sys === "linux_arm") {
+    fullPath = baseUrl + "/" + sys + "/" + version + "/K-RPA Lite_arm.zip";
+  } else if (sys === "linux_x86") {
+    fullPath = baseUrl + "/" + sys + "/" + version + "/K-RPA Lite_x86.zip";
+  } else {
+    fullPath = baseUrl + "/" + sys + "/" + version + "/K-RPA Lite_plugin.zip";
+  }
+  return fullPath;
+};
 
 const { lang } = useData();
 const langPrefix = computed(() => lang.value.split("-")[0]);
@@ -64,7 +121,10 @@ const highlightText = ref(null);
 const mainTitle = ref(null);
 const description = ref(null);
 
-onMounted(() => {
+onMounted(async () => {
+  // 初始化数据
+  initData();
+
   // 滚动动画
   // 统一配置对象
   const breakpoints = {
@@ -122,7 +182,7 @@ onMounted(() => {
       // 创建动画
       // 首屏动画
       const heroTextAnimate = gsap.fromTo(
-        textActions.value.querySelectorAll("div"),
+        [textActions.value.querySelectorAll("div")],
         {
           y: 200,
           autoAlpha: 0,
@@ -248,5 +308,34 @@ onMounted(() => {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+.more-btn {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.more-btn .ksw-icon-ArrowUpRight {
+  position: absolute;
+  right: -16px;
+  top: 6px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.more-btn:hover .ksw-icon-ArrowUpRight {
+  opacity: 1;
+  animation: identifier 1s ease-in-out infinite;
+}
+
+@keyframes identifier {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 </style>

@@ -3,8 +3,11 @@ export default {
     title: "自动化您的工作，释放",
     highlightText: "无限可能",
     featureTitle: "简化操作，提升产出，让每个团队成员专注于更重要的任务",
-    buttonText: "免费下载",
+    buttonText: "更多版本",
     buttonUrl: "/Download",
+    buttonText1: "下载 Windows 版",
+    buttonText2: "下载 Linux x86 版",
+    buttonText3: "下载 Linux arm 版",
   },
   feature: {
     title: "K-RPA Lite",
