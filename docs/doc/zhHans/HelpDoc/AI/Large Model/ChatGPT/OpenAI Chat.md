@@ -11,7 +11,7 @@ order: 1
 通过自然语言对话让AI完成原创写作、检查纠错、客服对话、翻译等任务
 :::
 
-![OpenAI Chat](../../../assets/OpenAI Chat_command.png)
+![OpenAIChat](../../../../assets/OpenAI%20Chat_command.png)
 
 ## 配置项说明
 

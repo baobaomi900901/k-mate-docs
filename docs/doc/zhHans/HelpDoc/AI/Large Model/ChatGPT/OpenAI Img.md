@@ -11,7 +11,7 @@ order: 2
 根据提示文本让AI实现图片创作的任务
 :::
 
-![OpenAI Img](../../../assets/OpenAI Img_command.png)
+![OpenAIImg](../../../../assets/OpenAI%20Img_command.png)
 
 ## 配置项说明
 

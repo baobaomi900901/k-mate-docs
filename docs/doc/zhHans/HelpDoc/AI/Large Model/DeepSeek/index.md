@@ -1,5 +1,5 @@
 ---
-title: ChatGPT
+title: DeepSeek
 order: 4
 ---
 
