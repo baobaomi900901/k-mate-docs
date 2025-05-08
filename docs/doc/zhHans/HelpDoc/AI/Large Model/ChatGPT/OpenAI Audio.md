@@ -1,17 +1,17 @@
 ---
-title: 文心一言Chat
-order: 4
+title: OpenAI Audio
+order: 3
 ---
 
-# 文心一言Chat
+# OpenAI Audio
 
 ## 功能说明
 
 :::tip 功能描述
-通过自然语言对话让AI完成原创写作、检查纠错、客服对话、翻译等任务
+对音频文件进行识别，将音频转换为文本
 :::
 
-![文心一言Chat](../../../assets/文心一言Chat_command.png)
+![OpenAIAudio](../../../../assets/OpenAI%20Audio_command.png)
 
 ## 配置项说明
 
@@ -19,9 +19,7 @@ order: 4
 
 **指令输入**
 
-- **提问文本**`string`: 输入提问文本
-
-- **模型方法**`Integer`: 选择模型方法
+- **音频文件**`string`: 输入音频文件的路径。文件类型支持m4a、mp3、webm、mp4、mpga、wav、mpeg、ogg、oga、flac格式
 
 
 **指令输出**
