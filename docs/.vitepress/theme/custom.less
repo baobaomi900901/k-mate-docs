@@ -74,6 +74,24 @@ header.VPNav {
   }
 }
 
+div.VPDoc.has-sidebar.has-aside {
+  .container {
+    .aside-container {
+      width: 324px;
+      &::before {
+        position: fixed;
+        content: '';
+        z-index: 2;
+        top: 0px;
+        width: 384px;
+        height: 128px;
+        background: linear-gradient(var(--vp-c-bg) 50%, transparent 100%);
+        pointer-events: none; 
+      }
+    }
+  }
+}
+
 .custom-parent-highlight {
   background-color: rgb(255 255 0 / 16%);
   box-shadow: 0 0 0 6px rgb(255 255 0 / 16%);
