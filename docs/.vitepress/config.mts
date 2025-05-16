@@ -4,7 +4,7 @@ import path from "path";
 import del from "rollup-plugin-delete";
 import paragraphIds from "./plugin/markdown-it-paragraph-ids.cjs";
 import { ignoreMissingImages } from "./plugin/markdown-it-ignore-images";
-// import MiniSearch from "minisearch";
+import MiniSearch from "minisearch";
 import { withSidebar } from "vitepress-sidebar";
 import { withI18n } from "vitepress-i18n";
 import { vitePressSidebarConfig, vitePressI18nConfig } from "./navs/i18nNavs";
@@ -12,6 +12,7 @@ import { vitePressSidebarConfig, vitePressI18nConfig } from "./navs/i18nNavs";
 // 加载环境变量
 import { env } from "./plugin/loadEnv";
 
+// 本地搜索分词
 const suffixes = (term, minLength) => {
   if (term == null) {
     return;
@@ -22,6 +23,51 @@ const suffixes = (term, minLength) => {
   }
   return tokens;
 };
+
+const isLocalSearch = env.VITEPRESS_SEARCH_PROVIDER === "local";
+// 生成搜索配置
+const searchConfig = isLocalSearch
+  ? {
+      search: {
+        provider: "local",
+        options: {
+          detailedView: true,
+          miniSearch: {
+            options: {
+              processTerm: (term) => suffixes(term, 2),
+            },
+            searchOptions: {
+              processTerm: MiniSearch.getDefault("processTerm"),
+            },
+          },
+        },
+      },
+    }
+  : {
+      search: false,
+      meilisearch: {
+        host: "https://meilisearch.donxj.com",
+        apiKey: "646f90bf02522026b531be2d4d491ba1e2721802f43b72ae72f0a2e5eeca711a",
+        indexUid: env.VITEPRESS_MEILISEARCH_INDEX_UID || "",
+        locales: {
+          en: {
+            indexUid: env.VITEPRESS_MEILISEARCH_INDEX_UID_EN || "",
+            translations: {
+              button: { buttonText: "Search" },
+              modal: {
+                searchDocsPlaceHolder: "Search documentation...",
+                resetButtonTitle: "Reset search",
+                cancelButtonText: "Cancel",
+                selectText: "Select",
+                navigateText: "Navigate",
+                closeText: "Close",
+                poweredByText: "Powered by",
+              },
+            },
+          },
+        },
+      },
+    };
 
 const vitePressConfig = {
   base: env.VITEPRESS_BASE,
@@ -37,22 +83,27 @@ const vitePressConfig = {
     resolve: {
       // 自定义替换默认组件
       alias: [
-        // {
-        //   find: /^.*\/VPLocalSearchBox\.vue$/,
-        //   replacement: fileURLToPath(
-        //     new URL("./theme/components/MyCustomSearchBox.vue", import.meta.url)
-        //   ),
-        // },
         {
           find: "~",
           replacement: path.resolve(__dirname, "../../"),
         },
-        {
-          find: /^.*\/VPNavBarSearch\.vue$/,
-          replacement: fileURLToPath(
-            new URL("./theme/components/MeiliSearchBox/MeiliSearchBox.vue", import.meta.url),
-          ),
-        },
+        ...(isLocalSearch
+          ? [
+              {
+                find: /^.*\/VPLocalSearchBox\.vue$/,
+                replacement: fileURLToPath(
+                  new URL("./theme/components/MyCustomSearchBox.vue", import.meta.url),
+                ),
+              },
+            ]
+          : [
+              {
+                find: /^.*\/VPNavBarSearch\.vue$/,
+                replacement: fileURLToPath(
+                  new URL("./theme/components/MeiliSearchBox/MeiliSearchBox.vue", import.meta.url),
+                ),
+              },
+            ]),
       ],
     },
     ssr: {
@@ -137,45 +188,7 @@ const vitePressConfig = {
 
   themeConfig: {
     logo: { src: "/k-rpa-lite-logo.svg", width: 32, height: 32 },
-
-    meilisearch: {
-      host: "https://meilisearch.donxj.com",
-      apiKey: "646f90bf02522026b531be2d4d491ba1e2721802f43b72ae72f0a2e5eeca711a",
-      indexUid: env.VITEPRESS_MEILISEARCH_INDEX_UID || "",
-      locales: {
-        en: {
-          indexUid: env.VITEPRESS_MEILISEARCH_INDEX_UID_EN || "",
-          translations: {
-            button: { buttonText: "Search" },
-            modal: {
-              searchDocsPlaceHolder: "Search documentation...",
-              resetButtonTitle: "Reset search",
-              cancelButtonText: "Cancel",
-              selectText: "Select",
-              navigateText: "Navigate",
-              closeText: "Close",
-              poweredByText: "Powered by",
-            },
-          },
-        },
-      },
-    },
-    search: false,
-    // search: {
-    //   provider: 'local',
-    //   options: {
-    //     // disableDetailedView: true,
-    //     detailedView: true,
-    //     miniSearch: {
-    //       options: {
-    //         processTerm: (term) => suffixes(term, 2)
-    //       },
-    //       searchOptions: {
-    //         processTerm: MiniSearch.getDefault('processTerm')
-    //       }
-    //     }
-    //   }
-    // },
+    ...searchConfig,
     outline: {
       level: "deep",
     },
