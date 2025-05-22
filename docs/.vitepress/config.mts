@@ -1,4 +1,4 @@
-import { loadEnv, defineConfig } from "vitepress";
+import { defineConfig } from "vitepress";
 import { fileURLToPath, URL } from "node:url";
 import path from "path";
 import del from "rollup-plugin-delete";
@@ -8,6 +8,7 @@ import MiniSearch from "minisearch";
 import { withSidebar } from "vitepress-sidebar";
 import { withI18n } from "vitepress-i18n";
 import { vitePressSidebarConfig, vitePressI18nConfig } from "./navs/i18nNavs";
+import llmstxt from "vitepress-plugin-llms";
 
 // 加载环境变量
 import { env } from "./plugin/loadEnv";
@@ -79,7 +80,19 @@ const vitePressConfig = {
       "import.meta.env.VITEPRESS_ICP": JSON.stringify(env.VITEPRESS_ICP),
       "import.meta.env.VITEPRESS_DIFY_URL": JSON.stringify(env.VITEPRESS_DIFY_URL),
     },
-    plugins: [],
+    plugins: [
+      llmstxt({
+        generateLLMsFullTxt: true,
+        ignoreFiles: ["*/about.md", "*/index.md"],
+        workDir: "doc/zhHans",
+        domain: "https://krpalite.com",
+        // customLLMsTxtTemplate: `# {title}\n\n{foo}`,
+        // title: "Awesome tool",
+        // customTemplateVariables: {
+        //   foo: "bar",
+        // },
+      }),
+    ],
     resolve: {
       // 自定义替换默认组件
       alias: [
