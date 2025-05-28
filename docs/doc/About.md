@@ -28,7 +28,7 @@ const members = [
       关于我们
     </template>
     <template #lead>
-      KingAutomate 是一个自动化工具集，旨在帮助开发者提升工作效率，提升软件质量，提升软件交付效率。1
+      KingAutomate 是一个自动化工具集，旨在帮助开发者提升工作效率，提升软件质量，提升软件交付效率。
     </template>
   </VPTeamPageTitle>
   <VPTeamMembers
