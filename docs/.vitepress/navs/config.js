@@ -17,7 +17,7 @@ export default {
   FAQ: {
     zhHans: "常见问题",
     en: "FAQ",
-    base: "webView2",
+    base: "FirstInstall",
   },
   Download: {
     zhHans: "下载中心 ",
