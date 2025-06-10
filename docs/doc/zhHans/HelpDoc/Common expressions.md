@@ -228,6 +228,43 @@ print(StrReplaceAll('hello','l','x')) // hexxo
 
 ```
 
+### 分割字符串为数组(待实现)
+
+```pascal
+print(strSplit('a,b,c', ',')) // ['a', 'b', 'c']
+print( strsplit('abc', '')) // ['a', 'b', 'c']
+
+```
+
+## 数组转换
+
+### 数组转字符串(待实现)
+
+```pascal
+print(arrJoin(['a', 'b', 'c'], '-')) // "a-b-c"
+print(arrJoin(['a', 'b', 'c'], ',')) // "a,b,c"
+
+```
+
+## 本地化数组转字符串(待实现)
+
+```pascal
+print(toLocaleString(1990)) // 1,990
+print(toLocaleString([1000, 2000])) // 1,000,2,000
+
+```
+
+## 初始化(待实现)
+
+```pascal
+print(newDate("2025-06-05")) // ISO 格式
+print(newDate("June 5, 2025 14:30:00")) // 英文月份格式
+
+```
+
+## 文件&文件夹操作(待实现)
+
+
 ## 日期时间方法
 
 ### 当前时间
