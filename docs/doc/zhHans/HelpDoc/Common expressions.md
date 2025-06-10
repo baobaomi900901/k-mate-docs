@@ -8,21 +8,21 @@ order: 0
 ### 整除
 
 ```pascal
-print(5 / 2) // 2
+ 5 / 2   结果为:  2
 
 ```
 
 ### 求余
 
 ```pascal
-print(5 mod 2) // 1
+ 5 mod 2   结果为:  1
 
 ```
 
 ### 乘方
 
 ```pascal
-print(Power(2,3):2) // 8
+ Power(2,3):2   结果为:  8
 
 ```
 
@@ -31,63 +31,63 @@ print(Power(2,3):2) // 8
 ### 绝对值
 
 ```pascal
-print(mathAbs(-5)) // 5
+ mathAbs(-5)   结果为:  5
 
 ```
 
 ### 四舍五入
 
 ```pascal
-print(mathRound(4.5)) // 4
+ mathRound(4.5)   结果为:  4
 
 ```
 
 ### 向上取整
 
 ```pascal
-print(mathCeil(4.2)) // 5
+ mathCeil(4.2)   结果为:  5
 
 ```
 
 ### 向下取整
 
 ```pascal
-print(mathFloor(4.9)) // 4
+ mathFloor(4.9)   结果为:  4
 
 ```
 
 ### 去除小数
 
 ```pascal
-print(mathTrunc(4.9)) // 4
+ mathTrunc(4.9)   结果为:  4
 
 ```
 
 ### 最大值
 
 ```pascal
-print(MathMax([1,3,5,8])) // 8
+ MathMax([1,3,5,8])   结果为:  8
 
 ```
 
 ### 最小值
 
 ```pascal
-print(MathMin([1,3,5,8])) // 1
+ MathMin([1,3,5,8])   结果为:  1
 
 ```
 
 ### 求和
 
 ```pascal
-print(MathSum([1,3,5,8])) // 17
+ MathSum([1,3,5,8])   结果为:  17
 
 ```
 
 ### 随机数
 
 ```pascal
-print(mathRandom()) // 0.123456789...
+ mathRandom()   结果为:  0.123456789...
 
 ```
 
@@ -96,21 +96,21 @@ print(mathRandom()) // 0.123456789...
 ### 或
 
 ```pascal
-print(or)
+ or
 
 ```
 
 ### 与
 
 ```pascal
-print(and)
+ and
 
 ```
 
 ### 非
 
 ```pascal
-print(not)
+ not
 
 ```
 
@@ -119,35 +119,35 @@ print(not)
 ### 获取字符串长度
 
 ```pascal
-print(strLength('hello')) // 5
+ strLength('hello')   结果为:  5
 
 ```
 
 ### 包含
 
 ```pascal
-print(StrInclude('hello', 'llo')) // true
+ StrInclude('hello', 'llo')   结果为:  true
 
 ```
 
 ### 开头是否为'xx'
 
 ```pascal
-print(strStartsWith('hello','he')) // true
+ strStartsWith('hello','he')   结果为:  true
 
 ```
 
 ### 结尾是否为'xx'
 
 ```pascal
-print(strEndsWith('hello','llo')) // true
+ strEndsWith('hello','llo')   结果为:  true
 
 ```
 
 ### 正则方法
 
 ```pascal
-print(Strmatch('hello', '/l/g'))
+ Strmatch('hello', '/l/g')
 
 ```
 
@@ -156,8 +156,8 @@ print(Strmatch('hello', '/l/g'))
 ### 截取子串
 
 ```pascal
-print(StrCopy('hello', 1, 3)) // hel
-print(StrCopy('hello', -3,2)) // ll
+ StrCopy('hello', 1, 3)   结果为:  hel
+ StrCopy('hello', -3,2)   结果为:  ll
 
 ```
 
@@ -166,49 +166,49 @@ print(StrCopy('hello', -3,2)) // ll
 ### 转为小写
 
 ```pascal
-print(StrToLowerCase('HELLO')) // hello
+ StrToLowerCase('HELLO')   结果为:  hello
 
 ```
 
 ### 转为大写
 
 ```pascal
-print(StrToUpperCase('hello')) // HELLO
+ StrToUpperCase('hello')   结果为:  HELLO
 
 ```
 
 ### 去除两端空白
 
 ```pascal
-print(StrTrim('   hello   ')) // hello
+ StrTrim('   hello   ')   结果为:  hello
 
 ```
 
 ### 去除开头空白
 
 ```pascal
-print(StrTrimStart('  hello  ')) // 'hello  '
+ StrTrimStart('  hello  ')   结果为:  'hello  '
 
 ```
 
 ### 去除结尾空白
 
 ```pascal
-print(StrTrimEnd('  hello  ')) // '  hello'
+ StrTrimEnd('  hello  ')   结果为:  '  hello'
 
 ```
 
 ### 重复字符串
 
 ```pascal
-print(StrRepeat('ha',3)) // hahaha
+ StrRepeat('ha',3)   结果为:  hahaha
 
 ```
 
 ### 插入字符串
 
 ```pascal
-print(StrInsert('hlo','el',2)) // hello
+ StrInsert('hlo','el',2)   结果为:  hello
 
 ```
 
@@ -217,14 +217,14 @@ print(StrInsert('hlo','el',2)) // hello
 ### 替换第一个匹配到的子串
 
 ```pascal
-print(StrReplace('hello','l','x')) // hexlo
+ StrReplace('hello','l','x')   结果为:  hexlo
 
 ```
 
 ### 替换全部匹配到的子串
 
 ```pascal
-print(StrReplaceAll('hello','l','x')) // hexxo
+ StrReplaceAll('hello','l','x')   结果为:  hexxo
 
 ```
 
@@ -270,36 +270,34 @@ print(newDate("June 5, 2025 14:30:00")) // 英文月份格式
 ### 当前时间
 
 ```pascal
-print(now())
+ now()
 
 ```
 
 ### 某个日期是周几
 
 ```pascal
-print(DayOfWeeks(2025,6,4)) // 3
+ DayOfWeeks(2025,6,4)   结果为:  3
 
 ```
 
 ### 获取某一年的某月有几天
 
 ```pascal
-print(DaysInMonth(2025,6)) // 30
+ DaysInMonth(2025,6)   结果为:  30
 
 ```
 
 ### 获取某一个日期 x 天前后的日期
 
 ```pascal
-print(addDays(2025, 6, 4, 3)) // 2025-06-07 00:00:00 000
+ addDays(2025, 6, 4, 3)   结果为:  2025-06-07 00:00:00 000
 
 ```
 
 ### 格式化日期输出
 
 ```pascal
-print(FormatDateTime('YYYY-MM-DD HH:NN:SS', Now)) // 2025-06-09 16:18:53
+ FormatDateTime('YYYY-MM-DD HH:NN:SS', Now)   结果为:  2025-06-09 16:18:53
 
 ```
-
-
