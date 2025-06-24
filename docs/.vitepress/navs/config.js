@@ -1,6 +1,6 @@
-import { env } from "../plugin/loadEnv";
+import { mode, env } from "../plugin/loadEnv";
 
-export default {
+export const config = {
   guide: {
     zhHans: "入门指南",
     base: "introduction",
@@ -24,8 +24,12 @@ export default {
     en: "Download Center",
     sidebar: false,
   },
-  [env.VITEPRESS_TUTORIAL_DEMO]: {
+};
+
+// 判断私有化
+if (mode !== "private") {
+  config[env.VITEPRESS_TUTORIAL_DEMO] = {
     zhHans: "教学环境 ",
     sidebar: false,
-  },
-};
+  };
+}

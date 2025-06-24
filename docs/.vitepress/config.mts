@@ -11,7 +11,7 @@ import { vitePressSidebarConfig, vitePressI18nConfig } from "./navs/i18nNavs";
 import llmstxt from "vitepress-plugin-llms";
 
 // 加载环境变量
-import { env } from "./plugin/loadEnv";
+import { mode, env } from "./plugin/loadEnv";
 
 // 本地搜索分词
 const suffixes = (term, minLength) => {
@@ -70,6 +70,24 @@ const searchConfig = isLocalSearch
       },
     };
 
+// 根据环境决定是否使用llmstxt插件,如果是私有化则不使用
+const vitePlugins =
+  mode === "private"
+    ? []
+    : [
+        llmstxt({
+          generateLLMsFullTxt: true,
+          ignoreFiles: ["*/about.md", "*/index.md"],
+          workDir: "doc/zhHans",
+          domain: "https://krpalite.com",
+          // customLLMsTxtTemplate: `# {title}\n\n{foo}`,
+          // title: "Awesome tool",
+          // customTemplateVariables: {
+          //   foo: "bar",
+          // },
+        }),
+      ];
+
 const vitePressConfig = {
   base: env.VITEPRESS_BASE,
   lang: "zh-CN",
@@ -79,20 +97,9 @@ const vitePressConfig = {
     define: {
       "import.meta.env.VITEPRESS_ICP": JSON.stringify(env.VITEPRESS_ICP),
       "import.meta.env.VITEPRESS_DIFY_URL": JSON.stringify(env.VITEPRESS_DIFY_URL),
+      "import.meta.env.VP_MODE": JSON.stringify(mode),
     },
-    plugins: [
-      llmstxt({
-        generateLLMsFullTxt: true,
-        ignoreFiles: ["*/about.md", "*/index.md"],
-        workDir: "doc/zhHans",
-        domain: "https://krpalite.com",
-        // customLLMsTxtTemplate: `# {title}\n\n{foo}`,
-        // title: "Awesome tool",
-        // customTemplateVariables: {
-        //   foo: "bar",
-        // },
-      }),
-    ],
+    plugins: vitePlugins,
     resolve: {
       // 自定义替换默认组件
       alias: [

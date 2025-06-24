@@ -5,7 +5,6 @@ import { OverlayScrollbars } from "overlayscrollbars";
 import "overlayscrollbars/overlayscrollbars.css";
 // import './KingAutometa.theme.css';
 import "@ksware/ksw-ux/kingsware-ui/style.css";
-import "ksw-vue-icon/styles/icon.css";
 import "./custom.less";
 import "~/tailwind.css";
 import { createChatbot } from "../../../plugin/chatBot";
@@ -37,7 +36,9 @@ export default {
     onMounted(async () => {
       // 等待页面初始化
       await nextTick();
-      createChatbot();
+      if (import.meta.env.VP_MODE !== "private") {
+        createChatbot();
+      }
       document.body.classList.add("KingAutometa");
       // 选择所有具有滚动条的元素
       const scrollableElements = document.querySelectorAll("body, aside");

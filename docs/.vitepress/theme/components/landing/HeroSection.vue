@@ -92,7 +92,7 @@ const initData = async () => {
     return { value: item, label: item };
   });
   // system.value = systemKeys[0];
-  console.log(versionObject.value["windows"]);
+  // console.log(versionObject.value["windows"]);
 };
 const getDownloadRPAUrl = (sys) => {
   let fullPath = "";
