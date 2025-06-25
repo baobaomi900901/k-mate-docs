@@ -104,6 +104,18 @@ const getDownloadWebView2Url = () => {
   return fullPath;
 };
 
+const getDownloadCefArmUrl = () => {
+  if (!isAllowDown) return;
+  const fullPath = baseUrl + "/cef/cef_arm.zip";
+  return fullPath;
+};
+
+const getDownloadCefx86Url = () => {
+  if (!isAllowDown) return;
+  const fullPath = baseUrl + "/cef/cef_x86.zip";
+  return fullPath;
+};
+
 const changeSystem = (key: string) => {
   const systemKeys = Object.keys(versionObject.value);
   if (systemKeys.length === 0) return;
@@ -213,6 +225,22 @@ watch(
           @click="downloadFile(getDownloadWebView2Url())"
         >
           {{ t.linkThreeText }}
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-4 md:flex-row" v-if="system == 'linux_arm'">
+        <div
+          class="flex min-w-40 cursor-pointer select-none justify-center rounded-md px-1 py-[1px] text-base text-blue-500 transition-all hover:text-blue-400"
+          @click="downloadFile(getDownloadCefArmUrl())"
+        >
+          {{ t.linkFourText }}
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-4 md:flex-row" v-if="system == 'linux_x86'">
+        <div
+          class="flex min-w-40 cursor-pointer select-none justify-center rounded-md px-1 py-[1px] text-base text-blue-500 transition-all hover:text-blue-400"
+          @click="downloadFile(getDownloadCefx86Url())"
+        >
+          {{ t.linkFourText }}
         </div>
       </div>
       <!-- <k-dropdown class="text-base text-blue-500 hover:text-blue-400 focus-visible:outline-none" size="large">

@@ -7,6 +7,7 @@ export default {
   linkText: "Download client",
   linkTwoText: "Download plugin",
   linkThreeText: "Download View2_x64",
+  linkFourText: "Download CEF Framework",
   selectPlaceholderSystem: "System",
   selectPlaceholderVersion: "Version",
 };

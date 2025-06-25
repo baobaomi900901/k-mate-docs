@@ -7,6 +7,7 @@ export default {
   linkText: "下载客户端",
   linkTwoText: "下载插件包",
   linkThreeText: "下载 View2_×64",
+  linkFourText: "下载 CEF 框架",
   selectPlaceholderSystem: "系统",
   selectPlaceholderVersion: "版本",
 };
