@@ -116,6 +116,31 @@ const getDownloadCefx86Url = () => {
   return fullPath;
 };
 
+const getDownloadLogoUrl = () => {
+  return baseUrl + "/logo.json";
+};
+
+const needExtraLogoFiles = [
+  "K-RPA Lite.zip",
+  "K-RPA Lite_arm.zip",
+  "K-RPA Lite_x86.zip",
+  "K-RPA Lite_plugin.zip",
+];
+
+// 处理下载逻辑（增加私有模式判断）
+const downloadWithLogoIfNeeded = async (url: string) => {
+  if (!url) return;
+  const needExtraLogo =
+    import.meta.env.VP_MODE === "private" && needExtraLogoFiles.some((file) => url.endsWith(file));
+
+  downloadFile(url);
+  if (needExtraLogo) {
+    setTimeout(() => {
+      downloadFile(getDownloadLogoUrl());
+    }, 500);
+  }
+};
+
 const changeSystem = (key: string) => {
   const systemKeys = Object.keys(versionObject.value);
   if (systemKeys.length === 0) return;
@@ -202,13 +227,13 @@ watch(
       <a
         class="mt-5 flex w-full cursor-pointer select-none justify-center rounded-xl bg-blue-500 px-6 py-3 text-base font-medium text-white transition-all hover:bg-blue-600"
         style="max-width: 300px"
-        @click="downloadFile(getDownloadRPAAndPluginUrl())"
+        @click="downloadWithLogoIfNeeded(getDownloadRPAAndPluginUrl())"
         >{{ t.buttonText }}</a
       >
       <div class="flex flex-col items-center gap-4 md:flex-row" v-if="system == 'windows'">
         <div
           class="flex min-w-40 cursor-pointer select-none justify-center rounded-md px-1 py-[1px] text-base text-blue-500 transition-all hover:text-blue-400"
-          @click="downloadFile(getDownloadRPAUrl())"
+          @click="downloadWithLogoIfNeeded(getDownloadRPAUrl())"
         >
           {{ t.linkText }}
         </div>

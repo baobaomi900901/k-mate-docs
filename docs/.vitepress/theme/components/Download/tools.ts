@@ -69,16 +69,35 @@ export const getUpdateLogAPI = async (url: string) => {
  * 下载文件
  * @param url
  */
-export const downloadFile = (url: string) => {
+export const downloadFile = async (url: string) => {
   try {
-    const downloadElement = document.createElement("a");
-    downloadElement.href = url;
-    document.body.appendChild(downloadElement);
-    downloadElement.setAttribute("download", "");
-    downloadElement.click(); // 点击下载
-    document.body.removeChild(downloadElement); // 下载完成移除元素
+    // 判断是否为 .json 文件
+    if (url.endsWith(".json")) {
+      // 使用 Blob 下载方式
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`下载失败: ${response.statusText}`);
+
+      const blob = await response.blob();
+      const blobUrl = URL.createObjectURL(blob);
+
+      const downloadElement = document.createElement("a");
+      downloadElement.href = blobUrl;
+      downloadElement.setAttribute("download", "logo.json");
+      document.body.appendChild(downloadElement);
+      downloadElement.click();
+      document.body.removeChild(downloadElement);
+      URL.revokeObjectURL(blobUrl);
+    } else {
+      // 保持原来的直接下载方式
+      const downloadElement = document.createElement("a");
+      downloadElement.href = url;
+      downloadElement.setAttribute("download", "");
+      document.body.appendChild(downloadElement);
+      downloadElement.click();
+      document.body.removeChild(downloadElement);
+    }
   } catch (e) {
-    console.error(e);
+    console.error("下载文件失败:", e);
   }
 };
 
