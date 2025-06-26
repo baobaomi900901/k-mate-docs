@@ -1,9 +1,9 @@
 ---
-title: Linux CEF 缺失解决方法
+title: Linux CEF 报错解决方法
 order: 5
 ---
 
-# Linux CEF 缺失解决方法
+# Linux CEF 报错解决方法
 
 ## 现象
 
