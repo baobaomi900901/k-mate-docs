@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "docs:dev": "vitepress dev docs",
+    "docs:dev:sub": "VP_MODE=sub vitepress dev docs",
     "docs:dev:private": "VP_MODE=private vitepress dev docs",
     "docs:build": "VP_MODE=main vitepress build docs",
     "docs:win:build": "set VP_MODE=main&& vitepress build docs",

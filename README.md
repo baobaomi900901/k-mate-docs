@@ -13,6 +13,15 @@ npm run dev
 
 ```
 
+打包文档
+
+```
+npm run docs:build
+
+# DEBUG
+DEBUG='vitepress:*' or DEBUG='vite:*' npm run docs:build
+```
+
 文件结构
 
 ```
