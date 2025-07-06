@@ -5,9 +5,9 @@ export default {
   darkMode: "selector",
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-    "./docs/**/*.{js,ts,vue,md}",
-    "./docs/.vitepress/**/*.{js,ts,vue}",
+    "./src/**/*.vue",
+    "./docs/doc/**/*.{vue,md}",
+    "./docs/.vitepress/theme/**/*.vue",
   ],
   theme: {
     extend: {},
