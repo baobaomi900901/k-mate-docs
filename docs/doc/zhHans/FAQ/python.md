@@ -15,28 +15,29 @@ Python下载地址:
 
 [Windows安装程序 (ARM64))](https://www.python.org/ftp/python/3.13.0/python-3.13.0-arm64.exe)
 
-注: 如果下载慢可右键 复制上方下载链接用迅雷打开
+注: 如果下载慢可复制下载链接用迅雷下载
+
 ## 安装教程
 
 1. 勾选下面两项 然后点击Install Now
 
 ![alt text](assets/python/image.png)
 
-2.直接点击Close
+2. 直接点击Close
 
 ![alt text](assets/python/image-1.png)
 
-3.按Win+R 输入cmd回车
+3. 按Win+R 输入cmd回车
 
-4.输入Python 回车 显示版本信息代表安装成功
+4. 输入Python 回车 显示版本信息代表安装成功
 
 ![alt text](assets/python/image-2.png)
 
 ## 安装python依赖库
 
-1.按Win+R 输入cmd回车
+1. 按Win+R 输入cmd回车
 
-2.输入 pip install pyflakes 回车 
+2. 输入 pip install pyflakes 回车 
 
 ![alt text](assets/python/image-3.png)
 
