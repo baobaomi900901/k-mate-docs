@@ -137,3 +137,4 @@ cache
 dist-*
 LLM
 test*
+.history

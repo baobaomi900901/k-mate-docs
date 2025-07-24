@@ -29,15 +29,11 @@ Python下载地址:
 
 3. 按Win+R 输入cmd回车
 
-4. 输入Python 回车 显示版本信息代表安装成功
+4. 输入 python --version 回车 显示版本信息代表安装成功
 
-![alt text](assets/python/image-2.png)
+![alt text](assets/python/image-4.png)
 
-## 安装python依赖库
-
-1. 按Win+R 输入cmd回车
-
-2. 输入 pip install pyflakes 回车 
+5. 安装python依赖库 输入 pip install pyflakes 回车 
 
 ![alt text](assets/python/image-3.png)
 
