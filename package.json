@@ -14,7 +14,8 @@
     "docs:build:sub": "cross-env VP_MODE=sub vitepress build docs",
     "docs:build:private": "cross-env VP_MODE=private vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "clean-images": "cd docs/doc && node filterUnusedImages.js"
   },
   "dependencies": {
     "@ksware/ksw-ux": "^1.1.14",
