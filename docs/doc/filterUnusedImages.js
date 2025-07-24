@@ -56,8 +56,8 @@ function readFilesRecursively(dir) {
 // 1.1 读取当前文件夹及其子文件夹中的所有文件
 readFilesRecursively("./");
 
-console.log("allFiles", allFiles); // 打印所有文件路径
-console.log("所有图片", allImages); // 打印所有文件路径
+// console.log("allFiles", allFiles); // 打印所有文件路径
+// console.log("所有图片", allImages); // 打印所有文件路径
 
 for (let i = 0; i < allFiles.length; i++) {
   // 读取文件内容
@@ -88,7 +88,7 @@ if (deleteImage.length > 0) {
   for (let i = 0; i < deleteImage.length; i++) {
     fs.unlink(deleteImage[i], (err) => {
       if (err) throw err;
-      console.log("未引用图片删除成功!");
+      console.log(deleteImage[i], "未引用图片删除成功!");
     });
   }
 } else {
