@@ -19,6 +19,7 @@ const config = {
   scanExtensions: [".md", ".html", ".htm"], // 扫描的文件扩展名
   imageExtensions: [".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg"], // 图片扩展名
   excludeDirs: ["node_modules", ".git", "dist", "build"], // 排除的目录
+  dryRun: false, // 干跑模式(不实际删除)
   verbose: true, // 详细日志
 };
 
@@ -48,11 +49,13 @@ async function main() {
 
     await reportResults(unusedImages, targetPath);
 
-    const shouldDelete = await askConfirmation(
-      `确定要删除 ${unusedImages.length} 个未使用的图片文件吗? (y/n)`,
-    );
-    if (shouldDelete) {
-      await deleteUnusedImages(unusedImages, targetPath);
+    if (!config.dryRun) {
+      const shouldDelete = await askConfirmation(
+        `确定要删除 ${unusedImages.length} 个未使用的图片文件吗? (y/n)`,
+      );
+      if (shouldDelete) {
+        await deleteUnusedImages(unusedImages, targetPath);
+      }
     }
   } catch (error) {
     console.error("❌ 发生错误:", error.message);
@@ -174,6 +177,10 @@ async function reportResults(unusedImages, basePath) {
 
   const totalSize = await calculateTotalSize(unusedImages);
   console.log(`\n📊 总大小: ${formatFileSize(totalSize)}`);
+
+  if (config.dryRun) {
+    console.log("\n🔍 干跑模式: 不会实际删除文件");
+  }
 }
 
 // 计算文件总大小
