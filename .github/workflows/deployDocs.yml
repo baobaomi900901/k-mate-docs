@@ -63,6 +63,7 @@ jobs:
             docs/.vitepress/dist-sub-krpalite
       #      docs/.vitepress/dist.tar.gz
       #      docs/.vitepress/dist-sub-krpalite.tar.gz
+          retention-days: 1
 
   # 部署 GitHub Pages
   # deploy-github-pages:
