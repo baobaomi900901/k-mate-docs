@@ -21,7 +21,9 @@ WebView2 是微软推出的一个控件，允许开发者在 Windows 应用程�
 
 ## Windows 11 设备和 Windows 10 设备
 
-绝大多数Windows 10设备都已安装 WebView2 运行时，少数Windows 10设备未安装 WebView2 运行时。 建议使用以下任一方法处理此情况：
+在 Windows 11 中，WebView2 运行时已内置于操作系统，任何更新至 Windows 11 的设备均可轻松使用。
+
+绝大多数 Windows 10 设备都已安装 WebView2 运行时，少数 Windows 10 设备未安装 WebView2 运行时。 建议使用以下任一方法处理此情况：
 
 - 前往微软官方网站下载 WebView2 运行时: [下载Microsoft Edge WebView2](https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/?form=MA13LH)
 
@@ -33,9 +35,9 @@ WebView2 是微软推出的一个控件，允许开发者在 Windows 应用程�
 
 若以上方法还不能解决您的问题, 另请参阅：
 
-- [Windows 7 和 Windows 10 版本 1803、1809 解决方案](./webView2#windows-7-%E5%92%8C-windows-10-%E7%89%88%E6%9C%AC-1803%E3%80%811809-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88)
+- [Windows 7 设备](./webView2#Windows%207%20%E8%AE%BE%E5%A4%87)
 
-## Windows 7 和 Windows 10 版本 1803、1809 设备
+## Windows 7 设备
 
 由于 Windows 7 不再受 Microsoft 支持，建议使用较旧的 WebView2 版本，并确保选择与您的 Windows 7 版本（32位或64位）匹配的安装程序。
 
