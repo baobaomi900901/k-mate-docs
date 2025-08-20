@@ -13,19 +13,19 @@ order: 10
 
 ![新增数据验证](../../../../assets/新增数据验证_command.png)
 
-## 配置项说明
+## 指令输入
 
-### 常规
+- **Excel对象**`TWorkbookApplication`: 
+    - 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
 
-**指令输入**
+- **允许**`Integer`: 
+    - 允许
 
-- **Excel对象**`TWorkbookApplication`: 输入一个通过函数'打开或新建Excel'/'获取当前激活的Excel对象'存储的Excel对象
+- **忽略空值**`Boolean`: 
+    - 是否忽略空值
 
-- **允许**`Integer`: 允许
-
-- **忽略空值**`Boolean`: 是否忽略空值
-
-- **提供下拉箭头**`Boolean`: 提供下拉箭头
+- **提供下拉箭头**`Boolean`: 
+    - 提供下拉箭头
 
 - **数据**`Integer`: 设置数据计算方式
 

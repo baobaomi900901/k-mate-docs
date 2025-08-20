@@ -25,28 +25,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # - name: Run docs-scraper
-      #   env:
-      #     HOST_URL: ${{ secrets.MEILISEARCH_HOST_URL }}
-      #     API_KEY: ${{ secrets.MEILISEARCH_API_KEY }}
-      #     ZH_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite.zh.docs-scraper.config.json
-      #     ZH_SUB_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite-sub.zh.docs-scraper.config.json
-      #     EN_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite.en.docs-scraper.config.json
-      #     EN_SUB_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite-sub.en.docs-scraper.config.json
-      #   run: |
-      #     echo "抓取中文站点"
-      #     docker run -t --rm \
-      #       -e MEILISEARCH_HOST_URL=$HOST_URL \
-      #       -e MEILISEARCH_API_KEY=$API_KEY \
-      #       -v $ZH_CONFIG_FILE_PATH:/docs-scraper/config.json \
-      #       donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
+      - name: Run docs-scraper
+        env:
+          HOST_URL: ${{ secrets.MEILISEARCH_HOST_URL }}
+          API_KEY: ${{ secrets.MEILISEARCH_API_KEY }}
+          ZH_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite.zh.docs-scraper.config.json
+          ZH_SUB_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite-sub.zh.docs-scraper.config.json
+          EN_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite.en.docs-scraper.config.json
+          EN_SUB_CONFIG_FILE_PATH: ${{ github.workspace }}/docs-scraper/k-rpa-lite-sub.en.docs-scraper.config.json
+        run: |
+          echo "抓取中文站点"
+          docker run -t --rm \
+            -e MEILISEARCH_HOST_URL=$HOST_URL \
+            -e MEILISEARCH_API_KEY=$API_KEY \
+            -v $ZH_CONFIG_FILE_PATH:/docs-scraper/config.json \
+            donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
 
-      #     echo "抓取英文站点"
-      #     docker run -t --rm \
-      #       -e MEILISEARCH_HOST_URL=$HOST_URL \
-      #       -e MEILISEARCH_API_KEY=$API_KEY \
-      #       -v $EN_CONFIG_FILE_PATH:/docs-scraper/config.json \
-      #       donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
+          echo "抓取英文站点"
+          docker run -t --rm \
+            -e MEILISEARCH_HOST_URL=$HOST_URL \
+            -e MEILISEARCH_API_KEY=$API_KEY \
+            -v $EN_CONFIG_FILE_PATH:/docs-scraper/config.json \
+            donxj/docs-scraper:0.0.1 pipenv run ./docs_scraper config.json
 
   scrape-docs-sub:
     runs-on: ubuntu-latest
