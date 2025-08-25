@@ -4,7 +4,7 @@ import type { Theme } from "vitepress";
 import { OverlayScrollbars } from "overlayscrollbars";
 import "overlayscrollbars/overlayscrollbars.css";
 // import './KingAutometa.theme.css';
-import "@ksware/ksw-ux/kingsware-ui/style.css";
+import "ksw-ux/kingsware-ui/style.css";
 import "./custom.less";
 import "~/tailwind.css";
 import { createChatbot } from "../../../plugin/chatBot";

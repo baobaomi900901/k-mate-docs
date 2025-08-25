@@ -127,7 +127,7 @@ const vitePressConfig = {
       ],
     },
     ssr: {
-      noExternal: ["gsap", "gsap/*", "ksw-vue-icon", "@ksware/ksw-ux"],
+      noExternal: ["gsap", "gsap/*", "ksw-vue-icon", "ksw-ux"],
     },
     // Network
     server: {
@@ -172,7 +172,7 @@ const vitePressConfig = {
     //   'link',
     //   {
     //     rel: 'preload stylesheet',
-    //     href: 'https://cdn.jsdelivr.net/npm/@ksware/ksw-ux/kingsware-ui/style.min.css',
+    //     href: 'https://cdn.jsdelivr.net/npm/ksw-ux/kingsware-ui/style.min.css',
     //     as: 'style',
     //     'data-cdn': 'ksw-css'
     //   }

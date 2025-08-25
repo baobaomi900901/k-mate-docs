@@ -18,7 +18,7 @@
     "clean-images": "cd docs/doc && node cleanUnusedImages.js"
   },
   "dependencies": {
-    "@ksware/ksw-ux": "^1.1.14",
+    "ksw-ux": "^1.1.14",
     "autoprefixer": "^10.4.19",
     "donxj-vitepress-mermaid-renderer": "^0.0.0",
     "gsap": "^3.12.5",

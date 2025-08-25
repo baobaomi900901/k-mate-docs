@@ -13,7 +13,7 @@ import {
   IOptions,
   IVersion,
 } from "./tools";
-import { KSelect, KOption, KDropdown, KDropdownItem, KScrollbar, KButton } from "@ksware/ksw-ux";
+import { KSelect, KOption, KDropdown, KDropdownItem, KScrollbar, KButton } from "ksw-ux";
 import { IconLoading, IconDown } from "ksw-vue-icon";
 import { i18n } from "./i18n/index";
 
@@ -24,12 +24,12 @@ const t = computed(() => i18n(langPrefix.value));
 
 // KSW 组件动态导入
 // import { defineClientComponent } from 'vitepress'
-// const KSelect = defineClientComponent(() => import('@ksware/ksw-ux').then(m => m.KSelect))
-// const KOption = defineClientComponent(() => import('@ksware/ksw-ux').then(m => m.KOption))
-// const KDropdown = defineClientComponent(() => import('@ksware/ksw-ux').then(m => m.KDropdown))
-// const KDropdownItem = defineClientComponent(() => import('@ksware/ksw-ux').then(m => m.KDropdownItem))
-// const KScrollbar = defineClientComponent(() => import('@ksware/ksw-ux').then(m => m.KScrollbar))
-// const KButton = defineClientComponent(() => import('@ksware/ksw-ux').then(m => m.KButton))
+// const KSelect = defineClientComponent(() => import('ksw-ux').then(m => m.KSelect))
+// const KOption = defineClientComponent(() => import('ksw-ux').then(m => m.KOption))
+// const KDropdown = defineClientComponent(() => import('ksw-ux').then(m => m.KDropdown))
+// const KDropdownItem = defineClientComponent(() => import('ksw-ux').then(m => m.KDropdownItem))
+// const KScrollbar = defineClientComponent(() => import('ksw-ux').then(m => m.KScrollbar))
+// const KButton = defineClientComponent(() => import('ksw-ux').then(m => m.KButton))
 
 const system = ref("");
 const version = ref("");
