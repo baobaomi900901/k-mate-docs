@@ -24,12 +24,19 @@ export const config = {
     en: "Download Center",
     sidebar: false,
   },
+  Tutorial: {
+    zhHans: "教学",
+    items: {
+      "http://edu.kingsware.cn:6001/?tabName=K-RPA%20Lite": { zhHans: "K-RPA Lite 学院" },
+    },
+    sidebar: false,
+  },
 };
 
 // 判断私有化
 if (mode !== "private") {
-  config[env.VITEPRESS_TUTORIAL_DEMO] = {
-    zhHans: "教学环境 ",
+  config.Tutorial.items[env.VITEPRESS_TUTORIAL_DEMO] = {
+    zhHans: "教学环境",
     sidebar: false,
   };
 }
