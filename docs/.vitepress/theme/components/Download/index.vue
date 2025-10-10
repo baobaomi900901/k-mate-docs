@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Footer from "../../components/Footer/index.vue";
 import markdownit from "markdown-it";
-import { computed, nextTick, onMounted, ref, watch } from "vue";
+import { computed, nextTick, onMounted, ref, watch, watchEffect } from "vue";
 import { useData } from "vitepress";
 import {
   baseUrl,
@@ -55,14 +55,21 @@ const initData = async () => {
   system.value = systemKeys[0];
 };
 
+// 多语言对应的日志文件名
+const logNameOfLang = new Map([
+  ['zh', 'changeLog'],
+  ['en', 'changeLog-en']
+])
 const md = markdownit();
 /** 获取日志 */
 const getLog = async () => {
   await nextTick();
-  const logData = await getUpdateLogAPI(`/${system.value}/${version.value}/changeLog.md`);
-  const htmlContent = await md.render(logData);
-  // const cleanHtml = DOMPurify.sanitize(htmlContent);
-  markdownContent.value = htmlContent;
+  markdownContent.value = '';
+  const logData = await getUpdateLogAPI(`/${system.value}/${version.value}/${logNameOfLang.get(langPrefix.value)}.md`);
+  if (logData) {
+    const htmlContent = await md.render(logData);
+    markdownContent.value = htmlContent;
+  }
 };
 
 onMounted(async () => {
@@ -81,10 +88,19 @@ const getDownloadRPAAndPluginUrl = () => {
   } else if (system.value === "linux_x86") {
     fullPath = baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite_x86.zip";
   } else {
-    fullPath = baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite_plugin.zip";
+    fullPath = baseUrl + "/" + system.value + "/" + version.value + `/K-RPA Lite Setup ${version.value}.exe`;
   }
   return fullPath;
 };
+
+// 下载按钮是否禁用
+const isDisableDownBtn = ref(false)
+watchEffect(async () => {
+  // 先发送 HEAD 请求检查状态
+  isDisableDownBtn.value = await fetch(getDownloadRPAAndPluginUrl(), { method: 'HEAD' })
+    .then(() => false)
+    .catch(() => true)
+})
 
 const getDownloadRPAUrl = () => {
   if (!isAllowDown) return;
@@ -124,7 +140,7 @@ const needExtraLogoFiles = [
   "K-RPA Lite.zip",
   "K-RPA Lite_arm.zip",
   "K-RPA Lite_x86.zip",
-  "K-RPA Lite_plugin.zip",
+  `K-RPA Lite Setup ${version.value}.exe`
 ];
 
 // 处理下载逻辑（增加私有模式判断）
@@ -183,7 +199,7 @@ watch(
 </script>
 
 <template>
-  <div class="mx-auto flex max-w-[860px] flex-col items-center lang-en:mb-24">
+  <div class="mx-auto flex max-w-[860px] flex-col items-center mb-24">
     <div class="mx-auto mt-24 flex w-fit flex-col items-center">
       <div class="text-4xl font-bold md:text-7xl">{{ t.title }}</div>
       <div class="mt-10 text-xl font-medium">
@@ -227,6 +243,7 @@ watch(
       <a
         class="mt-5 flex w-full cursor-pointer select-none justify-center rounded-xl bg-blue-500 px-6 py-3 text-base font-medium text-white transition-all hover:bg-blue-600"
         style="max-width: 300px"
+        :class="[isDisableDownBtn ? 'down-btn-disabled' : '']"
         @click="downloadWithLogoIfNeeded(getDownloadRPAAndPluginUrl())"
         >{{ t.buttonText }}</a
       >
@@ -281,17 +298,18 @@ watch(
         </template>
       </k-dropdown> -->
     </div>
-    <div
-      v-if="langPrefix == 'zh'"
-      class="my-12 w-full rounded-full border-t border-gray-200 dark:border-[rgba(0,0,0,0.5)]"
-    />
-    <div v-if="langPrefix == 'zh'" class="flex flex-col items-center gap-4 lang-en:hidden">
-      <div class="text-4xl font-bold">更新日志</div>
-      <div class="text-base opacity-70">不断优化 K-RPA Lite，为您带来更好体验</div>
-    </div>
-    <div v-if="langPrefix == 'zh'" class="mt-12 min-h-96 w-full max-w-[580px]">
-      <div class="changelog content vp-doc mx-6" v-html="markdownContent"></div>
-    </div>
+    <template v-if="markdownContent !== ''">
+      <div
+        class="my-12 w-full rounded-full border-t border-gray-200 dark:border-[rgba(0,0,0,0.5)]"
+      />
+      <div class="flex flex-col items-center gap-4">
+        <div class="text-4xl font-bold">{{ t.changelog }}</div>
+        <div class="text-base opacity-70">{{ t.changeTips }}</div>
+      </div>
+      <div class="mt-12 min-h-96 w-full max-w-[580px]">
+        <div class="changelog content vp-doc mx-6" v-html="markdownContent"></div>
+      </div>
+    </template>
   </div>
   <Footer class="footer" />
 </template>
@@ -337,4 +355,8 @@ watch(
     justify-content: center;
   }
 } */
+.down-btn-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
 </style>
