@@ -93,15 +93,6 @@ const getDownloadRPAAndPluginUrl = () => {
   return fullPath;
 };
 
-// 下载按钮是否禁用
-const isDisableDownBtn = ref(false)
-watchEffect(async () => {
-  // 先发送 HEAD 请求检查状态
-  isDisableDownBtn.value = await fetch(getDownloadRPAAndPluginUrl(), { method: 'HEAD' })
-    .then(() => false)
-    .catch(() => true)
-})
-
 const getDownloadRPAUrl = () => {
   if (!isAllowDown) return;
   const fullPath = baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite.zip";
@@ -243,7 +234,6 @@ watch(
       <a
         class="mt-5 flex w-full cursor-pointer select-none justify-center rounded-xl bg-blue-500 px-6 py-3 text-base font-medium text-white transition-all hover:bg-blue-600"
         style="max-width: 300px"
-        :class="[isDisableDownBtn ? 'down-btn-disabled' : '']"
         @click="downloadWithLogoIfNeeded(getDownloadRPAAndPluginUrl())"
         >{{ t.buttonText }}</a
       >
@@ -355,8 +345,4 @@ watch(
     justify-content: center;
   }
 } */
-.down-btn-disabled {
-  pointer-events: none;
-  opacity: 0.5;
-}
 </style>

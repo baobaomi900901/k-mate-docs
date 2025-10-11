@@ -39,7 +39,8 @@ export const ajaxAPI = async (url: string, format = "json") => {
   try {
     // 使用 Promise.race 在请求和超时之间进行竞速
     const res = await Promise.race([
-      fetch(fullUrl).then((res: any) => res[format]()),
+      // 生产环境获取文件404时，也会fulfilled
+      fetch(fullUrl).then((res: any) => res.ok ? res[format]() : Promise.reject(res)),
       timeoutPromise,
     ]);
     return res;
@@ -88,13 +89,17 @@ export const downloadFile = async (url: string) => {
       document.body.removeChild(downloadElement);
       URL.revokeObjectURL(blobUrl);
     } else {
-      // 保持原来的直接下载方式
-      const downloadElement = document.createElement("a");
-      downloadElement.href = url;
-      downloadElement.setAttribute("download", "");
-      document.body.appendChild(downloadElement);
-      downloadElement.click();
-      document.body.removeChild(downloadElement);
+      // 先发送 HEAD 请求检查状态
+      const headResponse = await fetch(url, { method: 'HEAD' });
+      if (headResponse.ok) {
+        // 保持原来的直接下载方式
+        const downloadElement = document.createElement("a");
+        downloadElement.href = url;
+        downloadElement.setAttribute("download", "");
+        document.body.appendChild(downloadElement);
+        downloadElement.click();
+        document.body.removeChild(downloadElement);
+      }
     }
   } catch (e) {
     console.error("下载文件失败:", e);
