@@ -11,7 +11,7 @@ order: 6
 获取指定类型的Json值
 :::
 
-![获取Json值](../../../assets/获取Json值_command.png)
+![获取Json值](./assets/获取Json值_command.jpg)
 
 ## 配置项说明
 
@@ -24,6 +24,8 @@ order: 6
 - **键**`string`: 需要获取Json值对应的键
 
 - **数据类型**`Integer`: 选择数据类型
+
+- **键不存在时**`Integer`: 选择键不存在时的默认行为
 
 - **特殊字符**`Boolean`: 当键Key包含部分特殊字符时，勾选此按钮。
 
