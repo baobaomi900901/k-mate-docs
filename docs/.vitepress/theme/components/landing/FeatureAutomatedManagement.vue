@@ -13,10 +13,6 @@
     <div ref="cardGroup" class="grid w-full grid-cols-2 gap-6">
       <div class="card col-span-2 flex flex-col gap-6 lg:flex-row">
         <div class="flex w-full flex-col justify-center p-0 md:p-6 lg:w-1/2">
-          <span
-            class="mb-4 w-fit rounded-full border border-blue-500 px-2 py-1 text-xs font-medium text-blue-500 md:text-base"
-            >{{ t.cardOne.tag }}</span
-          >
           <div class="text-2xl font-bold leading-tight md:text-[40px]">
             {{ t.cardOne.title }}
           </div>
@@ -53,10 +49,6 @@
             class="flex flex-col items-start gap-2 text-xl font-bold leading-tight md:flex-row md:items-center md:text-[40px]"
           >
             {{ t.cardThree.title }}
-            <span
-              class="whitespace-nowrap rounded-full border border-blue-500 px-2 py-1 text-xs text-blue-500 md:text-base"
-              >{{ t.cardThree.tag }}</span
-            >
           </div>
           <div class="mt-4 text-base opacity-70 md:text-lg">
             {{ t.cardThree.description }}

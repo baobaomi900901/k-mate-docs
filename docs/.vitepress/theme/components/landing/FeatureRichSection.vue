@@ -33,10 +33,6 @@
             class="flex flex-col items-start gap-2 text-2xl font-bold leading-tight text-blue-500 md:flex-row md:items-center md:text-[40px]"
           >
             {{ t.cardTwo.title }}
-            <span
-              class="whitespace-nowrap rounded-full border border-blue-500 px-2 py-1 text-xs text-blue-500 md:text-base"
-              >{{ t.cardTwo.tag }}</span
-            >
           </div>
           <div class="my-4 text-base opacity-70 md:mb-0 md:text-lg">
             {{ t.cardTwo.description }}
@@ -103,13 +99,6 @@
             class="flex flex-col items-start gap-2 text-2xl font-bold leading-tight md:flex-row md:items-center md:text-[40px]"
           >
             {{ t.cardSix.title }}
-            <!-- <span class="rounded-full bg-purple-600 px-2 py-1 text-xs text-white md:text-base"
-              >今年支持</span
-            > -->
-            <span
-              class="rounded-full border border-purple-200 px-2 py-1 text-xs text-purple-100 md:text-base"
-              >{{ t.cardSix.tag }}</span
-            >
           </div>
           <div class="mb-0 mt-4 text-base opacity-70 md:mb-7 md:text-lg">
             {{ t.cardSix.description }}
@@ -130,10 +119,6 @@
             class="flex flex-col items-start gap-2 text-2xl font-bold leading-tight md:flex-row md:items-center md:text-[40px]"
           >
             {{ t.cardSeven.title }}
-            <span
-              class="rounded-full border border-gray-100 px-2 py-1 text-xs text-gray-100 md:text-base"
-              >{{ t.cardSeven.tag }}</span
-            >
           </div>
         </div>
         <div class="h-full w-full pt-6">

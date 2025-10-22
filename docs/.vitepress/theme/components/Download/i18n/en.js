@@ -1,8 +1,6 @@
 export default {
   title: "Download K-RPA Lite",
-  subTitle: "Support Windows、Linux",
-  subTitle2: "、Web pages...",
-  comment: "Linux is coming soon.",
+  subTitle: "Support Windows, Linux, Web pages...",
   buttonText: "Download",
   linkText: "Download client",
   linkTwoText: "Download plugin",

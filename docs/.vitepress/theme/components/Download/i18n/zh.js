@@ -1,8 +1,6 @@
 export default {
   title: "下载 K-RPA Lite",
-  subTitle: "支持 Windows、信创系统",
-  subTitle2: "、网页等",
-  comment: "信创系统今年支持",
+  subTitle: "支持 Windows、信创系统、网页等...",
   buttonText: "下载",
   linkText: "下载客户端",
   linkTwoText: "下载插件包",

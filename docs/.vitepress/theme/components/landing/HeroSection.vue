@@ -15,7 +15,7 @@
         ref="description"
         class="flex flex-col items-center justify-center gap-6 text-xl font-medium"
       >
-        <div class="flex gap-6 text-xl font-medium">
+        <div class="flex flex-col xl:flex-row gap-6 text-xl font-medium">
           <!-- <a
             class="rounded-full bg-blue-500 px-14 py-4 text-white hover:bg-blue-400"
             :href="withBase(t.buttonUrl)"
@@ -41,7 +41,7 @@
           <a
             class="more-btn flex w-fit cursor-pointer select-none items-center gap-1 text-center text-base text-gray-400 hover:text-blue-400"
             :href="withBase(t.buttonUrl)"
-            >{{ t.buttonText }} <IconArrowUpRight :size="12"
+            >{{ t.buttonMoreText }} <IconArrowUpRight :size="12"
           /></a>
         </div>
       </div>
@@ -102,7 +102,7 @@ const getDownloadRPAUrl = (sys) => {
   } else if (sys === "linux_x86") {
     fullPath = baseUrl + "/" + sys + "/" + version + "/K-RPA Lite_x86.zip";
   } else {
-    fullPath = baseUrl + "/" + sys + "/" + version + "/K-RPA Lite_plugin.zip";
+    fullPath = baseUrl + "/" + sys + "/" + version + `/K-RPA Lite Setup ${version}.exe`;
   }
   return fullPath;
 };

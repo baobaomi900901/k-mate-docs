@@ -3,11 +3,12 @@ export default {
     title: "自动化您的工作，释放",
     highlightText: "无限可能",
     featureTitle: "简化操作，提升产出，让每个团队成员专注于更重要的任务",
-    buttonText: "更多版本",
+    buttonText: "免费下载",
     buttonUrl: "/Download",
     buttonText1: "下载 Windows 版",
     buttonText2: "下载 Linux x86 版",
     buttonText3: "下载 Linux arm 版",
+    buttonMoreText: "更多版本",
   },
   feature: {
     title: "K-RPA Lite",
@@ -55,7 +56,6 @@ export default {
     },
     cardTwo: {
       title: "支持中文脚本、Python",
-      tag: "今年支持",
       description:
         "全面支持中文脚本和Python代码，兼容各种Python库的接入。通过支持Python表达式，用户可以更灵活地满足各类业务需求。",
     },
@@ -75,12 +75,10 @@ export default {
     },
     cardSix: {
       title: "AI自动化新纪元",
-      tag: "今年支持",
       description: "打破传统自动化界限，无限释放生产力",
     },
     cardSeven: {
       title: "应用市场",
-      tag: "今年支持",
     },
   },
   featureAutomatedManagement: {
@@ -100,7 +98,6 @@ export default {
     },
     cardThree: {
       title: "高效管理您的应用市场",
-      tag: "今年支持",
       description:
         "通过精细的权限设置，企业可以全面掌控应用市场，轻松管理所有自动化应用，实现快速部署、更新和优化，确保技术始终与业务需求保持一致，提升管理效率与安全性。",
     },

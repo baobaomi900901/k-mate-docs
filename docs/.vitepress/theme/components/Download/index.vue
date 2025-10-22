@@ -194,9 +194,8 @@ watch(
     <div class="mx-auto mt-24 flex w-fit flex-col items-center">
       <div class="text-4xl font-bold md:text-7xl">{{ t.title }}</div>
       <div class="mt-10 text-xl font-medium">
-        {{ t.subTitle }}<sup class="text-gray-400">*</sup>{{ t.subTitle2 }}
+        {{ t.subTitle }}
       </div>
-      <div class="mt-3 text-xs text-gray-400">{{ t.comment }}</div>
     </div>
     <div class="mx-auto mt-8 flex w-fit flex-col items-center gap-4">
       <div class="select">
