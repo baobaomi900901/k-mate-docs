@@ -10,7 +10,7 @@ export interface IVersion {
   }[];
 }
 
-let baseUrl = "https://www.kingsware.cn/krpalite/package";
+let baseUrl = "https://download.krpalite.com:56780";
 
 if (import.meta.env.VP_MODE === "private") {
   if (typeof window !== "undefined") {

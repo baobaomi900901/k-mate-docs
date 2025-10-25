@@ -17,6 +17,6 @@ Linux 环境中使用 K-RPA Lite 需要 CEF 框架
 
 下载对应系统的 `CEF` zip 包解压后放在 `krpalite` 执行文件的同级目录下
 
-下载地址: [CEF_x86](https://www.kingsware.cn/krpalite/package/cef/cef_x86.zip), [CEF_arm](https://www.kingsware.cn/krpalite/package/cef/cef_arm.zip)
+下载地址: [CEF_x86](https://download.krpalite.com:56780/cef/cef_x86.zip), [CEF_arm](https://download.krpalite.com:56780/cef/cef_arm.zip)
 
 ![cef 文件位置](./assets/cef/image2.png)

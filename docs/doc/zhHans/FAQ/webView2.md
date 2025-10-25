@@ -41,7 +41,7 @@ https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/?form=MA13LH
 
 下载链接:
 
-[下载 x64](https://www.kingsware.cn/krpalite/package/webView2/Windows7/x64/WebView2%20Runtime%20109.0.1518.140.zip)
+[下载 x64](https://download.krpalite.com:56780/webView2/Windows7/x64/WebView2%20Runtime%20109.0.1518.140.zip)
 
 安装方式：
 
