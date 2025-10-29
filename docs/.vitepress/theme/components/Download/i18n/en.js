@@ -2,7 +2,7 @@ export default {
   title: "Download K-RPA Lite",
   subTitle: "Support Windows, Linux, Web pages...",
   buttonText: "Download",
-  linkText: "Download client",
+  linkText: "Download green version",
   linkTwoText: "Download plugin",
   linkThreeText: "Download View2_x64",
   linkFourText: "Download CEF Framework",
