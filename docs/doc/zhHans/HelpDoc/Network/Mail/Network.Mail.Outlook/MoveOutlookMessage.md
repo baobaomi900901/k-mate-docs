@@ -4,6 +4,7 @@ order: 2
 ---
 
 # 移动Outlook邮件
+- 适用系统: windows / 信创
 
 ## 功能说明
 

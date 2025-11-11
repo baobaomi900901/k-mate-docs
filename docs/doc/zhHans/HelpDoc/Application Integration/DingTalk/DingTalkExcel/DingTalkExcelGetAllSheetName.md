@@ -4,6 +4,7 @@ order: 2
 ---
 
 # 获取Sheet页名称
+- 适用系统: windows
 
 ## 功能说明
 

@@ -4,6 +4,7 @@ order: 13
 ---
 
 # 删除Excel列
+- 适用系统: windows / 信创
 
 ## 功能说明
 

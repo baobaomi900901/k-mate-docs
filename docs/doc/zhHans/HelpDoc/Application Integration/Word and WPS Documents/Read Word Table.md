@@ -4,6 +4,7 @@ order: 8
 ---
 
 # 读取Word表格
+- 适用系统: windows
 
 ## 功能说明
 

@@ -4,6 +4,7 @@ order: 7
 ---
 
 # 获取指定Cookie信息
+- 适用系统: windows / 信创
 
 ## 功能说明
 

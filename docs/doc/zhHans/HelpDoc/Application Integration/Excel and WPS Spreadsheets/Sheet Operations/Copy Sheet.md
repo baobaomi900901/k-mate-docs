@@ -4,6 +4,7 @@ order: 3
 ---
 
 # 拷贝Sheet页
+- 适用系统: windows / 信创
 
 ## 功能说明
 

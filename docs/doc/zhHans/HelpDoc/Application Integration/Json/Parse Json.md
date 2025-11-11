@@ -4,6 +4,7 @@ order: 2
 ---
 
 # 解析Json
+- 适用系统: windows / 信创
 
 ## 功能说明
 

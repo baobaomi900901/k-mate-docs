@@ -4,6 +4,7 @@ order: 6
 ---
 
 # 获取筛选所有Cookie
+- 适用系统: windows / 信创
 
 ## 功能说明
 

@@ -4,6 +4,7 @@ order: 10
 ---
 
 # Word插入图片
+- 适用系统: windows
 
 ## 功能说明
 

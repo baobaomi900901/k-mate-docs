@@ -4,6 +4,7 @@ order: 1
 ---
 
 # OpenAI Chat
+- 适用系统: windows / 信创
 
 ## 功能说明
 

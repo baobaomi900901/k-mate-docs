@@ -4,6 +4,7 @@ order: 9
 ---
 
 # 添加飞书表格Sheet页
+- 适用系统: windows
 
 ## 功能说明
 

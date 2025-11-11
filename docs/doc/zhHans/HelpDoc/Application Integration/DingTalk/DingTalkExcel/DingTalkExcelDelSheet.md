@@ -4,6 +4,7 @@ order: 3
 ---
 
 # 删除Sheet页
+- 适用系统: windows
 
 ## 功能说明
 

@@ -4,6 +4,7 @@ order: 14
 ---
 
 # 获取Json对象所有Key
+- 适用系统: windows / 信创
 
 ## 功能说明
 

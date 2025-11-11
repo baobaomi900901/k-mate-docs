@@ -4,6 +4,7 @@ order: 2
 ---
 
 # While条件循环
+- 适用系统: windows / 信创
 
 ## 功能说明
 

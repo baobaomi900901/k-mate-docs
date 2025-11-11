@@ -4,6 +4,7 @@ order: 5
 ---
 
 # 文心一言Chat Prompt模型
+- 适用系统: windows / 信创
 
 ## 功能说明
 

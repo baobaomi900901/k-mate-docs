@@ -4,6 +4,7 @@ order: 14
 ---
 
 # Case
+- 适用系统: windows / 信创
 
 ## 功能说明
 

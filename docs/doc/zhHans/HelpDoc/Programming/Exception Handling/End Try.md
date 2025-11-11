@@ -4,6 +4,7 @@ order: 4
 ---
 
 # End Try
+- 适用系统: windows / 信创
 
 ## 功能说明
 

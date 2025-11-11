@@ -4,6 +4,7 @@ order: 12
 ---
 
 # 保存Word文档
+- 适用系统: windows
 
 ## 功能说明
 

@@ -4,6 +4,7 @@ order: 3
 ---
 
 # ForEach列表循环
+- 适用系统: windows / 信创
 
 ## 功能说明
 

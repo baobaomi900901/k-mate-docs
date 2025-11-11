@@ -4,6 +4,7 @@ order: 3
 ---
 
 # 读取Word文本
+- 适用系统: windows
 
 ## 功能说明
 

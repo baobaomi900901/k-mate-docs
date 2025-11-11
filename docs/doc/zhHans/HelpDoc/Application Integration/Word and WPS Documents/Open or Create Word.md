@@ -4,6 +4,7 @@ order: 1
 ---
 
 # 打开或新建Word
+- 适用系统: windows
 
 ## 功能说明
 

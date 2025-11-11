@@ -4,6 +4,7 @@ order: 13
 ---
 
 # 关闭Word文档
+- 适用系统: windows
 
 ## 功能说明
 

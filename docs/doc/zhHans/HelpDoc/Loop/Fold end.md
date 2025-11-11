@@ -4,6 +4,7 @@ order: 10
 exclude: true
 ---
 
+- 适用系统: windows / 信创
 # 折叠结束
 
 ## 功能说明

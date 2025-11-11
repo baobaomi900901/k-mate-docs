@@ -4,6 +4,7 @@ order: 9
 exclude: true
 ---
 
+- 适用系统: windows / 信创
 # 折叠开始
 
 ## 功能说明

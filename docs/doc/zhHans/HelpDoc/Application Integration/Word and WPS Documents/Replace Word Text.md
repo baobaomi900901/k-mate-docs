@@ -4,6 +4,7 @@ order: 7
 ---
 
 # 替换Word文本
+- 适用系统: windows
 
 ## 功能说明
 

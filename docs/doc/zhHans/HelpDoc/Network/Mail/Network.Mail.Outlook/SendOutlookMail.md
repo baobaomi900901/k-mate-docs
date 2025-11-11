@@ -4,6 +4,7 @@ order: 5
 ---
 
 # 发送Outlook邮件
+- 适用系统: windows / 信创
 
 ## 功能说明
 

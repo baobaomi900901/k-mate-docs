@@ -4,6 +4,7 @@ order: 6
 ---
 
 # 移动Word光标
+- 适用系统: windows
 
 ## 功能说明
 
