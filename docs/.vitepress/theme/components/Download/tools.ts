@@ -106,16 +106,11 @@ export const downloadFile = async (url: string) => {
   }
 };
 
-function extractAllNumbers(str: string) {
-  const matches = str.match(/\d+/g);
-  return matches ? matches.map(Number) : [];
-}
-
 // 定义一个函数来比较两个版本号
 function compareVersions(v1: string, v2: string) {
-  const parts1 = extractAllNumbers(v1);
-  const parts2 = extractAllNumbers(v2);
-  
+  const parts1 = v1.split("-")[0].split(".").map(Number);
+  const parts2 = v2.split("-")[0].split(".").map(Number);
+
   const longestLength = Math.max(parts1.length, parts2.length);
 
   for (let i = 0; i < longestLength; i++) {
