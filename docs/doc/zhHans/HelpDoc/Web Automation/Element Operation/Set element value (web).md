@@ -9,7 +9,7 @@ order: 6
 ## 功能说明
 
 :::tip 功能描述
-设置网页中指定元素的值，通常用来设置input、select元素value值
+设置网页中指定元素的值，通常用来设置input和textarea元素value值
 :::
 
 ![设置元素值(web)](../../../assets/设置元素值(web)_command.png)
