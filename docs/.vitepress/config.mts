@@ -200,7 +200,7 @@ const vitePressConfig = {
       "meta",
       {
         property: "og:title",
-        content: "KRPA",
+        content: "K-RPA Lite 自动化您的工作，释放无限可能",
       },
     ],
     ["meta", { property: "og:site_name", content: "KRPA Lite" }],
