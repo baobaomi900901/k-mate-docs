@@ -92,7 +92,7 @@ const vitePressConfig = {
   base: env.VITEPRESS_BASE,
   lang: "zh-CN",
   title: "K-RPA Lite",
-  description: "",
+  description: "K-RPA Lite 致力于打造更优质的自动化体验，持续倾听用户的反馈与建议。",
   vite: {
     define: {
       "import.meta.env.VITEPRESS_ICP": JSON.stringify(env.VITEPRESS_ICP),
