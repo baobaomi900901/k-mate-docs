@@ -47,14 +47,10 @@ order: 2
 
  - **重试此指令**：指令运行出错时，重试运行指定次数指令，每次重试间隔指定时长。
 
-## 使用示例
-无
 
 ## 常见错误及处理
 
-无
+如果是虚拟机 需要在config.ini->[Main]中添加参数 AgentlsLockScreen=1
+![alt text](<assets/Unlock Screen/image.png>)
 
-## 常见问题解答
-
-无
 
