@@ -57,14 +57,14 @@ order: 2
 
  - **重试此指令**：指令运行出错时，重试运行指定次数指令，每次重试间隔指定时长。
 
-## 使用示例
-无
-
-## 常见错误及处理
-
-无
 
 ## 常见问题解答
 
-无
+  - 需要在超级鹰官网注册账号以及软件ID https://www.chaojiying.com/user/reg/ 
+  - 在高级中填写账号密码以及软件ID![alt text](<assets/ChaoJiYing CAPTCHA Recognition/image.png>)
+  - 或创建一个 VerCode.ini 文件 将以下内容复制进去 并填写自己账号密码和id 就不需要再高级中填写了  
+  [ChaoJiYing]  
+  Account=账号  
+  Passwd=密码  
+  SoftID=软件ID
 
