@@ -57,15 +57,17 @@ const initData = async () => {
 
 // 多语言对应的日志文件名
 const logNameOfLang = new Map([
-  ['zh', 'changeLog'],
-  ['en', 'changeLog-en']
-])
+  ["zh", "changeLog"],
+  ["en", "changeLog-en"],
+]);
 const md = markdownit();
 /** 获取日志 */
 const getLog = async () => {
   await nextTick();
-  markdownContent.value = '';
-  const logData = await getUpdateLogAPI(`/${system.value}/${version.value}/${logNameOfLang.get(langPrefix.value)}.md`);
+  markdownContent.value = "";
+  const logData = await getUpdateLogAPI(
+    `/${system.value}/${version.value}/${logNameOfLang.get(langPrefix.value)}.md`,
+  );
   if (logData) {
     const htmlContent = await md.render(logData);
     markdownContent.value = htmlContent;
@@ -84,11 +86,24 @@ const getDownloadRPAAndPluginUrl = () => {
   if (!isAllowDown) return;
   let fullPath = "";
   if (system.value === "linux_arm") {
-    fullPath = baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite_arm.zip";
+    fullPath =
+      baseUrl +
+      "/" +
+      system.value +
+      "/" +
+      version.value +
+      `/krpalite_${version.value.replaceAll("-", "_")}_arm64.deb`;
   } else if (system.value === "linux_x86") {
-    fullPath = baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite_x86.zip";
+    fullPath =
+      baseUrl +
+      "/" +
+      system.value +
+      "/" +
+      version.value +
+      `/krpalite_${version.value.replaceAll("-", "_")}_amd64.deb`;
   } else {
-    fullPath = baseUrl + "/" + system.value + "/" + version.value + `/K-RPA Lite Setup ${version.value}.exe`;
+    fullPath =
+      baseUrl + "/" + system.value + "/" + version.value + `/K-RPA Lite Setup ${version.value}.exe`;
   }
   return fullPath;
 };
@@ -131,7 +146,7 @@ const needExtraLogoFiles = [
   "K-RPA Lite.zip",
   "K-RPA Lite_arm.zip",
   "K-RPA Lite_x86.zip",
-  `K-RPA Lite Setup ${version.value}.exe`
+  `K-RPA Lite Setup ${version.value}.exe`,
 ];
 
 // 处理下载逻辑（增加私有模式判断）
@@ -190,7 +205,7 @@ watch(
 </script>
 
 <template>
-  <div class="mx-auto flex max-w-[860px] flex-col items-center mb-24">
+  <div class="mx-auto mb-24 flex max-w-[860px] flex-col items-center">
     <div class="mx-auto mt-24 flex w-fit flex-col items-center">
       <div class="text-4xl font-bold md:text-7xl">{{ t.title }}</div>
       <div class="mt-10 text-xl font-medium">
