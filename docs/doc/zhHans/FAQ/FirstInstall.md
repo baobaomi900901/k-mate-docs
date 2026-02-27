@@ -9,25 +9,15 @@ order: 1
 
 在[软件下载页](https://www.kingsware.cn/krpalite/Download), 按需下载:
 
-- 客户端&插件包 ( 首次安装推荐下载 )
-- 仅客户端
-- 仅插件包
+- 安装包 ( 首次安装推荐下载 )
+- 绿色版
 - webView2环境 ( 缺失运行环境时下载, [详情](./webView2.md) )
 
-## 2. 解压
+## 2. 安装
 
-:::tip 提示
-这里以 **首次安装** 下载 **客户端&插件包** 解压做示例.
-:::
-<br>
+根据安装包提示操作即可
 
-![alt text](assets/FirstInstall/image.png)
-![alt text](assets/FirstInstall/image-2.png)
-![alt text](assets/FirstInstall/image-3.png)
-
-<br>
-
-## 3.第一次启动
+## 3. 第一次启动
 
 :::tip 提示
 第一次请使用有写入注册表权限的身份运行程序, 通常是**以管理员身份运行**.
