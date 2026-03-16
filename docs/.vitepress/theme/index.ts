@@ -36,9 +36,9 @@ export default {
     onMounted(async () => {
       // 等待页面初始化
       await nextTick();
-      if (import.meta.env.VP_MODE !== "private") {
-        createChatbot();
-      }
+      // if (import.meta.env.VP_MODE !== "private") {
+      //   createChatbot();
+      // }
       document.body.classList.add("KingAutometa");
       // 选择所有具有滚动条的元素
       const scrollableElements = document.querySelectorAll("body, aside");
