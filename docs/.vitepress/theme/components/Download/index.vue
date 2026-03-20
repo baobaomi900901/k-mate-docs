@@ -1,157 +1,178 @@
-<script setup lang="ts">
-import Footer from "../../components/Footer/index.vue";
-import markdownit from "markdown-it";
-import { computed, nextTick, onMounted, ref, watch, watchEffect } from "vue";
+<script setup lang='ts'>
+import { IconDownload, IconArrowBottom } from "ksw-vue-icon";
+import { i18n, useAssets } from "./i18n/index";
 import { useData } from "vitepress";
+import { KPopover  } from "ksw-ux";
 import {
   baseUrl,
-  downServerFile,
   downloadFile,
   findLatestVersion,
-  getUpdateLogAPI,
-  getVersionListAPI,
-  IOptions,
-  IVersion,
+  getUpdateLogAPI
 } from "./tools";
-import { KSelect, KOption, KDropdown, KDropdownItem, KScrollbar, KButton } from "ksw-ux";
-import { IconLoading, IconDown } from "ksw-vue-icon";
-import { i18n } from "./i18n/index";
+import { computed, onMounted, reactive, ref } from 'vue'
+import Footer from "../../components/Footer/index.vue";
 
 // 加载多语言
 const { lang } = useData();
 const langPrefix = computed(() => lang.value.split("-")[0]);
 const t = computed(() => i18n(langPrefix.value));
 
-// KSW 组件动态导入
-// import { defineClientComponent } from 'vitepress'
-// const KSelect = defineClientComponent(() => import('ksw-ux').then(m => m.KSelect))
-// const KOption = defineClientComponent(() => import('ksw-ux').then(m => m.KOption))
-// const KDropdown = defineClientComponent(() => import('ksw-ux').then(m => m.KDropdown))
-// const KDropdownItem = defineClientComponent(() => import('ksw-ux').then(m => m.KDropdownItem))
-// const KScrollbar = defineClientComponent(() => import('ksw-ux').then(m => m.KScrollbar))
-// const KButton = defineClientComponent(() => import('ksw-ux').then(m => m.KButton))
+const windowInfo = reactive([
+  {
+    label: t.value.stable,
+    remark: t.value.stableTip,
+    type: 'stable',
+    version: '',
+  },
+  {
+    label: t.value.beta,
+    remark: t.value.betaTip,
+    type: 'develop',
+    version: '',
+  },
+  {
+    label: t.value.runtimeDep,
+    remark: t.value.runtimeDepTip,
+    type: 'dependency'
+  },
+])
 
-const system = ref("");
-const version = ref("");
-const pluginValue = ref<string>();
-/** 系统选项 */
-const systemOptions = ref<IOptions[]>([]);
-/** 版本选项 */
-const versionOptions = ref<IOptions[]>([]);
-/** 系统版本对象 */
-const versionObject = ref<IVersion>({});
-const markdownContent = ref<string>("");
+const dependencies = [
+  {
+    label: t.value.Latest64,
+    value: 1,
+  },
+  {
+    label: t.value.win7_64,
+    value: 2,
+  },
+  {
+    label: t.value.win7_32,
+    value: 2,
+  },
+]
 
-const loading = ref<Boolean>(false);
+const LinuxInfo = reactive([
+  {
+    label: t.value.stable,
+    remark: t.value.stableTip,
+    type: 'stable',
+    ARMVer: '',
+    x86Ver: ''
+  },
+  {
+    label: t.value.runtimeDep,
+    remark: t.value.runtimeDepTip,
+    type: 'dependency',
+    version: ''
+  },
+])
 
-// 初始化时设置默认版本
+const funcList = [
+  {
+    label: t.value.funcAuto,
+    remark: t.value.funcAutoTip,
+    imgSrc: useAssets(langPrefix.value, 'editor-ui@3x.jpg')
+  },
+  {
+    label: t.value.funcCloud,
+    remark: t.value.funcCloudTip,
+    imgSrc: useAssets(langPrefix.value, 'task-management-platform@3x.png')
+  },
+]
+
+const cefList = [
+  {
+    label: t.value.x86,
+    value: 1,
+  },
+  {
+    label: t.value.arm,
+    value: 2,
+  },
+]
+
+const plugin = ref('')
+
 const initData = async () => {
-  versionObject.value = (await getVersionListAPI()) as any;
-  const systemKeys = Object.keys(versionObject.value);
-  if (systemKeys.length === 0) return;
-  systemOptions.value = systemKeys.map((item) => {
-    return { value: item, label: item };
-  });
-  system.value = systemKeys[0];
-};
-
-// 多语言对应的日志文件名
-const logNameOfLang = new Map([
-  ["zh", "changeLog"],
-  ["en", "changeLog-en"],
-]);
-const md = markdownit();
-/** 获取日志 */
-const getLog = async () => {
-  await nextTick();
-  markdownContent.value = "";
-  const logData = await getUpdateLogAPI(
-    `/${system.value}/${version.value}/${logNameOfLang.get(langPrefix.value)}.md`,
-  );
-  if (logData) {
-    const htmlContent = await md.render(logData);
-    markdownContent.value = htmlContent;
+  // const versionObject = await getVersionListAPI()
+  const versionObject = {
+    "windows": [
+      {
+        "version": "2.1.0",
+        "plugin": "Resources250925"
+      },
+      {
+        "version": "2.1.1-beta16",
+        "plugin": "Resources251226"
+      }
+    ],
+    "linux_arm": [
+      {
+        "version": "26.02.09-beta"
+      }
+    ],
+    "linux_x86": [
+      {
+        "version": "26.02.09-beta"
+      }
+    ]
   }
-};
-
-onMounted(async () => {
-  initData();
-});
-
-const isAllowDown = computed(() => {
-  return !!(system.value && version.value);
-});
-
-const getDownloadRPAAndPluginUrl = () => {
-  if (!isAllowDown) return;
-  let fullPath = "";
-  if (system.value === "linux_arm") {
-    fullPath =
-      baseUrl +
-      "/" +
-      system.value +
-      "/" +
-      version.value +
-      `/krpalite_${version.value.replaceAll("-", "_")}_arm64.deb`;
-  } else if (system.value === "linux_x86") {
-    fullPath =
-      baseUrl +
-      "/" +
-      system.value +
-      "/" +
-      version.value +
-      `/krpalite_${version.value.replaceAll("-", "_")}_amd64.deb`;
-  } else {
-    fullPath =
-      baseUrl + "/" + system.value + "/" + version.value + `/K-RPA Lite Setup ${version.value}.exe`;
+  if (!versionObject) {
+    return
   }
-  return fullPath;
-};
+  LinuxInfo[0].version = versionObject.linux_arm[0].version
 
-const getDownloadRPAUrl = () => {
-  if (!isAllowDown) return;
-  const fullPath = baseUrl + "/" + system.value + "/" + version.value + "/K-RPA Lite.zip";
-  return fullPath;
-};
+  // 插件
+  const winMaxVer = findLatestVersion(versionObject.windows, 'version')
+  plugin.value = winMaxVer.plugin
 
-const getDownloadPluginUrl = () => {
-  if (!isAllowDown) return;
-  const fullPath = baseUrl + "/plugin/" + pluginValue.value + ".zip";
-  return fullPath;
-};
+  // win正式版
+  const winStaMaxVer = findLatestVersion(
+    versionObject.windows.filter(item => item.version.indexOf('beta') === -1),
+    'version'
+  )
+  windowInfo[0].version = winStaMaxVer.version
 
-const getDownloadWebView2Url = () => {
-  if (!isAllowDown) return;
-  const fullPath = baseUrl + "/webView2/x64/MicrosoftEdgeWebView2RuntimeInstallerX64.exe";
-  return fullPath;
-};
+  // win开发版
+  const winDevMaxVer = findLatestVersion(
+    versionObject.windows.filter(item => item.version.indexOf('beta') !== -1),
+    'version'
+  )
+  windowInfo[1].version = winDevMaxVer.version
 
-const getDownloadCefArmUrl = () => {
-  if (!isAllowDown) return;
-  const fullPath = baseUrl + "/cef/cef_arm.zip";
-  return fullPath;
-};
+  // ARM
+  const ARMMaxVer = findLatestVersion(
+    versionObject.linux_arm,
+    'version'
+  )
+  LinuxInfo[0].ARMVer = ARMMaxVer.version
 
-const getDownloadCefx86Url = () => {
-  if (!isAllowDown) return;
-  const fullPath = baseUrl + "/cef/cef_x86.zip";
-  return fullPath;
-};
+  // x86
+  const x86MaxVer = findLatestVersion(
+    versionObject.linux_x86,
+    'version'
+  )
+  LinuxInfo[0].x86Ver = x86MaxVer.version
+}
 
 const getDownloadLogoUrl = () => {
   return baseUrl + "/logo.json";
-};
+}
 
-const needExtraLogoFiles = [
-  "K-RPA Lite.zip",
-  "K-RPA Lite_arm.zip",
-  "K-RPA Lite_x86.zip",
-  `K-RPA Lite Setup ${version.value}.exe`,
-];
+const getNeedExtraLogoFiles = (version: string) => {
+  return [
+    "K-RPA Lite.zip",
+    "K-RPA Lite_arm.zip",
+    "K-RPA Lite_x86.zip",
+    `K-RPA Lite Setup ${version}.exe`
+  ]
+}
 
 // 处理下载逻辑（增加私有模式判断）
-const downloadWithLogoIfNeeded = async (url: string) => {
+const downloadWithLogoIfNeeded = async (url: string, version: string) => {
   if (!url) return;
+  const needExtraLogoFiles = getNeedExtraLogoFiles(version)
   const needExtraLogo =
     import.meta.env.VP_MODE === "private" && needExtraLogoFiles.some((file) => url.endsWith(file));
 
@@ -163,200 +184,224 @@ const downloadWithLogoIfNeeded = async (url: string) => {
   }
 };
 
-const changeSystem = (key: string) => {
-  const systemKeys = Object.keys(versionObject.value);
-  if (systemKeys.length === 0) return;
-  const arr: { version: string; plugin: string }[] = [];
-  for (let item in versionObject.value) {
-    if (item === key) {
-      arr.push(...(versionObject.value[item] as any[]));
-      break;
-    }
+const getDownloadRPAAndPluginUrl = (system: string, version: string) => {
+  let fullPath = "";
+  if (system === "linux_arm") {
+    fullPath =
+      baseUrl +
+      "/" +
+      system +
+      "/" +
+      version +
+      `/krpalite_${version.replaceAll("-", "_")}_arm64.deb`;
+  } else if (system === "linux_x86") {
+    fullPath =
+      baseUrl +
+      "/" +
+      system +
+      "/" +
+      version +
+      `/krpalite_${version.replaceAll("-", "_")}_amd64.deb`;
+  } else {
+    fullPath =
+      baseUrl + "/" + system + "/" + version + `/K-RPA Lite Setup ${version}.exe`;
   }
-  versionOptions.value = arr.map((item) => {
-    return { value: item.version, label: item.version, plugin: item.plugin };
-  });
-  const maxVersion = findLatestVersion(versionOptions.value, "value");
-  const { plugin, value } = maxVersion;
-  version.value = value;
-  pluginValue.value = plugin;
-  getLog();
+  return fullPath;
 };
 
-const changeVersion = (v: string) => {
-  const systemList = versionObject.value[system.value];
-  const findItem = systemList?.find((item) => item.version === v);
-  if (!findItem) return;
-  version.value = findItem.version;
-  pluginValue.value = findItem.plugin;
-  getLog();
-};
+// 下载windows
+const downloadWindow = (version: string) => {
+  const url = getDownloadRPAAndPluginUrl('windows', version)
+  downloadWithLogoIfNeeded(url, version)
+}
 
-watch(
-  system,
-  (key) => {
-    if (!key) return;
-    changeSystem(key);
-  },
-  {
-    once: true,
-  },
-);
+// 下载WebView
+const downWebView = (val: number) => {
+  let fullPath = ''
+  if (val === 1) {
+    fullPath = baseUrl + "/webView2/x64/MicrosoftEdgeWebView2RuntimeInstallerX64.exe";
+  } else if (val === 2) {
+    fullPath = 'https://download.krpalite.com:56780/webView2/win7/WebView2RuntimeInstallx64_Win7%E6%94%AF%E6%8C%81%E7%89%88.exe'
+  } else if (val === 3) {
+    fullPath = 'https://download.krpalite.com:56780/webView2/win7/WebView2RuntimeInstallx86_Win7%E6%94%AF%E6%8C%81%E7%89%88.exe'
+  }
+  downloadFile(fullPath)
+}
+
+// 下载插件
+const downPlugin = () => {
+  const fullPath = baseUrl + "/plugin/" + plugin.value + ".zip";
+  downloadFile(fullPath)
+}
+
+// 下载Linux
+const downloadLinux = (system: string, version: string) => {
+  const url = getDownloadRPAAndPluginUrl(system, version)
+  downloadWithLogoIfNeeded(url, version)
+}
+
+// 下载cef
+const downCef = (val: number) => {
+  let fullPath = ''
+  if (val === 1) {
+    fullPath = baseUrl + "/cef/cef_x86.tar.gz"
+  } else {
+    fullPath = baseUrl + "/cef/cef_arm.tar.gz"
+  }
+  downloadFile(fullPath)
+}
+
+/** 获取日志 */
+// const getLog = async () => {
+//   await nextTick();
+//   markdownContent.value = "";
+//   const logData = await getUpdateLogAPI(
+//     `/${system.value}/${version.value}/${logNameOfLang.get(langPrefix.value)}.md`,
+//   );
+//   if (logData) {
+//     const htmlContent = await md.render(logData);
+//     markdownContent.value = htmlContent;
+//   }
+// };
+
+onMounted(() => {
+  initData()
+})
 </script>
 
 <template>
-  <div class="mx-auto mb-24 flex max-w-[860px] flex-col items-center">
-    <div class="mx-auto mt-24 flex w-fit flex-col items-center">
-      <div class="text-4xl font-bold md:text-7xl">{{ t.title }}</div>
-      <div class="mt-10 text-xl font-medium">
-        {{ t.subTitle }}
-      </div>
-    </div>
-    <div class="mx-auto mt-8 flex w-fit flex-col items-center gap-4">
-      <div class="select">
-        <k-select
-          v-model="system"
-          :placeholder="t.selectPlaceholderSystem"
-          size="large"
-          @change="changeSystem"
-        >
-          <k-option
-            v-for="item in systemOptions"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value"
-          />
-          <template #empty>暂无系统</template>
-        </k-select>
-      </div>
-      <div class="select">
-        <k-select
-          v-model="version"
-          :placeholder="t.selectPlaceholderVersion"
-          size="large"
-          @change="changeVersion"
-        >
-          <k-option
-            v-for="item in versionOptions"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value"
-          />
-          <template #empty>先选系统</template>
-        </k-select>
-      </div>
-      <a
-        class="mt-5 flex w-full cursor-pointer select-none justify-center rounded-xl bg-blue-500 px-6 py-3 text-base font-medium text-white transition-all hover:bg-blue-600"
-        style="max-width: 300px"
-        @click="downloadWithLogoIfNeeded(getDownloadRPAAndPluginUrl())"
-        >{{ t.buttonText }}</a
-      >
-      <div class="flex flex-col items-center gap-4 md:flex-row" v-if="system == 'windows'">
-        <div
-          class="flex min-w-40 cursor-pointer select-none justify-center rounded-md px-1 py-[1px] text-base text-blue-500 transition-all hover:text-blue-400"
-          @click="downloadWithLogoIfNeeded(getDownloadRPAUrl())"
-        >
-          {{ t.linkText }}
-        </div>
-        <hr class="hidden h-4 rounded-full border border-gray-200 md:block dark:border-gray-700" />
-        <div
-          class="flex min-w-40 cursor-pointer select-none justify-center rounded-md px-1 py-[1px] text-base text-blue-500 transition-all hover:text-blue-400"
-          @click="downloadFile(getDownloadPluginUrl())"
-        >
-          {{ t.linkTwoText }}
-        </div>
-        <hr class="hidden h-4 rounded-full border border-gray-200 md:block dark:border-gray-700" />
-        <div
-          class="flex min-w-40 cursor-pointer select-none justify-center rounded-md px-1 py-[1px] text-base text-blue-500 transition-all hover:text-blue-400"
-          @click="downloadFile(getDownloadWebView2Url())"
-        >
-          {{ t.linkThreeText }}
-        </div>
-      </div>
-      <div class="flex flex-col items-center gap-4 md:flex-row" v-if="system == 'linux_arm'">
-        <div
-          class="flex min-w-40 cursor-pointer select-none justify-center rounded-md px-1 py-[1px] text-base text-blue-500 transition-all hover:text-blue-400"
-          @click="downloadFile(getDownloadCefArmUrl())"
-        >
-          {{ t.linkFourText }}
-        </div>
-      </div>
-      <div class="flex flex-col items-center gap-4 md:flex-row" v-if="system == 'linux_x86'">
-        <div
-          class="flex min-w-40 cursor-pointer select-none justify-center rounded-md px-1 py-[1px] text-base text-blue-500 transition-all hover:text-blue-400"
-          @click="downloadFile(getDownloadCefx86Url())"
-        >
-          {{ t.linkFourText }}
-        </div>
-      </div>
-      <!-- <k-dropdown class="text-base text-blue-500 hover:text-blue-400 focus-visible:outline-none" size="large">
-        <template #title>
-          <div class="flex items-center gap-1 py-[1px] px-1 focus-visible:outline-none">
-            更多下载
-            <IconDown class=" transition-all" :size="16" />
+  <div class="flex flex-col text-gray-500">
+    <section class="pt-[60px] pb-[120px] px-[80px] flex flex-col items-center bg-gradient-to-b from-blue-50 to-white">
+      <span class="font-semibold text-[#38363C] text-6xl max-lg:text-4xl">{{ t.text1 }}</span>
+      <span class="mt-2 font-medium text-lg text-[#38363C]">{{ t.text2 }}</span>
+      <!-- <span class="mt-2">{{ t.text3 }}</span> -->
+      <div class="mt-10 p-12 rounded-[40px] bg-blue-50 flex flex-col items-center w-[1440px] max-2xl:w-full">
+        <span class="text-4xl font-medium text-[#3D3D3D]">Windows {{t.client}}</span>
+        <span class="mt-2">{{t.supports}} Windows 7 / 8 / 10 /11</span>
+        <div class="w-full mt-[68px] grid gap-6 2xl:grid-cols-3 max-2xl:grid-rows-3">
+          <div
+            v-for="(item, index) in windowInfo"
+            :key="index"
+            class="bg-white rounded-[20px] flex flex-col p-5 h-[238px]"
+          >
+            <span class="text-[28px] text-[#111827] ">{{ item.label }}</span>
+            <span class="mt-2">{{ item.remark }}</span>
+            <span class="mt-2 text-xs" v-if="item.version">{{ t.version }}：{{ item.version }}</span>
+
+            <div v-if="item.type === 'dependency'" class="flex gap-3 mt-auto">
+              <div class="btn-down" @click="downWebView(1)">
+                WebView2
+                <IconDownload/>
+                <div class="w-[1px] h-3/5 bg-gray-300"></div>
+                <k-popover
+                  placement="bottom"
+                  :width="200"
+                  trigger="hover"
+                >
+                  <template #reference>
+                    <IconArrowBottom/>
+                  </template>
+                  <div class="flex flex-col">
+                    <div
+                      v-for="(v,i) in dependencies"
+                      :key="i"
+                      class="h-[30px] px-2 flex items-center text-sm text-[#111827] cursor-pointer hover:bg-gray-100"
+                      @click="downWebView(v.value)"
+                    >
+                      {{ v.label }}
+                    </div>
+                  </div>
+                </k-popover>
+              </div>
+              <div class="btn-down" @click="downPlugin()">{{t.pluginPackage}}<IconDownload/></div>
+            </div>
+            <div v-else class="btn-down main mt-auto" @click="downloadWindow(item.version!)">{{ t.buttonText }}<IconDownload/></div>
           </div>
-        </template>
-        <template #default>
-          <k-dropdown-item @click="downloadFile(getDownloadRPA())">客户端</k-dropdown-item>
-          <k-dropdown-item @click="downloadFile(getDownloadPluginUrl())">插件包</k-dropdown-item>
-        </template>
-      </k-dropdown> -->
-    </div>
-    <template v-if="markdownContent !== ''">
-      <div
-        class="my-12 w-full rounded-full border-t border-gray-200 dark:border-[rgba(0,0,0,0.5)]"
-      />
-      <div class="flex flex-col items-center gap-4">
-        <div class="text-4xl font-bold">{{ t.changelog }}</div>
-        <div class="text-base opacity-70">{{ t.changeTips }}</div>
+        </div>
       </div>
-      <div class="mt-12 min-h-96 w-full max-w-[580px]">
-        <div class="changelog content vp-doc mx-6" v-html="markdownContent"></div>
+      <div class="mt-10 p-12 rounded-[40px] bg-red-50 flex flex-col items-center w-[1440px] max-2xl:w-full">
+        <span class="text-4xl font-medium text-[#3D3D3D]">{{ t.text4 }}</span>
+        <span class="mt-2">{{t.text5}}</span>
+        <div class="w-full mt-[68px] grid gap-6 xl:grid-cols-2 max-xl:grid-rows-2">
+          <div
+            v-for="(item, index) in LinuxInfo"
+            :key="index"
+            class="bg-white rounded-[20px] flex flex-col p-5 h-[238px]"
+          >
+            <span class="text-[28px] text-[#111827]">{{ item.label }}</span>
+            <span class="mt-2">{{ item.remark }}</span>
+            <span class="mt-2 text-xs" v-if="item.version">{{t.version}}：{{ item.version }}</span>
+
+            <div v-if="item.type === 'stable'" class="flex gap-3 mt-auto">
+              <div class="btn-down" @click="downloadLinux('linux_x86', item.x86Ver!)">{{ t.x86 }}<IconDownload/></div>
+              <div class="btn-down" @click="downloadLinux('linux_arm', item.ARMVer!)">{{ t.arm }}<IconDownload/></div>
+            </div>
+            <k-popover
+              v-else
+              placement="bottom"
+              :width="200"
+              trigger="hover"
+            >
+              <template #reference>
+                <div class="btn-down mt-auto">CEF {{t.framework}}<IconArrowBottom/></div>
+              </template>
+              <div class="flex flex-col">
+                <div
+                  v-for="(v,i) in cefList"
+                  :key="i"
+                  class="h-[30px] px-2 flex items-center text-sm text-[#111827] cursor-pointer hover:bg-gray-100"
+                  @click="downCef(v.value)"
+                >
+                  {{ v.label }}
+                </div>
+              </div>
+            </k-popover>
+          </div>
+        </div>
       </div>
-    </template>
+    </section>
+    <section class="py-[120px] px-[80px] bg-[#FCF5EB] flex flex-col items-center">
+      <span class="text-[#000000] font-semibold text-[56px] max-lg:text-4xl">{{t.text6}}<b class="text-[#A52FFF]">{{t.text7}}</b></span>
+      <div class="mt-[60px] grid gap-6 w-[1440px] max-2xl:w-full xl:grid-cols-2 max-xl:grid-rows-2">
+        <div
+          v-for="(item, index) in funcList" :key="index"
+          class="rounded-[20px] bg-white flex flex-col overflow-hidden h-[600px]"
+        >
+          <span class="text-[40px] text-[#000000] font-semibold px-12 mt-12">{{ item.label }}</span>
+          <span class="mt-4 text-lg px-12">{{ item.remark }}</span>
+          <div class="bg-gradient-to-r from-[#f6e1ff] to-[#fff4f5] flex-1 mt-6 ml-12 rounded-tl-[20px] overflow-hidden">
+            <img :src="item.imgSrc" class="w-[660px] h-[511px] object-cover object-left-top">
+          </div>
+        </div>
+      </div>
+    </section>
+    <Footer class="mt-auto" />
   </div>
-  <Footer class="footer" />
 </template>
 
 <style lang="scss" scoped>
-.select {
-  @apply transition-all duration-300;
-  width: 300px;
-  border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 6px 0px;
+.btn-down {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border: 1px solid #9CA3AF;
+  border-radius: 100px;
+  font-size: 14px;
+  color: #111827;
+  background-color: #fff;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &.main {
+    color: #fff;
+    border: 1px solid #3B82F6;
+    background-color: #3B82F6;
+  }
+
   &:hover {
-    box-shadow:
-      rgba(23, 25, 29, 0.2) 0px 16px 16px -16px,
-      rgb(23 25 29 / 3%) 0px 14px 20px;
-  }
-  .dark & {
-    background-color: rgba(255, 255, 255, 0.02);
-  }
-  .k-select {
-    :deep(.el-select__wrapper) {
-      background: transparent;
-      .el-select__selected-item {
-        color: var(--vp-c-text-1);
-      }
-      .dark & {
-        border-color: rgba(255, 255, 255, 0.2);
-      }
-      &:hover {
-        border-color: var(--border-color--hover);
-      }
-    }
+    opacity: (0.8);
   }
 }
-@media screen and (min-height: 1054px) {
-  [lang^="en"] .footer {
-    position: fixed;
-    bottom: 0;
-  }
-}
-/* .changelog{
-  :deep(h1) {
-    display: flex;
-    justify-content: center;
-  }
-} */
 </style>
