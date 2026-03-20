@@ -1,5 +1,5 @@
 {
-  "workbench.sideBar.location": "left",
+  "workbench.sideBar.location": "right",
   "cssrem.rootFontSize": 80,
   "git.ignoreWindowsGit27Warning": true,
   "eslint.codeAction.showDocumentation": {
