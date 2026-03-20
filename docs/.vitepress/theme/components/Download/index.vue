@@ -269,7 +269,7 @@ onMounted(() => {
       }}</span>
       <span class="mt-2 text-lg font-medium text-[#38363C] max-sm:text-base">{{ t.text2 }}</span>
       <div
-        class="mt-10 flex w-[1440px] flex-col items-center rounded-[40px] bg-blue-50 p-12 max-2xl:w-full max-sm:mt-0 max-sm:w-full max-sm:py-10"
+        class="mt-10 flex w-[1440px] flex-col items-center rounded-[40px] bg-blue-50 p-12 max-2xl:w-full max-sm:mt-6 max-sm:w-full max-sm:py-10"
       >
         <span class="text-4xl font-medium text-[#3D3D3D] max-sm:text-2xl"
           >Windows {{ t.client }}</span
