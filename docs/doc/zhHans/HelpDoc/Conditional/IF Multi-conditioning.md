@@ -4,6 +4,7 @@ order: 2
 ---
 
 # IF 多条件
+
 - 适用系统: windows / 信创
 
 ## 功能说明
@@ -17,17 +18,14 @@ order: 2
 ## 指令输入
 
 - **条件关系**:
-  - 下面使用的条件将会以此关系进行合并得到最终的结果   
-	
+  - 下面使用的条件将会以此关系进行合并得到最终的结果
 - **条件列表**
-  - 可添加多个条件 
-
+  - 可添加多个条件
 
 ## 使用示例
 
-![alt text](<assets/IF Multi-conditioning/image-2.png>)
+![alt text](<assets/IF Multi-conditioning/image.png>)
 
+## 下载最小示例
 
-**流程逻辑描述**：
-  通过【IF多条件】进行判断 结果为真时 执行内部函数
-
+<a href="assets\IF Multi-conditioning\示例_if多条件.krpa" download>点击下载</a>
