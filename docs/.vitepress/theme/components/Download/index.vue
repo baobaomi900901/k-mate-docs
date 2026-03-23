@@ -3,7 +3,7 @@ import { IconDownload, IconArrowBottom } from "ksw-vue-icon";
 import { i18n, useAssets } from "./i18n/index";
 import { useData } from "vitepress";
 import { KPopover } from "ksw-ux";
-import { baseUrl, downloadFile, findLatestVersion, getUpdateLogAPI } from "./tools";
+import { baseUrl, downloadFile, findLatestVersion, getUpdateLogAPI, getVersionListAPI } from "./tools";
 import { computed, onMounted, reactive, ref } from "vue";
 import Footer from "../../components/Footer/index.vue";
 
@@ -90,29 +90,7 @@ const cefList = [
 const plugin = ref("");
 
 const initData = async () => {
-  // const versionObject = await getVersionListAPI()
-  const versionObject = {
-    windows: [
-      {
-        version: "2.1.0",
-        plugin: "Resources250925",
-      },
-      {
-        version: "2.1.1-beta16",
-        plugin: "Resources251226",
-      },
-    ],
-    linux_arm: [
-      {
-        version: "26.02.09-beta",
-      },
-    ],
-    linux_x86: [
-      {
-        version: "26.02.09-beta",
-      },
-    ],
-  };
+  const versionObject = await getVersionListAPI()
   if (!versionObject) {
     return;
   }
@@ -262,12 +240,13 @@ onMounted(() => {
 <template>
   <div class="flex flex-col text-gray-500 max-sm:w-full">
     <section
-      class="head-bg flex h-fit flex-col items-center bg-gradient-to-b from-blue-50 to-white px-20 px-[80px] pb-[120px] pt-[60px] max-sm:px-0 max-sm:pb-6 max-sm:pt-10"
+      class="head-bg flex h-fit flex-col items-center bg-white px-20 px-[80px] pb-[120px] pt-[60px] max-sm:px-0 max-sm:pb-6 max-sm:pt-10"
     >
       <span class="text-6xl font-semibold text-[#38363C] max-lg:text-4xl max-sm:text-3xl">{{
         t.text1
       }}</span>
       <span class="mt-2 text-lg font-medium text-[#38363C] max-sm:text-base">{{ t.text2 }}</span>
+      <!-- <span class="mt-2">{{ t.text3 }}<b @click="openLog()" class="text-[#3B82F6] cursor-pointer">{{ t.log }}</b></span> -->
       <div
         class="mt-10 flex w-[1440px] flex-col items-center rounded-[40px] bg-blue-50 p-12 max-2xl:w-full max-sm:mt-6 max-sm:w-full max-sm:py-10"
       >
