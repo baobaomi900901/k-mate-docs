@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { IconDownload, IconArrowBottom } from "ksw-vue-icon";
 import { i18n, useAssets } from "./i18n/index";
-import { useData } from "vitepress";
+import { withBase, useData } from "vitepress";
 import { KPopover } from "ksw-ux";
-import { baseUrl, downloadFile, findLatestVersion, getUpdateLogAPI, getVersionListAPI } from "./tools";
+import { baseUrl, downloadFile, findLatestVersion, getVersionListAPI } from "./tools";
 import { computed, onMounted, reactive, ref } from "vue";
 import Footer from "../../components/Footer/index.vue";
 
@@ -219,18 +219,6 @@ const downCef = (val: number) => {
   downloadFile(fullPath);
 };
 
-/** 获取日志 */
-// const getLog = async () => {
-//   await nextTick();
-//   markdownContent.value = "";
-//   const logData = await getUpdateLogAPI(
-//     `/${system.value}/${version.value}/${logNameOfLang.get(langPrefix.value)}.md`,
-//   );
-//   if (logData) {
-//     const htmlContent = await md.render(logData);
-//     markdownContent.value = htmlContent;
-//   }
-// };
 
 onMounted(() => {
   initData();
@@ -246,7 +234,7 @@ onMounted(() => {
         t.text1
       }}</span>
       <span class="mt-2 text-lg font-medium text-[#38363C] max-sm:text-base">{{ t.text2 }}</span>
-      <!-- <span class="mt-2">{{ t.text3 }}<b @click="openLog()" class="text-[#3B82F6] cursor-pointer">{{ t.log }}</b></span> -->
+      <span class="mt-2">{{ t.text3 }}<a :href="withBase(t.logPath)" class="text-[#3B82F6] cursor-pointer">{{ t.log }}</a></span>
       <div
         class="mt-10 flex w-[1440px] flex-col items-center rounded-[40px] bg-blue-50 p-12 max-2xl:w-full max-sm:mt-6 max-sm:w-full max-sm:py-10"
       >

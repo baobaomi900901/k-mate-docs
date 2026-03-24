@@ -27,7 +27,8 @@ export default {
   arm: 'ARM Version',
   text1: 'Download K-RPA Lite Client',
   text2: 'Supports Windows, Linux, and Domestic OS',
-  text3: "Want to know what's new in K-RPA Lite? Check out the K-RPA Lite Changelog",
+  text3: "Want to know what's new in K-RPA Lite? ",
+  log: 'Check out the K-RPA Lite Changelog',
   client: 'Client',
   supports: 'Supports',
   version: 'Version',
@@ -36,5 +37,6 @@ export default {
   text5: 'Supports Debian, Ubuntu, CentOS, UnionTech UOS, Kylin OS',
   framework: 'Framework',
   text6: 'Cross-platform operation, stably building',
-  text7: 'automation capabilities'
+  text7: 'automation capabilities',
+  logPath: '/en/UpdateLog/system/windows'
 };

@@ -26,12 +26,16 @@ const timeoutDuration = 15000;
  * 发起 API 请求
  * @param {string} url 相对于基础 URL 的路径
  * @param {'json'|'text'|'blob'} format 响应体的解析格式，默认为 'json'
+ * @param {boolean} isFullUrl 响应体的解析格式，默认为 'json'
  * @returns {Promise<Object>} 返回一个 Promise 对象，该对象解析为从 API 获取的数据
  * @throws {Error} 如果请求失败或响应不是有效的格式，则抛出错误
  */
-export const ajaxAPI = async (url: string, format = "json") => {
+export const ajaxAPI = async (url: string, format = "json", isFullUrl = false) => {
   // const currentBaseUrl = await getAvailableBaseUrl()
-  const fullUrl = `${baseUrl}${url}`;
+  let fullUrl = `${baseUrl}${url}`;
+  if (isFullUrl) {
+    fullUrl = url
+  }
 
   const timeoutPromise = new Promise((_, reject) =>
     setTimeout(() => reject(new Error("请求超时")), timeoutDuration),
@@ -63,7 +67,7 @@ export const getVersionListAPI = async () => {
  * @returns
  */
 export const getUpdateLogAPI = async (url: string) => {
-  return await ajaxAPI(url, "text");
+  return await ajaxAPI(url, "text", true);
 };
 
 /**

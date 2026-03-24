@@ -27,7 +27,8 @@ export default {
   arm: 'ARM 版本',
   text1: '下载 K-RPA Lite 客户端',
   text2: '支持 Windows、Linux、信创系统',
-  text3: '想知道 K-RPA Lite 更新了哪些内容？看看 K-RPA Lite 更新日志',
+  text3: '想知道 K-RPA Lite 更新了哪些内容？',
+  log: '看看 K-RPA Lite 更新日志',
   client: '客户端',
   supports: '已支持',
   version: '版本',
@@ -37,4 +38,5 @@ export default {
   framework: '框架',
   text6: '跨平台运行，稳定构建',
   text7: '自动化能力',
+  logPath: '/UpdateLog/system/windows'
 };

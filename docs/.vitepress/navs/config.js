@@ -24,6 +24,11 @@ export const config = {
     en: "Download Center",
     sidebar: false,
   },
+  UpdateLog: {
+    zhHans: '更新日志',
+    en: 'Update Log',
+    base: "system/windows",
+  },
   Tutorial: {
     zhHans: "教学",
     items: {
