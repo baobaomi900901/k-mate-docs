@@ -36,16 +36,13 @@ jobs:
           node-version: 20
           cache: npm
 
-      # - name: Setup Pages
-      #   uses: actions/configure-pages@v4
-
       - name: Install dependencies
         run: |
           npm i
       - name: Build with VitePress
         run: |
-          npm run docs:build
           npm run docs:build:sub
+      #    npm run docs:build
       #    cd "docs/.vitepress"
       #    tar -zcvf dist.tar.gz ./dist
       #    tar -zcvf dist-sub-krpalite.tar.gz ./dist-sub-krpalite
@@ -53,14 +50,13 @@ jobs:
       #   uses: actions/upload-pages-artifact@v3
       #   with:
       #     path: docs/.vitepress/dist
-      - name: Upload artifact
+      - name: Upload dist artifact
         uses: actions/upload-artifact@v4
         with:
           name: VitePress-artifact
           path: |
-            .github/scripts/frpc.sh
-            docs/.vitepress/dist
-            docs/.vitepress/dist-sub-krpalite
+            docs/.vitepress/dist-sub-krpalite/
+      #      docs/.vitepress/dist
       #      docs/.vitepress/dist.tar.gz
       #      docs/.vitepress/dist-sub-krpalite.tar.gz
           retention-days: 1
@@ -80,25 +76,25 @@ jobs:
   #       continue-on-error: true  # 即使失败，也继续下一个步骤
 
   # 部署到服务器
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download project files
-        uses: actions/download-artifact@v4
-        with:
-          name: VitePress-artifact
+  # deploy:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Download project files
+  #       uses: actions/download-artifact@v4
+  #       with:
+  #         name: VitePress-artifact
 
-      - name: Deploy to Centos server
-        uses: easingthemes/ssh-deploy@main
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDv -i --delete --no-compress"
-          SOURCE: "./docs/.vitepress/dist/"
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.TARGET }}
+  #     - name: Deploy to Centos server
+  #       uses: easingthemes/ssh-deploy@main
+  #       with:
+  #         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+  #         ARGS: "-rlgoDv -i --delete --no-compress"
+  #         SOURCE: "./docs/.vitepress/dist/"
+  #         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+  #         REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+  #         REMOTE_USER: ${{ secrets.REMOTE_USER }}
+  #         TARGET: ${{ secrets.TARGET }}
           # EXCLUDE: "dist.tar.gz, dist-sub-krpalite.tar.gz"
 
       # - name: Deploy dist.tar.gz
@@ -160,6 +156,13 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout frpc script
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/scripts/frpc.sh
+          sparse-checkout-cone-mode: false
+
       - name: Download project files
         uses: actions/download-artifact@v4
         with:
@@ -172,27 +175,27 @@ jobs:
           chmod +x .github/scripts/frpc.sh
           sh .github/scripts/frpc.sh
 
-      - name: Deploy to local server
-        uses: easingthemes/ssh-deploy@main
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.RPALITE_SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDv -i --delete --no-compress"
-          SOURCE: "./docs/.vitepress/dist/"
-          REMOTE_HOST: ${{ secrets.RPALITE_REMOTE_HOST }}
-          REMOTE_PORT: ${{ secrets.RPALITE_REMOTE_PORT }}
-          REMOTE_USER: ${{ secrets.RPALITE_REMOTE_USER }}
-          TARGET: ${{ secrets.RPALITE_TARGET }}
+      # - name: Deploy to local server
+      #   uses: easingthemes/ssh-deploy@main
+      #   with:
+      #     SSH_PRIVATE_KEY: ${{ secrets.RPALITE_SSH_PRIVATE_KEY }}
+      #     ARGS: "-rlgoDv -i --delete --no-compress"
+      #     SOURCE: "./docs/.vitepress/dist/"
+      #     REMOTE_HOST: ${{ secrets.RPALITE_REMOTE_HOST }}
+      #     REMOTE_PORT: ${{ secrets.RPALITE_REMOTE_PORT }}
+      #     REMOTE_USER: ${{ secrets.RPALITE_REMOTE_USER }}
+      #     TARGET: ${{ secrets.RPALITE_TARGET }}
 
-      - name: Deploy sub to local server
-        uses: easingthemes/ssh-deploy@main
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.RPALITE_SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDv -i --delete --no-compress"
-          SOURCE: "./docs/.vitepress/dist-sub-krpalite/"
-          REMOTE_HOST: ${{ secrets.RPALITE_REMOTE_HOST }}
-          REMOTE_PORT: ${{ secrets.RPALITE_REMOTE_PORT }}
-          REMOTE_USER: ${{ secrets.RPALITE_REMOTE_USER }}
-          TARGET: ${{ secrets.RPALITE_SUB_TARGET }}
+      # - name: Deploy sub to local server
+      #   uses: easingthemes/ssh-deploy@main
+      #   with:
+      #     SSH_PRIVATE_KEY: ${{ secrets.RPALITE_SSH_PRIVATE_KEY }}
+      #     ARGS: "-rlgoDv -i --delete --no-compress"
+      #     SOURCE: "./docs/.vitepress/dist-sub-krpalite/"
+      #     REMOTE_HOST: ${{ secrets.RPALITE_REMOTE_HOST }}
+      #     REMOTE_PORT: ${{ secrets.RPALITE_REMOTE_PORT }}
+      #     REMOTE_USER: ${{ secrets.RPALITE_REMOTE_USER }}
+      #     TARGET: ${{ secrets.RPALITE_SUB_TARGET }}
 
   # scrape-docs:
   #   needs: deploy
