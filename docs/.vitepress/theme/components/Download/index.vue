@@ -94,7 +94,7 @@ const initData = async () => {
   if (!versionObject) {
     return;
   }
-  LinuxInfo[0].version = versionObject.linux_arm[0].version;
+  LinuxInfo[0].version = versionObject.linux[0].version;
 
   // 插件
   const winMaxVer = findLatestVersion(versionObject.windows, "version");
@@ -115,11 +115,11 @@ const initData = async () => {
   windowInfo[1].version = winDevMaxVer.version;
 
   // ARM
-  const ARMMaxVer = findLatestVersion(versionObject.linux_arm, "version");
+  const ARMMaxVer = findLatestVersion(versionObject.linux, "version");
   LinuxInfo[0].ARMVer = ARMMaxVer.version;
 
   // x86
-  const x86MaxVer = findLatestVersion(versionObject.linux_x86, "version");
+  const x86MaxVer = findLatestVersion(versionObject.linux, "version");
   LinuxInfo[0].x86Ver = x86MaxVer.version;
 };
 
@@ -157,7 +157,7 @@ const getDownloadRPAAndPluginUrl = (system: string, version: string) => {
     fullPath =
       baseUrl +
       "/" +
-      system +
+      "linux" +
       "/" +
       version +
       `/krpalite_${version.replaceAll("-", "_")}_arm64.deb`;
@@ -165,7 +165,7 @@ const getDownloadRPAAndPluginUrl = (system: string, version: string) => {
     fullPath =
       baseUrl +
       "/" +
-      system +
+      "linux" +
       "/" +
       version +
       `/krpalite_${version.replaceAll("-", "_")}_amd64.deb`;
