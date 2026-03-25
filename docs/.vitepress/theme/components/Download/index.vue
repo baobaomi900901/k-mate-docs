@@ -226,9 +226,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col text-gray-500 max-sm:w-full">
+  <div class="head-bg flex flex-col text-gray-500 max-sm:w-full">
     <section
-      class="head-bg flex h-fit flex-col items-center bg-white px-20 px-[80px] pb-[120px] pt-[60px] max-sm:px-0 max-sm:pb-6 max-sm:pt-10"
+      class="flex h-fit flex-col items-center px-20 px-[80px] pb-[120px] pt-[60px] max-sm:px-0 max-sm:pb-6 max-sm:pt-10"
     >
       <span class="text-6xl font-semibold text-[#38363C] max-lg:text-4xl max-sm:text-3xl">{{
         t.text1
@@ -368,9 +368,10 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .head-bg {
-  background-image: url("../../assets/download-bg.png");
+  background-image: url("./assets/download-bg.png");
+  background-position-y: top -300px;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center -280px;
 }
 .btn-down {
   width: fit-content;
