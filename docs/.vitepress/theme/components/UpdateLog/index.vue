@@ -36,7 +36,7 @@ const initData = async () => {
 /** 获取日志 */
 const getLog = async () => {
   const res = await getUpdateLogAPI(
-    `https://api.krpalite.com:56780/v1/updates/${props.type}/changelogs`
+    `https://api.krpalite.com:56780/v1/update/${props.type}/changelogs`
   );
   let logData = []
   try {
