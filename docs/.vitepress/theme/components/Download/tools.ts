@@ -62,6 +62,30 @@ export const getVersionListAPI = async () => {
 };
 
 /**
+ * 获取系统版本对象(新接口)
+ * @returns
+ */
+export const getVerListAPI = async (system: "windows" | "linux") => {
+  return await ajaxAPI(`https://api.krpalite.com:56780/v1/update/${system}/versions?t=` + Date.now(), 'json', true);
+};
+
+/**
+ * 获取最新版本
+ * @returns
+ */
+export const getLatestVerAPI = async (system: "windows" | "linux") => {
+  return await ajaxAPI(`https://api.krpalite.com:56780/v1/update/${system}/latest?t=` + Date.now(), 'json', true);
+};
+
+/**
+ * 获取插件包信息
+ * @returns
+ */
+export const getPluginAPI = async () => {
+  return await ajaxAPI("https://api.krpalite.com:56780/v1/update/plugins/bundle?t=" + Date.now(), 'json', true);
+};
+
+/**
  * 获取更新日志
  * @param url
  * @returns

@@ -3,7 +3,7 @@ import { IconDownload, IconArrowBottom } from "ksw-vue-icon";
 import { i18n, useAssets } from "./i18n/index";
 import { withBase, useData } from "vitepress";
 import { KPopover } from "ksw-ux";
-import { baseUrl, downloadFile, findLatestVersion, getVersionListAPI } from "./tools";
+import { baseUrl, downloadFile, findLatestVersion, getVerListAPI, getVersionListAPI, getPluginAPI, getLatestVerAPI } from "./tools";
 import { computed, onMounted, reactive, ref } from "vue";
 import Footer from "../../components/Footer/index.vue";
 
@@ -52,8 +52,7 @@ const LinuxInfo = reactive([
     label: t.value.stable,
     remark: t.value.stableTip,
     type: "stable",
-    ARMVer: "",
-    x86Ver: "",
+    version: "",
   },
   {
     label: t.value.runtimeDep,
@@ -87,40 +86,44 @@ const cefList = [
   },
 ];
 
-const plugin = ref("");
-
-const initData = async () => {
-  const versionObject = await getVersionListAPI()
-  if (!versionObject) {
-    return;
-  }
-  LinuxInfo[0].version = versionObject.linux[0].version;
-
-  // 插件
-  const winMaxVer = findLatestVersion(versionObject.windows, "version");
-  plugin.value = winMaxVer.plugin;
-
+// win
+const getWinInfo = async () => {
+  const res = await getVerListAPI("windows")  
+  const regex3 = /^\d+\.\d+\.\d+(?:-[a-zA-Z0-9]+)?$/;
   // win正式版
   const winStaMaxVer = findLatestVersion(
-    versionObject.windows.filter((item) => item.version.indexOf("beta") === -1),
+    res.reduce((acc: any, cur: any) => {
+      if (regex3.test(cur.version)) {
+        acc.push(cur)
+      }
+      return acc
+    }, []),
     "version",
   );
   windowInfo[0].version = winStaMaxVer.version;
 
   // win开发版
   const winDevMaxVer = findLatestVersion(
-    versionObject.windows.filter((item) => item.version.indexOf("beta") !== -1),
+    res.reduce((acc: any, cur: any) => {
+      if (!regex3.test(cur.version)) {
+        acc.push(cur)
+      }
+      return acc
+    }, []),
     "version",
   );
   windowInfo[1].version = winDevMaxVer.version;
+}
 
-  // ARM
-  const ARMMaxVer = findLatestVersion(versionObject.linux, "version");
-  LinuxInfo[0].ARMVer = ARMMaxVer.version;
+// linux
+const getLinuxInfo = async () => {
+  const res = await getLatestVerAPI("linux")
+  LinuxInfo[0].version = res.version
+}
 
-  // x86
-  const x86MaxVer = findLatestVersion(versionObject.linux, "version");
-  LinuxInfo[0].x86Ver = x86MaxVer.version;
+const initData = async () => {
+  getWinInfo()
+  getLinuxInfo()
 };
 
 const getDownloadLogoUrl = () => {
@@ -197,9 +200,12 @@ const downWebView = (val: number) => {
 };
 
 // 下载插件
-const downPlugin = () => {
-  const fullPath = baseUrl + "/plugin/" + plugin.value + ".zip";
-  downloadFile(fullPath);
+const downPlugin = async () => {
+  const res = await getPluginAPI()
+  if (!res) {
+    return
+  }
+  downloadFile(res.url);
 };
 
 // 下载Linux
@@ -255,7 +261,7 @@ onMounted(() => {
             <span class="text-[28px] text-[#111827] max-sm:text-2xl">{{ item.label }}</span>
             <span class="mt-2 max-sm:text-sm">{{ item.remark }}</span>
             <span class="mt-2 text-xs max-sm:mt-1" v-if="item.version"
-              >{{ t.version }}：{{ item.version }}</span
+              >{{ t.version }}：{{ item.version.split('-')[0] }}</span
             >
             <br />
             <div v-if="item.type === 'dependency'" class="mt-auto flex gap-3">
@@ -305,14 +311,14 @@ onMounted(() => {
             <span class="text-[28px] text-[#111827] max-sm:text-2xl">{{ item.label }}</span>
             <span class="mt-2 max-sm:text-sm">{{ item.remark }}</span>
             <span class="mt-2 text-xs max-sm:mt-1" v-if="item.version"
-              >{{ t.version }}：{{ item.version }}</span
+              >{{ t.version }}：{{ item.version.split('-')[0] }}</span
             >
 
             <div v-if="item.type === 'stable'" class="mt-auto flex gap-3">
-              <div class="btn-down" @click="downloadLinux('linux_x86', item.x86Ver!)">
+              <div class="btn-down" @click="downloadLinux('linux_x86', item.version!)">
                 {{ t.x86 }}<IconDownload />
               </div>
-              <div class="btn-down" @click="downloadLinux('linux_arm', item.ARMVer!)">
+              <div class="btn-down" @click="downloadLinux('linux_arm', item.version!)">
                 {{ t.arm }}<IconDownload />
               </div>
             </div>
