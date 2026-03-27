@@ -152,28 +152,28 @@ jobs:
       #       }"
 
   # 部署到内部服务器
-  deploy-local:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout frpc script
-        uses: actions/checkout@v4
-        with:
-          sparse-checkout: |
-            .github/scripts/frpc.sh
-          sparse-checkout-cone-mode: false
+  # deploy-local:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout frpc script
+  #       uses: actions/checkout@v4
+  #       with:
+  #         sparse-checkout: |
+  #           .github/scripts/frpc.sh
+  #         sparse-checkout-cone-mode: false
 
-      - name: Download project files
-        uses: actions/download-artifact@v4
-        with:
-          name: VitePress-artifact
+  #     - name: Download project files
+  #       uses: actions/download-artifact@v4
+  #       with:
+  #         name: VitePress-artifact
 
-      - name: Run FRPC
-        env:
-          FRP_CONFIG: ${{ secrets.FRP_CLIENT_CONFIG }}
-        run: |
-          chmod +x .github/scripts/frpc.sh
-          sh .github/scripts/frpc.sh
+  #     - name: Run FRPC
+  #       env:
+  #         FRP_CONFIG: ${{ secrets.FRP_CLIENT_CONFIG }}
+  #       run: |
+  #         chmod +x .github/scripts/frpc.sh
+  #         sh .github/scripts/frpc.sh
 
       # - name: Deploy to local server
       #   uses: easingthemes/ssh-deploy@main
