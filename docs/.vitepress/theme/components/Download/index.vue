@@ -88,11 +88,12 @@ const cefList = [
 
 // win
 const getWinInfo = async () => {
-  const res = await getVerListAPI("windows")  
+  const res = await getVerListAPI("windows")
+  const verList = res.filter(item => item.version.indexOf('beta') === -1)  
   const regex3 = /^\d+\.\d+\.\d+(?:-[a-zA-Z0-9]+)?$/;
   // win正式版
   const winStaMaxVer = findLatestVersion(
-    res.reduce((acc: any, cur: any) => {
+    verList.reduce((acc: any, cur: any) => {
       if (regex3.test(cur.version)) {
         acc.push(cur)
       }
@@ -104,7 +105,7 @@ const getWinInfo = async () => {
 
   // win开发版
   const winDevMaxVer = findLatestVersion(
-    res.reduce((acc: any, cur: any) => {
+    verList.reduce((acc: any, cur: any) => {
       if (!regex3.test(cur.version)) {
         acc.push(cur)
       }
