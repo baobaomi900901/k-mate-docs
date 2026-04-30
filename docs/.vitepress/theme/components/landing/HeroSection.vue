@@ -23,17 +23,17 @@
           > -->
           <a
             class="cursor-pointer select-none rounded-full bg-blue-500 px-8 py-4 text-white hover:bg-blue-400"
-            @click="downloadFile(getDownloadRPAUrl('windows'))"
+            @click="downloadFileForSys('windows')"
             >{{ t.buttonText1 }}</a
           >
           <a
             class="cursor-pointer select-none rounded-full bg-blue-500 px-8 py-4 text-white hover:bg-blue-400"
-            @click="downloadFile(getDownloadRPAUrl('linux_x86'))"
+            @click="downloadFileForSys('linux_x86')"
             >{{ t.buttonText2 }}</a
           >
           <a
             class="cursor-pointer select-none rounded-full bg-blue-500 px-8 py-4 text-white hover:bg-blue-400"
-            @click="downloadFile(getDownloadRPAUrl('linux_arm'))"
+            @click="downloadFileForSys('linux_arm')"
             >{{ t.buttonText3 }}</a
           >
         </div>
@@ -73,39 +73,51 @@ import { TextPlugin } from "gsap/TextPlugin";
 import { i18n, useAssets } from "./i18n/index";
 import { IconArrowUpRight } from "ksw-vue-icon";
 
-import { baseUrl, getVersionListAPI, downloadFile } from "../Download/tools";
+import { baseUrl, getVersionListAPI, downloadFile, getLatestVerAPI, getVerListAPI, findLatestVersion } from "../Download/tools";
 
-const system = ref("");
-// const version = ref("");
-/** 系统选项 */
-const systemOptions = ref([]);
-/** 版本选项 */
-const versionOptions = ref([]);
-/** 系统版本对象 */
-const versionObject = ref({});
-// 初始化时设置默认版本
-const initData = async () => {
-  versionObject.value = await getVersionListAPI();
-  const systemKeys = Object.keys(versionObject.value);
-  if (systemKeys.length === 0) return;
-  systemOptions.value = systemKeys.map((item) => {
-    return { value: item, label: item };
-  });
-  // system.value = systemKeys[0];
-  // console.log(versionObject.value["windows"]);
-};
-const getDownloadRPAUrl = (sys) => {
+const getDownloadRPAUrl = async (sys) => {
   let fullPath = "";
-  let version = versionObject.value[sys].at(-1).version;
-  if (sys === "linux_arm") {
-    fullPath = baseUrl + "/" + sys + "/" + version + "/K-RPA Lite_arm.zip";
-  } else if (sys === "linux_x86") {
-    fullPath = baseUrl + "/" + sys + "/" + version + "/K-RPA Lite_x86.zip";
-  } else {
+  if (sys === 'windows') {
+    const res = await getVerListAPI("windows")
+    const verList = res.filter(item => item.version.indexOf('beta') === -1)  
+    const regex3 = /^\d+\.\d+\.\d+(?:-[a-zA-Z0-9]+)?$/;
+    // win正式版
+    const {version} = findLatestVersion(
+      verList.reduce((acc, cur) => {
+        if (regex3.test(cur.version)) {
+          acc.push(cur)
+        }
+        return acc
+      }, []),
+      "version",
+    );
     fullPath = baseUrl + "/" + sys + "/" + version + `/K-RPA Lite Setup ${version}.exe`;
+  } else if (sys === "linux_arm") {
+    const {version} = await getLatestVerAPI('linux')
+    fullPath =
+      baseUrl +
+      "/" +
+      "linux" +
+      "/" +
+      version +
+      `/krpalite_${version.replaceAll("-", "_")}_arm64.deb`;
+  } else if (sys === "linux_x86") {
+    const {version} = await getLatestVerAPI('linux')
+    fullPath =
+      baseUrl +
+      "/" +
+      "linux" +
+      "/" +
+      version +
+      `/krpalite_${version.replaceAll("-", "_")}_amd64.deb`;
   }
   return fullPath;
 };
+
+const downloadFileForSys = async (sys) => {
+  const url = await getDownloadRPAUrl(sys)
+  downloadFile(url)
+}
 
 const { lang } = useData();
 const langPrefix = computed(() => lang.value.split("-")[0]);
@@ -122,8 +134,6 @@ const mainTitle = ref(null);
 const description = ref(null);
 
 onMounted(async () => {
-  // 初始化数据
-  initData();
 
   // 滚动动画
   // 统一配置对象
