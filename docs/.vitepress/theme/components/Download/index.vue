@@ -164,7 +164,7 @@ const getDownloadRPAAndPluginUrl = (system: string, version: string) => {
       "linux" +
       "/" +
       version +
-      `/krpalite_${version.replaceAll("-", "_")}_arm64.deb`;
+      `/krpalite_${version.replaceAll("-", "_")}_arm64_cef143.deb`;
   } else if (system === "linux_x86") {
     fullPath =
       baseUrl +
@@ -172,7 +172,23 @@ const getDownloadRPAAndPluginUrl = (system: string, version: string) => {
       "linux" +
       "/" +
       version +
-      `/krpalite_${version.replaceAll("-", "_")}_amd64.deb`;
+      `/krpalite_${version.replaceAll("-", "_")}_amd64_cef143.deb`;
+  } else if (system === "linux_x86_x89") {
+    fullPath =
+      baseUrl +
+      "/" +
+      "linux" +
+      "/" +
+      version +
+      `/krpalite_${version.replaceAll("-", "_")}_amd64_cef89.deb`;
+  } else if (system === "linux_arm_x89") {
+    fullPath =
+      baseUrl +
+      "/" +
+      "linux" +
+      "/" +
+      version +
+      `/krpalite_${version.replaceAll("-", "_")}_arm64_cef89.deb`;
   } else {
     fullPath = baseUrl + "/" + system + "/" + version + `/K-RPA Lite Setup ${version}.exe`;
   }
@@ -321,6 +337,12 @@ onMounted(() => {
               </div>
               <div class="btn-down" @click="downloadLinux('linux_arm', item.version!)">
                 {{ t.arm }}<IconDownload />
+              </div>
+              <div class="btn-down" @click="downloadLinux('linux_x86_x89', item.version!)">
+                {{ t.x86x89 }}<IconDownload />
+              </div>
+              <div class="btn-down" @click="downloadLinux('linux_arm_x89', item.version!)">
+                {{ t.armx89 }}<IconDownload />
               </div>
             </div>
             <k-popover v-else placement="bottom" :width="200" trigger="hover">

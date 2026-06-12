@@ -100,7 +100,7 @@ const getDownloadRPAUrl = async (sys) => {
       "linux" +
       "/" +
       version +
-      `/krpalite_${version.replaceAll("-", "_")}_arm64.deb`;
+      `/krpalite_${version.replaceAll("-", "_")}_arm64_cef143.deb`;
   } else if (sys === "linux_x86") {
     const {version} = await getLatestVerAPI('linux')
     fullPath =
@@ -109,7 +109,7 @@ const getDownloadRPAUrl = async (sys) => {
       "linux" +
       "/" +
       version +
-      `/krpalite_${version.replaceAll("-", "_")}_amd64.deb`;
+      `/krpalite_${version.replaceAll("-", "_")}_amd64_cef143.deb`;
   }
   return fullPath;
 };
