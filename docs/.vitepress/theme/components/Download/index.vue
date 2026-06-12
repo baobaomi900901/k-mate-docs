@@ -164,7 +164,7 @@ const getDownloadRPAAndPluginUrl = (system: string, version: string) => {
       "linux" +
       "/" +
       version +
-      `/krpalite_${version.replaceAll("-", "_")}_arm64_cef143.deb`;
+      `/krpalite_${version.replaceAll("-", "_")}_arm64.deb`;
   } else if (system === "linux_x86") {
     fullPath =
       baseUrl +
@@ -172,7 +172,7 @@ const getDownloadRPAAndPluginUrl = (system: string, version: string) => {
       "linux" +
       "/" +
       version +
-      `/krpalite_${version.replaceAll("-", "_")}_amd64_cef143.deb`;
+      `/krpalite_${version.replaceAll("-", "_")}_amd64.deb`;
   } else if (system === "linux_x86_x89") {
     fullPath =
       baseUrl +
